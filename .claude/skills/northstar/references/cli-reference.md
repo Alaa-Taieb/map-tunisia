@@ -248,9 +248,41 @@ Deterministic roadmap facts for reviews: critical path, bottlenecks, blocked cha
 
 Print the roadmap tree: milestones → features → tasks with statuses and exit criteria.
 
-### `northstar report <status|task|roadmap|change|handoff|review|feedback> [id] [--format html|markdown] [--out <file>]`
+### `northstar report <status|task|roadmap|change|handoff|review|feedback|asks|ask> [id] [--format html|markdown] [--out <file>] [--all-projects]`
 
-Readable report card for chat: self-contained HTML (render it inline) or markdown. status, task <id>, roadmap, change [id], handoff, review, feedback [id].
+Readable report card for chat: self-contained HTML (render it inline) or markdown. status, task <id>, roadmap, change [id], handoff, review, feedback [id], asks [--all-projects] (the user's to-do list), ask [id] (the tutorial page itself).
+
+### `northstar ask add --title "<what the user must do>" --kind account_access|decision|physical_device|payment|manual_test|external_setup|other --tutorial <file.html|-> [--summary "<one line>"] [--minutes 5] [--blocks NS-001,NS-002] [--check "<command that proves it is done>"] [--shell cmd|powershell|bash]`
+
+File something only the user can do, with a self-contained HTML/CSS tutorial (validated; no network, no secrets). Blocks the listed tasks until resolved.
+
+### `northstar ask update <id> [--tutorial <file.html|->] [--title <t>] [--summary <text>] [--kind <kind>] [--minutes N] [--blocks NS-003] [--check "<command>"] [--shell <shell>]`
+
+Improve an open ask: replace its tutorial (re-validated), wording, estimate or check, or add tasks it holds up.
+
+### `northstar ask list [--status open|resolved|cancelled|all] [--all-projects]`
+
+The user's to-do list for their agents (open asks, most unblocking first). --all-projects covers every registered project.
+
+### `northstar ask show <id> [--html]`
+
+One ask with its status, linked tasks and check history. --html prints the stored tutorial page.
+
+### `northstar ask resolve <id> [--run "<command>"] [--shell <shell>] [--timeout-ms 600000]   |   ask resolve <id> --actor human --detail "<the user's words>"`
+
+Close an ask once the user did it: Northstar runs its confirm check (a failure keeps it open), or records the user's confirmation (--actor human). Blocked tasks resume.
+
+### `northstar ask cancel <id> --reason "<why it is no longer needed>"`
+
+Withdraw an open ask (e.g. the agent found a way without the user). Blocked tasks resume.
+
+### `northstar ask template [--title <t>] [--kind <kind>] [--minutes N] [--out <file.html>]`
+
+Print a starter tutorial page (theme-aware, passes validation) to adapt for an ask.
+
+### `northstar ask lint <file.html|->`
+
+Check a tutorial page against Northstar's safety rules without filing anything. Exit 3 when it would be rejected.
 
 ### `northstar feedback add --title <t> --category bug|improvement|feature --observation <what> --impact <effect> --certainty observed|suspected|proposed [--evidence <text>]... [--solution <idea>] [--request-id <retry-key>]`
 

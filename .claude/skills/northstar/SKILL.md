@@ -31,19 +31,21 @@ Exit codes: 0 ok · 2 usage · 3 invalid data · 4 rule violation / approval nee
 
 ## Routing the user's request
 
-| The user says…                                   | Do                                                                                                                 |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| Describes a new product idea (no `.northstar/`)  | **Initialize** → `references/workflows.md#initialize`                                                              |
-| "Adopt / manage this existing repo"              | **Adopt** → `references/workflows.md#adopt`                                                                        |
-| "Implement X" / "fix Y" / "add Z"                | **Do work** (below)                                                                                                |
-| "Where are we?" / "what's left?"                 | **Status** → show the status card (`northstar report status`, see _Showing reports in chat_), then explain plainly |
-| "Show me the dashboard" / wants to see progress  | `northstar dashboard --background`, then give them the URL it prints (one dashboard shows all their projects)      |
-| The user approves, rejects or accepts something  | Record it yourself with `--actor human` and `--note`/`--detail` quoting their words                                |
-| "Review the project" / "are we on track?"        | **Review** → `references/workflows.md#review`                                                                      |
-| "Ship it" / "make a release"                     | **Release** → `references/workflows.md#release`                                                                    |
-| A tiny fix that isn't worth planning             | `task add --unplanned --classification minor --milestone <MS> --title "..." --start`, do it, complete + verify     |
-| Wants something that changes scope or the vision | **Propose change** → `references/workflows.md#propose-change`                                                      |
-| Ending a session / switching agents              | **Handoff** → `northstar handoff create ...`                                                                       |
+| The user says…                                    | Do                                                                                                                 |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Describes a new product idea (no `.northstar/`)   | **Initialize** → `references/workflows.md#initialize`                                                              |
+| "Adopt / manage this existing repo"               | **Adopt** → `references/workflows.md#adopt`                                                                        |
+| "Implement X" / "fix Y" / "add Z"                 | **Do work** (below)                                                                                                |
+| "Where are we?" / "what's left?"                  | **Status** → show the status card (`northstar report status`, see _Showing reports in chat_), then explain plainly |
+| "Show me the dashboard" / wants to see progress   | `northstar dashboard --background`, then give them the URL it prints (one dashboard shows all their projects)      |
+| The user approves, rejects or accepts something   | Record it yourself with `--actor human` and `--note`/`--detail` quoting their words                                |
+| "Review the project" / "are we on track?"         | **Review** → `references/workflows.md#review`                                                                      |
+| "Ship it" / "make a release"                      | **Release** → `references/workflows.md#release`                                                                    |
+| A tiny fix that isn't worth planning              | `task add --unplanned --classification minor --milestone <MS> --title "..." --start`, do it, complete + verify     |
+| Wants something that changes scope or the vision  | **Propose change** → `references/workflows.md#propose-change`                                                      |
+| Ending a session / switching agents               | **Handoff** → `northstar handoff create ...`                                                                       |
+| "What do I need to do?" / "what's waiting on me?" | `northstar report asks --all-projects` (render it), then offer to show a tutorial                                  |
+| "I did it" / "done" about an ask                  | `northstar ask resolve <ASK-id>` (see _When only the user can do it_)                                              |
 
 ## Do work (the everyday loop)
 
@@ -53,7 +55,9 @@ Exit codes: 0 ok · 2 usage · 3 invalid data · 4 rule violation / approval nee
    - `minor` or `technical` (an implementation detail): `task add --unplanned --classification minor --milestone <MS> --title "..."`, then start it. No approval needed.
    - `extension` of an existing requirement: same, with `--requirements REQ-xxx`.
    - `new_feature` or `direction_change`: **stop and ask the user.** Run `change propose` (see references), present the trade-off briefly with a recommendation, and wait. Do not code it until approved.
-4. Do the work. If you hit a wall: `northstar task block <ID> --reason "..."`.
+4. Do the work. If you hit a wall: `northstar task block <ID> --reason "..."`. If the wall is something **only the
+   user can do** (sign in to an account, pay, use a physical device, test by hand, make a small product choice),
+   file an **ask** with a tutorial instead, see _When only the user can do it_.
 5. Record important technical decisions: `northstar decision add --title ... --decision ... --rationale ...`.
 6. When finished: `northstar task complete <ID> --summary "what changed" --commit <sha> --file <path> --actor claude-code`.
    This records a **claim**, not verification.
@@ -87,6 +91,28 @@ Exit codes: 0 ok · 2 usage · 3 invalid data · 4 rule violation / approval nee
 If the user interrupts or you run out of time mid-task, leave it `in_progress` and write a handoff. Never mark
 unfinished work complete. Working in parallel with another agent? Use a separate git worktree and run
 `northstar reconcile --worktrees` before merging.
+
+## When only the user can do it (asks)
+
+Some steps need the user's hands: an account login with 2-factor, a payment, a phone or other device, a manual
+check, a DNS or dashboard setting, a small product decision. Try first; file an ask only after a genuine
+attempt, never as a first resort. Full guidance: `references/workflows.md#ask`.
+
+1. Do everything you can around it, then write a tutorial page: `northstar ask template --title "..." --kind <kind> --out <tmp>.html`
+   and rewrite every section for this case (why you couldn't, what you already did, illustrated numbered steps,
+   how you'll know it worked, the exact phrase to tell you). Check it: `northstar ask lint <tmp>.html`.
+2. File it: `northstar ask add --title "..." --kind account_access|decision|physical_device|payment|manual_test|external_setup|other --tutorial <tmp>.html --summary "..." --minutes N --blocks <task ids> --check "<command that proves it is done>" --actor claude-code`.
+   The tasks it holds up become blocked. Delete the temporary file afterwards.
+3. Show the tutorial to the user right away: `northstar report ask <ASK-id>` returns the page; render it inline, unchanged.
+   Never ask for passwords or keys in chat: the tutorial says where they go (for example a git-ignored `.env`).
+4. When the user says they did it: `northstar ask resolve <ASK-id> --actor claude-code` runs the check. A failure keeps it
+   open: explain what the output shows and update the tutorial if a step was unclear (`ask update`). Without a
+   check, record the user's own words: `northstar ask resolve <ASK-id> --actor human --detail "<their words>"`.
+   Resolving resumes the blocked tasks; continue them.
+5. No longer needed (you found another way)? `northstar ask cancel <ASK-id> --reason "..."`.
+
+At session start, `status` lists open asks ("Waiting on you") and asks the user finished since your last session;
+pick up the work they unblocked first. "What do I need to do?" → `northstar report asks --all-projects`.
 
 ## Feedback from real Northstar use
 
@@ -139,6 +165,8 @@ show a **report card** instead of pasting command output:
 | Handoff written or read                                     | `northstar report handoff`        |
 | Project review                                              | `northstar report review`         |
 | Northstar feedback inbox                                    | `northstar report feedback [id]`  |
+| "What do I need to do?" (the user's to-do list)             | `northstar report asks`           |
+| Filing or reminding about one thing the user must do        | `northstar report ask <ASK-id>`   |
 
 - The default output is one self-contained HTML document (inline CSS, no scripts, no external URLs; it follows the
   host theme in light and dark mode). If your harness can render HTML inline in chat (for example T3 Code `html_render`,

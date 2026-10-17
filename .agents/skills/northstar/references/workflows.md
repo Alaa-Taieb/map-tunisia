@@ -108,6 +108,46 @@ Before stopping or switching harnesses (if you used `session start`, finish with
 Make sure in-progress tasks are accurate (complete, block, or leave in progress honestly) and **commit and push**
 `.northstar/` along with the code so the next agent (and the dashboard) sees it.
 
+## ask
+
+Use when work truly needs the user: an account only they can sign in to (passwords, 2-factor), a payment, a
+physical device, a manual or visual test, a setting in a third-party dashboard (DNS, OAuth app, app store), or a
+small product decision the vision leaves open. Larger scope or direction questions are change proposals, not asks.
+
+**Try first.** Search the docs, use test modes, mocks, CLIs and public sandboxes. File an ask only when the
+remaining step really needs the person, and prepare everything around it so their part is as short as possible
+(create the `.env` with a placeholder, write the check script, open the right file).
+
+**Write the tutorial as a polished page** (`northstar ask template` gives a theme-aware starting point that passes
+validation; rewrite all of it for this case):
+
+- Header: what to do in plain words, the kind, a realistic time estimate, what it unblocks.
+- "Why I couldn't do it" and "What I already did", one or two sentences each.
+- Numbered steps, one action each, using the exact words the user will see on screen in **bold**.
+  Draw the screen they will see (`.screen` blocks with the button to click highlighted) instead of describing it.
+  Inline screenshots only as `data:` URIs, cropped small.
+- Copyable snippets for anything they type, placeholders that are obviously not real values.
+- A warning for the one mistake people make at that step.
+- "How I'll know it worked": the check you'll run in plain words, what happens next, and the exact phrase to
+  tell you when done.
+- Write for someone who is not an expert and may read it on a phone: no fixed widths, grid columns as
+  `minmax(0,1fr)`, long code lines scroll inside their box. The page is shown at any width from 320px up.
+
+**Safety rules** (enforced by `northstar ask lint` and on every write): one self-contained file; no external
+scripts, stylesheets, images, fonts or frames; no `fetch`/WebSocket/storage/navigation in scripts; links only to
+`https://`, `http://`, `mailto:` or `#sections`; no secret-looking strings. Never ask for passwords or keys in
+chat or in the page: tell the user where to put them (a git-ignored file, a password manager, the provider's UI).
+
+**Confirm check.** Prefer `--check "<command>"` that proves the user's part worked (e.g. `npm run check:stripe`,
+`nslookup notes.example.com`, a script that pings the device). When the user says they're done, `ask resolve`
+runs it: a pass closes the ask and resumes blocked tasks; a failure keeps it open, so explain what went wrong and
+improve the tutorial with `ask update <ASK-id> --tutorial <file>`. With no possible check (a decision, a visual
+judgement), ask the user and record their words: `ask resolve <ASK-id> --actor human --detail "<their words>"`.
+
+Show the page as soon as it is filed (`northstar report ask <ASK-id>`, rendered inline unchanged; `--format markdown`
+gives a text version). The dashboard lists every open ask across projects, most unblocking first, and opens each
+tutorial in a sandboxed frame.
+
 ## explain
 
 Write for a non-expert reading in 30 seconds. Save JSON and publish:
