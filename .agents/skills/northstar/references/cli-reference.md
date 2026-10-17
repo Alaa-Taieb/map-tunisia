@@ -4,6 +4,10 @@ Global flags: `--json` (machine output), `--root <dir>`, `--actor <id>` (codex |
 Env: `NORTHSTAR_ACTOR`, `NORTHSTAR_SESSION`.
 Exit codes: 0 ok · 2 usage · 3 invalid data/validation errors · 4 rule violation or user approval required · 5 not found / not initialized · 6 conflict.
 
+### `northstar project rename --name <name>`
+
+Rename the project's display name, preserving history and approvals. Does not move folders or rewrite documents.
+
 ### `northstar init --name <name> [--idea <text>] [--adopt] [--prefix NS] [--cli <command>] [--harness all|codex|claude|none] [--no-hooks] [--mcp]`
 
 Create .northstar/ and the Codex + Claude Code adapters in this repository.
