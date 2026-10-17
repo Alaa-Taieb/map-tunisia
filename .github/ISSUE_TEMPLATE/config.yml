@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Fix a boundary in OpenStreetMap
+    url: https://www.openstreetmap.org/fixthemap
+    about: Borders come from OpenStreetMap, so fixing them upstream helps everyone.

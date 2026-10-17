@@ -1,0 +1,21 @@
+{
+  "id": "EV-0MVBPHK28-93b691",
+  "type": "plan.imported",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "MS-001",
+    "MS-002",
+    "MS-003",
+    "MS-004",
+    "F-001",
+    "F-002",
+    "F-003",
+    "F-004",
+    "F-005",
+    "F-006",
+    "F-007",
+    "F-008"
+  ],
+  "summary": "Plan imported: 11 requirements, 4 milestones, 8 features, 12 tasks"
+}

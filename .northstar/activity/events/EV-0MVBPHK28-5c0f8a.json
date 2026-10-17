@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-5c0f8a",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-008"
+  ],
+  "summary": "Requirement REQ-008 added: World-class documentation and README crediting the author"
+}

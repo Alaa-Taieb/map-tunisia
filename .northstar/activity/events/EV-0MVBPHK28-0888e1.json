@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-0888e1",
+  "type": "feature.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "F-007"
+  ],
+  "summary": "Feature F-007 created: Community files and licensing"
+}

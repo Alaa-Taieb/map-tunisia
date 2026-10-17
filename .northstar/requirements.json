@@ -1,0 +1,169 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "title": "Accurate, exactly nested boundaries from the latest open data",
+      "description": "",
+      "kind": "nonfunctional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "Boundaries come from the latest OSM extract, with the extract date recorded",
+        "Every unit lies inside exactly one parent; the levels have no gaps or overlaps beyond 1 m²",
+        "The coastline and islands follow OSM natural=coastline at full precision"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-002",
+      "title": "Six partitions: country, regions, districts, governorates, delegations, sectors",
+      "description": "",
+      "kind": "functional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "There are 1 country, 7 regions, 5 districts and 24 governorates",
+        "Delegations and sectors match the documented counts",
+        "The district composition follows Decree 2023-589"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-003",
+      "title": "Multiple levels of detail (full, high, medium, low, tiny)",
+      "description": "",
+      "kind": "functional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "Each partition is available at the documented levels of detail",
+        "Tolerances and file sizes are documented in a table"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-004",
+      "title": "Multiple visual modes",
+      "description": "",
+      "kind": "functional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "The plain, outline, light, dark, labelled (Latin), labelled (Arabic), nested and interactive modes are generated",
+        "Every SVG is valid XML and renders in browsers and on GitHub"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-005",
+      "title": "Semantic identifiers and multilingual names",
+      "description": "",
+      "kind": "functional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "Every shape has a stable id and data-* attributes holding the ISO/INS codes and the Arabic, French and English names",
+        "Attribute tables are published as CSV and JSON"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-006",
+      "title": "GeoJSON and TopoJSON companions plus a projection helper",
+      "description": "",
+      "kind": "functional",
+      "priority": "should",
+      "status": "proposed",
+      "acceptance": [
+        "WGS84 GeoJSON and TopoJSON are produced per partition and level of detail",
+        "project(lon,lat) places points on the SVG within 1 SVG unit"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-007",
+      "title": "Reflect delegations created after 2014 where open data allows",
+      "description": "",
+      "kind": "functional",
+      "priority": "should",
+      "status": "proposed",
+      "acceptance": [
+        "Each post-2014 delegation is either rebuilt from its documented imadas or listed as a known limitation"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-008",
+      "title": "World-class documentation and README crediting the author",
+      "description": "",
+      "kind": "nonfunctional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "The README has a hero visual, a gallery, quick start, partitions/levels/modes tables, usage examples and credits",
+        "The README credits Alaa Taieb as creator",
+        "docs/ covers methodology, accuracy, usage, projection and the build"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-009",
+      "title": "Open-source project hygiene",
+      "description": "",
+      "kind": "nonfunctional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "MIT licence for code and ODbL for data, with OSM attribution",
+        "CONTRIBUTING, CODE_OF_CONDUCT, CHANGELOG, CITATION and issue templates are present"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-010",
+      "title": "Reproducible build and automated validation",
+      "description": "",
+      "kind": "nonfunctional",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [
+        "One command rebuilds dist/ from data/source",
+        "npm test validates counts, IDs, nesting, XML validity and size budgets",
+        "CI runs the tests on every push"
+      ],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "REQ-011",
+      "title": "No topographic layers, tile server or web-map library in v1",
+      "description": "",
+      "kind": "exclusion",
+      "priority": "must",
+      "status": "proposed",
+      "acceptance": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    }
+  ]
+}

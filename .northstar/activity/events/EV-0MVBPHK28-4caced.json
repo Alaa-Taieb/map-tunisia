@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-4caced",
+  "type": "decision.recorded",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "DEC-005"
+  ],
+  "summary": "Decision DEC-005: Licensing split"
+}

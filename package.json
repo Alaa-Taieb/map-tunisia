@@ -1,0 +1,60 @@
+{
+  "name": "map-tunisia",
+  "version": "1.0.0",
+  "description": "The most accurate open-source SVG maps of Tunisia: 6 nested partitions (country, regions, districts, governorates, delegations, sectors) × 5 levels of detail × 8 visual modes, plus GeoJSON & TopoJSON.",
+  "keywords": [
+    "tunisia",
+    "tunisie",
+    "تونس",
+    "map",
+    "svg",
+    "geojson",
+    "topojson",
+    "governorates",
+    "delegations",
+    "imadas",
+    "choropleth",
+    "openstreetmap"
+  ],
+  "homepage": "https://github.com/Alaa-Taieb/map-tunisia#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alaa-Taieb/map-tunisia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alaa-Taieb/map-tunisia/issues"
+  },
+  "author": "Alaa Taieb (https://github.com/Alaa-Taieb)",
+  "license": "(MIT AND ODbL-1.0)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./projection": "./src/projection.js",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "LICENSE",
+    "LICENSE-DATA.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fetch": "python scripts/extract/fetch.py",
+    "extract": "python scripts/extract/extract.py",
+    "build": "node scripts/build/build.js",
+    "build:site": "node scripts/build/site.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "serve": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "fast-xml-parser": "^5.2.0",
+    "mapshaper": "^0.7.87",
+    "polylabel": "^2.0.0"
+  }
+}

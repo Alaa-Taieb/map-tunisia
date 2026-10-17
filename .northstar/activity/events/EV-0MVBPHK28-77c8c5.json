@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-77c8c5",
+  "type": "decision.recorded",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "DEC-003"
+  ],
+  "summary": "Decision DEC-003: Python extraction plus Node generation"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-bf41f9",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-007"
+  ],
+  "summary": "Task NS-007 created: GeoJSON/TopoJSON outputs, manifest and projection helper"
+}

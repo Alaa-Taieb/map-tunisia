@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-2b2f9d",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-002"
+  ],
+  "summary": "Requirement REQ-002 added: Six partitions: country, regions, districts, governorates, delegations, sectors"
+}

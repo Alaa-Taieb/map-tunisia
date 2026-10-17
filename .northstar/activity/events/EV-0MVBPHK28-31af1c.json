@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-31af1c",
+  "type": "feature.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "F-004"
+  ],
+  "summary": "Feature F-004 created: GeoJSON/TopoJSON and projection helper"
+}

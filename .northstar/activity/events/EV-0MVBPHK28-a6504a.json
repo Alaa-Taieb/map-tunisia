@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-a6504a",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-006"
+  ],
+  "summary": "Task NS-006 created: Label placement for the labelled modes (Latin and Arabic)"
+}

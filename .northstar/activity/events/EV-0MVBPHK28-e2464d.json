@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-e2464d",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-002"
+  ],
+  "summary": "Task NS-002 created: Extraction pipeline: PBF to planar faces to nested sectors/delegations/governorates"
+}

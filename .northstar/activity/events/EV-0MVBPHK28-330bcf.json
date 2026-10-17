@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-330bcf",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-005"
+  ],
+  "summary": "Task NS-005 created: Node build: dissolve, project, simplify per LOD, SVG writer with modes"
+}

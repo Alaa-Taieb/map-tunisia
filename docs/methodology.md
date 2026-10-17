@@ -1,0 +1,151 @@
+# Methodology
+
+How raw OpenStreetMap data becomes exactly nested, multi-level maps. In short: one planar topology, documented rules for
+every conflict, and topology-aware simplification.
+
+```text
+ Geofabrik OSM extract (.pbf)
+        │  scripts/extract/fetch.py
+        ▼
+ pyosmium: governorates (admin_level 4), delegations (5), sectors / imadas (6), coastline islets
+        │  scripts/extract/extract.py
+        ▼
+ planar overlay → labelled faces → conflict rules → gap allocation → post-2014 delegations
+        ▼
+ data/source/tunisia-sectors.geojson  +  data/attributes/*.csv  +  extract-report.json
+        │  scripts/build/build.js (mapshaper)
+        ▼
+ dissolve per partition → UTM 32N → simplify per level of detail → labels, colours
+        ▼
+ dist/svg  ·  dist/geojson  ·  dist/topojson  ·  dist/data
+```
+
+## 1. Source
+
+**OpenStreetMap** is the most detailed and most actively maintained open source of Tunisian boundaries.
+
+- Coastline and boundaries are mapped at full precision (1e-7°, about 1 cm).
+- All 24 governorates carry ISO 3166-2 codes; delegations and sectors carry INS geocodes (`ref:tn:codegeo`) and
+  delegations carry HASC codes.
+- The admin-boundary datasets distributed by humanitarian portals (OCHA COD-AB, 2022) and geoBoundaries (2017) describe
+  the same INS 2014 structure (264 delegations, 2,084 imadas) and are older snapshots.
+
+We read the [Geofabrik](https://download.geofabrik.de/africa/tunisia.html) extract. Its replication timestamp and SHA-256
+are recorded in `data/source/extract-report.json`, so every build can be traced to an exact OSM state.
+
+## 2. Reading OSM
+
+[pyosmium](https://osmcode.org/pyosmium/) assembles relations into (multi)polygons. We keep:
+
+- `boundary=administrative` + `admin_level=4` with an `ISO3166-2=TN-*` tag: the 24 governorates;
+- `admin_level=5` relations inside Tunisia: delegations;
+- `admin_level=6` relations inside Tunisia: sectors (imadas);
+- `natural=coastline` closed rings inside Tunisia's maritime boundary that no governorate covers (63 islets, 0.2 km² in total).
+
+OSM's national relation (`admin_level=2`) is **not** used for land: it includes the 12-nautical-mile territorial sea.
+The governorates follow the coastline, so they define the land.
+
+## 3. One planar topology
+
+Different administrative levels in OSM are separate relations. They usually share ways, but not always. Clipping each level
+independently would leave slivers and mismatched borders.
+
+Instead, **every boundary of every level is noded together** (`shapely.union_all` over all rings) and polygonised into
+about 2,300 elementary **faces**. Each face lies entirely inside at most one unit of each level, and adjacent faces share
+exactly the same edge. Every final unit is a union of faces, so:
+
+- there are no gaps and no overlaps, by construction;
+- a delegation border is *the same line* as the matching parts of its sectors' borders and of its governorate's border.
+
+## 4. Labelling faces, and the conflict rules
+
+Each face is labelled with the governorate, delegation and sector that contain its representative point.
+The rules for disagreements, in order:
+
+1. **Superseded relations are dropped**, as listed in `corrections.json`. Example: OSM still holds the pre-2019 *Regueb*
+   delegation alongside its two successors (*Regueb* and *Essaïda*).
+2. **Delegations nest in governorates**: a delegation's governorate is the one containing most of its area. Only
+   delegations of the face's governorate are candidates.
+3. **When the governorate disagrees with both lower levels**, and a delegation *and* one of its sectors cover a face that
+   the governorate relation puts elsewhere, the two lower levels win. Example: 5.2 km² around Yasmine Hammamet are moved
+   from Sousse to Nabeul.
+4. **Overlapping delegations** are resolved with sector evidence (the delegation whose INS code prefixes the sector's code),
+   then by preferring the smaller delegation.
+5. **A sector's delegation** is the one that contains it (≥ 90 % of its area). For partial overlaps, the delegation matching
+   the sector's INS code wins.
+6. **Overlapping sectors** prefer sectors with an INS code (uncoded duplicates are usually stale), then the smaller one.
+
+## 5. Filling gaps: lakes, sebkhas and slivers
+
+OSM governorates include inland water bodies such as Sebkhet Sidi El Hani, Sebkhet Kelbia, Lake Ichkeul, Sebkhet Ariana
+and Sebkhet Séjoumi, but most delegations and sectors leave them out (≈ 690 km² in total). For a complete, nested map, each
+uncovered area is **split between the neighbouring units of the same parent by nearest-boundary allocation**:
+
+1. sample the neighbours' borders every 100 m (in UTM metres);
+2. build the Voronoi diagram of the samples, so each point of the lake goes to the closest neighbour;
+3. intersect the cells with the gap and attach each piece to its neighbour.
+
+This happens first at the delegation level (inside each governorate), then at the sector level (inside each delegation).
+The largest allocations are listed in the [accuracy report](accuracy.md#inland-water-allocated-to-delegations).
+
+## 6. Delegations created after 2014
+
+OSM (like the OCHA and geoBoundaries datasets) still follows the INS 2014 nomenclature of 264 delegations. Tunisia has
+**279** today (RGPH 2024). New delegations are formed by regrouping existing imadas, so we **rebuild them from OSM
+sectors**. Their composition comes from the official electoral authority (**ISIE**): its 2023 local-election and 2025
+administrative circonscription lists name every imada of every delegation. Creation decrees (2015-240, 2016-1103,
+2020-367…) and population checks confirm them. Each one is recorded in
+[`corrections.json`](../scripts/extract/corrections.json) with its sources.
+
+The result matches the INS 2024 nomenclature exactly. Every INS delegation code appears once, and delegation populations
+add up to governorate totals.
+
+## 7. Attributes
+
+- **Names.** Arabic and French from OSM (`name:ar`, `name:fr`) with prefixes removed (`معتمدية`, `Délégation`…), invisible
+  direction marks stripped, and Persian look-alike letters (`ی`, `ک`) normalised to Arabic. English uses `name:en` when it
+  exists, otherwise the French spelling, as is customary for Tunisian place names. Governorate, region and district names
+  are curated by hand.
+- **Codes.** ISO 3166-2 (governorates), INS codes (governorates, delegations, sectors), HASC (delegations), Wikidata.
+- **Population.** INS census figures (RGPH 2014 and 2024) on the 2024 delegation nomenclature, aggregated for governorates,
+  regions, districts and the country.
+- **Groupings.** Regions follow the INS economic regions (they match the ISO 3166-2 numbering: `TN-1x` Grand Tunis,
+  `TN-2x` Nord-Est …). Districts follow Decree 2023-589.
+
+## 8. From source data to maps
+
+For each partition, [mapshaper](https://github.com/mbloch/mapshaper):
+
+1. **dissolves** the sector master layer on the partition key (exact, because the faces share edges);
+2. **re-imports** the result, so only the nodes where units of *this* partition meet stay fixed;
+3. **projects** to UTM zone 32N;
+4. derives the higher-level borders (for `nested`) and the country outline *before* simplifying, so they share one topology
+   with the fills;
+5. **simplifies** each level of detail with Visvalingam weighting at the given tolerance, with `keep-shapes` so no unit disappears.
+
+Then the Node build:
+
+- drops secondary islets below each level's threshold (never a unit's main part);
+- computes **ellipsoidal areas** by integrating the UTM scale factor with Green's theorem (exactly additive across levels);
+- colours the units with a greedy graph colouring on shared borders (8 colours, zero conflicts);
+- places labels at the **pole of inaccessibility** ([polylabel](https://github.com/mapbox/polylabel)), sized to fit, with
+  collision avoidance and sea callouts;
+- writes compact, semantic SVG: relative path commands, minimal decimals, `id` and `data-*` attributes, `<title>` tooltips,
+  accessible `role`/`aria` metadata;
+- writes GeoJSON and TopoJSON by inverting the projection, so they match the SVGs exactly.
+
+## 9. Validation
+
+`npm test` checks, among other things:
+
+- counts (24 / 279 / 2,083) and the exact match with the INS 2024 delegation list;
+- unique, well-formed identifiers;
+- names in the right script, with no stray direction marks;
+- hierarchy consistency, the regions grouping and the 2023 districts decree;
+- areas adding up exactly across levels, and land area within 0.5 % of the CIA World Factbook figure;
+- populations adding up to the national census totals;
+- every SVG of the matrix exists, is valid XML, shares the frame, credits OSM and the author, has one path and one label per
+  unit, contains no scripts or external references, and fits its size budget;
+- the projection helper matches PROJ to 1 mm.
+
+CI also rebuilds everything and fails if the committed files are out of date.

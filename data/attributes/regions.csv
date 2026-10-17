@@ -1,0 +1,8 @@
+id,code,name_en,name_fr,name_ar,governorates
+grand-tunis,GT,Greater Tunis,Grand Tunis,تونس الكبرى,TN-11 TN-12 TN-13 TN-14
+nord-est,NE,North East,Nord-Est,الشمال الشرقي,TN-21 TN-22 TN-23
+nord-ouest,NO,North West,Nord-Ouest,الشمال الغربي,TN-31 TN-32 TN-33 TN-34
+centre-est,CE,Centre East,Centre-Est,الوسط الشرقي,TN-51 TN-52 TN-53 TN-61
+centre-ouest,CO,Centre West,Centre-Ouest,الوسط الغربي,TN-41 TN-42 TN-43
+sud-est,SE,South East,Sud-Est,الجنوب الشرقي,TN-81 TN-82 TN-83
+sud-ouest,SO,South West,Sud-Ouest,الجنوب الغربي,TN-71 TN-72 TN-73

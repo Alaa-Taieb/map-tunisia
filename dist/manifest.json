@@ -1,0 +1,1850 @@
+{
+ "name": "Map Tunisia",
+ "version": "1.0.0",
+ "osm_date": "2026-10-16",
+ "crs": "EPSG:32632",
+ "frame": {
+  "x0": 351,
+  "y0": 4170,
+  "width": 406,
+  "height": 838
+ },
+ "partitions": [
+  {
+   "id": "country",
+   "title": "Tunisia",
+   "count": 1,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/country/tunisia-country-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/country/tunisia-country-high-plain.svg",
+      "svg/country/tunisia-country-high-outline.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/country/tunisia-country-medium-plain.svg",
+      "svg/country/tunisia-country-medium-outline.svg",
+      "svg/country/tunisia-country-medium-light.svg",
+      "svg/country/tunisia-country-medium-dark.svg",
+      "svg/country/tunisia-country-medium-labeled.svg",
+      "svg/country/tunisia-country-medium-labeled-ar.svg",
+      "svg/country/tunisia-country-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/country/tunisia-country-low-plain.svg",
+      "svg/country/tunisia-country-low-outline.svg",
+      "svg/country/tunisia-country-low-light.svg",
+      "svg/country/tunisia-country-low-dark.svg",
+      "svg/country/tunisia-country-low-labeled.svg",
+      "svg/country/tunisia-country-low-labeled-ar.svg",
+      "svg/country/tunisia-country-low-interactive.svg"
+     ]
+    },
+    {
+     "id": "tiny",
+     "files": [
+      "svg/country/tunisia-country-tiny-plain.svg",
+      "svg/country/tunisia-country-tiny-outline.svg",
+      "svg/country/tunisia-country-tiny-light.svg",
+      "svg/country/tunisia-country-tiny-dark.svg",
+      "svg/country/tunisia-country-tiny-labeled.svg",
+      "svg/country/tunisia-country-tiny-labeled-ar.svg",
+      "svg/country/tunisia-country-tiny-interactive.svg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "regions",
+   "title": "Economic regions",
+   "count": 7,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/regions/tunisia-regions-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/regions/tunisia-regions-high-plain.svg",
+      "svg/regions/tunisia-regions-high-outline.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/regions/tunisia-regions-medium-plain.svg",
+      "svg/regions/tunisia-regions-medium-outline.svg",
+      "svg/regions/tunisia-regions-medium-light.svg",
+      "svg/regions/tunisia-regions-medium-dark.svg",
+      "svg/regions/tunisia-regions-medium-labeled.svg",
+      "svg/regions/tunisia-regions-medium-labeled-ar.svg",
+      "svg/regions/tunisia-regions-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/regions/tunisia-regions-low-plain.svg",
+      "svg/regions/tunisia-regions-low-outline.svg",
+      "svg/regions/tunisia-regions-low-light.svg",
+      "svg/regions/tunisia-regions-low-dark.svg",
+      "svg/regions/tunisia-regions-low-labeled.svg",
+      "svg/regions/tunisia-regions-low-labeled-ar.svg",
+      "svg/regions/tunisia-regions-low-interactive.svg"
+     ]
+    },
+    {
+     "id": "tiny",
+     "files": [
+      "svg/regions/tunisia-regions-tiny-plain.svg",
+      "svg/regions/tunisia-regions-tiny-outline.svg",
+      "svg/regions/tunisia-regions-tiny-light.svg",
+      "svg/regions/tunisia-regions-tiny-dark.svg",
+      "svg/regions/tunisia-regions-tiny-labeled.svg",
+      "svg/regions/tunisia-regions-tiny-labeled-ar.svg",
+      "svg/regions/tunisia-regions-tiny-interactive.svg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "districts",
+   "title": "Districts (2023)",
+   "count": 5,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/districts/tunisia-districts-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/districts/tunisia-districts-high-plain.svg",
+      "svg/districts/tunisia-districts-high-outline.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/districts/tunisia-districts-medium-plain.svg",
+      "svg/districts/tunisia-districts-medium-outline.svg",
+      "svg/districts/tunisia-districts-medium-light.svg",
+      "svg/districts/tunisia-districts-medium-dark.svg",
+      "svg/districts/tunisia-districts-medium-labeled.svg",
+      "svg/districts/tunisia-districts-medium-labeled-ar.svg",
+      "svg/districts/tunisia-districts-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/districts/tunisia-districts-low-plain.svg",
+      "svg/districts/tunisia-districts-low-outline.svg",
+      "svg/districts/tunisia-districts-low-light.svg",
+      "svg/districts/tunisia-districts-low-dark.svg",
+      "svg/districts/tunisia-districts-low-labeled.svg",
+      "svg/districts/tunisia-districts-low-labeled-ar.svg",
+      "svg/districts/tunisia-districts-low-interactive.svg"
+     ]
+    },
+    {
+     "id": "tiny",
+     "files": [
+      "svg/districts/tunisia-districts-tiny-plain.svg",
+      "svg/districts/tunisia-districts-tiny-outline.svg",
+      "svg/districts/tunisia-districts-tiny-light.svg",
+      "svg/districts/tunisia-districts-tiny-dark.svg",
+      "svg/districts/tunisia-districts-tiny-labeled.svg",
+      "svg/districts/tunisia-districts-tiny-labeled-ar.svg",
+      "svg/districts/tunisia-districts-tiny-interactive.svg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "governorates",
+   "title": "Governorates",
+   "count": 24,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/governorates/tunisia-governorates-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/governorates/tunisia-governorates-high-plain.svg",
+      "svg/governorates/tunisia-governorates-high-outline.svg",
+      "svg/governorates/tunisia-governorates-high-nested.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/governorates/tunisia-governorates-medium-plain.svg",
+      "svg/governorates/tunisia-governorates-medium-outline.svg",
+      "svg/governorates/tunisia-governorates-medium-light.svg",
+      "svg/governorates/tunisia-governorates-medium-dark.svg",
+      "svg/governorates/tunisia-governorates-medium-labeled.svg",
+      "svg/governorates/tunisia-governorates-medium-labeled-ar.svg",
+      "svg/governorates/tunisia-governorates-medium-nested.svg",
+      "svg/governorates/tunisia-governorates-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/governorates/tunisia-governorates-low-plain.svg",
+      "svg/governorates/tunisia-governorates-low-outline.svg",
+      "svg/governorates/tunisia-governorates-low-light.svg",
+      "svg/governorates/tunisia-governorates-low-dark.svg",
+      "svg/governorates/tunisia-governorates-low-labeled.svg",
+      "svg/governorates/tunisia-governorates-low-labeled-ar.svg",
+      "svg/governorates/tunisia-governorates-low-nested.svg",
+      "svg/governorates/tunisia-governorates-low-interactive.svg"
+     ]
+    },
+    {
+     "id": "tiny",
+     "files": [
+      "svg/governorates/tunisia-governorates-tiny-plain.svg",
+      "svg/governorates/tunisia-governorates-tiny-outline.svg",
+      "svg/governorates/tunisia-governorates-tiny-light.svg",
+      "svg/governorates/tunisia-governorates-tiny-dark.svg",
+      "svg/governorates/tunisia-governorates-tiny-labeled.svg",
+      "svg/governorates/tunisia-governorates-tiny-labeled-ar.svg",
+      "svg/governorates/tunisia-governorates-tiny-nested.svg",
+      "svg/governorates/tunisia-governorates-tiny-interactive.svg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "delegations",
+   "title": "Delegations",
+   "count": 279,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/delegations/tunisia-delegations-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/delegations/tunisia-delegations-high-plain.svg",
+      "svg/delegations/tunisia-delegations-high-outline.svg",
+      "svg/delegations/tunisia-delegations-high-nested.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/delegations/tunisia-delegations-medium-plain.svg",
+      "svg/delegations/tunisia-delegations-medium-outline.svg",
+      "svg/delegations/tunisia-delegations-medium-light.svg",
+      "svg/delegations/tunisia-delegations-medium-dark.svg",
+      "svg/delegations/tunisia-delegations-medium-labeled.svg",
+      "svg/delegations/tunisia-delegations-medium-labeled-ar.svg",
+      "svg/delegations/tunisia-delegations-medium-nested.svg",
+      "svg/delegations/tunisia-delegations-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/delegations/tunisia-delegations-low-plain.svg",
+      "svg/delegations/tunisia-delegations-low-outline.svg",
+      "svg/delegations/tunisia-delegations-low-light.svg",
+      "svg/delegations/tunisia-delegations-low-dark.svg",
+      "svg/delegations/tunisia-delegations-low-labeled.svg",
+      "svg/delegations/tunisia-delegations-low-labeled-ar.svg",
+      "svg/delegations/tunisia-delegations-low-nested.svg",
+      "svg/delegations/tunisia-delegations-low-interactive.svg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sectors",
+   "title": "Sectors (imadas)",
+   "count": 2083,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/sectors/tunisia-sectors-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/sectors/tunisia-sectors-high-plain.svg",
+      "svg/sectors/tunisia-sectors-high-outline.svg",
+      "svg/sectors/tunisia-sectors-high-nested.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/sectors/tunisia-sectors-medium-plain.svg",
+      "svg/sectors/tunisia-sectors-medium-outline.svg",
+      "svg/sectors/tunisia-sectors-medium-light.svg",
+      "svg/sectors/tunisia-sectors-medium-dark.svg",
+      "svg/sectors/tunisia-sectors-medium-labeled.svg",
+      "svg/sectors/tunisia-sectors-medium-labeled-ar.svg",
+      "svg/sectors/tunisia-sectors-medium-nested.svg",
+      "svg/sectors/tunisia-sectors-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/sectors/tunisia-sectors-low-plain.svg",
+      "svg/sectors/tunisia-sectors-low-outline.svg",
+      "svg/sectors/tunisia-sectors-low-light.svg",
+      "svg/sectors/tunisia-sectors-low-dark.svg",
+      "svg/sectors/tunisia-sectors-low-labeled.svg",
+      "svg/sectors/tunisia-sectors-low-labeled-ar.svg",
+      "svg/sectors/tunisia-sectors-low-nested.svg",
+      "svg/sectors/tunisia-sectors-low-interactive.svg"
+     ]
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "path": "dist/svg/country/tunisia-country-full-plain.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 917104
+  },
+  {
+   "path": "dist/geojson/tunisia-country-full.geojson",
+   "type": "geojson",
+   "partition": "country",
+   "lod": "full",
+   "bytes": 2232008
+  },
+  {
+   "path": "dist/topojson/tunisia-country-full.topojson",
+   "type": "topojson",
+   "partition": "country",
+   "lod": "full",
+   "bytes": 805403
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-high-plain.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 163913
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-high-outline.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 325875
+  },
+  {
+   "path": "dist/geojson/tunisia-country-high.geojson",
+   "type": "geojson",
+   "partition": "country",
+   "lod": "high",
+   "bytes": 449373
+  },
+  {
+   "path": "dist/topojson/tunisia-country-high.topojson",
+   "type": "topojson",
+   "partition": "country",
+   "lod": "high",
+   "bytes": 170537
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-medium-plain.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 38560
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-medium-outline.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 75161
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-medium-light.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 38686
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-medium-dark.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 38758
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-medium-labeled.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 39014
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 39106
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-medium-interactive.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 38842
+  },
+  {
+   "path": "dist/geojson/tunisia-country-medium.geojson",
+   "type": "geojson",
+   "partition": "country",
+   "lod": "medium",
+   "bytes": 90042
+  },
+  {
+   "path": "dist/topojson/tunisia-country-medium.topojson",
+   "type": "topojson",
+   "partition": "country",
+   "lod": "medium",
+   "bytes": 43421
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-low-plain.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 8899
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-low-outline.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 15851
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-low-light.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 9025
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-low-dark.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 9097
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-low-labeled.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 9353
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 9445
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-low-interactive.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 9181
+  },
+  {
+   "path": "dist/geojson/tunisia-country-low.geojson",
+   "type": "geojson",
+   "partition": "country",
+   "lod": "low",
+   "bytes": 19308
+  },
+  {
+   "path": "dist/topojson/tunisia-country-low.topojson",
+   "type": "topojson",
+   "partition": "country",
+   "lod": "low",
+   "bytes": 10855
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-tiny-plain.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "tiny",
+   "mode": "plain",
+   "bytes": 3808
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-tiny-outline.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "tiny",
+   "mode": "outline",
+   "bytes": 5665
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-tiny-light.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "tiny",
+   "mode": "light",
+   "bytes": 3934
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-tiny-dark.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "tiny",
+   "mode": "dark",
+   "bytes": 4006
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-tiny-labeled.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "tiny",
+   "mode": "labeled",
+   "bytes": 4262
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-tiny-labeled-ar.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "tiny",
+   "mode": "labeled-ar",
+   "bytes": 4354
+  },
+  {
+   "path": "dist/svg/country/tunisia-country-tiny-interactive.svg",
+   "type": "svg",
+   "partition": "country",
+   "lod": "tiny",
+   "mode": "interactive",
+   "bytes": 4090
+  },
+  {
+   "path": "dist/geojson/tunisia-country-tiny.geojson",
+   "type": "geojson",
+   "partition": "country",
+   "lod": "tiny",
+   "bytes": 4523
+  },
+  {
+   "path": "dist/topojson/tunisia-country-tiny.topojson",
+   "type": "topojson",
+   "partition": "country",
+   "lod": "tiny",
+   "bytes": 2981
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-full-plain.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 1091209
+  },
+  {
+   "path": "dist/geojson/tunisia-regions-full.geojson",
+   "type": "geojson",
+   "partition": "regions",
+   "lod": "full",
+   "bytes": 2634466
+  },
+  {
+   "path": "dist/topojson/tunisia-regions-full.topojson",
+   "type": "topojson",
+   "partition": "regions",
+   "lod": "full",
+   "bytes": 894626
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-high-plain.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 275230
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-high-outline.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 437190
+  },
+  {
+   "path": "dist/geojson/tunisia-regions-high.geojson",
+   "type": "geojson",
+   "partition": "regions",
+   "lod": "high",
+   "bytes": 744780
+  },
+  {
+   "path": "dist/topojson/tunisia-regions-high.topojson",
+   "type": "topojson",
+   "partition": "regions",
+   "lod": "high",
+   "bytes": 230681
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-medium-plain.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 85893
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-medium-outline.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 122491
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-medium-light.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 86037
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-medium-dark.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 86109
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-medium-labeled.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 87060
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 87251
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-medium-interactive.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 86193
+  },
+  {
+   "path": "dist/geojson/tunisia-regions-medium.geojson",
+   "type": "geojson",
+   "partition": "regions",
+   "lod": "medium",
+   "bytes": 200676
+  },
+  {
+   "path": "dist/topojson/tunisia-regions-medium.topojson",
+   "type": "topojson",
+   "partition": "regions",
+   "lod": "medium",
+   "bytes": 71754
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-low-plain.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 21571
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-low-outline.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 28526
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-low-light.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 21715
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-low-dark.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 21787
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-low-labeled.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 22738
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 22929
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-low-interactive.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 21871
+  },
+  {
+   "path": "dist/geojson/tunisia-regions-low.geojson",
+   "type": "geojson",
+   "partition": "regions",
+   "lod": "low",
+   "bytes": 50133
+  },
+  {
+   "path": "dist/topojson/tunisia-regions-low.topojson",
+   "type": "topojson",
+   "partition": "regions",
+   "lod": "low",
+   "bytes": 20997
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-tiny-plain.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "tiny",
+   "mode": "plain",
+   "bytes": 8413
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-tiny-outline.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "tiny",
+   "mode": "outline",
+   "bytes": 10310
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-tiny-light.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "tiny",
+   "mode": "light",
+   "bytes": 8557
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-tiny-dark.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "tiny",
+   "mode": "dark",
+   "bytes": 8629
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-tiny-labeled.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "tiny",
+   "mode": "labeled",
+   "bytes": 9580
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-tiny-labeled-ar.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "tiny",
+   "mode": "labeled-ar",
+   "bytes": 9771
+  },
+  {
+   "path": "dist/svg/regions/tunisia-regions-tiny-interactive.svg",
+   "type": "svg",
+   "partition": "regions",
+   "lod": "tiny",
+   "mode": "interactive",
+   "bytes": 8713
+  },
+  {
+   "path": "dist/geojson/tunisia-regions-tiny.geojson",
+   "type": "geojson",
+   "partition": "regions",
+   "lod": "tiny",
+   "bytes": 12715
+  },
+  {
+   "path": "dist/topojson/tunisia-regions-tiny.topojson",
+   "type": "topojson",
+   "partition": "regions",
+   "lod": "tiny",
+   "bytes": 7173
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-full-plain.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 1082453
+  },
+  {
+   "path": "dist/geojson/tunisia-districts-full.geojson",
+   "type": "geojson",
+   "partition": "districts",
+   "lod": "full",
+   "bytes": 2609274
+  },
+  {
+   "path": "dist/topojson/tunisia-districts-full.topojson",
+   "type": "topojson",
+   "partition": "districts",
+   "lod": "full",
+   "bytes": 892698
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-high-plain.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 260810
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-high-outline.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 422773
+  },
+  {
+   "path": "dist/geojson/tunisia-districts-high.geojson",
+   "type": "geojson",
+   "partition": "districts",
+   "lod": "high",
+   "bytes": 705852
+  },
+  {
+   "path": "dist/topojson/tunisia-districts-high.topojson",
+   "type": "topojson",
+   "partition": "districts",
+   "lod": "high",
+   "bytes": 225784
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-medium-plain.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 76542
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-medium-outline.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 113149
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-medium-light.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 76680
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-medium-dark.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 76752
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-medium-labeled.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 77407
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 77581
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-medium-interactive.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 76836
+  },
+  {
+   "path": "dist/geojson/tunisia-districts-medium.geojson",
+   "type": "geojson",
+   "partition": "districts",
+   "lod": "medium",
+   "bytes": 178968
+  },
+  {
+   "path": "dist/topojson/tunisia-districts-medium.topojson",
+   "type": "topojson",
+   "partition": "districts",
+   "lod": "medium",
+   "bytes": 67408
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-low-plain.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 18488
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-low-outline.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 25454
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-low-light.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 18626
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-low-dark.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 18698
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-low-labeled.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 19353
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 19527
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-low-interactive.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 18782
+  },
+  {
+   "path": "dist/geojson/tunisia-districts-low.geojson",
+   "type": "geojson",
+   "partition": "districts",
+   "lod": "low",
+   "bytes": 42575
+  },
+  {
+   "path": "dist/topojson/tunisia-districts-low.topojson",
+   "type": "topojson",
+   "partition": "districts",
+   "lod": "low",
+   "bytes": 18803
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-tiny-plain.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "tiny",
+   "mode": "plain",
+   "bytes": 7441
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-tiny-outline.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "tiny",
+   "mode": "outline",
+   "bytes": 9339
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-tiny-light.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "tiny",
+   "mode": "light",
+   "bytes": 7579
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-tiny-dark.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "tiny",
+   "mode": "dark",
+   "bytes": 7651
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-tiny-labeled.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "tiny",
+   "mode": "labeled",
+   "bytes": 8306
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-tiny-labeled-ar.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "tiny",
+   "mode": "labeled-ar",
+   "bytes": 8480
+  },
+  {
+   "path": "dist/svg/districts/tunisia-districts-tiny-interactive.svg",
+   "type": "svg",
+   "partition": "districts",
+   "lod": "tiny",
+   "mode": "interactive",
+   "bytes": 7735
+  },
+  {
+   "path": "dist/geojson/tunisia-districts-tiny.geojson",
+   "type": "geojson",
+   "partition": "districts",
+   "lod": "tiny",
+   "bytes": 10705
+  },
+  {
+   "path": "dist/topojson/tunisia-districts-tiny.topojson",
+   "type": "topojson",
+   "partition": "districts",
+   "lod": "tiny",
+   "bytes": 6138
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-full-plain.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 1299707
+  },
+  {
+   "path": "dist/geojson/tunisia-governorates-full.geojson",
+   "type": "geojson",
+   "partition": "governorates",
+   "lod": "full",
+   "bytes": 3109731
+  },
+  {
+   "path": "dist/topojson/tunisia-governorates-full.topojson",
+   "type": "topojson",
+   "partition": "governorates",
+   "lod": "full",
+   "bytes": 1011016
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-high-plain.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 394561
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-high-outline.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 556553
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-high-nested.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "high",
+   "mode": "nested",
+   "bytes": 611976
+  },
+  {
+   "path": "dist/geojson/tunisia-governorates-high.geojson",
+   "type": "geojson",
+   "partition": "governorates",
+   "lod": "high",
+   "bytes": 1058686
+  },
+  {
+   "path": "dist/topojson/tunisia-governorates-high.topojson",
+   "type": "topojson",
+   "partition": "governorates",
+   "lod": "high",
+   "bytes": 304692
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-plain.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 135016
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-outline.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 171716
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-light.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 135211
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-dark.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 135283
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-labeled.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 138025
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 137989
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-nested.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "nested",
+   "bytes": 195146
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-medium-interactive.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 135367
+  },
+  {
+   "path": "dist/geojson/tunisia-governorates-medium.geojson",
+   "type": "geojson",
+   "partition": "governorates",
+   "lod": "medium",
+   "bytes": 312987
+  },
+  {
+   "path": "dist/topojson/tunisia-governorates-medium.topojson",
+   "type": "topojson",
+   "partition": "governorates",
+   "lod": "medium",
+   "bytes": 107146
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-plain.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 37058
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-outline.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 44048
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-light.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 37253
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-dark.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 37325
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-labeled.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 40067
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 40031
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-nested.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "nested",
+   "bytes": 50131
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-low-interactive.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 37409
+  },
+  {
+   "path": "dist/geojson/tunisia-governorates-low.geojson",
+   "type": "geojson",
+   "partition": "governorates",
+   "lod": "low",
+   "bytes": 83810
+  },
+  {
+   "path": "dist/topojson/tunisia-governorates-low.topojson",
+   "type": "topojson",
+   "partition": "governorates",
+   "lod": "low",
+   "bytes": 36730
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-plain.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "plain",
+   "bytes": 16938
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-outline.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "outline",
+   "bytes": 18851
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-light.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "light",
+   "bytes": 17133
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-dark.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "dark",
+   "bytes": 17205
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-labeled.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "labeled",
+   "bytes": 19947
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-labeled-ar.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "labeled-ar",
+   "bytes": 19911
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-nested.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "nested",
+   "bytes": 20881
+  },
+  {
+   "path": "dist/svg/governorates/tunisia-governorates-tiny-interactive.svg",
+   "type": "svg",
+   "partition": "governorates",
+   "lod": "tiny",
+   "mode": "interactive",
+   "bytes": 17289
+  },
+  {
+   "path": "dist/geojson/tunisia-governorates-tiny.geojson",
+   "type": "geojson",
+   "partition": "governorates",
+   "lod": "tiny",
+   "bytes": 26171
+  },
+  {
+   "path": "dist/topojson/tunisia-governorates-tiny.topojson",
+   "type": "topojson",
+   "partition": "governorates",
+   "lod": "tiny",
+   "bytes": 17094
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-full-plain.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 2942667
+  },
+  {
+   "path": "dist/geojson/tunisia-delegations-full.geojson",
+   "type": "geojson",
+   "partition": "delegations",
+   "lod": "full",
+   "bytes": 6661001
+  },
+  {
+   "path": "dist/topojson/tunisia-delegations-full.topojson",
+   "type": "topojson",
+   "partition": "delegations",
+   "lod": "full",
+   "bytes": 1884167
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-high-plain.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 1086969
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-high-outline.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 1249168
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-high-nested.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "high",
+   "mode": "nested",
+   "bytes": 1363612
+  },
+  {
+   "path": "dist/geojson/tunisia-delegations-high.geojson",
+   "type": "geojson",
+   "partition": "delegations",
+   "lod": "high",
+   "bytes": 2761321
+  },
+  {
+   "path": "dist/topojson/tunisia-delegations-high.topojson",
+   "type": "topojson",
+   "partition": "delegations",
+   "lod": "high",
+   "bytes": 759706
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-plain.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 455564
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-outline.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 492503
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-light.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 456524
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-dark.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 456596
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-labeled.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 484856
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 486784
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-nested.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "nested",
+   "bytes": 539813
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-medium-interactive.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 456680
+  },
+  {
+   "path": "dist/geojson/tunisia-delegations-medium.geojson",
+   "type": "geojson",
+   "partition": "delegations",
+   "lod": "medium",
+   "bytes": 969990
+  },
+  {
+   "path": "dist/topojson/tunisia-delegations-medium.topojson",
+   "type": "topojson",
+   "partition": "delegations",
+   "lod": "medium",
+   "bytes": 371870
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-plain.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 190018
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-outline.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 197117
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-light.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 190978
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-dark.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 191050
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-labeled.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 219310
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 221238
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-nested.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "nested",
+   "bytes": 210298
+  },
+  {
+   "path": "dist/svg/delegations/tunisia-delegations-low-interactive.svg",
+   "type": "svg",
+   "partition": "delegations",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 191134
+  },
+  {
+   "path": "dist/geojson/tunisia-delegations-low.geojson",
+   "type": "geojson",
+   "partition": "delegations",
+   "lod": "low",
+   "bytes": 353300
+  },
+  {
+   "path": "dist/topojson/tunisia-delegations-low.topojson",
+   "type": "topojson",
+   "partition": "delegations",
+   "lod": "low",
+   "bytes": 211746
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-full-plain.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 7012076
+  },
+  {
+   "path": "dist/geojson/tunisia-sectors-full.geojson",
+   "type": "geojson",
+   "partition": "sectors",
+   "lod": "full",
+   "bytes": 14988590
+  },
+  {
+   "path": "dist/topojson/tunisia-sectors-full.topojson",
+   "type": "topojson",
+   "partition": "sectors",
+   "lod": "full",
+   "bytes": 4308523
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-high-plain.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 3051717
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-high-outline.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 3214406
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-high-nested.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "high",
+   "mode": "nested",
+   "bytes": 3778067
+  },
+  {
+   "path": "dist/geojson/tunisia-sectors-high.geojson",
+   "type": "geojson",
+   "partition": "sectors",
+   "lod": "high",
+   "bytes": 7035392
+  },
+  {
+   "path": "dist/topojson/tunisia-sectors-high.topojson",
+   "type": "topojson",
+   "partition": "sectors",
+   "lod": "high",
+   "bytes": 2251678
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-plain.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 1566062
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-outline.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 1603364
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-light.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 1572434
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-dark.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 1572506
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-labeled.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 1779545
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 1794711
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-nested.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "nested",
+   "bytes": 1847808
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-medium-interactive.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 1572590
+  },
+  {
+   "path": "dist/geojson/tunisia-sectors-medium.geojson",
+   "type": "geojson",
+   "partition": "sectors",
+   "lod": "medium",
+   "bytes": 2845889
+  },
+  {
+   "path": "dist/topojson/tunisia-sectors-medium.topojson",
+   "type": "topojson",
+   "partition": "sectors",
+   "lod": "medium",
+   "bytes": 1425296
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-plain.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 933645
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-outline.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 941214
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-light.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 940017
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-dark.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 940089
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-labeled.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 1147128
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 1162294
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-nested.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "nested",
+   "bytes": 1032642
+  },
+  {
+   "path": "dist/svg/sectors/tunisia-sectors-low-interactive.svg",
+   "type": "svg",
+   "partition": "sectors",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 940173
+  },
+  {
+   "path": "dist/geojson/tunisia-sectors-low.geojson",
+   "type": "geojson",
+   "partition": "sectors",
+   "lod": "low",
+   "bytes": 1394734
+  },
+  {
+   "path": "dist/topojson/tunisia-sectors-low.topojson",
+   "type": "topojson",
+   "partition": "sectors",
+   "lod": "low",
+   "bytes": 1072840
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+id,ins_code,governorate,name_en,name_fr,name_ar,name_fr_ins,population_2014,population_2024,hasc,wikidata,osm_relation,source,region,district,area_km2,label_lon,label_lat,label_x,label_y
+delegation-1151,1151,TN-11,Carthage,Carthage,قرطاج,Carthage,24216,22203,TN.TU.CA,Q2940578,4135055,osm,grand-tunis,district-2,8.22,10.32690,36.85957,267.28,89.88
+delegation-1152,1152,TN-11,Médina,Médina,المدينة,Medina,21400,17376,TN.TU.MD,Q3332663,4133520,osm,grand-tunis,district-2,1.50,10.16924,36.79899,253.31,96.79
+delegation-1153,1153,TN-11,Bab Bhar,Bab Bhar,باب بحر,Bab El Bhar,36210,30322,TN.TU.BB,Q2877661,4133740,osm,grand-tunis,district-2,11.01,10.20017,36.79585,256.07,97.10
+delegation-1154,1154,TN-11,Bab Souika,Bab Souika,باب سويقة,Bab Souika,29185,25142,TN.TU.BS,Q2877693,4133433,osm,grand-tunis,district-2,2.18,10.15703,36.80426,252.21,96.22
+delegation-1155,1155,TN-11,El Omrane,El Omrane,العمران,El Omrane,42208,37678,TN.TU.OM,Q3050139,4133432,osm,grand-tunis,district-2,4.97,10.15572,36.82066,252.07,94.40
+delegation-1156,1156,TN-11,El Omrane Supérieur,El Omrane Supérieur,العمران الأعلى,El Omrane Supérieur,55513,57993,TN.TU.OS,Q3050140,4132537,osm,grand-tunis,district-2,3.25,10.12616,36.84028,249.41,92.25
+delegation-1157,1157,TN-11,Ettahrir,Ettahrir,التحرير,Ettahrir,21709,19679,TN.TU.TA,Q3059384,4130434,osm,grand-tunis,district-2,1.67,10.12878,36.82366,249.67,94.09
+delegation-1158,1158,TN-11,El Menzah,El Menzah,المنزه,El Menzah,41830,40738,TN.TU.MZ,Q3050069,4132591,osm,grand-tunis,district-2,10.02,10.14729,36.84168,251.29,92.08
+delegation-1159,1159,TN-11,Cité El Khadra,Cité El Khadra,حي الخضراء,Cité El Khadra,35173,30345,TN.TU.KH,Q2974652,4133739,osm,grand-tunis,district-2,36.65,10.22738,36.82771,258.46,93.54
+delegation-1160,1160,TN-11,Le Bardo,Le Bardo,باردو,Le Bardo,71961,68799,TN.TU.LB,Q3220302,4128393,osm,grand-tunis,district-2,6.77,10.13179,36.80965,249.95,95.65
+delegation-1161,1161,TN-11,Essijoumi,Essijoumi,السيجومي,Séjoumi,33870,28387,TN.TU.SI,Q3510596,4130348,osm,grand-tunis,district-2,6.26,10.15872,36.77642,252.40,99.30
+delegation-1162,1162,TN-11,Ezzouhour,Ezzouhour,الزهور,Ezzouhour,40728,35484,TN.TU.EZ,Q3062883,4130297,osm,grand-tunis,district-2,4.77,10.13806,36.79263,250.54,97.53
+delegation-1163,1163,TN-11,El Hrairia,El Hrairia,الحرائرية,El Hraïria,110184,118229,TN.TU.HA,Q3141711,4129675,osm,grand-tunis,district-2,24.12,10.03813,36.77997,241.64,99.03
+delegation-1164,1164,TN-11,Sidi Hassine,Sidi Hassine,سيدي حسين,Sidi Hassine,109672,129888,TN.TU.SH,Q3483236,4129684,osm,grand-tunis,district-2,75.51,10.10212,36.74660,247.39,102.67
+delegation-1165,1165,TN-11,El Ouardia,El Ouardia,الوردية,El Ouardia,32147,30143,TN.TU.OU,Q3050138,4133965,osm,grand-tunis,district-2,6.01,10.18308,36.76865,254.59,100.14
+delegation-1166,1166,TN-11,El Kabaria,El Kabaria,الكبارية,El Kabaria,86024,83856,TN.TU.KA,Q3049989,4134868,osm,grand-tunis,district-2,15.62,10.17957,36.74442,254.31,102.83
+delegation-1167,1167,TN-11,Sidi El Béchir,Sidi El Béchir,سيدي البشير,Sidi El Béchir,27749,25044,TN.TU.SB,Q3483223,4133966,osm,grand-tunis,district-2,2.71,10.17478,36.78168,253.83,98.70
+delegation-1168,1168,TN-11,Djebel Jelloud,Djebel Jelloud,جبل الجلود,Djebel Jelloud,23638,24183,TN.TU.JJ,Q3032829,4134869,osm,grand-tunis,district-2,5.26,10.20203,36.77105,256.27,99.85
+delegation-1169,1169,TN-11,La Goulette,La Goulette,حلق الوادي,La Goulette,45711,48382,TN.TU.LG,Q3209432,4134886,osm,grand-tunis,district-2,20.55,10.28287,36.82793,263.40,93.45
+delegation-1170,1170,TN-11,Le Kram,Le Kram,الكرم,Le Kram,74132,88302,TN.TU.KR,Q3223844,4135019,osm,grand-tunis,district-2,9.66,10.29444,36.85363,264.40,90.58
+delegation-1171,1171,TN-11,Al Marsa,La Marsa,المرسى,La Marsa,92987,113133,TN.TU.LM,Q3210585,4135056,osm,grand-tunis,district-2,30.61,10.30339,36.88208,265.15,87.42
+delegation-1251,1251,TN-12,Ariana Ville,Ariana Ville,أريانة المدينة,Ariana Ville,114486,109693,TN.AN.AR,Q2861166,7152802,osm,grand-tunis,district-2,18.56,10.16552,36.86549,252.89,89.41
+delegation-1252,1252,TN-12,Soukra,Soukra,سكرة,La Soukra,129693,159862,TN.AN.LS,Q3212913,4184709,osm,grand-tunis,district-2,50.92,10.24344,36.89633,259.79,85.91
+delegation-1253,1253,TN-12,Raoued,Raoued,رواد,Raoued,106414,141471,TN.AN.RA,Q3419097,7152800,osm,grand-tunis,district-2,71.86,10.16049,36.92258,252.36,83.09
+delegation-1254,1254,TN-12,Kalaat El Andalous,Kalaat El Andalous,قلعة الأندلس,Kalâat El Andalous,26796,32520,TN.AN.KA,Q3192289,7152799,osm,grand-tunis,district-2,189.23,10.13035,37.01266,249.56,73.13
+delegation-1255,1255,TN-12,Sidi Thabet,Sidi Thabet,سيدي ثابت,Sidi Thabet,24503,29546,TN.AN.ST,Q3483294,4184891,osm,grand-tunis,district-2,98.07,10.06502,36.90645,243.88,84.98
+delegation-1256,1256,TN-12,Cité Ettadhamen,Cité Ettadhamen,حي التضامن,Cité Ettadhamen,84312,79133,TN.AN.ET,Q3059378,4156579,osm,grand-tunis,district-2,3.40,10.10332,36.83681,247.38,92.66
+delegation-1257,1257,TN-12,Mnihla,Mnihla,منيهلة,Mnihla,89884,116327,TN.AN.MN,Q3317508,4184671,osm,grand-tunis,district-2,23.08,10.11417,36.86407,248.31,89.63
+delegation-1351,1351,TN-13,Ben Arous,Ben Arous,بن عروس,Ben Arous,31128,29170,TN.BA.BA,Q2895318,7174548,osm,grand-tunis,district-2,6.47,10.22875,36.75302,258.68,101.82
+delegation-1352,1352,TN-13,La Nouvelle Médina,La Nouvelle Médina,المدينة الجديدة,Medina Jedida,57194,60401,TN.BA.NM,Q3304031,7174546,osm,grand-tunis,district-2,8.08,10.24312,36.73731,259.99,103.55
+delegation-1353,1353,TN-13,El Mourouj,El Mourouj,المروج,El Mourouj,104538,121712,TN.BA.MJ,Q3050108,7174547,osm,grand-tunis,district-2,16.04,10.21866,36.71651,257.83,105.88
+delegation-1354,1354,TN-13,Hammam Lif,Hammam Lif,حمام الأنف,Hammam Lif,42518,41738,TN.BA.HL,Q3126499,7174550,osm,grand-tunis,district-2,11.43,10.33516,36.71955,268.24,105.41
+delegation-1355,1355,TN-13,Hammam Chott,Hammam Chott,حمام الشط,Hammam Chott,31858,34341,TN.BA.HC,Q3126491,7174551,osm,grand-tunis,district-2,26.33,10.38013,36.70230,272.28,107.26
+delegation-1356,1356,TN-13,Bou Mhel El Bassatine,Bou Mhel El Bassatine,بومهل البساتين,Bou Mhel El Bassatine,40101,50817,TN.BA.BE,Q2911892,7174549,osm,grand-tunis,district-2,20.17,10.29859,36.72088,264.97,105.31
+delegation-1357,1357,TN-13,Ezzahra,Ezzahra,الزهراء,Ezzahra,34962,35241,TN.BA.EZ,Q3062865,7174544,osm,grand-tunis,district-2,7.09,10.29986,36.74681,265.04,102.43
+delegation-1358,1358,TN-13,Radès,Radès,رادس,Radès,59998,63042,TN.BA.RA,Q3417180,7174552,osm,grand-tunis,district-2,23.65,10.27823,36.76533,263.08,100.40
+delegation-1359,1359,TN-13,Megrine,Megrine,مقرين,Mégrine,26720,25863,TN.BA.ME,Q3332815,7174555,osm,grand-tunis,district-2,17.83,10.23600,36.78167,259.29,98.63
+delegation-1360,1360,TN-13,Mohamedia,Mohamedia,المحمدية,Mohamedia,66439,84465,TN.BA.MH,Q3318908,7174545,osm,grand-tunis,district-2,97.36,10.09055,36.63039,246.50,115.57
+delegation-1361,1361,TN-13,Fouchana,Fouchana,فوشانة,Fouchana,74868,100868,TN.BA.FO,Q3079818,7174553,osm,grand-tunis,district-2,38.74,10.17731,36.70127,254.16,107.62
+delegation-1362,1362,TN-13,Mornag,Mornag,مرناق,Mornag,61518,75170,TN.BA.MR,Q3324184,7174554,osm,grand-tunis,district-2,400.39,10.24263,36.58356,260.17,120.60
+delegation-1451,1451,TN-14,Manouba,Manouba,منوبة,Manouba,58792,62945,TN.MN.MA,Q3210512,7204561,osm,grand-tunis,district-2,12.02,10.08348,36.80902,245.65,95.77
+delegation-1452,1452,TN-14,Douar Hicher,Douar Hicher,دوار هيشر,Douar Hicher,84090,88335,TN.MN.DH,Q3037406,7204580,osm,grand-tunis,district-2,9.05,10.08086,36.83204,245.38,93.21
+delegation-1453,1453,TN-14,Oued Ellil,Oued Ellil,وادي الليل,Oued Ellil,69317,81040,TN.MN.OE,Q3358013,7204582,osm,grand-tunis,district-2,57.15,10.01392,36.82379,239.42,94.19
+delegation-1454,1454,TN-14,Mornaguia,Mornaguia,المرناقية,Mornaguia,42687,44764,TN.MN.MO,Q3324188,7204611,osm,grand-tunis,district-2,261.42,9.98334,36.70614,236.83,107.27
+delegation-1455,1455,TN-14,Borj El Amri,Borj El Amri,برج العامري,Borj El Amri,17408,21465,TN.MN.BA,Q2911078,7204609,osm,grand-tunis,district-2,173.89,9.86117,36.65659,225.97,112.88
+delegation-1456,1456,TN-14,Djedaïda,Djedaïda,الجديدة,Djedeida,44748,52713,TN.MN.JE,Q3032857,7204596,osm,grand-tunis,district-2,182.14,9.92660,36.87496,231.58,88.60
+delegation-1457,1457,TN-14,Tebourba,Tebourba,طبربة,Tebourba,43499,46074,TN.MN.TE,Q3516789,7204598,osm,grand-tunis,district-2,286.65,9.80983,36.86979,221.18,89.27
+delegation-1458,1458,TN-14,El Battane,El Battane,البطان,El Batan,18977,21018,TN.MN.BT,Q3049732,7204605,osm,grand-tunis,district-2,156.42,9.76036,36.77640,216.85,99.66
+delegation-1551,1551,TN-21,Nabeul,Nabeul,نابل,Nabeul,73128,72776,TN.NB.NA,Q3334676,7145301,osm,nord-est,district-2,73.89,10.68614,36.47251,300.06,132.32
+delegation-1552,1552,TN-21,Dar Chaabane El Fehri,Dar Chaabane El Fehri,دار شعبان الفهري,Dar Châabane El Fehri,46781,51174,TN.NB.DC,Q3015928,7145300,osm,nord-est,district-2,68.77,10.71655,36.51095,302.71,128.01
+delegation-1553,1553,TN-21,Beni Khiar,Beni Khiar,بني خيار,Béni Khiar,43132,47521,TN.NB.BR,Q2929836,7145299,osm,nord-est,district-2,106.26,10.76607,36.54257,307.08,124.42
+delegation-1554,1554,TN-21,Korba,Korba,قربة,Korba,68966,74063,TN.NB.KO,Q3198904,7145298,osm,nord-est,district-2,206.35,10.80166,36.63739,310.07,113.84
+delegation-1555,1555,TN-21,Menzel Temime,Menzel Temime,منزل تميم,Menzel Temime,65645,72104,TN.NB.MT,Q3306147,7145297,osm,nord-est,district-2,263.11,10.93375,36.79437,321.53,96.19
+delegation-1556,1556,TN-21,El Mida,El Mida,الميدة,El Mida,26995,29179,TN.NB.MI,Q3050081,7145296,osm,nord-est,district-2,152.56,10.83687,36.72724,313.03,103.81
+delegation-1557,1557,TN-21,Kélibia,Kélibia,قليبية,Kélibia,58491,66919,TN.NB.KE,Q3201100,7145295,osm,nord-est,district-2,125.76,10.99702,36.91073,326.90,83.17
+delegation-1558,1558,TN-21,Hammam El Ghezaz,Hammam El Ghezaz,حمام الغزاز,Hammam Ghezèze,15727,17278,TN.NB.HG,Q3126497,7145294,osm,nord-est,district-2,94.56,11.06663,36.94888,333.02,78.80
+delegation-1559,1559,TN-21,El Haouaria,El Haouaria,الهوارية,El Haouaria,41317,46080,TN.NB.HR,Q3049941,7145302,osm,nord-est,district-2,314.03,10.85825,36.90956,314.54,83.55
+delegation-1560,1560,TN-21,Takelsa,Takelsa,تاكلسة,Takelsa,22151,24805,TN.NB.TA,Q3514296,7145293,osm,nord-est,district-2,278.40,10.67400,36.81253,298.32,94.62
+delegation-1561,1561,TN-21,Soliman,Soliman,سليمان,Soliman,53491,72220,TN.NB.SO,Q3489485,7145292,osm,nord-est,district-2,142.42,10.50398,36.70740,283.33,106.53
+delegation-1562,1562,TN-21,Menzel Bouzelfa,Menzel Bouzelfa,منزل بوزلفة,Menzel Bouzelfa,37860,39839,TN.NB.MB,Q3306140,7145839,osm,nord-est,district-2,133.77,10.73039,36.71037,303.55,105.86
+delegation-1563,1563,TN-21,Beni Khalled,Beni Khalled,بني خلاد,Béni Khalled,37964,41935,TN.NB.BD,Q2929834,7145838,osm,nord-est,district-2,114.44,10.60783,36.63125,292.75,114.83
+delegation-1564,1564,TN-21,Grombalia,Grombalia,قرمبالية,Grombalia,67475,75855,TN.NB.GR,Q3116918,7145837,osm,nord-est,district-2,302.73,10.45146,36.59827,278.83,118.71
+delegation-1565,1565,TN-21,Bou Argoub,Bou Argoub,بو عرقوب,Bou Argoub,30942,35243,TN.NB.BA,Q2911882,7145836,osm,nord-est,district-2,129.61,10.57623,36.53103,290.11,125.99
+delegation-1566,1566,TN-21,Hammamet,Hammamet,الحمامات,Hammamet,97855,96181,TN.NB.HM,Q3126509,7145835,osm,nord-est,district-2,325.44,10.45251,36.43234,279.20,137.12
+delegation-1651,1651,TN-22,Zaghouan,Zaghouan,زغوان,Zaghouan,38445,43813,TN.ZA.ZA,Q3574559,7167810,osm,nord-est,district-2,409.49,10.18777,36.44249,255.45,136.32
+delegation-1652,1652,TN-22,Zriba,Zriba,الزريبة,Zriba,24617,27849,TN.ZA.ZR,Q3576220,7167806,osm,nord-est,district-2,348.99,10.28448,36.30316,264.33,151.66
+delegation-1653,1653,TN-22,Bir Mcherga,Bir Mcherga,بئر مشارقة,Bir Mcherga,24387,27283,TN.ZA.BM,Q2904341,7167809,osm,nord-est,district-2,535.48,10.01495,36.54018,239.85,125.66
+delegation-1654,1654,TN-22,El Fahs,El Fahs,الفحص,El Fahs,46449,51214,TN.ZA.FA,Q3049846,7167807,osm,nord-est,district-2,935.53,9.87103,36.30448,227.20,151.93
+delegation-1655,1655,TN-22,Ennadhour,Ennadhour,الناظور,Nadhour,30366,37130,TN.ZA.NA,Q3334853,7167808,osm,nord-est,district-2,357.40,9.94882,36.11165,234.40,173.25
+delegation-1656,1656,TN-22,Saouaf,Saouaf,صواف,Saouaf,12681,13776,TN.ZA.SA,Q3473078,7167811,osm,nord-est,district-2,253.10,10.17702,36.21477,254.80,161.59
+delegation-1751,1751,TN-23,Bizerte Nord,Bizerte Nord,بنزرت الشمالية,Bizerte Nord,87307,85205,TN.BZ.BN,Q2905015,7151760,osm,nord-est,district-1,55.07,9.83944,37.31011,223.39,40.39
+delegation-1752,1752,TN-23,Jarzouna,Jarzouna,جرزونة,Zarzouna,24793,25159,TN.BZ.JA,Q3574881,7151759,osm,nord-est,district-1,6.58,9.88763,37.25536,227.71,46.43
+delegation-1753,1753,TN-23,Bizerte Sud,Bizerte Sud,بنزرت الجنوبية,Bizerte Sud,55659,75669,TN.BZ.BS,Q2905018,7151758,osm,nord-est,district-1,440.72,9.67388,37.24385,208.77,47.86
+delegation-1754,1754,TN-23,Sejnane,Sejnane,سجنان,Sejnane,40166,41119,TN.BZ.SE,Q3477978,7151757,osm,nord-est,district-1,622.17,9.25958,37.12350,172.06,61.40
+delegation-1755,1755,TN-23,Joumine,Joumine,جومين,Joumine,29029,27896,TN.BZ.JO,Q3186735,7151756,osm,nord-est,district-1,553.38,9.46669,36.86097,190.60,90.45
+delegation-1756,1756,TN-23,Mateur,Mateur,ماطر,Mateur,46975,49316,TN.BZ.MA,Q3298463,7151755,osm,nord-est,district-1,565.91,9.67541,36.98761,209.11,76.29
+delegation-1757,1757,TN-23,Ghezala,Ghezala,غزالة,Ghezala,26977,25366,TN.BZ.GH,Q3104844,7151754,osm,nord-est,district-1,414.43,9.50048,37.09584,193.48,64.38
+delegation-1758,1758,TN-23,Menzel Bourguiba,Menzel Bourguiba,منزل بورقيبة,Menzel Bourguiba,61919,60356,TN.BZ.MB,Q3306135,7151753,osm,nord-est,district-1,127.74,9.83152,37.09600,222.89,64.15
+delegation-1759,1759,TN-23,Tinja,Tinja,تينجة,Tinja,23455,21995,TN.BZ.TI,Q3529188,7151752,osm,nord-est,district-1,94.74,9.69380,37.13585,210.62,59.83
+delegation-1760,1760,TN-23,Utique,Utique,أوتيك,Utique,19922,22777,TN.BZ.UT,Q3552761,7151751,osm,nord-est,district-1,374.88,9.94669,37.02114,233.21,72.36
+delegation-1761,1761,TN-23,Ghar El Melh,Ghar El Melh,غار الملح,Ghar El Melh,19477,22267,TN.BZ.GM,Q3104773,7151815,osm,nord-est,district-1,93.12,10.09257,37.16565,246.00,56.19
+delegation-1762,1762,TN-23,Manzil Jamil,Menzel Jemil,منزل جميل,Menzel Jemil,47224,57010,TN.BZ.MJ,Q3306149,7151814,osm,nord-est,district-1,79.51,9.96909,37.22187,234.98,50.07
+delegation-1763,1763,TN-23,El Alia,El Alia,العالية,El Alia,27075,29322,TN.BZ.AL,Q3049689,7151813,osm,nord-est,district-1,85.14,9.99811,37.15774,237.62,57.16
+delegation-1764,1764,TN-23,Ras Jebel,Ras Jebel,رأس الجبل,Ras Jebel,58241,63931,TN.BZ.RJ,Q3419773,7151812,osm,nord-est,district-1,84.16,10.05309,37.23813,242.41,48.19
+delegation-2151,2151,TN-31,Béja Nord,Béja Nord,باجة الشمالية,Béja Nord,71198,74642,TN.BJ.BN,Q2929777,7189387,osm,nord-ouest,district-1,427.58,9.24976,36.81206,171.28,95.95
+delegation-2152,2152,TN-31,Béja Sud,Béja Sud,باجة الجنوبية,Béja Sud,38101,38700,TN.BJ.BS,Q2929779,7189386,osm,nord-ouest,district-1,364.74,9.17129,36.63934,164.31,115.12
+delegation-2153,2153,TN-31,Amdoun,Amdoun,عمدون,Amdoun,21187,21403,TN.BJ.AM,Q2842503,7189391,osm,nord-ouest,district-1,241.38,9.01861,36.80913,150.66,96.30
+delegation-2154,2154,TN-31,Nefza,Nefza,نفزة,Nefza,48101,47573,TN.BJ.NE,Q3337741,7189394,osm,nord-ouest,district-1,599.57,9.04236,36.98019,152.77,77.32
+delegation-2155,2155,TN-31,Teboursouk,Teboursouk,تبرسق,Téboursouk,22115,21414,TN.BJ.TB,Q3546458,7189388,osm,nord-ouest,district-1,395.96,9.24357,36.45254,170.83,135.83
+delegation-2156,2156,TN-31,Tibar,Tibar,تيبار,Thibar,11206,10538,TN.BJ.TH,Q3523989,7189390,osm,nord-ouest,district-1,114.21,9.09978,36.49417,157.94,131.23
+delegation-2157,2157,TN-31,Testour,Testour,تستور,Testour,33613,35501,TN.BJ.TT,Q3519108,7189389,osm,nord-ouest,district-1,643.26,9.43623,36.58440,188.02,121.14
+delegation-2158,2158,TN-31,Goubellat,Goubellat,قبلاط,Goubellat,15762,16767,TN.BJ.GO,Q3111566,7189392,osm,nord-ouest,district-1,413.80,9.70327,36.53938,211.95,125.99
+delegation-2159,2159,TN-31,Medjez El Bab,Medjez El Bab,مجاز الباب,Medjez El Bab,41749,44879,TN.BJ.MB,Q3304072,7189393,osm,nord-ouest,district-1,462.54,9.60962,36.69155,203.46,109.17
+delegation-2251,2251,TN-32,Jendouba Sud,Jendouba Sud,جندوبة الجنوبية,Jendouba,72337,77342,TN.JE.JE,Q3176985,4742886,osm,nord-ouest,district-1,254.68,8.83815,36.47399,134.50,133.46
+delegation-2252,2252,TN-32,Jendouba Nord,Jendouba Nord,جندوبة الشمالية,Jendouba Nord,40779,44687,TN.JE.JN,Q3176984,4742885,osm,nord-ouest,district-1,298.11,8.70568,36.51843,122.65,128.51
+delegation-2253,2253,TN-32,Bousalem,Bousalem,بوسالم,Bou Salem,35501,37100,TN.JE.BS,Q2911894,4742640,osm,nord-ouest,district-1,286.07,8.98168,36.54675,147.36,125.41
+delegation-2254,2254,TN-32,Tabarka,Tabarka,طبرقة,Tabarka,48993,48888,TN.JE.TA,Q3512715,4742596,osm,nord-ouest,district-1,374.08,8.85778,36.92226,136.33,83.74
+delegation-2255,2255,TN-32,Aïn Draham,Aïn Draham,عين دراهم,Aïn Draham,35400,32306,TN.JE.AD,Q2876281,4742591,osm,nord-ouest,district-1,489.46,8.80582,36.77991,131.67,99.52
+delegation-2256,2256,TN-32,Fernana,Fernana,فرنانة,Fernana,47690,47917,TN.JE.FE,Q3069020,4742562,osm,nord-ouest,district-1,390.71,8.71018,36.65209,123.10,113.68
+delegation-2257,2257,TN-32,Ghardimaou,Ghardimaou,غار الدماء,Ghardimaou,64170,62313,TN.JE.GH,Q3104780,4742122,osm,nord-ouest,district-1,507.28,8.38897,36.51228,94.29,129.06
+delegation-2258,2258,TN-32,Wadi Maliz,Oued Meliz,وادي مليز,Oued Meliz,17843,17334,TN.JE.OM,Q3358031,4742499,osm,nord-ouest,district-1,199.85,8.55734,36.44412,109.33,136.70
+delegation-2259,2259,TN-32,Balta Bouawene,Balta Bouawene,بلطة بوعوان,Balta - Bou Aouane,38764,36465,TN.JE.BB,Q9108879,4742613,osm,nord-ouest,district-1,297.10,8.94793,36.70068,144.35,108.33
+delegation-2351,2351,TN-33,Kef Ouest,Kef Ouest,الكاف الغربية,Kef Ouest,33418,37538,TN.KF.KO,Q3194653,4749235,osm,nord-ouest,district-1,213.43,8.63520,36.15181,116.18,169.15
+delegation-2352,2352,TN-33,Kef Est,Kef Est,الكاف الشرقية,Kef Est,40288,41561,TN.KF.KE,Q3194650,4749239,osm,nord-ouest,district-1,394.58,8.94522,36.19380,144.07,164.55
+delegation-2353,2353,TN-33,Nibbar,Nebeur,نبر,Nebeur,19713,18651,TN.KF.NE,Q3337611,4748624,osm,nord-ouest,district-1,490.95,8.85268,36.33116,135.78,149.31
+delegation-2354,2354,TN-33,Sakiet Sidi Youssef,Sakiet Sidi Youssef,ساقية سيدي يوسف,Sakiet Sidi Youssef,17500,16173,TN.KF.SS,Q3469375,4748625,osm,nord-ouest,district-1,728.07,8.46487,36.24038,100.92,159.26
+delegation-2355,2355,TN-33,Tajerouine,Tajerouine,تاجروين,Tajerouine,27592,27112,TN.KF.TE,Q3514110,4752901,osm,nord-ouest,district-1,720.58,8.56826,35.97171,110.07,189.10
+delegation-2356,2356,TN-33,Kalaat Senan,Kalaat Senan,قلعة سنان,Kalaat Senan,15621,13517,TN.KF.KS,Q3192066,4752889,osm,nord-ouest,district-1,513.73,8.35269,35.79508,90.51,208.59
+delegation-2357,2357,TN-33,Kalaat Khasba,Kalaat Khasba,القلعة الخصبة,Kalâat Khasba,6652,5663,TN.KF.KR,Q3192288,4752899,osm,nord-ouest,district-1,205.52,8.56372,35.71252,109.54,217.85
+delegation-2358,2358,TN-33,Djérissa,Djérissa,الجريصة,Jérissa,9807,8613,TN.KF.JE,Q3190677,4752900,osm,nord-ouest,district-1,173.17,8.66654,35.83568,118.88,204.22
+delegation-2359,2359,TN-33,El Ksour,El Ksour,القصور,El Ksour,15215,14686,TN.KF.KU,Q3050017,4752914,osm,nord-ouest,district-1,458.93,8.93892,35.79836,143.48,208.41
+delegation-2360,2360,TN-33,Dahmani,Dahmani,الدهماني,Dahmani,27907,25285,TN.KF.DA,Q3011960,4752904,osm,nord-ouest,district-1,544.36,8.79340,35.97680,130.37,188.61
+delegation-2361,2361,TN-33,Sers,Sers,السرس,Sers,23259,23024,TN.KF.ES,Q3479991,4752920,osm,nord-ouest,district-1,433.11,9.05350,36.04408,153.82,181.16
+delegation-2362,2362,TN-33,Touiref,Touiref,الطويرف,Touiref,6184,5863,,,,rebuilt from imadas (ISIE),nord-ouest,district-1,228.21,8.60778,36.33930,113.80,148.35
+delegation-2451,2451,TN-34,Siliana Nord,Siliana Nord,سليانة الشمالية,Siliana Nord,28907,28801,TN.SL.SN,Q3483864,7154138,osm,nord-ouest,district-3,386.76,9.22847,36.06103,169.58,179.26
+delegation-2452,2452,TN-34,Siliana Sud,Siliana Sud,سليانة الجنوبية,Siliana Sud,30233,29953,TN.SL.SS,Q3483861,7154137,osm,nord-ouest,district-3,494.87,9.37770,35.98570,183.05,187.57
+delegation-2453,2453,TN-34,Bou Arada,Bou Arada,بوعرادة,Bou Arada,20444,19373,TN.SL.BD,Q2911881,7154136,osm,nord-ouest,district-3,380.61,9.65779,36.35770,208.02,146.18
+delegation-2454,2454,TN-34,Gaafour,Gaafour,قعفور,Gaâfour,16934,15801,TN.SL.GA,Q3099816,7154135,osm,nord-ouest,district-3,462.24,9.32978,36.24148,178.63,159.22
+delegation-2455,2455,TN-34,El Krib,El Krib,الكريب,El Krib,20155,20000,TN.SL.EL,Q3050013,7154134,osm,nord-ouest,district-3,425.87,9.05616,36.32907,154.04,149.55
+delegation-2456,2456,TN-34,Sidi Bourouis,Sidi Bourouis,سيدي بورويس,Sidi Bou Rouis,12618,11555,TN.SL.BR,Q3483200,7154133,osm,nord-ouest,district-3,275.86,9.13474,36.18335,161.12,165.71
+delegation-2457,2457,TN-34,Makthar,Makthar,مكثر,Makthar,29052,28321,TN.SL.MA,Q3281015,7154132,osm,nord-ouest,district-3,343.77,9.19349,35.86415,166.47,201.10
+delegation-2458,2458,TN-34,Errouhia,Errouhia,الروحية,Rouhia,25951,27063,TN.SL.RO,Q3443283,7154131,osm,nord-ouest,district-3,655.45,9.13290,35.69947,161.02,219.38
+delegation-2459,2459,TN-34,Kesra,Kesra,كسرى,Kesra,16404,15031,TN.SL.KI,Q3195567,7154130,osm,nord-ouest,district-3,435.02,9.38638,35.77963,183.92,210.42
+delegation-2460,2460,TN-34,Bargou,Bargou,برقو,Bargou,12482,11505,TN.SL.BA,Q2884474,7154129,osm,nord-ouest,district-3,448.25,9.61108,36.09958,204.01,174.83
+delegation-2461,2461,TN-34,Aroussa,Aroussa,العروسة,El Aroussa,9907,8839,TN.SL.LA,Q3049710,7154128,osm,nord-ouest,district-3,360.60,9.44576,36.38054,188.98,143.75
+delegation-3151,3151,TN-51,Sousse Medina,Sousse Medina,سوسة المدينة,Sousse Médina,35288,32220,TN.SS.SM,Q3492190,7150109,osm,centre-est,district-3,6.31,10.61253,35.85503,294.60,200.93
+delegation-3152,3152,TN-51,Sousse Erriadh,Sousse Erriadh,سوسة الرياض,Sousse Riadh,64532,71464,TN.SS.SR,Q3492192,7150108,osm,centre-est,district-3,10.06,10.59527,35.80558,293.14,206.44
+delegation-3153,3153,TN-51,Sousse Jaouhara,Sousse Jaouhara,سوسة جوهرة,Sousse Jawhara,86517,97535,TN.SS.SJ,Q3492189,7150107,osm,centre-est,district-3,14.13,10.60963,35.82949,294.39,203.77
+delegation-3154,3154,TN-51,Sousse Sidi Abdelhamid,Sousse Sidi Abdelhamid,سوسة سيدي عبد الحميد,Sousse Sidi Abdelhamid,52787,57691,TN.SS.SS,Q3492197,7150106,osm,centre-est,district-3,12.30,10.66741,35.78689,299.69,208.41
+delegation-3155,3155,TN-51,Hammam Sousse,Hammam Sousse,حمام سوسة,Hammam Sousse,42691,48899,TN.SS.HS,Q3126505,7150105,osm,centre-est,district-3,18.33,10.58186,35.85207,291.84,201.30
+delegation-3156,3156,TN-51,Akouda,Akouda,أكودة,Akouda,34494,39174,TN.SS.AK,Q2829122,7150747,osm,centre-est,district-3,44.63,10.53209,35.93994,287.19,191.63
+delegation-3157,3157,TN-51,Kalaa Kebira,Kalaa Kebira,القلعة الكبرى,Kalâa Kebira,59132,67108,TN.SS.KK,Q3192283,7150746,osm,centre-est,district-3,270.00,10.38567,35.86956,274.10,199.63
+delegation-3158,3158,TN-51,Sidi Bou Ali,Sidi Bou Ali,سيدي بو علي,Sidi Bou Ali,19693,20647,TN.SS.SB,Q3483198,7150745,osm,centre-est,district-3,128.00,10.44035,35.95619,278.89,189.95
+delegation-3159,3159,TN-51,Hergla,Hergla,هرقلة,Hergla,9343,10652,TN.SS.HE,Q3134003,7150744,osm,centre-est,district-3,95.94,10.45595,36.03744,280.16,180.92
+delegation-3160,3160,TN-51,Enfidha,Enfidha,النفيضة,Enfida,49335,58613,TN.SS.EN,Q3054189,7150743,osm,centre-est,district-3,370.19,10.30134,36.09919,266.14,174.27
+delegation-3161,3161,TN-51,Bouficha,Bouficha,بوفيشة,Bouficha,26763,36094,TN.SS.BO,Q2921533,7150742,osm,centre-est,district-3,260.55,10.44458,36.30001,278.71,151.81
+delegation-3162,3162,TN-51,Kondar,Kondar,كندار,Kondar,13565,15491,TN.SS.KO,Q3198618,7150741,osm,centre-est,district-3,212.66,10.28875,35.93425,265.25,192.58
+delegation-3163,3163,TN-51,Sidi El Heni,Sidi El Heni,سيدي الهاني,Sidi El Hani,13505,14508,TN.SS.SH,Q3483227,7150740,osm,centre-est,district-3,487.35,10.30011,35.73952,266.56,214.16
+delegation-3164,3164,TN-51,Msaken,Msaken,مساكن,M'saken,97225,97312,TN.SS.MS,Q3272359,7150924,osm,centre-est,district-3,547.45,10.52617,35.71274,287.05,216.84
+delegation-3165,3165,TN-51,Kalaa Sghira,Kalaa Sghira,القلعة الصغرى,Kalâa Seghira,37797,45743,TN.SS.KS,Q3192284,7150923,osm,centre-est,district-3,102.97,10.54292,35.81639,288.39,205.32
+delegation-3166,3166,TN-51,Zaouia Ksibet Thrayet,Zaouia Ksibet Thrayet,الزاوية قصيبة الثريات,Zaouiet - Ksibet Thrayet,32304,49130,TN.SS.ZK,Q12243807,7150922,osm,centre-est,district-3,36.54,10.64225,35.76020,297.47,211.40
+delegation-3251,3251,TN-52,Al Munastir,Monastir,المنستير,Monastir,104535,110084,TN.MS.MS,Q12243857,7154974,osm,centre-est,district-3,63.13,10.80066,35.75656,311.80,211.56
+delegation-3252,3252,TN-52,El Ouerdanine,El Ouerdanine,الوردانين,Ouerdanine,21814,22690,TN.MS.OU,Q12243865,7154975,osm,centre-est,district-3,51.37,10.67226,35.69221,300.31,218.90
+delegation-3253,3253,TN-52,Sahline,Sahline,الساحلين,Sahline,27449,32485,TN.MS.SA,Q12243812,7154972,osm,centre-est,district-3,42.53,10.71749,35.73112,304.32,214.51
+delegation-3254,3254,TN-52,Zeramdine,Zeramdine,زرمدين,Zéramdine,29733,30732,TN.MS.ZA,Q12243935,7154979,osm,centre-est,district-3,252.03,10.57154,35.54174,291.46,235.74
+delegation-3255,3255,TN-52,Beni Hassen,Beni Hassen,بني حسان,Beni Hassen,13869,15230,TN.MS.BH,Q2400649,7154977,osm,centre-est,district-3,86.83,10.76679,35.52562,309.19,237.23
+delegation-3256,3256,TN-52,Jammel,Jammel,جمّال,Jemmal,65420,71158,TN.MS.JA,Q3176963,7154978,osm,centre-est,district-3,156.15,10.76638,35.61919,308.97,226.85
+delegation-3257,3257,TN-52,Bembla,Bembla,بنبلة,Bembla,32555,36076,TN.MS.BM,Q12243879,7154976,osm,centre-est,district-3,48.91,10.74925,35.68519,307.29,219.56
+delegation-3258,3258,TN-52,Moknine,Moknine,المكنين,Moknine,89277,97655,TN.MS.MK,Q12243856,7154973,osm,centre-est,district-3,221.86,10.90007,35.57526,321.17,231.50
+delegation-3259,3259,TN-52,Bekalta,Bekalta,البقالطة,Bekalta,17850,19091,TN.MS.BK,Q12243794,7154971,osm,centre-est,district-3,58.00,10.99678,35.58734,329.91,229.99
+delegation-3260,3260,TN-52,Teboulba,Teboulba,طبلبة,Téboulba,37485,41049,TN.MS.TE,Q12243965,7154981,osm,centre-est,district-3,31.85,10.95729,35.63600,326.22,224.66
+delegation-3261,3261,TN-52,Ksar Hellal,Ksar Hellal,قصر هلال,Ksar Hellal,49376,55505,TN.MS.KH,Q12243984,7154982,osm,centre-est,district-3,21.92,10.88022,35.64738,319.22,223.53
+delegation-3262,3262,TN-52,Ksibet El Mediouni,Ksibet El Mediouni,قصيبة المديوني,Ksibet El Médiouni,34576,41075,TN.MS.KM,Q12243986,7154983,osm,centre-est,district-3,36.97,10.82858,35.67591,314.49,220.46
+delegation-3263,3263,TN-52,Sayada-Lamta-Bou Hjar,Sayada-Lamta-Bou Hjar,صيادة - لمطة - بوحجر,Sayada - Lamta - Bouhjar,24889,26939,TN.MS.SL,Q3474714,7154980,osm,centre-est,district-3,12.86,10.87173,35.67050,318.40,220.98
+delegation-3351,3351,TN-53,Mahdia,Mahdia,المهدية,Mahdia,69234,74504,TN.MH.MA,Q12243859,7152227,osm,centre-est,district-3,150.18,10.98289,35.50060,328.85,239.63
+delegation-3352,3352,TN-53,Bou Merdès,Bou Merdès,بومرداس,Bou Merdes,33890,37089,TN.MH.BO,Q12243893,7152265,osm,centre-est,district-3,191.27,10.68150,35.42539,301.65,248.48
+delegation-3353,3353,TN-53,Ouled Chamekh,Ouled Chamekh,أولاد الشامخ,Ouled Chamekh,23020,23893,TN.MH.OC,Q12243790,7152192,osm,centre-est,district-3,324.77,10.30043,35.44573,267.02,246.75
+delegation-3354,3354,TN-53,Chorbane,Chorbane,شربان,Chorbane,25935,29059,TN.MH.CR,Q12243959,7152191,osm,centre-est,district-3,448.40,10.44914,35.19360,280.93,274.53
+delegation-3355,3355,TN-53,Hebira,Hebira,هبيرة,Hebira,10654,11617,TN.MH.HB,Q12244016,7152279,osm,centre-est,district-3,315.75,10.27817,35.18619,265.37,275.56
+delegation-3356,3356,TN-53,Essouassi,Essouassi,السواسي,Essouassi,50424,58683,TN.MH.SO,Q12243817,7152282,osm,centre-est,district-3,347.76,10.54945,35.34102,289.81,258.04
+delegation-3357,3357,TN-53,El Jem,El Jem,الجم,El Jem,48611,55976,TN.MH.JE,Q12243798,7152230,osm,centre-est,district-3,287.54,10.69452,35.28957,303.09,263.53
+delegation-3358,3358,TN-53,Chebba,Chebba,الشابة,Chebba,29282,31137,TN.MH.CB,Q12243820,7201228,osm,centre-est,district-3,139.63,11.05465,35.23682,335.96,268.76
+delegation-3359,3359,TN-53,Melloulech,Melloulech,ملولش,Melloulèche,22085,23890,TN.MH.ME,Q12244003,7201229,osm,centre-est,district-3,160.18,10.99316,35.15782,330.54,277.64
+delegation-3360,3360,TN-53,Sidi Alouane,Sidi Alouane,سيدي علوان,Sidi Alouane,37767,40308,TN.MH.SA,Q12243955,7152203,osm,centre-est,district-3,288.76,10.86248,35.21378,318.52,271.66
+delegation-3361,3361,TN-53,Ksour Essef,Ksour Essef,قصور الساف,Ksour Essef,33960,38567,TN.MH.KE,Q12243985,7152190,osm,centre-est,district-3,111.55,10.99555,35.41479,330.19,249.13
+delegation-3362,3362,TN-53,Rejiche,Rejiche,رجيش,Rejiche,10311,11603,,,,rebuilt from imadas (ISIE),centre-est,district-3,15.50,11.03281,35.46193,333.46,243.83
+delegation-3363,3363,TN-53,El Bradaa,El Bradâa,البرادعة,El Bradâa,15639,13659,,,,rebuilt from imadas (ISIE),centre-est,district-3,87.44,10.99279,35.35301,330.07,255.99
+delegation-3451,3451,TN-61,Sfax Ville,Sfax Ville,صفاقس المدينة,Sfax Ville,101176,97712,TN.SF.SM,Q2413266,7147588,osm,centre-est,district-4,27.52,10.75895,34.75544,309.99,322.67
+delegation-3452,3452,TN-61,Sfax Ouest,Sfax Ouest,صفاقس الغربية,Sfax Ouest,110125,105238,TN.SF.SO,Q3481091,7147547,osm,centre-est,district-4,16.17,10.72047,34.73688,306.51,324.79
+delegation-3453,3453,TN-61,Sakiet Ezzit,Sakiet Ezzit,ساقية الزيت,Sakiet Ezzit,87512,96648,TN.SF.SZ,Q3469377,7147554,osm,centre-est,district-4,92.74,10.73686,34.89472,307.70,307.26
+delegation-3454,3454,TN-61,Sakiet Eddaier,Sakiet Eddaier,ساقية الدائر,Sakiet Eddaïer,113776,123457,TN.SF.SD,Q3469374,7147551,osm,centre-est,district-4,111.80,10.82612,34.84040,315.97,313.14
+delegation-3455,3455,TN-61,Sfax Sud,Sfax Sud,صفاقس الجنوبية,Sfax Sud,119139,142716,TN.SF.SS,Q3481093,7147548,osm,centre-est,district-4,215.37,10.65537,34.84019,300.36,313.43
+delegation-3456,3456,TN-61,Thyna,Thyna,طينة,Thyna,62997,79761,TN.SF.TH,Q3526200,7147562,osm,centre-est,district-4,103.60,10.68133,34.68137,303.02,331.00
+delegation-3457,3457,TN-61,Agareb,Agareb,عقارب,Agareb,40943,46652,TN.SF.AG,Q2826418,1595206,osm,centre-est,district-4,737.84,10.42633,34.75905,279.54,322.75
+delegation-3458,3458,TN-61,Jebeniana,Jebeniana,جبنيانة,Jebiniana,49678,58364,TN.SF.DJ,Q3176331,273458,osm,centre-est,district-4,257.67,10.87341,35.08889,319.78,285.49
+delegation-3459,3459,TN-61,El Amra,El Amra,العامرة,El Amra,30599,35808,TN.SF.AM,Q3049702,273459,osm,centre-est,district-4,183.91,10.85948,34.95123,318.79,300.79
+delegation-3460,3460,TN-61,El Hencha,El Hencha,الحنشة,El Hencha,49223,55434,TN.SF.HA,Q3049966,273308,osm,centre-est,district-4,515.92,10.71411,35.13787,305.16,280.32
+delegation-3461,3461,TN-61,Menzel Chaker,Menzel Chaker,منزل شاكر,Menzel Chaker,37368,42546,TN.SF.MC,Q3306142,273307,osm,centre-est,district-4,1614.90,10.49040,34.97611,285.05,298.59
+delegation-3462,3462,TN-61,El Ghraiba,El Ghraiba,الغريبة,Graïba,15776,16678,TN.SF.GH,Q3115901,273305,osm,centre-est,district-4,430.99,10.19610,34.50731,258.80,350.94
+delegation-3463,3463,TN-61,Bir Ali Ben Khalifa,Bir Ali Ben Khalifa,بئر علي بن خليفة,Bir Ali Ben Khalifa,52678,55339,TN.SF.BA,Q2904322,273213,osm,centre-est,district-4,1205.83,10.09209,34.71832,249.00,327.65
+delegation-3464,3464,TN-61,Skhira,Skhira,الصخيرة,Skhira,34673,40035,TN.SF.SK,Q3486240,7111391,osm,centre-est,district-4,911.62,9.96899,34.31565,238.15,372.42
+delegation-3465,3465,TN-61,El Mahrès,El Mahrès,المحرس,Mahrès,34257,35698,TN.SF.MA,Q3277898,7111008,osm,centre-est,district-4,435.68,10.45588,34.58133,282.53,342.42
+delegation-3466,3466,TN-61,Kerkennah,Kerkennah,قرقنة,Kerkennah,15501,15382,TN.SF.KE,Q761460,273483,osm,centre-est,district-4,152.65,11.25789,34.74741,355.69,322.65
+delegation-4151,4151,TN-41,Kairouan Nord,Kairouan Nord,القيروان الشمالية,Kairouan Nord,96904,103461,TN.KR.KN,Q3191992,7165239,osm,centre-ouest,district-3,251.20,10.05698,35.74052,244.58,214.32
+delegation-4152,4152,TN-41,Kairouan Sud,Kairouan Sud,القيروان الجنوبية,Kairouan Sud,93101,95068,TN.KR.KS,Q3191993,7165238,osm,centre-ouest,district-3,519.49,10.19836,35.62081,257.52,227.45
+delegation-4153,4153,TN-41,Chebika,Chebika,الشبيكة,Chebika,35308,37193,TN.KR.CB,Q2961909,7165235,osm,centre-ouest,district-3,512.63,9.90926,35.59306,231.37,230.81
+delegation-4154,4154,TN-41,Sbikha,Sbikha,السبيخة,Sbikha,71922,77650,TN.KR.SB,Q3474902,7165234,osm,centre-ouest,district-3,1069.29,9.94661,35.92184,234.40,194.31
+delegation-4155,4155,TN-41,El Ouslatia,El Ouslatia,الوسلاتية,Oueslatia,27672,26454,TN.KR.OU,Q3358070,7165240,osm,centre-ouest,district-3,718.96,9.61905,35.87496,204.88,199.74
+delegation-4156,4156,TN-41,Haffouz,Haffouz,حفوز,Haffouz,40066,44492,TN.KR.HF,Q3125674,7165243,osm,centre-ouest,district-3,611.31,9.72827,35.64711,214.93,224.95
+delegation-4157,4157,TN-41,El Alâa,El Alâa,العلاء,El Alâa,28991,28897,TN.KR.AL,Q3049692,7165237,osm,centre-ouest,district-3,361.26,9.47426,35.65828,191.93,223.85
+delegation-4158,4158,TN-41,Hajeb El Ayoun,Hajeb El Ayoun,حاجب العيون,Hajeb el Ayoun,36137,40655,TN.KR.HA,Q3125801,11318400,osm,centre-ouest,district-3,588.93,9.59579,35.39599,203.10,252.88
+delegation-4159,4159,TN-41,Nasrallah,Nasrallah,نصر الله,Nasrallah,21129,20310,TN.KR.NA,Q3336216,7201324,osm,centre-ouest,district-3,422.42,9.83383,35.25614,224.85,268.23
+delegation-4160,4160,TN-41,Echrarda,Echrarda,الشراردة,Echrarda,27518,28868,TN.KR.CR,Q3047025,7201322,osm,centre-ouest,district-3,330.34,10.06441,35.14142,245.96,280.75
+delegation-4161,4161,TN-41,Bouhajla,Bouhajla,بوحجلة,Bou Hajla,72371,78634,TN.KR.SA,Q2911888,7165241,osm,centre-ouest,district-3,689.47,10.04296,35.37099,243.74,255.32
+delegation-4162,4162,TN-41,Ain Djeloula,Aïn Djeloula,عين جلولة,Aïn Djeloula,6780,6441,,,,rebuilt from imadas (ISIE),centre-ouest,district-3,195.73,9.77663,35.80089,219.17,207.86
+delegation-4163,4163,TN-41,Menzel Mehiri,Menzel Mehiri,منزل المهيري,Menzel Mehiri,12660,12680,,,,rebuilt from imadas (ISIE),centre-ouest,district-3,262.68,9.83111,35.43631,224.44,248.25
+delegation-4251,4251,TN-42,Kasserine Nord,Kasserine Nord,القصرين الشمالية,Kasserine Nord,65322,74925,TN.KS.KN,Q3193749,7164968,osm,centre-ouest,district-3,97.76,8.80017,35.19546,130.81,275.26
+delegation-4252,4252,TN-42,Kasserine Sud,Kasserine Sud,القصرين الجنوبية,Kasserine Sud,21653,27048,TN.KS.KS,Q3193752,7164924,osm,centre-ouest,district-3,865.49,8.72950,35.09829,124.35,286.02
+delegation-4253,4253,TN-42,Ezzouhour,Ezzouhour,الزهور,Ezzouhour,21819,24484,TN.KS.EZ,Q3062884,7164976,osm,centre-ouest,district-3,3.17,8.83176,35.15913,133.68,279.30
+delegation-4254,4254,TN-42,Hassi Ferid,Hassi Ferid,حاسي الفريد,Hassi El Ferid,19400,22886,TN.KS.HF,Q3128222,7164979,osm,centre-ouest,district-3,968.92,8.88991,34.92919,138.95,304.80
+delegation-4255,4255,TN-42,Sbeitla,Sbeitla,سبيطلة,Sbeïtla,75245,84495,TN.KS.ST,Q3474896,7164930,osm,centre-ouest,district-3,1115.69,9.01578,35.32982,150.43,260.38
+delegation-4256,4256,TN-42,Sbiba,Sbiba,سبيبة,Sbiba,41189,48620,TN.KS.SB,Q12243940,7164915,osm,centre-ouest,district-3,447.68,9.19165,35.47565,166.39,244.19
+delegation-4257,4257,TN-42,Djedeliane,Djedeliane,جدليان,Jedelienne,12297,12066,TN.KS.DJ,Q3176358,7164919,osm,centre-ouest,district-3,274.96,8.89715,35.66843,139.69,222.82
+delegation-4258,4258,TN-42,El Ayoun,El Ayoun,العيون,El Ayoun,19211,20115,TN.KS.AY,Q12243830,7165022,osm,centre-ouest,district-3,411.58,8.89955,35.50353,139.89,241.11
+delegation-4259,4259,TN-42,Thala,Thala,تالة,Thala,37128,31680,TN.KS.TH,Q3519434,7164982,osm,centre-ouest,district-3,716.66,8.66984,35.55223,119.08,235.66
+delegation-4260,4260,TN-42,Hidra,Hidra,حيدرة,Haïdra,9762,8160,TN.KS.HI,Q3128914,7164955,osm,centre-ouest,district-3,496.61,8.46272,35.56473,100.31,234.20
+delegation-4261,4261,TN-42,Foussana,Foussana,فوسانة,Foussana,41447,50663,TN.KS.FO,Q12243976,7165016,osm,centre-ouest,district-3,914.87,8.63358,35.32043,115.69,261.36
+delegation-4262,4262,TN-42,Feriana,Feriana,فريانة,Fériana,51455,59584,TN.KS.FE,Q3092695,7165007,osm,centre-ouest,district-3,1006.23,8.44994,35.00237,98.81,296.56
+delegation-4263,4263,TN-42,Majel Bel Abbès,Majel Bel Abbès,ماجل بالعباس,Majel Bel Abbès,23315,28015,TN.KS.MB,Q12243994,7164985,osm,centre-ouest,district-3,886.58,8.55800,34.74714,108.54,324.91
+delegation-4351,4351,TN-43,Sidi Bouzid Ouest,Sidi Bouzid Ouest,سيدي بوزيد الغربية,Sidi Bouzid Ouest,63582,72511,TN.SZ.SO,,7169656,osm,centre-ouest,district-4,303.90,9.38515,35.06103,184.12,290.12
+delegation-4352,4352,TN-43,Sidi Bouzid Est,Sidi Bouzid Est,سيدي بوزيد الشرقية,Sidi Bouzid Est,45701,57961,TN.SZ.SE,,12584562,osm,centre-ouest,district-4,730.86,9.60484,35.07559,204.14,288.41
+delegation-4353,4353,TN-43,Jelma,Jelma,جلمة,Jilma,40239,45519,TN.SZ.JI,Q3178714,7169666,osm,centre-ouest,district-4,669.38,9.35174,35.37570,180.95,255.24
+delegation-4354,4354,TN-43,Cebalet Ouled Asker,Cebalet Ouled Asker,سبالة أولاد عسكر,Cebbala Ouled Asker,20382,21833,TN.SZ.SA,Q2943649,7169573,osm,centre-ouest,district-4,295.28,9.31141,35.17703,177.36,277.28
+delegation-4355,4355,TN-43,Bir El Hafey,Bir El Hafey,بئر الحفي,Bir El Hafey,38288,45208,TN.SZ.BH,Q2904334,7169644,osm,centre-ouest,district-4,515.16,9.27487,34.95245,174.10,302.20
+delegation-4356,4356,TN-43,Sidi Ali Ben Aoûn,Sidi Ali Ben Aoûn,سيدي علي بن عون,Sidi Ali Ben Aoun,28214,31424,TN.SZ.SB,Q3483173,7169659,osm,centre-ouest,district-4,614.53,9.12090,34.79923,160.06,319.21
+delegation-4357,4357,TN-43,Menzel Bouzaïane,Menzel Bouzaïane,منزل بوزيان,Menzel Bouzaiane,25321,31048,TN.SZ.MB,Q3306137,7169593,osm,centre-ouest,district-4,555.00,9.38682,34.64716,184.45,336.02
+delegation-4358,4358,TN-43,Meknassy,Meknassy,المكناسي,Meknassy,23789,21659,TN.SZ.ME,Q3304821,7169669,osm,centre-ouest,district-4,623.76,9.60880,34.60814,204.82,340.24
+delegation-4359,4359,TN-43,Souk Jedid,Souk Jedid,سوق الجديد,Souk Jedid,21660,22974,TN.SZ.SJ,Q3491579,7169618,osm,centre-ouest,district-4,346.35,9.55002,34.84216,199.29,314.32
+delegation-4360,4360,TN-43,Mezzouna,Mezzouna,المزونة,Mezzouna,24766,27748,TN.SZ.MA,Q3307773,7169588,osm,centre-ouest,district-4,1135.62,9.78530,34.47957,221.11,354.39
+delegation-4361,4361,TN-43,Regueb,Regueb,الرقاب,Regueb,41823,48925,TN.SZ.RE,,7172879,osm,centre-ouest,district-4,741.77,9.81275,34.82636,223.32,315.91
+delegation-4362,4362,TN-43,Ouled Haffouz,Ouled Haffouz,أولاد حفوز,Ouled Haffouz,19579,20127,TN.SZ.OH,Q3358223,7169662,osm,centre-ouest,district-4,422.37,9.83496,35.09770,225.10,285.80
+delegation-4363,4363,TN-43,Essaida,Essaida,السعيدة,Essaïda,23175,27940,,,7172930,osm,centre-ouest,district-4,295.66,9.94907,34.97796,235.63,298.99
+delegation-4364,4364,TN-43,El Hichria,El Hichria,الهيشرية,El Hichria,13393,15114,,,,rebuilt from imadas (ISIE),centre-ouest,district-4,183.69,9.41965,34.88888,187.35,309.20
+delegation-5151,5151,TN-81,Gabès Ville,Gabès Ville,قابس المدينة,Gabès Médina,46731,46380,TN.GB.GV,Q3094200,7145387,osm,sud-est,district-5,17.02,10.09983,33.88908,250.70,419.60
+delegation-5152,5152,TN-81,Gabès Ouest,Gabès Ouest,قابس الغربية,Gabès Ouest,31768,37420,TN.GB.GO,Q3094201,7145426,osm,sud-est,district-5,154.35,9.96554,33.87508,238.30,421.28
+delegation-5153,5153,TN-81,Gabès Sud,Gabès Sud,قابس الجنوبية,Gabès Sud,74422,83013,TN.GB.GS,Q3094203,7145391,osm,sud-est,district-5,293.40,10.02671,33.78676,244.05,431.01
+delegation-5154,5154,TN-81,Ghanouch,Ghanouch,غنوش,Ghannouch,28051,35329,TN.GB.GA,Q3104769,7145425,osm,sud-est,district-5,20.08,10.05411,33.93988,246.42,414.01
+delegation-5155,5155,TN-81,El Metouia,El Metouia,المطوية,Métouia,12507,13613,TN.GB.ME,Q3333752,7145411,osm,sud-est,district-5,144.37,9.98133,34.07853,239.54,398.70
+delegation-5156,5156,TN-81,Menzel El Habib,Menzel El Habib,منزل الحبيب,Menzel El Habib,10148,10200,TN.GB.MH,Q3306143,7145436,osm,sud-est,district-5,952.88,9.76813,34.12845,219.83,393.33
+delegation-5157,5157,TN-81,El Hamma,El Hamma,الحامة,El Hamma,54192,57856,TN.GB.HA,Q3049934,7145417,osm,sud-est,district-5,945.22,9.83128,33.78250,225.96,431.65
+delegation-5158,5158,TN-81,Matmata,Matmata,مطماطة,Matmata,4444,3926,TN.GB.MT,Q3299183,7145400,osm,sud-est,district-5,1246.10,9.79269,33.41039,222.71,472.93
+delegation-5159,5159,TN-81,Nouvelle Matmata,Nouvelle Matmata,مطماطة الجديدة,Nouvelle Matmata,14224,16779,TN.GB.MN,Q12244000,7145382,osm,sud-est,district-5,752.09,10.06502,33.60712,247.81,450.90
+delegation-5160,5160,TN-81,Mareth,Mareth,مارث,Mareth,52845,57358,TN.GB.MR,Q3290427,7145379,osm,sud-est,district-5,682.97,10.27193,33.62508,266.98,448.69
+delegation-5161,5161,TN-81,Dkhilet Toujane,Dkhilet Toujane,دخيلة توجان,Dkhilet Toujane,10277,9690,,,,rebuilt from imadas (ISIE),sud-est,district-5,318.53,10.13937,33.45557,254.89,467.63
+delegation-5162,5162,TN-81,Oudhref,Oudhref,وذرف,Oudhref,15371,17931,,,,rebuilt from imadas (ISIE),sud-est,district-5,264.18,9.96685,34.15390,238.13,390.36
+delegation-5163,5163,TN-81,Habib Thameur Bouatouch,Habib Thameur Bouatouch,الحبيب ثامر بوعطوش,Habib Thameur Bouatouch,19320,21352,,,,rebuilt from imadas (ISIE),sud-est,district-5,1697.01,9.47101,33.92008,192.54,416.61
+delegation-5251,5251,TN-82,Medenine Nord,Medenine Nord,مدنين الشمالية,Médenine Nord,54769,64010,TN.ME.MN,Q3332488,7142934,osm,sud-est,district-5,334.26,10.33825,33.39763,273.45,473.83
+delegation-5252,5252,TN-82,Medenine Sud,Medenine Sud,مدنين االجنوبية,Médenine Sud,54640,63911,TN.ME.MS,Q3332487,7142936,osm,sud-est,district-5,733.81,10.63000,33.34957,300.67,478.77
+delegation-5253,5253,TN-82,Beni Khedech,Beni Khedech,بني خداش,Beni Khedache,25885,26847,TN.ME.BK,Q2895892,7142978,osm,sud-est,district-5,1359.72,10.12219,33.20966,253.58,494.91
+delegation-5254,5254,TN-82,Ben Gardane,Ben Gardane,بنقردان,Ben Gardane,79912,90504,TN.ME.BG,Q2895427,7142942,osm,sud-est,district-5,4806.65,11.29114,33.00117,363.05,516.25
+delegation-5255,5255,TN-82,Zarzis,Zarzis,جرجيس,Zarzis,75382,75708,TN.ME.ZA,Q3574880,7142975,osm,sud-est,district-5,889.80,10.96635,33.42821,331.81,469.51
+delegation-5256,5256,TN-82,Djerba Houmet Souk,Djerba Houmet Souk,جربة حومة السوق,Djerba Houmt Souk,75904,89228,TN.ME.DH,Q3032897,7133840,osm,sud-est,district-5,163.04,10.82068,33.85875,317.42,422.01
+delegation-5257,5257,TN-82,Djerba Midoun,Djerba Midoun,جربة ميدون,Djerba Midoun,63528,74437,TN.ME.DM,Q3032898,7133841,osm,sud-est,district-5,189.34,10.92967,33.76368,327.71,432.37
+delegation-5258,5258,TN-82,Djerba Ajim,Djerba Ajim,جربة أجيم,Djerba Ajim,24294,24166,TN.ME.DA,Q3032895,7133842,osm,sud-est,district-5,163.04,10.79479,33.77639,315.19,431.19
+delegation-5259,5259,TN-82,Sidi Makhlouf,Sidi Makhlouf,سيدي مخلوف,Sidi Makhlouf,25206,28444,TN.ME.SM,Q3483264,7142982,osm,sud-est,district-5,658.86,10.47422,33.51711,285.91,460.41
+delegation-5351,5351,TN-83,Tataouine Nord,Tataouine Nord,تطاوين الشمالية,Tataouine Nord,61431,66986,TN.TA.TN,Q3516010,7143811,osm,sud-est,district-5,2838.63,10.64647,32.63743,303.44,557.71
+delegation-5352,5352,TN-83,Tataouine Sud,Tataouine Sud,تطاوين الجنوبية,Tataouine Sud,34344,36391,TN.TA.TS,Q3516011,7143863,osm,sud-est,district-5,1898.38,10.16865,32.79003,258.43,541.39
+delegation-5353,5353,TN-83,Smâr,Smâr,الصمار,Smâr,7000,8080,TN.TA.SA,Q3487090,7143836,osm,sud-est,district-5,476.68,10.91193,33.02448,327.57,514.38
+delegation-5354,5354,TN-83,Bir Lahmar,Bir Lahmar,بئر الأحمر,Bir Lahmar,8460,10772,TN.TA.BL,Q2904339,7143855,osm,sud-est,district-5,244.83,10.45882,33.15250,285.05,500.86
+delegation-5355,5355,TN-83,Ghomrassen,Ghomrassen,غمراسن,Ghomrassen,15957,16351,TN.TA.GH,Q3104928,7143858,osm,sud-est,district-5,689.23,10.25277,33.04578,265.97,512.94
+delegation-5356,5356,TN-83,Dhehiba,Dhehiba,الذهيبة,Dehiba,4295,5920,TN.TA.DH,Q3021294,7143813,osm,sud-est,district-5,3221.85,10.42781,31.86914,284.06,643.18
+delegation-5357,5357,TN-83,Remada,Remada,رمادة,Remada,10173,9964,TN.TA.RE,Q3424458,7143840,osm,sud-est,district-5,27575.98,9.63848,32.18303,209.19,609.10
+delegation-5358,5358,TN-83,Beni Mhira,Beni Mehira,بني مهيرة,Beni Mehira,7793,8190,,,,rebuilt from imadas (ISIE),sud-est,district-5,1516.97,10.98411,32.76547,334.85,542.97
+delegation-6151,6151,TN-71,Gafsa Nord,Gafsa Nord,قفصة الشمالية,Gafsa Nord,10022,11657,TN.GF.GN,Q3094305,7150165,osm,sud-ouest,district-4,534.89,8.83770,34.54434,134.11,347.47
+delegation-6152,6152,TN-71,Sidi Aïch,Sidi Aïch,سيدي عيش,Sidi Aïch,10084,12029,TN.GF.SA,Q3483188,7150163,osm,sud-ouest,district-4,442.86,8.85518,34.69536,135.74,330.73
+delegation-6153,6153,TN-71,El Ksar,El Ksar,القصر,El Ksar,36482,39931,TN.GF.KS,Q3050016,7150158,osm,sud-ouest,district-4,281.83,8.94474,34.43945,143.92,359.12
+delegation-6154,6154,TN-71,Gafsa Sud,Gafsa Sud,قفصة الجنوبية,Gafsa Sud,101148,118274,TN.GF.GS,Q3094306,7150164,osm,sud-ouest,district-4,750.43,8.63510,34.40151,115.46,363.26
+delegation-6155,6155,TN-71,Oum El Araies,Oum El Araies,أم العرائس,Moularès,22798,31767,TN.GF.OL,Q3325517,7150155,osm,sud-ouest,district-4,798.71,8.34631,34.53280,89.01,348.57
+delegation-6156,6156,TN-71,Redeyef,Redeyef,الرديف,Redeyef,26976,31421,TN.GF.RE,Q3422864,7150156,osm,sud-ouest,district-4,403.77,8.13558,34.33559,69.49,370.29
+delegation-6157,6157,TN-71,Metlaoui,Metlaoui,المتلوي,Métlaoui,38634,44547,TN.GF.ME,Q3333748,7150160,osm,sud-ouest,district-4,973.30,8.35738,34.25109,89.83,379.82
+delegation-6158,6158,TN-71,Mdhila,Mdhila,المضيلة,Mdhila,15306,16883,TN.GF.MD,Q3303728,7150161,osm,sud-ouest,district-4,644.40,8.69732,34.22335,121.12,383.04
+delegation-6159,6159,TN-71,El Guetar,El Guetar,القطار,El Guettar,20137,20784,TN.GF.GU,Q3049898,7150159,osm,sud-ouest,district-4,933.43,8.99946,34.26159,148.95,378.84
+delegation-6160,6160,TN-71,Belkhir,Belkhir,بلخير,Belkhir,14784,15923,TN.GF.BE,Q2894557,7150162,osm,sud-ouest,district-4,842.44,9.42106,34.31818,187.74,372.48
+delegation-6161,6161,TN-71,Sened,Sened,السند,Sened,21487,23633,TN.GF.SE,Q3478538,7150157,osm,sud-ouest,district-4,449.19,9.19818,34.63203,167.16,337.74
+delegation-6162,6162,TN-71,Sidi Boubaker,Sidi Boubaker,سيدي بوبكر,Sidi Boubaker,4214,5402,,,,rebuilt from imadas (ISIE),sud-ouest,district-4,176.44,8.32089,34.69053,86.80,331.07
+delegation-6163,6163,TN-71,Zannouch,Zannouch,زانوش,Zannouch,15259,16525,,,,rebuilt from imadas (ISIE),sud-ouest,district-4,319.19,9.05564,34.49083,154.11,353.42
+delegation-6251,6251,TN-72,Tozeur,Tozeur,توزر,Tozeur,46422,50362,TN.TO.TO,Q3536092,7154890,osm,sud-ouest,district-4,819.60,8.17247,33.79237,72.39,430.56
+delegation-6252,6252,TN-72,Degache,Degache,دقاش,Degache,21590,24426,TN.TO.DE,Q3021228,7154892,osm,sud-ouest,district-4,835.80,8.34839,33.93602,88.78,414.75
+delegation-6253,6253,TN-72,Tameghza,Tameghza,تمغزة,Tamerza,6516,6904,TN.TO.TA,Q3514781,7154889,osm,sud-ouest,district-4,910.72,7.89966,34.20846,47.63,384.18
+delegation-6254,6254,TN-72,Nefta,Nefta,نفطة,Nefta,21731,24263,TN.TO.NA,Q3337738,7154893,osm,sud-ouest,district-4,1641.38,7.88845,33.76455,46.07,433.40
+delegation-6255,6255,TN-72,Hazoua,Hazoua,حزوة,Hazoua,4700,6186,TN.TO.HA,Q3128900,7154891,osm,sud-ouest,district-4,1283.32,7.63796,33.89914,23.07,418.19
+delegation-6256,6256,TN-72,El Hamma du Jerid,El Hamma du Jérid,حامة الجريد,El Hamma du Jérid,6953,7895,,,,rebuilt from imadas (ISIE),sud-ouest,district-4,583.00,8.17249,34.11225,72.68,395.09
+delegation-6351,6351,TN-73,Kébili Sud,Kébili Sud,قبلي الجنوبية,Kébili Sud,30447,35847,TN.KB.KS,Q3201086,7110466,osm,sud-ouest,district-5,1164.93,9.07178,33.62028,155.66,449.94
+delegation-6352,6352,TN-73,Kébili Nord,Kébili Nord,قبلي الشمالية,Kébili Nord,31854,36132,TN.KB.KN,Q3201083,7110523,osm,sud-ouest,district-5,1168.78,9.16875,33.81249,164.62,428.62
+delegation-6353,6353,TN-73,Souk El Ahad,Souk El Ahad,سوق الأحد,Souk Lahad,27865,31468,TN.KB.SA,Q12243946,7110422,osm,sud-ouest,district-5,2277.32,8.80693,33.91276,131.15,417.50
+delegation-6354,6354,TN-73,Douz Nord,Douz Nord,دوز الشمالية,Douz Nord,28617,33951,TN.KB.DN,Q12243930,7110404,osm,sud-ouest,district-5,3495.75,9.45346,33.29911,191.22,485.46
+delegation-6355,6355,TN-73,Douz Sud,Douz Sud,دوز الجنوبية,Douz Sud,18565,21279,TN.KB.DS,Q12243928,7108012,osm,sud-ouest,district-5,4300.57,9.25321,32.88836,172.68,531.06
+delegation-6356,6356,TN-73,El Faouar,El Faouar,الفوار,Faouar,15376,19875,TN.KB.FA,Q12243833,7107872,osm,sud-ouest,district-5,7348.48,8.53541,33.10632,105.65,506.83
+delegation-6357,6357,TN-73,Rjim Maatoug,Rjim Maatoug,رجيم معتوق,Rjim Maatoug,4237,4649,,,,rebuilt from imadas (ISIE),sud-ouest,district-5,2493.85,7.99433,33.33676,55.41,480.93

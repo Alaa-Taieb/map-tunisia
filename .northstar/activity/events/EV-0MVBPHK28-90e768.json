@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-90e768",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-001"
+  ],
+  "summary": "Requirement REQ-001 added: Accurate, exactly nested boundaries from the latest open data"
+}

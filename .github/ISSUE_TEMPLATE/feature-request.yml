@@ -1,0 +1,11 @@
+name: ✨ Feature request
+description: A new mode, partition, format or helper.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you want to do with the maps?
+      description: Describe the use case first, then the feature you have in mind.
+    validations:
+      required: true

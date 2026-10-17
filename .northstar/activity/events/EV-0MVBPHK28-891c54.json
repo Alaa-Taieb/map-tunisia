@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-891c54",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-001"
+  ],
+  "summary": "Task NS-001 created: Repository scaffold (package.json, Python requirements, layout, .gitignore)"
+}

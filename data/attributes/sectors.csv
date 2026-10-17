@@ -1,0 +1,2084 @@
+id,ins_code,delegation,governorate,name_en,name_fr,name_ar,wikidata,osm_relation
+sector-115151,115151,delegation-1151,TN-11,Sidi Bou Said,Sidi Bou Said,سيدي بو سعيد,Q877391,7116249
+sector-115152,115152,delegation-1151,TN-11,Amilcar,Amilcar,أميلكار,,7116250
+sector-115153,115153,delegation-1151,TN-11,Carthage Byrsa,Carthage Byrsa,قرطاج بيرصة,,7116451
+sector-115154,115154,delegation-1151,TN-11,Carthage Plage,Carthage Plage,قرطاج الشاطئ,,7116454
+sector-115155,115155,delegation-1151,TN-11,Le Jasmin,Le Jasmin,الياسمين,,7116453
+sector-115156,115156,delegation-1151,TN-11,Cité Mohamed Ali,Cité Mohamed Ali,حي محمد علي,,7116452
+sector-115251,115251,delegation-1152,TN-11,La Medina,La Medina,المدينة,,7201447
+sector-115252,115252,delegation-1152,TN-11,El Hafsia,El Hafsia,الحفصية,,7201444
+sector-115253,115253,delegation-1152,TN-11,Bab Benat,Bab Benat,باب البنات,,7201436
+sector-115254,115254,delegation-1152,TN-11,Souk El Nhes,Souk El Nhes,سوق النحاس,,7201446
+sector-115255,115255,delegation-1152,TN-11,El Assouak,El Assouak,الأسواق,,7201443
+sector-115256,115256,delegation-1152,TN-11,Bab Mnara,Bab Mnara,باب المنارة,,7201441
+sector-115257,115257,delegation-1152,TN-11,Tourbet El Bey,Tourbet El Bey,تربة الباي,,7201445
+sector-115258,115258,delegation-1152,TN-11,El Zraria,El Zraria,الزرارعية,,7201442
+sector-115259,115259,delegation-1152,TN-11,Sidi Ali Azouz,Sidi Ali Azouz,سيدي علي عزوز,,7201439
+sector-115260,115260,delegation-1152,TN-11,El Taoufik,El Taoufik,التوفيق,,7201437
+sector-115261,115261,delegation-1152,TN-11,El Sabaghine,El Sabaghine,الصباغين,,7201440
+sector-115262,115262,delegation-1152,TN-11,Sidi Boumendil,Sidi Boumendil,سيدي بومنديل,,7201438
+sector-115351,115351,delegation-1153,TN-11,Bab El Bhar,Bab El Bhar,باب البحر,,7201454
+sector-115352,115352,delegation-1153,TN-11,Les Jardins,Les Jardins,الحدائق,,7201452
+sector-115353,115353,delegation-1153,TN-11,Lac De Tunis,Lac De Tunis,بحيرة تونس,,7201458
+sector-115354,115354,delegation-1153,TN-11,Mongi Slim,Mongi Slim,المنجي سليم,,7201453
+sector-115355,115355,delegation-1153,TN-11,Habib Thameur,Habib Thameur,الحبيب ثامر,,7201451
+sector-115356,115356,delegation-1153,TN-11,Taieb El M'Hiri,Taieb El M'Hiri,الطيب المهيري,,7201456
+sector-115357,115357,delegation-1153,TN-11,Hedi Chaker,Hedi Chaker,الهادي شاكر,,7201455
+sector-115358,115358,delegation-1153,TN-11,Sidi El Bahri,Sidi El Bahri,سيدي البحري,,7201457
+sector-115451,115451,delegation-1154,TN-11,Tronja,Tronja,ترنجة,,7201472
+sector-115452,115452,delegation-1154,TN-11,Bab El Khadra,Bab El Khadra,باب الخضراء,,7201470
+sector-115453,115453,delegation-1154,TN-11,Bab Saadoun,Bab Saadoun,باب سعدون,,7201478
+sector-115454,115454,delegation-1154,TN-11,Borj Zouara,Borj Zouara,برج زوارة,,7201476
+sector-115455,115455,delegation-1154,TN-11,Bab El Assel,Bab El Assel,باب العسل,,7201469
+sector-115456,115456,delegation-1154,TN-11,El Halfaouine,El Halfaouine,الحلفاوين,,7201468
+sector-115457,115457,delegation-1154,TN-11,Bab Souika,Bab Souika,باب سويقة,,7201474
+sector-115458,115458,delegation-1154,TN-11,Bab Sidi Abdessalem,Bab Sidi Abdessalem,باب سيدي عبد السلام,,7201471
+sector-115459,115459,delegation-1154,TN-11,Zaouiet El Bekria,Zaouiet El Bekria,الزاوية البكرية,,7201477
+sector-115460,115460,delegation-1154,TN-11,Hammam El Rmimi,Hammam El Rmimi,حمام الرميمي,,7201473
+sector-115461,115461,delegation-1154,TN-11,Sidi Djebali,Sidi Djebali,سيدي الجبالي,,7201475
+sector-115551,115551,delegation-1155,TN-11,El Omrane,El Omrane,العمران,,7201480
+sector-115552,115552,delegation-1155,TN-11,Djebel El Ahmar,Djebel El Ahmar,الجبل الأحمر,,7201479
+sector-115553,115553,delegation-1155,TN-11,Cite Des Oliviers,Cite Des Oliviers,حي الزياتين,,7201482
+sector-115554,115554,delegation-1155,TN-11,Ras Tabia,Ras Tabia,رأس الطابية,,7201481
+sector-115555,115555,delegation-1155,TN-11,Bir Atig,Bir Atig,بئر عتيق,,7201483
+sector-115556,115556,delegation-1155,TN-11,Oued El Sebai,Oued El Sebai,وادي السبعي,,7201484
+sector-115651,115651,delegation-1156,TN-11,Cite Ibn Khaldoun I,Cite Ibn Khaldoun I,حي بن خلدون الأول,,7201525
+sector-115652,115652,delegation-1156,TN-11,El Romana,El Romana,الرمانة,,7201523
+sector-115654,115654,delegation-1156,TN-11,Cite Ibn Khaldoun Vi,Cite Ibn Khaldoun Vi,حي بن خلدون السادس,,7201521
+sector-115655,115655,delegation-1156,TN-11,Cite El Intilaka,Cite El Intilaka,حي الإنطلاقة,,7201519
+sector-115656,115656,delegation-1156,TN-11,El Omrane Superieur,El Omrane Superieur,العمران الأعلى,,7201524
+sector-115657,115657,delegation-1156,TN-11,El Nassim,El Nassim,النسيم,,7201522
+sector-115658,115658,delegation-1156,TN-11,Ahmed Tlili,Ahmed Tlili,أحمد التليلي,,7201520
+sector-115659,115659,delegation-1156,TN-11,Es-Sadique,Es-Sadique,الصديق,,7201518
+sector-115751,115751,delegation-1157,TN-11,Ettahrir (1),Ettahrir (1),التحرير الأول,,7201527
+sector-115752,115752,delegation-1157,TN-11,Ettahrir (2),Ettahrir (2),التحرير الثاني,,7201531
+sector-115753,115753,delegation-1157,TN-11,Ettahrir (3),Ettahrir (3),التحرير الثالث,,7201529
+sector-115754,115754,delegation-1157,TN-11,Ettahrir Superieur,Ettahrir Superieur,التحرير العلوي,,7201528
+sector-115755,115755,delegation-1157,TN-11,El Hadika,El Hadika,الحديقة,,7201530
+sector-115851,115851,delegation-1158,TN-11,01 Juin,01 Juin,جوان 01,,7201543
+sector-115852,115852,delegation-1158,TN-11,El Menzah,El Menzah,المنزه,,7201545
+sector-115853,115853,delegation-1158,TN-11,El Fath,El Fath,الفتح,,7201544
+sector-115854,115854,delegation-1158,TN-11,El Manar,El Manar,المنار,,7201547
+sector-115855,115855,delegation-1158,TN-11,El Manar (1),El Manar (1),المنار 1,,7201546
+sector-115951,115951,delegation-1159,TN-11,Cite El Khadra,Cite El Khadra,حي الخضراء,,7201241
+sector-115952,115952,delegation-1159,TN-11,Cite Jardin,Cite Jardin,حي الحدائق,,7201237
+sector-115953,115953,delegation-1159,TN-11,Ech-Charguia,Ech-Charguia,الشرقية,,7201235
+sector-115954,115954,delegation-1159,TN-11,Khereiddine Pacha,Khereiddine Pacha,خير الدين باشا,,7201239
+sector-115955,115955,delegation-1159,TN-11,Ali Belhouane,Ali Belhouane,علي بلهوان,,7201238
+sector-115956,115956,delegation-1159,TN-11,Farhat Hached,Farhat Hached,فرحات حشاد,,7201234
+sector-115957,115957,delegation-1159,TN-11,El Bouhaira,El Bouhaira,البحيرة,,7201240
+sector-115958,115958,delegation-1159,TN-11,Hay Es Salem,Hay Es Salem,حي السلام,,7201236
+sector-116051,116051,delegation-1160,TN-11,Bardo,Bardo,باردو,,7118020
+sector-116052,116052,delegation-1160,TN-11,Bardo Nord,Bardo Nord,باردو الشمالية,,7118021
+sector-116053,116053,delegation-1160,TN-11,Bardo Sud,Bardo Sud,باردو الجنوبية,,7118026
+sector-116054,116054,delegation-1160,TN-11,El Hadika,El Hadika,الحديقة,,7118027
+sector-116055,116055,delegation-1160,TN-11,Bouchoucha,Bouchoucha,بوشوشة,,7118029
+sector-116056,116056,delegation-1160,TN-11,Bonne Résidence,Bonne Résidence,اقامة جميلة,,7118028
+sector-116057,116057,delegation-1160,TN-11,Khaznadar,Khaznadar,خزندار,,7118023
+sector-116058,116058,delegation-1160,TN-11,El Fath,El Fath,الفتح,,7118025
+sector-116059,116059,delegation-1160,TN-11,Ksar-Said,Ksar-Said,قصر سعيد,,7118030
+sector-116060,116060,delegation-1160,TN-11,Ksar - Said 2,Ksar - Said 2,قصر سعيد 2,,7118032
+sector-116061,116061,delegation-1160,TN-11,El Bassatine,El Bassatine,البساتين,,7118022
+sector-116062,116062,delegation-1160,TN-11,Essaada,Essaada,السعادة,,7118024
+sector-116063,116063,delegation-1160,TN-11,Ksar El Bortal,Ksar El Bortal,قصر البرطال,,7118031
+sector-116064,116064,delegation-1160,TN-11,Ibn Sina,Ibn Sina,ابن سينا,,7118033
+sector-116151,116151,delegation-1161,TN-11,Hay Hlel,Hay Hlel,حي هلال,,7201553
+sector-116152,116152,delegation-1161,TN-11,Ali Belhouane,Ali Belhouane,علي البلهوان,,7201551
+sector-116153,116153,delegation-1161,TN-11,En-Najah,En-Najah,النجاح,,7201554
+sector-116154,116154,delegation-1161,TN-11,Cite Des Martyrs,Cite Des Martyrs,حي الشهداء,,7201555
+sector-116155,116155,delegation-1161,TN-11,Bir Anniba,Bir Anniba,بئر عنيبة,,7201556
+sector-116156,116156,delegation-1161,TN-11,Mellassine,Mellassine,الملاسين,,7201552
+sector-116251,116251,delegation-1162,TN-11,Ezzouhour,Ezzouhour,الزهور,,7201569
+sector-116252,116252,delegation-1162,TN-11,Ezzouhour Iv,Ezzouhour Iv,الزهور الرابع,,7201568
+sector-116253,116253,delegation-1162,TN-11,Es-Saada,Es-Saada,السعادة,,7201573
+sector-116254,116254,delegation-1162,TN-11,Es-Soumrane,Es-Soumrane,السمران,,7201571
+sector-116255,116255,delegation-1162,TN-11,Cite Tayarane,Cite Tayarane,حي الطيران,,7201570
+sector-116256,116256,delegation-1162,TN-11,Bach-Hamba,Bach-Hamba,باش حانبة,,7201572
+sector-116351,116351,delegation-1163,TN-11,El-Hrairia,El-Hrairia,الحرايرية,,7201587
+sector-116352,116352,delegation-1163,TN-11,Ezzouhour V,Ezzouhour V,الزهور الخامس,,7201586
+sector-116353,116353,delegation-1163,TN-11,El Agba,El Agba,العقبة,,7201583
+sector-116354,116354,delegation-1163,TN-11,El Agba Superieur,El Agba Superieur,العقبة العليا,,7201582
+sector-116355,116355,delegation-1163,TN-11,Ghedir El Golla,Ghedir El Golla,غدير القلة,,7201588
+sector-116356,116356,delegation-1163,TN-11,El Antit,El Antit,العنتيت,,7201580
+sector-116357,116357,delegation-1163,TN-11,El Foula,El Foula,الفلة,,7201585
+sector-116358,116358,delegation-1163,TN-11,Tarak Ibn Ziad,Tarak Ibn Ziad,طارق بن زياد,,7201584
+sector-116359,116359,delegation-1163,TN-11,Ezzahrouni,Ezzahrouni,الزهروني,,7201581
+sector-116451,116451,delegation-1164,TN-11,Borj Chakir,Borj Chakir,برج شكير,,7116965
+sector-116452,116452,delegation-1164,TN-11,Sidi Hassine,Sidi Hassine,سيدي حسين,,7201656
+sector-116453,116453,delegation-1164,TN-11,El Jaiara,El Jaiara,الجيارة,,7116972
+sector-116454,116454,delegation-1164,TN-11,Attar,Attar,عطار,,7116970
+sector-116455,116455,delegation-1164,TN-11,20 Mars,20 Mars,20مارس,,7201653
+sector-116456,116456,delegation-1164,TN-11,Byrine,Byrine,بيرين,,7201652
+sector-116457,116457,delegation-1164,TN-11,Meghiret Inzel,Meghiret Inzel,المغيرة إنزال,,7201655
+sector-116458,116458,delegation-1164,TN-11,25 Juillet,25 Juillet,25جويلية,,7201654
+sector-116459,116459,delegation-1164,TN-11,14 Janvier,14 Janvier,14جانفي,,7116971
+sector-116551,116551,delegation-1165,TN-11,El Ouardia,El Ouardia,الوردية,,7201611
+sector-116552,116552,delegation-1165,TN-11,Bou-Gatfa,Bou-Gatfa,بوقطفة,,7201606
+sector-116553,116553,delegation-1165,TN-11,Tahar Sfar,Tahar Sfar,الطاهر صفر,,7201609
+sector-116554,116554,delegation-1165,TN-11,Cite El Izdihar,Cite El Izdihar,حي الإزدهار,,7201610
+sector-116555,116555,delegation-1165,TN-11,Cite Mohamed Ali,Cite Mohamed Ali,حي محمد علي,,7201607
+sector-116556,116556,delegation-1165,TN-11,Sidi Belhassen,Sidi Belhassen,سيدي بلحسن,,7201608
+sector-116651,116651,delegation-1166,TN-11,El Kabaria (1),El Kabaria (1),الكبارية 1,,7202753
+sector-116652,116652,delegation-1166,TN-11,El Kabaria (2),El Kabaria (2),الكبارية 2,,7202757
+sector-116653,116653,delegation-1166,TN-11,El Kabaria (3),El Kabaria (3),الكبارية 3,,7202755
+sector-116654,116654,delegation-1166,TN-11,El Kabaria (4),El Kabaria (4),الكبارية 4,,7202754
+sector-116655,116655,delegation-1166,TN-11,Cite Ennour,Cite Ennour,حي النور,,7202750
+sector-116656,116656,delegation-1166,TN-11,Ibn Sina 1,Ibn Sina 1,ابن سينا 1,,7202751
+sector-116657,116657,delegation-1166,TN-11,Ibn Sina 2,Ibn Sina 2,ابن سينا 2,,7202756
+sector-116658,116658,delegation-1166,TN-11,El Mourouj (2),El Mourouj (2),المروج 2,,7202752
+sector-116751,116751,delegation-1167,TN-11,Sidi El Bechir,Sidi El Bechir,سيدي البشير,,7202774
+sector-116752,116752,delegation-1167,TN-11,Sidi Mansour,Sidi Mansour,سيدي منصور,,7202775
+sector-116753,116753,delegation-1167,TN-11,Maakel Ezzaim,Maakel Ezzaim,معقل الزعيم,,7202779
+sector-116754,116754,delegation-1167,TN-11,Farhat Hached,Farhat Hached,فرحات حشاد,,7202778
+sector-116755,116755,delegation-1167,TN-11,Abulkacem Ech-Chebbi,Abulkacem Ech-Chebbi,أبو القاسم الشابي,,7202776
+sector-116756,116756,delegation-1167,TN-11,Saida Manoubia,Saida Manoubia,السيدة المنوبية,,7202777
+sector-116851,116851,delegation-1168,TN-11,Sidi Fathallah,Sidi Fathallah,سيدي فتح الله,,7202848
+sector-116852,116852,delegation-1168,TN-11,Ali Bach-Hamba,Ali Bach-Hamba,علي باش حانبة,,7202853
+sector-116853,116853,delegation-1168,TN-11,El Garjouma,El Garjouma,القرجومة,,7202850
+sector-116854,116854,delegation-1168,TN-11,Cite El Fath,Cite El Fath,حي الفتح,,7202849
+sector-116855,116855,delegation-1168,TN-11,Es-Sebkha,Es-Sebkha,السبخاء,,7202847
+sector-116856,116856,delegation-1168,TN-11,El Afrane,El Afrane,الأفران,,7202852
+sector-116857,116857,delegation-1168,TN-11,Djebel Djeloud,Djebel Djeloud,جبل الجلود,,7202851
+sector-116951,116951,delegation-1169,TN-11,La Goulette,La Goulette,حلق الوادي,,7117933
+sector-116952,116952,delegation-1169,TN-11,La Goulette Casino,La Goulette Casino,حلق الوادي الكازينو,,7117889
+sector-116953,116953,delegation-1169,TN-11,Kheredine,Kheredine,خير الدين,Q12211002,7117890
+sector-116954,116954,delegation-1169,TN-11,Taieb Mhiri,Taieb Mhiri,الطيب مهيري,,7117932
+sector-116955,116955,delegation-1169,TN-11,Cité Essalema,Cité Essalema,حي السلامة,,7117891
+sector-117051,117051,delegation-1170,TN-11,Le Kram Est,Le Kram Est,كرم الشرقية,,7063887
+sector-117052,117052,delegation-1170,TN-11,Erriadh,Erriadh,الرياض,,7079234
+sector-117053,117053,delegation-1170,TN-11,El Bouhaira,El Bouhaira,البحيرة,,7079365
+sector-117054,117054,delegation-1170,TN-11,Sidi Fredj,Sidi Fredj,سيدي فرج,,7079364
+sector-117055,117055,delegation-1170,TN-11,Le Kram Ouest,Le Kram Ouest,الكرم الغربية,,7079335
+sector-117056,117056,delegation-1170,TN-11,Sidi Amor,Sidi Amor,سيدي عمر,,7079355
+sector-117057,117057,delegation-1170,TN-11,Bir El Helou,Bir El Helou,بير لحلو,,7079245
+sector-117151,117151,delegation-1171,TN-11,La Marsa Plage,La Marsa Plage,المرسى الشاطئ,,7062337
+sector-117152,117152,delegation-1171,TN-11,La Marsa Medina,La Marsa Medina,المرسى مدينة,,7062770
+sector-117153,117153,delegation-1171,TN-11,La Marsa Hadayek,La Marsa Hadayek,المرسى حدائق,,7062740
+sector-117154,117154,delegation-1171,TN-11,La Marsa Erriadh,La Marsa Erriadh,مرسى الرياض,,7062769
+sector-117155,117155,delegation-1171,TN-11,Er-Rmila,Er-Rmila,الرميلة,,7062759
+sector-117156,117156,delegation-1171,TN-11,La Marsa El Montazeh,La Marsa El Montazeh,المرسى المنتزه,,7062421
+sector-117157,117157,delegation-1171,TN-11,Gammarth,Gammarth,قمرت,,7062758
+sector-117158,117158,delegation-1171,TN-11,Gammarth Supérieur,Gammarth Supérieur,قمرت العليا,,7062768
+sector-117159,117159,delegation-1171,TN-11,Sayydi Dawud,Sidi Daoued,سيدي داود,,7062422
+sector-117160,117160,delegation-1171,TN-11,Bhar Lazreg,Bhar Lazreg,البحر الأزرق,,7062736
+sector-125151,125151,delegation-1251,TN-12,Ariana El Jadida,Ariana El Jadida,أريانة الجديدة,,7115056
+sector-125152,125152,delegation-1251,TN-12,Ariana Supérieure,Ariana Supérieure,أريانة العليا,,7115048
+sector-125153,125153,delegation-1251,TN-12,Ariana Ville,Ariana Ville,أريانة المدينة,,7115054
+sector-125154,125154,delegation-1251,TN-12,El Menzah 5,El Menzah 5,المنزه 5,,7115051
+sector-125155,125155,delegation-1251,TN-12,El Menzah 6,El Menzah 6,المنزه 6,,7115052
+sector-125156,125156,delegation-1251,TN-12,Ettaamir I,Ettaamir I,التعمير 2,,7115053
+sector-125157,125157,delegation-1251,TN-12,El Yasmina,El Yasmina,الياسمينة,,7115055
+sector-125158,125158,delegation-1251,TN-12,Nasr 1,Nasr 1,النصر 1,,7115050
+sector-125159,125159,delegation-1251,TN-12,Ennasr 2,Ennasr 2,النصر2,,7115049
+sector-125251,125251,delegation-1252,TN-12,Soukra,Soukra,سكرة,,7114900
+sector-125252,125252,delegation-1252,TN-12,Dar Fadhal,Dar Fadhal,دار فضال,,7114903
+sector-125253,125253,delegation-1252,TN-12,El Bassatine,El Bassatine,البساتين,,7114902
+sector-125254,125254,delegation-1252,TN-12,Chotrana,Chotrana,شطرانة,,7114901
+sector-125255,125255,delegation-1252,TN-12,Borj Louzir,Borj Louzir,برج الوزير,,7114906
+sector-125256,125256,delegation-1252,TN-12,Ennassim,Ennassim,النسيم,,7114905
+sector-125257,125257,delegation-1252,TN-12,Ettaamir,Ettaamir,التعمير 2,,7114904
+sector-125351,125351,delegation-1253,TN-12,Jaafar,Jaafar,جعفر,,7114556
+sector-125352,125352,delegation-1253,TN-12,Nkhilet,Nkhilet,النخيلات,,7114553
+sector-125353,125353,delegation-1253,TN-12,El Medina El Fadhla,El Medina El Fadhla,المدينة الفاضلة,,7114552
+sector-125354,125354,delegation-1253,TN-12,El Ghazela,El Ghazela,الغزالة,,7114554
+sector-125355,125355,delegation-1253,TN-12,Raoued,Raoued,رواد,,7114555
+sector-125356,125356,delegation-1253,TN-12,Borj Touil,Borj Touil,برج الطويل,,7114550
+sector-125357,125357,delegation-1253,TN-12,Sidi Bou Khtiwa,Sidi Bou Khtiwa,سيدي عمر بو خطيوة,,7114551
+sector-125451,125451,delegation-1254,TN-12,Kallat El Andalous Est,Kallat El Andalous Est,قلعة الأندلس الشرقية,,7114424
+sector-125452,125452,delegation-1254,TN-12,Kalaat El Andalous Ouest,Kalaat El Andalous Ouest,قلعة الأندلس الغربية,,7114425
+sector-125453,125453,delegation-1254,TN-12,Pont de Bizerte,Pont de Bizerte,قنطرة بنزرت,,7114422
+sector-125454,125454,delegation-1254,TN-12,Bou Hannech,Bou Hannech,بو حناش,,7114421
+sector-125455,125455,delegation-1254,TN-12,El Hessiane,El Hessiane,الحسيان,,7114423
+sector-125456,125456,delegation-1254,TN-12,Ennahli,Ennahli,النحلي,,7114420
+sector-125551,125551,delegation-1255,TN-12,Sidi Thabet,Sidi Thabet,سيدي ثابت,Q3176067,7115793
+sector-125552,125552,delegation-1255,TN-12,Bejaoua,Bejaoua,بجاوة,,7115791
+sector-125553,125553,delegation-1255,TN-12,Mongi Slim,Mongi Slim,المنجي سليم,,7115790
+sector-125554,125554,delegation-1255,TN-12,Cebalet Ben Ammar,Cebalet Ben Ammar,سبالة بن عمار,,7115792
+sector-125555,125555,delegation-1255,TN-12,Chorfech,Chorfech,شرفش,,7115794
+sector-125651,125651,delegation-1256,TN-12,Cité Ettadhamen,Cité Ettadhamen,حي التضامن,,7115587
+sector-125652,125652,delegation-1256,TN-12,Ibn Khaldoun,Ibn Khaldoun,ابن خلدون,,7115588
+sector-125653,125653,delegation-1256,TN-12,9 Avril,9 Avril,9 أفريل,,7115586
+sector-125654,125654,delegation-1256,TN-12,18 Janvier,18 Janvier,18 جانفي,,7115585
+sector-125655,125655,delegation-1256,TN-12,2 Mars,2 Mars,مارس 2,,7115582
+sector-125656,125656,delegation-1256,TN-12,Mongi Slim,Mongi Slim,المنجي سليم,,7115583
+sector-125657,125657,delegation-1256,TN-12,7 Novembre,7 Novembre,7 نوفمبر,,7115584
+sector-125658,125658,delegation-1256,TN-12,Abou El Kacem Echebbi,Abou El Kacem Echebbi,أبو القاسم الشابي,,7115589
+sector-125659,125659,delegation-1256,TN-12,Kheireddine Pacha,Kheireddine Pacha,خير الدين باشا,,7115501
+sector-125751,125751,delegation-1257,TN-12,El Mnihla,El Mnihla,المنيهلة,,7115407
+sector-125752,125752,delegation-1257,TN-12,Errafaha,Errafaha,الرفاهة,,7115408
+sector-125753,125753,delegation-1257,TN-12,Ennasr,Ennasr,النصر 1,,7115409
+sector-125754,125754,delegation-1257,TN-12,El Bassatine,El Bassatine,البساتين,,7115406
+sector-125755,125755,delegation-1257,TN-12,15 Octobre,15 Octobre,15 أكتوبر,,7115405
+sector-135151,135151,delegation-1351,TN-13,Ben Arous Est,Ben Arous Est,بن عروس الشرقية,,7174587
+sector-135152,135152,delegation-1351,TN-13,Cite Ibn Arafa,Cite Ibn Arafa,حي ابن عرفة,,7174597
+sector-135153,135153,delegation-1351,TN-13,El Mehiri,El Mehiri,المهيري,,7174580
+sector-135154,135154,delegation-1351,TN-13,Ben Arous Ouest,Ben Arous Ouest,بن عروس الغربية,,7174588
+sector-135155,135155,delegation-1351,TN-13,Sidi Ben Arous,Sidi Ben Arous,سيدي بن عروس,,7174611
+sector-135156,135156,delegation-1351,TN-13,Cite El Iskane,Cite El Iskane,حي الاسكان,,7174599
+sector-135251,135251,delegation-1352,TN-13,La Nouvelle Medina(1),La Nouvelle Medina(1),المدينة الجديدة 1,,7174571
+sector-135252,135252,delegation-1352,TN-13,La Nouvelle Medina(2),La Nouvelle Medina(2),المدينة الجديدة 2,,7174572
+sector-135253,135253,delegation-1352,TN-13,Sidi Mosbah,Sidi Mosbah,سيدي مصباح,,7174617
+sector-135254,135254,delegation-1352,TN-13,El Yasminet,El Yasminet,الياسمينات,,7174582
+sector-135255,135255,delegation-1352,TN-13,Errabta,Errabta,الرابطة,,7174561
+sector-135351,135351,delegation-1353,TN-13,El Mourouj (1),El Mourouj (1),المروج 1,,7174573
+sector-135352,135352,delegation-1353,TN-13,El Mourouj (3),El Mourouj (3),المروج 3,,7174574
+sector-135353,135353,delegation-1353,TN-13,El Mourouj (4),El Mourouj (4),المروج 4,,7174575
+sector-135354,135354,delegation-1353,TN-13,El Mourouj (5),El Mourouj (5),المروج 5,,7174576
+sector-135355,135355,delegation-1353,TN-13,Bir Kassaa,Bir Kassaa,بئر القصعة,,7174584
+sector-135356,135356,delegation-1353,TN-13,Farhat Hached,Farhat Hached,فرحات حشاد,,7174621
+sector-135451,135451,delegation-1354,TN-13,Hammam Lif Ville,Hammam Lif Ville,حمام الانف المدينة,,7174593
+sector-135452,135452,delegation-1354,TN-13,Hammem Lif Ville 2,Hammem Lif Ville 2,حمام الانف المدينة 2,,7174592
+sector-135453,135453,delegation-1354,TN-13,Hammem Lif Bou Kornine,Hammem Lif Bou Kornine,حمام الانف بوقرنين,,7174595
+sector-135454,135454,delegation-1354,TN-13,Farhat Hached,Farhat Hached,فرحات حشاد,,7174622
+sector-135455,135455,delegation-1354,TN-13,Hammam Lif El Malaab,Hammam Lif El Malaab,حمام الانف الملعب,,7174594
+sector-135456,135456,delegation-1354,TN-13,Cite Mohamed Ali,Cite Mohamed Ali,حي محمد علي,,7174604
+sector-135551,135551,delegation-1355,TN-13,Bir El Bey,Bir El Bey,بئر الباي,,7174583
+sector-135552,135552,delegation-1355,TN-13,Borj Cedria,Borj Cedria,برج السدرية,,7174585
+sector-135553,135553,delegation-1355,TN-13,Hammem Chatt,Hammem Chatt,حمام الشط,,7174596
+sector-135651,135651,delegation-1356,TN-13,Bou Mhel,Bou Mhel,بومهل,,7174589
+sector-135652,135652,delegation-1356,TN-13,El Bassatine,El Bassatine,البساتين,,7174559
+sector-135653,135653,delegation-1356,TN-13,Chela,Chela,شالة,,7174618
+sector-135654,135654,delegation-1356,TN-13,El Bassatine El Gharbya,El Bassatine El Gharbya,البساتين الغربية,,7174558
+sector-135751,135751,delegation-1357,TN-13,Ez-Zahra Ville,Ez-Zahra Ville,الزهراء المدينة,,7174564
+sector-135752,135752,delegation-1357,TN-13,Cite El Habib,Cite El Habib,حي الحبيب,,7174600
+sector-135753,135753,delegation-1357,TN-13,18 Janvier,18 Janvier,18جانفي,,7174556
+sector-135754,135754,delegation-1357,TN-13,Borj El Louzir,Borj El Louzir,برج الوزير,,7174586
+sector-135851,135851,delegation-1358,TN-13,Rades Ville,Rades Ville,رادس المدينة,,7174607
+sector-135852,135852,delegation-1358,TN-13,Rades Mellaha,Rades Mellaha,رادس الملاحة,,7174608
+sector-135853,135853,delegation-1358,TN-13,Taieb Mehiri,Taieb Mehiri,الطيب المهيري,,7174566
+sector-135854,135854,delegation-1358,TN-13,Rades Remada,Rades Remada,رادس رمادة,,7174609
+sector-135855,135855,delegation-1358,TN-13,Mongi Slim,Mongi Slim,المنجي سليم,,7174578
+sector-135856,135856,delegation-1358,TN-13,Rades Foret,Rades Foret,رادس الغابة,,7174606
+sector-135857,135857,delegation-1358,TN-13,Rades Meliane,Rades Meliane,رادس مليان,,7174610
+sector-135858,135858,delegation-1358,TN-13,Noubou,Noubou,نوبو,,7174632
+sector-135951,135951,delegation-1359,TN-13,Megrine Superieure,Megrine Superieure,مقرين العليا,,7174627
+sector-135952,135952,delegation-1359,TN-13,Megrine Riadh,Megrine Riadh,مقرين الرياض,,7174626
+sector-135953,135953,delegation-1359,TN-13,Jawhara,Jawhara,جوهرة,,7174591
+sector-135954,135954,delegation-1359,TN-13,Menzel Mabrouk,Menzel Mabrouk,منزل مبروك,,7174630
+sector-135955,135955,delegation-1359,TN-13,Megrine Chaker,Megrine Chaker,مقرين شاكر,,7174628
+sector-135957,135957,delegation-1359,TN-13,Sidi Rezig,Sidi Rezig,سيدي رزيق,,7174613
+sector-135958,135958,delegation-1359,TN-13,Sidi Rezig (2),Sidi Rezig (2),سيدي رزيق 2,,7174612
+sector-136051,136051,delegation-1360,TN-13,Mohamedia,Mohamedia,المحمدية,,7174570
+sector-136052,136052,delegation-1360,TN-13,Mongi Selim,Mongi Selim,المنجي سليم,,7174579
+sector-136053,136053,delegation-1360,TN-13,Cite Es-Saada,Cite Es-Saada,حي السعادة,,7174601
+sector-136054,136054,delegation-1360,TN-13,Cite El Nassim,Cite El Nassim,حي النسيم,,7174603
+sector-136055,136055,delegation-1360,TN-13,Sidi Frej,Sidi Frej,سيدي فرج,,7174616
+sector-136151,136151,delegation-1361,TN-13,Fouchana,Fouchana,فوشانة,,7174623
+sector-136152,136152,delegation-1361,TN-13,Cite El Mostakbel,Cite El Mostakbel,حي المستقبل,,7174602
+sector-136153,136153,delegation-1361,TN-13,El Hidhab,El Hidhab,الهضاب,,7174581
+sector-136154,136154,delegation-1361,TN-13,El Mghira,El Mghira,المغيرة,,7174577
+sector-136155,136155,delegation-1361,TN-13,Naassen,Naassen,نعسان,,7174631
+sector-136156,136156,delegation-1361,TN-13,Chebeda,Chebeda,شبدّة,,7174619
+sector-136157,136157,delegation-1361,TN-13,Douar Elhouch,Douar Elhouch,دوار الحوش,,7174605
+sector-136251,136251,delegation-1362,TN-13,Mornag,Mornag,مرناق,,7174625
+sector-136252,136252,delegation-1362,TN-13,Mornag Ouest,Mornag Ouest,مرناق الغربية,,7174624
+sector-136253,136253,delegation-1362,TN-13,Khelidia,Khelidia,الخليدية,,7174560
+sector-136254,136254,delegation-1362,TN-13,Ez-Zaouia,Ez-Zaouia,الزاوية,,7174563
+sector-136255,136255,delegation-1362,TN-13,Djebel Ressas,Djebel Ressas,جبل الرصاص,,7174590
+sector-136256,136256,delegation-1362,TN-13,Sidi Salem El Garsi,Sidi Salem El Garsi,سيدي سالم القارصي,,7174614
+sector-136257,136257,delegation-1362,TN-13,Kabouti,Kabouti,الكبوطي,,7174569
+sector-136258,136258,delegation-1362,TN-13,Ain Rekad,Ain Rekad,عين رقاد,,7174620
+sector-136259,136259,delegation-1362,TN-13,El Gounna,El Gounna,القنة,,7174568
+sector-136260,136260,delegation-1362,TN-13,Sidi Saad,Sidi Saad,سيدي سعد,,7174615
+sector-136261,136261,delegation-1362,TN-13,Essalem,Essalem,السلام,,7174565
+sector-136262,136262,delegation-1362,TN-13,Errisala,Errisala,الرسالة,,7174562
+sector-136263,136263,delegation-1362,TN-13,Oudhna,Oudhna,أوذنة,,7174557
+sector-136264,136264,delegation-1362,TN-13,El Kessibi,El Kessibi,القصيبي,,7174567
+sector-145151,145151,delegation-1451,TN-14,Manouba,Manouba,منوبة,,7090541
+sector-145152,145152,delegation-1451,TN-14,Manouba Centre,Manouba Centre,منوبة الوسطى,,7090538
+sector-145153,145153,delegation-1451,TN-14,Sidi Amor,Sidi Amor,سيدي عمر,,7090536
+sector-145154,145154,delegation-1451,TN-14,Den - Den,Den - Den,الدندان,Q3022276,7090540
+sector-145155,145155,delegation-1451,TN-14,Qasr Sa'id,Ksar - Said,قصر سعيد,,7095908
+sector-145156,145156,delegation-1451,TN-14,Den - Den Sud,Den - Den Sud,الدندان الجنوبية,,7090539
+sector-145251,145251,delegation-1452,TN-14,Douar Hicher,Douar Hicher,دوار ھيشر,,7090957
+sector-145252,145252,delegation-1452,TN-14,Khaled Ibn El Oualid,Khaled Ibn El Oualid,خالد إبن الوليد,,7090956
+sector-145253,145253,delegation-1452,TN-14,Cité Er- Riadh,Cité Er- Riadh,حي الرياض,,7090953
+sector-145254,145254,delegation-1452,TN-14,Cité Ennassim,Cité Ennassim,حي النسيم,,7090955
+sector-145255,145255,delegation-1452,TN-14,Cité Ech - Chabeb,Cité Ech - Chabeb,حي الشباب,,7090954
+sector-145351,145351,delegation-1453,TN-14,Oued Ellil,Oued Ellil,وادي الليل,,7095862
+sector-145352,145352,delegation-1453,TN-14,Es Saida,Es Saida,السعيدة,,7095858
+sector-145353,145353,delegation-1453,TN-14,Er Riadh,Er Riadh,الرياض,,7095857
+sector-145354,145354,delegation-1453,TN-14,Cité El Ouerd,Cité El Ouerd,حي الورد,,7095860
+sector-145355,145355,delegation-1453,TN-14,Ennajet,Ennajet,النجاة,,7091763
+sector-145356,145356,delegation-1453,TN-14,Sanhaja,Sanhaja,صنهاجة,,7095861
+sector-145357,145357,delegation-1453,TN-14,El Kobbâa,El Kobbâa,القبعة,,7095859
+sector-145451,145451,delegation-1454,TN-14,Mornaguia,Mornaguia,المرناقية,,7102308
+sector-145452,145452,delegation-1454,TN-14,20-mars,20-mars,20 مارس,,7102306
+sector-145453,145453,delegation-1454,TN-14,Bouragba,Bouragba,بورقبة,,7102309
+sector-145454,145454,delegation-1454,TN-14,El Fajja,El Fajja,الفجة,,7102174
+sector-145455,145455,delegation-1454,TN-14,Sidi Ali El Hattab,Sidi Ali El Hattab,سيدي علي الحطاب,,7102175
+sector-145456,145456,delegation-1454,TN-14,Hmaïema,Hmaïema,حميم,,7102310
+sector-145457,145457,delegation-1454,TN-14,El Bassatine,El Bassatine,البساتين,,7102173
+sector-145458,145458,delegation-1454,TN-14,Mornaguia Nord,Mornaguia Nord,المرناقية الشمالي,,7102307
+sector-145551,145551,delegation-1455,TN-14,Borj El Amri,Borj El Amri,برج العامري,,7102211
+sector-145552,145552,delegation-1455,TN-14,Menzel Habib,Menzel Habib,منزل حبيب,,7102213
+sector-145553,145553,delegation-1455,TN-14,Borj Ennour,Borj Ennour,برج النور,,7102212
+sector-145554,145554,delegation-1455,TN-14,El Moussadine,El Moussadine,المساعدين,,7102210
+sector-145651,145651,delegation-1456,TN-14,Djedaïda,Djedaïda,الجديدة,,7098012
+sector-145652,145652,delegation-1456,TN-14,Djedaïda Hached,Djedaïda Hached,الجديدة حشاد,,7098011
+sector-145653,145653,delegation-1456,TN-14,Chaouat,Chaouat,شواط,,7097828
+sector-145654,145654,delegation-1456,TN-14,El Mansoura,El Mansoura,المنصورة,,7098057
+sector-145655,145655,delegation-1456,TN-14,Ez - Zahra,Ez - Zahra,الزهرة,,7098038
+sector-145656,145656,delegation-1456,TN-14,El Habibia,El Habibia,الحبيبية,,7098056
+sector-145751,145751,delegation-1457,TN-14,Tebourba,Tebourba,طبربة,Q3099155,7098933
+sector-145752,145752,delegation-1457,TN-14,El Ansarine,El Ansarine,الأنصارين,,7099051
+sector-145753,145753,delegation-1457,TN-14,Edkhila,Edkhila,الدخيلة,,7099052
+sector-145754,145754,delegation-1457,TN-14,El Mellaha,El Mellaha,الملاحة,,7099044
+sector-145755,145755,delegation-1457,TN-14,Banlieue de Tebourba,Banlieue de Tebourba,أحواز طبربة,,7098989
+sector-145756,145756,delegation-1457,TN-14,Erraja,Erraja,الرجاء,,7098988
+sector-145757,145757,delegation-1457,TN-14,Echouigui,Echouigui,الشويقي,,7099021
+sector-145851,145851,delegation-1458,TN-14,El Battane,El Battane,البطان,,7101673
+sector-145852,145852,delegation-1458,TN-14,Borj Ettoumi,Borj Ettoumi,برج التومي,,7101527
+sector-145853,145853,delegation-1458,TN-14,Mehrine,Mehrine,المهرين,,7101702
+sector-145854,145854,delegation-1458,TN-14,El Aroussia,El Aroussia,العروسية,,7101701
+sector-155151,155151,delegation-1551,TN-21,El Asouak,El Asouak,الأسواق,,7103332
+sector-155152,155152,delegation-1551,TN-21,Ennour,Ennour,النور,,7103328
+sector-155153,155153,delegation-1551,TN-21,Bir Challouf,Bir Challouf,بئر شلّوف,,7103329
+sector-155154,155154,delegation-1551,TN-21,Neapolis,Neapolis,نيابوليس,,7103330
+sector-155155,155155,delegation-1551,TN-21,Al Hadaek,Al Hadaek,الحدائق,,7103331
+sector-155156,155156,delegation-1551,TN-21,Hedi Chaker,Hedi Chaker,الهادي شاكر,,7103327
+sector-155251,155251,delegation-1552,TN-21,Dar Chaabane,Dar Chaabane,دار شعبان,,7103335
+sector-155252,155252,delegation-1552,TN-21,El Fehri,El Fehri,الفهري,,7103336
+sector-155253,155253,delegation-1552,TN-21,El Frinine,El Frinine,الفرينين,,7103337
+sector-155254,155254,delegation-1552,TN-21,Amroun,Amroun,عمرون,,7103334
+sector-155351,155351,delegation-1553,TN-21,Beni Khiar,Beni Khiar,بني خيار,,7103009
+sector-155352,155352,delegation-1553,TN-21,Diar Ben Salem,Diar Ben Salem,ديار بن سالم,,7102855
+sector-155353,155353,delegation-1553,TN-21,El Maamoura,El Maamoura,المعمورة,,7102854
+sector-155354,155354,delegation-1553,TN-21,Somaa,Somaa,صمعة,,7103011
+sector-155355,155355,delegation-1553,TN-21,Halfa,Halfa,حلفة,,7103012
+sector-155451,155451,delegation-1554,TN-21,Ben Ayech,Ben Ayech,بن عياش,,7102512
+sector-155452,155452,delegation-1554,TN-21,Garaet Sassi,Garaet Sassi,قرعة ساسي,,7102514
+sector-155453,155453,delegation-1554,TN-21,Diar El Hojjaj,Diar El Hojjaj,ديار الحجاج,,7102515
+sector-155454,155454,delegation-1554,TN-21,Korba Est,Korba Est,قربة الشرقية,,7102516
+sector-155455,155455,delegation-1554,TN-21,Korba Ouest,Korba Ouest,قربة الغربية,,7102517
+sector-155456,155456,delegation-1554,TN-21,Tazarka,Tazarka,تازركة,,7102857
+sector-155457,155457,delegation-1554,TN-21,Boujrida,Boujrida,بوجريدة,,7102513
+sector-155458,155458,delegation-1554,TN-21,Bou Lidine,Bou Lidine,بو اليدين,,7102511
+sector-155551,155551,delegation-1555,TN-21,El Ouediane,El Ouediane,الوديان,,7100412
+sector-155552,155552,delegation-1555,TN-21,Erâinine,Erâinine,الرعينين,,7099965
+sector-155553,155553,delegation-1555,TN-21,Beni Abdelaziz,Beni Abdelaziz,بني عبد العزيز,,7099960
+sector-155554,155554,delegation-1555,TN-21,Skalba,Skalba,الصقالبة,,7099962
+sector-155555,155555,delegation-1555,TN-21,Ali Belhaouen,Ali Belhaouen,علي بلهوان,,7099963
+sector-155556,155556,delegation-1555,TN-21,Taieb Mhiri,Taieb Mhiri,طيب مهيري,,7099964
+sector-155557,155557,delegation-1555,TN-21,Menzel Hor,Menzel Hor,منزل حر,Q2749664,7100414
+sector-155558,155558,delegation-1555,TN-21,El Asfour,El Asfour,العصفور,,7100413
+sector-155559,155559,delegation-1555,TN-21,Lezdine,Lezdine,لزدين,,7100415
+sector-155651,155651,delegation-1556,TN-21,Tafeloun,Tafeloun,تافلون,,7146343
+sector-155652,155652,delegation-1556,TN-21,El Mida,El Mida,الميدة,,7100595
+sector-155653,155653,delegation-1556,TN-21,Fartouna,Fartouna,فرطونة,,7100600
+sector-155654,155654,delegation-1556,TN-21,Om Dhouil,Om Dhouil,أم ذويل,,7100599
+sector-155655,155655,delegation-1556,TN-21,Lebna,Lebna,لبنة,,7100596
+sector-155656,155656,delegation-1556,TN-21,Korchine,Korchine,قرشيين,,7100597
+sector-155751,155751,delegation-1557,TN-21,Oued El Khatef,Oued El Khatef,وادي الخطف,,7146342
+sector-155752,155752,delegation-1557,TN-21,Melloul,Melloul,ملّول,,7098803
+sector-155753,155753,delegation-1557,TN-21,Azmour,Azmour,أزمور,,7098804
+sector-155754,155754,delegation-1557,TN-21,Kelibia Est,Kelibia Est,قليبية الشرقية,,7098175
+sector-155755,155755,delegation-1557,TN-21,Kelibia Ouest,Kelibia Ouest,قليبية الغربية,,7098174
+sector-155851,155851,delegation-1558,TN-21,Hammam El Ghezaz,Hammam El Ghezaz,حمام الغزاز,,7097006
+sector-155852,155852,delegation-1558,TN-21,Dar Allouch,Dar Allouch,دار علوش,,7096631
+sector-155853,155853,delegation-1558,TN-21,Hart Ech Choara,Hart Ech Choara,حارة الشعراء,,7096632
+sector-155854,155854,delegation-1558,TN-21,Ouezdra,Ouezdra,وزدرة,,7097007
+sector-155951,155951,delegation-1559,TN-21,El Haouaira Nord,El Haouaira Nord,الهوارية الشمالية,,7095734
+sector-155952,155952,delegation-1559,TN-21,El Haouaira Sud,El Haouaira Sud,الهوارية الجنوبية,,7095873
+sector-155953,155953,delegation-1559,TN-21,Saheb El Jebel Nord,Saheb El Jebel Nord,صاحب الجبل القبلية,,7096460
+sector-155954,155954,delegation-1559,TN-21,Saheb El Jebel Sud,Saheb El Jebel Sud,صاحب الجبل جنوبية,,7095947
+sector-155955,155955,delegation-1559,TN-21,Bou Krim,Bou Krim,بو كريم,,7097976
+sector-155956,155956,delegation-1559,TN-21,Tazaghrane Est,Tazaghrane Est,تزغران الشرقية,,7097979
+sector-155957,155957,delegation-1559,TN-21,Tazaghrane Ouest,Tazaghrane Ouest,تزغران الغربية,,7097977
+sector-155958,155958,delegation-1559,TN-21,Zaouiet El Mgaiez,Zaouiet El Mgaiez,زاوية المقايز,,7097978
+sector-156051,156051,delegation-1560,TN-21,Oued Laâbid,Oued Laâbid,واد العبيد,,7100358
+sector-156052,156052,delegation-1560,TN-21,Bir Ezzit,Bir Ezzit,بير الزيت,,7100359
+sector-156053,156053,delegation-1560,TN-21,El Arima,El Arima,العريمة,,7100361
+sector-156054,156054,delegation-1560,TN-21,Takelsa Nord,Takelsa Nord,تاكلسة الشمالية,,7100357
+sector-156055,156055,delegation-1560,TN-21,Takelsa Centre,Takelsa Centre,تاكلسة الوسطى,,7100360
+sector-156151,156151,delegation-1561,TN-21,El Mraissa,El Mraissa,المريسة,,7100603
+sector-156152,156152,delegation-1561,TN-21,Ech Cherifet,Ech Cherifet,الشريفات,,7102535
+sector-156153,156153,delegation-1561,TN-21,Bou Charray,Bou Charray,بو شراي,,7102534
+sector-156154,156154,delegation-1561,TN-21,Soliman,Soliman,سليمان,,7100693
+sector-156155,156155,delegation-1561,TN-21,Soliman Sud,Soliman Sud,سليمان الجنوبية,,7100694
+sector-156251,156251,delegation-1562,TN-21,Damous El Hajja,Damous El Hajja,داموس الهجة,,7101603
+sector-156252,156252,delegation-1562,TN-21,Errahma,Errahma,الرحمة,,7101602
+sector-156253,156253,delegation-1562,TN-21,Menzel Bouzelfa Nord,Menzel Bouzelfa Nord,منزل بوزلفة الشمالية,,7101605
+sector-156254,156254,delegation-1562,TN-21,Menzel Bouzelfa Sud,Menzel Bouzelfa Sud,منزل بوزلفة الجنوبية,,7101601
+sector-156255,156255,delegation-1562,TN-21,Menzel Bouzelfa Ouest,Menzel Bouzelfa Ouest,منزل بوزلفة الغربية,,7101606
+sector-156351,156351,delegation-1563,TN-21,Beni Khalled Nord,Beni Khalled Nord,بني خلاد الشمالية,,7102675
+sector-156352,156352,delegation-1563,TN-21,Beni Khalled Sud,Beni Khalled Sud,بني خلاد الجوفية,,7102674
+sector-156353,156353,delegation-1563,TN-21,Zaouiet Jdidi,Zaouiet Jdidi,زاوية الجديدي,,7103676
+sector-156354,156354,delegation-1563,TN-21,Kobba Lekbira,Kobba Lekbira,القبة الكبيرة,,7103677
+sector-156355,156355,delegation-1563,TN-21,Bir Drassen,Bir Drassen,بير دراسن,,7102672
+sector-156356,156356,delegation-1563,TN-21,Beni Khalled Est,Beni Khalled Est,بني خلاد الشرقية,,7102673
+sector-156451,156451,delegation-1564,TN-21,Fondouk Jedid,Fondouk Jedid,فندق الجديد,,7104935
+sector-156452,156452,delegation-1564,TN-21,Chammes,Chammes,شماس,,7104934
+sector-156453,156453,delegation-1564,TN-21,Nianou,Nianou,نيانو,,7103808
+sector-156454,156454,delegation-1564,TN-21,Turki,Turki,تركي,,7103807
+sector-156455,156455,delegation-1564,TN-21,Khannguet el Hadjadj,Khannguet el Hadjadj,خنقة الحجاج,,7104933
+sector-156456,156456,delegation-1564,TN-21,Grombalia Est,Grombalia Est,قرنبالية الشرقية,,7103806
+sector-156457,156457,delegation-1564,TN-21,Grombalia Ouest,Grombalia Ouest,قرمبالية الغربية,,7103805
+sector-156458,156458,delegation-1564,TN-21,Jbal Trif,Jbal Trif,جبل طريف,,7104940
+sector-156459,156459,delegation-1564,TN-21,Ain Tebournok,Ain Tebournok,عين طبرنق,,7104938
+sector-156551,156551,delegation-1565,TN-21,Sidi Dhaher,Sidi Dhaher,سيدي الظاهر,,7103683
+sector-156552,156552,delegation-1565,TN-21,El Machrouha,El Machrouha,المشروحة,,7103681
+sector-156553,156553,delegation-1565,TN-21,Borj Hfaiedh,Borj Hfaiedh,برج حفيظ,,7103679
+sector-156554,156554,delegation-1565,TN-21,Bou Argoub Nord,Bou Argoub Nord,بو عرقوب الشمالية,,7103682
+sector-156555,156555,delegation-1565,TN-21,Bou Argoub Sud,Bou Argoub Sud,بو عرقوب الجنوبية,,7103680
+sector-156556,156556,delegation-1565,TN-21,Belli,Belli,بلّي,,7103684
+sector-156557,156557,delegation-1565,TN-21,El Kharrouba,El Kharrouba,الخرّوبة,,7103685
+sector-156651,156651,delegation-1566,TN-21,Sidi Ejdidi,Sidi Ejdidi,سيدي الجديدي,,7105070
+sector-156652,156652,delegation-1566,TN-21,Latrach,Latrach,الاطرش,,7144606
+sector-156653,156653,delegation-1566,TN-21,Bir Bouregba,Bir Bouregba,بير بورقبة,Q2904332,7104926
+sector-156654,156654,delegation-1566,TN-21,Manaret El Hammamet,Manaret El Hammamet,منارة الحمامات,,7104931
+sector-156655,156655,delegation-1566,TN-21,Hammamet Nord,Hammamet Nord,الحمامات الجوفية,,7104927
+sector-156656,156656,delegation-1566,TN-21,Hammamet Est,Hammamet Est,الحمامات الشرقية,,7104929
+sector-156657,156657,delegation-1566,TN-21,Hammamet Ouest,Hammamet Ouest,الحمامات الغربية,,7104930
+sector-156658,156658,delegation-1566,TN-21,El Mrezga,El Mrezga,المرازقة,,7104928
+sector-156659,156659,delegation-1566,TN-21,Yasmine Hammamet,Yasmine Hammamet,ياسمين الحمامات,,7104932
+sector-165151,165151,delegation-1651,TN-22,Zaghouan Ville,Zaghouan Ville,زغوان المدينة,,7109271
+sector-165152,165152,delegation-1651,TN-22,Zaghouan Nord,Zaghouan Nord,زغوان الشمالية,,7109270
+sector-165153,165153,delegation-1651,TN-22,Zaghouan Sud,Zaghouan Sud,زغوان الجنوبية,,7109272
+sector-165154,165154,delegation-1651,TN-22,Bir Halima,Bir Halima,بئر حليمة,,7109195
+sector-165155,165155,delegation-1651,TN-22,Mograne,Mograne,مقرن,,7109194
+sector-165156,165156,delegation-1651,TN-22,Jimla,Jimla,جيملة,,7109201
+sector-165157,165157,delegation-1651,TN-22,El Aitha,El Aitha,العيثة,,7109200
+sector-165158,165158,delegation-1651,TN-22,Oued Erremel,Oued Erremel,وادي الرمل,,7109197
+sector-165159,165159,delegation-1651,TN-22,Oued Ezzit,Oued Ezzit,وادي الزيت,,7109196
+sector-165251,165251,delegation-1652,TN-22,El Jouf Est,El Jouf Est,الجوف الشرقية,,7113183
+sector-165252,165252,delegation-1652,TN-22,El Jouf Ouest,El Jouf Ouest,الجوف الغربية,,7113184
+sector-165253,165253,delegation-1652,TN-22,Hammam Ezzriba Sud,Hammam Ezzriba Sud,حمام الزريبة الجنوبية,,7113179
+sector-165254,165254,delegation-1652,TN-22,Ezzriba Hammam Nord,Ezzriba Hammam Nord,الزريبة الحمام الشمالية,,7113318
+sector-165255,165255,delegation-1652,TN-22,Ezzriba,Ezzriba,الزريبة,,7113328
+sector-165256,165256,delegation-1652,TN-22,Bou Achir,Bou Achir,بوعشير,,7113186
+sector-165257,165257,delegation-1652,TN-22,Jeradou,Jeradou,جرادو,,7113185
+sector-165258,165258,delegation-1652,TN-22,Ain El Batria,Ain El Batria,عين الباطرية,,7113182
+sector-165351,165351,delegation-1653,TN-22,Bir Mcherga,Bir Mcherga,بئر مشارقة,,7112618
+sector-165352,165352,delegation-1653,TN-22,Bir Mcherga La Gare,Bir Mcherga La Gare,بئر مشارقة المحطة,,7112616
+sector-165353,165353,delegation-1653,TN-22,Daleil El Arous,Daleil El Arous,دلائل العروس,,7112617
+sector-165354,165354,delegation-1653,TN-22,Smenja,Smenja,سمنجة,,7112615
+sector-165355,165355,delegation-1653,TN-22,Jbel Oust,Jbel Oust,جبل الوسط,,7111133
+sector-165356,165356,delegation-1653,TN-22,Ain Essafsaf,Ain Essafsaf,عين الصفصاف,,7111135
+sector-165357,165357,delegation-1653,TN-22,Boucha,Boucha,بوشة,,7112619
+sector-165358,165358,delegation-1653,TN-22,Ain Asker,Ain Asker,عين عسكر,,7111134
+sector-165451,165451,delegation-1654,TN-22,Banlieue D'El Fahs,Banlieue D'El Fahs,أحواز الفحص,,7110835
+sector-165452,165452,delegation-1654,TN-22,Jougar,Jougar,جوقار,,7110838
+sector-165453,165453,delegation-1654,TN-22,Bir Magra,Bir Magra,بئر مقرة,,7113987
+sector-165454,165454,delegation-1654,TN-22,Oum El Abouab,Oum El Abouab,أم الأبواب,Q12180353,7114462
+sector-165455,165455,delegation-1654,TN-22,Ouled Ezzouabi,Ouled Ezzouabi,أولاد الزوابي,,7114461
+sector-165456,165456,delegation-1654,TN-22,El Fahs,El Fahs,الفحص,,7110834
+sector-165457,165457,delegation-1654,TN-22,Eddroua,Eddroua,الدروع,,7114473
+sector-165458,165458,delegation-1654,TN-22,El Ghrifet,El Ghrifet,الغريفات,,7110839
+sector-165459,165459,delegation-1654,TN-22,Bent Saidane,Bent Saidane,بنت سعيدان,,7110837
+sector-165460,165460,delegation-1654,TN-22,El Amaiem Nord,El Amaiem Nord,العمايم الشمالية,,7113986
+sector-165461,165461,delegation-1654,TN-22,El Amaiem Sud,El Amaiem Sud,العمايم الجنوبية,,7113985
+sector-165462,165462,delegation-1654,TN-22,Oued El Khadhra,Oued El Khadhra,وادي الخضراء,,7110836
+sector-165463,165463,delegation-1654,TN-22,Telil Essalhi,Telil Essalhi,تليل الصالحي,,7113988
+sector-165551,165551,delegation-1655,TN-22,Ennadhour,Ennadhour,الناظور,,7119798
+sector-165552,165552,delegation-1655,TN-22,Ain El Batthoum,Ain El Batthoum,عين البطوم,,7119711
+sector-165553,165553,delegation-1655,TN-22,Saouar,Saouar,صوار,,7119796
+sector-165554,165554,delegation-1655,TN-22,Bir Chaouch,Bir Chaouch,بئر الشاوش,,7119710
+sector-165555,165555,delegation-1655,TN-22,Soughas,Soughas,صوغاس,,7119797
+sector-165651,165651,delegation-1656,TN-22,Saouaf Est,Saouaf Est,صواف الشرقية,,7114526
+sector-165652,165652,delegation-1656,TN-22,Saouaf Ouest,Saouaf Ouest,صواف الغربية,,7116957
+sector-165653,165653,delegation-1656,TN-22,El Hamira,El Hamira,الحميرة,,7114549
+sector-165654,165654,delegation-1656,TN-22,Deghafla Est,Deghafla Est,الدغافلة الشرقية,,7119808
+sector-165655,165655,delegation-1656,TN-22,Deghafla Ouest,Deghafla Ouest,الدغافلة الغربية,,7119809
+sector-175151,175151,delegation-1751,TN-23,Hassen Nouri,Hassen Nouri,حسن نوري,,7118629
+sector-175152,175152,delegation-1751,TN-23,El Habib Bou Katfa,El Habib Bou Katfa,الحبيب بو قطفة,,7152491
+sector-175153,175153,delegation-1751,TN-23,El Korniche,El Korniche,الكرنيش,,7118647
+sector-175154,175154,delegation-1751,TN-23,El Medina,El Medina,المدينة,,7118631
+sector-175155,175155,delegation-1751,TN-23,Cheikh Dris,Cheikh Dris,الشيخ ادريس,,7118632
+sector-175156,175156,delegation-1751,TN-23,El Canal,El Canal,القنال,,7152489
+sector-175157,175157,delegation-1751,TN-23,Boubaker Bakir,Boubaker Bakir,بوبكر باكير,,7118628
+sector-175158,175158,delegation-1751,TN-23,Ain Mariem,Ain Mariem,عين مريم,,7118645
+sector-175159,175159,delegation-1751,TN-23,Habib Hadded,Habib Hadded,حبيب حداد,,7118635
+sector-175160,175160,delegation-1751,TN-23,El Mootamar,El Mootamar,المؤتمر,,7118630
+sector-175161,175161,delegation-1751,TN-23,Cité El Hana,Cité El Hana,حي الهناء,,7118636
+sector-175162,175162,delegation-1751,TN-23,15 Octobre,15 Octobre,15 أكتوبر,,7118634
+sector-175163,175163,delegation-1751,TN-23,La Galite,La Galite,جالطة,,7152488
+sector-175251,175251,delegation-1752,TN-23,Jarzouna Ouest,Jarzouna Ouest,جرزونة الغربية,,7118627
+sector-175252,175252,delegation-1752,TN-23,Jarzouna Est,Jarzouna Est,جرزونة الشرقية,,7118637
+sector-175253,175253,delegation-1752,TN-23,Zarzouna Nord,Zarzouna Nord,جرزونة الشمالية,,7118625
+sector-175254,175254,delegation-1752,TN-23,Zarzouna Sud,Zarzouna Sud,جرزونة الجنوبية,,7118626
+sector-175351,175351,delegation-1753,TN-23,Teskraya,Teskraya,تسكراية,,7118640
+sector-175352,175352,delegation-1753,TN-23,Farhat Hached,Farhat Hached,فرحات حشاد,,7118646
+sector-175353,175353,delegation-1753,TN-23,Marnissa,Marnissa,مرنيصة,,7118644
+sector-175354,175354,delegation-1753,TN-23,Hicher,Hicher,هيشر,,7118643
+sector-175355,175355,delegation-1753,TN-23,Sidi Ameur,Sidi Ameur,سيدي عامر,,7118639
+sector-175356,175356,delegation-1753,TN-23,Louata,Louata,لواتة,,7118641
+sector-175357,175357,delegation-1753,TN-23,Bab Mateur,Bab Mateur,باب ماطر,,7118633
+sector-175358,175358,delegation-1753,TN-23,Cite El Jala,Cite El Jala,حي الجلاء,,7211868
+sector-175359,175359,delegation-1753,TN-23,El Massida,El Massida,المصيدة,,7118638
+sector-175360,175360,delegation-1753,TN-23,Sidi Ahmed,Sidi Ahmed,سيدي أحمد,,7118642
+sector-175451,175451,delegation-1754,TN-23,Sejnane,Sejnane,سجنان,,7121414
+sector-175452,175452,delegation-1754,TN-23,El Maalia,El Maalia,المعالية,,7121378
+sector-175453,175453,delegation-1754,TN-23,El Ababsa,El Ababsa,العبابسة,,7121376
+sector-175454,175454,delegation-1754,TN-23,El Hchachna,El Hchachna,الحشاشنة,,7121377
+sector-175455,175455,delegation-1754,TN-23,Sehabna,Sehabna,سحابنة,,7121412
+sector-175456,175456,delegation-1754,TN-23,Sidi Mechreg,Sidi Mechreg,سيدي مشرق,,7121415
+sector-175457,175457,delegation-1754,TN-23,Amaden,Amaden,أمادن,,7121375
+sector-175458,175458,delegation-1754,TN-23,Mcherga,Mcherga,مشارقة,,7121413
+sector-175551,175551,delegation-1755,TN-23,Ouled Ghanem,Ouled Ghanem,اولاد غانم,,7124444
+sector-175552,175552,delegation-1755,TN-23,Essman,Essman,السمان,,7124441
+sector-175553,175553,delegation-1755,TN-23,Chnena,Chnena,شنانة,,7124443
+sector-175554,175554,delegation-1755,TN-23,Tahent,Tahent,تاهنت,,7124439
+sector-175555,175555,delegation-1755,TN-23,Kef Ghrab,Kef Ghrab,كاف غراب,,7124438
+sector-175556,175556,delegation-1755,TN-23,Berraies,Berraies,بالرايس,,7124440
+sector-175557,175557,delegation-1755,TN-23,Touajnia,Touajnia,الطواجنية,,7124445
+sector-175558,175558,delegation-1755,TN-23,Bazina,Bazina,بازينة,,7124446
+sector-175559,175559,delegation-1755,TN-23,Rouaha,Rouaha,رواحة,,7124442
+sector-175651,175651,delegation-1756,TN-23,Mateur,Mateur,ماطر,Q1207738,7122218
+sector-175652,175652,delegation-1756,TN-23,Banlieue de Mateur,Banlieue de Mateur,أحواز ماطر,,7122227
+sector-175653,175653,delegation-1756,TN-23,Mateur Sud,Mateur Sud,ماطر الجنوبية,,7122220
+sector-175654,175654,delegation-1756,TN-23,Cité Ennasr,Cité Ennasr,حي النصر,,7122226
+sector-175655,175655,delegation-1756,TN-23,Nefat,Nefat,نفات,,7122224
+sector-175656,175656,delegation-1756,TN-23,Cité Essadaka,Cité Essadaka,حي الصداقة,,7122219
+sector-175657,175657,delegation-1756,TN-23,Targuellache,Targuellache,ترقلاش,,7122223
+sector-175658,175658,delegation-1756,TN-23,Arab Majour,Arab Majour,عرب ماجور,,7122225
+sector-175659,175659,delegation-1756,TN-23,Behaya,Behaya,بهاية,,7122222
+sector-175660,175660,delegation-1756,TN-23,Boumkhila,Boumkhila,بومخيلة,,7122221
+sector-175751,175751,delegation-1757,TN-23,Ghezala,Ghezala,غزالة,,7124227
+sector-175752,175752,delegation-1757,TN-23,El Arab,El Arab,العرب,,7124228
+sector-175753,175753,delegation-1757,TN-23,Dhouaouda,Dhouaouda,ذواودة,,7124231
+sector-175754,175754,delegation-1757,TN-23,Hached,Hached,فرحات حشاد,,7124232
+sector-175755,175755,delegation-1757,TN-23,Ouled El May,Ouled El May,أولاد الماي,,7124235
+sector-175756,175756,delegation-1757,TN-23,Sidi Aissa,Sidi Aissa,سيدي عيسى,,7124229
+sector-175757,175757,delegation-1757,TN-23,Rakb,Rakb,ركب,,7124230
+sector-175758,175758,delegation-1757,TN-23,Boujrir,Boujrir,بوجرير,,7124234
+sector-175759,175759,delegation-1757,TN-23,Sidi Mansour,Sidi Mansour,سيدي منصور,,7124233
+sector-175851,175851,delegation-1758,TN-23,Ennajah 1,Ennajah 1,النجاح 1,,7119631
+sector-175852,175852,delegation-1758,TN-23,Gabtna 1,Gabtna 1,قبطنة 1,,7119633
+sector-175853,175853,delegation-1758,TN-23,Gabtna 2,Gabtna 2,قبطنة 2,,7119632
+sector-175854,175854,delegation-1758,TN-23,Cité Ethawra,Cité Ethawra,حي الثورة,,7119629
+sector-175855,175855,delegation-1758,TN-23,Ennajah 2,Ennajah 2,النجاح 2,,7119630
+sector-175856,175856,delegation-1758,TN-23,Al Madina,El Mdina,المدينة,,7119626
+sector-175857,175857,delegation-1758,TN-23,Chelagmia,Chelagmia,شلاغمية,,7119627
+sector-175858,175858,delegation-1758,TN-23,Cité Jardins,Cité Jardins,حي الحدائق,,7119628
+sector-175951,175951,delegation-1759,TN-23,Tinja,Tinja,تينجة,,7119649
+sector-175952,175952,delegation-1759,TN-23,Guengla,Guengla,قنقلة,,7119648
+sector-175953,175953,delegation-1759,TN-23,Zaarour,Zaarour,الزعرور,,7119647
+sector-176051,176051,delegation-1760,TN-23,Utique,Utique,أوتيك,,7122122
+sector-176052,176052,delegation-1760,TN-23,Nouvelle Utique,Nouvelle Utique,أوتيك الجديدة,,7122127
+sector-176053,176053,delegation-1760,TN-23,Besbassia,Besbassia,البسباسية,,7122124
+sector-176054,176054,delegation-1760,TN-23,El Houidh,El Houidh,الحويض,,7122123
+sector-176055,176055,delegation-1760,TN-23,El Mabtouh,El Mabtouh,المبطوح,,7122120
+sector-176056,176056,delegation-1760,TN-23,Ain Ghilel,Ain Ghilel,عين غلال,,7122125
+sector-176057,176057,delegation-1760,TN-23,Sidi Othman,Sidi Othman,سيدي عثمان,,7122126
+sector-176058,176058,delegation-1760,TN-23,Bach Hanba,Bach Hanba,باش حانبة,,7122121
+sector-176151,176151,delegation-1761,TN-23,Ghar El Melh,Ghar El Melh,غار الملح,,7119365
+sector-176152,176152,delegation-1761,TN-23,Bajou,Bajou,باجو,,7119366
+sector-176153,176153,delegation-1761,TN-23,Ousja,Ousja,عوسجة,,7121326
+sector-176154,176154,delegation-1761,TN-23,Zouaouine,Zouaouine,زواوين,,7121325
+sector-176251,176251,delegation-1762,TN-23,Menzel Jemil Est,Menzel Jemil Est,منزل جميل الشرقية,,7119123
+sector-176252,176252,delegation-1762,TN-23,Menjel Djemil Ouest,Menjel Djemil Ouest,منزل جميل الغربية,,7119122
+sector-176253,176253,delegation-1762,TN-23,Menzel Abderrahmane Est,Menzel Abderrahmane Est,منزل عبد الرحمان الشرقية,,7118668
+sector-176254,176254,delegation-1762,TN-23,Menzel Abderrahmane Ouest,Menzel Abderrahmane Ouest,منزل عبد الرحمان الغربية,,7118669
+sector-176255,176255,delegation-1762,TN-23,El Azib,El Azib,العزيب,,7119120
+sector-176351,176351,delegation-1763,TN-23,Sidi Ali Chabeb,Sidi Ali Chabeb,سيدي علي شباب,,7119584
+sector-176352,176352,delegation-1763,TN-23,El Alia Nord,El Alia Nord,العالية الشمالية,,7119583
+sector-176353,176353,delegation-1763,TN-23,El Alia Sud,El Alia Sud,العالية الجنوبية,,7119582
+sector-176354,176354,delegation-1763,TN-23,El Khetmine,El Khetmine,الختمين,,7119581
+sector-176451,176451,delegation-1764,TN-23,Ras Jebel Nord,Ras Jebel Nord,رأس الجبل الشمالية,,7119270
+sector-176452,176452,delegation-1764,TN-23,Ras Jebel Sud,Ras Jebel Sud,رأس الجبل الجنوبية,,7119269
+sector-176453,176453,delegation-1764,TN-23,Metline,Metline,ماتلين,,7119207
+sector-176454,176454,delegation-1764,TN-23,Metline-Ouest,Metline-Ouest,الماتلين الغربية,,7119206
+sector-176455,176455,delegation-1764,TN-23,Sounine,Sounine,صونين,Q3491805,7119336
+sector-176456,176456,delegation-1764,TN-23,Rafraf,Rafraf,رفراف,,7119335
+sector-176457,176457,delegation-1764,TN-23,El Garia,El Garia,القرية,,7119205
+sector-215151,215151,delegation-2151,TN-31,Béja,Béja,باجة,,7189431
+sector-215152,215152,delegation-2151,TN-31,El Mzara,El Mzara,المزارة,,7189419
+sector-215153,215153,delegation-2151,TN-31,Ksar Bardo,Ksar Bardo,قصر باردو,,7189481
+sector-215154,215154,delegation-2151,TN-31,Zouabi,Zouabi,الزوابي,,7189401
+sector-215155,215155,delegation-2151,TN-31,El Manar,El Manar,المنار,,7189421
+sector-215156,215156,delegation-2151,TN-31,El Kasba,El Kasba,القصبة,,7189413
+sector-215157,215157,delegation-2151,TN-31,Azra,Azra,عزرة,,7189466
+sector-215158,215158,delegation-2151,TN-31,El Ghriria,El Ghriria,الغيرية,,7189410
+sector-215159,215159,delegation-2151,TN-31,El Mounchar,El Mounchar,المنشار,,7189422
+sector-215160,215160,delegation-2151,TN-31,Ksar Mezouar,Ksar Mezouar,قصر مزوار,,7189482
+sector-215161,215161,delegation-2151,TN-31,Bou Hzam,Bou Hzam,بوحزام,,7189433
+sector-215162,215162,delegation-2151,TN-31,Ennagachia,Ennagachia,النقاشية,,7189426
+sector-215163,215163,delegation-2151,TN-31,El Ghraba,El Ghraba,الغرابة,,7189408
+sector-215164,215164,delegation-2151,TN-31,Ain Soltane,Ain Soltane,عين سلطان,,7189472
+sector-215251,215251,delegation-2152,TN-31,Sidi Fredj,Sidi Fredj,سيدي فرج,,7189460
+sector-215252,215252,delegation-2152,TN-31,El Haouari,El Haouari,الهواري,,7189428
+sector-215253,215253,delegation-2152,TN-31,El Maagoula,El Maagoula,المعقولة,Q2054148,7189420
+sector-215254,215254,delegation-2152,TN-31,Hammam Siala,Hammam Siala,حمام سيالة,,7189440
+sector-215255,215255,delegation-2152,TN-31,Sidi Smail,Sidi Smail,سيدي إسماعيل,,7189455
+sector-215256,215256,delegation-2152,TN-31,Mekhachbia,Mekhachbia,المخشبية,,7189418
+sector-215257,215257,delegation-2152,TN-31,Sidi Es-Shili,Sidi Es-Shili,سيدي السهيلي,,7189457
+sector-215258,215258,delegation-2152,TN-31,Zouagha,Zouagha,زواغة,,7189453
+sector-215259,215259,delegation-2152,TN-31,Mestouta,Mestouta,مستوتة,,7189488
+sector-215351,215351,delegation-2153,TN-31,Amdoun,Amdoun,عمدون,,7189452
+sector-215352,215352,delegation-2153,TN-31,Amdoun Sud,Amdoun Sud,عمدون الجنوبية,,7189451
+sector-215353,215353,delegation-2153,TN-31,El Fraijia,El Fraijia,الفرايجية,,7189411
+sector-215354,215354,delegation-2153,TN-31,El Ghorfa,El Ghorfa,الغرفة,,7189409
+sector-215355,215355,delegation-2153,TN-31,Romadhnia,Romadhnia,الرماضنية,,7189400
+sector-215356,215356,delegation-2153,TN-31,Maghraoua,Maghraoua,مغراوة,,7189489
+sector-215357,215357,delegation-2153,TN-31,Sabah,Sabah,صباح,,7189465
+sector-215358,215358,delegation-2153,TN-31,El Mejaless,El Mejaless,المجالس,,7189417
+sector-215359,215359,delegation-2153,TN-31,El Hamra,El Hamra,الحمراء,,7189399
+sector-215360,215360,delegation-2153,TN-31,Ghazia,Ghazia,غزية,,7189474
+sector-215361,215361,delegation-2153,TN-31,Malek,Malek,مالك,,7189484
+sector-215362,215362,delegation-2153,TN-31,Tarhouni,Tarhouni,الطرهوني,,7189406
+sector-215363,215363,delegation-2153,TN-31,El Goussa,El Goussa,القوسة,,7189416
+sector-215364,215364,delegation-2153,TN-31,El Djouza,El Djouza,الجوزة,,7189398
+sector-215451,215451,delegation-2154,TN-31,Nefza Est,Nefza Est,نفزة الشرقية,,7189491
+sector-215452,215452,delegation-2154,TN-31,Nefza Ouest,Nefza Ouest,نفزة الغربية,,7189492
+sector-215453,215453,delegation-2154,TN-31,Ouechtata,Ouechtata,وشتاتة,,7189495
+sector-215454,215454,delegation-2154,TN-31,Cap Negro,Cap Negro,كاب النيقرو,,7189483
+sector-215455,215455,delegation-2154,TN-31,Ezzouaraa,Ezzouaraa,الزوارع,,7189402
+sector-215456,215456,delegation-2154,TN-31,Bou-Zenna,Bou-Zenna,بوزنة,,7189434
+sector-215457,215457,delegation-2154,TN-31,Maktaa Hadid,Maktaa Hadid,مقطع حديد,,7189490
+sector-215458,215458,delegation-2154,TN-31,Bellif,Bellif,بالليف,,7189432
+sector-215459,215459,delegation-2154,TN-31,Djebel Ediss,Djebel Ediss,جبل الديس,,7189439
+sector-215460,215460,delegation-2154,TN-31,Fatnassa,Fatnassa,فطناسة,,7189477
+sector-215461,215461,delegation-2154,TN-31,Ghayadha,Ghayadha,غياضة,,7189475
+sector-215462,215462,delegation-2154,TN-31,Zaqa,Zaga,زاقة,,7189449
+sector-215463,215463,delegation-2154,TN-31,Tebaba,Tebaba,الطبابة,,7189405
+sector-215464,215464,delegation-2154,TN-31,Oued El Maaden,Oued El Maaden,وادي المعدن,,7189494
+sector-215465,215465,delegation-2154,TN-31,Djamila,Djamila,الجميلة,,7189397
+sector-215466,215466,delegation-2154,TN-31,Dehiret,Dehiret,الظهيرات,,7189407
+sector-215551,215551,delegation-2155,TN-31,Teboursouk Ville,Teboursouk Ville,تبرسق المدينة,,7189435
+sector-215552,215552,delegation-2155,TN-31,Ain El Karma,Ain El Karma,عين الكرمة,,7189469
+sector-215553,215553,delegation-2155,TN-31,El Menchia,El Menchia,المنشية,,7189423
+sector-215554,215554,delegation-2155,TN-31,Dougga,Dougga,دقة,,7189446
+sector-215555,215555,delegation-2155,TN-31,Rihana,Rihana,ريحانة,,7189448
+sector-215556,215556,delegation-2155,TN-31,Ain El Melliti,Ain El Melliti,عين المليتي,,7189470
+sector-215557,215557,delegation-2155,TN-31,Fadden Es-Souk,Fadden Es-Souk,فدان السوق,,7189476
+sector-215558,215558,delegation-2155,TN-31,Ain El Hammam,Ain El Hammam,عين الحمام,,7189467
+sector-215559,215559,delegation-2155,TN-31,Ain Djammala,Ain Djammala,عين جمالة,,7189471
+sector-215560,215560,delegation-2155,TN-31,Bir Ettouta,Bir Ettouta,بئر التوتة,,7189429
+sector-215651,215651,delegation-2156,TN-31,Tibar,Tibar,تيبار,,7189438
+sector-215652,215652,delegation-2156,TN-31,Djebba,Djebba,دجبة,,7189445
+sector-215653,215653,delegation-2156,TN-31,Ain Ed-Defali,Ain Ed-Defali,عين الدفالي,,7189468
+sector-215654,215654,delegation-2156,TN-31,En-Nechima,En-Nechima,النشيمة,,7189425
+sector-215751,215751,delegation-2157,TN-31,Testour,Testour,تستور,,7189436
+sector-215752,215752,delegation-2157,TN-31,Ibn Zeydoun,Ibn Zeydoun,ابن زيدون,,7189396
+sector-215753,215753,delegation-2157,TN-31,Cite 26 Fevrier,Cite 26 Fevrier,حي 26 فيفري,,7189441
+sector-215754,215754,delegation-2157,TN-31,Mezougha,Mezougha,مزوغة,,7189487
+sector-215755,215755,delegation-2157,TN-31,Zeldou,Zeldou,زلدو,,7189450
+sector-215756,215756,delegation-2157,TN-31,Ouled Salama,Ouled Salama,أولاد سلامة,,7189395
+sector-215757,215757,delegation-2157,TN-31,Esslouguia,Esslouguia,السلوقية,,7189403
+sector-215758,215758,delegation-2157,TN-31,Ain Younes,Ain Younes,عين يونس,,7189473
+sector-215759,215759,delegation-2157,TN-31,Es-Sekhira,Es-Sekhira,الصخيرة,,7189404
+sector-215760,215760,delegation-2157,TN-31,Oued Ezzargua,Oued Ezzargua,وادي الزرقاء,,7189493
+sector-215761,215761,delegation-2157,TN-31,Sidi Abdelaziz,Sidi Abdelaziz,سيدي عبد العزيز,,7189459
+sector-215762,215762,delegation-2157,TN-31,Sidi Ameur,Sidi Ameur,سيدي عامر,,7189458
+sector-215851,215851,delegation-2158,TN-31,Goubellat,Goubellat,قبلاط,,7189478
+sector-215852,215852,delegation-2158,TN-31,El Gammarthi,El Gammarthi,القمرتي,,7189415
+sector-215853,215853,delegation-2158,TN-31,Guerram,Guerram,قرام,,7189479
+sector-215854,215854,delegation-2158,TN-31,Dour Esmail,Dour Esmail,دور إسماعيل,,7189447
+sector-215855,215855,delegation-2158,TN-31,Bir El Euch,Bir El Euch,بئر العش,,7189430
+sector-215856,215856,delegation-2158,TN-31,Kheniguet Ed-Dahane,Kheniguet Ed-Dahane,خنقية الدهان,,7189444
+sector-215857,215857,delegation-2158,TN-31,Khacheb,Khacheb,خشاب,,7189443
+sector-215858,215858,delegation-2158,TN-31,Cheikh El Ouediane,Cheikh El Ouediane,شيخ الوديان,,7189464
+sector-215951,215951,delegation-2159,TN-31,Medjez El Bab Ville,Medjez El Bab Ville,مجاز الباب المدينة,,7189486
+sector-215952,215952,delegation-2159,TN-31,Medjez El Bab Sud,Medjez El Bab Sud,مجاز الباب الجنوبية,,7189485
+sector-215953,215953,delegation-2159,TN-31,Sidi Medien,Sidi Medien,سيدي مدين,,7189461
+sector-215954,215954,delegation-2159,TN-31,El Ksar,El Ksar,القصر,,7189414
+sector-215955,215955,delegation-2159,TN-31,El Heri,El Heri,الهري,,7189427
+sector-215956,215956,delegation-2159,TN-31,Tokaber,Tokaber,توكابر,,7189437
+sector-215957,215957,delegation-2159,TN-31,Chaouach,Chaouach,شواش,,7189463
+sector-215958,215958,delegation-2159,TN-31,Sidi Nasr,Sidi Nasr,سيدي الناصر,,7189462
+sector-215959,215959,delegation-2159,TN-31,Sidi Ahmed El Jedidi,Sidi Ahmed El Jedidi,سيدي أحمد الجديدي,,7189454
+sector-215960,215960,delegation-2159,TN-31,El Gueriaat,El Gueriaat,القريعات,,7189412
+sector-215961,215961,delegation-2159,TN-31,Hidouss,Hidouss,حيدوس,,7189442
+sector-215962,215962,delegation-2159,TN-31,El Mouatiss,El Mouatiss,المواطيس,,7189424
+sector-215963,215963,delegation-2159,TN-31,Guerich El Ouedi,Guerich El Ouedi,قريش الوادي,,7189480
+sector-215964,215964,delegation-2159,TN-31,Sidi Erraies,Sidi Erraies,سيدي الرايس,,7189456
+sector-225151,225151,delegation-2251,TN-32,Ezzghaida,Ezzghaida,الزغايدة,,7139131
+sector-225152,225152,delegation-2251,TN-32,Jendouba Sud,Jendouba Sud,جندوبة الجنوبية,,7139130
+sector-225153,225153,delegation-2251,TN-32,Ennour,Ennour,النور,,7139129
+sector-225154,225154,delegation-2251,TN-32,Essaada,Essaada,السعادة,,7144404
+sector-225155,225155,delegation-2251,TN-32,El Malga,El Malga,الملقى,,7144398
+sector-225156,225156,delegation-2251,TN-32,Ettataouer,Ettataouer,التطور,,7144402
+sector-225157,225157,delegation-2251,TN-32,Souk Essebt,Souk Essebt,سوق السبت,,7144399
+sector-225158,225158,delegation-2251,TN-32,El Aitha,El Aitha,العيثة,,7144400
+sector-225159,225159,delegation-2251,TN-32,Ain Karima,Ain Karima,عين كريمة,,7144401
+sector-225160,225160,delegation-2251,TN-32,Malla,Malla,معلة,,7144403
+sector-225161,225161,delegation-2251,TN-32,El Jerif,El Jerif,الجريف,,7144405
+sector-225162,225162,delegation-2251,TN-32,El Azima,El Azima,العزيمة,,7144397
+sector-225251,225251,delegation-2252,TN-32,El Ferdous,El Ferdous,الفردوس,,7139123
+sector-225252,225252,delegation-2252,TN-32,El Hedi Ben Hassine,El Hedi Ben Hassine,الهادي بن حسين,,7139132
+sector-225253,225253,delegation-2252,TN-32,Ezzouhour,Ezzouhour,الزهور,,7139121
+sector-225254,225254,delegation-2252,TN-32,El Khadhra,El Khadhra,الخضراء,,7153926
+sector-225255,225255,delegation-2252,TN-32,Essouani,Essouani,السواني,,7139125
+sector-225256,225256,delegation-2252,TN-32,Bulla Regia,Bulla Regia,بلاريجيا,,7139122
+sector-225257,225257,delegation-2252,TN-32,Zatfour,Zatfour,زطفورة,,7139124
+sector-225258,225258,delegation-2252,TN-32,Chemtou,Chemtou,شمتو,,7139126
+sector-225259,225259,delegation-2252,TN-32,Eddir,Eddir,الدير,,7139128
+sector-225260,225260,delegation-2252,TN-32,Souk Djemaa,Souk Djemaa,سوق الجمعة,,7139127
+sector-225351,225351,delegation-2253,TN-32,Bou Salem,Bou Salem,بوسالم الشمالية,,7144493
+sector-225352,225352,delegation-2253,TN-32,Bousalem Sud,Bousalem Sud,بوسالم الجنوبية,,7144495
+sector-225353,225353,delegation-2253,TN-32,Erroumani,Erroumani,الروماني,,7144492
+sector-225354,225354,delegation-2253,TN-32,El Brahmi,El Brahmi,البراهمي,,7144486
+sector-225355,225355,delegation-2253,TN-32,El Marja,El Marja,المرجى,,7144488
+sector-225356,225356,delegation-2253,TN-32,Bir Lakhdher,Bir Lakhdher,بير الاخضر,,7144487
+sector-225357,225357,delegation-2253,TN-32,El Koudia,El Koudia,الكدية,,7144490
+sector-225358,225358,delegation-2253,TN-32,El Mangouche,El Mangouche,المنقوش,,7144491
+sector-225359,225359,delegation-2253,TN-32,Sidi Abid,Sidi Abid,سيدي عبيد,,7144489
+sector-225451,225451,delegation-2254,TN-32,Tabarka,Tabarka,طبرقة,,7126384
+sector-225452,225452,delegation-2254,TN-32,Raihane,Raihane,ريحان,,7126381
+sector-225453,225453,delegation-2254,TN-32,El Hamdia,El Hamdia,الحامدية,,7126382
+sector-225454,225454,delegation-2254,TN-32,El Hammem,El Hammem,الحمام,,7126405
+sector-225455,225455,delegation-2254,TN-32,Ain Essobh,Ain Essobh,عين الصبح,,7126402
+sector-225456,225456,delegation-2254,TN-32,Nadhour,Nadhour,ناظور,,7126404
+sector-225457,225457,delegation-2254,TN-32,Melloula,Melloula,ملولة,,7126383
+sector-225458,225458,delegation-2254,TN-32,Ain Esnoussi,Ain Esnoussi,عين السنوسي,,7126403
+sector-225551,225551,delegation-2255,TN-32,Ain Draham,Ain Draham,عين دراهم المدينة,,7126518
+sector-225552,225552,delegation-2255,TN-32,Ain Draham Banlieue,Ain Draham Banlieue,عين دراهم الأحواز,,7126525
+sector-225553,225553,delegation-2255,TN-32,Ouled Sedra,Ouled Sedra,أولاد سدرة,,7126521
+sector-225554,225554,delegation-2255,TN-32,El Atatfa,El Atatfa,العطاطفة,,7126524
+sector-225555,225555,delegation-2255,TN-32,El Homrane,El Homrane,الحمران,,7126519
+sector-225556,225556,delegation-2255,TN-32,Etbaynia,Etbaynia,التباينية,,7126523
+sector-225557,225557,delegation-2255,TN-32,Khmeyria,Khmeyria,خمايرية,,7126581
+sector-225558,225558,delegation-2255,TN-32,Selloul,Selloul,سلول,,7126584
+sector-225559,225559,delegation-2255,TN-32,Errouii,Errouii,الرويعي,,7126582
+sector-225560,225560,delegation-2255,TN-32,Tegma,Tegma,تاقمة,,7126583
+sector-225561,225561,delegation-2255,TN-32,Ain Salama,Ain Salama,عين سلام,,7126520
+sector-225562,225562,delegation-2255,TN-32,Oued Ezzan,Oued Ezzan,وادي الزان,,7126522
+sector-225651,225651,delegation-2256,TN-32,Firnana,Fernana,فرنانة,Q3069035,7134440
+sector-225652,225652,delegation-2256,TN-32,Oued Ghrib,Oued Ghrib,وادي غريب,,7134443
+sector-225653,225653,delegation-2256,TN-32,Rabiaa,Rabiaa,ربيعة,,7134442
+sector-225654,225654,delegation-2256,TN-32,Ouled Mefada,Ouled Mefada,أولاد مفدة,,7134299
+sector-225655,225655,delegation-2256,TN-32,El Gouaidia,El Gouaidia,القوايدية,,7134822
+sector-225656,225656,delegation-2256,TN-32,Bni Mtir,Bni Mtir,بني مطير,,7134823
+sector-225657,225657,delegation-2256,TN-32,Gloub Ethirane,Gloub Ethirane,قلوب الثيران,,7134293
+sector-225658,225658,delegation-2256,TN-32,Gloub Ethirane Nord,Gloub Ethirane Nord,قلوب الثيران الشمالية,,7134294
+sector-225659,225659,delegation-2256,TN-32,Hedhil,Hedhil,هذيل,,7134438
+sector-225660,225660,delegation-2256,TN-32,El Adhar,El Adhar,العاذر,,7134437
+sector-225661,225661,delegation-2256,TN-32,Jouaouda,Jouaouda,جواودة,,7134297
+sector-225662,225662,delegation-2256,TN-32,Ain El Baya,Ain El Baya,عين البية,,7134439
+sector-225663,225663,delegation-2256,TN-32,Bou Hertma,Bou Hertma,بو هرتمة,,7134821
+sector-225664,225664,delegation-2256,TN-32,Halima,Halima,حليمة,,7134300
+sector-225665,225665,delegation-2256,TN-32,Sidi Ammar,Sidi Ammar,سيدي عمار,,7134441
+sector-225751,225751,delegation-2257,TN-32,Ghardimaou,Ghardimaou,غار الدماء,,7137967
+sector-225752,225752,delegation-2257,TN-32,Ghardimaou Nord,Ghardimaou Nord,غار الدماء الشمالية,,7137966
+sector-225753,225753,delegation-2257,TN-32,El Maaden,El Maaden,المعدن,,7137748
+sector-225754,225754,delegation-2257,TN-32,Errakha,Errakha,الرخاء,,7137969
+sector-225755,225755,delegation-2257,TN-32,Aïn Soltane,Aïn Soltane,عين سلطان,Q4833294,7137971
+sector-225756,225756,delegation-2257,TN-32,Ouechtata,Ouechtata,وشتاتة,,7137973
+sector-225757,225757,delegation-2257,TN-32,Eddaoura,Eddaoura,الدورة,,7137968
+sector-225758,225758,delegation-2257,TN-32,Esraya,Esraya,الصرية,,7137972
+sector-225759,225759,delegation-2257,TN-32,Forgassen,Forgassen,فرقصان,,7137749
+sector-225760,225760,delegation-2257,TN-32,Faj Hassine,Faj Hassine,فج حسين,,7137965
+sector-225761,225761,delegation-2257,TN-32,Mrassen,Mrassen,مراسن,,7137970
+sector-225762,225762,delegation-2257,TN-32,El Galaa,El Galaa,القلعة,,7137747
+sector-225851,225851,delegation-2258,TN-32,Oued Mliz Est,Oued Mliz Est,وادي مليز الشرقية,,7138844
+sector-225852,225852,delegation-2258,TN-32,Oued Mliz Ouest,Oued Mliz Ouest,وادي مليز الغربية,,7138845
+sector-225853,225853,delegation-2258,TN-32,Dkhaylia,Dkhaylia,دخايلية,,7138846
+sector-225854,225854,delegation-2258,TN-32,Hakim Nord,Hakim Nord,حكيم الشمالية,,7138842
+sector-225855,225855,delegation-2258,TN-32,Hakim Sud,Hakim Sud,حكيم الجنوبية,,7138843
+sector-225951,225951,delegation-2259,TN-32,Assila,Assila,عسيلة,,7144494
+sector-225952,225952,delegation-2259,TN-32,Ghezala,Ghezala,غزالة,,7134902
+sector-225953,225953,delegation-2259,TN-32,El Aouaoudha,El Aouaoudha,العواوضة,,7134899
+sector-225954,225954,delegation-2259,TN-32,El Baldia,El Baldia,البلدية,,7134901
+sector-225955,225955,delegation-2259,TN-32,Chouaoula,Chouaoula,شواولة,,7134900
+sector-225956,225956,delegation-2259,TN-32,Ben Mhammed,Ben Mhammed,بني محمد,,7134898
+sector-225957,225957,delegation-2259,TN-32,Somrane,Somrane,سمران,,7134893
+sector-225958,225958,delegation-2259,TN-32,Balta,Balta,بلطة,,7134894
+sector-225959,225959,delegation-2259,TN-32,Abdeljabeur,Abdeljabeur,عبد الجبار,,7134896
+sector-225960,225960,delegation-2259,TN-32,Bou Aouane,Bou Aouane,بو عوان,,7134895
+sector-225961,225961,delegation-2259,TN-32,Oued Kasseb,Oued Kasseb,وادي كساب,,7134897
+sector-225962,225962,delegation-2259,TN-32,Boulaaba,Boulaaba,بولعابة,,7134903
+sector-235151,235151,delegation-2351,TN-33,Oued Remel Nord,Oued Remel Nord,وادي الرمل الشمالية,,7197988
+sector-235152,235152,delegation-2351,TN-33,Oued Remel Sud,Oued Remel Sud,وادي الرمل الجنوبية,,7197987
+sector-235153,235153,delegation-2351,TN-33,Haouareth Sud,Haouareth Sud,الحوارث الجنوبية,,7197986
+sector-235251,235251,delegation-2352,TN-33,Charfine,Charfine,الشرفين,,7198201
+sector-235252,235252,delegation-2352,TN-33,Ben Ainine,Ben Ainine,بنعنين,,7198202
+sector-235253,235253,delegation-2352,TN-33,Haouareth Nord,Haouareth Nord,الحوارث الشمالية,,7198199
+sector-235254,235254,delegation-2352,TN-33,Zaafrane,Zaafrane,الزعفران,,7198200
+sector-235255,235255,delegation-2352,TN-33,Oued Souani,Oued Souani,وادي السواني,,7198206
+sector-235256,235256,delegation-2352,TN-33,Oued Souani Sud,Oued Souani Sud,وادي السواني الجنوبي,,7198205
+sector-235257,235257,delegation-2352,TN-33,Dyr El Kef,Dyr El Kef,دير الكاف,,7198204
+sector-235258,235258,delegation-2352,TN-33,Hached,Hached,حشاد,,7198203
+sector-235351,235351,delegation-2353,TN-33,Nebeur,Nebeur,نبر,,7198160
+sector-235352,235352,delegation-2353,TN-33,Sarkaouna,Sarkaouna,سركونة,,7198155
+sector-235353,235353,delegation-2353,TN-33,Tel El Ghozlane,Tel El Ghozlane,تل الغزلان,,7198154
+sector-235354,235354,delegation-2353,TN-33,Sidi Khiar,Sidi Khiar,سيدي خيار,,7198156
+sector-235355,235355,delegation-2362,TN-33,Mellala,Mellala,ملالة,,7198159
+sector-235356,235356,delegation-2362,TN-33,Ledhieb,Ledhieb,الأذياب,,7198149
+sector-235357,235357,delegation-2362,TN-33,Touiref,Touiref,الطويرف,,7198151
+sector-235358,235358,delegation-2353,TN-33,Mallaq,Mellegue,ملاق,,7198158
+sector-235359,235359,delegation-2353,TN-33,Bahra,Bahra,بهرة,,7198153
+sector-235360,235360,delegation-2353,TN-33,Sidi Medien,Sidi Medien,سيدي مدين,,7198157
+sector-235361,235361,delegation-2353,TN-33,El Ksar,El Ksar,القصر,,7198152
+sector-235362,235362,delegation-2353,TN-33,Chetatla,Chetatla,الشتاتلة,,7198150
+sector-235363,235363,delegation-2362,TN-33,Oueljet Essedra,Oueljet Essedra,ولجة السدرة,,7198161
+sector-235451,235451,delegation-2354,TN-33,Sakiet Sidi Youssef,Sakiet Sidi Youssef,ساقية سيدي يوسف,,7192038
+sector-235452,235452,delegation-2354,TN-33,Es-Sefeia,Es-Sefeia,السفاية,,7192035
+sector-235453,235453,delegation-2354,TN-33,Ain Mazer,Ain Mazer,عين مازر,,7192041
+sector-235454,235454,delegation-2354,TN-33,Djeradou,Djeradou,جرادو,,7192037
+sector-235455,235455,delegation-2354,TN-33,Forchane,Forchane,فرشان,,7192042
+sector-235456,235456,delegation-2354,TN-33,Ain El Karma,Ain El Karma,عين الكرمة,,7192040
+sector-235457,235457,delegation-2354,TN-33,Sidi Rabeh,Sidi Rabeh,سيدي رابح,,7192039
+sector-235458,235458,delegation-2354,TN-33,Et-Tabia,Et-Tabia,الطابية,,7192036
+sector-235551,235551,delegation-2355,TN-33,Tajerouine Nord,Tajerouine Nord,تاجروين الشمالية,,7192107
+sector-235552,235552,delegation-2355,TN-33,Tajerouine Sud,Tajerouine Sud,تاجروين الجنوبية,,7192106
+sector-235553,235553,delegation-2355,TN-33,Aïn El Abar,Aïn El Abar,عين الأبار,,7140761
+sector-235554,235554,delegation-2355,TN-33,Cite Bourguiba,Cite Bourguiba,حي بورقيبة,,7192109
+sector-235555,235555,delegation-2355,TN-33,Sidi M'Tir,Sidi M'Tir,سيدي مطير,,7192110
+sector-235556,235556,delegation-2355,TN-33,Ennajet,Ennajet,النجاة,,7192105
+sector-235557,235557,delegation-2355,TN-33,Sidi Abdelbasset,Sidi Abdelbasset,سيدي عبد الباسط,,7192111
+sector-235558,235558,delegation-2355,TN-33,Jezza,Jezza,جزة,,7192108
+sector-235559,235559,delegation-2355,TN-33,El Houdh,El Houdh,الحوض,,7192104
+sector-235560,235560,delegation-2355,TN-33,Menzel Salem,Menzel Salem,منزل سالم,Q659504,7140762
+sector-235561,235561,delegation-2355,TN-33,Borj Eddiouana,Borj Eddiouana,برج الديوانة,,7140760
+sector-235562,235562,delegation-2355,TN-33,Garn Halfaia,Garn Halfaia,قرن حلفاية,,7192112
+sector-235651,235651,delegation-2356,TN-33,Kalâat Snan,Kalâat Snan,قلعة سنان,Q3100254,7129263
+sector-235652,235652,delegation-2356,TN-33,Bou Jabeur,Bou Jabeur,بوجابر,,7129260
+sector-235653,235653,delegation-2356,TN-33,Safsaf,Safsaf,الصفصاف,,7129257
+sector-235654,235654,delegation-2356,TN-33,Mzita,Mzita,مزيتة,,7129264
+sector-235655,235655,delegation-2356,TN-33,El Falta,El Falta,الفالتة,,7129258
+sector-235656,235656,delegation-2356,TN-33,Sed El Khir,Sed El Khir,سد الخير,,7129261
+sector-235657,235657,delegation-2356,TN-33,Aïn Snan,Aïn Snan,عين سنان,,7129262
+sector-235658,235658,delegation-2356,TN-33,El Hamaïma,El Hamaïma,الحميمة,,7129256
+sector-235659,235659,delegation-2356,TN-33,El Mahjouba,El Mahjouba,المحجوبة,,7129259
+sector-235751,235751,delegation-2357,TN-33,Kalaat Khasba,Kalaat Khasba,القلعة الخصبة,Q3105864,7125195
+sector-235752,235752,delegation-2357,TN-33,Hentaïa,Hentaïa,هنطاية,,7125198
+sector-235753,235753,delegation-2357,TN-33,Sidi Ahmed Essalah,Sidi Ahmed Essalah,سيدي أحمد الصالح,,7125197
+sector-235754,235754,delegation-2357,TN-33,Nadhour-En,Nadhour-En,الناظور,,7125196
+sector-235851,235851,delegation-2358,TN-33,Djerissa Centre,Djerissa Centre,الجريصة المركزية,,7140826
+sector-235852,235852,delegation-2358,TN-33,Djerissa Nord,Djerissa Nord,الجريصة الشمالية,,7140825
+sector-235853,235853,delegation-2358,TN-33,Djerissa Sud,Djerissa Sud,الجريصة الجنوبية,,7140824
+sector-235854,235854,delegation-2358,TN-33,Besseriana,Besseriana,بسريانة,,7140828
+sector-235855,235855,delegation-2358,TN-33,Fej Ettamer,Fej Ettamer,فج التمر,,7140829
+sector-235856,235856,delegation-2358,TN-33,Enneayem,Enneayem,النعايم,,7140827
+sector-235951,235951,delegation-2359,TN-33,El Ksour,El Ksour,القصور,,7139151
+sector-235952,235952,delegation-2359,TN-33,Aïn El Ksiba,Aïn El Ksiba,عين القصيبة,,7139154
+sector-235953,235953,delegation-2359,TN-33,Banou,Banou,بانو,,7139153
+sector-235954,235954,delegation-2359,TN-33,Louata,Louata,اللواتة,,7139152
+sector-235955,235955,delegation-2359,TN-33,Aïn Fedhil,Aïn Fedhil,عين فضيل,,7139155
+sector-235956,235956,delegation-2359,TN-33,Az Zaytuna,Ezzitouna,الزيتونة,,7139150
+sector-236051,236051,delegation-2360,TN-33,Dahmani,Dahmani,الدهماني,Q3011977,7140683
+sector-236052,236052,delegation-2360,TN-33,Dahmani Nord,Dahmani Nord,الدهماني الشمالية,,7140682
+sector-236053,236053,delegation-2360,TN-33,Zouarine,Zouarine,الزوارين,,7140684
+sector-236054,236054,delegation-2360,TN-33,Thermda,Thermda,ثرمدة,,7140686
+sector-236055,236055,delegation-2360,TN-33,Abida,Abida,عبيدة,,7140689
+sector-236056,236056,delegation-2360,TN-33,Ebba,Ebba,أبة,,7140681
+sector-236057,236057,delegation-2360,TN-33,El Medeïna,El Medeïna,المداينة,,7140685
+sector-236058,236058,delegation-2360,TN-33,Sidi Baraket Nord,Sidi Baraket Nord,سيدي بركات الشمالية,,7140688
+sector-236059,236059,delegation-2360,TN-33,Sidi Baraket Sud,Sidi Baraket Sud,سيدي بركات الجنوبية,,7140687
+sector-236151,236151,delegation-2361,TN-33,Es-Sers Nord,Es-Sers Nord,السرس الشمالية,,7198246
+sector-236152,236152,delegation-2361,TN-33,Es-Sers Sud,Es-Sers Sud,السرس الجنوبية,,7198245
+sector-236153,236153,delegation-2361,TN-33,Cite Ennour,Cite Ennour,حي النور,,7198249
+sector-236154,236154,delegation-2361,TN-33,Bousliaa,Bousliaa,بوصليعة,,7198248
+sector-236155,236155,delegation-2361,TN-33,Lorbous,Lorbous,الأربص,,7198244
+sector-236156,236156,delegation-2361,TN-33,El Marja,El Marja,المرجى,,7198247
+sector-236157,236157,delegation-2361,TN-33,El Abar,El Abar,الأبار,,7198243
+sector-236158,236158,delegation-2361,TN-33,El Abar Est,El Abar Est,الأبار الشرقية,,7198242
+sector-236159,236159,delegation-2361,TN-33,Elles,Elles,اللاس,Q391320,7198241
+sector-245151,245151,delegation-2451,TN-34,Siliana Ville,Siliana Ville,مدينة سليانة,,7126058
+sector-245152,245152,delegation-2451,TN-34,Siliana Nord,Siliana Nord,سليانة الشمالية,,7126057
+sector-245153,245153,delegation-2451,TN-34,El Arab,El Arab,العرب,,7126061
+sector-245154,245154,delegation-2451,TN-34,Jemma,Jemma,جامة,,7126050
+sector-245155,245155,delegation-2451,TN-34,Massouj,Massouj,مصوج,,7126055
+sector-245156,245156,delegation-2451,TN-34,El Jouii,El Jouii,الجوي,,7126059
+sector-245157,245157,delegation-2451,TN-34,El Khalsa,El Khalsa,الخلصة,,7126052
+sector-245158,245158,delegation-2451,TN-34,Ain Eddissa,Ain Eddissa,عين الديسة,,7126053
+sector-245251,245251,delegation-2452,TN-34,Siliana Sud,Siliana Sud,سليانة الجنوبية,,7126056
+sector-245252,245252,delegation-2452,TN-34,Marj Mohaddem,Marj Mohaddem,مرج مقدم,,7126051
+sector-245253,245253,delegation-2452,TN-34,Es Sfina,Es Sfina,السفينة,,7125516
+sector-245254,245254,delegation-2452,TN-34,Sidi Morched,Sidi Morched,سيدي مرشد,,7125519
+sector-245255,245255,delegation-2452,TN-34,Sidi Mansour,Sidi Mansour,سيدي منصور,,7126054
+sector-245256,245256,delegation-2452,TN-34,Sidi Hmada,Sidi Hmada,سيدي حمادة,,7125520
+sector-245257,245257,delegation-2452,TN-34,Sejja,Sejja,سجة,,7126060
+sector-245258,245258,delegation-2452,TN-34,Ouled Znag,Ouled Znag,أولاد زنق,,7125518
+sector-245259,245259,delegation-2452,TN-34,El Kabel,El Kabel,القابل,,7125517
+sector-245351,245351,delegation-2453,TN-34,Banlieue Bouarada,Banlieue Bouarada,ضاحية بوعرادة,,7125035
+sector-245352,245352,delegation-2453,TN-34,Bouarrada,Bouarrada,بوعرادة,,7125031
+sector-245353,245353,delegation-2453,TN-34,Fatis,Fatis,فطيس,,7125036
+sector-245354,245354,delegation-2453,TN-34,Henchir Erromman,Henchir Erromman,هنشير الرمان,,7125032
+sector-245355,245355,delegation-2453,TN-34,Sidi Abdennour,Sidi Abdennour,سيدي عبد النور,,7125033
+sector-245356,245356,delegation-2453,TN-34,Tarf Ech Chenna,Tarf Ech Chenna,طرف الشناء,,7125034
+sector-245451,245451,delegation-2454,TN-34,Gaafour Est,Gaafour Est,قعفور الشرقية,,7126208
+sector-245452,245452,delegation-2454,TN-34,Gaafour Ouest,Gaafour Ouest,قعفور الغربية,,7126207
+sector-245453,245453,delegation-2454,TN-34,Lakhwat,Lakhwat,الخوات,,7126205
+sector-245454,245454,delegation-2454,TN-34,Ain Ezrig,Ain Ezrig,عين الزريق,,7126202
+sector-245455,245455,delegation-2454,TN-34,El Ahouaz Nord,El Ahouaz Nord,الأحواز الشمالية,,7126203
+sector-245456,245456,delegation-2454,TN-34,El Ahouaz Sud,El Ahouaz Sud,الأحواز الجنوبية,,7126204
+sector-245457,245457,delegation-2454,TN-34,Al Aksab,Al Aksab,الاقصاب,,7126206
+sector-245551,245551,delegation-2455,TN-34,El Krib Nord,El Krib Nord,الكريب الشمالية,,7126321
+sector-245552,245552,delegation-2455,TN-34,El Krib Sud,El Krib Sud,الكريب الجنوبية,,7126317
+sector-245553,245553,delegation-2455,TN-34,Dokhania,Dokhania,دخانية,,7126320
+sector-245554,245554,delegation-2455,TN-34,Hammam Biadha Nord,Hammam Biadha Nord,حمام بياضة الشمالية,,7126323
+sector-245555,245555,delegation-2455,TN-34,Hammam Biadha Sud,Hammam Biadha Sud,حمام بياضة الجنوبية,,7126322
+sector-245556,245556,delegation-2455,TN-34,Borj El Masaoudia Nord,Borj El Masaoudia Nord,برج المسعودية شمالية,,7126318
+sector-245557,245557,delegation-2455,TN-34,Borj El Masaoudia Sud,Borj El Masaoudia Sud,برج المسعودية جنوبية,,7126319
+sector-245651,245651,delegation-2456,TN-34,Bourouis Nord,Bourouis Nord,بورويس الشمالية,,7126146
+sector-245652,245652,delegation-2456,TN-34,Bourouis Sud,Bourouis Sud,بورويس الجنوبية,,7126145
+sector-245653,245653,delegation-2456,TN-34,Ettricha,Ettricha,التريشة,,7126144
+sector-245654,245654,delegation-2456,TN-34,El Abbassi,El Abbassi,العباسي,,7126147
+sector-245655,245655,delegation-2456,TN-34,Ain Achour,Ain Achour,عين عاشور,,7126148
+sector-245656,245656,delegation-2456,TN-34,El Krib Gare,El Krib Gare,محطة الكريب,,7126149
+sector-245751,245751,delegation-2457,TN-34,Makther Nord,Makther Nord,مكثر الشمالية,,7125782
+sector-245752,245752,delegation-2457,TN-34,Makther Sud,Makther Sud,مكثر الجنوبية,,7125781
+sector-245753,245753,delegation-2457,TN-34,Sayar,Sayar,صيار,,7125780
+sector-245754,245754,delegation-2457,TN-34,El Garaa,El Garaa,القرعة,,7125783
+sector-245755,245755,delegation-2457,TN-34,Bez,Bez,باز,,7125786
+sector-245756,245756,delegation-2457,TN-34,Beni Hazem,Beni Hazem,بني حازم,,7125777
+sector-245757,245757,delegation-2457,TN-34,Ras El Oued,Ras El Oued,راس الواد,,7125778
+sector-245758,245758,delegation-2457,TN-34,Saddine,Saddine,صدين,,7125787
+sector-245759,245759,delegation-2457,TN-34,Chouarnia,Chouarnia,شوارنية,,7125784
+sector-245760,245760,delegation-2457,TN-34,Send El Haddad,Send El Haddad,سند الحداد,,7125785
+sector-245761,245761,delegation-2457,TN-34,Soualem,Soualem,سوالم,,7125779
+sector-245851,245851,delegation-2458,TN-34,El Hbabsa Nord,El Hbabsa Nord,الحبابسة الشمالية,,7125626
+sector-245852,245852,delegation-2458,TN-34,El Hbabsa Sud,El Hbabsa Sud,الحبابسة الجنوبية,,7125625
+sector-245853,245853,delegation-2458,TN-34,El Jamilet,El Jamilet,الجميلات,,7125628
+sector-245854,245854,delegation-2458,TN-34,Essmirat Nord,Essmirat Nord,السميرات الشمالية,,7125663
+sector-245855,245855,delegation-2458,TN-34,Esmirat Sud,Esmirat Sud,السميرات الجنوبية,,7125662
+sector-245856,245856,delegation-2458,TN-34,El Msahla,El Msahla,المساحلة,,7125661
+sector-245857,245857,delegation-2458,TN-34,El Haria,El Haria,الهرية,,7125665
+sector-245858,245858,delegation-2458,TN-34,Errouhia,Errouhia,الروحية,,7125664
+sector-245859,245859,delegation-2458,TN-34,El Hmaima,El Hmaima,الحميمة,,7125666
+sector-245860,245860,delegation-2458,TN-34,Bou Ajila,Bou Ajila,بو عجيلة,,7125627
+sector-245951,245951,delegation-2459,TN-34,Kesra,Kesra,كسرى,,7125591
+sector-245952,245952,delegation-2459,TN-34,El Hammam,El Hammam,الحمام,,7125592
+sector-245953,245953,delegation-2459,TN-34,El Mansoura Nord,El Mansoura Nord,المنصورة الشمالية,,7125594
+sector-245954,245954,delegation-2459,TN-34,El Mansoura Sud,El Mansoura Sud,المنصورة الجنوبية,,7125595
+sector-245955,245955,delegation-2459,TN-34,Bou Abdallah,Bou Abdallah,بو عبد الله,,7125593
+sector-245956,245956,delegation-2459,TN-34,El Karia Nord,El Karia Nord,القرية الشمالية,,7125596
+sector-245957,245957,delegation-2459,TN-34,El Karia Sud,El Karia Sud,القرية الجنوبية,,7125598
+sector-245958,245958,delegation-2459,TN-34,El Foughoul,El Foughoul,الفضول,,7125597
+sector-245959,245959,delegation-2459,TN-34,Ellouza,Ellouza,اللوزة,,7125599
+sector-246051,246051,delegation-2460,TN-34,Bargou,Bargou,برقو,Q2884486,7125182
+sector-246052,246052,delegation-2460,TN-34,Banlieue Bargo,Banlieue Bargo,أحواز برقو,,7125188
+sector-246053,246053,delegation-2460,TN-34,Ouled Fraj,Ouled Fraj,أولاد فرج,,7125189
+sector-246054,246054,delegation-2460,TN-34,Sidi Said,Sidi Said,سيدي سعيد,,7125186
+sector-246055,246055,delegation-2460,TN-34,Ain Fourna,Ain Fourna,عين فرنة,,7125187
+sector-246056,246056,delegation-2460,TN-34,Ain Boussaadia,Ain Boussaadia,عين بوسعدية,,7125184
+sector-246057,246057,delegation-2460,TN-34,Ed Derija,Ed Derija,الدريجة,,7125185
+sector-246058,246058,delegation-2460,TN-34,El Behiri,El Behiri,البحيرين,,7125183
+sector-246151,246151,delegation-2461,TN-34,El Aroussa,El Aroussa,العروسة,,7125149
+sector-246152,246152,delegation-2461,TN-34,Boujlida,Boujlida,بوجليدة,,7125152
+sector-246153,246153,delegation-2461,TN-34,Ezzmil,Ezzmil,الزميل,,7125148
+sector-246154,246154,delegation-2461,TN-34,Mousrata,Mousrata,مسراطة,,7125150
+sector-246155,246155,delegation-2461,TN-34,Sidi Ayed,Sidi Ayed,سيدي عياد,,7125151
+sector-315151,315151,delegation-3151,TN-51,Boujaafar,Boujaafar,بوجعفر,,7151557
+sector-315152,315152,delegation-3151,TN-51,El Medina,El Medina,المدينة,,7211838
+sector-315153,315153,delegation-3151,TN-51,Ali Belhaouen,Ali Belhaouen,علي بلهوان,,7106876
+sector-315154,315154,delegation-3151,TN-51,Mohamed Maarouf,Mohamed Maarouf,محمد معروف,,7106878
+sector-315155,315155,delegation-3151,TN-51,Khzema,Khzema,خزامة,,7106867
+sector-315254,315254,delegation-3152,TN-51,Ezzouhour,Ezzouhour,الزهور,,7113317
+sector-315255,315255,delegation-3152,TN-51,Erriadh,Erriadh,حي الرياض,,7113316
+sector-315256,315256,delegation-3152,TN-51,El Ahd El Jadid,El Ahd El Jadid,العهد الجديد,,7113315
+sector-315351,315351,delegation-3153,TN-51,Oued Blibene,Oued Blibene,وادي بليبان,,7106868
+sector-315352,315352,delegation-3153,TN-51,Hached,Hached,حشاد,,7106870
+sector-315353,315353,delegation-3153,TN-51,Hedi Chaker,Hedi Chaker,الهادي شاكر,,7106873
+sector-315354,315354,delegation-3153,TN-51,Bouhsina,Bouhsina,بو حسينة,,7106872
+sector-315355,315355,delegation-3153,TN-51,Mohamed El Karoui,Mohamed El Karoui,محمد القروي,,7106869
+sector-315356,315356,delegation-3153,TN-51,Sahloul,Sahloul,سهلول,,7106871
+sector-315451,315451,delegation-3154,TN-51,Taieb Mhiri,Taieb Mhiri,الطيب المهيري,,7106874
+sector-315452,315452,delegation-3154,TN-51,Ibn Khaldoun,Ibn Khaldoun,ابن خلدون,,7106875
+sector-315453,315453,delegation-3154,TN-51,Ksibet Ech Chott,Ksibet Ech Chott,قصيبة الشط,,7106880
+sector-315454,315454,delegation-3154,TN-51,Sidi Abdlahmid,Sidi Abdlahmid,سيدي عبد الحميد,,7106879
+sector-315551,315551,delegation-3155,TN-51,El Medina,El Medina,المدينة,,7106541
+sector-315552,315552,delegation-3155,TN-51,El Kantaoui,El Kantaoui,القنطاوي,,7106539
+sector-315553,315553,delegation-3155,TN-51,Bir Moussa,Bir Moussa,بير موسى,,7106540
+sector-315554,315554,delegation-3155,TN-51,Sahloul,Sahloul,سهلول,,7106543
+sector-315555,315555,delegation-3155,TN-51,El Gharabi,El Gharabi,الغرابي,,7106542
+sector-315651,315651,delegation-3156,TN-51,Akouda Est,Akouda Est,أكودة الشرقية,,7106467
+sector-315652,315652,delegation-3156,TN-51,Akouda Ouest,Akouda Ouest,أكودة الغربية,,7106466
+sector-315653,315653,delegation-3156,TN-51,Chott Mariem,Chott Mariem,شط مريم,Q1076701,7106464
+sector-315654,315654,delegation-3156,TN-51,Chott Errommane,Chott Errommane,شط الرمان,,7106469
+sector-315655,315655,delegation-3156,TN-51,El Fokaia,El Fokaia,الفقاعية,,7106394
+sector-315656,315656,delegation-3156,TN-51,Ettantana,Ettantana,الطنطانة,,7106465
+sector-315751,315751,delegation-3157,TN-51,El Jarabaa,El Jarabaa,الجرابعة,,7107642
+sector-315752,315752,delegation-3157,TN-51,Zearna Ouest,Zearna Ouest,زعارنة الغربية,,7108100
+sector-315753,315753,delegation-3157,TN-51,Zearna Est,Zearna Est,زعارنة الشرقية,,7107643
+sector-315754,315754,delegation-3157,TN-51,Ouled Mhamed,Ouled Mhamed,أولاد محمد,,7107641
+sector-315755,315755,delegation-3157,TN-51,Essed Ouest,Essed Ouest,السد الغربي,,7107814
+sector-315756,315756,delegation-3157,TN-51,Balaoum,Balaoum,بلعوم,,7107644
+sector-315851,315851,delegation-3158,TN-51,Sidi Bou Ali,Sidi Bou Ali,سيدي بو علي,,7107795
+sector-315852,315852,delegation-3158,TN-51,Essed Sud,Essed Sud,السد القبلي,,7107796
+sector-315853,315853,delegation-3158,TN-51,Essed Nord,Essed Nord,السد الجوفي,,7151554
+sector-315854,315854,delegation-3158,TN-51,Ech Chouicha,Ech Chouicha,الشويشة,,7107797
+sector-315855,315855,delegation-3158,TN-51,Ouremma,Ouremma,وريمة,,7106373
+sector-315856,315856,delegation-3158,TN-51,Menzel El Mahatta,Menzel El Mahatta,منزل المحطة,,7106367
+sector-315857,315857,delegation-3158,TN-51,Mehadhbia,Mehadhbia,مهاذبة,,7106321
+sector-315951,315951,delegation-3159,TN-51,Hergla,Hergla,هرقلة,,7106078
+sector-315952,315952,delegation-3159,TN-51,El Aribet,El Aribet,العريبات,,7106077
+sector-315953,315953,delegation-3159,TN-51,Essouayah,Essouayah,السويح,,7106076
+sector-316051,316051,delegation-3160,TN-51,Enfidha,Enfidha,النفيضة,,7105617
+sector-316052,316052,delegation-3160,TN-51,El Frada,El Frada,الفرادة,,7105611
+sector-316053,316053,delegation-3160,TN-51,Grimet Est,Grimet Est,قريمات الشرقية,,7106110
+sector-316054,316054,delegation-3160,TN-51,Grimet Ouest,Grimet Ouest,قريمات الغربية,,7106113
+sector-316055,316055,delegation-3160,TN-51,Chgarnia,Chgarnia,الشقارنية,,7105616
+sector-316056,316056,delegation-3160,TN-51,Ouled Abdellah,Ouled Abdellah,أولاد عبد الله,,7105614
+sector-316057,316057,delegation-3160,TN-51,Takrouna,Takrouna,تكرونة,,7105613
+sector-316058,316058,delegation-3160,TN-51,Menzel Fateh,Menzel Fateh,منزل فاتح,,7105615
+sector-316059,316059,delegation-3160,TN-51,El Garci,El Garci,القارصي,,7106112
+sector-316060,316060,delegation-3160,TN-51,Ain Medhaker,Ain Medhaker,عين مذاكر,,7105612
+sector-316061,316061,delegation-3160,TN-51,Hicher,Hicher,هيشر,,7106111
+sector-316062,316062,delegation-3160,TN-51,Dar Belouaer,Dar Belouaer,دار بلواعر,,7106115
+sector-316063,316063,delegation-3160,TN-51,Mrabet Hached,Mrabet Hached,مرابط حشاد,,7106114
+sector-316151,316151,delegation-3161,TN-51,Bouficha,Bouficha,بوفيشة,,7105250
+sector-316152,316152,delegation-3161,TN-51,Oued El Kharroub,Oued El Kharroub,واد الخروب,,7105251
+sector-316153,316153,delegation-3161,TN-51,Sidi Khlifa,Sidi Khlifa,سيدي خليفة,,7105252
+sector-316154,316154,delegation-3161,TN-51,Essafha,Essafha,الصفحة,,7105254
+sector-316155,316155,delegation-3161,TN-51,Sidi Said,Sidi Said,سيدي سعيد,,7105455
+sector-316156,316156,delegation-3161,TN-51,Ain Errahma,Ain Errahma,عين الرحمة,,7105253
+sector-316157,316157,delegation-3161,TN-51,El Mthalith,El Mthalith,المثاليث,,7105255
+sector-316158,316158,delegation-3161,TN-51,Esselloum,Esselloum,السلوم,,7105249
+sector-316159,316159,delegation-3161,TN-51,Sidi Mtir,Sidi Mtir,سيدي مطير,,7105456
+sector-316251,316251,delegation-3162,TN-51,Kondar,Kondar,كندار,,7106294
+sector-316252,316252,delegation-3162,TN-51,Bi'r Al Jadid,Bir Ejdid,بئر الجديد,,7106295
+sector-316253,316253,delegation-3162,TN-51,Blalma,Blalma,بلالمة,,7113133
+sector-316254,316254,delegation-3162,TN-51,Bchechma,Bchechma,البشاشمة,,7106296
+sector-316255,316255,delegation-3162,TN-51,Ouled El Abed,Ouled El Abed,أولاد العابد,,7106293
+sector-316256,316256,delegation-3162,TN-51,Gmata,Gmata,قماطة,,7106292
+sector-316257,316257,delegation-3162,TN-51,Ouled Ameur,Ouled Ameur,اولاد عامر,,7106291
+sector-316351,316351,delegation-3163,TN-51,Sidi El Heni Centre,Sidi El Heni Centre,سيدي الهاني المركزية,,7113809
+sector-316352,316352,delegation-3163,TN-51,Sidi El Heni Ouest,Sidi El Heni Ouest,سيدي الهاني الغربية,,7135672
+sector-316353,316353,delegation-3163,TN-51,Sidi El Heni Sud,Sidi El Heni Sud,سيدي الهاني الجنوبية,,7113806
+sector-316354,316354,delegation-3163,TN-51,Ouled Ali Bel Hani,Ouled Ali Bel Hani,أولاد علي بالهاني,,7113807
+sector-316355,316355,delegation-3163,TN-51,Kroussia Ouest,Kroussia Ouest,كروسية الغربية,,7113808
+sector-316356,316356,delegation-3163,TN-51,Kroussia Centrale,Kroussia Centrale,كروسية المركزية,,7113811
+sector-316451,316451,delegation-3164,TN-51,Ettouara Nord,Ettouara Nord,التوارة الشمالية,,7111282
+sector-316452,316452,delegation-3164,TN-51,Ettouara Sud,Ettouara Sud,التوارة الجنوبية,,7111279
+sector-316453,316453,delegation-3164,TN-51,Jedidine,Jedidine,الجديدين,,7111280
+sector-316454,316454,delegation-3164,TN-51,El Jebline,El Jebline,الجبليين,,7151556
+sector-316455,316455,delegation-3164,TN-51,Habib Thameur,Habib Thameur,حبيب ثامر,,7111278
+sector-316456,316456,delegation-3164,TN-51,Moureddine,Moureddine,الموردين,,7111276
+sector-316457,316457,delegation-3164,TN-51,Mnaema,Mnaema,مناعمة,,7111284
+sector-316458,316458,delegation-3164,TN-51,El Gharbine,El Gharbine,الغربيين,,7151555
+sector-316459,316459,delegation-3164,TN-51,El Knaies,El Knaies,الكنايس,Q12191859,7111277
+sector-316460,316460,delegation-3164,TN-51,Kebiline,Kebiline,القبليين,,7111283
+sector-316461,316461,delegation-3164,TN-51,Ennour,Ennour,النور,,7111281
+sector-316462,316462,delegation-3164,TN-51,El Fradi,El Fradi,الفرادي,,7111289
+sector-316463,316463,delegation-3164,TN-51,Borjine,Borjine,البرجين,,7111288
+sector-316464,316464,delegation-3164,TN-51,Beni Rabiaa,Beni Rabiaa,بني ربيعة,,7111287
+sector-316465,316465,delegation-3164,TN-51,Beni Khaltoum,Beni Khaltoum,بني كلثوم,,7111286
+sector-316466,316466,delegation-3164,TN-51,Enjara,Enjara,النجاجرة,,7111285
+sector-316467,316467,delegation-3164,TN-51,El Messaadine,El Messaadine,المسعدين,,7113134
+sector-316551,316551,delegation-3165,TN-51,El Kalaa Essghira Est,El Kalaa Essghira Est,القلعة الصغرى الشرقية,,7108099
+sector-316552,316552,delegation-3165,TN-51,El Kalaa Essghira Hached,El Kalaa Essghira Hached,القلعة الصغرى حشاد,,7108097
+sector-316553,316553,delegation-3165,TN-51,El Kalaa Essghira Ville,El Kalaa Essghira Ville,القلعة الصغرى المدينة,,7108098
+sector-316554,316554,delegation-3165,TN-51,Ennagr,Ennagr,النقر,,7108096
+sector-316555,316555,delegation-3165,TN-51,Oued Leya,Oued Leya,وادي لاية,,7108095
+sector-316651,316651,delegation-3166,TN-51,Zaouiet Sousse,Zaouiet Sousse,زاوية سوسة,Q3574797,7108094
+sector-316652,316652,delegation-3166,TN-51,Ksibet Sousse,Ksibet Sousse,قصيبة سوسة,Q3200159,7113135
+sector-316653,316653,delegation-3166,TN-51,Thrayet,Thrayet,الثريات,,7113136
+sector-325151,325151,delegation-3251,TN-52,Al Madina,El Medina,المدينة,,7105681
+sector-325152,325152,delegation-3251,TN-52,El Medina 2,El Medina 2,المدينة 2,,7105680
+sector-325153,325153,delegation-3251,TN-52,Bab El Gharbi,Bab El Gharbi,باب الغربي,,7105682
+sector-325154,325154,delegation-3251,TN-52,Er-Rbat,Er-Rbat,الربط,,7105679
+sector-325155,325155,delegation-3251,TN-52,El Helia,El Helia,الحلية,,7105678
+sector-325156,325156,delegation-3251,TN-52,El Halia 2,El Halia 2,الحلية 2,,7105677
+sector-325157,325157,delegation-3251,TN-52,Skanes,Skanes,صقانص,,7105683
+sector-325158,325158,delegation-3251,TN-52,Khenis,Khenis,خنيس,,7105911
+sector-325159,325159,delegation-3251,TN-52,Khenis Nord,Khenis Nord,خنيس الشمالية,,7105910
+sector-325251,325251,delegation-3252,TN-52,Ouerdanine Nord,Ouerdanine Nord,الوردانين الشمالية,,7107446
+sector-325252,325252,delegation-3252,TN-52,Ouerdanine Sud,Ouerdanine Sud,الوردانين الجنوبية,,7107445
+sector-325253,325253,delegation-3252,TN-52,Menzel Khair,Menzel Khair,منزل خير,,7107448
+sector-325254,325254,delegation-3252,TN-52,Sidi Bou Othman,Sidi Bou Othman,سيدي بو عثمان,,7107447
+sector-325255,325255,delegation-3252,TN-52,Oued El Jebs,Oued El Jebs,وادي الجبس,,7107449
+sector-325351,325351,delegation-3253,TN-52,Sahline Est,Sahline Est,الساحلين الشرقية,,7105770
+sector-325352,325352,delegation-3253,TN-52,Sahline Ouest,Sahline Ouest,الساحلين الغربية,,7105771
+sector-325353,325353,delegation-3253,TN-52,Sidi Ameur,Sidi Ameur,سيدي عامر,,7106909
+sector-325354,325354,delegation-3253,TN-52,Môotmar,Môotmar,معتمر,,7105772
+sector-325355,325355,delegation-3253,TN-52,Masjed Aïssa,Masjed Aïssa,مسجد عيسى,,7106910
+sector-325451,325451,delegation-3254,TN-52,Mezaougha,Mezaougha,المزاوغة,,7114432
+sector-325452,325452,delegation-3254,TN-52,Menzel Hayet,Menzel Hayet,منزل حياة,,7114434
+sector-325453,325453,delegation-3254,TN-52,Melichet,Melichet,المليشيات,,7114433
+sector-325454,325454,delegation-3254,TN-52,Zéramdine Nord,Zéramdine Nord,زرمدين الشمالية,,7114248
+sector-325455,325455,delegation-3254,TN-52,Zéramdine Sud,Zéramdine Sud,زرميدين الجنوبية,,7114249
+sector-325551,325551,delegation-3255,TN-52,Beni Hassen Sud,Beni Hassen Sud,بني حسان القبلية,,7113975
+sector-325552,325552,delegation-3255,TN-52,Beni Hassen Nord,Beni Hassen Nord,بني حسان الجوفية,,7113965
+sector-325553,325553,delegation-3255,TN-52,Hatem,Hatem,حاتم,,7114532
+sector-325554,325554,delegation-3255,TN-52,EL Jnaïha,EL Jnaïha,الجنائحة,,7114530
+sector-325555,325555,delegation-3255,TN-52,Ghnada,Ghnada,الغنادة,,7114531
+sector-325651,325651,delegation-3256,TN-52,Jammel Sud,Jammel Sud,جمال القبلية,,7113924
+sector-325652,325652,delegation-3256,TN-52,Jammel Nord,Jammel Nord,جمال الجوفية,,7113921
+sector-325653,325653,delegation-3256,TN-52,Jammel Est,Jammel Est,جمال الشرقية,,7113922
+sector-325654,325654,delegation-3256,TN-52,Jammel Ouest,Jammel Ouest,جمال الغربية,,7113923
+sector-325655,325655,delegation-3256,TN-52,Zaouiet Kontoch,Zaouiet Kontoch,زاوية قنطش,Q3574794,7112769
+sector-325656,325656,delegation-3256,TN-52,Bir Taïeb,Bir Taïeb,بئر الطيب,,7114361
+sector-325657,325657,delegation-3256,TN-52,Menzel Kamel,Menzel Kamel,منزل كامل,,7114362
+sector-325658,325658,delegation-3256,TN-52,El Hdadra,El Hdadra,الهدادرة,,7114360
+sector-325659,325659,delegation-3256,TN-52,Et-Teyaïra,Et-Teyaïra,الطيايرة,,7113920
+sector-325751,325751,delegation-3257,TN-52,Bembla,Bembla,بنبلة,,7107801
+sector-325752,325752,delegation-3257,TN-52,Bembla Ouest,Bembla Ouest,بنبلة الغربية,,7107800
+sector-325753,325753,delegation-3257,TN-52,El Manara,El Manara,المنارة,,7107799
+sector-325754,325754,delegation-3257,TN-52,Menzel Ennour,Menzel Ennour,منزل النور,,7107974
+sector-325755,325755,delegation-3257,TN-52,El Masdour,El Masdour,المصدور,Q3050056,7107646
+sector-325756,325756,delegation-3257,TN-52,Menzel Harb,Menzel Harb,منزل حرب,,7107647
+sector-325851,325851,delegation-3258,TN-52,Moknine Est,Moknine Est,المكنين الشرقية,,7111393
+sector-325852,325852,delegation-3258,TN-52,Moknine Sud,Moknine Sud,المكنين القبلية,,7111395
+sector-325853,325853,delegation-3258,TN-52,Moknine Nord,Moknine Nord,المكنين الجوفية,,7111392
+sector-325854,325854,delegation-3258,TN-52,Ras El Ouad,Ras El Ouad,رأس الوادي,,7111397
+sector-325855,325855,delegation-3258,TN-52,Moknine Ouest,Moknine Ouest,المكنين الغربية,,7111394
+sector-325856,325856,delegation-3258,TN-52,Khérédine,Khérédine,خير الدين,,7111396
+sector-325857,325857,delegation-3258,TN-52,Sidi Bennour,Sidi Bennour,سيدي بنور,,7111941
+sector-325858,325858,delegation-3258,TN-52,Menzel Farsi,Menzel Farsi,منزل فارسي,,7114454
+sector-325859,325859,delegation-3258,TN-52,Cherahil,Cherahil,الشراحيل,Q2962700,7114475
+sector-325860,325860,delegation-3258,TN-52,Amiret El Fehoul,Amiret El Fehoul,عميرة الفحول,Q2843523,7114504
+sector-325861,325861,delegation-3258,TN-52,Amiret El Hojjaj,Amiret El Hojjaj,عميرة الحجاج,Q2843526,7114491
+sector-325862,325862,delegation-3258,TN-52,Amiret Touazra,Amiret Touazra,عميرة التوازرة,Q2843529,7114513
+sector-325863,325863,delegation-3258,TN-52,Amiret Touazra Sud,Amiret Touazra Sud,عميرة التوازرة الجنوبية,,7114514
+sector-325951,325951,delegation-3259,TN-52,Téboulba,Téboulba,طبلبة,,7111933
+sector-325952,325952,delegation-3259,TN-52,Beklta Sud,Beklta Sud,البقالطة الجنوبية,,7111931
+sector-325953,325953,delegation-3259,TN-52,El Baghdadi,El Baghdadi,البغدادي,,7111930
+sector-325954,325954,delegation-3259,TN-52,Bekalta Est,Bekalta Est,البقالطة الشرقية,,7111932
+sector-326051,326051,delegation-3260,TN-52,Houmet Essouk,Houmet Essouk,حومة السوق,,7111787
+sector-326052,326052,delegation-3260,TN-52,El Fadhline,El Fadhline,الفضلين,,7111785
+sector-326053,326053,delegation-3260,TN-52,El Aïaïcha,El Aïaïcha,العيايشة,,7111784
+sector-326054,326054,delegation-3260,TN-52,Sokrine,Sokrine,السكرين,,7111783
+sector-326055,326055,delegation-3260,TN-52,Bou-driss,Bou-driss,بودريس,,7111786
+sector-326151,326151,delegation-3261,TN-52,Ayed,Ayed,عياد,,7110676
+sector-326152,326152,delegation-3261,TN-52,Soua,Soua,صوة,,7110675
+sector-326153,326153,delegation-3261,TN-52,Bouzouita,Bouzouita,بوزويتة,,7110673
+sector-326154,326154,delegation-3261,TN-52,Cité Erriadh,Cité Erriadh,حي الرياض,,7110674
+sector-326251,326251,delegation-3262,TN-52,Ksibet El Mediouni,Ksibet El Mediouni,قصيبة المديوني,,7106688
+sector-326252,326252,delegation-3262,TN-52,Touza,Touza,طوزة,,7112718
+sector-326253,326253,delegation-3262,TN-52,Benen Sud,Benen Sud,بنان القبلية,,7109598
+sector-326254,326254,delegation-3262,TN-52,Benen Nord,Benen Nord,بنان الجوفية,,7109597
+sector-326255,326255,delegation-3262,TN-52,Bodher,Bodher,بوضر,,7109599
+sector-326351,326351,delegation-3263,TN-52,Sayada Est,Sayada Est,صيادة الشرقية,,7110096
+sector-326352,326352,delegation-3263,TN-52,Sayada Ouest,Sayada Ouest,صيادة الغربية,,7110097
+sector-326353,326353,delegation-3263,TN-52,Lamta,Lamta,لمطة,,7109801
+sector-326354,326354,delegation-3263,TN-52,Bou Hjar,Bou Hjar,بوحجر,,7109667
+sector-335151,335151,delegation-3351,TN-53,Mahdia,Mahdia,المهدية,,7152281
+sector-335152,335152,delegation-3351,TN-53,Zouila,Zouila,زويلة,,7152280
+sector-335153,335153,delegation-3351,TN-53,Zouila Sud,Zouila Sud,زويلة الجنوبية,,7152278
+sector-335154,335154,delegation-3362,TN-53,Rejiche,Rejiche,رجيش,,7152268
+sector-335155,335155,delegation-3362,TN-53,Rejiche Sud,Rejiche Sud,رجيش الجنوبية,,7152267
+sector-335156,335156,delegation-3351,TN-53,Chiba,Chiba,شيبة,,7152266
+sector-335157,335157,delegation-3351,TN-53,Essaad,Essaad,السعد,,7152292
+sector-335158,335158,delegation-3351,TN-53,Jaouaouda,Jaouaouda,الجواودة,,7152291
+sector-335159,335159,delegation-3351,TN-53,Ezzahra,Ezzahra,الزهراء,,7152287
+sector-335160,335160,delegation-3351,TN-53,Zegana,Zegana,الزقانة,,7152285
+sector-335161,335161,delegation-3351,TN-53,Hiboun,Hiboun,هيبون,Q3135175,7152283
+sector-335162,335162,delegation-3351,TN-53,Er-Remal,Er-Remal,الرمل,,7152241
+sector-335163,335163,delegation-3351,TN-53,El Hekaima Est,El Hekaima Est,الحكايمة الشرقية,,7152239
+sector-335164,335164,delegation-3351,TN-53,Hekaima Ouest,Hekaima Ouest,الحكايمة الغربية,,7152237
+sector-335251,335251,delegation-3352,TN-53,Bou Merdes,Bou Merdes,بومرداس,,7152245
+sector-335252,335252,delegation-3352,TN-53,El Houes,El Houes,الحوس,,7152244
+sector-335253,335253,delegation-3352,TN-53,Kerker,Kerker,كركر,,7152243
+sector-335254,335254,delegation-3352,TN-53,Zerata,Zerata,الزراطة,,7152233
+sector-335255,335255,delegation-3352,TN-53,Errouadhi,Errouadhi,الرواضي,,7152263
+sector-335256,335256,delegation-3352,TN-53,Ech-Chouariaa,Ech-Chouariaa,الشوارعية,,7152262
+sector-335257,335257,delegation-3352,TN-53,Bouhlel Ali Sud,Bouhlel Ali Sud,بوهلال علي الجنوبية,,7152261
+sector-335258,335258,delegation-3352,TN-53,Bouhlel Ali Nord,Bouhlel Ali Nord,بوهلال علي الشمالية,,7152260
+sector-335259,335259,delegation-3352,TN-53,Menzel Hamza,Menzel Hamza,منزل حمزة,,7152208
+sector-335351,335351,delegation-3353,TN-53,Ouled Chamekh Sud,Ouled Chamekh Sud,أولاد الشامخ الجنوبية,,7152232
+sector-335352,335352,delegation-3353,TN-53,Ouled Chamekh Nord,Ouled Chamekh Nord,أولاد الشامخ الشمالية,,7152231
+sector-335353,335353,delegation-3353,TN-53,Ouled Amor,Ouled Amor,أولاد عمر,,7152229
+sector-335354,335354,delegation-3353,TN-53,Chehimet Nord,Chehimet Nord,الشحيمات الشمالية,,7152228
+sector-335355,335355,delegation-3353,TN-53,El Ajilet,El Ajilet,العجيلات,,7152226
+sector-335356,335356,delegation-3353,TN-53,Es-Somra,Es-Somra,السمرة,,7152206
+sector-335357,335357,delegation-3353,TN-53,Bou Slim,Bou Slim,بوسليم,,7152205
+sector-335358,335358,delegation-3353,TN-53,Meharza Nord,Meharza Nord,المحارزة الشمالية,,7152204
+sector-335451,335451,delegation-3354,TN-53,Chorbane,Chorbane,شربان,,7152189
+sector-335452,335452,delegation-3354,TN-53,El Maati,El Maati,المعاطي,,7152288
+sector-335453,335453,delegation-3354,TN-53,Ech-Chahda Sud,Ech-Chahda Sud,الشحدة الجنوبية,,7152188
+sector-335454,335454,delegation-3354,TN-53,Ech-Chahda Est,Ech-Chahda Est,الشحدة الشرقية,,7152275
+sector-335455,335455,delegation-3354,TN-53,El Gouacem Ouest,El Gouacem Ouest,القواسم الغربية,,7152274
+sector-335456,335456,delegation-3354,TN-53,El Gouacem Est,El Gouacem Est,القواسم الشرقية,,7152273
+sector-335457,335457,delegation-3354,TN-53,Echaraf,Echaraf,الشرف,,7152272
+sector-335458,335458,delegation-3354,TN-53,El Gradha Ouest,El Gradha Ouest,القرادحة الغربية,,7152271
+sector-335459,335459,delegation-3354,TN-53,El Gradha Est,El Gradha Est,القرادحةالشرقية,,7152270
+sector-335460,335460,delegation-3354,TN-53,Ouled El Hannachi,Ouled El Hannachi,أولاد الحناشي,,7152269
+sector-335551,335551,delegation-3355,TN-53,Hebira,Hebira,هبيرة,,7152235
+sector-335552,335552,delegation-3355,TN-53,Menzel Hached,Menzel Hached,منزل حشاد,,7152277
+sector-335553,335553,delegation-3355,TN-53,Regaigua,Regaigua,الرقايقة,,7152276
+sector-335554,335554,delegation-3355,TN-53,Ech-Chahda Ouest,Ech-Chahda Ouest,الشحدة الغربية,,7152247
+sector-335555,335555,delegation-3355,TN-53,El Maherza Sud,El Maherza Sud,المحارزة الجنوبية,,7152246
+sector-335651,335651,delegation-3356,TN-53,Essouassi,Essouassi,السواسي,,7152253
+sector-335652,335652,delegation-3356,TN-53,Essaida,Essaida,السيدة,,7152251
+sector-335653,335653,delegation-3356,TN-53,Sidi Naceur,Sidi Naceur,سيدي الناصر,,7152249
+sector-335654,335654,delegation-3356,TN-53,Sidi Zid,Sidi Zid,سيدي زيد,,7152216
+sector-335655,335655,delegation-3356,TN-53,Bou Helal,Bou Helal,بوهلال,,7152215
+sector-335656,335656,delegation-3356,TN-53,Cherichira,Cherichira,الشريشيرة,,7152213
+sector-335657,335657,delegation-3356,TN-53,El Kesasba,El Kesasba,الكساسبة,,7152211
+sector-335658,335658,delegation-3356,TN-53,Ezzairat,Ezzairat,الزعيرات,,7152207
+sector-335659,335659,delegation-3356,TN-53,Ouled Moulahem Nord,Ouled Moulahem Nord,أولاد مولاهم الشمالية,,7152259
+sector-335660,335660,delegation-3356,TN-53,Ouled Moulahem Ouest,Ouled Moulahem Ouest,أولاد مولاهم الغربية,,7152257
+sector-335661,335661,delegation-3356,TN-53,Echahimet Sud,Echahimet Sud,الشحيمات الجنوبية,,7152256
+sector-335751,335751,delegation-3357,TN-53,Ezzaouia,Ezzaouia,الزاوية,,7152225
+sector-335752,335752,delegation-3357,TN-53,El Mourabitine,El Mourabitine,المرابطين,,7152223
+sector-335753,335753,delegation-3357,TN-53,Riadh Bou Helal,Riadh Bou Helal,رياض بوهلال,,7152220
+sector-335754,335754,delegation-3357,TN-53,El Aitha,El Aitha,العيثة,,7152219
+sector-335755,335755,delegation-3357,TN-53,El Mechalet,El Mechalet,المشالات,,7152217
+sector-335756,335756,delegation-3357,TN-53,Zeghabna,Zeghabna,الزغابنة,,7152196
+sector-335757,335757,delegation-3357,TN-53,Touahria,Touahria,الطواهرية,,7152195
+sector-335758,335758,delegation-3357,TN-53,El Ababsa,El Ababsa,العبابسة,,7152187
+sector-335759,335759,delegation-3357,TN-53,Talalsa,Talalsa,التلالسة,,7152184
+sector-335760,335760,delegation-3357,TN-53,El Achaba,El Achaba,العشابة,,7152183
+sector-335851,335851,delegation-3358,TN-53,Chebba Nord,Chebba Nord,الشابة الشمالية,,7152264
+sector-335852,335852,delegation-3358,TN-53,Chebba Sud,Chebba Sud,الشابة الجنوبية,,7152290
+sector-335853,335853,delegation-3358,TN-53,Essaafet,Essaafet,السعفات,,7152289
+sector-335951,335951,delegation-3359,TN-53,Melloulech,Melloulech,ملولش,,7152284
+sector-335952,335952,delegation-3359,TN-53,El Aitha,El Aitha,العيثة,,7152242
+sector-335953,335953,delegation-3359,TN-53,El Mansoura,El Mansoura,المنصورة,,7152240
+sector-335954,335954,delegation-3359,TN-53,Ben Hssine,Ben Hssine,بن حسين,,7152238
+sector-335955,335955,delegation-3359,TN-53,Sidi Abdelaziz,Sidi Abdelaziz,سيدي عبد العزيز,,7152236
+sector-336051,336051,delegation-3360,TN-53,Sidi Alouane Ouest,Sidi Alouane Ouest,سيدي علوان الغربية,,7152234
+sector-336052,336052,delegation-3360,TN-53,Sidi Alouane Est,Sidi Alouane Est,سيدي علوان الشرقية,,7152252
+sector-336053,336053,delegation-3360,TN-53,Zorda,Zorda,زردة,,7152250
+sector-336054,336054,delegation-3360,TN-53,Sakiet El Khadem,Sakiet El Khadem,ساقية الخادم,,7152248
+sector-336055,336055,delegation-3360,TN-53,El Bassatine,El Bassatine,البساتين,,7152202
+sector-336056,336056,delegation-3360,TN-53,Oued Beja Nord,Oued Beja Nord,وادي باجة الشمالية,,7152214
+sector-336057,336057,delegation-3360,TN-53,Oued Beja Sud,Oued Beja Sud,وادي باجة الجنوبية,,7152212
+sector-336058,336058,delegation-3360,TN-53,Zalba Est,Zalba Est,زالبة الشرقية,,7152210
+sector-336059,336059,delegation-3360,TN-53,Zalba Ouest,Zalba Ouest,زالبة الغربية,,7152209
+sector-336060,336060,delegation-3360,TN-53,Ennozha,Ennozha,النزهة,,7152258
+sector-336061,336061,delegation-3360,TN-53,Oued Guellat,Oued Guellat,وادي قلات,,7152201
+sector-336062,336062,delegation-3360,TN-53,Essaada,Essaada,السعادة,,7152255
+sector-336151,336151,delegation-3361,TN-53,El Ksar,El Ksar,القصر,,7152224
+sector-336152,336152,delegation-3361,TN-53,Ksour Essaf Riadh,Ksour Essaf Riadh,قصور الساف الرياض,,7152222
+sector-336153,336153,delegation-3361,TN-53,El Ketanine,El Ketanine,القطانين,,7152221
+sector-336154,336154,delegation-3361,TN-53,Ksour Essaf Ettakaddoum,Ksour Essaf Ettakaddoum,قصور الساف التقدم,,7152218
+sector-336155,336155,delegation-3361,TN-53,Salakta,Salakta,سلقطة,,7152198
+sector-336156,336156,delegation-3358,TN-53,Ghedhabna,Ghedhabna,الغضابنة,,7152197
+sector-336157,336157,delegation-3361,TN-53,Ouled Salah,Ouled Salah,أولاد صالح,,7152254
+sector-336158,336158,delegation-3361,TN-53,Sidi Assaker Ouest,Sidi Assaker Ouest,سيدي عساكر الغربية,,7152186
+sector-336159,336159,delegation-3363,TN-53,Recharcha,Recharcha,الرشارشة,,7152185
+sector-336160,336160,delegation-3363,TN-53,El Hessinet,El Hessinet,الحسينات,,7152182
+sector-336161,336161,delegation-3363,TN-53,El Bradaa Sud,El Bradaa Sud,البرادعة الجنوبية,,7152200
+sector-336162,336162,delegation-3363,TN-53,El Bradaa Nord,El Bradaa Nord,البرادعة الشمالية,,7152199
+sector-345151,345151,delegation-3451,TN-61,La Médina,La Médina,المدينة,,7147599
+sector-345152,345152,delegation-3451,TN-61,Bab Bhar,Bab Bhar,باب بحر,,7147597
+sector-345153,345153,delegation-3451,TN-61,Cité El Khairi,Cité El Khairi,الحي الخيري,,7147587
+sector-345154,345154,delegation-3451,TN-61,El Bassatine,El Bassatine,البساتين,,7147585
+sector-345155,345155,delegation-3451,TN-61,Rbadh,Rbadh,الربض,,7147583
+sector-345156,345156,delegation-3451,TN-61,15 Novembre,15 Novembre,15 نوفمبر,,7147579
+sector-345157,345157,delegation-3451,TN-61,Ain Cheikh Rouhou,Ain Cheikh Rouhou,عين شيخ روحه,,7147575
+sector-345158,345158,delegation-3451,TN-61,Cité Ettaouidhi,Cité Ettaouidhi,حي التعويضي,,7147572
+sector-345159,345159,delegation-3451,TN-61,Merkez Gaddour,Merkez Gaddour,مركز قدور,,7147568
+sector-345160,345160,delegation-3451,TN-61,Merkez El Bacha,Merkez El Bacha,مركز الباشا,,7147566
+sector-345161,345161,delegation-3451,TN-61,Sidi Abbes,Sidi Abbes,سيدي عباس,,7147594
+sector-345162,345162,delegation-3451,TN-61,Mohamed Ali,Mohamed Ali,محمد علي,,7147593
+sector-345251,345251,delegation-3452,TN-61,Merkez Chaker,Merkez Chaker,مركز شاكر,,7147560
+sector-345252,345252,delegation-3452,TN-61,Cité El Habib,Cité El Habib,حي الحبيب,,7147559
+sector-345253,345253,delegation-3452,TN-61,Soukra,Soukra,سكرة,,7147558
+sector-345254,345254,delegation-3452,TN-61,El Alia,El Alia,العالية,,7147557
+sector-345255,345255,delegation-3452,TN-61,Oued Ermal,Oued Ermal,وادي الرمل,,7147556
+sector-345256,345256,delegation-3452,TN-61,El Houda,El Houda,الهدى,,7147555
+sector-345257,345257,delegation-3452,TN-61,Cité El Bahri,Cité El Bahri,حي البحري,,7147595
+sector-345351,345351,delegation-3453,TN-61,Sakiet Ezzit,Sakiet Ezzit,ساقية الزيت,,7147592
+sector-345352,345352,delegation-3453,TN-61,Merkez Bouassida,Merkez Bouassida,مركز بوعصيدة,,7147591
+sector-345353,345353,delegation-3453,TN-61,Essedra,Essedra,السدرة,,7147590
+sector-345354,345354,delegation-3453,TN-61,Chihia,Chihia,الشيحية,Q2963545,7147589
+sector-345355,345355,delegation-3453,TN-61,Teniour,Teniour,تنيور,,7147565
+sector-345356,345356,delegation-3453,TN-61,Sidi Salah,Sidi Salah,سيدي صالح,,7147564
+sector-345357,345357,delegation-3453,TN-61,El Ons,El Ons,الأنس,,7147563
+sector-345451,345451,delegation-3454,TN-61,Sakiet Eddaier,Sakiet Eddaier,ساقية الدائر,,7147601
+sector-345452,345452,delegation-3454,TN-61,El Khiria,El Khiria,الخيرية,,7147600
+sector-345453,345453,delegation-3454,TN-61,Merkez Essebai,Merkez Essebai,مركز السبعي,,7147598
+sector-345454,345454,delegation-3454,TN-61,El Bederna,El Bederna,البدارنة,,7147596
+sector-345455,345455,delegation-3454,TN-61,Sidi Mansour,Sidi Mansour,سيدي منصور,,7147586
+sector-345456,345456,delegation-3454,TN-61,Cité Bourguiba,Cité Bourguiba,حي بورقيبة,,7147584
+sector-345457,345457,delegation-3454,TN-61,Saltania,Saltania,السلطنية,,7147581
+sector-345458,345458,delegation-3454,TN-61,Merkez Kaaniche,Merkez Kaaniche,مركز كعنيش,,7147577
+sector-345551,345551,delegation-3455,TN-61,El Ain,El Ain,العين,,7147553
+sector-345552,345552,delegation-3455,TN-61,Gremda,Gremda,قرمدة,Q3100382,7147552
+sector-345553,345553,delegation-3455,TN-61,Bouzaiane,Bouzaiane,بوزيان,,7147550
+sector-345554,345554,delegation-3455,TN-61,El Afrane Nord,El Afrane Nord,الأفران الشمالية,,7147549
+sector-345555,345555,delegation-3455,TN-61,El Khazanet,El Khazanet,الخزانات,,7147546
+sector-345556,345556,delegation-3455,TN-61,El Aouabed,El Aouabed,العوابد,,7147561
+sector-345557,345557,delegation-3455,TN-61,Ayoun El Mayel,Ayoun El Mayel,عيون المايل,,10996901
+sector-345651,345651,delegation-3456,TN-61,Thyna,Thyna,طينة,,7147573
+sector-345652,345652,delegation-3456,TN-61,Sidi Abid,Sidi Abid,سيدي عبيد,,7147570
+sector-345653,345653,delegation-3456,TN-61,El Hajeb,El Hajeb,الحاجب,,7147567
+sector-345751,345751,delegation-3457,TN-61,Agareb,Agareb,عقارب,,7046892
+sector-345752,345752,delegation-3457,TN-61,Gargour,Gargour,قرقور,,7052498
+sector-345753,345753,delegation-3457,TN-61,Bouledhieb,Bouledhieb,بولذياب,,7052447
+sector-345754,345754,delegation-3457,TN-61,El Mahrouga,El Mahrouga,المحروقة,,7052330
+sector-345755,345755,delegation-3457,TN-61,Ettorba,Ettorba,التربة,,7047051
+sector-345756,345756,delegation-3457,TN-61,Ben Sahloun,Ben Sahloun,بن سهلون,,7052492
+sector-345757,345757,delegation-3457,TN-61,Zeliana,Zeliana,زليانة,,7052061
+sector-345758,345758,delegation-3457,TN-61,Esghar,Esghar,الصغار,,7046995
+sector-345851,345851,delegation-3458,TN-61,Jebeniana,Jebeniana,جبنيانة,,7127887
+sector-345852,345852,delegation-3458,TN-61,Botria,Botria,بطرية,,7127922
+sector-345853,345853,delegation-3458,TN-61,Baltech,Baltech,بلطش,,7127889
+sector-345854,345854,delegation-3458,TN-61,Hazeg,Hazeg,حزق,,7127924
+sector-345855,345855,delegation-3458,TN-61,El Galelja,El Galelja,القلالجة,,7127888
+sector-345856,345856,delegation-3458,TN-61,El Ajenga,El Ajenga,العجانقة,,7127890
+sector-345857,345857,delegation-3458,TN-61,Ellouza,Ellouza,اللوزة,,7127923
+sector-345858,345858,delegation-3458,TN-61,El Houdh,El Houdh,الحوض,,7127886
+sector-345951,345951,delegation-3459,TN-61,El Amra,El Amra,العامرة,,7147268
+sector-345952,345952,delegation-3459,TN-61,Beliana,Beliana,بليانة,,7147273
+sector-345953,345953,delegation-3459,TN-61,El Mesatria,El Mesatria,المساترية,,7147272
+sector-345954,345954,delegation-3459,TN-61,As Salam,Essalam,السلام,,7147270
+sector-345955,345955,delegation-3459,TN-61,Dheraa Beni Ziad,Dheraa Beni Ziad,ذراع بن زياد,,7147271
+sector-345956,345956,delegation-3459,TN-61,Bou Derbala,Bou Derbala,بودربالة,,7147269
+sector-346051,346051,delegation-3460,TN-61,El Hencha,El Hencha,الحنشة,,7126941
+sector-346052,346052,delegation-3460,TN-61,Ennasr,Ennasr,النصر,,7127206
+sector-346053,346053,delegation-3460,TN-61,Sidi Hsan Belhaj,Sidi Hsan Belhaj,سيدي حسن بلحاج,,7126943
+sector-346054,346054,delegation-3460,TN-61,Dokhane,Dokhane,دخان,,7127205
+sector-346055,346055,delegation-3460,TN-61,Bir Echaaba,Bir Echaaba,بئر الشعبة,,7127203
+sector-346056,346056,delegation-3460,TN-61,Merkez Mosbah,Merkez Mosbah,مركز مصباح,,7126940
+sector-346057,346057,delegation-3460,TN-61,Bir Salah,Bir Salah,بئر صالح,,7126942
+sector-346058,346058,delegation-3460,TN-61,El Hajara,El Hajara,الحجارة,,7126966
+sector-346059,346059,delegation-3460,TN-61,El Jouaouda,El Jouaouda,الجواودة,,7127204
+sector-346151,346151,delegation-3461,TN-61,Menzel Chaker,Menzel Chaker,منزل شاكر,,7125813
+sector-346152,346152,delegation-3461,TN-61,Bou Jarboue,Bou Jarboue,بوجربوع,,7126245
+sector-346153,346153,delegation-3461,TN-61,Majel Edraj,Majel Edraj,مجال الدرج,,7126246
+sector-346154,346154,delegation-3461,TN-61,Bir El Mellouli,Bir El Mellouli,بئر الملولي,,7125816
+sector-346155,346155,delegation-3461,TN-61,Bechka,Bechka,بشكة,,7125809
+sector-346156,346156,delegation-3461,TN-61,Bou Thadi,Bou Thadi,بوثدي,,7125812
+sector-346157,346157,delegation-3461,TN-61,El Bokaa El Bidha,El Bokaa El Bidha,البقعة البيضة,,7125815
+sector-346158,346158,delegation-3461,TN-61,El Aouadna,El Aouadna,العوادنة,,7126244
+sector-346159,346159,delegation-3461,TN-61,Telil El Ajla,Telil El Ajla,تليل العجلة,,7125811
+sector-346160,346160,delegation-3461,TN-61,El Achech,El Achech,الأعشاش,,7126243
+sector-346161,346161,delegation-3461,TN-61,El Hadj Kacem,El Hadj Kacem,الحاج قاسم,,7125810
+sector-346162,346162,delegation-3461,TN-61,Chaaleb,Chaaleb,شعلاب,,7125814
+sector-346251,346251,delegation-3462,TN-61,El Ghraiba,El Ghraiba,الغريبة,,7111229
+sector-346252,346252,delegation-3462,TN-61,El Manar,El Manar,المنار,,7111267
+sector-346253,346253,delegation-3462,TN-61,El Hachichina Sud,El Hachichina Sud,الحشيشينة الجنوبية,,7111294
+sector-346254,346254,delegation-3462,TN-61,El Hachichina Nord,El Hachichina Nord,الحشيشينة الشمالية,,7111266
+sector-346255,346255,delegation-3462,TN-61,El Chaal,El Chaal,الشعال,,7111142
+sector-346351,346351,delegation-3463,TN-61,Bir Ali Ben Khalifa,Bir Ali Ben Khalifa,بئر علي بن خليفة,Q1153877,7119537
+sector-346352,346352,delegation-3463,TN-61,Sidi Dhaher,Sidi Dhaher,سيدي الظاهر,,7124829
+sector-346353,346353,delegation-3463,TN-61,Sidi Ali Bel Abed,Sidi Ali Bel Abed,سيدي علي بالعابد,,7124828
+sector-346354,346354,delegation-3463,TN-61,Bou Slim,Bou Slim,بو سليم,,7124827
+sector-346355,346355,delegation-3463,TN-61,El Abraj,El Abraj,الأبراج,,7124826
+sector-346356,346356,delegation-3463,TN-61,Sdiret Sud,Sdiret Sud,السديرات الجنوبية,,7119191
+sector-346357,346357,delegation-3463,TN-61,Sdiret Nord,Sdiret Nord,السديرات الشمالية,,7119245
+sector-346358,346358,delegation-3463,TN-61,El Gandoul,El Gandoul,القندول,,7119539
+sector-346359,346359,delegation-3463,TN-61,Oued Echeikh,Oued Echeikh,وادي الشيخ,,7119261
+sector-346360,346360,delegation-3463,TN-61,Ouadrane Sud,Ouadrane Sud,ودران الجنوبية,,7119558
+sector-346361,346361,delegation-3463,TN-61,Ouadrane Nord,Ouadrane Nord,ودران الشمالية,,7119538
+sector-346362,346362,delegation-3463,TN-61,Ennadhour,Ennadhour,الناظور,,7124830
+sector-346451,346451,delegation-3464,TN-61,Sbih,Sbih,صبيح,,7111573
+sector-346452,346452,delegation-3464,TN-61,El Khadhra,El Khadhra,الخضراء,,7111575
+sector-346453,346453,delegation-3464,TN-61,Naouel,Naouel,نوال,,7111572
+sector-346454,346454,delegation-3464,TN-61,Skhira,Skhira,الصخيرة,,7111476
+sector-346455,346455,delegation-3464,TN-61,El Kenitra,El Kenitra,القنيطرة,,7111574
+sector-346456,346456,delegation-3464,TN-61,Sayyidi Muhammad,Sidi Mhammad,سيدي إمحمد,,7111461
+sector-346457,346457,delegation-3464,TN-61,El Hamada,El Hamada,الحمادة,,7111460
+sector-346551,346551,delegation-3465,TN-61,El Mahrès,El Mahrès,المحرس,,7110921
+sector-346552,346552,delegation-3465,TN-61,El Mahrès Sud,El Mahrès Sud,المحرس الجنوبية,,7111007
+sector-346553,346553,delegation-3465,TN-61,Chaffar,Chaffar,الشفار,,7110813
+sector-346554,346554,delegation-3465,TN-61,Sidi Ghrib,Sidi Ghrib,سيدي غريب,,7111005
+sector-346555,346555,delegation-3465,TN-61,Aithet Echelaya,Aithet Echelaya,عيثة الشلايا,,7110789
+sector-346556,346556,delegation-3465,TN-61,Esmara,Esmara,السمارة,,7111006
+sector-346651,346651,delegation-3466,TN-61,El Attaya,El Attaya,العطايا,,7147639
+sector-346652,346652,delegation-3466,TN-61,Erramla,Erramla,الرملة,,7147637
+sector-346653,346653,delegation-3466,TN-61,Ouled Kacem,Ouled Kacem,أولاد قاسم,,7147636
+sector-346654,346654,delegation-3466,TN-61,Mellita,Mellita,مليتة,Q12245007,7147645
+sector-346655,346655,delegation-3466,TN-61,El Kallabine,El Kallabine,الكلابين,,7147642
+sector-346656,346656,delegation-3466,TN-61,Îlot Gremdi,Îlot Gremdi,جزيرة قرمدي,,7147644
+sector-346657,346657,delegation-3466,TN-61,Echargui,Echargui,الشرقي,,7147640
+sector-346658,346658,delegation-3466,TN-61,El Kantra,El Kantra,القنطرة,,7147641
+sector-346659,346659,delegation-3466,TN-61,El Kraten,El Kraten,القراطن,Q16893663,7147643
+sector-346660,346660,delegation-3466,TN-61,Sidi Fraj,Sidi Fraj,سيدي فرج,,7147638
+sector-415151,415151,delegation-4151,TN-41,Al Ansar,Al Ansar,الأنصار,,7165253
+sector-415152,415152,delegation-4151,TN-41,El Jemaa Nord,El Jemaa Nord,الجامع الشمالية,,7165259
+sector-415153,415153,delegation-4151,TN-41,El Jemaa Sud,El Jemaa Sud,الجامع الجنوبية,,7165258
+sector-415154,415154,delegation-4151,TN-41,Kebilia Nord,Kebilia Nord,القبلية الشمالية,,7165299
+sector-415155,415155,delegation-4151,TN-41,Jeblia Nord,Jeblia Nord,الجبلية الشمالية,,7165261
+sector-415156,415156,delegation-4151,TN-41,Jeblia Sud,Jeblia Sud,الجبلية الجنوبية,,7165260
+sector-415157,415157,delegation-4151,TN-41,El Menchia,El Menchia,المنشية,,7165313
+sector-415158,415158,delegation-4151,TN-41,Al Aghalba,Al Aghalba,الأغالبة,,7165252
+sector-415159,415159,delegation-4151,TN-41,El Baten,El Baten,الباطن,,7165254
+sector-415160,415160,delegation-4151,TN-41,Dheraa Ettammar,Dheraa Ettammar,ذراع التمار,,7165336
+sector-415161,415161,delegation-4151,TN-41,Metbasta,Metbasta,المتبسطة,,7165308
+sector-415162,415162,delegation-4151,TN-41,El Ghabet,El Ghabet,الغابات,,7165293
+sector-415251,415251,delegation-4152,TN-41,Elmansoura Nord,Elmansoura Nord,المنصورة الشمالية,,7165315
+sector-415252,415252,delegation-4152,TN-41,Elmansoura Sud,Elmansoura Sud,المنصورة الجنوبية,,7165314
+sector-415253,415253,delegation-4152,TN-41,Keblia Sud,Keblia Sud,القبلية الجنوبية,,7165298
+sector-415254,415254,delegation-4152,TN-41,Merguellil,Merguellil,مرق الليل,,7165352
+sector-415255,415255,delegation-4152,TN-41,Rakada,Rakada,رقادة,,7165337
+sector-415256,415256,delegation-4152,TN-41,Zroud,Zroud,زرود,,7165338
+sector-415257,415257,delegation-4152,TN-41,Ettaben,Ettaben,التبان,,7165257
+sector-415258,415258,delegation-4152,TN-41,Ouled Nhar,Ouled Nhar,أولاد نهار,,7165251
+sector-415259,415259,delegation-4152,TN-41,Khazazia,Khazazia,الخزازية,,7165267
+sector-415260,415260,delegation-4152,TN-41,El Makhsouma,El Makhsouma,المخصومة,,7165309
+sector-415261,415261,delegation-4152,TN-41,El Nebech,El Nebech,النبش,,7165318
+sector-415262,415262,delegation-4152,TN-41,Zaafrana,Zaafrana,زعفرانة,,7165339
+sector-415263,415263,delegation-4152,TN-41,El Khadra,El Khadra,الخضراء,,7165268
+sector-415264,415264,delegation-4152,TN-41,El Hammam,El Hammam,الحمام,,7165264
+sector-415265,415265,delegation-4152,TN-41,Beriket El Argoub,Beriket El Argoub,بريكات العرقوب,,7165326
+sector-415351,415351,delegation-4153,TN-41,Echbika,Echbika,الشبيكة,,7165275
+sector-415352,415352,delegation-4153,TN-41,Jaouaouda,Jaouaouda,الجواودة,,7165262
+sector-415353,415353,delegation-4153,TN-41,El Aouamria,El Aouamria,العوامرية,,7165290
+sector-415354,415354,delegation-4153,TN-41,Errouisset,Errouisset,الرويسات,,7165272
+sector-415355,415355,delegation-4153,TN-41,Abida,Abida,عبيدة,,7165349
+sector-415356,415356,delegation-4153,TN-41,Sidi Ali Ben Salem,Sidi Ali Ben Salem,سيدي علي بن سالم,,7165342
+sector-415357,415357,delegation-4153,TN-41,Hammed,Hammed,هماد,,7165358
+sector-415358,415358,delegation-4153,TN-41,El Karma,El Karma,الكرمة,,7165307
+sector-415451,415451,delegation-4154,TN-41,Sbikha Centre,Sbikha Centre,السبيخة المركز,,7165273
+sector-415452,415452,delegation-4154,TN-41,Ain Bou Morra,Ain Bou Morra,عين بومرة,,7165350
+sector-415453,415453,delegation-4154,TN-41,El Friouet,El Friouet,الفريوات,,7165297
+sector-415454,415454,delegation-4154,TN-41,Sidi Messaoud,Sidi Messaoud,سيدي مسعود,,7165343
+sector-415455,415455,delegation-4154,TN-41,Ed-Dekhila,Ed-Dekhila,الدخيلة,,7165269
+sector-415456,415456,delegation-4154,TN-41,Edheriaat,Edheriaat,الدريعات,,7165270
+sector-415457,415457,delegation-4154,TN-41,El Gfi,El Gfi,القفى,,7165304
+sector-415458,415458,delegation-4154,TN-41,El Alam,El Alam,العلم,,7165289
+sector-415459,415459,delegation-4154,TN-41,El Katifa,El Katifa,القطيفة,,7165303
+sector-415460,415460,delegation-4154,TN-41,El Aouitha,El Aouitha,العويثة,,7165291
+sector-415461,415461,delegation-4154,TN-41,Sisseb,Sisseb,سيسب,,7165344
+sector-415462,415462,delegation-4154,TN-41,Ech-Chorfa,Ech-Chorfa,الشرفة,,7165279
+sector-415463,415463,delegation-4154,TN-41,Chogafia,Chogafia,الشقافية,,7165284
+sector-415464,415464,delegation-4154,TN-41,Serdiania,Serdiania,سرديانة,,7165341
+sector-415465,415465,delegation-4154,TN-41,Oued El Khraouia,Oued El Khraouia,واد الخريوع,,7165359
+sector-415551,415551,delegation-4155,TN-41,Maarouf,Maarouf,معروف,,7165355
+sector-415552,415552,delegation-4155,TN-41,El Ooueslatia Est,El Ooueslatia Est,الوسلاتية الشرقية,,7165321
+sector-415553,415553,delegation-4155,TN-41,El Ooueslatia Ouest,El Ooueslatia Ouest,الوسلاتية الغربية,,7165322
+sector-415554,415554,delegation-4155,TN-41,El Menzel,El Menzel,المنزل,,7165312
+sector-415555,415555,delegation-4155,TN-41,Djebel Essarj,Djebel Essarj,جبل السرج,,7165330
+sector-415556,415556,delegation-4155,TN-41,Zaghdoud,Zaghdoud,زغدود,,7165340
+sector-415557,415557,delegation-4162,TN-41,Djebel Oouestat,Djebel Oouestat,جبل وسلات,,7165331
+sector-415558,415558,delegation-4155,TN-41,Djebel Erreihane,Djebel Erreihane,جبل الريحان,,7165329
+sector-415559,415559,delegation-4162,TN-41,Ain Djeloula,Ain Djeloula,عين جلولة,Q1626631,7165351
+sector-415560,415560,delegation-4155,TN-41,Oued El Ksab,Oued El Ksab,وادي القصب,,7165362
+sector-415561,415561,delegation-4155,TN-41,El Behair,El Behair,البحاير,,7165255
+sector-415651,415651,delegation-4156,TN-41,Hafouz Centre,Hafouz Centre,حفوز المركز,,7165334
+sector-415652,415652,delegation-4156,TN-41,Khit El Oued,Khit El Oued,خيط الوادي,,7165335
+sector-415653,415653,delegation-4156,TN-41,Oued El Jabbes,Oued El Jabbes,وادي الجباس,,7165360
+sector-415654,415654,delegation-4156,TN-41,El Ain El Beidha,El Ain El Beidha,العين البيضاء,,7165292
+sector-415655,415655,delegation-4156,TN-41,El Houfia,El Houfia,الحوفية,,7165266
+sector-415656,415656,delegation-4156,TN-41,Cherichira,Cherichira,الشريشيرة,,7165283
+sector-415657,415657,delegation-4156,TN-41,Traza Sud,Traza Sud,طرزة الجنوبية,,7165347
+sector-415658,415658,delegation-4156,TN-41,Ouled Khalfallah,Ouled Khalfallah,أولاد خلف الله,,7165246
+sector-415751,415751,delegation-4157,TN-41,El Alaa,El Alaa,العلاء,,7165288
+sector-415752,415752,delegation-4157,TN-41,El Messaid,El Messaid,المساعيد,,7165310
+sector-415753,415753,delegation-4157,TN-41,El Guettar,El Guettar,القطار,,7165301
+sector-415754,415754,delegation-4157,TN-41,Messiouta El Hanachir,Messiouta El Hanachir,مسيوتة الهناشير,,7165354
+sector-415755,415755,delegation-4157,TN-41,Messiouta Ennaguaz,Messiouta Ennaguaz,مسيوتة النقاز,,7165353
+sector-415756,415756,delegation-4157,TN-41,Sayada Nord,Sayada Nord,صيادة الشمالية,,7165346
+sector-415757,415757,delegation-4157,TN-41,Sayada Sud,Sayada Sud,صيادة الجنوبية,,7165345
+sector-415758,415758,delegation-4157,TN-41,Ouled Amor,Ouled Amor,أولاد عمر,,7165248
+sector-415759,415759,delegation-4157,TN-41,Tarza Nord,Tarza Nord,طرزة الشمالية,,7165348
+sector-415851,415851,delegation-4158,TN-41,El Hajeb Centre,El Hajeb Centre,الحاجب المركز,,7165263
+sector-415852,415852,delegation-4158,TN-41,Ahouaz El Hajeb,Ahouaz El Hajeb,أحواز الحاجب,,7165245
+sector-415853,415853,delegation-4158,TN-41,Chaouachi,Chaouachi,الشواشي,,7165285
+sector-415854,415854,delegation-4158,TN-41,Esserja,Esserja,السرجة,,7165274
+sector-415855,415855,delegation-4158,TN-41,El Kantra,El Kantra,القنطرة,,7165305
+sector-415856,415856,delegation-4158,TN-41,El Hadaya,El Hadaya,الهدايا,,7165320
+sector-415857,415857,delegation-4158,TN-41,El Ghouiba,El Ghouiba,الغويبة,,7165294
+sector-415858,415858,delegation-4158,TN-41,Oued El Hajel,Oued El Hajel,وادي الحجل,,7165361
+sector-415859,415859,delegation-4158,TN-41,rehima,rehima,رحيمة,,7165271
+sector-415951,415951,delegation-4159,TN-41,Nasrallah Centre,Nasrallah Centre,نصر اللّه المركز,,7165357
+sector-415952,415952,delegation-4159,TN-41,Nasrallah Banlieue,Nasrallah Banlieue,نصر الله الأحواز,,7165356
+sector-415953,415953,delegation-4163,TN-41,El Hmidet,El Hmidet,الحميدات,,7165265
+sector-415954,415954,delegation-4163,TN-41,El Fejij,El Fejij,الفجيج,,7165296
+sector-415955,415955,delegation-4163,TN-41,Ettouila,Ettouila,الطويلة,,7165287
+sector-415956,415956,delegation-4159,TN-41,El Manara,El Manara,المنارة,,7165311
+sector-415957,415957,delegation-4159,TN-41,El Kabbara,El Kabbara,الكبارة,,7165306
+sector-415958,415958,delegation-4159,TN-41,El Briket,El Briket,البريكات,,7165256
+sector-416051,416051,delegation-4160,TN-41,Echrarda,Echrarda,الشراردة,,7165277
+sector-416052,416052,delegation-4160,TN-41,Bir El Helou,Bir El Helou,بئر الحلو,,7165323
+sector-416053,416053,delegation-4160,TN-41,Ouled Farjallah Sud,Ouled Farjallah Sud,أولاد فرج اللّه الجنوبية,,7165249
+sector-416054,416054,delegation-4160,TN-41,Cheraitia Sud,Cheraitia Sud,الشرائطية الجنوبية,,7165276
+sector-416055,416055,delegation-4160,TN-41,El Ksour,El Ksour,القصور,,7165300
+sector-416151,416151,delegation-4161,TN-41,Bouhajla Centre,Bouhajla Centre,بوحجلة المركز,,7165328
+sector-416152,416152,delegation-4161,TN-41,Bouhajla El Ahouez,Bouhajla El Ahouez,بوحجلة الأحواز,,7165327
+sector-416153,416153,delegation-4161,TN-41,Jehina Sud,Jehina Sud,جهينة الجنوبية,,7165332
+sector-416154,416154,delegation-4161,TN-41,Jehina Nord,Jehina Nord,جهينة الشمالية,,7165333
+sector-416155,416155,delegation-4161,TN-41,El Ketitir,El Ketitir,القطيطير,,7165302
+sector-416156,416156,delegation-4161,TN-41,Ouled Achour,Ouled Achour,أولاد عاشور,,7165247
+sector-416157,416157,delegation-4161,TN-41,El Fatah,El Fatah,الفتح,,7165295
+sector-416158,416158,delegation-4161,TN-41,Ouled Farjallah Nord,Ouled Farjallah Nord,أولاد فرج اللّه الشمالية,,7165250
+sector-416159,416159,delegation-4161,TN-41,Ennasr,Ennasr,النصر,,7165319
+sector-416160,416160,delegation-4161,TN-41,Bir Msikine,Bir Msikine,بئر مسيكين,,7165325
+sector-416161,416161,delegation-4161,TN-41,El Mouisset,El Mouisset,المويسات,,7165317
+sector-416162,416162,delegation-4161,TN-41,Bir Bousari,Bir Bousari,بئر بوساري,,7165324
+sector-416163,416163,delegation-4161,TN-41,Cheraitia Nord,Cheraitia Nord,الشرايطية الشمالية,,7165278
+sector-416164,416164,delegation-4161,TN-41,Chouamekh,Chouamekh,الشوامخ,,7165286
+sector-425151,425151,delegation-4251,TN-42,Ennour Est,Ennour Est,النور الشرقي,,7164928
+sector-425152,425152,delegation-4251,TN-42,Ennour Ouest,Ennour Ouest,النور الغربي,,7164927
+sector-425153,425153,delegation-4251,TN-42,El Bassatine,El Bassatine,البساتين,,7164926
+sector-425154,425154,delegation-4251,TN-42,El Khadhra,El Khadhra,الخضراء,,7164925
+sector-425155,425155,delegation-4251,TN-42,El Arich,El Arich,العريش,,7164922
+sector-425156,425156,delegation-4251,TN-42,Bou Laaba,Bou Laaba,بولعابة,,7164992
+sector-425251,425251,delegation-4252,TN-42,El Aouija,El Aouija,العويجة,,7165004
+sector-425252,425252,delegation-4252,TN-42,Boulhijet,Boulhijet,بولهيجات,,7165002
+sector-425253,425253,delegation-4252,TN-42,Meghdoudech,Meghdoudech,مقدودش,,7165001
+sector-425254,425254,delegation-4252,TN-42,Bouzguam,Bouzguam,بوزقام,,7165000
+sector-425255,425255,delegation-4252,TN-42,Eddoghra,Eddoghra,الدغرة,,7164997
+sector-425256,425256,delegation-4252,TN-42,Sidi Harreth,Sidi Harreth,سيدي حراث,,7164995
+sector-425351,425351,delegation-4253,TN-42,Ezzouhour Est 1,Ezzouhour Est 1,الزهور الشرقي 1,,7164963
+sector-425352,425352,delegation-4253,TN-42,Ezzouhour Est 2,Ezzouhour Est 2,الزهور الشرقي 2,,7164961
+sector-425353,425353,delegation-4253,TN-42,Ezzouhour Ouest 1,Ezzouhour Ouest 1,الزهور الغربي 1,,7164960
+sector-425354,425354,delegation-4253,TN-42,Ezzouhour Ouest 2,Ezzouhour Ouest 2,الزهور الغربي 2,,7164991
+sector-425355,425355,delegation-4253,TN-42,Ezzouhour Ouest 3,Ezzouhour Ouest 3,الزهور الغربي 3,,7164990
+sector-425356,425356,delegation-4253,TN-42,Ezzouhour Ouest 4,Ezzouhour Ouest 4,الزهور الغربي 4,,7164989
+sector-425451,425451,delegation-4254,TN-42,Hassi El Ferid,Hassi El Ferid,حاسي الفريد,,7164936
+sector-425452,425452,delegation-4254,TN-42,El Hechim,El Hechim,الهشيم,,7164939
+sector-425453,425453,delegation-4254,TN-42,Khanguet Jezia,Khanguet Jezia,خنقة الجازية,,7164938
+sector-425454,425454,delegation-4254,TN-42,Essalloum,Essalloum,السلوم,,7164937
+sector-425455,425455,delegation-4254,TN-42,El Kamour,El Kamour,الكامور,,7164946
+sector-425551,425551,delegation-4255,TN-42,Sbeïtla,Sbeïtla,سبيطلة,,7164914
+sector-425552,425552,delegation-4255,TN-42,Cite Essourour,Cite Essourour,حي السرور,,7164913
+sector-425553,425553,delegation-4255,TN-42,Semama,Semama,سمامة,,7164912
+sector-425554,425554,delegation-4255,TN-42,Errakhmet,Errakhmet,الرخمات,,7164911
+sector-425555,425555,delegation-4255,TN-42,El Garaa El Hamra,El Garaa El Hamra,القرعة الحمراء,,7164910
+sector-425556,425556,delegation-4255,TN-42,Eddouleb,Eddouleb,الدولاب,Q4976756,7164921
+sector-425557,425557,delegation-4255,TN-42,Ech-Charaya,Ech-Charaya,الشرائع,,7164920
+sector-425558,425558,delegation-4255,TN-42,Machrek Ech-Chams,Machrek Ech-Chams,مشرق الشمس,,7164918
+sector-425559,425559,delegation-4255,TN-42,Ouassaia,Ouassaia,الوساعية,,7164917
+sector-425560,425560,delegation-4255,TN-42,El Khadhra,El Khadhra,الخضراء,,7164916
+sector-425561,425561,delegation-4255,TN-42,El Gounna,El Gounna,القنة,,7165006
+sector-425562,425562,delegation-4255,TN-42,El Mezara,El Mezara,المزارة,,7165005
+sector-425563,425563,delegation-4255,TN-42,El Ksar,El Ksar,القصر,,7164984
+sector-425564,425564,delegation-4255,TN-42,El Athar,El Athar,الآثار,,7164929
+sector-425651,425651,delegation-4256,TN-42,Sbiba,Sbiba,سبيبة,,7164981
+sector-425652,425652,delegation-4256,TN-42,El Ahouaz,El Ahouaz,الأحواز,,7165017
+sector-425653,425653,delegation-4256,TN-42,Oued El Hatab,Oued El Hatab,وادي الحطب,,7165015
+sector-425654,425654,delegation-4256,TN-42,Brahim Ezzahhar,Brahim Ezzahhar,إبراهيم الزهار,,7165014
+sector-425655,425655,delegation-4256,TN-42,Ain Zaiene,Ain Zaiene,عين زيان,,7165013
+sector-425656,425656,delegation-4256,TN-42,Etthamed,Etthamed,الثماد,,7165012
+sector-425657,425657,delegation-4256,TN-42,Ain El Khemaissia,Ain El Khemaissia,عين الخمائسية,,7164964
+sector-425751,425751,delegation-4257,TN-42,Djedliane,Djedliane,جدليان,,7164945
+sector-425752,425752,delegation-4257,TN-42,Fej Terbah,Fej Terbah,فج تربح,,7164943
+sector-425753,425753,delegation-4257,TN-42,Ain El Hamadna,Ain El Hamadna,عين الحمادنة,,7164941
+sector-425754,425754,delegation-4257,TN-42,Meherza,Meherza,محرزة,,7164988
+sector-425755,425755,delegation-4257,TN-42,Ain Oum El Jedour,Ain Oum El Jedour,عين أم الجدور,,7164986
+sector-425851,425851,delegation-4258,TN-42,El Ayoun,El Ayoun,العيون,Q3049722,7164958
+sector-425852,425852,delegation-4258,TN-42,El Grine,El Grine,القرين,,7164954
+sector-425853,425853,delegation-4258,TN-42,El Brek,El Brek,البرك,,7164953
+sector-425854,425854,delegation-4258,TN-42,El Baouajer,El Baouajer,البواجر,,7164951
+sector-425855,425855,delegation-4258,TN-42,Tiwicha,Tiwicha,توشة,,7164909
+sector-425856,425856,delegation-4258,TN-42,Ain Esselsela,Ain Esselsela,عين السلسلة,,7164907
+sector-425951,425951,delegation-4259,TN-42,Thala Est,Thala Est,تالة الشرقية,,7164959
+sector-425952,425952,delegation-4259,TN-42,Thala Ouest,Thala Ouest,تالة الغربية,,7165003
+sector-425953,425953,delegation-4259,TN-42,Eddachra,Eddachra,الدشرة,,7164949
+sector-425954,425954,delegation-4259,TN-42,Ain Aj-Jadeida,Ain Aj-Jadeida,عين الجديدة,,7164999
+sector-425955,425955,delegation-4259,TN-42,Barmajna,Barmajna,برماجنة,,7164998
+sector-425956,425956,delegation-4259,TN-42,Oued Errachech,Oued Errachech,وادي الرشح,,7164996
+sector-425957,425957,delegation-4259,TN-42,El Joua,El Joua,الجوى,,7164994
+sector-425958,425958,delegation-4259,TN-42,El Hamed,El Hamed,الحماد,,7165011
+sector-425959,425959,delegation-4259,TN-42,Zelfane,Zelfane,زلفان,,7165010
+sector-425960,425960,delegation-4259,TN-42,Boulahnech,Boulahnech,بو الأحناش,,7165008
+sector-425961,425961,delegation-4259,TN-42,Sidi M'Hammed,Sidi M'Hammed,سيدي محمد,,7164974
+sector-425962,425962,delegation-4259,TN-42,Ouljet Edhel,Ouljet Edhel,ولجة الظل,,7164972
+sector-425963,425963,delegation-4259,TN-42,Ech-Chaffai,Ech-Chaffai,الشافعي,,7164905
+sector-426051,426051,delegation-4260,TN-42,Haïdra,Haïdra,حيدرة,Q2358652,7165009
+sector-426052,426052,delegation-4260,TN-42,T'Baga,T'Baga,الطباقة,,7164975
+sector-426053,426053,delegation-4260,TN-42,El Mekimen,El Mekimen,المكيمن,,7164973
+sector-426054,426054,delegation-4260,TN-42,Lajrad,Lajrad,الأجرد,,7164971
+sector-426055,426055,delegation-4260,TN-42,Es-Sray,Es-Sray,الصري,,7164970
+sector-426056,426056,delegation-4260,TN-42,Ain Eddefla,Ain Eddefla,عين الدفلة,,7164969
+sector-426151,426151,delegation-4261,TN-42,Foussana,Foussana,فوسانة,,7164967
+sector-426152,426152,delegation-4261,TN-42,Foussana Lahouaz,Foussana Lahouaz,فوسانة الأحواز,,7164966
+sector-426153,426153,delegation-4261,TN-42,Khmouda sud,Khmouda sud,خمودة الجنوبية,,7164965
+sector-426154,426154,delegation-4261,TN-42,Khmouda nord,Khmouda nord,خمودة الشمالية,,7164980
+sector-426155,426155,delegation-4261,TN-42,Ouled Mahfoudh,Ouled Mahfoudh,أولاد محفوظ,,7164962
+sector-426156,426156,delegation-4261,TN-42,Afrane,Afrane,أفران,,7164978
+sector-426157,426157,delegation-4261,TN-42,El Meziraa,El Meziraa,المزيرعة,,7164977
+sector-426158,426158,delegation-4261,TN-42,El Aadhira,El Aadhira,العذيرة,,7164947
+sector-426159,426159,delegation-4261,TN-42,El Hazza,El Hazza,الحازة,,7164944
+sector-426160,426160,delegation-4261,TN-42,El Brika,El Brika,البريكة,,7164942
+sector-426161,426161,delegation-4261,TN-42,Bouderiass,Bouderiass,بودرياس,,7164940
+sector-426162,426162,delegation-4261,TN-42,Ain El Jinene,Ain El Jinene,عين الجنان,,7164987
+sector-426163,426163,delegation-4261,TN-42,Er-Rtibet,Er-Rtibet,الرطيبات,,7164983
+sector-426251,426251,delegation-4262,TN-42,Feriana,Feriana,فريانة,,7164948
+sector-426252,426252,delegation-4262,TN-42,El Erg,El Erg,العرق,,7164935
+sector-426253,426253,delegation-4262,TN-42,El Ahouach,El Ahouach,الأحواش,,7164934
+sector-426254,426254,delegation-4262,TN-42,Es-Skhirat,Es-Skhirat,الصخيرات,,7164933
+sector-426255,426255,delegation-4262,TN-42,El Araar,El Araar,العرعار,,7164932
+sector-426256,426256,delegation-4262,TN-42,Hanachi,Hanachi,حناشي,,7164957
+sector-426257,426257,delegation-4262,TN-42,Garet En-Naam,Garet En-Naam,قارة النعام,,7164956
+sector-426258,426258,delegation-4262,TN-42,Bouchebka,Bouchebka,بوشبكة,,7164952
+sector-426259,426259,delegation-4262,TN-42,Om Ali,Om Ali,أم علي,,7164950
+sector-426260,426260,delegation-4262,TN-42,Bouhaya,Bouhaya,بوحية,,7164908
+sector-426261,426261,delegation-4262,TN-42,Telept,Telept,تلابت,,7164906
+sector-426262,426262,delegation-4262,TN-42,Abdeladhim,Abdeladhim,عبد العظيم,,7164931
+sector-426351,426351,delegation-4263,TN-42,Majel Bel Abbes Nord,Majel Bel Abbes Nord,ماجل بالعباس الشمالية,,7164923
+sector-426352,426352,delegation-4263,TN-42,Majel Bel Abbes Sud,Majel Bel Abbes Sud,ماجل بالعباس الجنوبية,,7164993
+sector-426353,426353,delegation-4263,TN-42,Oum Laksab,Oum Laksab,أم الأقصاب,,7165023
+sector-426354,426354,delegation-4263,TN-42,Ennadhour,Ennadhour,الناظور,,7165021
+sector-426355,426355,delegation-4263,TN-42,Henchir Oum El Khir,Henchir Oum El Khir,هنشير أم الخير,,7165020
+sector-426356,426356,delegation-4263,TN-42,Soula,Soula,صولة,,7165019
+sector-426357,426357,delegation-4263,TN-42,Groua El Jedra,Groua El Jedra,قروع الجدرة,,7165018
+sector-435151,435151,delegation-4351,TN-43,Sidi Bouzid,Sidi Bouzid,سيدي بوزيد,,7169624
+sector-435152,435152,delegation-4351,TN-43,Ennour,Ennour,النور,,7169622
+sector-435153,435153,delegation-4351,TN-43,Sidi Salem,Sidi Salem,سيدي سالم,,7169599
+sector-435154,435154,delegation-4364,TN-43,El Hichria,El Hichria,الهيشرية,,7169598
+sector-435155,435155,delegation-4364,TN-43,El Friou,El Friou,الفريو,,7169594
+sector-435156,435156,delegation-4351,TN-43,Sadakia,Sadakia,الصداقية,,7169592
+sector-435157,435157,delegation-4351,TN-43,Oum El Adham 1,Oum El Adham 1,أم العظام 1,,7169589
+sector-435158,435158,delegation-4351,TN-43,Oum El Adham 2,Oum El Adham 2,أم العظام 2,,7169587
+sector-435159,435159,delegation-4351,TN-43,Ettouila,Ettouila,الطويلة,,7169586
+sector-435160,435160,delegation-4351,TN-43,Ennasr,Ennasr,النصر,,7169614
+sector-435161,435161,delegation-4351,TN-43,Sidi Bouzid Sud,Sidi Bouzid Sud,سيدي بوزيد الجنوبية,,7169641
+sector-435162,435162,delegation-4351,TN-43,Sidi Bouzid Ouest,Sidi Bouzid Ouest,سيدي بوزيد الغربية,,7169639
+sector-435251,435251,delegation-4352,TN-43,El Ahouaz,El Ahouaz,الأحواز,,7169609
+sector-435252,435252,delegation-4352,TN-43,Bennour,Bennour,بنور,,7169568
+sector-435253,435253,delegation-4352,TN-43,Faiedh,Faiedh,فائض,,7169566
+sector-435254,435254,delegation-4352,TN-43,Lessouda,Lessouda,لسودة,,7169584
+sector-435255,435255,delegation-4352,TN-43,El Amra,El Amra,العامرة,,7169582
+sector-435256,435256,delegation-4352,TN-43,El Makarem Est,El Makarem Est,المكارم الشرقية,,7169580
+sector-435257,435257,delegation-4352,TN-43,El Makarem Ouest,El Makarem Ouest,المكارم الغربية,,7169578
+sector-435258,435258,delegation-4352,TN-43,El Okla,El Okla,العقلة,,7169576
+sector-435259,435259,delegation-4352,TN-43,Ain Rebaou,Ain Rebaou,عين رباو,,7169574
+sector-435260,435260,delegation-4352,TN-43,El Hania Bazid,El Hania Bazid,الحنية بازيد,,7169572
+sector-435261,435261,delegation-4352,TN-43,Garet Hadid,Garet Hadid,قارة حديد,,7169553
+sector-435262,435262,delegation-4364,TN-43,Ezzitouna,Ezzitouna,الزيتونة,,7169555
+sector-435351,435351,delegation-4353,TN-43,Jilma Est,Jilma Est,جلمة الشرقية,,7169654
+sector-435352,435352,delegation-4353,TN-43,Jilma Ouest,Jilma Ouest,جلمة الغربية,,7169653
+sector-435353,435353,delegation-4353,TN-43,Lazirek,Lazirek,لزيرق,,7169651
+sector-435354,435354,delegation-4353,TN-43,Selta,Selta,سلتة,,7169680
+sector-435355,435355,delegation-4353,TN-43,Zoghmar,Zoghmar,زغمار,,7169679
+sector-435356,435356,delegation-4353,TN-43,Ghedir Ezzitoun,Ghedir Ezzitoun,غدير الزيتون,,7169678
+sector-435357,435357,delegation-4353,TN-43,Baten El Ghezel Sud,Baten El Ghezel Sud,باطن الغزال الجنوبية,,7169664
+sector-435358,435358,delegation-4353,TN-43,Baten El Ghezel Nord,Baten El Ghezel Nord,باطن الغزال الشمالية,,7169663
+sector-435359,435359,delegation-4353,TN-43,El Adhla,El Adhla,العضلة,,7169633
+sector-435360,435360,delegation-4353,TN-43,El Hamima,El Hamima,الحميمة,,7169632
+sector-435361,435361,delegation-4353,TN-43,El Abaiedh,El Abaiedh,الأبيض,,7169631
+sector-435451,435451,delegation-4354,TN-43,Essabela,Essabela,السبالة,,7169595
+sector-435452,435452,delegation-4354,TN-43,El Amra,El Amra,العامرة,,7169570
+sector-435453,435453,delegation-4354,TN-43,Essed,Essed,السد,,7169590
+sector-435454,435454,delegation-4354,TN-43,Meghila,Meghila,مغيلة,,7169585
+sector-435455,435455,delegation-4354,TN-43,El Ayoun,El Ayoun,العيون,,7169616
+sector-435551,435551,delegation-4355,TN-43,Bir El Hafey,Bir El Hafey,بئر الحفي,,7169596
+sector-435552,435552,delegation-4355,TN-43,El Mohamdia,El Mohamdia,المحمدية,,7169567
+sector-435553,435553,delegation-4355,TN-43,El Ksar,El Ksar,القصر,,7169672
+sector-435554,435554,delegation-4355,TN-43,Bir Amama,Bir Amama,بئر عمامة,,7169583
+sector-435555,435555,delegation-4355,TN-43,El Mezara,El Mezara,المزارة,,7169581
+sector-435556,435556,delegation-4355,TN-43,Essalama,Essalama,السلامة,,7169579
+sector-435557,435557,delegation-4355,TN-43,Ourgha,Ourgha,ورغة,,7169577
+sector-435558,435558,delegation-4355,TN-43,Rahal,Rahal,رحال,,7169575
+sector-435559,435559,delegation-4355,TN-43,Bir Bousbiaa,Bir Bousbiaa,بئر بوصبيع,,7169571
+sector-435651,435651,delegation-4356,TN-43,Sidi Ali Ben Aoun,Sidi Ali Ben Aoun,سيدي علي بن عون,,7169671
+sector-435652,435652,delegation-4356,TN-43,Errabta,Errabta,الرابطة,,7169670
+sector-435653,435653,delegation-4356,TN-43,Essahla,Essahla,الساهلة,,7169658
+sector-435654,435654,delegation-4356,TN-43,El Ouaara,El Ouaara,الواعرة,,7169657
+sector-435655,435655,delegation-4356,TN-43,Ouled Brahim,Ouled Brahim,أولاد إبراهيم,,7169655
+sector-435656,435656,delegation-4356,TN-43,El Mansoura Est,El Mansoura Est,المنصورة الشرقية,,7169652
+sector-435657,435657,delegation-4356,TN-43,El Mansoura Ouest,El Mansoura Ouest,المنصورة الغربية,,7169650
+sector-435751,435751,delegation-4357,TN-43,Menzel Bouzaiane,Menzel Bouzaiane,منزل بوزيان,,7169630
+sector-435752,435752,delegation-4357,TN-43,En-Nouamer,En-Nouamer,النوامر,,7169629
+sector-435753,435753,delegation-4357,TN-43,El Gallel,El Gallel,القلال,,7169628
+sector-435754,435754,delegation-4357,TN-43,El Khorchef,El Khorchef,الخرشف,,7169627
+sector-435755,435755,delegation-4357,TN-43,El Kharrouba,El Kharrouba,الخروبة,,7169626
+sector-435756,435756,delegation-4357,TN-43,El Omria,El Omria,العمرية,,7169625
+sector-435757,435757,delegation-4357,TN-43,El Omrane,El Omrane,العمران,,7169623
+sector-435851,435851,delegation-4358,TN-43,El Jebbes,El Jebbes,الجباس,,7169561
+sector-435852,435852,delegation-4358,TN-43,Gheris Ouest,Gheris Ouest,الغريس الغربية,,7169558
+sector-435853,435853,delegation-4358,TN-43,Mech,Mech,مش,,7169557
+sector-435854,435854,delegation-4358,TN-43,Meknassy Est,Meknassy Est,المكناسي الشرقية,,7169608
+sector-435855,435855,delegation-4358,TN-43,Meknassy Ouest,Meknassy Ouest,المكناسي الغربية,,7169606
+sector-435856,435856,delegation-4358,TN-43,Meknassy Nord,Meknassy Nord,المكناسي الشمالية,,7169604
+sector-435857,435857,delegation-4358,TN-43,Ezzouaraa,Ezzouaraa,الزوارع,,7169603
+sector-435858,435858,delegation-4358,TN-43,El Mabrouka,El Mabrouka,المبروكة,,7169602
+sector-435859,435859,delegation-4358,TN-43,Ennasr,Ennasr,النصر,,7169569
+sector-435951,435951,delegation-4359,TN-43,Souk Jedid,Souk Jedid,سوق الجديد,,7169661
+sector-435952,435952,delegation-4359,TN-43,Ghiriouis,Ghiriouis,غريويس,,7169660
+sector-435953,435953,delegation-4359,TN-43,Ksaira,Ksaira,القصيرة,,7169677
+sector-435954,435954,delegation-4359,TN-43,Sekdal,Sekdal,سقدال,,7169676
+sector-435955,435955,delegation-4359,TN-43,Erremelia,Erremelia,الرميلية,,7169675
+sector-435956,435956,delegation-4359,TN-43,Ezzafzaf,Ezzafzaf,الزفزاف,,7169674
+sector-435957,435957,delegation-4359,TN-43,Bir Badr,Bir Badr,بئر بدر,,7169673
+sector-436051,436051,delegation-4360,TN-43,Mezzouna,Mezzouna,المزونة,,7169665
+sector-436052,436052,delegation-4360,TN-43,El Founi,El Founi,الفوني,,7169620
+sector-436053,436053,delegation-4360,TN-43,Bou Hedma,Bou Hedma,بوهدمة,,7169619
+sector-436054,436054,delegation-4360,TN-43,El Gheris Est,El Gheris Est,الغريس الشرقية,,7169649
+sector-436055,436055,delegation-4360,TN-43,Khobna,Khobna,الخبنة,,7169648
+sector-436056,436056,delegation-4360,TN-43,Eddaouara,Eddaouara,الدوارة,,7169647
+sector-436057,436057,delegation-4360,TN-43,El Khaoui,El Khaoui,الخوي,,7169646
+sector-436058,436058,delegation-4360,TN-43,El Besbes,El Besbes,البسباس,,7169645
+sector-436059,436059,delegation-4360,TN-43,Essed,Essed,السد,,7169643
+sector-436151,436151,delegation-4361,TN-43,Regueb,Regueb,الرقاب,,7169617
+sector-436152,436152,delegation-4363,TN-43,Khechem Ouest,Khechem Ouest,الخشم الغربية,,7169615
+sector-436153,436153,delegation-4363,TN-43,Essaida Nord,Essaida Nord,السعيدة الشمالية,,7169642
+sector-436154,436154,delegation-4361,TN-43,Ksar El Hammam Est,Ksar El Hammam Est,قصر الحمام الشرقية,,7169640
+sector-436155,436155,delegation-4361,TN-43,Gouleb,Gouleb,قولاب,,7169638
+sector-436156,436156,delegation-4361,TN-43,Erradhaa,Erradhaa,الرضاع,,7169637
+sector-436157,436157,delegation-4361,TN-43,Erradhaa Est,Erradhaa Est,الرضاع الشرقية,,7169636
+sector-436158,436158,delegation-4361,TN-43,Boudinar,Boudinar,بودينار,,7169635
+sector-436159,436159,delegation-4361,TN-43,Ksar El Hammam Ouest,Ksar El Hammam Ouest,قصر الحمام الغربية,,7169634
+sector-436160,436160,delegation-4361,TN-43,Gobrar,Gobrar,قبرار,,7169600
+sector-436161,436161,delegation-4361,TN-43,Rihana,Rihana,ريحانة,,7169613
+sector-436162,436162,delegation-4361,TN-43,Essekba,Essekba,السكبة,,7169612
+sector-436163,436163,delegation-4363,TN-43,Khechem Est,Khechem Est,الخشم الشرقية,,7169621
+sector-436164,436164,delegation-4363,TN-43,Essaida Sud,Essaida Sud,السعيدة الجنوبية,,7169611
+sector-436165,436165,delegation-4363,TN-43,Essaida Est,Essaida Est,السعيدة الشرقية,,7169597
+sector-436166,436166,delegation-4361,TN-43,Ferch Gharib,Ferch Gharib,فرش غريب,,7169610
+sector-436167,436167,delegation-4361,TN-43,Ouled Ayouni,Ouled Ayouni,أولاد عيوني,,7169591
+sector-436251,436251,delegation-4362,TN-43,Ouled Haffouz,Ouled Haffouz,أولاد حفوز,,7169565
+sector-436252,436252,delegation-4362,TN-43,Dheouibet Sud,Dheouibet Sud,الدويبات الجنوبية,,7169564
+sector-436253,436253,delegation-4362,TN-43,Sidi Khelif,Sidi Khelif,سيدي خليف,,7169563
+sector-436254,436254,delegation-4362,TN-43,El Hania,El Hania,الحنية,,7169562
+sector-436255,436255,delegation-4362,TN-43,Kassouda,Kassouda,كسودة,,7169560
+sector-436256,436256,delegation-4362,TN-43,El Mebarkia,El Mebarkia,المباركية,,7169559
+sector-436257,436257,delegation-4362,TN-43,Ech-Cheouachia,Ech-Cheouachia,الشواشية,,7169556
+sector-436258,436258,delegation-4362,TN-43,Sidi Ellafi,Sidi Ellafi,سيدي اللافي,,7169607
+sector-436259,436259,delegation-4362,TN-43,Dheouibet Nord,Dheouibet Nord,الذويبات الشمالية,,7169605
+sector-515151,515151,delegation-5151,TN-81,1,1,المنطقة الأولى,,7145370
+sector-515152,515152,delegation-5151,TN-81,2,2,المنطقة الثانية,,7145369
+sector-515153,515153,delegation-5151,TN-81,3,3,المنطقة الثالثة,,7145368
+sector-515154,515154,delegation-5151,TN-81,4,4,المنطقة الرابعة,,7145367
+sector-515155,515155,delegation-5151,TN-81,Chott Sidi Abdesselam,Chott Sidi Abdesselam,شط سيدي عبد السلام,,7145397
+sector-515251,515251,delegation-5152,TN-81,Er-Remathi,Er-Remathi,الرماثي,,7145395
+sector-515252,515252,delegation-5152,TN-81,Bouchemma,Bouchemma,بوشمة,,7145377
+sector-515253,515253,delegation-5152,TN-81,Nahal,Nahal,النحال,,7145376
+sector-515254,515254,delegation-5152,TN-81,Jaouaoula,Jaouaoula,الجواولة,,7145375
+sector-515255,515255,delegation-5152,TN-81,Chenini Nord,Chenini Nord,شنني الشمالية,,7145374
+sector-515256,515256,delegation-5152,TN-81,Chenini Est,Chenini Est,شنني الشرقية,,7145373
+sector-515257,515257,delegation-5152,TN-81,Chenini Ouest,Chenini Ouest,شنني الغربية,,7145372
+sector-515351,515351,delegation-5153,TN-81,Teboulbou,Teboulbou,تبلبو,,7145448
+sector-515352,515352,delegation-5153,TN-81,Sidi Boulbaba,Sidi Boulbaba,سيدي بولبابة,,7145445
+sector-515353,515353,delegation-5153,TN-81,Zrig Eddakhlania,Zrig Eddakhlania,زريق الدخلانية,,7145444
+sector-515354,515354,delegation-5153,TN-81,5,5,المنطقة الخامسة,,7145424
+sector-515355,515355,delegation-5153,TN-81,El Medou,El Medou,المدو,,7145421
+sector-515356,515356,delegation-5153,TN-81,Limaoua,Limaoua,ليماوة,,7145419
+sector-515357,515357,delegation-5153,TN-81,El Mouazir,El Mouazir,الموازير,,7145415
+sector-515451,515451,delegation-5154,TN-81,Ghanouch Est,Ghanouch Est,غنوش الشرقية,,7145403
+sector-515452,515452,delegation-5154,TN-81,Ghanouch Ouest,Ghanouch Ouest,غنوش الغربية,,7145402
+sector-515453,515453,delegation-5154,TN-81,Ghanouche Sud,Ghanouche Sud,غنوش الجنوبية,,7145401
+sector-515454,515454,delegation-5154,TN-81,Ghanouche Nord,Ghanouche Nord,غنوش الشمالية,,7145399
+sector-515551,515551,delegation-5155,TN-81,El Metouia Nord,El Metouia Nord,المطويةالشمالية,,7145441
+sector-515552,515552,delegation-5155,TN-81,El Metouia Sud,El Metouia Sud,المطوية الجنوبية,,7145440
+sector-515553,515553,delegation-5162,TN-81,Ouedhref Nord,Ouedhref Nord,وذرف الشمالية,,7145437
+sector-515554,515554,delegation-5162,TN-81,Ouedhref Sud,Ouedhref Sud,وذرف الجنوبية,,7145449
+sector-515555,515555,delegation-5155,TN-81,El Akarit,El Akarit,العكاريت,,7145378
+sector-515556,515556,delegation-5162,TN-81,El Hicha,El Hicha,الهيشة,,7145442
+sector-515557,515557,delegation-5162,TN-81,El Mida,El Mida,الميدة,,7145422
+sector-515651,515651,delegation-5156,TN-81,Oued Ezzitoun,Oued Ezzitoun,وادي الزيتون,,7145381
+sector-515652,515652,delegation-5156,TN-81,El Fejij,El Fejij,الفجيج,,7145380
+sector-515653,515653,delegation-5156,TN-81,El Mehemla,El Mehemla,المهاملة,,7145409
+sector-515654,515654,delegation-5156,TN-81,Essgui,Essgui,السقي,,7145408
+sector-515655,515655,delegation-5156,TN-81,Rabiaa Ouali,Rabiaa Ouali,ربيعة والي,,7145407
+sector-515656,515656,delegation-5156,TN-81,Zoughrata,Zoughrata,زقراطة,,7145406
+sector-515657,515657,delegation-5156,TN-81,Menzel El Habib,Menzel El Habib,منزل الحبيب,,7145371
+sector-515751,515751,delegation-5157,TN-81,Nord,Nord,المنطقة الشمالية,,7145428
+sector-515752,515752,delegation-5157,TN-81,El Ksar,El Ksar,القصر,,7145385
+sector-515753,515753,delegation-5157,TN-81,Est (1),Est (1),(1) المنطقة الشرقية,,7145384
+sector-515754,515754,delegation-5157,TN-81,Est (2),Est (2),(2) المنطقة الشرقية,,7145383
+sector-515755,515755,delegation-5157,TN-81,Sud,Sud,المنطقة القبلية,,7145434
+sector-515756,515756,delegation-5157,TN-81,Farhat Hached,Farhat Hached,فرحات حشاد,,7145433
+sector-515757,515757,delegation-5157,TN-81,Chanchou,Chanchou,شانشو,,7145432
+sector-515758,515758,delegation-5163,TN-81,El Behaier,El Behaier,البحاير,,7145431
+sector-515759,515759,delegation-5163,TN-81,Bechima El Borj,Bechima El Borj,بشيمة البرج,,7145429
+sector-515760,515760,delegation-5163,TN-81,Bechima El Galb,Bechima El Galb,بشيمة القلب,,7145393
+sector-515761,515761,delegation-5163,TN-81,Bou Attouch,Bou Attouch,بوعطوش,,7145392
+sector-515762,515762,delegation-5163,TN-81,Habib Thameur,Habib Thameur,الحبيب ثامر,,7145388
+sector-515763,515763,delegation-5157,TN-81,Ouest,Ouest,المنطقة الغربية,,7145404
+sector-515851,515851,delegation-5158,TN-81,Matmata,Matmata,مطماطة,,7145398
+sector-515852,515852,delegation-5158,TN-81,Techine,Techine,تشين,,7145396
+sector-515853,515853,delegation-5158,TN-81,Tamazrat,Tamazrat,تمزرط,,7145394
+sector-515951,515951,delegation-5159,TN-81,Nouvelle Matmata,Nouvelle Matmata,مطماطة الجديدة,,7145430
+sector-515952,515952,delegation-5159,TN-81,Heddaj,Heddaj,هداج,,7145427
+sector-515953,515953,delegation-5159,TN-81,Ezzeraoua,Ezzeraoua,الزراوة,,7145390
+sector-515954,515954,delegation-5159,TN-81,Beni Aissa,Beni Aissa,بني عيسى,,7145389
+sector-515955,515955,delegation-5159,TN-81,Beni Zalten,Beni Zalten,بني زلطن,,7145405
+sector-516051,516051,delegation-5160,TN-81,Mareth,Mareth,مارث,,7145413
+sector-516052,516052,delegation-5160,TN-81,Mareth Nord,Mareth Nord,مارث الشمالية,,7145412
+sector-516053,516053,delegation-5160,TN-81,Sidi Touati,Sidi Touati,سيدي التواتي,,7145410
+sector-516054,516054,delegation-5160,TN-81,Ez-Zerkine,Ez-Zerkine,الزركين,,7145439
+sector-516055,516055,delegation-5160,TN-81,Ayoun Ezzerkine,Ayoun Ezzerkine,عيون الزركين,,7145438
+sector-516056,516056,delegation-5160,TN-81,Ourafinine,Ourafinine,واريفين,,7145447
+sector-516057,516057,delegation-5160,TN-81,Ezzarat,Ezzarat,الزارات,,7145446
+sector-516058,516058,delegation-5160,TN-81,El Alaya,El Alaya,العلاية,,7145443
+sector-516059,516059,delegation-5160,TN-81,Arram,Arram,عرام,,7145423
+sector-516060,516060,delegation-5160,TN-81,Ketana,Ketana,كتانة,,7145420
+sector-516061,516061,delegation-5161,TN-81,Toujane,Toujane,توجان,,7145418
+sector-516062,516062,delegation-5161,TN-81,Zemarten,Zemarten,زمرتن,,7145416
+sector-516063,516063,delegation-5160,TN-81,Zerig El Ghandri,Zerig El Ghandri,زريق الغندري,,7145414
+sector-516064,516064,delegation-5161,TN-81,Ain Tounine,Ain Tounine,عين تونين,,7145435
+sector-516065,516065,delegation-5161,TN-81,Dekhilet Toujane,Dekhilet Toujane,دخيلة توجان,,7145386
+sector-525151,525151,delegation-5251,TN-82,Beni Ghezail,Beni Ghezail,بني غزيل,,7142971
+sector-525152,525152,delegation-5251,TN-82,02 Mai,02 Mai,2 ماي,,7142935
+sector-525153,525153,delegation-5251,TN-82,Medenine Ouest,Medenine Ouest,مدنين الغربية,,7142972
+sector-525154,525154,delegation-5251,TN-82,20 Mars,20 Mars,20 مارس,,7142918
+sector-525155,525155,delegation-5251,TN-82,Medenine Nord,Medenine Nord,مدنين الشمالية,,7142927
+sector-525156,525156,delegation-5251,TN-82,Oum Ettamar Ouest,Oum Ettamar Ouest,أم التمر الغربية,,7142939
+sector-525157,525157,delegation-5251,TN-82,Oum Ettamar Est,Oum Ettamar Est,أم التمر الشرقية,,7142920
+sector-525158,525158,delegation-5251,TN-82,Koutine,Koutine,كوتين,,7142921
+sector-525251,525251,delegation-5252,TN-82,Medenine Sud,Medenine Sud,مدنين الجنوبية,,7142913
+sector-525252,525252,delegation-5252,TN-82,Medenine Est,Medenine Est,مدنين الشرقية,,7142914
+sector-525253,525253,delegation-5252,TN-82,El Labba,El Labba,اللبة,,7142909
+sector-525254,525254,delegation-5252,TN-82,Hessi Amor,Hessi Amor,حسي عمر,,7142915
+sector-525255,525255,delegation-5252,TN-82,Oued Esseder,Oued Esseder,وادي السدر,,7142948
+sector-525256,525256,delegation-5252,TN-82,Hessi Medenine,Hessi Medenine,حسي مدنين,,7142949
+sector-525257,525257,delegation-5252,TN-82,Darghoulia,Darghoulia,الدرغولية,,7142983
+sector-525258,525258,delegation-5252,TN-82,Souitir,Souitir,السويطير,,7142912
+sector-525259,525259,delegation-5252,TN-82,Nouvelle Amra,Nouvelle Amra,عمرة الجديدة,,7142958
+sector-525260,525260,delegation-5252,TN-82,Boughrara,Boughrara,بوغرارة,,7142959
+sector-525351,525351,delegation-5253,TN-82,Beni Khedech,Beni Khedech,بني خداش,,7142941
+sector-525352,525352,delegation-5253,TN-82,Rahala,Rahala,رحالة,,7142977
+sector-525353,525353,delegation-5253,TN-82,Eddekhila,Eddekhila,الدخيلة,,7142945
+sector-525354,525354,delegation-5253,TN-82,Ouarjijene,Ouarjijene,ورجيجن,,7142937
+sector-525355,525355,delegation-5253,TN-82,Oued El Khil,Oued El Khil,وادي الخيل,,7142967
+sector-525356,525356,delegation-5253,TN-82,Zghaya,Zghaya,الزغاية,,7142973
+sector-525357,525357,delegation-5253,TN-82,El Benaina,El Benaina,البنية,,7142974
+sector-525358,525358,delegation-5253,TN-82,El Fejij,El Fejij,الفجيج,,7142980
+sector-525359,525359,delegation-5253,TN-82,El Menzela,El Menzela,المنزلة,,7142968
+sector-525360,525360,delegation-5253,TN-82,Zammour,Zammour,زمور,,7142970
+sector-525361,525361,delegation-5253,TN-82,El Hamaima,El Hamaima,الحميمة,,7142965
+sector-525362,525362,delegation-5253,TN-82,El Behira,El Behira,البحيرة,,7142930
+sector-525363,525363,delegation-5253,TN-82,Ksar El Jedid,Ksar El Jedid,القصر الجديد,,7142950
+sector-525451,525451,delegation-5254,TN-82,Ben Gardane Nord,Ben Gardane Nord,بنقردان الشمالية,,7142922
+sector-525452,525452,delegation-5254,TN-82,Ben Gardane Sud,Ben Gardane Sud,بنقردان الجنوبية,,7142923
+sector-525453,525453,delegation-5254,TN-82,Essayah,Essayah,الصياح,,7142917
+sector-525454,525454,delegation-5254,TN-82,Jamila,Jamila,جميلة,,7142924
+sector-525455,525455,delegation-5254,TN-82,El Maamerat,El Maamerat,المعمرات,,7142926
+sector-525456,525456,delegation-5254,TN-82,El Amria,El Amria,العامرية,,7142928
+sector-525457,525457,delegation-5254,TN-82,Ettabai,Ettabai,الطابعي,,7142956
+sector-525458,525458,delegation-5254,TN-82,Ourasnia,Ourasnia,الوراسنية,,7142953
+sector-525459,525459,delegation-5254,TN-82,Jallel,Jallel,جلال,,7142960
+sector-525460,525460,delegation-5254,TN-82,Neffatia,Neffatia,النفاتية,,7142961
+sector-525461,525461,delegation-5254,TN-82,Chahbania,Chahbania,الشهبانية,,7142925
+sector-525462,525462,delegation-5254,TN-82,Chareb Errajel,Chareb Errajel,شارب الراجل,,7142955
+sector-525551,525551,delegation-5255,TN-82,Zarzis,Zarzis,جرجيس,,7142910
+sector-525552,525552,delegation-5255,TN-82,20 Mars,20 Mars,20 مارس,,7142911
+sector-525553,525553,delegation-5255,TN-82,Tahar Sfar,Tahar Sfar,الطاهر صفر,,7142951
+sector-525554,525554,delegation-5255,TN-82,Ejdaria,Ejdaria,الجدارية,,7142969
+sector-525555,525555,delegation-5255,TN-82,El Bassatine,El Bassatine,البساتين,,7142964
+sector-525556,525556,delegation-5255,TN-82,Essouihel,Essouihel,السويحل,,7142929
+sector-525557,525557,delegation-5255,TN-82,Oued Ettieb,Oued Ettieb,واد التياب,,7142931
+sector-525558,525558,delegation-5255,TN-82,Hassi El Jerbi,Hassi El Jerbi,حسي الجربي,,7142932
+sector-525559,525559,delegation-5255,TN-82,Khaoui El Ghedir,Khaoui El Ghedir,خوي الغدير,,7142946
+sector-525560,525560,delegation-5255,TN-82,Hamadi,Hamadi,حمادي,,7142947
+sector-525561,525561,delegation-5255,TN-82,Hichem El Hamadi,Hichem El Hamadi,هشام الحمادي,,7142962
+sector-525562,525562,delegation-5255,TN-82,El Ghorabet,El Ghorabet,الغرابات,,7142963
+sector-525563,525563,delegation-5255,TN-82,El Grebis,El Grebis,القريبيس,,7142940
+sector-525564,525564,delegation-5255,TN-82,Hamadi Boutoufaha,Hamadi Boutoufaha,حمادي بو تفاحة,,7142957
+sector-525565,525565,delegation-5255,TN-82,El Ogla,El Ogla,العقلة,,7142933
+sector-525566,525566,delegation-5255,TN-82,Chammakh,Chammakh,شماخ,,7142944
+sector-525651,525651,delegation-5256,TN-82,Taourit,Taourit,توريت,,7133847
+sector-525652,525652,delegation-5256,TN-82,Bou Melel,Bou Melel,بوملال,,7133846
+sector-525653,525653,delegation-5256,TN-82,El Jouamaa,El Jouamaa,الجوامع,,7133853
+sector-525654,525654,delegation-5256,TN-82,Fatou,Fatou,فاتو,,7133848
+sector-525655,525655,delegation-5256,TN-82,Mazraia,Mazraia,مزراية,Q3307766,7133849
+sector-525656,525656,delegation-5256,TN-82,Sedghaiane,Sedghaiane,صدغيان,,7133857
+sector-525657,525657,delegation-5256,TN-82,Oualeg,Oualeg,والغ,,7133859
+sector-525658,525658,delegation-5256,TN-82,Essouani,Essouani,السواني,,7133858
+sector-525659,525659,delegation-5256,TN-82,Erriadh,Erriadh,الرياض,,7133860
+sector-525660,525660,delegation-5256,TN-82,El Hachene,El Hachene,الحشان,,7133854
+sector-525661,525661,delegation-5256,TN-82,Mellita,Mellita,مليتة,,7133845
+sector-525751,525751,delegation-5257,TN-82,Midoun,Midoun,ميدون,Q687088,7133850
+sector-525752,525752,delegation-5257,TN-82,Arkou,Arkou,آركو,Q6532397,7133861
+sector-525753,525753,delegation-5257,TN-82,El Mahboubine,El Mahboubine,المحبوبين,,7133856
+sector-525754,525754,delegation-5257,TN-82,Beni Maaguel,Beni Maaguel,بني معقل,,7134583
+sector-525755,525755,delegation-5257,TN-82,Sedouikech,Sedouikech,سدويكش,,7133851
+sector-525756,525756,delegation-5257,TN-82,El May,El May,الماي,,7133855
+sector-525757,525757,delegation-5257,TN-82,Robbana,Robbana,ربانة,,7134582
+sector-525851,525851,delegation-5258,TN-82,Ajim,Ajim,أجيم,,7133864
+sector-525852,525852,delegation-5258,TN-82,El Khenensa,El Khenensa,الخنانسة,,7133862
+sector-525853,525853,delegation-5258,TN-82,Mezrene,Mezrene,مزران,,7133863
+sector-525854,525854,delegation-5258,TN-82,Guellala,Guellala,قلالة,Q2713148,7133852
+sector-525855,525855,delegation-5258,TN-82,Oued Ezzebib,Oued Ezzebib,وادي الزبيب,,7133843
+sector-525856,525856,delegation-5258,TN-82,El Groa,El Groa,القرع,,7133844
+sector-525951,525951,delegation-5259,TN-82,Sayyidi Makhlūf,Sidi Makhlouf,سيدي مخلوف,,7142952
+sector-525952,525952,delegation-5259,TN-82,Al-Qurayn,El Grine,القرين,,7142954
+sector-525953,525953,delegation-5259,TN-82,El Maghzaouia,El Maghzaouia,المغزاوية,,7142943
+sector-525954,525954,delegation-5259,TN-82,El Jourf,El Jourf,الجرف,,7142981
+sector-525955,525955,delegation-5259,TN-82,Bedoui,Bedoui,بدوي,,7142984
+sector-525956,525956,delegation-5259,TN-82,Amra,Amra,عمرة,,7142938
+sector-525957,525957,delegation-5259,TN-82,Er Ragouba Est,Er Ragouba Est,الراقوبة الشرقية,,7142919
+sector-525958,525958,delegation-5259,TN-82,Er Ragouba Ouest,Er Ragouba Ouest,الراقوبة الغربية,,7142916
+sector-525959,525959,delegation-5259,TN-82,El Ghabai,El Ghabai,الغباي,,7142976
+sector-525960,525960,delegation-5259,TN-82,El Gosba,El Gosba,القصبة,,7142979
+sector-525961,525961,delegation-5259,TN-82,Ad-Darjāwa,Darjaoua,الدرجاوة,,7142966
+sector-535151,535151,delegation-5351,TN-83,Ennozha,Ennozha,النزهة,,7143867
+sector-535152,535152,delegation-5351,TN-83,Ettadhamen,Ettadhamen,التضامن,,7143865
+sector-535153,535153,delegation-5351,TN-83,Ennasr,Ennasr,النصر,,7143817
+sector-535154,535154,delegation-5351,TN-83,Oued El Gameh,Oued El Gameh,وادي القمح,,7143843
+sector-535155,535155,delegation-5351,TN-83,Berourmet,Berourmet,برورمت,,7143864
+sector-535156,535156,delegation-5351,TN-83,Telelt,Telelt,تلالت,,7143862
+sector-535157,535157,delegation-5351,TN-83,Oued El Ghar,Oued El Ghar,وادي الغار,,7143860
+sector-535158,535158,delegation-5351,TN-83,El Mouna,El Mouna,المعونة,,7143859
+sector-535159,535159,delegation-5351,TN-83,Ezzahra,Ezzahra,الزهرة,,7143826
+sector-535160,535160,delegation-5351,TN-83,Gattoufa,Gattoufa,قطوفة,,7143825
+sector-535161,535161,delegation-5351,TN-83,Khetma,Khetma,خاتمة,,7143824
+sector-535162,535162,delegation-5351,TN-83,Essaada,Essaada,السعادة,,7143838
+sector-535163,535163,delegation-5351,TN-83,El Galaa Est,El Galaa Est,القلعة الشرقية,,7143835
+sector-535164,535164,delegation-5351,TN-83,El Galaa Ouest,El Galaa Ouest,القلعة الغربية,,7143833
+sector-535165,535165,delegation-5351,TN-83,Beni Belal,Beni Belal,بني بلال,,7143832
+sector-535251,535251,delegation-5352,TN-83,Tataouine Ville,Tataouine Ville,تطاوين المدينة,,7143851
+sector-535252,535252,delegation-5352,TN-83,Tataouine Supérieure,Tataouine Supérieure,تطاوين العليا,,7143849
+sector-535253,535253,delegation-5352,TN-83,EL MAZTOURIA SUD,EL MAZTOURIA SUD,المزطورية الجنوبية,,7143847
+sector-535254,535254,delegation-5352,TN-83,El Maztouria Nord,El Maztouria Nord,المزطورية الشمالية,,7143845
+sector-535255,535255,delegation-5352,TN-83,GHARGHAR,GHARGHAR,غرغار,,7143880
+sector-535256,535256,delegation-5352,TN-83,Cité El Ber,Cité El Ber,حي البر,,7143875
+sector-535257,535257,delegation-5352,TN-83,KSAR EL MOUKABALA,KSAR EL MOUKABALA,قصر المقابلة,,7143869
+sector-535258,535258,delegation-5352,TN-83,Nouvelle Chnini,Nouvelle Chnini,شنني الجديدة,,7143823
+sector-535259,535259,delegation-5352,TN-83,Chenini,Chenini,شنني,,7143881
+sector-535260,535260,delegation-5352,TN-83,Edouiret,Edouiret,الدويرات,,7143879
+sector-535261,535261,delegation-5352,TN-83,EL MESREB,EL MESREB,المسرب,,7143878
+sector-535262,535262,delegation-5352,TN-83,ERROGHBA,ERROGHBA,الرقبة,,7143877
+sector-535263,535263,delegation-5352,TN-83,Ras El Oued,Ras El Oued,رأس الوادي,,7143876
+sector-535264,535264,delegation-5352,TN-83,BIR THALATHINE,BIR THALATHINE,بئر الثلاثين,,7143857
+sector-535265,535265,delegation-5352,TN-83,Beni Barka - Tounket,Beni Barka - Tounket,بني بركة - تونكت,,7143856
+sector-535351,535351,delegation-5353,TN-83,Kerchaou,Kerchaou,كرشاو,,7143861
+sector-535352,535352,delegation-5353,TN-83,Smar,Smar,الصمار,,7143872
+sector-535353,535353,delegation-5353,TN-83,El Ghariani,El Ghariani,الغر ياني,,7143870
+sector-535354,535354,delegation-5358,TN-83,Errahech,Errahech,الرهاش,,7143822
+sector-535355,535355,delegation-5358,TN-83,El Morra,El Morra,المرة,,7143821
+sector-535356,535356,delegation-5358,TN-83,Ksar Aoun,Ksar Aoun,قصر عون,,7143820
+sector-535357,535357,delegation-5358,TN-83,Ksar Mehira,Ksar Mehira,قصر مهيرة,,7143819
+sector-535358,535358,delegation-5358,TN-83,Beni Mehira Est,Beni Mehira Est,بني مهيرة الشرقية,,7143818
+sector-535451,535451,delegation-5354,TN-83,Bir Lahmar Est,Bir Lahmar Est,بئر الاحمر الشرقية,,7143837
+sector-535452,535452,delegation-5354,TN-83,Bir Lahmar Ouest,Bir Lahmar Ouest,بئر الاحمر الغربية,,7143834
+sector-535453,535453,delegation-5354,TN-83,Sened,Sened,السند,,7143831
+sector-535454,535454,delegation-5354,TN-83,El Argoub,El Argoub,العرقوب,,7143830
+sector-535455,535455,delegation-5354,TN-83,Grager,Grager,قراقر,,7143829
+sector-535456,535456,delegation-5354,TN-83,El Médina,El Médina,المدينة,,7143828
+sector-535457,535457,delegation-5354,TN-83,El Bassatine,El Bassatine,البساتين,,7143827
+sector-535551,535551,delegation-5355,TN-83,GHOMRASSEN,GHOMRASSEN,غمراسن,,7143816
+sector-535552,535552,delegation-5355,TN-83,EL OUAHA,EL OUAHA,الواحة,,7143815
+sector-535553,535553,delegation-5355,TN-83,Ezzohour,Ezzohour,الزهور,,7143814
+sector-535554,535554,delegation-5355,TN-83,El Ghordhab,El Ghordhab,القرضاب,,7143812
+sector-535555,535555,delegation-5355,TN-83,El Ferch,El Ferch,الفرش,,7143842
+sector-535556,535556,delegation-5355,TN-83,Guermassa,Guermassa,قرماسة,,7143841
+sector-535557,535557,delegation-5355,TN-83,Ksar El Haddada,Ksar El Haddada,قصر الحدادة,,7143839
+sector-535558,535558,delegation-5355,TN-83,Nouvelle Médina,Nouvelle Médina,المدينة الجديدة,,7143854
+sector-535559,535559,delegation-5355,TN-83,Ksar El Mourabtine,Ksar El Mourabtine,قصر المرابطين,,7143853
+sector-535560,535560,delegation-5355,TN-83,Oued El Khil,Oued El Khil,وادي الخيل,,7143852
+sector-535651,535651,delegation-5356,TN-83,Dhehiba Est,Dhehiba Est,الذهيبة الشرقية,,7143868
+sector-535652,535652,delegation-5356,TN-83,Dhehiba Ouest,Dhehiba Ouest,الذهيبة الغربية,,7143866
+sector-535751,535751,delegation-5357,TN-83,Remada Est,Remada Est,رمادة الشرقية,,7143850
+sector-535752,535752,delegation-5357,TN-83,Remada Ouest,Remada Ouest,رمادة الغربية,,7143848
+sector-535753,535753,delegation-5357,TN-83,Nekrif,Nekrif,نكريف,,7143846
+sector-535754,535754,delegation-5357,TN-83,Kambout,Kambout,كمبوت,,7143844
+sector-535755,535755,delegation-5357,TN-83,Bir Amir,Bir Amir,بئر عمير,,7143874
+sector-535756,535756,delegation-5357,TN-83,Borj El Khadhra,Borj El Khadhra,برج الخضراء,Q2911085,7143873
+sector-535757,535757,delegation-5357,TN-83,Meghani,Meghani,مغنى,,7143871
+sector-615151,615151,delegation-6151,TN-71,Guetis,Guetis,قطيس,,7150231
+sector-615152,615152,delegation-6151,TN-71,Er-Rahiba,Er-Rahiba,الرحيبة,,7150176
+sector-615153,615153,delegation-6151,TN-71,Er-Rahiba Sud,Er-Rahiba Sud,الرحيبة الجنوبية,,7150175
+sector-615154,615154,delegation-6151,TN-71,Ksour El Akhoua,Ksour El Akhoua,قصور الأخوة,,7150230
+sector-615155,615155,delegation-6151,TN-71,El Mouthides,El Mouthides,المتكيدس,,7150202
+sector-615156,615156,delegation-6151,TN-71,Fej,Fej,الفج,,7150196
+sector-615157,615157,delegation-6151,TN-71,Menzel Mimoun,Menzel Mimoun,منزل ميمون,,7150239
+sector-615251,615251,delegation-6152,TN-71,Sidi Aich,Sidi Aich,سيدي عيش,,7150224
+sector-615252,615252,delegation-6152,TN-71,Sidi Aich Est,Sidi Aich Est,سيدي عيش الشرقية,,7150223
+sector-615253,615253,delegation-6152,TN-71,El Amaima,El Amaima,العمايمة,,7150193
+sector-615254,615254,delegation-6152,TN-71,Menzel Gamoudi,Menzel Gamoudi,منزل القمودي,,7150238
+sector-615255,615255,delegation-6152,TN-71,El Karia,El Karia,القرية,,7150197
+sector-615256,615256,delegation-6152,TN-71,Es-Souinia,Es-Souinia,السوينية,,7150187
+sector-615351,615351,delegation-6153,TN-71,El Ksar,El Ksar,القصر,,7150199
+sector-615352,615352,delegation-6153,TN-71,El Ksar Est,El Ksar Est,القصر الشرقية,,7150198
+sector-615353,615353,delegation-6153,TN-71,Lala,Lala,لالة,,7150236
+sector-615354,615354,delegation-6153,TN-71,Cite Hached,Cite Hached,حي حشاد,,7150220
+sector-615355,615355,delegation-6153,TN-71,Amra,Amra,عمرة,,7150229
+sector-615356,615356,delegation-6153,TN-71,El Matar,El Matar,المطار,,7150206
+sector-615451,615451,delegation-6154,TN-71,Gafsa Ville,Gafsa Ville,قفصة المدينة,,7150233
+sector-615452,615452,delegation-6154,TN-71,Gafsa Est,Gafsa Est,قفصة الشرقية,,7150232
+sector-615453,615453,delegation-6154,TN-71,Cite Essourour,Cite Essourour,حي السرور,,7150217
+sector-615454,615454,delegation-6154,TN-71,El Assala,El Assala,العسالة,,7150191
+sector-615455,615455,delegation-6154,TN-71,Sidi Ahmed Zarrouk,Sidi Ahmed Zarrouk,سيدي أحمد زروق,,7150221
+sector-615456,615456,delegation-6154,TN-71,Oued Ailou,Oued Ailou,وادي أيلو,,7150240
+sector-615457,615457,delegation-6154,TN-71,El Moula,El Moula,المولي,,7150209
+sector-615458,615458,delegation-6154,TN-71,Cite Ennour,Cite Ennour,حي النور,,7150219
+sector-615459,615459,delegation-6154,TN-71,Cite Ech-Chabab,Cite Ech-Chabab,حي الشباب,,7150218
+sector-615460,615460,delegation-6154,TN-71,El Aguila,El Aguila,العقيلة,,7150192
+sector-615461,615461,delegation-6154,TN-71,Kef Derbi,Kef Derbi,كاف دربي,,7150234
+sector-615462,615462,delegation-6154,TN-71,En-Nadhour,En-Nadhour,الناظور,,7150210
+sector-615551,615551,delegation-6162,TN-71,Oum El Aksab,Oum El Aksab,أم الأقصاب,,7150166
+sector-615552,615552,delegation-6162,TN-71,Sidi Boubaker,Sidi Boubaker,سيدي بوبكر,,7150222
+sector-615553,615553,delegation-6155,TN-71,Oum El Araies Centre,Oum El Araies Centre,أم العرائس المركزية,,7150168
+sector-615554,615554,delegation-6155,TN-71,Oum El Araies Gare,Oum El Araies Gare,أم العرائس المحطة,,7150167
+sector-615555,615555,delegation-6155,TN-71,Ech-Channoufia,Ech-Channoufia,الشنوفية,,7150188
+sector-615556,615556,delegation-6155,TN-71,Es-Souitir,Es-Souitir,السويطير,,7150186
+sector-615557,615557,delegation-6155,TN-71,Daouara,Daouara,الدوارة,,7150174
+sector-615651,615651,delegation-6156,TN-71,Redeyef Centre,Redeyef Centre,الرديف المركز,,7150180
+sector-615652,615652,delegation-6156,TN-71,Redeyef Nord,Redeyef Nord,الرديف الشمالية,,7150178
+sector-615653,615653,delegation-6156,TN-71,Redeyef Sud,Redeyef Sud,الرديف الجنوبية,,7150177
+sector-615654,615654,delegation-6156,TN-71,Redeyef Gare,Redeyef Gare,الرديف المحطة,,7150179
+sector-615655,615655,delegation-6156,TN-71,Tabdit,Tabdit,تابديت,Q12201782,7150213
+sector-615751,615751,delegation-6157,TN-71,Metlaoui Centre,Metlaoui Centre,المتلوي المركز,,7150204
+sector-615752,615752,delegation-6157,TN-71,Metlaoui Gare,Metlaoui Gare,المتلوي المحطة,,7150203
+sector-615753,615753,delegation-6157,TN-71,El Mziraa,El Mziraa,المزيرعة,,7150205
+sector-615754,615754,delegation-6157,TN-71,Krichet Naam,Krichet Naam,كريشة النعام,,7150235
+sector-615755,615755,delegation-6157,TN-71,Cite El Amel Ouest,Cite El Amel Ouest,حي الامل الغربي,,7150216
+sector-615756,615756,delegation-6157,TN-71,Cite El Amel Est,Cite El Amel Est,حي الامل الشرقي,,7150215
+sector-615757,615757,delegation-6157,TN-71,Thalja,Thalja,الثالجة,,7150171
+sector-615758,615758,delegation-6157,TN-71,Oued El Arta,Oued El Arta,وادي الأرطة,,7150241
+sector-615759,615759,delegation-6157,TN-71,El Magroun,El Magroun,المقرون,,7150208
+sector-615760,615760,delegation-6157,TN-71,Segui Sud,Segui Sud,السقي القبلي,,7150182
+sector-615851,615851,delegation-6158,TN-71,Mdhila Centre,Mdhila Centre,المظيلة المركز,,7150207
+sector-615852,615852,delegation-6158,TN-71,Cite Des Travailleurs,Cite Des Travailleurs,الحي العمالي,,7150173
+sector-615853,615853,delegation-6158,TN-71,Sahib,Sahib,صهيب,,7150226
+sector-615854,615854,delegation-6158,TN-71,El Segui,El Segui,السقي,,7150183
+sector-615951,615951,delegation-6159,TN-71,El Guetar Ouest,El Guetar Ouest,القطار الغربية,,7150201
+sector-615952,615952,delegation-6159,TN-71,El Ortos,El Ortos,الأرطس,,7150170
+sector-615953,615953,delegation-6159,TN-71,El Guetar Est,El Guetar Est,القطار الشرقية,,7150200
+sector-615954,615954,delegation-6159,TN-71,El Ongue,El Ongue,العنق,,7150194
+sector-615955,615955,delegation-6159,TN-71,Essaket,Essaket,الساكت,,7150181
+sector-615956,615956,delegation-6159,TN-71,Bir Saad,Bir Saad,بئر سعد,,7150211
+sector-616051,616051,delegation-6160,TN-71,El Ayaicha,El Ayaicha,العيايشة,,7150195
+sector-616052,616052,delegation-6160,TN-71,Belkhir,Belkhir,بلخير,,7150212
+sector-616053,616053,delegation-6160,TN-71,Ettalh Est,Ettalh Est,الطلح الشرقية,,7150189
+sector-616054,616054,delegation-6160,TN-71,Ettalh Ouest,Ettalh Ouest,الطلح الغربية,,7150190
+sector-616055,616055,delegation-6160,TN-71,Jbilet Ouest,Jbilet Ouest,جبيلة الوسط,,7150214
+sector-616056,616056,delegation-6160,TN-71,Ouled El Hadj,Ouled El Hadj,أولاد الحاج,,7150169
+sector-616151,616151,delegation-6161,TN-71,Sned,Sned,السند,,7150185
+sector-616152,616152,delegation-6161,TN-71,Sned Nord,Sned Nord,السند الشمالية,,7150184
+sector-616153,616153,delegation-6163,TN-71,Zannouche,Zannouche,زانوش,,7150225
+sector-616154,616154,delegation-6163,TN-71,Djedida,Djedida,الجديدة,,7150172
+sector-616155,616155,delegation-6163,TN-71,Abdessadok,Abdessadok,عبد الصادق,,7150227
+sector-616156,616156,delegation-6161,TN-71,Majoura,Majoura,ماجورة,,7150237
+sector-616157,616157,delegation-6161,TN-71,Alim,Alim,عليم,,7150228
+sector-625151,625151,delegation-6251,TN-72,Masghouna,Masghouna,مسغونة,,7154928
+sector-625152,625152,delegation-6251,TN-72,Ez-Zebda,Ez-Zebda,الزبدة,,7154902
+sector-625153,625153,delegation-6251,TN-72,El Habaila,El Habaila,الهبائلة,,7154911
+sector-625154,625154,delegation-6251,TN-72,El Haouadef,El Haouadef,الهوادف,,7154912
+sector-625155,625155,delegation-6251,TN-72,El Keitna,El Keitna,القيطنة,,7154908
+sector-625156,625156,delegation-6251,TN-72,Ras Draa-Helba,Ras Draa-Helba,رأس الذراع حلبة,,7154922
+sector-625157,625157,delegation-6251,TN-72,El Ezdihar,El Ezdihar,الإزدهار,,7154896
+sector-625158,625158,delegation-6251,TN-72,Cite L'Aeroport,Cite L'Aeroport,حي المطار,,7154918
+sector-625159,625159,delegation-6251,TN-72,Ech-Chabia,Ech-Chabia,الشابية,,7154904
+sector-625160,625160,delegation-6251,TN-72,El-Hadher,El-Hadher,الحضر,,7154899
+sector-625251,625251,delegation-6252,TN-72,Degach Nord,Degach Nord,دقاش الشمالية,,7154921
+sector-625252,625252,delegation-6252,TN-72,Degach Sud,Degach Sud,دقاش الجنوبية,,7154920
+sector-625253,625253,delegation-6252,TN-72,Sabaa Abar,Sabaa Abar,سبع آبار,,7154923
+sector-625254,625254,delegation-6252,TN-72,El Mahassen,El Mahassen,المحاسن,,7154909
+sector-625255,625255,delegation-6252,TN-72,Bou Helal,Bou Helal,بوهلال,,7154914
+sector-625256,625256,delegation-6256,TN-72,El Hamma du Jerid,El Hamma du Jerid,حامة الجريد,Q1026317,7154898
+sector-625257,625257,delegation-6256,TN-72,Chakmou,Chakmou,شاكمو,,7154924
+sector-625258,625258,delegation-6252,TN-72,Dghoumes,Dghoumes,دغومس,,7154919
+sector-625259,625259,delegation-6256,TN-72,En-Namlat,En-Namlat,النملات,,7154910
+sector-625351,625351,delegation-6253,TN-72,Tameghza,Tameghza,تمغزة,,7154915
+sector-625352,625352,delegation-6253,TN-72,Chebika du Jérid,Chebika du Jérid,شبيكة الجريد,,7154906
+sector-625353,625353,delegation-6253,TN-72,Midas,Midas,ميداس,,7154929
+sector-625354,625354,delegation-6253,TN-72,Ain El Karma,Ain El Karma,عين الكرمة,,7154926
+sector-625355,625355,delegation-6253,TN-72,Foum El Khanga,Foum El Khanga,فم الخنقة,,7154927
+sector-625356,625356,delegation-6253,TN-72,Er-Remitha,Er-Remitha,الرميثة,,7154901
+sector-625451,625451,delegation-6254,TN-72,Chafai Ech-Cherif,Chafai Ech-Cherif,الشافعي الشريف,,7154905
+sector-625452,625452,delegation-6254,TN-72,01 Juin,01 Juin,1 يونيو,,7154894
+sector-625453,625453,delegation-6254,TN-72,El Ouaha,El Ouaha,الواحة,,7154913
+sector-625454,625454,delegation-6254,TN-72,Es-Seni,Es-Seni,السني,,7154903
+sector-625455,625455,delegation-6254,TN-72,El Ayoun,El Ayoun,العيون,,7154907
+sector-625456,625456,delegation-6254,TN-72,Ettahir,Ettahir,التحرير,,7154897
+sector-625457,625457,delegation-6254,TN-72,El-Assil,El-Assil,الأصيل,,7154895
+sector-625458,625458,delegation-6254,TN-72,El Khadar Ben Houssine,El Khadar Ben Houssine,الخضر بن حسين,,7154900
+sector-625551,625551,delegation-6255,TN-72,Hazoua,Hazoua,حزوة,,7154916
+sector-625552,625552,delegation-6255,TN-72,Hattem,Hattem,حطام,,7154917
+sector-625553,625553,delegation-6255,TN-72,Ain Ouled El Ggerissi,Ain Ouled El Ggerissi,عين أولاد اللغريسي,,7154925
+sector-635151,635151,delegation-6351,TN-73,Kebili Sud,Kebili Sud,قبلي الجنوبية,,7109812
+sector-635152,635152,delegation-6351,TN-73,Bazma,Bazma,بازمة,,7109821
+sector-635153,635153,delegation-6351,TN-73,Jemna Nord,Jemna Nord,جمنة الشمالية,,7082187
+sector-635154,635154,delegation-6351,TN-73,Jemna Sud,Jemna Sud,جمنة الجنوبية,,7082186
+sector-635155,635155,delegation-6351,TN-73,Bchelli,Bchelli,بشلي,,7082747
+sector-635156,635156,delegation-6351,TN-73,Jersine,Jersine,جرسين,,7082714
+sector-635157,635157,delegation-6351,TN-73,El Blidete,El Blidete,البليدات,,7082707
+sector-635158,635158,delegation-6351,TN-73,Ben Mehemed,Ben Mehemed,بن محمد,,7082748
+sector-635159,635159,delegation-6351,TN-73,Janoura,Janoura,جنعورة,,7109817
+sector-635251,635251,delegation-6352,TN-73,Kébili Nord,Kébili Nord,قبلي الشمالية,,7109813
+sector-635252,635252,delegation-6352,TN-73,El Mansoura,El Mansoura,المنصورة,,7109815
+sector-635253,635253,delegation-6352,TN-73,Errabta,Errabta,الرابطة,,7109818
+sector-635254,635254,delegation-6352,TN-73,Tombar,Tombar,طنبار,,7109820
+sector-635255,635255,delegation-6352,TN-73,Limagues Steftimi,Limagues Steftimi,ليماقس استفطيمي,,7108236
+sector-635256,635256,delegation-6352,TN-73,Telmine,Telmine,تلمين,,7109816
+sector-635257,635257,delegation-6352,TN-73,Tenbib,Tenbib,تنبيب,,7109819
+sector-635258,635258,delegation-6352,TN-73,Saïdane,Saïdane,سعيدان,,7108237
+sector-635259,635259,delegation-6352,TN-73,El Gattaya,El Gattaya,القطعاية,,7082695
+sector-635260,635260,delegation-6352,TN-73,Kebili Est,Kebili Est,قبلي الشرقية,,7109996
+sector-635351,635351,delegation-6353,TN-73,El Menchia,El Menchia,المنشية,,7106577
+sector-635352,635352,delegation-6353,TN-73,Bou Abdallah,Bou Abdallah,بو عبد الله,,7106576
+sector-635353,635353,delegation-6353,TN-73,Oum Soumaa,Oum Soumaa,أم الصمعة,,7106563
+sector-635354,635354,delegation-6353,TN-73,Ezzaouaïa,Ezzaouaïa,الزوايا,,7106496
+sector-635355,635355,delegation-6353,TN-73,Béchri,Béchri,بشري,,7083675
+sector-635356,635356,delegation-6353,TN-73,Fatnassa,Fatnassa,فطناسة,,7083676
+sector-635357,635357,delegation-6353,TN-73,Negga,Negga,نقة,,7083677
+sector-635451,635451,delegation-6354,TN-73,Douz Est,Douz Est,دوز الشرقية,,7107072
+sector-635452,635452,delegation-6354,TN-73,El Golaa,El Golaa,القلعة,,7107714
+sector-635453,635453,delegation-6354,TN-73,El Aouina Nord,El Aouina Nord,العوينة الشمالية,,7107233
+sector-635454,635454,delegation-6354,TN-73,El Aouina Sud,El Aouina Sud,العوينة الجنوبية,,7107232
+sector-635455,635455,delegation-6354,TN-73,Elabadla,Elabadla,العبادلة,,7107054
+sector-635551,635551,delegation-6355,TN-73,Douz Ouest,Douz Ouest,دوز الغربية,,7107488
+sector-635552,635552,delegation-6355,TN-73,El Adhara,El Adhara,العذارة,,7107486
+sector-635553,635553,delegation-6355,TN-73,Ghlissia,Ghlissia,غليسية,,7107487
+sector-635554,635554,delegation-6355,TN-73,Nouil Nord,Nouil Nord,نويل الشمالية,,7107484
+sector-635555,635555,delegation-6355,TN-73,Nouil Sud,Nouil Sud,نويل الجنوبية,,7107485
+sector-635651,635651,delegation-6356,TN-73,Sabria Ouest,Sabria Ouest,الصابرية الغربية,,7095581
+sector-635652,635652,delegation-6356,TN-73,Sabria Est,Sabria Est,الصابرية الشرقية,,7095582
+sector-635653,635653,delegation-6356,TN-73,Gharib,Gharib,غريب,,7095579
+sector-635654,635654,delegation-6356,TN-73,Gueïdma,Gueïdma,غيدمة,,7095632
+sector-635655,635655,delegation-6357,TN-73,Rejim Mâatoug,Rejim Mâatoug,رجيم معتوق,Q2912518,7082340
+sector-635656,635656,delegation-6357,TN-73,El Matrouha,El Matrouha,المطروحة,,7082336
+sector-635657,635657,delegation-6356,TN-73,Bichni Edarjin,Bichni Edarjin,بشني إدرجين,,7095633
+sector-x11001627,,delegation-3466,TN-61,Ennajet,Ennajet,النجاة,,11001627

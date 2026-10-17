@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-ee2338",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-009"
+  ],
+  "summary": "Task NS-009 created: Gallery and explorer page (GitHub Pages)"
+}

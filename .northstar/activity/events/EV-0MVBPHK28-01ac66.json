@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-01ac66",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-010"
+  ],
+  "summary": "Requirement REQ-010 added: Reproducible build and automated validation"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-2a7d79",
+  "type": "feature.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "F-008"
+  ],
+  "summary": "Feature F-008 created: Validation suite and CI"
+}

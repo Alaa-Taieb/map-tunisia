@@ -1,0 +1,73 @@
+{
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "title": "OpenStreetMap as the primary boundary source",
+      "decision": "Use the Geofabrik OSM extract (admin_level 4/5/6 plus coastline) as the boundary source",
+      "rationale": "The most recent and most precise open source available (coastline at ~1e-7 degree precision, INS geocodes on delegations and sectors); HDX COD-AB and geoBoundaries derive from the same 2014-era INS data and older OSM snapshots",
+      "status": "active",
+      "requirementIds": [],
+      "alternatives": [
+        "HDX COD-AB (CC BY-IGO, 2022)",
+        "geoBoundaries gbOpen (2017 OSM)"
+      ],
+      "decidedAt": "2026-10-17T01:16:40.016Z",
+      "decidedBy": "claude-code"
+    },
+    {
+      "id": "DEC-002",
+      "title": "UTM zone 32N projection for SVGs",
+      "decision": "Project all SVGs with EPSG:32632 (WGS84 / UTM 32N); publish GeoJSON/TopoJSON in WGS84",
+      "rationale": "Tunisia (7.5-11.6 E) sits entirely within UTM zone 32; it is conformal with very low distortion and a standard EPSG code that users can reproduce",
+      "status": "active",
+      "requirementIds": [],
+      "alternatives": [
+        "Web Mercator",
+        "Equirectangular",
+        "Carthage/Nord Tunisie LCC"
+      ],
+      "decidedAt": "2026-10-17T01:16:40.016Z",
+      "decidedBy": "claude-code"
+    },
+    {
+      "id": "DEC-003",
+      "title": "Python extraction plus Node generation",
+      "decision": "pyosmium/shapely for extraction (output committed in data/source); Node + mapshaper for the generation and tests",
+      "rationale": "pyosmium assembles OSM multipolygons robustly; mapshaper is best-in-class for topology-aware simplification; committing the source means contributors only need Node to rebuild the maps",
+      "status": "active",
+      "requirementIds": [],
+      "alternatives": [
+        "All-Node with osmtogeojson",
+        "All-Python with the topojson package"
+      ],
+      "decidedAt": "2026-10-17T01:16:40.016Z",
+      "decidedBy": "claude-code"
+    },
+    {
+      "id": "DEC-004",
+      "title": "Exact nesting through planar face overlay",
+      "decision": "Node all admin boundaries into planar faces; units are unions of faces; gaps allocated by nearest-boundary Voronoi within the parent",
+      "rationale": "Guarantees zero overlaps and gaps and identical shared borders across levels, which the raw OSM levels do not (lakes are excluded at the lower levels; there are superseded relations)",
+      "status": "active",
+      "requirementIds": [],
+      "alternatives": [
+        "Clip each level independently"
+      ],
+      "decidedAt": "2026-10-17T01:16:40.016Z",
+      "decidedBy": "claude-code"
+    },
+    {
+      "id": "DEC-005",
+      "title": "Licensing split",
+      "decision": "Code under MIT; data and maps under ODbL 1.0 with the attribution (c) OpenStreetMap contributors",
+      "rationale": "The geometry is derived from OSM, which requires ODbL for derived databases and attribution for produced works",
+      "status": "active",
+      "requirementIds": [],
+      "alternatives": [
+        "CC BY 4.0 (not compatible with the OSM source)"
+      ],
+      "decidedAt": "2026-10-17T01:16:40.016Z",
+      "decidedBy": "claude-code"
+    }
+  ]
+}

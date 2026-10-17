@@ -1,0 +1,25 @@
+id,iso_3166_2,ins_code,name_en,name_fr,name_ar,capital_en,capital_fr,capital_ar,region,district,population_2014,population_2024,area_km2,label_lon,label_lat,label_x,label_y
+TN-11,TN-11,11,Tunis,Tunis,تونس,Tunis,Tunis,تونس,grand-tunis,district-2,1056247,1075306,287.34,10.10128,36.75777,247.30,101.43
+TN-12,TN-12,12,Ariana,Ariana,أريانة,Ariana,Ariana,أريانة,grand-tunis,district-2,576088,668552,455.12,10.12122,36.94176,248.84,81.00
+TN-13,TN-13,13,Ben Arous,Ben Arous,بن عروس,Ben Arous,Ben Arous,بن عروس,grand-tunis,district-2,631842,722828,673.58,10.24824,36.64303,260.58,114.00
+TN-14,TN-14,14,Manouba,La Manouba,منوبة,Manouba,La Manouba,منوبة,grand-tunis,district-2,379518,418354,1138.75,9.84485,36.81269,224.36,95.57
+TN-21,TN-21,15,Nabeul,Nabeul,نابل,Nabeul,Nabeul,نابل,nord-est,district-2,787920,863172,2832.10,10.64695,36.60498,296.30,117.68
+TN-22,TN-22,16,Zaghouan,Zaghouan,زغوان,Zaghouan,Zaghouan,زغوان,nord-est,district-2,176945,201065,2840.00,10.02365,36.33743,240.87,148.14
+TN-23,TN-23,17,Bizerte,Bizerte,بنزرت,Bizerte,Bizerte,بنزرت,nord-est,district-1,568219,607388,3597.55,9.48966,37.05323,192.54,69.11
+TN-31,TN-31,21,Béja,Béja,باجة,Béja,Béja,باجة,nord-ouest,district-1,303032,311417,3663.03,9.27996,36.59072,174.04,120.49
+TN-32,TN-32,22,Jendouba,Jendouba,جندوبة,Jendouba,Jendouba,جندوبة,nord-ouest,district-1,401477,404352,3097.34,8.74942,36.61524,126.59,117.78
+TN-33,TN-33,23,Kef,Le Kef,الكاف,El Kef,Le Kef,الكاف,nord-ouest,district-1,243156,237686,5104.64,8.69600,36.07632,121.63,177.54
+TN-34,TN-34,24,Siliana,Siliana,سليانة,Siliana,Siliana,سليانة,nord-ouest,district-3,223087,216242,4669.30,9.41071,36.11104,185.96,173.66
+TN-41,TN-41,41,Kairouan,Kairouan,القيروان,Kairouan,Kairouan,القيروان,centre-ouest,district-3,570559,600803,6533.70,9.83771,35.56584,224.91,233.88
+TN-42,TN-42,42,Kasserine,Kasserine,القصرين,Kasserine,Kasserine,القصرين,centre-ouest,district-3,439243,492741,8206.20,8.79933,35.38070,130.77,254.72
+TN-43,TN-43,43,Sidi Bouzid,Sidi Bouzid,سيدي بوزيد,Sidi Bouzid,Sidi Bouzid,سيدي بوزيد,centre-ouest,district-4,429912,489991,7433.33,9.56886,34.84577,201.01,313.91
+TN-51,TN-51,31,Sousse,Sousse,سوسة,Sousse,Sousse,سوسة,centre-est,district-3,674971,762281,2617.40,10.41746,35.79159,277.09,208.24
+TN-52,TN-52,32,Monastir,Monastir,المنستير,Monastir,Monastir,المنستير,centre-est,district-3,548828,599769,1084.41,10.76228,35.59931,308.64,229.06
+TN-53,TN-53,33,Mahdia,Mahdia,المهدية,Mahdia,Mahdia,المهدية,centre-est,district-3,410812,449985,2868.74,10.38495,35.28510,274.94,264.46
+TN-61,TN-61,34,Sfax,Sfax,صفاقس,Sfax,Sfax,صفاقس,centre-est,district-4,955421,1047468,7014.18,10.34749,34.79782,272.27,318.55
+TN-71,TN-71,61,Gafsa,Gafsa,قفصة,Gafsa,Gafsa,قفصة,sud-ouest,district-4,337331,388776,7550.88,8.86349,34.42613,136.46,360.58
+TN-72,TN-72,62,Tozeur,Tozeur,توزر,Tozeur,Tozeur,توزر,sud-ouest,district-4,107912,120036,6073.82,7.91290,33.90235,48.49,418.14
+TN-73,TN-73,63,Kebili,Kébili,قبلي,Kebili,Kébili,قبلي,sud-ouest,district-5,156961,183201,22249.68,8.80343,33.30689,130.70,484.67
+TN-81,TN-81,51,Gabès,Gabès,قابس,Gabès,Gabès,قابس,sud-est,district-5,374300,410847,7488.21,9.68145,33.91873,211.99,416.65
+TN-82,TN-82,52,Medenine,Médenine,مدنين,Medenine,Médenine,مدنين,sud-est,district-5,479520,537255,9298.53,10.87510,33.29121,323.60,484.86
+TN-83,TN-83,53,Tataouine,Tataouine,تطاوين,Tataouine,Tataouine,تطاوين,sud-est,district-5,149453,162654,38462.53,9.78200,32.07748,222.80,620.71

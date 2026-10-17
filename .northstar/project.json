@@ -1,0 +1,15 @@
+{
+  "name": "Map Tunisia",
+  "idea": "create the most accurate open source Tunisian SVG map with different level of detail versions and with different modes and partitions. Also make sure the repo is well documented as this is going to be a public open source project. I want the readme to be world class with good presentation. And make sure I get credit in the readme",
+  "origin": "new",
+  "idPrefix": "NS",
+  "cli": "northstar",
+  "createdAt": "2026-10-17T01:13:52.134Z",
+  "createdBy": "claude-code",
+  "vision": {
+    "status": "proposed",
+    "version": 0,
+    "history": []
+  },
+  "specification": {}
+}

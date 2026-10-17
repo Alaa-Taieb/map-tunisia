@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-3a4d94",
+  "type": "feature.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "F-003"
+  ],
+  "summary": "Feature F-003 created: Multi-LOD, multi-mode SVG generation"
+}

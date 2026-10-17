@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-3fc5cb",
+  "type": "decision.recorded",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "DEC-004"
+  ],
+  "summary": "Decision DEC-004: Exact nesting through planar face overlay"
+}

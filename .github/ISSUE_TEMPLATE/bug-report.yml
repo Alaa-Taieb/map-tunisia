@@ -1,0 +1,22 @@
+name: 🐞 Bug report
+description: A file doesn't render, a test fails, the build breaks…
+labels: ["bug"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File or command
+      placeholder: "dist/svg/governorates/tunisia-governorates-medium-light.svg or npm run build"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "Chrome 140 / Inkscape 1.4 / Node 22 on Windows 11"

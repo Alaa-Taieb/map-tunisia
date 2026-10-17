@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "milestones": [
+    {
+      "id": "MS-001",
+      "title": "Data foundation",
+      "goal": "Clean, exactly nested source data for every partition from the latest OSM extract",
+      "order": 0,
+      "exitCriteria": [
+        {
+          "id": "X1",
+          "text": "data/source has nested sectors/delegations/governorates with zero gaps or overlaps",
+          "status": "unmet"
+        },
+        {
+          "id": "X2",
+          "text": "The extraction report documents every correction",
+          "status": "unmet"
+        }
+      ],
+      "dependsOn": [],
+      "provenance": "stated"
+    },
+    {
+      "id": "MS-002",
+      "title": "Map generation",
+      "goal": "All partitions x levels of detail x modes generated as SVG, GeoJSON and TopoJSON",
+      "order": 1,
+      "exitCriteria": [
+        {
+          "id": "X1",
+          "text": "npm run build produces dist/ and its manifest",
+          "status": "unmet"
+        },
+        {
+          "id": "X2",
+          "text": "Every SVG is valid",
+          "status": "unmet"
+        }
+      ],
+      "dependsOn": [
+        "MS-001"
+      ],
+      "provenance": "stated"
+    },
+    {
+      "id": "MS-003",
+      "title": "Showcase and documentation",
+      "goal": "A world-class README, docs, gallery site and community files",
+      "order": 2,
+      "exitCriteria": [
+        {
+          "id": "X1",
+          "text": "The README renders with visuals on GitHub",
+          "status": "unmet"
+        },
+        {
+          "id": "X2",
+          "text": "The docs cover usage and methodology",
+          "status": "unmet"
+        }
+      ],
+      "dependsOn": [
+        "MS-002"
+      ],
+      "provenance": "stated"
+    },
+    {
+      "id": "MS-004",
+      "title": "Quality and v1.0 release",
+      "goal": "Validation suite, CI, accuracy report and tagged release",
+      "order": 3,
+      "exitCriteria": [
+        {
+          "id": "X1",
+          "text": "npm test is green",
+          "status": "unmet"
+        },
+        {
+          "id": "X2",
+          "text": "CI workflow present",
+          "status": "unmet"
+        },
+        {
+          "id": "X3",
+          "text": "CHANGELOG has v1.0.0",
+          "status": "unmet"
+        }
+      ],
+      "dependsOn": [
+        "MS-003"
+      ],
+      "provenance": "stated"
+    }
+  ],
+  "features": [
+    {
+      "id": "F-001",
+      "title": "OSM extraction and topology cleaning",
+      "description": "",
+      "milestoneId": "MS-001",
+      "requirementIds": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    },
+    {
+      "id": "F-002",
+      "title": "Post-2014 delegations",
+      "description": "",
+      "milestoneId": "MS-001",
+      "requirementIds": [
+        "REQ-007"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    },
+    {
+      "id": "F-003",
+      "title": "Multi-LOD, multi-mode SVG generation",
+      "description": "",
+      "milestoneId": "MS-002",
+      "requirementIds": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-005"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    },
+    {
+      "id": "F-004",
+      "title": "GeoJSON/TopoJSON and projection helper",
+      "description": "",
+      "milestoneId": "MS-002",
+      "requirementIds": [
+        "REQ-006"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    },
+    {
+      "id": "F-005",
+      "title": "README and docs",
+      "description": "",
+      "milestoneId": "MS-003",
+      "requirementIds": [
+        "REQ-008"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    },
+    {
+      "id": "F-006",
+      "title": "Gallery and explorer site",
+      "description": "",
+      "milestoneId": "MS-003",
+      "requirementIds": [
+        "REQ-008",
+        "REQ-004"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    },
+    {
+      "id": "F-007",
+      "title": "Community files and licensing",
+      "description": "",
+      "milestoneId": "MS-003",
+      "requirementIds": [
+        "REQ-009"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    },
+    {
+      "id": "F-008",
+      "title": "Validation suite and CI",
+      "description": "",
+      "milestoneId": "MS-004",
+      "requirementIds": [
+        "REQ-010",
+        "REQ-001"
+      ],
+      "dependsOn": [],
+      "provenance": "stated",
+      "artifacts": []
+    }
+  ],
+  "history": [
+    {
+      "version": 1,
+      "at": "2026-10-17T01:13:52.134Z",
+      "actor": "claude-code",
+      "reason": "Project initialized"
+    }
+  ]
+}

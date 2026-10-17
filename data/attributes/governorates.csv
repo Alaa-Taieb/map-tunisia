@@ -1,0 +1,25 @@
+id,iso_3166_2,ins_code,name_en,name_fr,name_ar,capital_en,capital_fr,capital_ar,region,district,population_2014,population_2024
+TN-11,TN-11,11,Tunis,Tunis,تونس,Tunis,Tunis,تونس,grand-tunis,district-2,1056247,1075306
+TN-12,TN-12,12,Ariana,Ariana,أريانة,Ariana,Ariana,أريانة,grand-tunis,district-2,576088,668552
+TN-13,TN-13,13,Ben Arous,Ben Arous,بن عروس,Ben Arous,Ben Arous,بن عروس,grand-tunis,district-2,631842,722828
+TN-14,TN-14,14,Manouba,La Manouba,منوبة,Manouba,La Manouba,منوبة,grand-tunis,district-2,379518,418354
+TN-21,TN-21,15,Nabeul,Nabeul,نابل,Nabeul,Nabeul,نابل,nord-est,district-2,787920,863172
+TN-22,TN-22,16,Zaghouan,Zaghouan,زغوان,Zaghouan,Zaghouan,زغوان,nord-est,district-2,176945,201065
+TN-23,TN-23,17,Bizerte,Bizerte,بنزرت,Bizerte,Bizerte,بنزرت,nord-est,district-1,568219,607388
+TN-31,TN-31,21,Béja,Béja,باجة,Béja,Béja,باجة,nord-ouest,district-1,303032,311417
+TN-32,TN-32,22,Jendouba,Jendouba,جندوبة,Jendouba,Jendouba,جندوبة,nord-ouest,district-1,401477,404352
+TN-33,TN-33,23,Kef,Le Kef,الكاف,El Kef,Le Kef,الكاف,nord-ouest,district-1,243156,237686
+TN-34,TN-34,24,Siliana,Siliana,سليانة,Siliana,Siliana,سليانة,nord-ouest,district-3,223087,216242
+TN-41,TN-41,41,Kairouan,Kairouan,القيروان,Kairouan,Kairouan,القيروان,centre-ouest,district-3,570559,600803
+TN-42,TN-42,42,Kasserine,Kasserine,القصرين,Kasserine,Kasserine,القصرين,centre-ouest,district-3,439243,492741
+TN-43,TN-43,43,Sidi Bouzid,Sidi Bouzid,سيدي بوزيد,Sidi Bouzid,Sidi Bouzid,سيدي بوزيد,centre-ouest,district-4,429912,489991
+TN-51,TN-51,31,Sousse,Sousse,سوسة,Sousse,Sousse,سوسة,centre-est,district-3,674971,762281
+TN-52,TN-52,32,Monastir,Monastir,المنستير,Monastir,Monastir,المنستير,centre-est,district-3,548828,599769
+TN-53,TN-53,33,Mahdia,Mahdia,المهدية,Mahdia,Mahdia,المهدية,centre-est,district-3,410812,449985
+TN-61,TN-61,34,Sfax,Sfax,صفاقس,Sfax,Sfax,صفاقس,centre-est,district-4,955421,1047468
+TN-71,TN-71,61,Gafsa,Gafsa,قفصة,Gafsa,Gafsa,قفصة,sud-ouest,district-4,337331,388776
+TN-72,TN-72,62,Tozeur,Tozeur,توزر,Tozeur,Tozeur,توزر,sud-ouest,district-4,107912,120036
+TN-73,TN-73,63,Kebili,Kébili,قبلي,Kebili,Kébili,قبلي,sud-ouest,district-5,156961,183201
+TN-81,TN-81,51,Gabès,Gabès,قابس,Gabès,Gabès,قابس,sud-est,district-5,374300,410847
+TN-82,TN-82,52,Medenine,Médenine,مدنين,Medenine,Médenine,مدنين,sud-est,district-5,479520,537255
+TN-83,TN-83,53,Tataouine,Tataouine,تطاوين,Tataouine,Tataouine,تطاوين,sud-est,district-5,149453,162654

@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-ccc07f",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-011"
+  ],
+  "summary": "Requirement REQ-011 added: No topographic layers, tile server or web-map library in v1"
+}

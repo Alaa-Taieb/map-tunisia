@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-55ca06",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-010"
+  ],
+  "summary": "Task NS-010 created: LICENSE (MIT), LICENSE-DATA (ODbL), CONTRIBUTING, CoC, CHANGELOG, CITATION, issue/PR templates"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-d52ea1",
+  "type": "feature.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "F-002"
+  ],
+  "summary": "Feature F-002 created: Post-2014 delegations"
+}

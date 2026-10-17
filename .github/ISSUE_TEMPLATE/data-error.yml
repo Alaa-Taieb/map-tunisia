@@ -1,0 +1,37 @@
+name: 🗺️ Data error
+description: A wrong border, name, code, parent or population.
+title: "[data] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the map accurate! Find the unit's id in the [explorer](https://alaa-taieb.github.io/map-tunisia/) by clicking a shape.
+  - type: input
+    id: unit
+    attributes:
+      label: Unit id(s)
+      placeholder: "delegation-3362, sector-336251, TN-53"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options: [Border / shape, Name (Arabic), Name (Latin), Code (ISO / INS / HASC), Parent unit, Population, Missing unit, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What is wrong and what is correct?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Decree (JORT), INS publication, ISIE map, OSM changeset, photo, local knowledge…
+    validations:
+      required: true

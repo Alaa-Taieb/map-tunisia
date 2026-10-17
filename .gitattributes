@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.svg text eol=lf linguist-generated=false
+dist/** linguist-generated=true
+data/source/** linguist-generated=true
+*.pbf binary
+*.png binary

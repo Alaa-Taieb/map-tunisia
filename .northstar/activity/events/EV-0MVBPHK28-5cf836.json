@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-5cf836",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-009"
+  ],
+  "summary": "Requirement REQ-009 added: Open-source project hygiene"
+}

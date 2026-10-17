@@ -1,0 +1,726 @@
+{
+  "$comment": "Documented corrections applied to the raw OpenStreetMap data by scripts/extract/extract.py. Every entry must have a reason. See docs/methodology.md.",
+  "drop_relations": [
+    {
+      "osm_id": 7169554,
+      "level": "delegation",
+      "reason": "Superseded pre-split 'Regueb' delegation. Regueb (Sidi Bouzid) was split into Regueb and Essaïda; OSM keeps both the old relation and the two new ones (7172879, 7172930), which overlap it completely."
+    }
+  ],
+  "delegation_codes": {
+    "$comment": "INS geocodes for delegations whose OSM relation has no ref:tn:codegeo tag. Codes follow the INS 2024 census nomenclature.",
+    "7172879": {
+      "code": "4361",
+      "reason": "New 'Regueb' delegation after the split; keeps the historical INS code 4361."
+    },
+    "7172930": {
+      "code": "4363",
+      "reason": "Essaïda delegation; INS 2024 census code 4363."
+    }
+  },
+  "sector_codes": {
+    "$comment": "INS geocodes for sectors whose OSM relation has no ref:tn:codegeo tag."
+  },
+  "names": {
+    "$comment": "Name overrides keyed by unit id (e.g. delegation-1557). Fields: name_ar, name_fr, name_en.",
+    "sector-115156": {
+      "name_fr": "Cité Mohamed Ali",
+      "name_en": "Cité Mohamed Ali",
+      "reason": "No Latin name in OSM; transliterated from حي محمد علي."
+    },
+    "sector-425555": {
+      "name_ar": "القرعة الحمراء",
+      "name_fr": "El Garaa El Hamra",
+      "name_en": "El Garaa El Hamra",
+      "reason": "Names in OSM are rotated or duplicated; the georeferenced ISIE 2025 circonscription map of this imada lies inside this polygon.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-425561": {
+      "name_ar": "القنة",
+      "name_fr": "El Gounna",
+      "name_en": "El Gounna",
+      "reason": "Names in OSM are rotated or duplicated; the georeferenced ISIE 2025 circonscription map of this imada lies inside this polygon.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-425563": {
+      "name_ar": "القصر",
+      "name_fr": "El Ksar",
+      "name_en": "El Ksar",
+      "reason": "Names in OSM are rotated or duplicated; the georeferenced ISIE 2025 circonscription map of this imada lies inside this polygon.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-425564": {
+      "name_ar": "الآثار",
+      "name_fr": "El Athar",
+      "name_en": "El Athar",
+      "reason": "Names in OSM are rotated or duplicated; the georeferenced ISIE 2025 circonscription map of this imada lies inside this polygon.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-326151": {
+      "name_ar": "عياد",
+      "name_fr": "Ayed",
+      "name_en": "Ayed",
+      "reason": "Names in OSM are rotated or duplicated; the georeferenced ISIE 2025 circonscription map of this imada lies inside this polygon.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-326153": {
+      "name_ar": "بوزويتة",
+      "name_fr": "Bouzouita",
+      "name_en": "Bouzouita",
+      "reason": "Names in OSM are rotated or duplicated; the georeferenced ISIE 2025 circonscription map of this imada lies inside this polygon.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-435151": {
+      "name_ar": "سيدي بوزيد",
+      "name_fr": "Sidi Bouzid",
+      "name_en": "Sidi Bouzid",
+      "reason": "Names in OSM are rotated or duplicated; the georeferenced ISIE 2025 circonscription map of this imada lies inside this polygon.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-316458": {
+      "name_ar": "الغربيين",
+      "reason": "No Arabic name in OSM; ISIE lists the remaining imada of this delegation as الغربيين.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-175858": {
+      "name_ar": "حي الحدائق",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-515552": {
+      "name_ar": "المطوية الجنوبية",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-435352": {
+      "name_ar": "جلمة الغربية",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-525151": {
+      "name_ar": "بني غزيل",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-165258": {
+      "name_ar": "عين الباطرية",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-235555": {
+      "name_ar": "سيدي مطير",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-325863": {
+      "name_ar": "عميرة التوازرة الجنوبية",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-336054": {
+      "name_ar": "ساقية الخادم",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-235360": {
+      "name_ar": "سيدي مدين",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-525259": {
+      "name_ar": "عمرة الجديدة",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-615255": {
+      "name_ar": "القرية",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-525552": {
+      "name_ar": "20 مارس",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-635651": {
+      "name_ar": "الصابرية الغربية",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-635652": {
+      "name_ar": "الصابرية الشرقية",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    },
+    "sector-635654": {
+      "name_ar": "غيدمة",
+      "reason": "Spelling error in the OSM Arabic name, corrected after the ISIE circonscription list.",
+      "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+    }
+  },
+  "new_delegations": {
+    "$comment": "Delegations created after the INS 2014 nomenclature (264 delegations) that OpenStreetMap does not map yet. Each is rebuilt by regrouping the OSM sectors (imadas) that compose it. Composition from the electoral authority ISIE (2023 local-election circonscriptions and 2025 administrative circonscription maps), cross-checked against creation decrees and Wikipedia where available.",
+    "items": [
+      {
+        "code": "5161",
+        "governorate": "TN-81",
+        "name_ar": "دخيلة توجان",
+        "name_fr": "Dkhilet Toujane",
+        "name_en": "Dkhilet Toujane",
+        "formed_from": [
+          "Mareth"
+        ],
+        "created": "Approved by the Council of Ministers in 2015 (Habib Essid government); operational May 2016; decree number not found",
+        "sectors": [
+          7145386,
+          7145418,
+          7145416,
+          7145435
+        ],
+        "sector_names_ar": [
+          "دخيلة توجان",
+          "توجان",
+          "زمرتن",
+          "عين تونين"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/25_%D9%82%D8%A7%D8%A8%D8%B3/GB11_%D8%AF%D8%AE%D9%8A%D9%84%D8%A9%20%D8%AA%D9%88%D8%AC%D8%A7%D9%86/%D8%AF%D8%AE%D9%8A%D9%84%D8%A9%20%D8%AA%D9%88%D8%AC%D8%A7%D9%86.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%AF%D8%AE%D9%8A%D9%84%D8%A9_%D8%AA%D9%88%D8%AC%D8%A7%D9%86",
+          "https://www.citypopulation.de/en/tunisia/admin/gab%C3%A8s/5161__dkhilet_toujane/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "5162",
+        "governorate": "TN-81",
+        "name_ar": "وذرف",
+        "name_fr": "Oudhref",
+        "name_en": "Oudhref",
+        "formed_from": [
+          "El Metouia"
+        ],
+        "created": "Decret gouvernemental n° 2020-367 du 16 juin 2020 (JORT 19 juin 2020), amending decret n° 96-543 du 1er avril 1996",
+        "sectors": [
+          7145437,
+          7145449,
+          7145422,
+          7145442
+        ],
+        "sector_names_ar": [
+          "وذرف الشمالية",
+          "وذرف الجنوبية",
+          "الميدة",
+          "الهيشة"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/25_%D9%82%D8%A7%D8%A8%D8%B3/GB13_%D9%88%D8%B0%D8%B1%D9%81/%D9%88%D8%B0%D8%B1%D9%81.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://www.jawharafm.net/ar/article/%D8%B5%D8%AF%D8%B1-%D8%A8%D8%A7%D9%84%D8%B1%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A--%D8%A5%D8%AD%D8%AF%D8%A7%D8%AB-5-%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/105/169747",
+          "https://africanmanager.com/5-nouvelles-delegations-a-sidi-bouzid-gabes-et-mahdia/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "5163",
+        "governorate": "TN-81",
+        "name_ar": "الحبيب ثامر بوعطوش",
+        "name_fr": "Habib Thameur Bouatouch",
+        "name_en": "Habib Thameur Bouatouch",
+        "formed_from": [
+          "El Hamma"
+        ],
+        "created": "Decret gouvernemental n° 2020-367 du 16 juin 2020 (JORT 19 juin 2020), amending decret n° 96-543 du 1er avril 1996",
+        "sectors": [
+          7145431,
+          7145388,
+          7145429,
+          7145393,
+          7145392
+        ],
+        "sector_names_ar": [
+          "البحاير",
+          "الحبيب ثامر",
+          "بشيمة البرج",
+          "بشيمة القلب",
+          "بوعطوش"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/25_%D9%82%D8%A7%D8%A8%D8%B3/GB12_%D8%A7%D9%84%D8%AD%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9/%D8%A7%D9%84%D8%AD%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D8%A7%D9%85%D8%A9_%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9",
+          "https://www.jawharafm.net/ar/article/%D8%B5%D8%AF%D8%B1-%D8%A8%D8%A7%D9%84%D8%B1%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A--%D8%A5%D8%AD%D8%AF%D8%A7%D8%AB-5-%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/105/169747",
+          "https://africanmanager.com/5-nouvelles-delegations-a-sidi-bouzid-gabes-et-mahdia/",
+          "https://www.citypopulation.de/en/tunisia/admin/gab%C3%A8s/5163__habib_thameur_bouatouch/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "6162",
+        "governorate": "TN-71",
+        "name_ar": "سيدي بوبكر",
+        "name_fr": "Sidi Boubaker",
+        "name_en": "Sidi Boubaker",
+        "formed_from": [
+          "Oum El Araies"
+        ],
+        "created": "Decret gouvernemental n° 2015-240 du 1er juin 2015 (two new delegations in Gafsa; amends decret 96-543)",
+        "sectors": [
+          7150222,
+          7150166
+        ],
+        "sector_names_ar": [
+          "سيدي بوبكر",
+          "أم الأقصاب"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/17_%D9%82%D9%81%D8%B5%D8%A9/GF13_%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%A8%D9%88%D8%A8%D9%83%D8%B1/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%A8%D9%88%D8%A8%D9%83%D8%B1.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%B3%D9%8A%D8%AF%D9%8A_%D8%A8%D9%88%D8%A8%D9%83%D8%B1",
+          "https://web.archive.org/web/20221026005205/http://www.gouvernorat-gafsa.gov.tn/sidi-boubaker.php",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "6163",
+        "governorate": "TN-71",
+        "name_ar": "زانوش",
+        "name_fr": "Zannouch",
+        "name_en": "Zannouch",
+        "formed_from": [
+          "Sened"
+        ],
+        "created": "Decret gouvernemental n° 2015-240 du 1er juin 2015",
+        "sectors": [
+          7150225,
+          7150172,
+          7150227
+        ],
+        "sector_names_ar": [
+          "زانوش",
+          "الجديدة",
+          "عبد الصادق"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/17_%D9%82%D9%81%D8%B5%D8%A9/GF12_%D8%B2%D8%A7%D9%86%D9%88%D8%B4/%D8%B2%D8%A7%D9%86%D9%88%D8%B4.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%B2%D8%A7%D9%86%D9%88%D8%B4",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "4162",
+        "governorate": "TN-41",
+        "name_ar": "عين جلولة",
+        "name_fr": "Aïn Djeloula",
+        "name_en": "Ain Djeloula",
+        "formed_from": [
+          "El Ouslatia"
+        ],
+        "created": "Decree not found",
+        "sectors": [
+          7165351,
+          7165331
+        ],
+        "sector_names_ar": [
+          "عين جلولة",
+          "جبل وسلات"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/14_%D8%A7%D9%84%D9%82%D9%8A%D8%B1%D9%88%D8%A7%D9%86/KR12_%D8%B9%D9%8A%D9%86%20%D8%AC%D9%84%D9%88%D9%84%D8%A9/%D8%B9%D9%8A%D9%86%20%D8%AC%D9%84%D9%88%D9%84%D8%A9.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://www.citypopulation.de/en/tunisia/admin/kairouan/4162__a%C3%AFn_djeloula/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "4163",
+        "governorate": "TN-41",
+        "name_ar": "منزل المهيري",
+        "name_fr": "Menzel Mehiri",
+        "name_en": "Menzel Mehiri",
+        "formed_from": [
+          "Nasrallah"
+        ],
+        "created": "Decree not found",
+        "sectors": [
+          7165265,
+          7165296,
+          7165287
+        ],
+        "sector_names_ar": [
+          "الحميدات",
+          "الفجيج",
+          "الطويلة"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/14_%D8%A7%D9%84%D9%82%D9%8A%D8%B1%D9%88%D8%A7%D9%86/KR13_%D9%85%D9%86%D8%B2%D9%84%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%B1%D9%8A/%D9%85%D9%86%D8%B2%D9%84%20%D8%A7%D9%84%D9%85%D9%87%D9%8A%D8%B1%D9%8A.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://www.citypopulation.de/en/tunisia/admin/kairouan/4163__menzel_mehiri/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "2362",
+        "governorate": "TN-33",
+        "name_ar": "الطويرف",
+        "name_fr": "Touiref",
+        "name_en": "Touiref",
+        "formed_from": [
+          "Nebeur"
+        ],
+        "created": "Decret gouvernemental n° 2016-1103 du 23 aout 2016 (per Arabic Wikipedia)",
+        "sectors": [
+          7198151,
+          7198149,
+          7198159,
+          7198161
+        ],
+        "sector_names_ar": [
+          "الطويرف",
+          "الأذياب",
+          "ملالة",
+          "ولجة السدرة"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/07_%D8%A7%D9%84%D9%83%D8%A7%D9%81/KF12_%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D9%81/%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D9%81.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%D9%81",
+          "https://www.citypopulation.de/en/tunisia/admin/kef/2362__touiref/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "3362",
+        "governorate": "TN-53",
+        "name_ar": "رجيش",
+        "name_fr": "Rejiche",
+        "name_en": "Rejiche",
+        "formed_from": [
+          "Mahdia"
+        ],
+        "created": "Decret gouvernemental n° 2020-367 du 16 juin 2020 (JORT 19 juin 2020), amending decret n° 96-543 du 1er avril 1996",
+        "sectors": [
+          7152268,
+          7152267
+        ],
+        "sector_names_ar": [
+          "رجيش",
+          "رجيش الجنوبية"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/21_%D8%A7%D9%84%D9%85%D9%87%D8%AF%D9%8A%D8%A9/MH12_%D8%B1%D8%AC%D9%8A%D8%B4/%D8%B1%D8%AC%D9%8A%D8%B4.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ambiancefm.net/ar/news/mahdia/79-mahdia/1204-%D8%B1%D8%B3%D9%85%D9%8A%D8%A7-%D8%A5%D8%AD%D8%AF%D8%A7%D8%AB-%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9-%D8%A8%D9%83%D9%84-%D9%85%D9%86-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%AF%D8%B9%D8%A9-%D9%88%D8%B1%D8%AC%D9%8A%D8%B4-%D9%85%D9%86-%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%87%D8%AF%D9%8A%D8%A9",
+          "https://africanmanager.com/5-nouvelles-delegations-a-sidi-bouzid-gabes-et-mahdia/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "3363",
+        "governorate": "TN-53",
+        "name_ar": "البرادعة",
+        "name_fr": "El Bradâa",
+        "name_en": "El Bradaa",
+        "formed_from": [
+          "Ksour Essef"
+        ],
+        "created": "Decret gouvernemental n° 2020-367 du 16 juin 2020 (JORT 19 juin 2020), amending decret n° 96-543 du 1er avril 1996",
+        "sectors": [
+          7152200,
+          7152199,
+          7152182,
+          7152185
+        ],
+        "sector_names_ar": [
+          "البرادعة الجنوبية",
+          "البرادعة الشمالية",
+          "الحسينات",
+          "الرشارشة"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/21_%D8%A7%D9%84%D9%85%D9%87%D8%AF%D9%8A%D8%A9/MH13_%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%AF%D8%B9%D8%A9/%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%AF%D8%B9%D8%A9.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%AF%D8%B9%D8%A9",
+          "https://africanmanager.com/5-nouvelles-delegations-a-sidi-bouzid-gabes-et-mahdia/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "4364",
+        "governorate": "TN-43",
+        "name_ar": "الهيشرية",
+        "name_fr": "El Hichria",
+        "name_en": "El Hichria",
+        "formed_from": [
+          "Sidi Bouzid Ouest",
+          "Sidi Bouzid Est"
+        ],
+        "created": "Decret gouvernemental n° 2020-367 du 16 juin 2020 (JORT 19 juin 2020), amending decret n° 96-543 du 1er avril 1996",
+        "sectors": [
+          7169598,
+          7169594,
+          7169555
+        ],
+        "sector_names_ar": [
+          "الهيشرية",
+          "الفريو",
+          "الزيتونة"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/16_%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%A8%D9%88%D8%B2%D9%8A%D8%AF/SZ14_%D8%A7%D9%84%D9%87%D9%8A%D8%B4%D8%B1%D9%8A%D8%A9/%D8%A7%D9%84%D9%87%D8%B4%D8%B1%D9%8A%D8%A9.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%A7%D9%84%D9%87%D9%8A%D8%B4%D8%B1%D9%8A%D8%A9",
+          "https://radiosabrafm.net/articles/ahdath-m-tmdyt-al-hyshryt-rqm-14-fy-wlayt-sydy-bwzyd",
+          "https://africanmanager.com/5-nouvelles-delegations-a-sidi-bouzid-gabes-et-mahdia/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "5358",
+        "governorate": "TN-83",
+        "name_ar": "بني مهيرة",
+        "name_fr": "Beni Mehira",
+        "name_en": "Beni Mhira",
+        "formed_from": [
+          "Smar"
+        ],
+        "created": "Decree not found",
+        "sectors": [
+          7143822,
+          7143821,
+          7143820,
+          7143819,
+          7143818
+        ],
+        "sector_names_ar": [
+          "الرهاش",
+          "المرة",
+          "قصر عون",
+          "قصر مهيرة",
+          "بني مهيرة الشرقية"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/27_%D8%AA%D8%B7%D8%A7%D9%88%D9%8A%D9%86/TA08_%D8%A8%D9%86%D9%8A%20%D9%85%D9%87%D9%8A%D8%B1%D8%A9/%D8%A8%D9%86%D9%8A%20%D9%85%D9%87%D9%8A%D8%B1%D8%A9.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%A8%D9%86%D9%8A_%D9%85%D9%87%D9%8A%D8%B1%D8%A9",
+          "https://www.citypopulation.de/en/tunisia/admin/tataouine/5358__beni_mehira/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "6256",
+        "governorate": "TN-72",
+        "name_ar": "حامة الجريد",
+        "name_fr": "El Hamma du Jérid",
+        "name_en": "El Hamma du Jerid",
+        "formed_from": [
+          "Degache"
+        ],
+        "created": "Decret gouvernemental n° 487 (2016), JORT 15 avril 2016 (per Arabic Wikipedia)",
+        "sectors": [
+          7154898,
+          7154910,
+          7154924
+        ],
+        "sector_names_ar": [
+          "حامة الجريد",
+          "النملات",
+          "شاكمو"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/18_%D8%AA%D9%88%D8%B2%D8%B1/TO06_%D8%AD%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B1%D9%8A%D8%AF/%D8%AD%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B1%D9%8A%D8%AF.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%AA%D9%85%D8%AF%D9%8A%D8%A9_%D8%AD%D8%A7%D9%85%D8%A9_%D8%A7%D9%84%D8%AC%D8%B1%D9%8A%D8%AF",
+          "https://web.archive.org/web/20191225074209/https://www.babnet.net/cadredetail-126050.asp/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      },
+      {
+        "code": "6357",
+        "governorate": "TN-73",
+        "name_ar": "رجيم معتوق",
+        "name_fr": "Rjim Maatoug",
+        "name_en": "Rjim Maatoug",
+        "formed_from": [
+          "El Faouar"
+        ],
+        "created": "Approved by the Council of Ministers in 2015 together with Dkhilet Toujane; decree number not found",
+        "sectors": [
+          7082340,
+          7082336
+        ],
+        "sector_names_ar": [
+          "رجيم معتوق",
+          "المطروحة"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A/",
+          "https://www.isie.tn/wp-content/uploads/2024/Resultats1erTour/19_%D9%82%D8%A8%D9%84%D9%8A/KB07_%D8%B1%D8%AC%D9%8A%D9%85%20%D9%85%D8%B9%D8%AA%D9%88%D9%82/%D8%B1%D8%AC%D9%8A%D9%85%20%D9%85%D8%B9%D8%AA%D9%88%D9%82.PDF",
+          "https://www.isie.tn/ar/%D8%A7%D9%84%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89/",
+          "https://www.citypopulation.de/en/tunisia/admin/k%C3%A9bili/6357__rjim_maatoug/",
+          "https://www.citypopulation.de/en/tunisia/admin/"
+        ]
+      }
+    ]
+  },
+  "sector_reassignments": {
+    "$comment": "OSM sectors whose delegation in OSM disagrees with the official ISIE 2025 circonscription list.",
+    "items": [
+      {
+        "osm_id": 7152197,
+        "name_ar": "الغضابنة",
+        "name_fr": "Ghedhabna",
+        "to_delegation_code": "3358",
+        "reason": "ISIE 2023 and 2025 circonscription lists place the imada of Ghedhabna in Chebba, not in Ksour Essef as OSM does.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7109812,
+        "name_ar": "قبلي الجنوبية",
+        "name_fr": "Kebili Sud",
+        "to_delegation_code": "6351",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6351. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7109821,
+        "name_ar": "بازمة",
+        "name_fr": "Bazma",
+        "to_delegation_code": "6351",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6351. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7109817,
+        "name_ar": "جنعورة",
+        "name_fr": "Janoura",
+        "to_delegation_code": "6351",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6351. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7082695,
+        "name_ar": "القطعاية",
+        "name_fr": "El Gattaya",
+        "to_delegation_code": "6352",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6352. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7106577,
+        "name_ar": "المنشية",
+        "name_fr": "El Menchia",
+        "to_delegation_code": "6353",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6353. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7083677,
+        "name_ar": "نقة",
+        "name_fr": "Negga",
+        "to_delegation_code": "6353",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6353. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7107232,
+        "name_ar": "العوينة الجنوبية",
+        "name_fr": "El Aouina Sud",
+        "to_delegation_code": "6354",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6354. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7107484,
+        "name_ar": "نويل الشمالية",
+        "name_fr": "Nouil Nord",
+        "to_delegation_code": "6355",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6355. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7095632,
+        "name_ar": "غيدمة",
+        "name_fr": "Gueïdma",
+        "to_delegation_code": "6356",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 6356. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      },
+      {
+        "osm_id": 7139131,
+        "name_ar": "الزغايدة",
+        "name_fr": "Ezzghaida",
+        "to_delegation_code": "2251",
+        "reason": "The OSM delegation polygon containing this sector disagrees with both its INS geocode and the ISIE 2025 circonscription list, which place it in delegation 2251. The OSM delegation polygons are wrong here.",
+        "sources": [
+          "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+        ]
+      }
+    ]
+  },
+  "known_gaps": {
+    "$comment": "Official imadas that OpenStreetMap does not map as separate sectors yet (their area is inside the listed OSM sector).",
+    "items": [
+      {
+        "name_ar": "حي بن خلدون الثاني",
+        "delegation_code": "1156",
+        "inside": "الرمانة",
+        "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+      },
+      {
+        "name_ar": "أولاد الفالح",
+        "delegation_code": "4359",
+        "inside": "الرميلية",
+        "source": "https://www.isie.tn/ar/الخريطة-الانتخابية-التقسيم-الإداري/"
+      }
+    ]
+  }
+}

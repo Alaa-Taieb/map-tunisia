@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-a3c4e3",
+  "type": "decision.recorded",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "DEC-002"
+  ],
+  "summary": "Decision DEC-002: UTM zone 32N projection for SVGs"
+}

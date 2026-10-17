@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-d6be30",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-003"
+  ],
+  "summary": "Task NS-003 created: Attribute tables: names ar/fr/en, ISO/INS/HASC codes, regions, districts, 2024 population"
+}

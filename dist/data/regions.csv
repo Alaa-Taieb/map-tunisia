@@ -1,0 +1,8 @@
+id,code,name_en,name_fr,name_ar,governorates,population_2014,population_2024,area_km2,label_lon,label_lat,label_x,label_y
+centre-est,CE,Centre East,Centre-Est,الوسط الشرقي,TN-51 TN-52 TN-53 TN-61,2590032,2859503,13584.74,10.63546,35.23908,297.81,269.22
+centre-ouest,CO,Centre West,Centre-Ouest,الوسط الغربي,TN-41 TN-42 TN-43,1439714,1583535,22173.23,9.51549,35.06228,196.00,289.93
+grand-tunis,GT,Greater Tunis,Grand Tunis,تونس الكبرى,TN-11 TN-12 TN-13 TN-14,2643695,2885040,2554.79,10.10613,36.78858,247.69,98.01
+nord-est,NE,North East,Nord-Est,الشمال الشرقي,TN-21 TN-22 TN-23,1533084,1671625,9269.65,10.02346,36.33762,240.85,148.12
+nord-ouest,NO,North West,Nord-Ouest,الشمال الغربي,TN-31 TN-32 TN-33 TN-34,1170752,1169697,16534.32,8.99052,36.24011,148.15,159.42
+sud-est,SE,South East,Sud-Est,الجنوب الشرقي,TN-81 TN-82 TN-83,1003273,1110756,55249.27,10.69082,32.74588,307.41,545.62
+sud-ouest,SO,South West,Sud-Ouest,الجنوب الغربي,TN-71 TN-72 TN-73,602204,692013,35874.38,8.44245,33.77901,97.38,432.21

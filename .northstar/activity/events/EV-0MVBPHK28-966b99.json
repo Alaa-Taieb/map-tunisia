@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-966b99",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-003"
+  ],
+  "summary": "Requirement REQ-003 added: Multiple levels of detail (full, high, medium, low, tiny)"
+}

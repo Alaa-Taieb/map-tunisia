@@ -1,0 +1,4 @@
+osmium>=4.0,<5
+shapely>=2.0,<3
+pyproj>=3.6,<4
+numpy>=1.26

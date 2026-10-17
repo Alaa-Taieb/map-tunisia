@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-b88b27",
+  "type": "milestone.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "MS-004"
+  ],
+  "summary": "Milestone MS-004 created: Quality and v1.0 release"
+}

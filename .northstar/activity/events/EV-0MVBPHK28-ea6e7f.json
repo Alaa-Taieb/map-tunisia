@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-ea6e7f",
+  "type": "decision.recorded",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "DEC-001"
+  ],
+  "summary": "Decision DEC-001: OpenStreetMap as the primary boundary source"
+}

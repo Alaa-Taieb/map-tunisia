@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-d3f6c2",
+  "type": "milestone.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "MS-003"
+  ],
+  "summary": "Milestone MS-003 created: Showcase and documentation"
+}

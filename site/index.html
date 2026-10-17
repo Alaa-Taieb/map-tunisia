@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map Tunisia — Explorer · خريطة تونس</title>
+<meta name="description" content="Explore and download accurate open-source SVG maps of Tunisia: country, regions, districts, 24 governorates, 279 delegations and 2,083 sectors (imadas), in 5 levels of detail and 8 modes.">
+<meta name="author" content="Alaa Taieb">
+<meta property="og:title" content="Map Tunisia — accurate open-source SVG maps of Tunisia">
+<meta property="og:description" content="Country, regions, districts, governorates, delegations and imadas · 5 levels of detail · 8 modes · SVG, GeoJSON, TopoJSON.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='%238ecae6'%3ETN%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f6f8fb; --panel: #ffffff; --ink: #0f172a; --muted: #64748b; --line: #e2e8f0;
+    --accent: #0e7490; --accent-2: #e63946; --chip: #f1f5f9; --shadow: 0 1px 2px rgba(15,23,42,.06), 0 8px 24px rgba(15,23,42,.06);
+    --radius: 14px; --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1220; --panel: #111a2e; --ink: #e2e8f0; --muted: #94a3b8; --line: #1e2a44; --chip: #17223a; --accent: #8ecae6; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 Inter, 'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background: var(--bg); color: var(--ink); }
+  a { color: var(--accent); }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 28px; border-bottom: 1px solid var(--line); background: var(--panel); position: sticky; top: 0; z-index: 5; }
+  .brand { display: flex; align-items: baseline; gap: 12px; }
+  .brand h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; }
+  .brand .ar { font-family: 'Noto Naskh Arabic', 'Segoe UI', Tahoma, sans-serif; color: var(--accent); font-size: 20px; }
+  .brand small { color: var(--muted); }
+  header nav a { margin-left: 18px; text-decoration: none; font-weight: 600; }
+  main { display: grid; grid-template-columns: 330px 1fr 320px; gap: 20px; padding: 20px 28px 32px; max-width: 1600px; margin: 0 auto; }
+  @media (max-width: 1180px) { main { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
+  .card h2 { margin: 0 0 12px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .group { margin-bottom: 18px; }
+  .group label.title { display: block; font-weight: 700; margin-bottom: 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips button { border: 1px solid var(--line); background: var(--chip); color: var(--ink); padding: 6px 11px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 13.5px; }
+  .chips button[aria-pressed="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+  .chips button:disabled { opacity: .35; cursor: not-allowed; }
+  .hint { color: var(--muted); font-size: 13px; margin-top: 6px; }
+  .stage { position: relative; min-height: 640px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .stage .map { width: 100%; height: 76vh; min-height: 560px; display: flex; align-items: center; justify-content: center; }
+  .stage .map svg { height: 100%; width: auto; max-width: 100%; }
+  .stage .loading { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; color: var(--muted); background: color-mix(in srgb, var(--panel) 70%, transparent); }
+  .stage.busy .loading { display: flex; }
+  .stage .unit.selected { stroke: var(--accent-2) !important; stroke-width: 2.5px !important; }
+  .stage .unit.match { fill: #fbbf24 !important; }
+  .zoombar { position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; }
+  .zoombar button { width: 34px; height: 34px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font-size: 18px; cursor: pointer; }
+  .info dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; }
+  .info dt { color: var(--muted); }
+  .info dd { margin: 0; font-weight: 600; word-break: break-word; }
+  .info .big { font-size: 22px; font-weight: 800; margin: 0; }
+  .info .bigar { font-family: 'Noto Naskh Arabic', 'Segoe UI', Tahoma, sans-serif; font-size: 22px; color: var(--accent); margin: 0 0 12px; direction: rtl; text-align: left; }
+  .actions { display: grid; gap: 8px; margin-top: 12px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--chip); color: var(--ink); text-decoration: none; font-weight: 600; cursor: pointer; font: inherit; }
+  .btn.primary { background: var(--accent); color: #fff; border-color: transparent; }
+  @media (prefers-color-scheme: dark) { .btn.primary { color: #0b1220; } }
+  pre { background: var(--chip); border: 1px solid var(--line); border-radius: 10px; padding: 10px; overflow: auto; font: 12.5px/1.5 var(--mono); margin: 8px 0 0; white-space: pre-wrap; word-break: break-all; }
+  input[type=search] { width: 100%; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--chip); color: var(--ink); font: inherit; }
+  .meta { color: var(--muted); font-size: 13px; }
+  footer { text-align: center; color: var(--muted); padding: 10px 20px 36px; font-size: 13.5px; }
+  .kbd { font-family: var(--mono); font-size: 12px; background: var(--chip); border: 1px solid var(--line); padding: 1px 5px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Map Tunisia</h1><span class="ar" lang="ar">خريطة تونس</span>
+    <small id="osmdate"></small>
+  </div>
+  <nav>
+    <a href="https://github.com/Alaa-Taieb/map-tunisia">GitHub</a>
+    <a href="https://github.com/Alaa-Taieb/map-tunisia/tree/main/docs">Docs</a>
+    <a href="https://github.com/Alaa-Taieb/map-tunisia#download">Download</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card" aria-label="Map options">
+    <h2>Choose a map</h2>
+    <div class="group"><label class="title">Partition</label><div class="chips" id="partitions"></div><div class="hint" id="partition-hint"></div></div>
+    <div class="group"><label class="title">Level of detail</label><div class="chips" id="lods"></div><div class="hint" id="lod-hint"></div></div>
+    <div class="group"><label class="title">Mode</label><div class="chips" id="modes"></div><div class="hint" id="mode-hint"></div></div>
+    <div class="group"><label class="title" for="search">Find a place</label><input id="search" type="search" placeholder="e.g. Sfax, Djerba, القيروان" autocomplete="off"></div>
+    <div class="actions">
+      <a class="btn primary" id="download" download>⬇ Download SVG</a>
+      <a class="btn" id="dl-geojson" download>GeoJSON</a>
+      <a class="btn" id="dl-topojson" download>TopoJSON</a>
+    </div>
+    <p class="meta" id="filemeta"></p>
+    <label class="title">Embed</label>
+    <pre id="snippet"></pre>
+  </section>
+
+  <section class="card stage" id="stage" aria-label="Map preview">
+    <div class="map" id="map"></div>
+    <div class="zoombar"><button id="zin" title="Zoom in">+</button><button id="zout" title="Zoom out">−</button><button id="zreset" title="Reset" style="font-size:14px">⟲</button></div>
+    <div class="loading">Loading…</div>
+  </section>
+
+  <aside class="card info" aria-live="polite">
+    <h2>Details</h2>
+    <div id="info"><p class="meta">Hover or click a shape to see its names, codes, population and area. Use <span class="kbd">scroll</span> to zoom and drag to pan.</p></div>
+  </aside>
+</main>
+
+<footer>
+  Created by <a href="https://github.com/Alaa-Taieb">Alaa Taieb</a> · Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) · Code MIT ·
+  <a href="https://github.com/Alaa-Taieb/map-tunisia">Source on GitHub</a>
+</footer>
+
+<script type="module">
+const BASE = location.pathname.includes('/site/') ? '../' : './';
+const CDN = 'https://cdn.jsdelivr.net/gh/Alaa-Taieb/map-tunisia@main/';
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => (n === '' || n == null ? '—' : Number(n).toLocaleString('en-US'));
+const human = (b) => (b > 1048576 ? `${(b / 1048576).toFixed(2)} MB` : `${(b / 1024).toFixed(0)} KB`);
+
+const manifest = await (await fetch(`${BASE}dist/manifest.json`)).json();
+$('osmdate').textContent = `OSM data ${manifest.osm_date}`;
+const svgs = manifest.files.filter((f) => f.type === 'svg');
+const PARTS = [
+  ['country', 'Country', 'The national outline with every island.'],
+  ['regions', 'Regions', 'The 7 economic regions (INS).'],
+  ['districts', 'Districts', 'The 5 districts (aqalim) of Decree 2023-589.'],
+  ['governorates', 'Governorates', 'The 24 wilayas, ISO 3166-2 coded.'],
+  ['delegations', 'Delegations', 'The 279 mutamadiyat (INS 2024).'],
+  ['sectors', 'Sectors', 'The 2,000+ imadas — the finest level.'],
+];
+const LODS = { full: 'Original OSM precision', high: '≈ 20 m tolerance', medium: '≈ 100 m — web default', low: '≈ 500 m — small embeds', tiny: '≈ 2.5 km — icons' };
+const MODES = { plain: 'Neutral, ready for your CSS', outline: 'Strokes only', light: 'Colourful fills', dark: 'For dark UIs', labeled: 'Latin names', 'labeled-ar': 'Arabic names', nested: 'Parent borders', interactive: 'Hover + tooltips, no JS' };
+
+const state = { partition: 'governorates', lod: 'medium', mode: 'light' };
+const dataCache = {};
+
+function available(partition, lod) { return svgs.filter((f) => f.partition === partition && (!lod || f.lod === lod)); }
+
+function chips(el, items, key, isEnabled) {
+  el.innerHTML = '';
+  for (const [id, label] of items) {
+    const b = document.createElement('button');
+    b.textContent = label; b.setAttribute('aria-pressed', String(state[key] === id));
+    b.disabled = !isEnabled(id);
+    b.onclick = () => { state[key] = id; normalise(); render(); };
+    el.append(b);
+  }
+}
+
+function normalise() {
+  const lods = [...new Set(available(state.partition).map((f) => f.lod))];
+  if (!lods.includes(state.lod)) state.lod = lods.includes('medium') ? 'medium' : lods[0];
+  const modes = available(state.partition, state.lod).map((f) => f.mode);
+  if (!modes.includes(state.mode)) state.mode = modes.includes('light') ? 'light' : modes[0];
+}
+
+function renderControls() {
+  chips($('partitions'), PARTS.map(([id, l]) => [id, l]), 'partition', () => true);
+  $('partition-hint').textContent = PARTS.find((p) => p[0] === state.partition)[2];
+  const lods = new Set(available(state.partition).map((f) => f.lod));
+  chips($('lods'), Object.keys(LODS).map((id) => [id, id]), 'lod', (id) => lods.has(id));
+  $('lod-hint').textContent = LODS[state.lod];
+  const modes = new Set(available(state.partition, state.lod).map((f) => f.mode));
+  chips($('modes'), Object.keys(MODES).map((id) => [id, id]), 'mode', (id) => modes.has(id));
+  $('mode-hint').textContent = MODES[state.mode];
+}
+
+let view = { x: 0, y: 0, w: 0, h: 0 }, full = null;
+function setView(svg) { svg.setAttribute('viewBox', `${view.x} ${view.y} ${view.w} ${view.h}`); }
+
+async function render() {
+  renderControls();
+  const file = available(state.partition, state.lod).find((f) => f.mode === state.mode);
+  const rel = file.path;
+  $('download').href = `${BASE}${rel}`;
+  $('dl-geojson').href = `${BASE}dist/geojson/tunisia-${state.partition}-${state.lod}.geojson`;
+  $('dl-topojson').href = `${BASE}dist/topojson/tunisia-${state.partition}-${state.lod}.topojson`;
+  $('filemeta').textContent = `${rel.split('/').pop()} · ${human(file.bytes)}`;
+  $('snippet').textContent = `<img src="${CDN}${rel}"\n     alt="Map of Tunisia — ${state.partition}" width="400">`;
+  $('stage').classList.add('busy');
+  const [text, data] = await Promise.all([
+    fetch(`${BASE}${rel}`).then((r) => r.text()),
+    dataCache[state.partition] || (dataCache[state.partition] = fetch(`${BASE}dist/data/${state.partition}.json`).then((r) => r.json())),
+  ]);
+  const byId = Object.fromEntries(data.map((d) => [d.id, d]));
+  $('map').innerHTML = text.replace(/^<\?xml[^>]*>/, '');
+  const svg = $('map').querySelector('svg');
+  svg.removeAttribute('width'); svg.removeAttribute('height');
+  const vb = svg.viewBox.baseVal; full = { x: vb.x, y: vb.y, w: vb.width, h: vb.height }; view = { ...full };
+  $('stage').classList.remove('busy');
+  let selected = null;
+  const show = (el) => {
+    const d = byId[el.id] || {};
+    const rows = [
+      ['ID', el.id], ['English', d.name_en], ['French', d.name_fr], ['ISO 3166-2', d.iso_3166_2], ['INS code', d.ins_code], ['HASC', d.hasc],
+      ['Delegation', d.delegation], ['Governorate', d.governorate], ['Region', d.region], ['District', d.district],
+      ['Population 2024', d.population_2024 ? fmt(d.population_2024) : ''], ['Population 2014', d.population_2014 ? fmt(d.population_2014) : ''],
+      ['Area', d.area_km2 ? `${fmt(Math.round(d.area_km2))} km²` : ''],
+      ['Label point', d.label_lat ? `${d.label_lat}, ${d.label_lon}` : ''],
+    ].filter(([, v]) => v);
+    $('info').innerHTML = `<p class="big">${d.name_fr || el.dataset.name || el.id}</p><p class="bigar" lang="ar" dir="rtl">${d.name_ar || ''}</p>` +
+      `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${String(v).replace(/</g, '&lt;')}</dd>`).join('')}</dl>`;
+  };
+  svg.querySelectorAll('.unit').forEach((el) => {
+    el.addEventListener('mouseenter', () => !selected && show(el));
+    el.addEventListener('click', () => { selected?.classList.remove('selected'); selected = el === selected ? null : el; el.classList.toggle('selected', !!selected); show(el); });
+  });
+  // pan & zoom
+  const zoom = (k, cx = view.x + view.w / 2, cy = view.y + view.h / 2) => {
+    const w = Math.min(full.w, Math.max(full.w / 200, view.w * k)), h = (w * full.h) / full.w;
+    view = { x: cx - ((cx - view.x) * w) / view.w, y: cy - ((cy - view.y) * h) / view.h, w, h };
+    setView(svg);
+  };
+  svg.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
+    const p = pt.matrixTransform(svg.getScreenCTM().inverse());
+    zoom(e.deltaY > 0 ? 1.25 : 0.8, p.x, p.y);
+  }, { passive: false });
+  let drag = null;
+  svg.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: e.clientY, v: { ...view } }; });
+  window.onpointerup = () => (drag = null);
+  svg.addEventListener('pointermove', (e) => {
+    if (!drag) return;
+    const s = view.w / svg.getBoundingClientRect().width;
+    view = { ...drag.v, x: drag.v.x - (e.clientX - drag.x) * s, y: drag.v.y - (e.clientY - drag.y) * s };
+    setView(svg);
+  });
+  $('zin').onclick = () => zoom(0.7); $('zout').onclick = () => zoom(1.4); $('zreset').onclick = () => { view = { ...full }; setView(svg); };
+  applySearch();
+}
+
+function norm(s) { return (s || '').toLowerCase().normalize('NFKD').replace(/\p{M}/gu, '').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي'); }
+async function applySearch() {
+  const q = norm($('search').value.trim());
+  const svg = $('map').querySelector('svg'); if (!svg) return;
+  svg.querySelectorAll('.unit.match').forEach((el) => el.classList.remove('match'));
+  if (q.length < 2) return;
+  svg.querySelectorAll('.unit').forEach((el) => {
+    if ([el.dataset.nameFr, el.dataset.nameEn, el.dataset.nameAr, el.id].some((v) => norm(v).includes(q))) el.classList.add('match');
+  });
+}
+$('search').addEventListener('input', applySearch);
+
+const params = new URLSearchParams(location.hash.slice(1));
+for (const k of ['partition', 'lod', 'mode']) if (params.get(k)) state[k] = params.get(k);
+normalise();
+render();
+window.addEventListener('click', () => history.replaceState(null, '', `#partition=${state.partition}&lod=${state.lod}&mode=${state.mode}`));
+</script>
+</body>
+</html>

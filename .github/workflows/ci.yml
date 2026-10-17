@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Build & validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate the committed maps
+        run: npm test
+      - name: Rebuild from data/ and check that dist/ is up to date
+        run: |
+          npm run build
+          node scripts/build/showcase.js
+          node scripts/build/report.js
+          git diff --stat --exit-code -- dist src docs || (echo "::error::Generated files are out of date. Run npm run build and commit the result." && exit 1)

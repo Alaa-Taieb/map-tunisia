@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use these maps in research or publications, please cite them as below."
+title: "Map Tunisia: accurate open-source SVG maps of Tunisia"
+abstract: >-
+  Nested administrative maps of Tunisia (country, 7 economic regions, 5 districts,
+  24 governorates, 279 delegations and 2,083 sectors/imadas) built from OpenStreetMap,
+  in five levels of detail and eight visual modes, with GeoJSON and TopoJSON companions.
+type: dataset
+authors:
+  - given-names: Alaa
+    family-names: Taieb
+    alias: Alaa-Taieb
+repository-code: "https://github.com/Alaa-Taieb/map-tunisia"
+url: "https://alaa-taieb.github.io/map-tunisia/"
+license: ODbL-1.0
+version: 1.0.0
+date-released: "2026-10-17"
+keywords:
+  - Tunisia
+  - map
+  - SVG
+  - GeoJSON
+  - TopoJSON
+  - administrative boundaries
+  - governorates
+  - delegations
+  - imadas
+  - OpenStreetMap
+references:
+  - type: database
+    title: OpenStreetMap
+    authors:
+      - name: OpenStreetMap contributors
+    url: "https://www.openstreetmap.org"
+    license: ODbL-1.0

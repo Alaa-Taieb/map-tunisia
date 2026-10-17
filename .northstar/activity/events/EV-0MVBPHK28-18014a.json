@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-18014a",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-004"
+  ],
+  "summary": "Task NS-004 created: Rebuild post-2014 delegations from imadas where documented"
+}

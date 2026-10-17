@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-bac216",
+  "type": "requirement.added",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "REQ-005"
+  ],
+  "summary": "Requirement REQ-005 added: Semantic identifiers and multilingual names"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVBPHK28-6a7ef7",
+  "type": "task.created",
+  "at": "2026-10-17T01:16:40.016Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-012"
+  ],
+  "summary": "Task NS-012 created: GitHub Actions CI"
+}

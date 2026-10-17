@@ -1,0 +1,394 @@
+{
+  "tasks": [
+    {
+      "id": "NS-001",
+      "title": "Repository scaffold (package.json, Python requirements, layout, .gitignore)",
+      "description": "",
+      "featureId": "F-001",
+      "milestoneId": "MS-001",
+      "requirementIds": [],
+      "dependsOn": [],
+      "priority": "critical",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "npm install and pip install -r scripts/extract/requirements.txt succeed"
+        },
+        {
+          "id": "AC2",
+          "text": "The directory layout is documented in CONTRIBUTING"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-002",
+      "title": "Extraction pipeline: PBF to planar faces to nested sectors/delegations/governorates",
+      "description": "",
+      "featureId": "F-001",
+      "milestoneId": "MS-001",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-001"
+      ],
+      "priority": "critical",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "data/source/tunisia-sectors.geojson is produced with hierarchy attributes"
+        },
+        {
+          "id": "AC2",
+          "text": "The topology check reports 0 overlaps and 0 gaps above 1 m²"
+        },
+        {
+          "id": "AC3",
+          "text": "24 governorates, the documented delegation count and ~2,084 sectors"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-003",
+      "title": "Attribute tables: names ar/fr/en, ISO/INS/HASC codes, regions, districts, 2024 population",
+      "description": "",
+      "featureId": "F-001",
+      "milestoneId": "MS-001",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-002"
+      ],
+      "priority": "high",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "data/attributes has CSV files for the governorates, delegations and sectors"
+        },
+        {
+          "id": "AC2",
+          "text": "The governorate names are checked by hand"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-004",
+      "title": "Rebuild post-2014 delegations from imadas where documented",
+      "description": "",
+      "featureId": "F-002",
+      "milestoneId": "MS-001",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-002"
+      ],
+      "priority": "medium",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "Each of the new delegations is rebuilt or documented as a limitation, with sources"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-005",
+      "title": "Node build: dissolve, project, simplify per LOD, SVG writer with modes",
+      "description": "",
+      "featureId": "F-003",
+      "milestoneId": "MS-002",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-003"
+      ],
+      "priority": "high",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "dist/svg holds every partition x LOD x mode combination defined in the matrix"
+        },
+        {
+          "id": "AC2",
+          "text": "The SVGs carry ids, data-* attributes, title and metadata"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-006",
+      "title": "Label placement for the labelled modes (Latin and Arabic)",
+      "description": "",
+      "featureId": "F-003",
+      "milestoneId": "MS-002",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-005"
+      ],
+      "priority": "medium",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "Labels sit inside their polygons and use the correct script"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-007",
+      "title": "GeoJSON/TopoJSON outputs, manifest and projection helper",
+      "description": "",
+      "featureId": "F-004",
+      "milestoneId": "MS-002",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-005"
+      ],
+      "priority": "high",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "dist/geojson and dist/topojson exist per partition/LOD"
+        },
+        {
+          "id": "AC2",
+          "text": "project() matches pyproj within 1 SVG unit"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-008",
+      "title": "World-class README plus docs/ (methodology, accuracy, usage, projection, build)",
+      "description": "",
+      "featureId": "F-005",
+      "milestoneId": "MS-003",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-007"
+      ],
+      "priority": "high",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "The README includes the hero, gallery, tables, quick start, examples and credit to Alaa Taieb"
+        },
+        {
+          "id": "AC2",
+          "text": "The docs pages exist and their links resolve"
+        }
+      ],
+      "requiresHumanApproval": true,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-009",
+      "title": "Gallery and explorer page (GitHub Pages)",
+      "description": "",
+      "featureId": "F-006",
+      "milestoneId": "MS-003",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-007"
+      ],
+      "priority": "medium",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "site/index.html previews and downloads any combination"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-010",
+      "title": "LICENSE (MIT), LICENSE-DATA (ODbL), CONTRIBUTING, CoC, CHANGELOG, CITATION, issue/PR templates",
+      "description": "",
+      "featureId": "F-007",
+      "milestoneId": "MS-003",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-001"
+      ],
+      "priority": "medium",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "All the files are present and referenced from the README"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-011",
+      "title": "Validation test suite and accuracy report",
+      "description": "",
+      "featureId": "F-008",
+      "milestoneId": "MS-004",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-005"
+      ],
+      "priority": "high",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "npm test checks counts, IDs, nesting, XML and size budgets"
+        },
+        {
+          "id": "AC2",
+          "text": "docs/accuracy.md is generated"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    },
+    {
+      "id": "NS-012",
+      "title": "GitHub Actions CI",
+      "description": "",
+      "featureId": "F-008",
+      "milestoneId": "MS-004",
+      "requirementIds": [],
+      "dependsOn": [
+        "NS-011"
+      ],
+      "priority": "medium",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "The workflow runs npm test on push and pull requests"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-17T01:16:40.016Z"
+    }
+  ]
+}
