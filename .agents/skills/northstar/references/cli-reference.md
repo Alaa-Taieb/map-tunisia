@@ -92,7 +92,7 @@ Add a feature to a milestone.
 
 List features with status.
 
-### `northstar task add --title <t> (--feature F-xxx | --milestone MS-xxx) [--description <d>] [--requirements REQ-001,..] [--depends-on NS-001,..] [--priority critical|high|medium|low] [--accept <criterion>]... [--human-approval] [--unplanned --classification minor|technical|extension|new_feature|direction_change] [--change CH-xxx] [--start]`
+### `northstar task add --title <t> (--feature F-xxx | --milestone MS-xxx) [--description <d>] [--requirements REQ-001,..] [--depends-on NS-001,..] [--priority critical|high|medium|low] [--accept <criterion>]... [--human-approval] [--unplanned --classification minor|technical|extension|new_feature|direction_change] [--change CH-xxx] [--start [--provisional]]`
 
 Create a task. Unplanned work must be classified.
 
@@ -108,9 +108,9 @@ Recommended next tasks (ready, by milestone order then priority).
 
 Show one task with its acceptance criteria, evidence and verification verdict.
 
-### `northstar task start <id> [--takeover]`
+### `northstar task start <id> [--takeover] [--provisional]`
 
-Register that work has begun (requires an approved vision, satisfied dependencies, approved scope).
+Register that work has begun (requires an approved vision, satisfied dependencies, approved scope). --provisional records work before vision approval when the user cannot be reached; it cannot be verified until approval.
 
 ### `northstar task block <id> --reason "<what is blocking>"`
 

@@ -144,6 +144,9 @@ higher-precedence source authoritative until they decide.
 
 - **Only the user approves** the vision, scope changes and human acceptance. Use `--actor human` only after
   they have explicitly said yes in this conversation; quote them in `--note`.
+- **Ask before building.** Only when the vision awaits approval and the user cannot be reached (an autonomous
+  run), record work with `task start <ID> --provisional`; it stays unverified until they approve
+  (`references/workflows.md#initialize`). Never use it to avoid asking.
 - **Never hand-edit** `.northstar/*.json` or `activity/`. Use the CLI (it validates every write).
 - **Never edit `.northstar/vision.md` after approval** — `validate` will flag drift. Amend via `change propose` →
   user approves → edit → `change apply`.

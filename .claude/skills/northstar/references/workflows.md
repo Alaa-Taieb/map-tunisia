@@ -21,6 +21,12 @@ Goal: turn the user's idea into an approved vision, specification, roadmap and f
    Revise by re-editing `.northstar/vision.md` / `specification.md` and adding requirements/tasks via the CLI —
    this is allowed freely until approval.
 7. Only after an explicit yes: `northstar vision approve --actor human --note "<their words>"`.
+   If the user **cannot be reached** (an autonomous run that forbids pausing, or they told you to keep going
+   while away), never fake approval and don't track work only in `log` notes. Start tasks with
+   `northstar task start <ID> --provisional`, then complete and verify them as usual. Nothing becomes verified
+   before approval; approving re-checks each provisional task with the evidence already recorded. If you change
+   the vision or a task's requirements after starting it provisionally, approval flags it for review: re-run its
+   checks. Ask for approval at the first chance and say what was done provisionally.
 8. Publish the human-friendly explanation (see `#explain`), propose the first task, and start it.
 
 ## adopt
