@@ -50,7 +50,8 @@ Exit codes: 0 ok · 2 usage · 3 invalid data · 4 rule violation / approval nee
 ## Do work (the everyday loop)
 
 1. Find the matching task: `northstar task list` / `northstar task next`. Prefer the recommended next task.
-2. **Planned work** → `northstar task start <ID> --actor claude-code` before editing code.
+2. **Planned work** → `northstar task start <ID> --actor claude-code` before editing code. Building it together with a
+   dependency that is already started? `task start <ID> --with-dependency`; it verifies only after the dependency does.
 3. **Not in the roadmap** → classify it, then record it:
    - `minor` or `technical` (an implementation detail): `task add --unplanned --classification minor --milestone <MS> --title "..."`, then start it. No approval needed.
    - `extension` of an existing requirement: same, with `--requirements REQ-xxx`.
@@ -63,8 +64,8 @@ Exit codes: 0 ok · 2 usage · 3 invalid data · 4 rule violation / approval nee
    This records a **claim**, not verification.
    Clean up temporary planning files before this final report: all tracked and non-ignored files outside
    `.northstar/` contribute to the evidence fingerprint. If cleanup later makes evidence or human acceptance
-   stale, review the diff, re-report completion with a summary explaining the cleanup, and rerun checks on
-   the final snapshot. Preserve earlier evidence; record human acceptance only after the user confirms
+   stale, review the diff, re-report completion with a summary explaining the cleanup (or `--keep-summary`
+   when the latest summary still holds), and rerun checks on the final snapshot. Preserve earlier evidence; record human acceptance only after the user confirms
    that snapshot. Reopen verified work first with `task reopen --reason`.
 7. Verify with real checks, letting Northstar run them so the result is genuine evidence:
    `northstar task verify <ID> --run "npm test" --method unit-tests --actor claude-code`.

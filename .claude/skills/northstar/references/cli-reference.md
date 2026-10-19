@@ -12,7 +12,7 @@ Rename the project's display name, preserving history and approvals. Does not mo
 
 Create .northstar/ and the Codex + Claude Code adapters in this repository.
 
-### `northstar adopt [--name <name>] [--idea <what it appears to be>] [--prefix NS] [--cli <command>] [--harness all|codex|claude|none]`
+### `northstar adopt [--name <name>] [--idea <what it appears to be>] [--prefix NS] [--cli <command>] [--harness all|codex|claude|none] [--no-hooks] [--mcp]`
 
 Bring an existing repository under Northstar (init --adopt) and print its factual inventory.
 
@@ -112,9 +112,9 @@ Recommended next tasks (ready, by milestone order then priority).
 
 Show one task with its acceptance criteria, evidence and verification verdict.
 
-### `northstar task start <id> [--takeover] [--provisional]`
+### `northstar task start <id> [--takeover] [--provisional] [--with-dependency]`
 
-Register that work has begun (requires an approved vision, satisfied dependencies, approved scope). --provisional records work before vision approval when the user cannot be reached; it cannot be verified until approval.
+Register that work has begun (requires an approved vision, satisfied dependencies, approved scope). --provisional records work before vision approval when the user cannot be reached; it cannot be verified until approval. --with-dependency starts it while its dependencies are themselves being built (started, not yet verified); it cannot be verified before they are.
 
 ### `northstar task block <id> --reason "<what is blocking>"`
 
@@ -124,13 +124,13 @@ Mark a task blocked.
 
 Resolve a blocker and restore the previous status.
 
-### `northstar task complete <id> --summary "<what was done>" [--commit <sha>]... [--file <path>]...`
+### `northstar task complete <id> (--summary "<what was done>" | --keep-summary) [--commit <sha>]... [--file <path>]...`
 
-Report implementation finished. This is a CLAIM: the task becomes 'implemented', not 'verified'.
+Report implementation finished. This is a CLAIM: the task becomes 'implemented', not 'verified'. --keep-summary re-reports with the latest summary unchanged, to refresh the snapshot after a small later change.
 
 ### `northstar task verify <id> [--run "<command>" | --result pass|fail] [--method <name>] [--kind automated|human|agent_reported] [--detail <text>] [--criteria AC1,AC2] [--ref <log-path|url>] [--revision <sha>] [--timeout-ms 600000] [--shell cmd|powershell|bash|<path>]`
 
-Record verification evidence and, if the rules are satisfied, mark the task verified. With --run, Northstar executes the command itself.
+Record verification evidence and, if the rules are satisfied, mark the task verified. With --run, Northstar executes the command itself and stops it after --timeout-ms (default 10 minutes).
 
 ### `northstar task release <id> --release <name>`
 
@@ -146,7 +146,7 @@ Reopen finished or cancelled work (earlier evidence becomes stale on the next co
 
 ### `northstar task update <id> [--title ..] [--description ..] [--priority ..] [--add-depends-on NS-001,..] [--add-requirements REQ-001,..] [--add-accept <criterion>]... [--waive-accept AC1,..  --reason "<why>"] [--file <path>]... [--commit <sha>]... [--change CH-xxx] [--human-approval]`
 
-Adjust task details without changing its status. --waive-accept marks acceptance criteria as dropped (kept on the task as waived, never as met); only the user can waive, with a --reason.
+Adjust task details without changing its status, except that adding criteria to a verified task reopens it (new criteria need work and their own evidence). --waive-accept marks acceptance criteria as dropped (kept on the task as waived, never as met); only the user can waive, with a --reason.
 
 ### `northstar task move <id> --milestone MS-xxx [--feature F-xxx | --no-feature] --reason "<why>" [--change CH-xxx]`
 
@@ -194,7 +194,7 @@ Record the user's decision to defer a change proposal (only valid with --actor h
 
 ### `northstar change apply <id>`
 
-After approval and edits: approve its new requirements and re-baseline vision/spec (new immutable vision version).
+After approval and edits: approve its new requirements and re-baseline vision/spec (new immutable vision version). Afterwards the change still carries milestone edits and task moves for the milestones and tasks it lists.
 
 ### `northstar explain publish --file <explanation.json|->`
 
@@ -220,9 +220,9 @@ Append a note to the activity timeline (e.g. work done outside a task).
 
 One local dashboard for all your projects (run from anywhere; reuses a running one). --export writes a static snapshot of the current project.
 
-### `northstar milestone criterion <MS-id> <X-id> (--run "<command>" [--shell cmd|powershell|bash|<path>] | --evidence "<text>" | --unmet)`
+### `northstar milestone criterion <MS-id> <X-id> (--run "<command>" [--shell cmd|powershell|bash|<path>] [--timeout-ms 600000] | --evidence "<text>" | --unmet)`
 
-Record an exit criterion's state. Executed checks or the user make it met; agent statements are only 'claimed'.
+Record an exit criterion's state. Executed checks or the user make it met; agent statements are only 'claimed'. A --run check is stopped after --timeout-ms (default 10 minutes).
 
 ### `northstar feature attach <F-id> --kind screenshot|test_report|demo|deployment|document|other --ref <repo-path|https-url> [--note <text>]`
 

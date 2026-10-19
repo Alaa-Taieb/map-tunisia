@@ -105,7 +105,8 @@ Use when a request is a new feature or changes product direction, constraints or
    and keeps its ID, acceptance criteria, evidence and status; never cancel and recreate a task to move it.
    `plan import` only creates items; it never updates existing ones.
 5. `northstar change apply CH-001` — re-baselines the vision (new immutable version, original preserved) and
-   approves the new requirements.
+   approves the new requirements. Make vision, specification and requirement edits before applying. After apply,
+   CH-001 still carries `milestone edit` and `task move` for the milestones and tasks it lists; anything else needs a new change.
 
 ## handoff
 
