@@ -28,19 +28,35 @@
   "license": "(MIT AND ODbL-1.0)",
   "type": "module",
   "main": "./src/index.js",
+  "types": "./src/index.d.ts",
   "exports": {
-    ".": "./src/index.js",
-    "./projection": "./src/projection.js",
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./projection": {
+      "types": "./src/projection.d.ts",
+      "default": "./src/projection.js"
+    },
+    "./data/*": "./dist/data/*",
+    "./geojson/*": "./dist/geojson/*",
+    "./topojson/*": "./dist/topojson/*",
+    "./svg/*": "./dist/svg/*",
     "./dist/*": "./dist/*",
     "./package.json": "./package.json"
   },
+  "sideEffects": false,
   "files": [
     "src/",
     "dist/",
     "LICENSE",
     "LICENSE-DATA.md",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20"
   },
@@ -50,7 +66,9 @@
     "build": "node scripts/build/build.js",
     "build:site": "node scripts/build/site.js",
     "test": "node --test \"test/**/*.test.js\"",
-    "serve": "npx --yes serve ."
+    "serve": "npx --yes serve .",
+    "release:zip": "node scripts/release/release.js",
+    "prepublishOnly": "npm test"
   },
   "devDependencies": {
     "fast-xml-parser": "^5.2.0",

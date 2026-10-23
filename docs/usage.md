@@ -234,14 +234,15 @@ dissolve it on `delegation`, `governorate`, `region` or `district` to rebuild an
 ## 13. The npm helper
 
 ```bash
-npm install github:Alaa-Taieb/map-tunisia
+npm install map-tunisia            # or: npm install github:Alaa-Taieb/map-tunisia
 ```
 
 ```js
-import { svgPath, dataPath, cdnURL, fileURL, project, invert, catalog } from 'map-tunisia';
+import { svgPath, dataPath, attributesPath, cdnURL, fileURL, project, invert, catalog } from 'map-tunisia';
 
 svgPath('delegations', 'low', 'dark');   // 'dist/svg/delegations/tunisia-delegations-low-dark.svg'
 dataPath('sectors', 'high', 'geojson');  // 'dist/geojson/tunisia-sectors-high.geojson'
+attributesPath('delegations', 'csv');    // 'dist/data/delegations.csv'
 cdnURL(svgPath('country'), 'v1.0.0');    // jsDelivr URL
 fileURL(svgPath('country'));             // file:// URL inside node_modules (Node, bundlers)
 project([10.18, 36.80]);                 // → [x, y] in SVG units
@@ -249,3 +250,11 @@ catalog.files.sectors;                   // { full: ['plain'], high: [...], ... 
 ```
 
 `svgPath()` throws a helpful error for combinations that don't exist (for example `sectors` at `tiny`).
+
+The attribute tables can be imported directly, no file reading needed:
+
+```js
+import delegations from 'map-tunisia/data/delegations.json' with { type: 'json' };
+```
+
+Subpath exports: `map-tunisia/data/*`, `/geojson/*`, `/topojson/*`, `/svg/*` and `/projection`. TypeScript declarations ship with the package.

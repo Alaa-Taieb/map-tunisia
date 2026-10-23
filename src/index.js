@@ -39,7 +39,18 @@ export function dataPath(partition, lod = 'medium', format = 'topojson') {
   return `dist/${format}/tunisia-${partition}-${lod}.${format}`;
 }
 
-/** jsDelivr URL of any file returned by svgPath() or dataPath(). Pin `ref` to a tag (e.g. "v1.0.0") in production. */
+/**
+ * Repository-relative path of an attribute table (names, codes, populations, areas, label points).
+ * @param {string} partition  country | regions | districts | governorates | delegations | sectors
+ * @param {string} [format]   json | csv
+ */
+export function attributesPath(partition, format = 'json') {
+  if (!catalog.files[partition]) throw new Error(`Unknown partition "${partition}". Use one of: ${Object.keys(catalog.files).join(', ')}`);
+  if (format !== 'json' && format !== 'csv') throw new Error('format must be "json" or "csv"');
+  return `dist/data/${partition}.${format}`;
+}
+
+/** jsDelivr URL of any file returned by svgPath(), dataPath() or attributesPath(). Pin `ref` to a tag (e.g. "v1.0.0") in production. */
 export function cdnURL(relativePath, ref = 'main') {
   return `${CDN_BASE}@${ref}/${relativePath}`;
 }

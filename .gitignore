@@ -17,3 +17,7 @@ Thumbs.db
 # Logs
 npm-debug.log*
 *.log
+
+# Release ZIPs and checksums (npm run release:zip) — attach to the GitHub release, never commit
+/release/
+*.tgz

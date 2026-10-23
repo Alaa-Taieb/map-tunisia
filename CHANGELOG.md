@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 Data releases also state the date of the OpenStreetMap extract they were built from.
 
+## [Unreleased]
+
+### Added
+- npm packaging: TypeScript declarations, `attributesPath()`, subpath exports for the JSON/GeoJSON/TopoJSON/SVG files.
+- `npm run release:zip`: reproducible per-format release ZIPs and a SHA-256 checksum file in `release/`.
+
 ## [1.0.0] — 2026-10-17
 
 First public release, built from the OpenStreetMap extract of **2026-10-16**.

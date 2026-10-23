@@ -149,7 +149,41 @@ dist/data/<partition>.csv | .json                             names, codes, popu
 Browse every combination in the **[file catalog](docs/catalog.md)** or the **[live explorer](https://alaa-taieb.github.io/map-tunisia/)**,
 or grab everything with **[Download ZIP](https://github.com/Alaa-Taieb/map-tunisia/archive/refs/heads/main.zip)**.
 
-For JavaScript projects: `npm install github:Alaa-Taieb/map-tunisia`, then `import { svgPath, project } from 'map-tunisia'` ([API](docs/usage.md#13-the-npm-helper)).
+### 📦 Install from npm
+
+```bash
+npm install map-tunisia
+```
+
+```js
+import { svgPath, attributesPath, project, catalog } from 'map-tunisia';   // helpers (TypeScript types included)
+import delegations from 'map-tunisia/data/delegations.json' with { type: 'json' };   // 279 rows, no fetch needed
+
+delegations.length;                          // 279
+catalog.partitions.map((p) => p.count);      // [1, 7, 5, 24, 279, 2083]
+svgPath('governorates', 'medium', 'light');  // 'dist/svg/governorates/tunisia-governorates-medium-light.svg'
+```
+
+The maps are plain files, so bundlers and servers can reach them through subpath exports:
+`map-tunisia/svg/…`, `map-tunisia/geojson/…`, `map-tunisia/topojson/…` and `map-tunisia/data/…`
+(for example `map-tunisia/geojson/tunisia-governorates-medium.geojson`). The package is large (about 35 MB packed, every
+level of detail included); if you only need one file, use the CDN links above or a release ZIP below.
+Full API: [docs/usage.md](docs/usage.md#13-the-npm-helper).
+
+### 🗜️ Versioned release ZIPs
+
+Each release ships one ZIP per format plus a checksum file, named after the package version:
+
+| File | Contents |
+| --- | --- |
+| `map-tunisia-vX.Y.Z-geojson.zip` | GeoJSON, every partition and level of detail |
+| `map-tunisia-vX.Y.Z-topojson.zip` | TopoJSON, every partition and level of detail |
+| `map-tunisia-vX.Y.Z-json.zip` / `-csv.zip` | attribute tables (names, codes, populations, areas, label points) |
+| `map-tunisia-vX.Y.Z-svg.zip` | all 140 SVG maps |
+| `map-tunisia-vX.Y.Z-SHA256SUMS.txt` | checksums: `sha256sum -c map-tunisia-vX.Y.Z-SHA256SUMS.txt` |
+
+Download them from the project's *Releases* page, or build them yourself from a clone: `npm install && npm run release:zip`
+writes everything into `release/` (git-ignored). The archives are reproducible: same sources, same bytes.
 
 ## 📦 What's inside
 
@@ -215,7 +249,8 @@ See **[projection & coordinates](docs/projection.md)**.
 ```bash
 npm install
 npm run build        # dist/ from data/ in ~30 s
-npm test             # 160+ checks: counts, ids, nesting, areas, populations, XML validity, sizes, projection
+npm test             # 160+ checks: counts, ids, nesting, areas, populations, XML validity, sizes, projection, package + ZIPs
+npm run release:zip  # versioned ZIPs + SHA256SUMS into release/
 
 # refresh from the latest OpenStreetMap data (Python 3.10+)
 pip install -r scripts/extract/requirements.txt
@@ -234,7 +269,7 @@ a custom SVG writer (labels with polylabel, map colouring, accessible markup). S
 - [ ] Optional water layer: lagoons, sebkhas, chotts and dams
 - [ ] Cities and capitals as point layers
 - [ ] Tamazight (Tifinagh) and English-transliteration label modes
-- [ ] Published npm package and versioned release ZIPs
+- [x] npm package (types, JSON data exports) and versioned release ZIPs with checksums
 
 Ideas and votes are welcome in the [issues](https://github.com/Alaa-Taieb/map-tunisia/issues).
 
