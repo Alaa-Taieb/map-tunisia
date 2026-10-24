@@ -1,7 +1,7 @@
 {
   "name": "map-tunisia",
-  "version": "1.2.0",
-  "description": "The most accurate open-source SVG maps of Tunisia: 6 nested partitions (country, regions, districts, governorates, delegations, sectors) plus municipalities (baladiyat) and a water layer (lakes, sebkhas, chotts, lagoons) × 5 levels of detail × 8 visual modes, plus GeoJSON & TopoJSON.",
+  "version": "1.3.0",
+  "description": "The most accurate open-source SVG maps of Tunisia: 6 nested partitions (country, regions, districts, governorates, delegations, sectors) plus municipalities (baladiyat), a water layer (lakes, sebkhas, chotts, lagoons) and a cities point layer (capital, governorate capitals, municipal seats) × 5 levels of detail × 8 visual modes, plus GeoJSON & TopoJSON.",
   "keywords": [
     "tunisia",
     "tunisie",
@@ -20,6 +20,9 @@
     "sebkha",
     "chott",
     "lagoons",
+    "cities",
+    "capitals",
+    "مدن",
     "choropleth",
     "openstreetmap"
   ],

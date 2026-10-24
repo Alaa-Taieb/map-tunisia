@@ -169,7 +169,7 @@ svgPath('governorates', 'medium', 'light');  // 'dist/svg/governorates/tunisia-g
 
 The maps are plain files, so bundlers and servers can reach them through subpath exports:
 `map-tunisia/svg/…`, `map-tunisia/geojson/…`, `map-tunisia/topojson/…` and `map-tunisia/data/…`
-(for example `map-tunisia/geojson/tunisia-governorates-medium.geojson`). The package is large (about 44 MB packed, every
+(for example `map-tunisia/geojson/tunisia-governorates-medium.geojson`). The package is large (about 46 MB packed, every
 level of detail included); if you only need one file, use the CDN links above or a release ZIP below.
 Full API: [docs/usage.md](docs/usage.md#13-the-npm-helper).
 

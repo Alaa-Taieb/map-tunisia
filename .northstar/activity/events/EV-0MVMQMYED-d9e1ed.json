@@ -1,0 +1,14 @@
+{
+  "id": "EV-0MVMQMYED-d9e1ed",
+  "type": "verification.recorded",
+  "at": "2026-10-24T18:34:19.429Z",
+  "actor": "claude-code",
+  "session": "d1621363-f614-4526-8eb7-1f8c8f7e8494",
+  "entityIds": [
+    "NS-017"
+  ],
+  "summary": "automated check \"unit-tests\" pass for NS-017",
+  "data": {
+    "evidence": "E1"
+  }
+}

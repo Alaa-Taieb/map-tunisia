@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMQMTPN-848602",
+  "type": "task.implemented",
+  "at": "2026-10-24T18:34:13.355Z",
+  "actor": "claude-code",
+  "session": "d1621363-f614-4526-8eb7-1f8c8f7e8494",
+  "entityIds": [
+    "NS-017",
+    "MS-005"
+  ],
+  "summary": "claude-code reported NS-017 implemented (NOT verified): Cities point layer (v1.3.0): 284 OSM place nodes = Tunis (national capital, admin_centre of the country, capital=yes) + 23 other governorate capitals (admin_centre of each governorate relation) + 260 municipal seats (municipality admin_centre or same-name settlement node inside it). 56 of 338 OSM municipalities have no supporting node and get no point (listed in cities-report.json and docs/accuracy.md#cities); nothing invented. Each point: type, capital_of, ar/fr/en names, governorate/delegation/sector/municipality, lon/lat, x/y in the SVG frame. scripts/extract/cities.py; build writes dist/data/cities.csv|json, dist/svg/cities (full-low x 7 modes), point GeoJSON/TopoJSON per LOD; src types; test/cities.test.js; README section, roadmap ticked, docs. AC1 note: no population threshold, because OSM population tags are sparse; the selection rule is municipal-seat status.",
+  "data": {
+    "revision": "06c051b3edcd07556a342ba8b253b77c92448619+dirty"
+  }
+}

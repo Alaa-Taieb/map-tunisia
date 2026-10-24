@@ -6,6 +6,29 @@ Data releases also state the date of the OpenStreetMap extract they were built f
 
 ## [Unreleased]
 
+## [1.3.0] — 2026-10-24
+
+Built from the same OpenStreetMap extract of **2026-10-16**. The geometry and attributes of the six nested partitions, the
+municipalities and the water layer are unchanged; only the version stamp in their SVG metadata moves to 1.3.0.
+
+### Added
+- **Cities layer**, `cities`: a point layer of 284 OpenStreetMap place nodes — the national capital (Tunis), the other
+  23 governorate capitals and 260 seats of OSM municipalities. Each point carries its `type` (`national_capital`,
+  `governorate_capital` or `city`), `capital_of`, names (ar/fr/en), governorate, region, district, delegation, sector,
+  the municipality it is the seat of, `lon`/`lat`, its `x`/`y` in the shared SVG frame, the OSM `place` type, how it was
+  found (`seat_source`), Wikidata item and OSM node. Ids are `city-n<OSM node>`.
+- Capitals come from the `admin_centre` members of the country and governorate relations; a municipal seat is the
+  municipality's `admin_centre` or the settlement node of the same name in it. Nothing is typed in by hand: 56 of the 338
+  OSM municipalities have no such node and get no point, and the 12 municipalities missing from OSM (Sfax and Sidi Bouzid
+  among them) have none either. Both lists are in the accuracy report.
+- SVG (`full`, `high`, `medium`, `low` × 7 modes; no `nested`): dots sized and coloured by type over the land and the
+  governorate borders, labels placed without overlaps (every capital, with leader lines in Grand Tunis; capitals only at
+  `low`). Point GeoJSON and TopoJSON per level of detail, CSV and JSON, in the existing naming scheme, subpath exports and
+  release ZIPs. 191 SVG files in total.
+- `scripts/extract/cities.py` (`npm run extract:cities`), `CityAttributes` and `CityType` TypeScript types, the layer in
+  the explorer, a cities section in the accuracy report and the reference tables, usage examples with `project()`, and tests
+  (one capital per governorate lying inside it, every point in its governorate, `x`/`y` equal to `project()`).
+
 ## [1.2.0] — 2026-10-24
 
 Built from the same OpenStreetMap extract of **2026-10-16**. The geometry and attributes of the six nested partitions and

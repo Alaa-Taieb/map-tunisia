@@ -1064,7 +1064,7 @@
       "requirementIds": [],
       "dependsOn": [],
       "priority": "low",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -1082,14 +1082,49 @@
         }
       ],
       "requiresHumanApproval": false,
+      "activeHarness": "claude-code",
+      "session": "d1621363-f614-4526-8eb7-1f8c8f7e8494",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T18:00:13.259Z",
       "commits": [],
-      "files": [],
-      "evidence": [],
+      "files": [
+        "scripts/extract/cities.py",
+        "scripts/build/build.js",
+        "scripts/build/svg.js",
+        "scripts/build/config.js",
+        "test/cities.test.js",
+        "data/attributes/cities.csv",
+        "dist/data/cities.csv",
+        "README.md",
+        "docs/usage.md"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T18:34:13.355Z",
+        "by": "claude-code",
+        "summary": "Cities point layer (v1.3.0): 284 OSM place nodes = Tunis (national capital, admin_centre of the country, capital=yes) + 23 other governorate capitals (admin_centre of each governorate relation) + 260 municipal seats (municipality admin_centre or same-name settlement node inside it). 56 of 338 OSM municipalities have no supporting node and get no point (listed in cities-report.json and docs/accuracy.md#cities); nothing invented. Each point: type, capital_of, ar/fr/en names, governorate/delegation/sector/municipality, lon/lat, x/y in the SVG frame. scripts/extract/cities.py; build writes dist/data/cities.csv|json, dist/svg/cities (full-low x 7 modes), point GeoJSON/TopoJSON per LOD; src types; test/cities.test.js; README section, roadmap ticked, docs. AC1 note: no population threshold, because OSM population tags are sparse; the selection rule is municipal-seat status.",
+        "revision": "06c051b3edcd07556a342ba8b253b77c92448619+dirty",
+        "tree": "86e453b9a02267b1554b602cd167e482ab3b2cab"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "unit-tests",
+          "result": "pass",
+          "revision": "06c051b3edcd07556a342ba8b253b77c92448619+dirty",
+          "tree": "86e453b9a02267b1554b602cd167e482ab3b2cab",
+          "at": "2026-10-24T18:34:19.429Z",
+          "by": "claude-code",
+          "detail": "$ npm test\nshell: bash\nexit 0\ng cities/full/plain (86.2147ms)\n✔ svg cities/high/plain (8.9138ms)\n✔ svg cities/high/outline (9.487ms)\n✔ svg cities/medium/plain (5.6315ms)\n✔ svg cities/medium/outline (5.8361ms)\n✔ svg cities/medium/light (5.6166ms)\n✔ svg cities/medium/dark (5.6943ms)\n✔ svg cities/medium/labeled (6.7326ms)\n✔ svg cities/medium/labeled-ar (6.5899ms)\n✔ svg cities/medium/interactive (6.4626ms)\n✔ svg cities/low/plain (41.9099ms)\n✔ svg cities/low/outline (5.2616ms)\n✔ svg cities/low/light (5.313ms)\n✔ svg cities/low/dark (5.0327ms)\n✔ svg cities/low/labeled (5.0631ms)\n✔ svg cities/low/labeled-ar (6.0415ms)\n✔ svg cities/low/interactive (4.9811ms)\n✔ water count matches the extraction, and every type is present (2.4607ms)\n✔ water ids are unique, well-formed and point to their OSM source (0.2737ms)\n✔ every water body has a name, a governorate, a region and a district (1.4922ms)\n✔ the landmark water bodies are there, with the right type and governorate (0.1869ms)\n✔ water bodies never overlap, stay in Tunisia, and lagoons stay on the sea side (0.1266ms)\n✔ the water layer is an overlay: it does not alter the nested partitions (2.4944ms)\n✔ water GeoJSON and TopoJSON (full) (61.9389ms)\n✔ water GeoJSON and TopoJSON (high) (16.9813ms)\n✔ water GeoJSON and TopoJSON (medium) (7.9423ms)\n✔ water GeoJSON and TopoJSON (low) (3.7109ms)\n✔ water SVGs draw the land under the water bodies and colour them by type (26.2203ms)\nℹ tests 249\nℹ suites 0\nℹ pass 249\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 2170.2093",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-24T14:01:54.856Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-24T14:01:54.856Z"
+      "updatedAt": "2026-10-24T18:34:19.429Z"
     },
     {
       "id": "NS-018",

@@ -1,0 +1,12 @@
+{
+  "id": "EV-0MVMQMYED-dda7c4",
+  "type": "task.verified",
+  "at": "2026-10-24T18:34:19.429Z",
+  "actor": "claude-code",
+  "session": "d1621363-f614-4526-8eb7-1f8c8f7e8494",
+  "entityIds": [
+    "NS-017",
+    "MS-005"
+  ],
+  "summary": "Task NS-017 verified: Cities and capitals as point layers"
+}

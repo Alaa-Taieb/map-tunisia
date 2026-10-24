@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMQNH5N-2a8c0e",
+  "type": "handoff.created",
+  "at": "2026-10-24T18:34:43.739Z",
+  "actor": "claude-code",
+  "session": "d1621363-f614-4526-8eb7-1f8c8f7e8494",
+  "entityIds": [
+    "HO-0MVMQNH5N-94ac5f"
+  ],
+  "summary": "claude-code recorded a handoff: NS-017 cities layer done locally as v1.3.0 on main (6 commits ahead of origin, NOT pushed, NOT published to npm, no release ZIPs). 284 OSM points: Tunis + 23 other governorate capitals (admin_centre of country/governorate relations) + 260 municipal seats (municipality admin_centre or same-name settlement node inside it). 56 of 338 OSM municipalities have no supporting node and get no point; 12 municipalities are missing from OSM (incl. Sfax, Sidi Bouzid), so those capitals have an empty municipality field. npm test: 249 pass; npm run build OK. Choices for the owner to confirm: no population threshold (OSM population tags sparse), selection = municipal-seat status; labels on low LOD show capitals only; ambiguous seats resolved by place rank/Wikidata/nearest centre (Hazeg El Louza -> Ellouza, Zriba -> Hammam Zriba, Kesra -> Kesra Supérieure). Owner should check the cities SVGs visually. Next: owner's push/publish order; NS-014 explorer 404; NS-018 Tifinagh labels; NS-008/NS-015 acceptance."
+}
