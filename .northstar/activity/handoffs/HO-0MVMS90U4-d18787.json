@@ -1,0 +1,11 @@
+{
+  "id": "HO-0MVMS90U4-d18787",
+  "at": "2026-10-24T19:19:28.636Z",
+  "actor": "claude-code",
+  "summary": "NS-018 done locally as v1.4.0 (commit b6ff171 on main, 7 commits ahead of origin, NOT pushed, NOT published to npm, no release ZIPs). New modes labeled-tfng and labeled-en (44 SVGs, 235 total); name_tfng / name_tfng_source / name_translit columns in all tables. Tifinagh: 11 OSM names (country + 10 cities), the rest transliterated from Arabic with IRCAM letters; English: ASCII Latin names with English water generics (DEC-007). npm test 300 pass. Owner to confirm: the transliteration approach and the English interpretation (no dj->j / ou->u respelling), and check the Tifinagh SVGs visually (needs Ebrima on Windows or Noto Sans Tifinagh). Next: push/publish order for 1.3.0 + 1.4.0, NS-014 explorer 404, NS-008/NS-015 acceptance.",
+  "nextSteps": [],
+  "openQuestions": [],
+  "inProgressTaskIds": [],
+  "revision": "b6ff171cce8c519a47768ccfb3cd35188281ff35",
+  "branch": "main"
+}
