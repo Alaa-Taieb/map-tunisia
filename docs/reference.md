@@ -2,7 +2,7 @@
 
 # Reference tables
 
-Every unit of the coarser partitions and the municipalities, with identifiers, names and figures. Sectors (imadas) are too many for a page — use
+Every unit of the coarser partitions, the municipalities, the water bodies and the cities, with identifiers, names and figures. Sectors (imadas) are too many for a page — use
 [`dist/data/sectors.csv`](../dist/data/sectors.csv). Areas are ellipsoidal; populations are INS census counts (RGPH 2014 and 2024).
 
 - [Economic regions](#economic-regions)
@@ -11,6 +11,7 @@ Every unit of the coarser partitions and the municipalities, with identifiers, n
 - [Delegations](#delegations)
 - [Municipalities](#municipalities)
 - [Water bodies](#water-bodies)
+- [Cities](#cities)
 
 ## Economic regions
 
@@ -891,3 +892,295 @@ Method and checks: [accuracy report](accuracy.md#water-bodies).
 | `water-w1117620876` | sebkha | Sabkhat al Djelidja | — | Sfax | 1.7 |
 | `water-w1117620878` | sebkha | Sabkhat al Aougued | — | Sfax | 1.5 |
 | `water-w263233683` | sebkha | Sebkha Jallabia | — | Médenine | 1.3 |
+
+## Cities
+
+284 points: the capital (★), the governorate capitals (●) and the municipal seats, by governorate. The `id`
+carries the OSM node number. Method and checks: [accuracy report](accuracy.md#cities).
+
+| id | Nom (FR) | الاسم | Name (EN) | Governorate | Municipality | lon, lat |
+| --- | --- | --- | --- | --- | --- | --- |
+| `city-n27564968` | Tunis ★ | تونس | Tunis | Tunis | Tunis | 10.1858, 36.8002 |
+| `city-n1136727225` | Carthage | قرطاج | Carthage | Tunis | Carthage | 10.3310, 36.8548 |
+| `city-n283645091` | La Goulette | حلق الوادي | La Goulette | Tunis | La Goulette | 10.3042, 36.8159 |
+| `city-n287547219` | La Marsa | المرسى | La Marsa | Tunis | La Marsa | 10.3277, 36.8791 |
+| `city-n287558953` | Le Bardo | باردو | Le Bardo | Tunis | Le Bardo | 10.1363, 36.8140 |
+| `city-n1136725873` | Le Kram | الكرم | Le Kram | Tunis | Le Kram | 10.3182, 36.8348 |
+| `city-n288137819` | Sidi Bou Saïd | سيدي بوسعيد | Sidi Boussaid | Tunis | Sidi Bou Said | 10.3491, 36.8711 |
+| `city-n3145829326` | Sidi Hassine | سيدي حسين | Sidi Hassine | Tunis | Sidi Hassine | 10.1103, 36.7708 |
+| `city-n287554239` | Ariana ● | أريانة | Ariana | Ariana | Ariana Ville | 10.1882, 36.8587 |
+| `city-n3013469458` | Kalâat el-Andalous | قلعة الأندلس | Kalâat el-Andalous | Ariana | Kallat El Andalous | 10.1181, 37.0625 |
+| `city-n7390818324` | La Soukra | سكرة | La Soukra | Ariana | Soukra | 10.2454, 36.8750 |
+| `city-n7392217691` | Mnihla | المنيهلة | Mnihla | Ariana | Mnihla | 10.1170, 36.8533 |
+| `city-n1156944210` | Raoued | رواد | Raoued | Ariana | Raoued | 10.1892, 36.9536 |
+| `city-n660826515` | Sidi Thabet | سيدي ثابت | Sidi Thabet | Ariana | Sidi Thabet | 10.0425, 36.9085 |
+| `city-n287550909` | Ben Arous ● | بن عروس | Ben Arous | Ben Arous | Ben Arous | 10.2245, 36.7517 |
+| `city-n7716925563` | Bou Mhel el-Bassatine | بومهل البساتين | Bou Mhel el-Bassatine | Ben Arous | Bou Mhel El Bassatine | 10.3011, 36.7244 |
+| `city-n1204588103` | Ezzahra | الزهراء | Ezzahra | Ben Arous | Ezzahra | 10.3029, 36.7404 |
+| `city-n286354073` | Fouchana | فوشانة | Fouchana | Ben Arous | Fouchana | 10.1694, 36.6987 |
+| `city-n2063816292` | Hammam Chott | حمام الشط | Hammam Chott | Ben Arous | Hammam Chott | 10.3643, 36.7190 |
+| `city-n4394953973` | Hammam-Lif | حمام الأتف | Hammam-Lif | Ben Arous | Hammam Lif | 10.3364, 36.7314 |
+| `city-n7716925564` | Mégrine | مقرين | Mégrine | Ben Arous | Megrine | 10.2316, 36.7703 |
+| `city-n2988370656` | Mohamedia | المحمدية | Mohamedia | Ben Arous | Mohamedia | 10.1570, 36.6797 |
+| `city-n1157744669` | Mornag | مرناق | Mornag | Ben Arous | Mornag | 10.2902, 36.6807 |
+| `city-n286091511` | Radès | رادس | Radès | Ben Arous | Radès | 10.2725, 36.7679 |
+| `city-n2988385577` | La Manouba ● | منوبة | Manouba | La Manouba | Manouba | 10.0947, 36.8113 |
+| `city-n2828090546` | Borj El Amri | برج العامري | Borj El Amri | La Manouba | Borj El Amri | 9.8830, 36.7130 |
+| `city-n7359785747` | Djedeida | الجديدة | Djedeida | La Manouba | Djedaïda | 9.9353, 36.8493 |
+| `city-n7720714782` | Douar Hicher | دوار هيشر | Douar Hicher | La Manouba | Douar Hicher | 10.0961, 36.8237 |
+| `city-n3668370508` | El Battan | البطان | El Battan | La Manouba | El Battane | 9.8444, 36.8044 |
+| `city-n1564481999` | Mornaguia | المرناقية | Mornaguia | La Manouba | Mornaguia | 10.0149, 36.7572 |
+| `city-n287619187` | Oued Ellil | وادي الليل | Oued Ellil | La Manouba | Oued Ellil | 10.0422, 36.8377 |
+| `city-n1435708256` | Tebourba | طبربة | Tebourba | La Manouba | Tebourba | 9.8413, 36.8302 |
+| `city-n287534172` | Nabeul ● | نابل | Nabeul | Nabeul | Nabeul | 10.7356, 36.4513 |
+| `city-n1124133881` | Beni Khalled | بني خلاد | Beni khalled | Nabeul | Ben Khalled | 10.5918, 36.6495 |
+| `city-n1128018620` | Béni Khiar | بني خيار | Béni Khiar | Nabeul | Ben Khiar | 10.7810, 36.4694 |
+| `city-n1190878345` | Bou Argoub | بوعرقوب | Bou Argoub | Nabeul | Bou Argoub | 10.5499, 36.5342 |
+| `city-n7024204920` | Dar Allouch | دار علوش | Dar Allouch | Nabeul | Dar Allouch | 11.0499, 36.9694 |
+| `city-n1851671410` | Dar Chaâbane | دار شعبان الفهري | Dar Chaabane | Nabeul | Dar Chaabane El Fehri | 10.7478, 36.4666 |
+| `city-n1128664030` | El Haouaria | الهوارية | El Haouaria | Nabeul | El Haouaira | 11.0116, 37.0498 |
+| `city-n2080476679` | El Mida | الميدة | Al Mida | Nabeul | El Mida | 10.8534, 36.7255 |
+| `city-n1124134746` | Grombalia | قرمبالية | Grombalia | Nabeul | Grombalia | 10.4990, 36.5984 |
+| `city-n2078807462` | Hammam El Ghezaz | حمام الغزاز | Hammam Al Ghezaz | Nabeul | Hammam El Ghezaz | 11.1082, 36.8740 |
+| `city-n287583296` | Hammamet | الحمامات | Hammamet | Nabeul | Hammamet | 10.6191, 36.4007 |
+| `city-n287625642` | Kélibia | قليبية | Kelibia | Nabeul | Kelibia | 11.0936, 36.8457 |
+| `city-n2187459836` | Korba | قربة | Korba | Nabeul | Korba | 10.8576, 36.5729 |
+| `city-n1128665422` | Korbous | قربص | Korbous | Nabeul | Korbous | 10.5689, 36.8163 |
+| `city-n1865629269` | Maâmoura | المعمورة | Maâmoura | Nabeul | El Maamoura | 10.8048, 36.4653 |
+| `city-n1124136154` | Menzel Bou Zelfa | منزل بوزلفة | Menzel Bou Zelfa | Nabeul | Menzel Bouzelfa | 10.5847, 36.6821 |
+| `city-n7026035143` | Menzel Horr | منزل حر | Menzel Horr | Nabeul | Menzel Hor | 10.9532, 36.7269 |
+| `city-n6039044550` | Menzel Temime | منزل تميم | Menzel Temime | Nabeul | Menzel Temime | 10.9939, 36.7807 |
+| `city-n1109177626` | Sidi Jadidi | سيدي الجديدي | Sidi Jadidi | Nabeul | Sidi Jadidi | 10.4557, 36.4171 |
+| `city-n1124155543` | Soliman | سليمان | Soliman | Nabeul | Soliman | 10.4866, 36.6944 |
+| `city-n1128016495` | Somâa | الصمعة | Somâa | Nabeul | Somaa | 10.7841, 36.5428 |
+| `city-n4633446424` | Tazarka | تازركة | Tazerka | Nabeul | Tazarka | 10.8367, 36.5460 |
+| `city-n7023542479` | Tazoghrane | تزغران | Tazoghrane | Nabeul | Tazaghrane | 10.8691, 36.8941 |
+| `city-n2191295542` | Zaouiet Jedidi | زاوية الجديدي | Zaouiet Djedidi | Nabeul | Zaouiet Jdidi | 10.5746, 36.6434 |
+| `city-n1216174459` | Zaghouan ● | زغوان | Zaghouan | Zaghouan | Zaghouan | 10.1446, 36.3995 |
+| `city-n1277766900` | Bir Mcherga | بئر مشارڤة | Bir Mcherga | Zaghouan | Bir Mcherga | 9.9544, 36.5181 |
+| `city-n1863372804` | Djebel Oust | جبل الوسط | Djebel Oust | Zaghouan | Jebel Oust | 10.0613, 36.5551 |
+| `city-n2735157275` | El Amaiem | العمايم | El Amaiem | Zaghouan | El Amaiem | 9.8454, 36.3318 |
+| `city-n1277956973` | El Fahs | الفحص | El Fahs | Zaghouan | El Fahs | 9.9019, 36.3717 |
+| `city-n1419136771` | Ennadhour | الناظور | Ennadhour | Zaghouan | Ennadhour | 10.0931, 36.1238 |
+| `city-n312490313` | Hammam Zriba | حمام الزريبة | Zriba | Zaghouan | Zriba | 10.2079, 36.3512 |
+| `city-n1419131100` | Saouaf | صواف | Sawwaf | Zaghouan | Saouaf | 10.1712, 36.2276 |
+| `city-n287544816` | Bizerte ● | بنزرت | Bizerte | Bizerte | Bizerte | 9.8709, 37.2721 |
+| `city-n3771494614` | Aousja | عوسجة | Aousja | Bizerte | Ousja | 10.1021, 37.1399 |
+| `city-n1839362661` | El Alia | العالية | El Alia | Bizerte | El Alia | 10.0339, 37.1689 |
+| `city-n8039274824` | El Hachechna | الحشاشنة | El Hachechna | Bizerte | El Hchachna | 9.2757, 37.1519 |
+| `city-n470285468` | Ghar El Melh | غار الملح | Ghar El Melh | Bizerte | Ghar El Melh | 10.1917, 37.1697 |
+| `city-n1310557105` | Ghezala | غزالة | Ghezala | Bizerte | Ghezala | 9.5346, 37.0835 |
+| `city-n1433130924` | Joumine | جومين | Joumine | Bizerte | Joumine | 9.3890, 36.9254 |
+| `city-n299277153` | Mateur | ماطر | Matir | Bizerte | Mateur | 9.6677, 37.0386 |
+| `city-n471061641` | Menzel Abderrahmane | منزل عبد الرحمان | Menzel Abderrahmane | Bizerte | Menzel Abderrahmane | 9.8631, 37.2361 |
+| `city-n287618126` | Menzel Bourguiba | منزل بورقيبة | Manzil Bourguiba | Bizerte | Menzel Bourguiba | 9.7926, 37.1550 |
+| `city-n7364294250` | Menzel Jemil | منزل جميل | Menzel Jemil | Bizerte | Menzel Jemil | 9.9130, 37.2393 |
+| `city-n1132950382` | Metline | ماتلين | Al Matlin | Bizerte | Metline | 10.0475, 37.2441 |
+| `city-n674918398` | Rafraf | رفراف | Rafraf | Bizerte | Rafraf | 10.1816, 37.1908 |
+| `city-n469845572` | Ras Jebel | رأس الجبل | Ras Jebel | Bizerte | Ras Jebel | 10.1246, 37.2146 |
+| `city-n1431973885` | Sejnane | سجنان | Sajanan | Bizerte | Sejnane | 9.2398, 37.0577 |
+| `city-n1109384824` | Tinja | تينجة | Tinja | Bizerte | Tinja | 9.7706, 37.1639 |
+| `city-n287590041` | Béja ● | باجة | Béja | Béja | Béja | 9.1854, 36.7237 |
+| `city-n4099579144` | Amdoun | عمدون | Zahret Medien | Béja | Zahret Medien | 9.0895, 36.7686 |
+| `city-n9827524488` | El Maagoula | المعقولة | El Maagoula | Béja | El Maagoula | 9.2105, 36.7078 |
+| `city-n3151789161` | Goubellat | قبلاط | Goubellat | Béja | Goubellat | 9.6632, 36.5400 |
+| `city-n299265771` | Medjez El-Bab | مجاز الباب | Medjez El-Bab | Béja | Medjez El Bab | 9.6165, 36.6471 |
+| `city-n1432078789` | Nefza | نفزة | Nefza | Béja | Nefza | 9.0748, 36.9749 |
+| `city-n1432078792` | Ouechtata | وشتاتة | Ouechtata | Béja | Ouechtata | 8.9978, 36.9609 |
+| `city-n7685117577` | Sidi Smail | سيدي إسماعيل | Sidi Smail | Béja | Sidi Smail | 9.1125, 36.5970 |
+| `city-n1452253031` | Slouguia | السلوقية | Slouguia | Béja | Esslouguia | 9.5114, 36.5798 |
+| `city-n1116804955` | Téboursouk | تبرسق | Téboursouk | Béja | Teboursouk | 9.2426, 36.4615 |
+| `city-n1452253103` | Testour | تستور | Testour | Béja | Testour | 9.4419, 36.5520 |
+| `city-n2832036076` | Thibar | تيبار | Thibar | Béja | Tibar | 9.1050, 36.5218 |
+| `city-n287625095` | Jendouba ● | جندوبة | Jendouba | Jendouba | Jendouba | 8.7757, 36.4967 |
+| `city-n548180838` | Aïn Draham | عين دراهم | Aïn Draham | Jendouba | Ain Draham | 8.6880, 36.7775 |
+| `city-n4790875980` | Beni M'tir | بني مطير | Bani Matir | Jendouba | Beni M'tir | 8.7347, 36.7399 |
+| `city-n1837034352` | Bou Salem | بوسالم | Bou Salem | Jendouba | Bousalem | 8.9697, 36.6074 |
+| `city-n4790853022` | Fernana | فرنانة | Firnana | Jendouba | Fernana | 8.6958, 36.6557 |
+| `city-n299272084` | Ghardimaou | غار الدماء | Ghardimaou | Jendouba | Ghardimaou | 8.4425, 36.4506 |
+| `city-n2840204369` | Oued Meliz | وادي مليز | Oued Melliz | Jendouba | Oued Meliz | 8.5500, 36.4678 |
+| `city-n2043739836` | Tabarka | طبرقة | Tabarka | Jendouba | Tabarka | 8.7574, 36.9546 |
+| `city-n287622372` | Le Kef ● | الكاف | Al-Kaf | Le Kef | Kef | 8.7073, 36.1784 |
+| `city-n2610858564` | Bahra | بهرة | Bahra | Le Kef | Bahra | 8.9125, 36.2488 |
+| `city-n2020536002` | Dahmani | الدهماني | Dahmani | Le Kef | Dahmani | 8.8284, 35.9424 |
+| `city-n2841662850` | El Ksour | القصور | El Ksour | Le Kef | El Ksour | 8.8807, 35.8986 |
+| `city-n7069861238` | El Marja | المرجى | El Marja | Le Kef | El Marja | 9.0784, 36.0272 |
+| `city-n1899219943` | Jérissa | الجريصة | Jérissa | Le Kef | Djerissa | 8.6310, 35.8450 |
+| `city-n674434208` | Kalâat Khasba | القلعة الخصبة | Kalâat Khasba | Le Kef | Kalaat Khasba | 8.5878, 35.6655 |
+| `city-n501803032` | Kalaat Senan | قلعة سنان | Kalaat es Senam | Le Kef | Kalaat Senan | 8.3438, 35.7673 |
+| `city-n2017271470` | Le Sers | السرس | Sers | Le Kef | Sers | 9.0193, 36.0735 |
+| `city-n7380306576` | Menzel Salem | منزل سالم | Menzel Salem | Le Kef | Menzel Salem | 8.4773, 35.8560 |
+| `city-n3430536430` | Nebeur | نبر | Nibbar | Le Kef | Nebeur | 8.7713, 36.3051 |
+| `city-n462003374` | Sakiet Sidi Youssef | ساقية سيدي يوسف | Sakiet Sidi Youcef | Le Kef | Sakiet Sidi Youssef | 8.3547, 36.2220 |
+| `city-n1899226322` | Tajerouine | تاجروين | Tajerouine | Le Kef | Tajerouine | 8.5530, 35.8914 |
+| `city-n675058710` | Touiref | الطويرف | Touiref | Le Kef | Touiref | 8.5798, 36.3399 |
+| `city-n2930586474` | Siliana ● | سليانة | Siliana | Siliana | Siliana | 9.3744, 36.0847 |
+| `city-n1278517274` | Bargou | برقو | Bargou | Siliana | Bargou | 9.5667, 36.0914 |
+| `city-n1544821258` | Bou Arada | بوعرادة | Bou Arada | Siliana | Bou Arada | 9.6241, 36.3511 |
+| `city-n1452253016` | El Aroussa | العروسة | El Aroussa | Siliana | El Aroussa | 9.4523, 36.3792 |
+| `city-n1452253022` | El Krib | الكريب | Al Krib | Siliana | El Krib | 9.1353, 36.3271 |
+| `city-n1452253010` | Gaâfour | قعفور | Gaâfour | Siliana | Gaafour | 9.3218, 36.3243 |
+| `city-n1941836055` | Kesra Supérieure | كسرى العليا | Kesra | Siliana | Kesra | 9.3648, 35.8132 |
+| `city-n1088455110` | Makthar | مكثر | Maktar | Siliana | Makthar | 9.2057, 35.8559 |
+| `city-n2843047485` | Rouhia | الروحية | Rouhia | Siliana | Errouhia | 9.0563, 35.6514 |
+| `city-n287543904` | Kairouan ● | القيروان | Kairouan | Kairouan | Kairouan | 10.1006, 35.6710 |
+| `city-n1384169997` | Ain Jelloula | عين جلولة | Ain Jelloula | Kairouan | Ain Jelloula | 9.8036, 35.7989 |
+| `city-n1187534975` | Chebika | الشبيكة | Chebika | Kairouan | Chebika | 9.9286, 35.6164 |
+| `city-n2893493100` | Echrarda | الشراردة | Echrarda | Kairouan | Echrarda | 10.0337, 35.1182 |
+| `city-n7312461187` | El Alaa | العلاء | El Alaa | Kairouan | El Alaa | 9.5623, 35.6166 |
+| `city-n1187534946` | Haffouz | حفوز | Haffouz | Kairouan | Haffouz | 9.6718, 35.6354 |
+| `city-n1187489040` | Hajeb El Ayoun | حاجب العيون | Hajeb El Ayoun | Kairouan | Hajeb El Ayoun | 9.5424, 35.3954 |
+| `city-n8719488025` | Jehina | جهينة | Jehina | Kairouan | Jehina | 9.9584, 35.3080 |
+| `city-n6916167254` | Menzel El Mhiri | منزل المهيري | Menzel El Mhiri | Kairouan | Menzel Mhiri | 9.8519, 35.4259 |
+| `city-n6215539235` | Nasrallah | نصر الله | Nasr Allah | Kairouan | Nasrallah | 9.8275, 35.3529 |
+| `city-n2131332953` | Oueslatia | الوسلاتية | Weslatia | Kairouan | Oueslatia | 9.5933, 35.8477 |
+| `city-n2902763628` | Rakkada | رقادة | Rakkada | Kairouan | Rakada | 10.0716, 35.6200 |
+| `city-n1232459067` | Sbikha | السبيخة | Sbikha | Kairouan | Sbikha | 10.0176, 35.9327 |
+| `city-n287547703` | Kasserine ● | القصرين | Kasserine | Kasserine | Kasserine | 8.8366, 35.1688 |
+| `city-n2874828908` | Ain el Khmaisia | عين الخمايسية | Ain el Khmaisia | Kasserine | Ain El Khemaissia | 9.1132, 35.4910 |
+| `city-n1187470257` | Bouzgam | بوزقام | Bouzguam | Kasserine | Bouzguam | 8.8958, 35.2130 |
+| `city-n5316229408` | El Ayoun | العيون | El Ayoun | Kasserine | El Ayoun | 8.8837, 35.5403 |
+| `city-n5233525276` | Errakhmet | الرخمات | Errakhmet | Kasserine | Errakhmet | 9.2203, 35.0692 |
+| `city-n1896502664` | Fériana | فريانة | Feriana | Kasserine | Feriana | 8.5663, 34.9466 |
+| `city-n2022259572` | Foussana | فوسانة | Foussana | Kasserine | Foussana | 8.6256, 35.3497 |
+| `city-n674434158` | Haïdra | حيدرة | Haïdra | Kasserine | Hidra | 8.4457, 35.5646 |
+| `city-n5314227521` | Hassi El Ferid | حاسي الفريد | Hassi El Ferid | Kasserine | Hassi El Ferid | 8.9497, 34.9766 |
+| `city-n2175125786` | Majel Bel Abbès | ماجل بلعباس | Magel Bel Abbes | Kasserine | Majel Bel Abbes | 8.5231, 34.7504 |
+| `city-n437592157` | Sbeïtla | سبيطلة | Sbeitla | Kasserine | Sbeitla | 9.1313, 35.2304 |
+| `city-n2873759991` | Sbiba | سبيبة | Sbiba | Kasserine | Sbiba | 9.0733, 35.5406 |
+| `city-n1187470251` | Thala | تالة | Thala | Kasserine | Thala | 8.6709, 35.5718 |
+| `city-n1896442620` | Thélepte | تلابت | Thelepte | Kasserine | Thélepte | 8.5934, 34.9775 |
+| `city-n561134924` | Sidi Bouzid ● | سيدي بوزيد | Sidi Bouzid | Sidi Bouzid | — | 9.4865, 35.0382 |
+| `city-n5067512322` | Bir El Hafey | بئر الحفي | Bir El Hafey | Sidi Bouzid | Bir El Hafey | 9.1960, 34.9321 |
+| `city-n2042447480` | El Mezzouna | المزونة | El Mezzouna | Sidi Bouzid | Mezzouna | 9.8424, 34.5807 |
+| `city-n1187489028` | Jelma | جلمة | Jilma | Sidi Bouzid | Jilma | 9.4186, 35.2698 |
+| `city-n2876921759` | Meknassy | المكناسي | Meknassy | Sidi Bouzid | Meknassy | 9.6022, 34.6048 |
+| `city-n7371710998` | Menzel Bouzaiane | منزل بوزيان | Menzel Bouzaiane | Sidi Bouzid | Menzel Bouzaiane | 9.4269, 34.5731 |
+| `city-n6916227161` | Ouled Haffouz | أولاد حفوز | Ouled Haffouz | Sidi Bouzid | Ouled Haffouz | 9.8720, 35.0820 |
+| `city-n3680029605` | Sidi Ali Ben Aoun | سيدي علي بن عون | Sidi Ali Ben Aoun | Sidi Bouzid | Sidi Ali Ben Aoun | 9.1445, 34.8526 |
+| `city-n7726174900` | Souk Jedid | السوق الجديد | Souk Jedid | Sidi Bouzid | Souk Jedid | 9.5647, 34.9440 |
+| `city-n12635329133` | — | رحال | — | Sidi Bouzid | Rahal | 9.3444, 34.7772 |
+| `city-n287543373` | Sousse ● | سوسة | Sousse | Sousse | Sousse | 10.6405, 35.8288 |
+| `city-n1184918055` | Akouda | أكودة | Akouda | Sousse | Akouda | 10.5678, 35.8657 |
+| `city-n1216186607` | Bouficha | بوفيشة | Bouficha | Sousse | Bouficha | 10.4541, 36.3015 |
+| `city-n1439531928` | Enfidha | النفيضة | Enfidha | Sousse | Enfidha | 10.3780, 36.1341 |
+| `city-n1186068159` | Hergla | هرقلة | Hergla | Sousse | Hergla | 10.5065, 36.0317 |
+| `city-n287620228` | Kalaa Kebira | القلعة الكبرى | Kalaa Kebira | Sousse | Kalaa Kebira | 10.5365, 35.8704 |
+| `city-n1495587105` | Kalaa Sghira | القلعة الصغرى | Kalaa Sghira | Sousse | Kalaa Sghira | 10.5611, 35.8241 |
+| `city-n1225165285` | Kondar | كندار | Kondar | Sousse | Kondar | 10.3001, 35.9326 |
+| `city-n287612727` | M'saken | مساكن | M'Saken | Sousse | Msaken | 10.5752, 35.7330 |
+| `city-n1547749332` | Messadine | المسعدين | Messadine | Sousse | El Messaadine | 10.5967, 35.7613 |
+| `city-n1444704293` | Sidi Bou Ali | سيدي بو علي | Sidi Bou Ali | Sousse | Sidi Bouali | 10.4704, 35.9563 |
+| `city-n558855437` | Sidi El Heni | سيدي الهاني | Sidi El Heni | Sousse | Sidi El Heni | 10.3118, 35.6810 |
+| `city-n1544651763` | Zawia Sousse | زاوية سوسة | Zawia Sousse | Sousse | Zaouiet Sousse | 10.6204, 35.7909 |
+| `city-n287553320` | Monastir ● | المنستير | Monastir | Monastir | Monastir | 10.8281, 35.7708 |
+| `city-n10029607938` | Amira Touazra | عميرة التوازرة | Amira Touazra | Monastir | Amiret Touazra | 10.7628, 35.4863 |
+| `city-n6677934271` | Amirat Fehoul | عميرة الفحول | Amirat Fehoul | Monastir | Amiret El Fehoul | 10.8271, 35.4436 |
+| `city-n6677938931` | Amirat Hojjaj | عميرة الحجاج | Amirat Hojjaj | Monastir | Amiret El Hojjaj | 10.8206, 35.5014 |
+| `city-n1212253279` | Bembla | بنبلة | Bembla | Monastir | Bembla | 10.7921, 35.6919 |
+| `city-n1165828355` | Beni Hassen | بني حسان | Beni Hassen | Monastir | Beni Hassen | 10.8080, 35.5671 |
+| `city-n1212253285` | Bouhjar | بوحجر | Bouhjar | Monastir | Bou Hjar | 10.8638, 35.6691 |
+| `city-n6677938933` | Cherahil | شراحيل | Cherahil | Monastir | Cherahil | 10.8528, 35.5076 |
+| `city-n9891463598` | Ghenada | الغنادة | Ghenada | Monastir | Ghnada | 10.6962, 35.4971 |
+| `city-n1165828361` | Jemmel | جمال | Jemmal | Monastir | Jammel | 10.7592, 35.6239 |
+| `city-n558816747` | Khniss | خنيس | Khniss | Monastir | Khenis | 10.8183, 35.7146 |
+| `city-n1212253275` | Ksar Hellal | قصر هلال | Ksar Hellal | Monastir | Ksar Hellal | 10.8891, 35.6444 |
+| `city-n558816730` | Ksibet El Medouini | قصيبة المديوني | Ksibet El Mediouni | Monastir | Ksibet El Mediouni | 10.8420, 35.6885 |
+| `city-n558816737` | Lamta | لمطة | Lamta | Monastir | Lamta | 10.8809, 35.6753 |
+| `city-n1800480748` | Menzel Fersi | منزل فارسي | Menzel Fersi | Monastir | Menzel Farsi | 10.8685, 35.5489 |
+| `city-n2960139532` | Menzel Hayet | منزل حياة | Menzel Hayet | Monastir | Menzel Hayet | 10.6305, 35.5336 |
+| `city-n558826611` | Menzel Kamel | منزل كامل | Menzel Kamel | Monastir | Menzel Kamel | 10.6661, 35.6232 |
+| `city-n1212270304` | Menzel Nour | منزل النور | Menzel Ennour | Monastir | Menzel Ennour | 10.7781, 35.6687 |
+| `city-n287615073` | Moknine | المكنين | Moknine | Monastir | Moknine | 10.9001, 35.6283 |
+| `city-n1206558973` | Ouardanine | الوردانين | Ouardanine | Monastir | El Ouerdanine | 10.6765, 35.7097 |
+| `city-n1206559008` | Sahline | الساحلين | Sahline | Monastir | Sahline Môotmar | 10.7116, 35.7513 |
+| `city-n558816759` | Sayada | صيادة | Sayada | Monastir | Sayada | 10.8913, 35.6683 |
+| `city-n1206447367` | Sidi Ameur | سيدي عامر | Sidi Ameur | Monastir | Sidi Ameur | 10.7032, 35.7412 |
+| `city-n558841228` | Sidi Bennour | سيدي بنور | Sidi Bennour | Monastir | Sidi Bennour | 10.9141, 35.5251 |
+| `city-n558814817` | Teboulba | طبلبة | Téboulba | Monastir | Teboulba | 10.9658, 35.6418 |
+| `city-n558824767` | Touza | طوزة | Touza | Monastir | Touza | 10.8278, 35.6320 |
+| `city-n1533192004` | Zaouit Kontech | زاوية قنطش | Zaouit Kontech | Monastir | Zaouiet Kontoch | 10.7666, 35.6371 |
+| `city-n1165832678` | Zéramdine | زرمدين | Zéramdine | Monastir | Zeramdine | 10.7379, 35.5792 |
+| `city-n287621836` | Mahdia ● | المهدية | Mahdia | Mahdia | Mahdia | 11.0682, 35.5036 |
+| `city-n558841112` | Bou Merdès | بو مرداس | Bou Merdès | Mahdia | Bou Merdès | 10.7281, 35.4549 |
+| `city-n434547727` | Chorbane | شُربان | Chorbane | Mahdia | Chorbane | 10.3866, 35.2856 |
+| `city-n6617808421` | El Bredaa | البرادعة | El Bredaa | Mahdia | El Bradaa | 10.9911, 35.3486 |
+| `city-n299240195` | El Jem | الجم | El Jem | Mahdia | El Djem | 10.7128, 35.2966 |
+| `city-n4541839834` | Hebira | هبيرة | Hebira | Mahdia | Hebira | 10.2322, 35.1660 |
+| `city-n558841086` | Kerker | كركر | Kerker | Mahdia | Kerker | 10.6403, 35.4821 |
+| `city-n558962262` | Ksour Essef | قصور الساف | Ksour Essef | Mahdia | Ksour Essaf | 10.9987, 35.4163 |
+| `city-n5974000209` | Melloulèche | ملولش | Melloulèche | Mahdia | Melloulech | 11.0355, 35.1655 |
+| `city-n1127119919` | Ouled Chamekh | أولاد الشامخ | Ouled Chamekh | Mahdia | Ouled Chamekh | 10.3148, 35.4915 |
+| `city-n2402352381` | Rejiche | رجيش | Rejiche | Mahdia | Rejiche | 11.0417, 35.4655 |
+| `city-n558962249` | Sidi Alouane | سيدي علوان | Sidi Alouane | Mahdia | Sidi Alouane | 10.9378, 35.3750 |
+| `city-n8225361669` | Sidi Zid | سيدي زيد | Sidi Zid | Mahdia | Sidi Zid | 10.5014, 35.3689 |
+| `city-n1127120485` | Souassi | السواسي | Souassi | Mahdia | Essouassi | 10.5490, 35.3445 |
+| `city-n7764587576` | Telelsa | التلالسة | Telelsa | Mahdia | Talalsa | 10.7896, 35.3520 |
+| `city-n6672532618` | Zelba | زالبة | Zelba | Mahdia | Zalba | 10.8493, 35.2023 |
+| `city-n287001619` | Sfax ● | صفاقس | Sfax | Sfax | — | 10.7604, 34.7394 |
+| `city-n6637553224` | Agareb | عقارب | Agareb | Sfax | Agareb | 10.5274, 34.7421 |
+| `city-n443160013` | Bir Ali Ben Khalifa | بئر علي بن خليفة | Bir Ali Ben Khalifa | Sfax | Bir Ali Ben Khalifa | 10.0959, 34.7407 |
+| `city-n6522309697` | El Amra | العامرة | Al Amra | Sfax | El Amra | 10.8955, 34.9837 |
+| `city-n316078222` | El Hajeb | الحاجب | El Hajeb | Sfax | El Hajeb | 10.6474, 34.7190 |
+| `city-n1844560411` | El Hencha | الحنشة | El Hencha | Sfax | El Hencha | 10.7415, 35.1229 |
+| `city-n3823151839` | Ellouza | اللوزة | Al Luza | Sfax | Hazeg El Louza | 11.0007, 35.0289 |
+| `city-n2589797448` | Ghraiba | الغريبة | Ghraiba | Sfax | Ghraiba | 10.2119, 34.4951 |
+| `city-n5981914543` | Jebeniana | جبنيانة | Jebiniana | Sfax | Djebeniana | 10.9091, 35.0351 |
+| `city-n10018736452` | Laachech | الأعشاش | Laachech | Sfax | El Achech | 10.5752, 35.1209 |
+| `city-n434547646` | Menzel Chaker | منزل شاكر | Menzel Chaker | Sfax | Menzel Chaker | 10.3716, 34.9701 |
+| `city-n479938481` | Sakiet Eddaïer | ساقية الدائر | Sakiet Eddaïer | Sfax | Sakiet Eddaier | 10.7800, 34.7896 |
+| `city-n559394563` | Shkira | الصخيرة | Shkira | Sfax | Skhira | 10.0690, 34.2988 |
+| `city-n287545859` | Gafsa ● | قفصة | Gafsa | Gafsa | Gafsa | 8.7844, 34.4224 |
+| `city-n2877642957` | Belkhir | بلخير | Belkhir | Gafsa | Belkhir | 9.3914, 34.2742 |
+| `city-n2177334841` | El Guettar | القطار | El Guettar | Gafsa | El Guetar | 8.9504, 34.3395 |
+| `city-n7372876054` | El Ksar | القصر | El Ksar | Gafsa | El Ksar | 8.8045, 34.3979 |
+| `city-n7372876041` | Lala | لالة | Lala | Gafsa | Lala | 8.8189, 34.3937 |
+| `city-n2177279829` | Mdhilla | المظيلة | Mdhila | Gafsa | Mdhila | 8.7480, 34.2869 |
+| `city-n694068983` | Métlaoui | المتلوي | Metlaoui | Gafsa | Metlaoui | 8.4018, 34.3157 |
+| `city-n2165194615` | Moularès | أم العرائس | Moularès | Gafsa | Moularès | 8.2734, 34.4857 |
+| `city-n1104122473` | Redeyef | الرديف | Redeyef | Gafsa | Redeyef | 8.1539, 34.3843 |
+| `city-n2178146164` | Sened | السند | Sened | Gafsa | Sned | 9.2513, 34.5403 |
+| `city-n3203082588` | Sidi Aïch | سيدي عيش | Sidi Aich | Gafsa | Sidi Aich | 8.7828, 34.7329 |
+| `city-n8679346371` | Sidi Boubaker | سيدي بوبكر | Sidi Boubaker | Gafsa | Sidi Boubaker | 8.4608, 34.6661 |
+| `city-n7685164452` | Zannouch | زانوش | Zannouch | Gafsa | Sanouche | 9.0515, 34.4702 |
+| `city-n298018887` | Tozeur ● | توزر | Tozeur | Tozeur | Tozeur | 8.1371, 33.9239 |
+| `city-n351582010` | Degache | دقاش | Degache | Tozeur | Degach | 8.2155, 33.9841 |
+| `city-n7318443314` | El Hamma du Jérid | حامة الجريد | El Hamma du Jérid | Tozeur | Hamet Ejrid | 8.1706, 33.9974 |
+| `city-n1566167629` | Hazoua | حزوة | Hazwa | Tozeur | Hazoua | 7.6039, 33.7404 |
+| `city-n298018764` | Nefta | نفطة | Nefta | Tozeur | Nefta | 7.8807, 33.8721 |
+| `city-n928627591` | Tameghza | تمغزة | Tamerza | Tozeur | Tameghza | 7.9335, 34.3864 |
+| `city-n298019989` | Kebili ● | قبلي | Kebili | Kébili | Kebilli | 8.9698, 33.7061 |
+| `city-n6454492258` | Bchelli | بشلي | Bchelli | Kébili | Bchelli | 8.9169, 33.6175 |
+| `city-n264881676` | Douz | دوز | Douz | Kébili | Douz | 9.0250, 33.4571 |
+| `city-n560792911` | El Faouar | الفوار | El Faouar | Kébili | El Faouar | 8.6733, 33.3560 |
+| `city-n352749779` | El Golaa | القلعة | El Golaa | Kébili | El Golaa | 9.0063, 33.4849 |
+| `city-n352749778` | Jemna | جمنة | Djemna | Kébili | Jemna | 9.0160, 33.5696 |
+| `city-n674390308` | Rjim Maâtoug | رجيم معتوق | Rjim Maatoug | Kébili | Rejim Mâatoug | 8.0330, 33.3200 |
+| `city-n351575544` | Souk Lahad | سوق الأحد | Souk Lahad | Kébili | Souk El Ahed | 8.8526, 33.7783 |
+| `city-n287544603` | Gabès ● | قابس | Gabes | Gabès | Gabès | 10.1004, 33.8878 |
+| `city-n2202008629` | Bouchemma | بوشمة | Bouchamma | Gabès | Bouchemma | 10.0624, 33.9047 |
+| `city-n1996259768` | Dkhilet Toujane | دخيلة توجان | Dkhilet Toujane | Gabès | Dkhilet Toujane | 10.2026, 33.4352 |
+| `city-n298020344` | El Hamma | الحامة | El Hamma | Gabès | El Hamma | 9.7997, 33.8894 |
+| `city-n2203045897` | Ghannouch | غنوش | Ghannouch | Gabès | Ghannouch | 10.0650, 33.9398 |
+| `city-n2210337832` | Kettena | كتانة | Kettena | Gabès | Ketana | 10.2041, 33.7596 |
+| `city-n352839775` | Mareth | مارث | Mareth | Gabès | Mareth | 10.2882, 33.6172 |
+| `city-n2878572712` | Menzel El Habib | منزل الحبيب | Menzel El Habib | Gabès | Menzel El Habib | 9.5985, 34.2299 |
+| `city-n559400503` | Métouia | المطوية | Métouia | Gabès | El Metouia | 10.0014, 33.9589 |
+| `city-n352752197` | Nouvelle Matmata | مطماطة الجديدة | New Matmata | Gabès | Nouvelle Matmata | 10.0144, 33.6689 |
+| `city-n1561079549` | Oudhref | وذرف | Oudhref | Gabès | Oudref | 9.9677, 33.9840 |
+| `city-n2657639395` | Zarat | الزارات | Zarat | Gabès | Ezzarat | 10.3485, 33.6655 |
+| `city-n287585326` | Médenine ● | مدنين | Medenine | Médenine | Medenine | 10.4911, 33.3434 |
+| `city-n297764755` | Adjim | أجيم | Ajim | Médenine | Djerba Ajim | 10.7485, 33.7248 |
+| `city-n287588734` | Ben Gardane | بن قردان | Ben Gardane | Médenine | Ben Gardane | 11.2170, 33.1403 |
+| `city-n1657474545` | Beni Khedache | بني خداش | Beni Khedache | Médenine | Beni Khedech | 10.2001, 33.2514 |
+| `city-n2844579781` | Boughrara | بوغرارة | Boughrara | Médenine | Boughrara | 10.6742, 33.5393 |
+| `city-n287559510` | Houmet Souk | حومة السوق | Houmt Souk | Médenine | Djerba Houmet Souk | 10.8572, 33.8760 |
+| `city-n287613682` | Midoun | ميدون | Midoun | Médenine | Djerba Midoun | 10.9911, 33.8074 |
+| `city-n3143761492` | Sidi Makhlouf | سيدي مخلوف | Sidi Makhlouf | Médenine | Sidi Makhlouf | 10.4797, 33.5063 |
+| `city-n287558790` | Zarzis | جرجيس | Zarzis | Médenine | Zarzis | 11.1097, 33.5037 |
+| `city-n264885332` | Tataouine ● | تطاوين | Tataouine | Tataouine | Tataouine | 10.4504, 32.9315 |
+| `city-n5942342265` | Bir Lahmar | بئر الأحمر | Bir Lahmar | Tataouine | Bir Lahmar | 10.4421, 33.1786 |
+| `city-n1278361178` | Dhehiba | الذهيبة | Dhehiba | Tataouine | Dhehiba | 10.7000, 32.0103 |
+| `city-n1655884872` | Ghomrassen | غمراسن | Ghomrassen | Tataouine | Ghomrassen | 10.3391, 33.0599 |
+| `city-n1278361348` | Remada | رمادة | Remada | Tataouine | Remada | 10.3987, 32.3146 |
+| `city-n1980279372` | Smar | الصمار | Smar | Tataouine | Smar | 10.8222, 32.9947 |

@@ -34,6 +34,13 @@ Inland lakes and salt flats (Ichkeul, Sidi El Hani, the chotts), and the two Lak
 coastline, belong to the governorates that contain them, so they are part of the units. To show them, use the
 [water layer](partitions-levels-modes.md#water-is-an-overlay): 67 lakes, dams, sebkhas, chotts and lagoons, drawn on top.
 
+### Why is my town missing from the cities layer?
+The `cities` layer only publishes what OpenStreetMap supports: the capital, the 24 governorate capitals (the `admin_centre`
+of each governorate) and the seat of each OSM municipality, found through the municipality's `admin_centre` or a place
+node of the same name inside it. A municipality with neither, or one that is not in OSM yet (Sfax, Sidi Bouzid, Chebba,
+Mahrès…), has no seat point, and towns that are not a municipal seat are left out. The
+[accuracy report](accuracy.md#cities) lists both; mapping the missing `admin_centre` in OSM fixes it at the next extract.
+
 ### Why UTM and not Web Mercator?
 UTM zone 32N shows Tunisia without distortion and in real kilometres. See [projection](projection.md). For web maps
 (Leaflet, MapLibre), use the GeoJSON / TopoJSON files: they are plain longitude/latitude.

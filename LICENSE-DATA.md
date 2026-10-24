@@ -7,7 +7,7 @@ which is available under the [Open Database License (ODbL) 1.0](https://opendata
 This applies to:
 
 - `data/source/` and `data/attributes/` — the cleaned, nested boundary database, the municipalities
-  (OpenStreetMap relations tagged `boundary=municipality`) and the water bodies (OpenStreetMap water areas and coastline);
+  (OpenStreetMap relations tagged `boundary=municipality`) the water bodies (OpenStreetMap water areas and coastline) and the cities (OpenStreetMap place nodes);
 - `dist/` — every SVG, GeoJSON, TopoJSON, CSV and JSON file;
 - `docs/assets/` — the illustrations composed from the maps.
 

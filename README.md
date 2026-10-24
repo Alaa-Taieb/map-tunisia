@@ -5,7 +5,7 @@
 <h3>The most accurate open-source SVG maps of Tunisia</h3>
 
 <p>
-Country · 7 economic regions · 5 districts · 24 governorates · 279 delegations · 2,083 imadas · 338 municipalities · 67 lakes, sebkhas &amp; lagoons<br>
+Country · 7 economic regions · 5 districts · 24 governorates · 279 delegations · 2,083 imadas · 338 municipalities · 67 lakes, sebkhas &amp; lagoons · 284 cities<br>
 5 levels of detail · 8 visual modes · SVG · GeoJSON · TopoJSON · العربية · Français · English
 </p>
 
@@ -131,7 +131,7 @@ svg.insertAdjacentHTML('beforeend', `<circle cx="${x}" cy="${y}" r="3" fill="cri
 Every file lives in [`dist/`](dist/) and follows one naming scheme:
 
 ```text
-dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     174 SVG maps
+dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     191 SVG maps
 dist/geojson/tunisia-<partition>-<lod>.geojson                WGS84, with all attributes
 dist/topojson/tunisia-<partition>-<lod>.topojson              WGS84, shared borders
 dist/data/<partition>.csv | .json                             names, codes, populations, areas, label points
@@ -145,6 +145,7 @@ dist/data/<partition>.csv | .json                             names, codes, popu
 | [Sectors (imadas), nested](dist/svg/sectors/tunisia-sectors-medium-nested.svg) | 1.8 MB |
 | [Municipalities, light](dist/svg/municipalities/tunisia-municipalities-medium-light.svg) · [interactive](dist/svg/municipalities/tunisia-municipalities-medium-interactive.svg) | 506 KB |
 | [Water bodies, light](dist/svg/water/tunisia-water-medium-light.svg) · [labelled](dist/svg/water/tunisia-water-medium-labeled.svg) | 103 KB |
+| [Cities, labelled](dist/svg/cities/tunisia-cities-medium-labeled.svg) · [Arabic](dist/svg/cities/tunisia-cities-medium-labeled-ar.svg) | 253 KB |
 | [Country outline, for icons](dist/svg/country/tunisia-country-tiny-plain.svg) | 4 KB |
 | [Governorates TopoJSON](dist/topojson/tunisia-governorates-medium.topojson) · [GeoJSON](dist/geojson/tunisia-governorates-medium.geojson) | 105 KB · 306 KB |
 
@@ -162,7 +163,7 @@ import { svgPath, attributesPath, project, catalog } from 'map-tunisia';   // he
 import delegations from 'map-tunisia/data/delegations.json' with { type: 'json' };   // 279 rows, no fetch needed
 
 delegations.length;                          // 279
-catalog.partitions.map((p) => p.count);      // [1, 7, 5, 24, 279, 2083, 338, 67]
+catalog.partitions.map((p) => p.count);      // [1, 7, 5, 24, 279, 2083, 338, 67, 284]
 svgPath('governorates', 'medium', 'light');  // 'dist/svg/governorates/tunisia-governorates-medium-light.svg'
 ```
 
@@ -181,7 +182,7 @@ Each release ships one ZIP per format plus a checksum file, named after the pack
 | `map-tunisia-vX.Y.Z-geojson.zip` | GeoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-topojson.zip` | TopoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-json.zip` / `-csv.zip` | attribute tables (names, codes, populations, areas, label points) |
-| `map-tunisia-vX.Y.Z-svg.zip` | all 174 SVG maps |
+| `map-tunisia-vX.Y.Z-svg.zip` | all 191 SVG maps |
 | `map-tunisia-vX.Y.Z-SHA256SUMS.txt` | checksums: `sha256sum -c map-tunisia-vX.Y.Z-SHA256SUMS.txt` |
 
 Download them from the project's *Releases* page, or build them yourself from a clone: `npm install && npm run release:zip`
@@ -201,6 +202,7 @@ writes everything into `release/` (git-ignored). The archives are reproducible: 
 | `sectors` | 2,083 | العمادات | The *imadas*, the finest administrative level |
 | `municipalities` | 338 | البلديات | The *baladiyat*, a **separate layer that does not nest** in delegations ([below](#municipalities-baladiyat)) |
 | `water` | 67 | المسطحات المائية | Lakes, dams, sebkhas, chotts and sea-side lagoons, an **overlay** that leaves the partitions above unchanged ([below](#water-lakes-sebkhas-and-lagoons)) |
+| `cities` | 284 | المدن | **Points**: the capital Tunis, the 24 governorate capitals and the municipal seats ([below](#cities-and-capitals)) |
 
 ### Municipalities (*baladiyat*)
 
@@ -265,6 +267,34 @@ the OSM coastline: the parts of the sea that open to it through a channel narrow
 1 km² are left out. Every merge, clip and gap is in the [accuracy report](docs/accuracy.md#water-bodies).
 <br clear="right">
 
+### Cities and capitals
+
+<img src="dist/svg/cities/tunisia-cities-low-labeled.svg" alt="The cities layer: Tunis in red, the governorate capitals in blue, the municipal seats as small dots" height="360" align="right">
+
+The `cities` layer is a **point layer**: the capital **Tunis**, the other **23 governorate capitals** and **260 more
+municipal seats**, 284 points in all. Each point has its `type` (`national_capital`, `governorate_capital` or `city`),
+`capital_of` (`TN TN-11` for Tunis, `TN-61` for Sfax…), its names in Arabic, French and English, its governorate, delegation,
+sector and municipality, its `lon`/`lat`, and its `x`/`y` in the shared SVG frame. The SVGs (`full` to `low`, every mode
+except `nested`) draw the dots over the land and the governorate borders, sized and coloured by type; the labelled modes
+name every capital and as many other cities as fit (the `low` level names the capitals only). Ids follow the OSM node:
+`city-n27564968` is Tunis.
+
+```js
+import cities from 'map-tunisia/data/cities.json' with { type: 'json' };
+import { project } from 'map-tunisia';
+
+const capitals = cities.filter((c) => c.type !== 'city');      // 24: Tunis and the 23 other governorate capitals
+const sfax = cities.find((c) => c.capital_of === 'TN-61');
+project([Number(sfax.lon), Number(sfax.lat)]);                   // [x, y] on any Map Tunisia SVG, equal to sfax.x / sfax.y
+```
+
+**Source:** OpenStreetMap only. Tunis is the `admin_centre` of the country relation (tagged `capital=yes`), each governorate
+capital is the `admin_centre` of its governorate relation, and a municipal seat is the `admin_centre` of its municipality or
+the settlement node of the same name inside it. No point is typed in by hand: 56 of the 338 OSM municipalities have no such
+node (and 12 municipalities are not in OSM at all, Sfax and Sidi Bouzid among them), so they have no seat point; the list is
+in the [accuracy report](docs/accuracy.md#cities). There is no population threshold: OSM population tags are too sparse.
+<br clear="right">
+
 ### Levels of detail
 
 | Level | Tolerance | Use it for | Governorates file |
@@ -316,12 +346,12 @@ See **[projection & coordinates](docs/projection.md)**.
 ```bash
 npm install
 npm run build        # dist/ from data/ in ~30 s
-npm test             # 220 checks: counts, ids, nesting, areas, populations, water, XML validity, sizes, projection, package + ZIPs
+npm test             # 249 checks: counts, ids, nesting, areas, populations, water, cities, XML validity, sizes, projection, package + ZIPs
 npm run release:zip  # versioned ZIPs + SHA256SUMS into release/
 
 # refresh from the latest OpenStreetMap data (Python 3.10+)
 pip install -r scripts/extract/requirements.txt
-npm run fetch && npm run extract && npm run extract:municipalities && npm run extract:water && npm run build
+npm run fetch && npm run extract && npm run extract:municipalities && npm run extract:water && npm run extract:cities && npm run build
 ```
 
 The pipeline: **pyosmium + Shapely** (extraction and topology) → **mapshaper** (dissolve, projection, simplification) →
@@ -334,7 +364,7 @@ a custom SVG writer (labels with polylabel, map colouring, accessible markup). S
 - [x] GeoJSON / TopoJSON / CSV, projection helper, live explorer
 - [x] Municipalities (*baladiyat*) as a separate, non-nested partition
 - [x] Optional water layer: lagoons, sebkhas, chotts and dams
-- [ ] Cities and capitals as point layers
+- [x] Cities and capitals as point layers
 - [ ] Tamazight (Tifinagh) and English-transliteration label modes
 - [x] npm package (types, JSON data exports) and versioned release ZIPs with checksums
 
@@ -378,7 +408,7 @@ It helps others find it.
 
 ### Acknowledgements
 
-- The thousands of **[OpenStreetMap](https://www.openstreetmap.org) contributors** who mapped Tunisia's boundaries, municipalities, lakes, sebkhas and coastline
+- The thousands of **[OpenStreetMap](https://www.openstreetmap.org) contributors** who mapped Tunisia's boundaries, municipalities, towns, lakes, sebkhas and coastline
 - **Institut National de la Statistique** (INS) for the geocodes and census figures, and the **ISIE** for its public circonscription maps
 - [Geofabrik](https://download.geofabrik.de) for the daily extracts
 - [mapshaper](https://github.com/mbloch/mapshaper), [pyosmium](https://osmcode.org/pyosmium/), [Shapely](https://shapely.readthedocs.io),

@@ -14,6 +14,7 @@ import catalog from '../../src/catalog.js';
 const report = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/extract-report.json'), 'utf8'));
 const munReport = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/municipalities-report.json'), 'utf8'));
 const waterReport = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/water-report.json'), 'utf8'));
+const cityReport = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/cities-report.json'), 'utf8'));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'dist/manifest.json'), 'utf8'));
 const D = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, 'dist/data', `${p}.json`), 'utf8'));
 const n = (x, d = 0) => Number(x).toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -65,6 +66,7 @@ function measure(geometry) {
     `| Sectors (imadas) | **${n(D('sectors').length)}** (OSM, INS 2014 geocodes) |`,
     `| Municipalities (baladiyat) | **${D('municipalities').length}** of 350, covering ${(munReport.topology.coverage * 100).toFixed(1)} % of the land ([details](#municipalities-baladiyat)) |`,
     `| Water bodies (overlay) | **${D('water').length}** lakes, dams, sebkhas, chotts and lagoons, ${n(waterReport.topology.total_km2)} km² ([details](#water-bodies)) |`,
+    `| Cities (points) | **${D('cities').length}**: the capital, ${cityReport.per_type.governorate_capital + 1} governorate capitals and ${cityReport.per_type.city} municipal seats ([details](#cities)) |`,
     `| Overlap between units | **${t.overlap_km2.toFixed(6)} km²** |`,
     `| Land not covered by any unit | **${(t.uncovered_km2 * 1e6).toFixed(0)} m²** (floating-point noise) |`,
     `| Sum of children = parent area | exact at every level (additive area formula) |`,
@@ -251,6 +253,36 @@ function measure(geometry) {
     }
     lines.push('');
   }
+  {
+    const cities = D('cities');
+    const c = cityReport.counts;
+    const SOURCE = {
+      country_admin_centre: 'admin_centre of the country relation (capital=yes)', governorate_admin_centre: 'admin_centre of the governorate relation',
+      municipality_admin_centre: 'admin_centre of the municipality relation', name: "place node with the municipality's name, in or within 500 m of it",
+      partial_name: "city or town node inside it whose name is part of the municipality's name",
+    };
+    const govOk = cities.filter((x) => x.capital_of).length;
+    lines.push(
+      '', '## Cities', '',
+      'The cities layer is a point layer of OpenStreetMap place nodes: the national capital, the governorate capitals and the seats of the',
+      'OSM municipalities. No point is typed in by hand. See [methodology.md](methodology.md#11-cities-layer).', '',
+      '| Check | Result |', '| --- | --- |',
+      `| National capital | **${cities.find((x) => x.type === 'national_capital').name_fr}**, the admin_centre of the country, tagged capital=yes |`,
+      `| Governorate capitals | **${govOk}** of 24 points carry a capital, one per governorate, each inside it and named as in \`governorates.csv\` (tested) |`,
+      `| Municipal seats | **${c.municipalities_with_seat}** of the ${c.municipalities} OSM municipalities (350 in the 2016 division) |`,
+      `| Municipalities without a seat point | ${c.municipalities_without_seat} (listed below) |`,
+      ...Object.entries(cityReport.per_seat_source).map(([k, v]) => `| Found by: ${SOURCE[k] || k} | ${v} |`),
+      `| OSM place type of the points | ${Object.entries(cityReport.per_place).map(([k, v]) => `${k} ${v}`).join(' · ')} |`,
+      '',
+    );
+    for (const w of cityReport.warnings) lines.push(`- ${w}.`);
+    const govName = Object.fromEntries(D('governorates').map((g) => [g.id, g.name_fr]));
+    lines.push('', 'OSM municipalities with no seat point: no `admin_centre`, and no place node of the same name in or near them.', '',
+      '| Municipality | الاسم | Governorate |', '| --- | --- | --- |',
+      ...cityReport.no_seat.map((m) => `| \`${m.municipality}\` ${m.name_fr} | ${m.name_ar} | ${govName[m.governorate]} |`));
+    lines.push('', 'OSM cities and towns (`place=city` or `town`) that are not the seat of an OSM municipality, so they are not published:', '',
+      cityReport.other_cities.map((x) => `${x.name} (${govName[x.governorate]})`).join(' · '), '');
+  }
   lines.push('', 'Found an error? Please [open a data issue](https://github.com/Alaa-Taieb/map-tunisia/issues/new?template=data-error.yml).', '');
   writeFile(path.join(ROOT, 'docs/accuracy.md'), lines.join('\n'));
   console.log('docs/accuracy.md');
@@ -263,9 +295,9 @@ function measure(geometry) {
   const secCount = {};
   for (const s of sec) secCount[s.delegation] = (secCount[s.delegation] || 0) + 1;
   const lines = [GENERATED, '', '# Reference tables', '',
-    'Every unit of the coarser partitions and the municipalities, with identifiers, names and figures. Sectors (imadas) are too many for a page — use',
+    'Every unit of the coarser partitions, the municipalities, the water bodies and the cities, with identifiers, names and figures. Sectors (imadas) are too many for a page — use',
     '[`dist/data/sectors.csv`](../dist/data/sectors.csv). Areas are ellipsoidal; populations are INS census counts (RGPH 2014 and 2024).', '',
-    '- [Economic regions](#economic-regions)', '- [Districts (2023)](#districts-2023)', '- [Governorates](#governorates)', '- [Delegations](#delegations)', '- [Municipalities](#municipalities)', '- [Water bodies](#water-bodies)', '',
+    '- [Economic regions](#economic-regions)', '- [Districts (2023)](#districts-2023)', '- [Governorates](#governorates)', '- [Delegations](#delegations)', '- [Municipalities](#municipalities)', '- [Water bodies](#water-bodies)', '- [Cities](#cities)', '',
     '## Economic regions', '', '| id | Name (EN) | Nom (FR) | الاسم | Governorates | Population 2024 | Area (km²) |', '| --- | --- | --- | --- | --- | ---: | ---: |'];
   for (const r of reg) lines.push(`| \`${r.id}\` | ${r.name_en} | ${r.name_fr} | ${r.name_ar} | ${r.governorates.split(' ').join(', ')} | ${n(r.population_2024)} | ${n(r.area_km2)} |`);
   lines.push('', '## Districts (2023)', '', 'Created by Decree 2023-589 of 21 September 2023 for the National Council of Regions and Districts.', '',
@@ -300,6 +332,16 @@ function measure(geometry) {
     'Method and checks: [accuracy report](accuracy.md#water-bodies).', '',
     '| id | Type | Nom (FR) | الاسم | Governorates | Area (km²) |', '| --- | --- | --- | --- | --- | ---: |');
   for (const w of water) lines.push(`| \`${w.id}\` | ${w.type} | ${w.name_fr || '—'} | ${w.name_ar || '—'} | ${w.governorates.split(' ').map((g) => govOf[g]).join(', ')} | ${n(w.area_km2, 1)} |`);
+  const CT = ['national_capital', 'governorate_capital', 'city'];
+  const cities = D('cities').sort((a, b) => a.governorate.localeCompare(b.governorate) || CT.indexOf(a.type) - CT.indexOf(b.type) || (a.name_fr || a.name_ar).localeCompare(b.name_fr || b.name_ar, 'fr'));
+  lines.push('', '## Cities', '', `${cities.length} points: the capital (★), the governorate capitals (●) and the municipal seats, by governorate. The \`id\``,
+    'carries the OSM node number. Method and checks: [accuracy report](accuracy.md#cities).', '',
+    '| id | Nom (FR) | الاسم | Name (EN) | Governorate | Municipality | lon, lat |', '| --- | --- | --- | --- | --- | --- | --- |');
+  const munOf = Object.fromEntries(mun.map((m) => [m.id, m.name_fr]));
+  const mark = { national_capital: ' ★', governorate_capital: ' ●', city: '' };
+  for (const c of cities) {
+    lines.push(`| \`${c.id}\` | ${c.name_fr || '—'}${mark[c.type]} | ${c.name_ar || '—'} | ${c.name_en || '—'} | ${govOf[c.governorate]} | ${munOf[c.municipality] || '—'} | ${Number(c.lon).toFixed(4)}, ${Number(c.lat).toFixed(4)} |`);
+  }
   lines.push('');
   writeFile(path.join(ROOT, 'docs/reference.md'), lines.join('\n'));
   console.log('docs/reference.md');

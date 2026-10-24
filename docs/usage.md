@@ -25,6 +25,7 @@ https://cdn.jsdelivr.net/gh/Alaa-Taieb/map-tunisia@v1.1.0/dist/data/<partition>.
 - [13. The npm helper](#13-the-npm-helper)
 - [14. Municipalities](#14-municipalities)
 - [15. Water: lakes, sebkhas and lagoons](#15-water-lakes-sebkhas-and-lagoons)
+- [16. Cities and capitals](#16-cities-and-capitals)
 
 ---
 
@@ -123,6 +124,8 @@ for (const [name, lon, lat] of [['Tunis', 10.1815, 36.8065], ['Sfax', 10.7600, 3
 ```
 
 The frame is identical in every partition, level of detail and mode, so points line up whichever file you use.
+For the capital, the governorate capitals and the municipal seats, the [cities layer](#16-cities-and-capitals) already
+has the points, with names in three languages.
 
 ## 6. React
 
@@ -171,7 +174,7 @@ svg.selectAll('path').data(delegations.features).join('path')
 svg.append('path').datum(borders).attr('d', path).attr('fill', 'none').attr('stroke', '#fff').attr('stroke-width', 0.5);
 ```
 
-Object names inside each TopoJSON equal the partition id (`country`, `regions`, `districts`, `governorates`, `delegations`, `sectors`, `municipalities`, `water`).
+Object names inside each TopoJSON equal the partition id (`country`, `regions`, `districts`, `governorates`, `delegations`, `sectors`, `municipalities`, `water`, `cities`).
 
 ## 8. Leaflet / MapLibre + GeoJSON
 
@@ -331,3 +334,46 @@ w.groupby("type").area_km2.sum()   # km² of lakes, reservoirs, lagoons, sebkhas
 
 Water areas are not subtracted from the governorates, delegations or sectors: inland water is part of them. See the
 [accuracy report](accuracy.md#water-bodies) for what is in and out.
+
+## 16. Cities and capitals
+
+The `cities` layer holds 284 points: the capital Tunis (`type: 'national_capital'`), the 23 other governorate capitals
+(`'governorate_capital'`) and the seats of the municipalities that OSM supports (`'city'`). Use the ready-made SVGs, or put
+the points on any other map yourself: `project()` turns a city's `lon`/`lat` into SVG units, and the result equals its `x`/`y`
+columns, so the dots line up with every partition, level of detail and mode.
+
+```js
+import cities from 'map-tunisia/data/cities.json' with { type: 'json' };
+import { project } from 'map-tunisia';
+
+// The 24 governorate capitals as dots on the governorates map (inline SVG).
+const svg = document.querySelector('#map svg');
+for (const c of cities.filter((c) => c.capital_of)) {
+  const [x, y] = project([Number(c.lon), Number(c.lat)]);
+  const r = c.type === 'national_capital' ? 4 : 2.5;
+  svg.insertAdjacentHTML('beforeend',
+    `<circle cx="${x}" cy="${y}" r="${r}" fill="#c0392b" stroke="#fff" vector-effect="non-scaling-stroke"><title>${c.name_fr} · ${c.name_ar}</title></circle>`);
+}
+
+cities.filter((c) => c.governorate === 'TN-82').map((c) => c.name_fr);   // the cities of Médenine
+cities.find((c) => c.capital_of.split(' ').includes('TN-11')).name_ar;   // 'تونس'
+```
+
+Or stack the cities SVG over another map; both use the same frame. The `outline` mode draws hollow dots on the land outline,
+and `#cities-base { display: none; }` with `#borders { display: none; }` leaves only the dots of an inlined file:
+
+```css
+.city.national_capital { fill: #d62828; }
+.city.governorate_capital { fill: #003049; }
+.city[data-place="village"] { r: .6px; }   /* smaller dots for villages (CSS geometry property, modern browsers) */
+```
+
+```python
+import geopandas as gpd
+c = gpd.read_file("https://cdn.jsdelivr.net/gh/Alaa-Taieb/map-tunisia@v1.3.0/dist/geojson/tunisia-cities-medium.geojson")
+c[c.type != "city"][["name_fr", "name_ar", "capital_of", "geometry"]]   # the 24 capitals
+```
+
+The layer only has what OpenStreetMap supports: a municipality whose seat has no node of the same name (or no
+`admin_centre`) gets no point, and towns that are no municipal seat in OSM are left out. Both lists are in the
+[accuracy report](accuracy.md#cities).

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Map Tunisia — Explorer · خريطة تونس</title>
-<meta name="description" content="Explore and download accurate open-source SVG maps of Tunisia: country, regions, districts, 24 governorates, 279 delegations, 2,083 sectors (imadas), 338 municipalities and 67 lakes, sebkhas and lagoons, in 5 levels of detail and 8 modes.">
+<meta name="description" content="Explore and download accurate open-source SVG maps of Tunisia: country, regions, districts, 24 governorates, 279 delegations, 2,083 sectors (imadas), 338 municipalities, 67 lakes, sebkhas and lagoons and 284 cities, in 5 levels of detail and 8 modes.">
 <meta name="author" content="Alaa Taieb">
 <meta property="og:title" content="Map Tunisia — accurate open-source SVG maps of Tunisia">
 <meta property="og:description" content="Country, regions, districts, governorates, delegations and imadas · 5 levels of detail · 8 modes · SVG, GeoJSON, TopoJSON.">
@@ -130,6 +130,7 @@ const PARTS = [
   ['sectors', 'Sectors', 'The 2,000+ imadas — the finest level.'],
   ['municipalities', 'Municipalities', 'The 338 baladiyat mapped in OSM — a separate layer that does not nest in delegations.'],
   ['water', 'Water', '67 lakes, dams, sebkhas, chotts and sea-side lagoons — an overlay on the land.'],
+  ['cities', 'Cities', 'Tunis, the 24 governorate capitals and 260 municipal seats — points from OSM.'],
 ];
 const LODS = { full: 'Original OSM precision', high: '≈ 20 m tolerance', medium: '≈ 100 m — web default', low: '≈ 500 m — small embeds', tiny: '≈ 2.5 km — icons' };
 const MODES = { plain: 'Neutral, ready for your CSS', outline: 'Strokes only', light: 'Colourful fills', dark: 'For dark UIs', labeled: 'Latin names', 'labeled-ar': 'Arabic names', nested: 'Parent borders', interactive: 'Hover + tooltips, no JS' };
@@ -200,6 +201,7 @@ async function render() {
       ['Population 2024', d.population_2024 ? fmt(d.population_2024) : ''], ['Population 2014', d.population_2014 ? fmt(d.population_2014) : ''],
       ['Area', d.area_km2 ? `${fmt(Math.round(d.area_km2))} km²` : ''],
       ['Label point', d.label_lat ? `${d.label_lat}, ${d.label_lon}` : ''],
+      ['Capital of', d.capital_of], ['Coordinates', d.lat ? `${d.lat}, ${d.lon}` : ''],
     ].filter(([, v]) => v);
     $('info').innerHTML = `<p class="big">${d.name_fr || el.dataset.name || el.id}</p><p class="bigar" lang="ar" dir="rtl">${d.name_ar || ''}</p>` +
       `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${String(v).replace(/</g, '&lt;')}</dd>`).join('')}</dl>`;

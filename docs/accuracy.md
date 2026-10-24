@@ -15,6 +15,7 @@ and the checks that the published maps pass. Source: OpenStreetMap extract of **
 | Sectors (imadas) | **2,083** (OSM, INS 2014 geocodes) |
 | Municipalities (baladiyat) | **338** of 350, covering 97.9 % of the land ([details](#municipalities-baladiyat)) |
 | Water bodies (overlay) | **67** lakes, dams, sebkhas, chotts and lagoons, 7,016 km² ([details](#water-bodies)) |
+| Cities (points) | **284**: the capital, 24 governorate capitals and 260 municipal seats ([details](#cities)) |
 | Overlap between units | **0.000000 km²** |
 | Land not covered by any unit | **3 m²** (floating-point noise) |
 | Sum of children = parent area | exact at every level (additive area formula) |
@@ -245,6 +246,96 @@ Coastline pockets that open to the sea through a narrow channel but are not a kn
 | 1.9 | 10.824, 35.731 |
 | 47.8 | 10.952, 33.675 |
 | 5.6 | 11.293, 34.762 |
+
+
+## Cities
+
+The cities layer is a point layer of OpenStreetMap place nodes: the national capital, the governorate capitals and the seats of the
+OSM municipalities. No point is typed in by hand. See [methodology.md](methodology.md#11-cities-layer).
+
+| Check | Result |
+| --- | --- |
+| National capital | **Tunis**, the admin_centre of the country, tagged capital=yes |
+| Governorate capitals | **24** of 24 points carry a capital, one per governorate, each inside it and named as in `governorates.csv` (tested) |
+| Municipal seats | **282** of the 338 OSM municipalities (350 in the 2016 division) |
+| Municipalities without a seat point | 56 (listed below) |
+| Found by: admin_centre of the country relation (capital=yes) | 1 |
+| Found by: admin_centre of the governorate relation | 23 |
+| Found by: admin_centre of the municipality relation | 6 |
+| Found by: place node with the municipality's name, in or within 500 m of it | 249 |
+| Found by: city or town node inside it whose name is part of the municipality's name | 5 |
+| OSM place type of the points | city 21 · neighbourhood 1 · suburb 4 · town 111 · village 147 |
+
+- municipality-7127921 (Hazeg El Louza): 2 candidate seats by partial_name, kept node 3823151839 (اللوزة) over 5982965571.
+- municipality-7164067 (Zriba): 3 candidate seats by name, kept node 312490313 (حمام الزريبة) over 1306244942, 2028879938.
+- municipality-7169042 (Kesra): 2 candidate seats by name, kept node 1941836055 (كسرى العليا) over 2050179149.
+- municipality-7210419 (Msaken): 2 candidate seats by name, kept node 287612727 (مساكن) over 6681328578.
+- city-n12635329133 (رحال) has no Latin name in OSM.
+
+OSM municipalities with no seat point: no `admin_centre`, and no place node of the same name in or near them.
+
+| Municipality | الاسم | Governorate |
+| --- | --- | --- |
+| `municipality-7083656` Béchri Fatnassa | بشري فطناسة | Kébili |
+| `municipality-7095907` Den - Den | الدندان | La Manouba |
+| `municipality-7098805` Azmour | أزمور | Nabeul |
+| `municipality-7100362` Takelsa | تاكلسة | Nabeul |
+| `municipality-7102143` El Bassatine | البساتين | La Manouba |
+| `municipality-7102536` Ech Cherifet | الشريفات | Nabeul |
+| `municipality-7104936` Fondouk Jedidi | فندق الجديدي | Nabeul |
+| `municipality-7124825` Ennadhour Sidi Ali Belabed | الناظور سيدي علي بالعابد | Sfax |
+| `municipality-7167849` Chenini Douiret | شنني الدويرات | Tataouine |
+| `municipality-7167930` Djedeliane | جدليانࢫ | Kasserine |
+| `municipality-7167931` Echrayaa Machrek Chams | الشرايع مشرق الشمس | Kasserine |
+| `municipality-7167944` Khmouda | خمودة | Kasserine |
+| `municipality-7167979` Ennour | النور | Kasserine |
+| `municipality-7169007` Bourouis | بورويس | Siliana |
+| `municipality-7169033` Sidi Morched | سيدي مرشد | Siliana |
+| `municipality-7169047` El Hbabsa | الحبابسة | Siliana |
+| `municipality-7169488` Cheraitia Ksour | الشرايطية القصور | Kairouan |
+| `municipality-7169511` Bouhajla | بوحجلة | Kairouan |
+| `municipality-7169726` Sisseb Edheriaat | سيسب الدريعات | Kairouan |
+| `municipality-7171864` Abida | عبيدة | Kairouan |
+| `municipality-7171868` El Ain El Beidha | عين البيضاء | Kairouan |
+| `municipality-7171870` Chaouachi | شواشي | Kairouan |
+| `municipality-7172846` Baten El Ghezel | باطن الغزال | Sidi Bouzid |
+| `municipality-7172849` Cebalet Ouled Asker | سبالة أولاد عسكر | Sidi Bouzid |
+| `municipality-7172882` El Mansoura | المنصورة | Sidi Bouzid |
+| `municipality-7172947` Bennour | بنور | Sidi Bouzid |
+| `municipality-7172963` El Ahouaz Lassouda | الأحواز لسودة | Sidi Bouzid |
+| `municipality-7173064` Habib Thameur | الحبيب ثامر | Gabès |
+| `municipality-7173102` Matmata | مطماطة | Gabès |
+| `municipality-7173767` Ain Essobh Nadhour | عين الصبح الناظور | Jendouba |
+| `municipality-7173835` Balta Bouawene | بلطة بوعوان | Jendouba |
+| `municipality-7173838` Khmeyria | الخمايرية | Jendouba |
+| `municipality-7173847` El Kalaa El Maaden Forgassen | القلعة المعدن فرقصان | Jendouba |
+| `municipality-7173848` Jouaouda | الجواودة | Jendouba |
+| `municipality-7202486` Zaafrane | الزعفران | Le Kef |
+| `municipality-7209225` Utique | أوتيك | Bizerte |
+| `municipality-7209678` Cité Ettadhamen | حي التضامن | Ariana |
+| `municipality-7209934` Khelidia | الخليدية | Ben Arous |
+| `municipality-7209947` Fouchana | فوشانة | Ben Arous |
+| `municipality-7209951` El Mourouj | المروج | Ben Arous |
+| `municipality-7210410` Grimet Hicher | القريمات هيشر | Sousse |
+| `municipality-7210414` Hammam Sousse | حمام سوسة | Sousse |
+| `municipality-7210432` Chott Mariem | شط مريم | Sousse |
+| `municipality-7210451` Ksibet Thrayet | قصيبة الثريات | Sousse |
+| `municipality-7210472` Ezzouhour | الزهور | Sousse |
+| `municipality-7286110` Zarzis Nord | جرجيس الشمالية | Médenine |
+| `municipality-7286613` Teboulbou | تبلبو | Gabès |
+| `municipality-7286791` Chenini Nahal | شنني نحال | Gabès |
+| `municipality-7286824` Kerkennah | قرقنة | Sfax |
+| `municipality-7287170` Gremda | قرمدة | Sfax |
+| `municipality-7287248` El Ain | العين | Sfax |
+| `municipality-7288130` El Masdour Menzel Harb | المصدور منزل حرب | Monastir |
+| `municipality-7288376` Benen Bodher | بنان بوضر | Monastir |
+| `municipality-7303783` El Hekaima | الحكايمة | Mahdia |
+| `municipality-7304405` Ettataouer | التطور | Jendouba |
+| `municipality-7304421` Ben Arous | بن عروس | Ben Arous |
+
+OSM cities and towns (`place=city` or `town`) that are not the seat of an OSM municipality, so they are not published:
+
+Bab Laassal (Tunis) · El Aouina (Tunis) · Sidi Dhrif (Tunis) · Bir El Bey (Ben Arous) · Naassene (Ben Arous) · Nouvelle Medina (Ben Arous) · Heddada (Le Kef) · Ouled Jlassi (Kairouan) · Sidi Amor Bou Hajla (Kairouan) · Sidi Saad (Kairouan) · Masjed Aissa (Monastir) · Chebba (Mahdia) · Hazeg (Sfax) · Mahrès (Sfax) · Remla (Sfax) · Sakiet Ezzit (Sfax) · Matmata el Qadima (Gabès) · El Mey (Médenine) · Erriadh (Médenine) · Guellala (Médenine) · Sedouikech (Médenine) · El Rogba (Tataouine)
 
 
 Found an error? Please [open a data issue](https://github.com/Alaa-Taieb/map-tunisia/issues/new?template=data-error.yml).

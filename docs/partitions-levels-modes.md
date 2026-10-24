@@ -6,7 +6,7 @@ Each map is one combination of three choices:
 dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg
           │                     │      └── how it looks (8 modes)
           │                     └───────── how detailed it is (5 levels)
-          └─────────────────────────────── how Tunisia is divided (6 nested partitions + municipalities + water)
+          └─────────────────────────────── how Tunisia is divided (6 nested partitions + municipalities + water + cities)
 ```
 
 ## Partitions
@@ -42,6 +42,16 @@ as a light base (`#water-base`) under the water. In `light`, `dark` and `interac
 (blue for lakes, reservoirs and lagoons, sand for sebkhas and chotts). Like the municipalities it has no `nested` mode and
 stops at `low`. The [accuracy report](accuracy.md#water-bodies) lists what was merged, clipped and left out.
 
+### Cities are points
+
+`cities` (المدن) is the only point layer: 284 dots for the capital Tunis, the 23 other governorate capitals and the seats of
+the municipalities that OpenStreetMap supports. Every file draws the land (`#cities-base`) and the governorate borders
+(`#borders`) under the dots, which are `<circle>` elements sized and coloured by `type` (red for Tunis, blue for the
+governorate capitals, slate for the other cities). The level of detail changes the land and borders, not the points; the
+labelled modes name every capital and as many other cities as fit without overlaps, and at `low` they name the capitals
+only. Like water, it has no `nested` mode and stops at `low`. The
+[accuracy report](accuracy.md#cities) lists the municipalities without a seat point.
+
 See the [reference tables](reference.md) for every region, district, governorate and delegation.
 
 ## Levels of detail (LOD)
@@ -64,7 +74,7 @@ unit's main part is always kept. The [accuracy report](accuracy.md#levels-of-det
 vertex counts change, and the [catalog](catalog.md) lists every file size.
 
 **Which partitions exist at which level?** `country`, `regions`, `districts` and `governorates` exist at all five levels.
-`delegations`, `sectors`, `municipalities` and `water` stop at `low`: at `tiny`, a city delegation would shrink to a few pixels anyway.
+`delegations`, `sectors`, `municipalities`, `water` and `cities` stop at `low`: at `tiny`, a city delegation would shrink to a few pixels anyway.
 
 ## Modes
 
@@ -91,6 +101,8 @@ with CSS to get any look at full detail).
   `dist/data/*.csv`, ready for your own labels.
 - Font sizes adapt to each unit. Labels that don't fit are shrunk, nudged, or (for the 4 coarser partitions) placed as a
   callout in the sea with a leader line.
+- City labels sit next to their dot, at one of eight positions around it. Capitals are placed first and may move further
+  out with a leader line; a city whose label would overlap another goes unlabelled.
 - Fonts: the SVGs ask for Inter / Segoe UI / Helvetica / Arial (Latin) and Noto Naskh Arabic / Segoe UI / Tahoma (Arabic),
   falling back to the system's sans-serif font.
 

@@ -7,7 +7,8 @@ every conflict, and topology-aware simplification.
  Geofabrik OSM extract (.pbf)
         │  scripts/extract/fetch.py
         ▼
- pyosmium: governorates (admin_level 4), delegations (5), sectors / imadas (6), coastline islets; boundary=municipality
+ pyosmium: governorates (admin_level 4), delegations (5), sectors / imadas (6), coastline islets; boundary=municipality;
+          water areas; place nodes and admin_centre members (cities)
         │  scripts/extract/extract.py
         ▼
  planar overlay → labelled faces → conflict rules → gap allocation → post-2014 delegations
@@ -175,7 +176,31 @@ governorates, delegations and sectors that contain them (section 5), and the lag
 The build draws the water bodies over one land polygon simplified in the same topology, takes the coastline from that land
 polygon alone so lagoons are never mistaken for land, and colours the bodies by type rather than by graph colouring.
 
-## 11. Validation
+## 11. Cities layer
+
+The capital, the governorate capitals and the municipal seats ship as a point layer, `cities`, built by
+`scripts/extract/cities.py` from the OSM place nodes. Nothing is typed in by hand; every point is an OSM node.
+
+1. reads every `place=*` node, and the `admin_centre` members of the country relation (admin_level 2), of the 24
+   governorate relations (admin_level 4, `ISO3166-2=TN-*`) and of the `boundary=municipality` relations;
+2. the national capital is the `admin_centre` of the country, and must be a node tagged `capital=yes` (Tunis); each
+   governorate capital is the `admin_centre` of its governorate and must lie inside it. The script stops if either is
+   missing, so a capital is never guessed;
+3. finds the seat of each municipality, in this order: the governorate capital of the same name in or within 500 m of it
+   (Jendouba's node lies 224 m outside its municipality, inside Ettataouer); the `admin_centre` of the municipality
+   relation (6 have one); a settlement node (`city`, `town`, `village`, `suburb`, `quarter`, `neighbourhood`) within 500 m
+   with the same Latin or Arabic name, ignoring accents, case and the article (*El*, *Al*, *ال*); else a `city` or `town`
+   node inside it whose name is a whole-word part of the municipality's name (*Midoun* in *Djerba Midoun*). Several
+   candidates of one rank: the more important `place`, then the one with a Wikidata item, then the one nearest the centre
+   of the municipality (the report lists each such choice);
+4. publishes the national capital, the governorate capitals and the seats found, each with the governorate, delegation and
+   sector it lies in (point in polygon on the sectors) and the municipality it is the seat of; municipalities without a
+   seat node, and OSM cities and towns that are no municipal seat, are listed in `cities-report.json` and not published.
+
+There is no population threshold: OSM `population` tags exist for few nodes and come from different years. The build draws
+the points over the land and the governorate borders of each level of detail, and places labels around the dots.
+
+## 12. Validation
 
 `npm test` checks, among other things:
 
@@ -190,8 +215,11 @@ polygon alone so lagoons are never mistaken for land, and colours the bodies by 
 - water: counts per type, ids tied to their OSM way or relation, names, governorates, the landmark lakes, chotts and
   lagoons with plausible areas, no overlaps, nothing outside Tunisia, lagoons on the sea side, valid GeoJSON and TopoJSON at
   every level, and the land drawn under the bodies in every SVG, coloured by type;
-- every SVG of the matrix exists, is valid XML, shares the frame, credits OSM and the author, has one path and one label per
-  unit, contains no scripts or external references, and fits its size budget;
+- cities: counts per type, Tunis as the national capital, one capital per governorate lying inside it (point in polygon on
+  the full-precision borders) and named as in `governorates.csv`, ids tied to their OSM node, one seat per municipality,
+  `x`/`y` equal to `project()`, GeoJSON and TopoJSON points at every level, and every capital labelled in the labelled SVGs;
+- every SVG of the matrix exists, is valid XML, shares the frame, credits OSM and the author, has one path (or dot) per unit and
+  one label per polygon unit, contains no scripts or external references, and fits its size budget;
 - the projection helper matches PROJ to 1 mm.
 
 CI also rebuilds everything and fails if the committed files are out of date.
