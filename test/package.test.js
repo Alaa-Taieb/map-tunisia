@@ -30,10 +30,11 @@ test('smoke: the package imports itself by name and the data has the expected co
   assert.throws(() => api.attributesPath('provinces'), /Unknown partition/);
   assert.throws(() => api.attributesPath('sectors', 'xml'), /json" or "csv/);
 
-  // Every layer's files resolve through the subpath exports, the municipalities and the water layer included.
+  // Every layer's files resolve through the subpath exports, the municipalities, water and cities layers included.
   for (const sub of ['geojson/tunisia-municipalities-medium.geojson', 'topojson/tunisia-municipalities-low.topojson',
     'svg/municipalities/tunisia-municipalities-medium-light.svg', 'data/municipalities.csv',
-    'geojson/tunisia-water-medium.geojson', 'topojson/tunisia-water-low.topojson', 'svg/water/tunisia-water-medium-light.svg', 'data/water.csv']) {
+    'geojson/tunisia-water-medium.geojson', 'topojson/tunisia-water-low.topojson', 'svg/water/tunisia-water-medium-light.svg', 'data/water.csv',
+    'geojson/tunisia-cities-medium.geojson', 'topojson/tunisia-cities-low.topojson', 'svg/cities/tunisia-cities-medium-labeled.svg', 'data/cities.csv']) {
     assert.ok(fs.existsSync(fileURLToPath(import.meta.resolve(`map-tunisia/${sub}`))), sub);
   }
 
@@ -91,6 +92,7 @@ test('release script builds versioned ZIPs and a matching checksum file', () => 
     assert.equal(JSON.parse(json.get('json/sectors.json')).length, 2083);
     assert.equal(JSON.parse(json.get('json/municipalities.json')).length, 338);
     assert.equal(JSON.parse(json.get('json/water.json')).length, 67);
+    assert.equal(JSON.parse(json.get('json/cities.json')).length, 284);
     for (const extra of ['LICENSE', 'LICENSE-DATA.md', 'README.txt']) assert.ok(json.has(extra), extra);
     const csv = readZip(results[1].file);
     assert.equal(csv.get('csv/delegations.csv').toString().trim().split('\n').length, 280, 'header + 279 rows');
