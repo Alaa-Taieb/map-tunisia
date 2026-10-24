@@ -1,0 +1,90 @@
+{
+  "generated": "2026-10-24T19:08:10Z",
+  "source": {
+    "name": "OpenStreetMap",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "selector": "Tifinagh-only values of name:zgh, name:zgh-Tfng, name:ber, name:ber-Tfng, name:tzm, name:tzm-Tfng, name:shi-Tfng, name:kab-Tfng on the objects of the published units",
+    "url": "https://download.geofabrik.de/africa/tunisia-latest.osm.pbf",
+    "osm_timestamp": "2026-10-16T20:21:21Z",
+    "osm_date": "2026-10-16",
+    "sha256": "444dd6e1e64e1ab4626cde5e54d911876c7761b63f4624a98872421007f50429",
+    "bytes": 84231484
+  },
+  "tags": [
+    "name:zgh",
+    "name:zgh-Tfng",
+    "name:ber",
+    "name:ber-Tfng",
+    "name:tzm",
+    "name:tzm-Tfng",
+    "name:shi-Tfng",
+    "name:kab-Tfng"
+  ],
+  "counts": {
+    "objects_read": 3060,
+    "names": 11
+  },
+  "per_tag": {
+    "name:ber": 9,
+    "name:zgh": 2
+  },
+  "not_tifinagh": [],
+  "names": {
+    "TN": {
+      "name": "ⵜⵓⵏⵙ",
+      "tag": "name:zgh",
+      "osm": "relation/192757"
+    },
+    "city-n1278361178": {
+      "name": "ⵍⴷⵀⵉⴱⴰ",
+      "tag": "name:ber",
+      "osm": "node/1278361178"
+    },
+    "city-n1278361348": {
+      "name": "ⵔⵎⴰⴷⴰ",
+      "tag": "name:ber",
+      "osm": "node/1278361348"
+    },
+    "city-n1980279372": {
+      "name": "ⵍⵚⵎⴰⵔ",
+      "tag": "name:ber",
+      "osm": "node/1980279372"
+    },
+    "city-n264885332": {
+      "name": "ⵜⵉⵟⵟⴰⵡⵉⵏ",
+      "tag": "name:ber",
+      "osm": "node/264885332"
+    },
+    "city-n27564968": {
+      "name": "ⵜⵓⵏⴻⵙ",
+      "tag": "name:ber",
+      "osm": "node/27564968"
+    },
+    "city-n287001619": {
+      "name": "ⵚⴼⴰⵇⴻⵙ",
+      "tag": "name:ber",
+      "osm": "node/287001619"
+    },
+    "city-n287543373": {
+      "name": "ⵙⵓⵙⴰ",
+      "tag": "name:ber",
+      "osm": "node/287543373"
+    },
+    "city-n287543904": {
+      "name": "ⵜⴰⴽⴻⵔⵡⴰⵏⵜ",
+      "tag": "name:ber",
+      "osm": "node/287543904"
+    },
+    "city-n287544816": {
+      "name": "ⴱⴻⵏⵣⴰⵔⵜ",
+      "tag": "name:zgh",
+      "osm": "node/287544816"
+    },
+    "city-n298018887": {
+      "name": "ⵜⵓⵣⵔ",
+      "tag": "name:ber",
+      "osm": "node/298018887"
+    }
+  }
+}

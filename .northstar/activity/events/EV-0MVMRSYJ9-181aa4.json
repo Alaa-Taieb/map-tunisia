@@ -1,0 +1,14 @@
+{
+  "id": "EV-0MVMRSYJ9-181aa4",
+  "type": "task.started",
+  "at": "2026-10-24T19:06:59.157Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-018",
+    "MS-005"
+  ],
+  "summary": "claude-code started NS-018: Tamazight (Tifinagh) and English-transliteration label modes",
+  "data": {
+    "branch": "main"
+  }
+}

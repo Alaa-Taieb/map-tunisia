@@ -1,339 +1,339 @@
-id,governorate,name_en,name_fr,name_ar,wikidata,osm_relation,region,district,area_km2,label_lon,label_lat,label_x,label_y
-municipality-7082169,TN-73,Jemna,Jemna,جمنة,,7082169,sud-ouest,district-5,679.80,9.16269,33.60035,164.09,452.14
-municipality-7082278,TN-73,Souk El Ahed,Souk El Ahed,سوق الأحد,,7082278,sud-ouest,district-5,1371.36,8.91551,33.95554,141.19,412.77
-municipality-7082337,TN-73,Rejim Mâatoug,Rejim Mâatoug,رجيم معتوق,,7082337,sud-ouest,district-5,2493.85,7.99433,33.33676,55.41,480.93
-municipality-7082678,TN-73,Bchelli,Bchelli,بشلي جرسن البليدات,,7082678,sud-ouest,district-5,435.11,8.82783,33.57932,133.02,454.47
-municipality-7083656,TN-73,Béchri Fatnassa,Béchri Fatnassa,بشري فطناسة,,7083656,sud-ouest,district-5,905.97,8.62537,33.83694,114.34,425.86
-municipality-7090535,TN-14,Manouba,Manouba,منوبة,,7090535,grand-tunis,district-2,8.65,10.08314,36.80888,245.62,95.78
-municipality-7090952,TN-14,Douar Hicher,Douar Hicher,دوار هيشر,,7090952,grand-tunis,district-2,9.05,10.08086,36.83204,245.38,93.21
-municipality-7091762,TN-14,Oued Ellil,Oued Ellil,وادي الليل,,7091762,grand-tunis,district-2,57.15,10.01392,36.82379,239.42,94.19
-municipality-7095634,TN-73,El Faouar,El Faouar,الفوار,,7095634,sud-ouest,district-5,7348.48,8.53541,33.10632,105.65,506.83
-municipality-7095907,TN-14,Den - Den,Den - Den,الدندان,,7095907,grand-tunis,district-2,3.37,10.11193,36.80719,248.19,95.94
-municipality-7096463,TN-21,El Haouaira,El Haouaira,الهوارية,,7096463,nord-est,district-2,137.24,10.96590,37.00883,323.91,72.34
-municipality-7096630,TN-21,Dar Allouch,Dar Allouch,دار علوش,,7096630,nord-est,district-2,61.10,11.06676,36.94873,333.03,78.82
-municipality-7097005,TN-21,Hammam El Ghezaz,Hammam El Ghezaz,حمام الغزاز,,7097005,nord-est,district-2,33.46,11.10839,36.87393,336.92,87.04
-municipality-7097980,TN-21,Tazaghrane,Tazaghrane,تزغران,,7097980,nord-est,district-2,172.35,10.85780,36.90942,314.50,83.56
-municipality-7098176,TN-21,Kelibia,Kelibia,قليبية,,7098176,nord-est,district-2,34.37,11.08345,36.84634,334.76,90.15
-municipality-7098805,TN-21,Azmour,Azmour,أزمور,,7098805,nord-est,district-2,91.38,10.99703,36.91087,326.91,83.15
-municipality-7098867,TN-14,Tebourba,Tebourba,طبربة,,7098867,grand-tunis,district-2,286.65,9.80983,36.86979,221.18,89.27
-municipality-7099099,TN-14,Djedaïda,Djedaïda,الجديدة,,7099099,grand-tunis,district-2,182.14,9.92660,36.87496,231.58,88.60
-municipality-7099175,TN-14,El Battane,El Battane,البطان,,7099175,grand-tunis,district-2,156.42,9.76036,36.77640,216.85,99.66
-municipality-7099966,TN-21,Menzel Temime,Menzel Temime,منزل تميم,,7099966,nord-est,district-2,128.88,10.96425,36.80402,324.23,95.07
-municipality-7100362,TN-21,Takelsa,Takelsa,تاكلسة,,7100362,nord-est,district-2,278.40,10.67400,36.81253,298.32,94.62
-municipality-7100416,TN-21,Menzel Hor,Menzel Hor,منزل حر,,7100416,nord-est,district-2,134.23,10.81030,36.80811,310.49,94.89
-municipality-7100601,TN-21,El Mida,El Mida,الميدة,,7100601,nord-est,district-2,152.56,10.83687,36.72724,313.03,103.81
-municipality-7100602,TN-21,Korbous,Korbous,قربص,,7100602,nord-est,district-2,49.08,10.57744,36.77351,289.78,99.09
-municipality-7100695,TN-21,Soliman,Soliman,سليمان,,7100695,nord-est,district-2,49.30,10.47339,36.70817,280.60,106.49
-municipality-7101604,TN-21,Menzel Bouzelfa,Menzel Bouzelfa,منزل بوزلفة,Q2724043,7101604,nord-est,district-2,133.77,10.73039,36.71037,303.55,105.86
-municipality-7102051,TN-14,Borj El Amri,Borj El Amri,برج العامري,,7102051,grand-tunis,district-2,173.89,9.86117,36.65659,225.97,112.88
-municipality-7102143,TN-14,El Bassatine,El Bassatine,البساتين,,7102143,grand-tunis,district-2,172.86,9.96471,36.66143,235.22,112.25
-municipality-7102148,TN-14,Mornaguia,Mornaguia,المرناقية,,7102148,grand-tunis,district-2,88.56,10.03029,36.70461,241.03,107.40
-municipality-7102518,TN-21,Korba,Korba,قربة,,7102518,nord-est,district-2,186.56,10.80186,36.63730,310.09,113.85
-municipality-7102536,TN-21,Ech Cherifet,Ech Cherifet,الشريفات,,7102536,nord-est,district-2,44.04,10.51981,36.66897,284.82,110.77
-municipality-7102676,TN-21,Ben Khalled,Ben Khalled,بني خلاد,,7102676,nord-est,district-2,74.40,10.61384,36.64357,293.27,113.45
-municipality-7102856,TN-21,El Maamoura,El Maamoura,المعمورة,,7102856,nord-est,district-2,23.30,10.81134,36.49856,311.23,129.23
-municipality-7102858,TN-21,Tazarka,Tazarka,تازركة,,7102858,nord-est,district-2,19.79,10.82947,36.54621,312.75,123.91
-municipality-7103010,TN-21,Ben Khiar,Ben Khiar,بني خيار,,7103010,nord-est,district-2,33.14,10.77506,36.48204,308.01,131.12
-municipality-7103013,TN-21,Somaa,Somaa,صمعة,,7103013,nord-est,district-2,49.82,10.77421,36.55647,307.78,122.86
-municipality-7103333,TN-21,Nabeul,Nabeul,نابل,,7103333,nord-est,district-2,73.89,10.68614,36.47251,300.06,132.32
-municipality-7103338,TN-21,Dar Chaabane El Fehri,Dar Chaabane El Fehri,دار شعبان الفهري,,7103338,nord-est,district-2,68.77,10.71655,36.51095,302.71,128.01
-municipality-7103678,TN-21,Zaouiet Jdidi,Zaouiet Jdidi,زاوية الجديدي,,7103678,nord-est,district-2,40.04,10.60000,36.60702,292.10,117.53
-municipality-7103686,TN-21,Bou Argoub,Bou Argoub,بو عرقوب,,7103686,nord-est,district-2,129.61,10.57623,36.53103,290.11,125.99
-municipality-7104936,TN-21,Fondouk Jedidi,Fondouk Jedidi,فندق الجديدي,,7104936,nord-est,district-2,129.33,10.44220,36.64735,277.92,113.28
-municipality-7104937,TN-21,Grombalia,Grombalia,قرمبالية,,7104937,nord-est,district-2,173.41,10.50825,36.58302,283.93,120.32
-municipality-7107483,TN-73,Douz,Douz,دوز,,7107483,sud-ouest,district-5,7743.75,9.35858,33.07426,182.47,510.42
-municipality-7107713,TN-73,El Golaa,El Golaa,القلعة,,7107713,sud-ouest,district-5,52.57,8.98973,33.48901,148.05,464.50
-municipality-7108057,TN-73,Qibili,Kebilli,قبلي,,7108057,sud-ouest,district-5,1218.79,9.16903,33.81028,164.64,428.87
-municipality-7110567,TN-61,Agareb,Agareb,عقارب,,7110567,centre-est,district-4,737.84,10.42633,34.75905,279.54,322.75
-municipality-7111390,TN-61,Skhira,Skhira,الصخيرة,,7111390,centre-est,district-4,911.62,9.96899,34.31565,238.15,372.42
-municipality-7119543,TN-61,Bir Ali Ben Khalifa,Bir Ali Ben Khalifa,بئر علي بن خليفة,,7119543,centre-est,district-4,545.82,10.04741,34.63984,245.00,336.40
-municipality-7124825,TN-61,Ennadhour Sidi Ali Belabed,Ennadhour Sidi Ali Belabed,الناظور سيدي علي بالعابد,,7124825,centre-est,district-4,660.01,10.05167,34.81637,245.18,316.82
-municipality-7125808,TN-61,Menzel Chaker,Menzel Chaker,منزل شاكر,,7125808,centre-est,district-4,1287.37,10.25292,35.01157,263.32,294.96
-municipality-7126242,TN-61,El Achech,El Achech,الأعشاش,,7126242,centre-est,district-4,327.53,10.56098,35.09230,291.29,285.61
-municipality-7126939,TN-61,El Hencha,El Hencha,الحنشة,,7126939,centre-est,district-4,346.42,10.74958,35.16204,308.35,277.59
-municipality-7127885,TN-61,Djebeniana,Djebeniana,جبنيانة,,7127885,centre-est,district-4,193.72,10.86494,35.08345,319.02,286.11
-municipality-7127921,TN-61,Hazeg El Louza,Hazeg El Louza,حزق اللوزة,,7127921,centre-est,district-4,63.95,10.99351,35.05171,330.81,289.41
-municipality-7164067,TN-22,Zriba,Zriba,الزريبة,,7164067,nord-est,district-2,348.99,10.28448,36.30316,264.33,151.66
-municipality-7164068,TN-22,Zaghouan,Zaghouan,زغوان,,7164068,nord-est,district-2,409.49,10.18777,36.44249,255.45,136.32
-municipality-7164069,TN-22,Bir Mcherga,Bir Mcherga,بئر مشارقة,,7164069,nord-est,district-2,305.87,10.01254,36.47657,239.71,132.71
-municipality-7164070,TN-22,Jebel Oust,Jebel Oust,جبل الوسط,,7164070,nord-est,district-2,229.61,10.01376,36.58111,239.69,121.12
-municipality-7164286,TN-22,Saouaf,Saouaf,صواف,,7164286,nord-est,district-2,253.10,10.17702,36.21477,254.80,161.59
-municipality-7164287,TN-22,El Fahs,El Fahs,الفحص,,7164287,nord-est,district-2,398.89,9.82079,36.41805,222.58,139.37
-municipality-7164400,TN-22,Ennadhour,Ennadhour,الناظور,,7164400,nord-est,district-2,357.40,9.94882,36.11165,234.40,173.25
-municipality-7164401,TN-22,El Amaiem,El Amaiem,العمايم,,7164401,nord-est,district-2,536.64,9.79920,36.25459,220.80,157.52
-municipality-7167437,TN-83,Remada,Remada,رمادة,Q3424458,7167437,sud-est,district-5,27575.98,9.63848,32.18303,209.19,609.10
-municipality-7167457,TN-83,Dhehiba,Dhehiba,الذهيبة,Q1015418,7167457,sud-est,district-5,3221.85,10.42781,31.86914,284.06,643.18
-municipality-7167848,TN-83,Tataouine,Tataouine,تطاوين,,7167848,sud-est,district-5,2873.67,10.64647,32.63743,303.44,557.71
-municipality-7167849,TN-83,Chenini Douiret,Chenini Douiret,شنني الدويرات,,7167849,sud-est,district-5,1863.34,10.16865,32.79003,258.43,541.39
-municipality-7167867,TN-83,Bir Lahmar,Bir Lahmar,بئر الأحمر,,7167867,sud-est,district-5,244.83,10.45882,33.15250,285.05,500.86
-municipality-7167879,TN-83,Ghomrassen,Ghomrassen,غمراسن,,7167879,sud-est,district-5,689.23,10.25277,33.04578,265.97,512.94
-municipality-7167885,TN-83,Smar,Smar,الصمار,,7167885,sud-est,district-5,1993.65,10.94806,32.81113,331.38,537.97
-municipality-7167899,TN-72,Nefta,Nefta,نفطة,,7167899,sud-ouest,district-4,1641.38,7.88845,33.76455,46.07,433.40
-municipality-7167900,TN-72,Hazoua,Hazoua,حزوة,,7167900,sud-ouest,district-4,1283.32,7.63796,33.89914,23.07,418.19
-municipality-7167902,TN-72,Tameghza,Tameghza,تمغزة,,7167902,sud-ouest,district-4,910.72,7.89966,34.20846,47.63,384.18
-municipality-7167903,TN-72,Tozeur,Tozeur,توزر,,7167903,sud-ouest,district-4,819.60,8.17247,33.79237,72.39,430.56
-municipality-7167904,TN-72,Hamet Ejrid,Hamet Ejrid,حامة الجريد,,7167904,sud-ouest,district-4,583.00,8.17249,34.11225,72.68,395.09
-municipality-7167905,TN-72,Degach,Degach,دقاش,,7167905,sud-ouest,district-4,835.80,8.34839,33.93602,88.78,414.75
-municipality-7167913,TN-42,Thélepte,Thélepte,تلابت,,7167913,centre-ouest,district-3,591.86,8.46142,35.06202,99.89,289.95
-municipality-7167918,TN-42,Feriana,Feriana,فريانة,,7167918,centre-ouest,district-3,414.37,8.37374,34.91669,91.79,306.02
-municipality-7167919,TN-42,Majel Bel Abbes,Majel Bel Abbes,ماجل بالعباس,,7167919,centre-ouest,district-3,886.58,8.55800,34.74714,108.54,324.91
-municipality-7167924,TN-42,Hassi El Ferid,Hassi El Ferid,حاسي الفريد,,7167924,centre-ouest,district-3,968.92,8.88991,34.92919,138.95,304.80
-municipality-7167925,TN-42,Hidra,Hidra,حيدرة,,7167925,centre-ouest,district-3,496.61,8.46272,35.56473,100.31,234.20
-municipality-7167927,TN-42,Thala,Thala,تالة,Q1975233,7167927,centre-ouest,district-3,716.66,8.66984,35.55223,119.08,235.66
-municipality-7167928,TN-42,El Ayoun,El Ayoun,العيون,,7167928,centre-ouest,district-3,411.58,8.89955,35.50353,139.89,241.11
-municipality-7167930,TN-42,Djedeliane,Djedeliane,جدليانࢫ,,7167930,centre-ouest,district-3,274.96,8.89715,35.66843,139.69,222.82
-municipality-7167931,TN-42,Echrayaa Machrek Chams,Echrayaa Machrek Chams,الشرايع مشرق الشمس,,7167931,centre-ouest,district-3,641.09,8.97004,35.34011,146.28,259.24
-municipality-7167932,TN-42,Ain El Khemaissia,Ain El Khemaissia,عين الخمايسية,,7167932,centre-ouest,district-3,278.70,9.19998,35.47553,167.14,244.20
-municipality-7167935,TN-42,Errakhmet,Errakhmet,الرخمات,,7167935,centre-ouest,district-3,236.37,9.21501,35.07661,168.60,288.44
-municipality-7167936,TN-42,Sbiba,Sbiba,سبيبة,,7167936,centre-ouest,district-3,168.97,9.06066,35.52847,154.50,238.35
-municipality-7167940,TN-42,Sbeitla,Sbeitla,سبيطلة,,7167940,centre-ouest,district-3,238.23,9.15200,35.21644,162.83,272.94
-municipality-7167944,TN-42,Khmouda,Khmouda,خمودة,,7167944,centre-ouest,district-3,409.67,8.64955,35.24910,117.12,269.28
-municipality-7167945,TN-42,Foussana,Foussana,فوسانة,,7167945,centre-ouest,district-3,505.20,8.40877,35.39351,95.31,253.16
-municipality-7167977,TN-42,Kasserine,Kasserine,القصرين,,7167977,centre-ouest,district-3,585.64,8.67818,35.03754,119.65,292.75
-municipality-7167978,TN-42,Bouzguam,Bouzguam,بوزقام,,7167978,centre-ouest,district-3,376.21,8.92169,35.14720,141.87,280.63
-municipality-7167979,TN-42,Ennour,Ennour,النور,,7167979,centre-ouest,district-3,4.58,8.84836,35.16526,135.19,278.62
-municipality-7168897,TN-71,Belkhir,Belkhir,بلخير,,7168897,sud-ouest,district-4,842.44,9.42106,34.31818,187.74,372.48
-municipality-7168909,TN-71,El Guetar,El Guetar,القطار,Q2705113,7168909,sud-ouest,district-4,933.43,8.99946,34.26159,148.95,378.84
-municipality-7168910,TN-71,Mdhila,Mdhila,المظيلة,,7168910,sud-ouest,district-4,644.40,8.69732,34.22335,121.12,383.04
-municipality-7168913,TN-71,Metlaoui,Metlaoui,المتلوي,,7168913,sud-ouest,district-4,973.30,8.35738,34.25109,89.83,379.82
-municipality-7168914,TN-71,Redeyef,Redeyef,الرديف,,7168914,sud-ouest,district-4,403.77,8.13558,34.33559,69.49,370.29
-municipality-7168918,TN-71,Sidi Boubaker,Sidi Boubaker,سيدي بوبكر,,7168918,sud-ouest,district-4,176.44,8.32089,34.69053,86.80,331.07
-municipality-7168919,TN-71,Moularès,Moularès,أم الأعراس,,7168919,sud-ouest,district-4,798.71,8.34631,34.53280,89.01,348.57
-municipality-7168942,TN-71,Gafsa,Gafsa,قفصة,,7168942,sud-ouest,district-4,1285.32,8.74547,34.51153,125.64,351.09
-municipality-7168944,TN-71,Sidi Aich,Sidi Aich,سيدي عيش,,7168944,sud-ouest,district-4,442.86,8.85518,34.69536,135.74,330.73
-municipality-7168946,TN-71,El Ksar,El Ksar,القصر,,7168946,sud-ouest,district-4,218.82,8.94516,34.43945,143.96,359.12
-municipality-7168947,TN-71,Lala,Lala,لالة,,7168947,sud-ouest,district-4,63.01,8.86128,34.37667,136.25,366.07
-municipality-7168950,TN-71,Sanouche,Sanouche,زانوش,,7168950,sud-ouest,district-4,319.19,9.05564,34.49083,154.11,353.42
-municipality-7168963,TN-71,Sned,Sned,السند,,7168963,sud-ouest,district-4,449.19,9.19818,34.63203,167.16,337.74
-municipality-7168989,TN-34,Bou Arada,Bou Arada,بوعرادة,,7168989,nord-ouest,district-3,380.61,9.65779,36.35770,208.02,146.18
-municipality-7169001,TN-34,Gaafour,Gaafour,قعفور,,7169001,nord-ouest,district-3,462.24,9.32978,36.24148,178.63,159.22
-municipality-7169002,TN-34,El Aroussa,El Aroussa,العروسة,,7169002,nord-ouest,district-3,360.60,9.44576,36.38054,188.98,143.75
-municipality-7169007,TN-34,Bourouis,Bourouis,بورويس,,7169007,nord-ouest,district-3,275.86,9.13474,36.18335,161.12,165.71
-municipality-7169008,TN-34,El Krib,El Krib,الكريب,,7169008,nord-ouest,district-3,425.87,9.05616,36.32907,154.04,149.55
-municipality-7169033,TN-34,Sidi Morched,Sidi Morched,سيدي مرشد,,7169033,nord-ouest,district-3,336.33,9.41657,35.96836,186.56,189.48
-municipality-7169041,TN-34,Makthar,Makthar,مكثر,,7169041,nord-ouest,district-3,343.77,9.19349,35.86415,166.47,201.10
-municipality-7169042,TN-34,Kesra,Kesra,كسرى,,7169042,nord-ouest,district-3,435.02,9.38638,35.77963,183.92,210.42
-municipality-7169044,TN-34,Errouhia,Errouhia,الروحية,,7169044,nord-ouest,district-3,281.18,9.09978,35.73379,158.02,215.57
-municipality-7169047,TN-34,El Hbabsa,El Hbabsa,الحبابسة,,7169047,nord-ouest,district-3,374.27,9.26015,35.61075,172.56,229.19
-municipality-7169440,TN-34,Siliana,Siliana,سليانة,,7169440,nord-ouest,district-3,545.29,9.26410,36.04397,172.79,181.14
-municipality-7169441,TN-34,Bargou,Bargou,برقو,,7169441,nord-ouest,district-3,448.25,9.61108,36.09958,204.01,174.83
-municipality-7169465,TN-41,Hajeb El Ayoun,Hajeb El Ayoun,حاجب العيون,,7169465,centre-ouest,district-3,353.03,9.60197,35.36525,203.69,256.28
-municipality-7169471,TN-41,Echrarda,Echrarda,الشراردة,,7169471,centre-ouest,district-3,138.36,10.05280,35.11395,244.94,283.81
-municipality-7169472,TN-41,Nasrallah,Nasrallah,نصر الله,,7169472,centre-ouest,district-3,422.42,9.83383,35.25614,224.85,268.23
-municipality-7169488,TN-41,Cheraitia Ksour,Cheraitia Ksour,الشرايطية القصور,,7169488,centre-ouest,district-3,191.97,10.17166,35.17540,255.69,276.88
-municipality-7169501,TN-41,Jehina,Jehina,جهينة,,7169501,centre-ouest,district-3,251.59,10.06979,35.29596,246.27,263.61
-municipality-7169502,TN-41,Menzel Mhiri,Menzel Mhiri,منزل المهيري,,7169502,centre-ouest,district-3,262.68,9.83111,35.43631,224.44,248.25
-municipality-7169511,TN-41,Bouhajla,Bouhajla,بوحجلة,,7169511,centre-ouest,district-3,437.88,10.11241,35.44262,249.96,247.30
-municipality-7169523,TN-41,Kairouan,Kairouan,القيروان,,7169523,centre-ouest,district-3,461.63,10.12810,35.71054,251.05,217.57
-municipality-7169681,TN-41,Rakada,Rakada,رقادة,,7169681,centre-ouest,district-3,309.06,10.10349,35.57232,248.99,232.93
-municipality-7169726,TN-41,Sisseb Edheriaat,Sisseb Edheriaat,سيسب الدريعات,,7169726,centre-ouest,district-3,322.98,10.17023,35.99394,254.48,186.09
-municipality-7169737,TN-41,Sbikha,Sbikha,السبيخة,,7169737,centre-ouest,district-3,746.31,9.94263,35.91913,234.05,194.61
-municipality-7169743,TN-41,Oueslatia,Oueslatia,الوسلاتية,,7169743,centre-ouest,district-3,718.96,9.61905,35.87496,204.88,199.74
-municipality-7169772,TN-41,El Alaa,El Alaa,العلا,,7169772,centre-ouest,district-3,361.26,9.47426,35.65828,191.93,223.85
-municipality-7169773,TN-41,Haffouz,Haffouz,حفوز,,7169773,centre-ouest,district-3,403.51,9.73864,35.65191,215.86,224.41
-municipality-7171852,TN-41,Ain Jelloula,Ain Jelloula,عين جلولة,,7171852,centre-ouest,district-3,195.73,9.77663,35.80089,219.17,207.86
-municipality-7171864,TN-41,Abida,Abida,عبيدة,,7171864,centre-ouest,district-3,217.12,9.85199,35.54653,226.23,236.01
-municipality-7171865,TN-41,Chebika,Chebika,الشبيكة,,7171865,centre-ouest,district-3,295.51,9.91296,35.75404,231.54,212.95
-municipality-7171868,TN-41,El Ain El Beidha,El Ain El Beidha,عين البيضاء,,7171868,centre-ouest,district-3,207.80,9.72999,35.52212,215.19,238.81
-municipality-7171870,TN-41,Chaouachi,Chaouachi,شواشي,,7171870,centre-ouest,district-3,235.90,9.49258,35.53841,193.65,237.13
-municipality-7172845,TN-43,Jilma,Jilma,جلمة,,7172845,centre-ouest,district-4,325.94,9.43405,35.27300,188.48,266.59
-municipality-7172846,TN-43,Baten El Ghezel,Baten El Ghezel,باطن الغزال,,7172846,centre-ouest,district-4,343.44,9.37918,35.40891,183.43,251.54
-municipality-7172849,TN-43,Cebalet Ouled Asker,Cebalet Ouled Asker,سبالة أولاد عسكر,,7172849,centre-ouest,district-4,295.28,9.31133,35.17680,177.35,277.31
-municipality-7172858,TN-43,Sidi Ali Ben Aoun,Sidi Ali Ben Aoun,سيدي علي بن عون,,7172858,centre-ouest,district-4,387.69,9.13108,34.84428,160.98,314.22
-municipality-7172859,TN-43,Bir El Hafey,Bir El Hafey,بئر الحفي,,7172859,centre-ouest,district-4,310.50,9.26518,34.95555,173.21,301.85
-municipality-7172880,TN-43,Meknassy,Meknassy,المكناسي,,7172880,centre-ouest,district-4,623.76,9.60880,34.60814,204.82,340.24
-municipality-7172881,TN-43,Menzel Bouzaiane,Menzel Bouzaiane,منزل بوزيان,,7172881,centre-ouest,district-4,555.00,9.38682,34.64716,184.45,336.02
-municipality-7172882,TN-43,El Mansoura,El Mansoura,المنصورة,,7172882,centre-ouest,district-4,226.84,9.05874,34.74561,154.38,325.17
-municipality-7172931,TN-43,Souk Jedid,Souk Jedid,سوق الجديد,,7172931,centre-ouest,district-4,346.35,9.55002,34.84216,199.29,314.32
-municipality-7172934,TN-43,Mezzouna,Mezzouna,المزونة,,7172934,centre-ouest,district-4,1135.62,9.78530,34.47957,221.11,354.39
-municipality-7172947,TN-43,Bennour,Bennour,بنور,,7172947,centre-ouest,district-4,445.52,9.60862,35.18085,204.42,276.73
-municipality-7172948,TN-43,Ouled Haffouz,Ouled Haffouz,أولاد حفوز,,7172948,centre-ouest,district-4,422.37,9.83496,35.09770,225.10,285.80
-municipality-7172960,TN-43,Rahal,Rahal,رحال,,7172960,centre-ouest,district-4,204.66,9.33984,34.80416,180.08,318.62
-municipality-7172963,TN-43,El Ahouaz Lassouda,El Ahouaz Lassouda,الأحواز لسودة,,7172963,centre-ouest,district-4,349.65,9.55849,35.01968,199.95,294.63
-municipality-7173064,TN-81,Habib Thameur,Habib Thameur,الحبيب ثامر,,7173064,sud-est,district-5,1696.63,9.47101,33.92008,192.54,416.61
-municipality-7173065,TN-81,Menzel El Habib,Menzel El Habib,منزل الحبيب,,7173065,sud-est,district-5,952.88,9.76813,34.12845,219.83,393.33
-municipality-7173075,TN-81,Oudref,Oudref,وذرف,,7173075,sud-est,district-5,264.18,9.96685,34.15390,238.13,390.36
-municipality-7173082,TN-81,El Hamma,El Hamma,الحامة,,7173082,sud-est,district-5,945.60,9.83128,33.78250,225.96,431.65
-municipality-7173087,TN-81,Nouvelle Matmata,Nouvelle Matmata,مطماطة الجديدة,Q12244000,7173087,sud-est,district-5,752.09,10.06502,33.60712,247.81,450.90
-municipality-7173102,TN-81,Matmata,Matmata,مطماطة,,7173102,sud-est,district-5,1246.10,9.79269,33.41039,222.71,472.93
-municipality-7173103,TN-81,Ketana,Ketana,كتانة,,7173103,sud-est,district-5,221.46,10.21043,33.71002,261.16,439.34
-municipality-7173107,TN-81,Dkhilet Toujane,Dkhilet Toujane,دخيلة توجان,,7173107,sud-est,district-5,318.53,10.13937,33.45557,254.89,467.63
-municipality-7173126,TN-81,Mareth,Mareth,مارث,,7173126,sud-est,district-5,346.28,10.26981,33.56090,266.87,455.81
-municipality-7173765,TN-32,Ain Draham,Ain Draham,عين دراهم,,7173765,nord-ouest,district-1,320.02,8.80595,36.77985,131.68,99.53
-municipality-7173766,TN-32,Tabarka,Tabarka,طبرقة,,7173766,nord-ouest,district-1,141.13,8.75337,36.90966,127.03,85.12
-municipality-7173767,TN-32,Ain Essobh Nadhour,Ain Essobh Nadhour,عين الصبح الناظور,,7173767,nord-ouest,district-1,232.94,8.87590,36.90663,137.94,85.48
-municipality-7173835,TN-32,Balta Bouawene,Balta Bouawene,بلطة بوعوان,,7173835,nord-ouest,district-1,276.27,8.93759,36.70610,143.43,107.73
-municipality-7173838,TN-32,Khmeyria,Khmeyria,الخمايرية,,7173838,nord-ouest,district-1,169.43,8.52595,36.73533,106.68,104.38
-municipality-7173839,TN-32,Beni M'tir,Beni M'tir,بني مطير,,7173839,nord-ouest,district-1,71.66,8.73271,36.69977,125.12,108.40
-municipality-7173847,TN-32,El Kalaa El Maaden Forgassen,El Kalaa El Maaden Forgassen,القلعة المعدن فرقصان,,7173847,nord-ouest,district-1,137.90,8.44198,36.57201,99.07,122.46
-municipality-7173848,TN-32,Jouaouda,Jouaouda,الجواودة,,7173848,nord-ouest,district-1,125.35,8.50931,36.64856,105.14,114.00
-municipality-7173849,TN-32,Fernana,Fernana,فرنانة,,7173849,nord-ouest,district-1,193.70,8.69857,36.63696,122.05,115.36
-municipality-7173850,TN-32,Ghardimaou,Ghardimaou,غار الدماء,,7173850,nord-ouest,district-1,369.39,8.32321,36.49320,88.38,131.13
-municipality-7173955,TN-32,Oued Meliz,Oued Meliz,وادي مليز,,7173955,nord-ouest,district-1,199.85,8.55734,36.44412,109.33,136.70
-municipality-7202458,TN-33,Dahmani,Dahmani,الدهماني,,7202458,nord-ouest,district-1,544.36,8.79340,35.97680,130.37,188.61
-municipality-7202459,TN-33,El Ksour,El Ksour,القصور,,7202459,nord-ouest,district-1,458.93,8.93892,35.79836,143.48,208.41
-municipality-7202460,TN-33,Djerissa,Djerissa,الجريصة,,7202460,nord-ouest,district-1,173.17,8.66654,35.83568,118.88,204.22
-municipality-7202461,TN-33,Kalaat Senan,Kalaat Senan,قلعة سنان,,7202461,nord-ouest,district-1,513.73,8.35269,35.79508,90.51,208.59
-municipality-7202462,TN-33,Kalaat Khasba,Kalaat Khasba,القلعة الخصبة,Q3105864,7202462,nord-ouest,district-1,205.52,8.56372,35.71252,109.54,217.85
-municipality-7202482,TN-33,Menzel Salem,Menzel Salem,منزل سالم,,7202482,nord-ouest,district-1,148.32,8.45244,35.87226,99.57,200.08
-municipality-7202483,TN-33,Tajerouine,Tajerouine,تاجروين,,7202483,nord-ouest,district-1,572.26,8.57277,35.98713,110.49,187.39
-municipality-7202486,TN-33,Zaafrane,Zaafrane,الزعفران,,7202486,nord-ouest,district-1,387.75,8.94511,36.19400,144.06,164.53
-municipality-7202487,TN-33,El Marja,El Marja,المرجى,,7202487,nord-ouest,district-1,148.00,9.08242,36.01277,156.43,184.63
-municipality-7202488,TN-33,Sers,Sers,السرس,,7202488,nord-ouest,district-1,285.12,9.02271,36.09960,151.04,175.00
-municipality-7202498,TN-33,Sakiet Sidi Youssef,Sakiet Sidi Youssef,ساقية سيدي يوسف,,7202498,nord-ouest,district-1,728.07,8.46487,36.24038,100.92,159.26
-municipality-7202502,TN-33,Kef,Kef,الكاف,Q27155,7202502,nord-ouest,district-1,220.25,8.63520,36.15181,116.18,169.15
-municipality-7202544,TN-33,Nebeur,Nebeur,نبر,,7202544,nord-ouest,district-1,230.08,8.80625,36.35504,131.62,146.65
-municipality-7202545,TN-33,Touiref,Touiref,الطويرف,,7202545,nord-ouest,district-1,321.99,8.62393,36.33380,115.25,148.96
-municipality-7202548,TN-33,Bahra,Bahra,بهرة,,7202548,nord-ouest,district-1,167.09,8.89507,36.29066,139.58,153.81
-municipality-7209059,TN-31,Nefza,Nefza,نفزة,,7209059,nord-ouest,district-1,323.48,9.02485,37.03158,151.21,71.62
-municipality-7209111,TN-31,Medjez El Bab,Medjez El Bab,مجاز الباب,,7209111,nord-ouest,district-1,462.54,9.60962,36.69155,203.46,109.17
-municipality-7209112,TN-31,Esslouguia,Esslouguia,السلوقية,,7209112,nord-ouest,district-1,83.94,9.53743,36.56323,197.09,123.44
-municipality-7209113,TN-31,Teboursouk,Teboursouk,تبرسق,,7209113,nord-ouest,district-1,395.96,9.24357,36.45254,170.83,135.83
-municipality-7209114,TN-31,Tibar,Tibar,تيبار,,7209114,nord-ouest,district-1,114.21,9.09978,36.49417,157.94,131.23
-municipality-7209116,TN-31,Sidi Smail,Sidi Smail,سيدي إسماعيل,,7209116,nord-ouest,district-1,148.28,9.16281,36.58630,163.56,121.01
-municipality-7209117,TN-31,Testour,Testour,تستور,,7209117,nord-ouest,district-1,559.32,9.41812,36.63697,186.38,115.32
-municipality-7209118,TN-31,El Maagoula,El Maagoula,المعقولة,,7209118,nord-ouest,district-1,213.96,9.23867,36.68330,170.32,110.23
-municipality-7209119,TN-31,Zahret Medien,Zahret Medien,زهرة مدين,,7209119,nord-ouest,district-1,241.38,9.01861,36.80913,150.66,96.30
-municipality-7209120,TN-31,Béja,Béja,باجة,,7209120,nord-ouest,district-1,427.58,9.24976,36.81206,171.28,95.95
-municipality-7209121,TN-31,Ouechtata,Ouechtata,وشتاتة,,7209121,nord-ouest,district-1,276.08,9.09428,36.91747,157.40,84.28
-municipality-7209129,TN-31,Goubellat,Goubellat,قبلاط,,7209129,nord-ouest,district-1,413.80,9.70327,36.53938,211.95,125.99
-municipality-7209220,TN-23,El Hchachna,El Hchachna,الحشاشنة,,7209220,nord-est,district-1,366.24,9.32166,37.16690,177.56,56.56
-municipality-7209221,TN-23,Sejnane,Sejnane,سجنان,,7209221,nord-est,district-1,255.91,9.17594,37.11317,164.63,62.56
-municipality-7209222,TN-23,Ghezala,Ghezala,غزالة,,7209222,nord-est,district-1,406.99,9.50048,37.09584,193.48,64.38
-municipality-7209223,TN-23,Joumine,Joumine,جومين,,7209223,nord-est,district-1,553.38,9.46669,36.86097,190.60,90.45
-municipality-7209224,TN-23,Mateur,Mateur,ماطر,,7209224,nord-est,district-1,565.91,9.67541,36.98761,209.11,76.29
-municipality-7209225,TN-23,Utique,Utique,أوتيك,,7209225,nord-est,district-1,374.87,9.94669,37.02114,233.21,72.36
-municipality-7209237,TN-23,Bizerte,Bizerte,بنزرت,,7209237,nord-est,district-1,450.74,9.69858,37.26418,210.94,45.59
-municipality-7209241,TN-23,Menzel Bourguiba,Menzel Bourguiba,منزل بورقيبة,,7209241,nord-est,district-1,127.74,9.83152,37.09600,222.89,64.15
-municipality-7209255,TN-23,Menzel Abderrahmane,Menzel Abderrahmane,منزل عبد الرحمان,,7209255,nord-est,district-1,9.07,9.86717,37.24103,225.91,48.04
-municipality-7209256,TN-23,Manzil Jamil,Menzel Jemil,منزل جميل,,7209256,nord-est,district-1,77.01,9.96891,37.22209,234.96,50.05
-municipality-7209275,TN-23,Rafraf,Rafraf,رفراف,,7209275,nord-est,district-1,22.10,10.16722,37.19952,252.58,52.36
-municipality-7209276,TN-23,Ghar El Melh,Ghar El Melh,غار الملح,,7209276,nord-est,district-1,31.69,10.12939,37.16667,249.27,56.04
-municipality-7209277,TN-23,Ras Jebel,Ras Jebel,رأس الجبل,,7209277,nord-est,district-1,29.50,10.11654,37.21580,248.07,50.60
-municipality-7209278,TN-23,Ousja,Ousja,عوسجة,,7209278,nord-est,district-1,61.35,10.07809,37.15730,244.73,57.13
-municipality-7209279,TN-23,El Alia,El Alia,العالية,,7209279,nord-est,district-1,85.14,9.99811,37.15774,237.62,57.16
-municipality-7209280,TN-23,Tinja,Tinja,تينجة,,7209280,nord-est,district-1,58.25,9.74881,37.10420,215.54,63.31
-municipality-7209285,TN-23,Metline,Metline,ماتلين,,7209285,nord-est,district-1,32.41,10.04347,37.23738,241.56,48.28
-municipality-7209676,TN-12,Sidi Thabet,Sidi Thabet,سيدي ثابت,,7209676,grand-tunis,district-2,98.07,10.06502,36.90645,243.88,84.98
-municipality-7209677,TN-12,Kallat El Andalous,Kallat El Andalous,قلعة الأندلس,,7209677,grand-tunis,district-2,189.23,10.13035,37.01266,249.56,73.13
-municipality-7209678,TN-12,Cité Ettadhamen,Cité Ettadhamen,حي التضامن,,7209678,grand-tunis,district-2,3.40,10.10332,36.83681,247.38,92.66
-municipality-7209679,TN-12,Mnihla,Mnihla,منيهلة,,7209679,grand-tunis,district-2,23.08,10.11417,36.86407,248.31,89.63
-municipality-7209680,TN-12,Ariana Ville,Ariana Ville,أريانة المدينة,,7209680,grand-tunis,district-2,18.56,10.16552,36.86549,252.89,89.41
-municipality-7209681,TN-12,Soukra,Soukra,سكرة,,7209681,grand-tunis,district-2,28.00,10.21146,36.87450,256.97,88.36
-municipality-7209682,TN-12,Raoued,Raoued,رواد,,7209682,grand-tunis,district-2,55.71,10.15444,36.92494,251.82,82.83
-municipality-7209744,TN-11,Le Bardo,Le Bardo,باردو,,7209744,grand-tunis,district-2,6.77,10.13128,36.80946,249.91,95.67
-municipality-7209745,TN-11,La Goulette,La Goulette,حلق الوادي,,7209745,grand-tunis,district-2,20.55,10.28287,36.82793,263.40,93.45
-municipality-7209746,TN-11,Le Kram,Le Kram,الكرم,,7209746,grand-tunis,district-2,9.66,10.29444,36.85363,264.40,90.58
-municipality-7209747,TN-11,Carthage,Carthage,قرطاج,,7209747,grand-tunis,district-2,6.01,10.32696,36.85940,267.29,89.90
-municipality-7209748,TN-11,Sidi Bou Said,Sidi Bou Said,سيدي بو سعيد,,7209748,grand-tunis,district-2,2.21,10.34322,36.87164,268.72,88.52
-municipality-7209749,TN-11,Al Marsa,La Marsa,المرسى,,7209749,grand-tunis,district-2,30.61,10.30339,36.88208,265.15,87.42
-municipality-7209931,TN-11,Sidi Hassine,Sidi Hassine,سيدي حسين,,7209931,grand-tunis,district-2,64.36,10.08646,36.74860,245.99,102.47
-municipality-7209932,TN-11,Tunis,Tunis,تونس,,7209932,grand-tunis,district-2,122.22,10.18894,36.81503,255.04,94.99
-municipality-7209934,TN-13,Khelidia,Khelidia,الخليدية,,7209934,grand-tunis,district-2,184.44,10.21328,36.59939,257.52,118.88
-municipality-7209935,TN-13,Mohamedia,Mohamedia,المحمدية,,7209935,grand-tunis,district-2,97.36,10.09055,36.63039,246.50,115.57
-municipality-7209941,TN-13,Ben Arous,Ben Arous,بن عروس,,7209941,grand-tunis,district-2,6.47,10.22869,36.75293,258.68,101.83
-municipality-7209942,TN-13,Ezzahra,Ezzahra,الزهراء,,7209942,grand-tunis,district-2,7.09,10.29986,36.74681,265.04,102.43
-municipality-7209943,TN-13,Bou Mhel El Bassatine,Bou Mhel El Bassatine,بومهل البساتين,,7209943,grand-tunis,district-2,20.17,10.29859,36.72088,264.97,105.31
-municipality-7209944,TN-13,Hammam Lif,Hammam Lif,حمام الأنف,,7209944,grand-tunis,district-2,11.43,10.33516,36.71955,268.24,105.41
-municipality-7209945,TN-13,Hammam Chott,Hammam Chott,حمام الشط,,7209945,grand-tunis,district-2,26.33,10.38013,36.70230,272.28,107.26
-municipality-7209946,TN-13,Mornag,Mornag,مرناق,,7209946,grand-tunis,district-2,215.95,10.32320,36.66530,267.25,111.44
-municipality-7209947,TN-13,Fouchana,Fouchana,فوشانة,,7209947,grand-tunis,district-2,15.11,10.21323,36.66339,257.42,111.78
-municipality-7209948,TN-13,Fouchana,Fouchana,فوشانة,,7209948,grand-tunis,district-2,23.63,10.17738,36.70154,254.17,107.59
-municipality-7209949,TN-13,Radès,Radès,رادس,,7209949,grand-tunis,district-2,19.63,10.27768,36.76489,263.03,100.45
-municipality-7209950,TN-13,Megrine,Megrine,مقرين,,7209950,grand-tunis,district-2,10.13,10.23981,36.77379,259.64,99.50
-municipality-7209951,TN-13,El Mourouj,El Mourouj,المروج,Q2536406,7209951,grand-tunis,district-2,16.04,10.21866,36.71651,257.83,105.88
-municipality-7210409,TN-51,Enfidha,Enfidha,النفيضة,,7210409,centre-est,district-3,234.34,10.35377,36.10841,270.85,173.18
-municipality-7210410,TN-51,Grimet Hicher,Grimet Hicher,القريمات هيشر,,7210410,centre-est,district-3,135.86,10.24442,36.11925,260.99,172.11
-municipality-7210411,TN-51,Bouficha,Bouficha,بوفيشة,,7210411,centre-est,district-3,260.55,10.44458,36.30001,278.71,151.81
-municipality-7210414,TN-51,Hammam Sousse,Hammam Sousse,حمام سوسة,,7210414,centre-est,district-3,18.33,10.58186,35.85207,291.84,201.30
-municipality-7210415,TN-51,Hergla,Hergla,هرقلة,,7210415,centre-est,district-3,95.94,10.45595,36.03744,280.16,180.92
-municipality-7210419,TN-51,Msaken,Msaken,مساكن,,7210419,centre-est,district-3,326.63,10.52217,35.70915,286.70,217.24
-municipality-7210420,TN-51,Sidi El Heni,Sidi El Heni,سيدي الهاني,,7210420,centre-est,district-3,323.79,10.30037,35.73905,266.59,214.21
-municipality-7210421,TN-51,Kondar,Kondar,كندار,,7210421,centre-est,district-3,160.50,10.29734,35.95463,266.00,190.31
-municipality-7210428,TN-51,Sidi Bouali,Sidi Bouali,سيدي بو علي,,7210428,centre-est,district-3,128.00,10.44035,35.95619,278.89,189.95
-municipality-7210429,TN-51,Kalaa Kebira,Kalaa Kebira,القلعة الكبرى,,7210429,centre-est,district-3,233.77,10.40918,35.87052,276.22,199.50
-municipality-7210432,TN-51,Chott Mariem,Chott Mariem,شط مريم,,7210432,centre-est,district-3,21.44,10.53234,35.93954,287.22,191.67
-municipality-7210438,TN-51,Akouda,Akouda,أكودة,,7210438,centre-est,district-3,23.19,10.56593,35.87626,290.36,198.64
-municipality-7210441,TN-51,Kalaa Sghira,Kalaa Sghira,القلعة الصغرى,,7210441,centre-est,district-3,102.97,10.54292,35.81639,288.39,205.32
-municipality-7210444,TN-51,Sousse,Sousse,سوسة,,7210444,centre-est,district-3,32.73,10.61228,35.83195,294.62,203.49
-municipality-7210445,TN-51,Zaouiet Sousse,Zaouiet Sousse,زاوية سوسة,,7210445,centre-est,district-3,15.70,10.62044,35.78817,295.44,208.34
-municipality-7210451,TN-51,Ksibet Thrayet,Ksibet Thrayet,قصيبة الثريات,,7210451,centre-est,district-3,20.84,10.63916,35.75794,297.19,211.66
-municipality-7210453,TN-51,El Messaadine,El Messaadine,المسعدين,,7210453,centre-est,district-3,6.10,10.59451,35.76467,293.14,210.98
-municipality-7210472,TN-51,Ezzouhour,Ezzouhour,الزهور,,7210472,centre-est,district-3,10.06,10.59527,35.80558,293.14,206.44
-municipality-7286071,TN-82,Djerba Houmet Souk,Djerba Houmet Souk,جربة حومة السوق,,7286071,sud-est,district-5,162.99,10.82068,33.85875,317.42,422.01
-municipality-7286079,TN-82,Djerba Ajim,Djerba Ajim,جربة اجيم,,7286079,sud-est,district-5,159.39,10.79479,33.77639,315.19,431.19
-municipality-7286080,TN-82,Djerba Midoun,Djerba Midoun,جربة ميدون,,7286080,sud-est,district-5,189.08,10.92967,33.76368,327.71,432.37
-municipality-7286085,TN-82,Ben Gardane,Ben Gardane,بنقردان,Q1143002,7286085,sud-est,district-5,4806.50,11.29114,33.00117,363.05,516.25
-municipality-7286094,TN-82,Zarzis,Zarzis,جرجيس,,7286094,sud-est,district-5,670.12,10.98637,33.41117,333.71,471.37
-municipality-7286110,TN-82,Zarzis Nord,Zarzis Nord,جرجيس الشمالية,,7286110,sud-est,district-5,217.24,11.01795,33.56050,336.32,454.75
-municipality-7286127,TN-82,Beni Khedech,Beni Khedech,بني خداش,,7286127,sud-est,district-5,1359.72,10.12219,33.20966,253.58,494.91
-municipality-7286159,TN-82,Medenine,Medenine,مدنين,,7286159,sud-est,district-5,676.28,10.57033,33.28367,295.23,486.17
-municipality-7286168,TN-82,Sidi Makhlouf,Sidi Makhlouf,سيدي مخلوف,,7286168,sud-est,district-5,658.86,10.47422,33.51711,285.91,460.41
-municipality-7286177,TN-82,Boughrara,Boughrara,بوغرارة,,7286177,sud-est,district-5,391.79,10.67562,33.42628,304.78,470.20
-municipality-7286425,TN-81,Ezzarat,Ezzarat,الزارات,,7286425,sud-est,district-5,115.22,10.35372,33.65936,274.51,444.79
-municipality-7286613,TN-81,Teboulbou,Teboulbou,تبلبو,,7286613,sud-est,district-5,279.25,10.02712,33.78695,244.09,430.99
-municipality-7286640,TN-81,Gabès,Gabès,قابس,,7286640,sud-est,district-5,31.17,10.10500,33.87643,251.19,421.00
-municipality-7286649,TN-81,Bouchemma,Bouchemma,بوشمة,,7286649,sud-est,district-5,50.07,10.01871,33.90372,243.18,418.05
-municipality-7286661,TN-81,Ghannouch,Ghannouch,غنوش,,7286661,sud-est,district-5,20.08,10.05411,33.93988,246.42,414.01
-municipality-7286673,TN-81,El Metouia,El Metouia,المطوية,,7286673,sud-est,district-5,144.37,9.98133,34.07853,239.54,398.70
-municipality-7286791,TN-81,Chenini Nahal,Chenini Nahal,شنني نحال,,7286791,sud-est,district-5,104.29,9.95254,33.85088,237.12,423.97
-municipality-7286824,TN-61,Kerkennah,Kerkennah,قرقنة,,7286824,centre-est,district-4,152.65,11.25789,34.74741,355.69,322.65
-municipality-7286825,TN-61,El Amra,El Amra,العامرة,,7286825,centre-est,district-4,183.91,10.85948,34.95123,318.79,300.79
-municipality-7286902,TN-61,Ghraiba,Ghraiba,الغريبة,,7286902,centre-est,district-4,430.97,10.19610,34.50731,258.80,350.94
-municipality-7287088,TN-61,Sakiet Eddaier,Sakiet Eddaier,ساقية الدائر,,7287088,centre-est,district-4,96.00,10.82432,34.84430,315.80,312.71
-municipality-7287158,TN-61,El Hajeb,El Hajeb,الحاجب,,7287158,centre-est,district-4,46.47,10.64953,34.70341,300.07,328.61
-municipality-7287170,TN-61,Gremda,Gremda,قرمدة,,7287170,centre-est,district-4,14.13,10.71647,34.79332,306.03,318.53
-municipality-7287248,TN-61,El Ain,El Ain,العين,,7287248,centre-est,district-4,14.90,10.69759,34.76747,304.35,321.43
-municipality-7287981,TN-52,Sahline Môotmar,Sahline Môotmar,الساحلين معتمر,,7287981,centre-est,district-3,29.42,10.74731,35.73102,307.02,214.48
-municipality-7287982,TN-52,Khenis,Khenis,خنيس,,7287982,centre-est,district-3,18.79,10.78672,35.72597,310.60,214.97
-municipality-7287983,TN-52,Monastir,Monastir,المنستير,,7287983,centre-est,district-3,43.99,10.80808,35.76161,312.46,210.98
-municipality-7288035,TN-52,El Ouerdanine,El Ouerdanine,الوردانين,,7288035,centre-est,district-3,51.37,10.67226,35.69221,300.31,218.90
-municipality-7288127,TN-52,Zaouiet Kontoch,Zaouiet Kontoch,زاوية قنطش,,7288127,centre-est,district-3,12.17,10.75923,35.64134,308.28,224.41
-municipality-7288128,TN-52,Menzel Ennour,Menzel Ennour,منزل النور,,7288128,centre-est,district-3,9.23,10.77541,35.66218,309.70,222.07
-municipality-7288129,TN-52,Bembla,Bembla,بنبلة,,7288129,centre-est,district-3,21.17,10.78495,35.69199,310.50,218.75
-municipality-7288130,TN-52,El Masdour Menzel Harb,El Masdour Menzel Harb,المصدور منزل حرب,,7288130,centre-est,district-3,18.52,10.72838,35.68034,305.41,220.13
-municipality-7288268,TN-52,Menzel Hayet,Menzel Hayet,منزل حياة,,7288268,centre-est,district-3,158.18,10.57179,35.54180,291.48,235.73
-municipality-7288269,TN-52,Zeramdine,Zeramdine,زرمدين,,7288269,centre-est,district-3,93.86,10.69684,35.55652,302.79,233.91
-municipality-7288270,TN-52,Menzel Kamel,Menzel Kamel,منزل كامل,,7288270,centre-est,district-3,80.41,10.66206,35.63645,299.49,225.10
-municipality-7288273,TN-52,Sidi Ameur,Sidi Ameur,سيدي عامر,,7288273,centre-est,district-3,13.11,10.70872,35.72203,303.55,215.54
-municipality-7288375,TN-52,Bou Hjar,Bou Hjar,بوحجر,,7288375,centre-est,district-3,4.35,10.86225,35.66706,317.55,221.38
-municipality-7288376,TN-52,Benen Bodher,Benen Bodher,بنان بوضر,,7288376,centre-est,district-3,18.26,10.82024,35.65943,313.77,222.30
-municipality-7288377,TN-52,Ksibet El Mediouni,Ksibet El Mediouni,قصيبة المديوني,,7288377,centre-est,district-3,5.94,10.82982,35.68828,314.57,219.08
-municipality-7288382,TN-52,Cherahil,Cherahil,الشراحيل,,7288382,centre-est,district-3,15.44,10.85830,35.50824,317.53,239.00
-municipality-7288383,TN-52,Menzel Farsi,Menzel Farsi,منزل فارسي,,7288383,centre-est,district-3,26.34,10.86940,35.55869,318.43,233.39
-municipality-7288384,TN-52,Beni Hassen,Beni Hassen,بني حسان,,7288384,centre-est,district-3,30.17,10.81980,35.55688,313.94,233.67
-municipality-7288386,TN-52,Amiret Touazra,Amiret Touazra,عميرة التوازرة,,7288386,centre-est,district-3,23.41,10.75972,35.47956,308.64,242.35
-municipality-7288387,TN-52,Amiret El Fehoul,Amiret El Fehoul,عميرة الفحول,,7288387,centre-est,district-3,30.66,10.80453,35.44940,312.77,245.62
-municipality-7288388,TN-52,Amiret El Hojjaj,Amiret El Hojjaj,عميرة الحجاج,,7288388,centre-est,district-3,25.51,10.81905,35.51751,313.95,238.04
-municipality-7288389,TN-52,Sidi Bennour,Sidi Bennour,سيدي بنور,,7288389,centre-est,district-3,19.41,10.89633,35.52257,320.95,237.35
-municipality-7288390,TN-52,Moknine,Moknine,المكنين,,7288390,centre-est,district-3,56.53,10.90952,35.62409,321.92,226.07
-municipality-7288394,TN-52,Teboulba,Teboulba,طبلبة,,7288394,centre-est,district-3,18.08,10.95216,35.63874,325.75,224.36
-municipality-7288395,TN-52,Lamta,Lamta,لمطة,,7288395,centre-est,district-3,1.92,10.88037,35.67229,319.18,220.77
-municipality-7288396,TN-52,Sayada,Sayada,صيادة,,7288396,centre-est,district-3,6.59,10.90549,35.66200,321.48,221.87
-municipality-7288407,TN-52,Jammel,Jammel,جمال,,7288407,centre-est,district-3,63.58,10.77203,35.60772,309.50,228.11
-municipality-7288408,TN-52,Touza,Touza,طوزة,,7288408,centre-est,district-3,12.77,10.82958,35.63038,314.67,225.51
-municipality-7288551,TN-52,Ghnada,Ghnada,الغنادة,,7288551,centre-est,district-3,56.66,10.75763,35.52164,308.37,237.69
-municipality-7288553,TN-52,Ksar Hellal,Ksar Hellal,قصر هلال,,7288553,centre-est,district-3,21.92,10.88022,35.64738,319.22,223.53
-municipality-7292801,TN-53,Mahdia,Mahdia,المهدية,,7292801,centre-est,district-3,68.33,11.01627,35.50353,331.87,239.25
-municipality-7303783,TN-53,El Hekaima,El Hekaima,الحكايمة,,7303783,centre-est,district-3,81.86,10.89730,35.47932,321.13,242.15
-municipality-7303785,TN-53,Rejiche,Rejiche,رجيش,,7303785,centre-est,district-3,15.50,11.03281,35.46193,333.46,243.83
-municipality-7303791,TN-53,Ksour Essaf,Ksour Essaf,قصور الساف,,7303791,centre-est,district-3,111.55,10.99555,35.41479,330.19,249.13
-municipality-7303802,TN-53,El Bradaa,El Bradaa,البرادعة,,7303802,centre-est,district-3,109.22,10.99470,35.31956,330.32,259.69
-municipality-7303803,TN-53,Sidi Alouane,Sidi Alouane,سيدي علوان,,7303803,centre-est,district-3,105.07,10.85460,35.37119,317.48,254.21
-municipality-7303805,TN-53,Zalba,Zalba,زالبة,,7303805,centre-est,district-3,183.69,10.86244,35.21344,318.52,271.70
-municipality-7303808,TN-53,Melloulech,Melloulech,ملولش,,7303808,centre-est,district-3,160.18,10.99316,35.15782,330.54,277.64
-municipality-7303845,TN-53,El Djem,El Djem,الجم,,7303845,centre-est,district-3,167.24,10.67294,35.31383,301.08,260.87
-municipality-7303846,TN-53,Talalsa,Talalsa,التلالسة,,7303846,centre-est,district-3,120.30,10.77953,35.30544,310.79,261.63
-municipality-7303856,TN-53,Essouassi,Essouassi,السواسي,,7303856,centre-est,district-3,195.62,10.53395,35.29355,288.48,263.32
-municipality-7303860,TN-53,Sidi Zid,Sidi Zid,سيدي زيد,,7303860,centre-est,district-3,152.14,10.46067,35.37802,281.68,254.06
-municipality-7303866,TN-53,Kerker,Kerker,كركر,,7303866,centre-est,district-3,103.53,10.64296,35.44314,298.12,246.57
-municipality-7303867,TN-53,Bou Merdès,Bou Merdès,بومرداس,,7303867,centre-est,district-3,87.74,10.73759,35.43400,306.72,247.44
-municipality-7304000,TN-53,Ouled Chamekh,Ouled Chamekh,أولاد الشامخ,,7304000,centre-est,district-3,324.77,10.30043,35.44573,267.02,246.75
-municipality-7304001,TN-53,Hebira,Hebira,هبيرة,,7304001,centre-est,district-3,315.75,10.27817,35.18619,265.37,275.56
-municipality-7304003,TN-53,Chorbane,Chorbane,شربان,,7304003,centre-est,district-3,448.40,10.44914,35.19360,280.93,274.53
-municipality-7304260,TN-21,Sidi Jadidi,Sidi Jadidi,سيدي الجديدي,,7304260,nord-est,district-2,194.24,10.42985,36.43151,277.17,137.24
-municipality-7304261,TN-21,Hammamet,Hammamet,الحمامات,Q339535,7304261,nord-est,district-2,131.21,10.56516,36.42870,289.30,137.36
-municipality-7304405,TN-32,Ettataouer,Ettataouer,التطور,,7304405,nord-ouest,district-1,253.12,8.83815,36.47399,134.50,133.46
-municipality-7304406,TN-32,Jendouba,Jendouba,جندوبة,,7304406,nord-ouest,district-1,299.66,8.70568,36.51843,122.65,128.51
-municipality-7304410,TN-32,Bousalem,Bousalem,بوسالم,,7304410,nord-ouest,district-1,306.90,8.98401,36.56218,147.57,123.69
-municipality-7304421,TN-13,Ben Arous,Ben Arous,بن عروس,,7304421,grand-tunis,district-2,8.08,10.24312,36.73731,259.99,103.55
+id,governorate,name_en,name_fr,name_ar,name_tfng,name_tfng_source,name_translit,wikidata,osm_relation,region,district,area_km2,label_lon,label_lat,label_x,label_y
+municipality-7082169,TN-73,Jemna,Jemna,جمنة,ⵊⵎⵏⴰ,transliterated,Jemna,,7082169,sud-ouest,district-5,679.80,9.16269,33.60035,164.09,452.14
+municipality-7082278,TN-73,Souk El Ahed,Souk El Ahed,سوق الأحد,ⵙⵓⵇ ⵍⴰⵃⴷ,transliterated,Souk El Ahed,,7082278,sud-ouest,district-5,1371.36,8.91551,33.95554,141.19,412.77
+municipality-7082337,TN-73,Rejim Mâatoug,Rejim Mâatoug,رجيم معتوق,ⵔⵊⵉⵎ ⵎⵄⵜⵓⵇ,transliterated,Rejim Maatoug,,7082337,sud-ouest,district-5,2493.85,7.99433,33.33676,55.41,480.93
+municipality-7082678,TN-73,Bchelli,Bchelli,بشلي جرسن البليدات,ⴱⵛⵍⵉ ⵊⵔⵙⵏ ⵍⴱⵍⵉⴷⴰⵜ,transliterated,Bchelli,,7082678,sud-ouest,district-5,435.11,8.82783,33.57932,133.02,454.47
+municipality-7083656,TN-73,Béchri Fatnassa,Béchri Fatnassa,بشري فطناسة,ⴱⵛⵔⵉ ⴼⵟⵏⴰⵙⴰ,transliterated,Bechri Fatnassa,,7083656,sud-ouest,district-5,905.97,8.62537,33.83694,114.34,425.86
+municipality-7090535,TN-14,Manouba,Manouba,منوبة,ⵎⵏⵓⴱⴰ,transliterated,Manouba,,7090535,grand-tunis,district-2,8.65,10.08314,36.80888,245.62,95.78
+municipality-7090952,TN-14,Douar Hicher,Douar Hicher,دوار هيشر,ⴷⵡⴰⵔ ⵀⵉⵛⵔ,transliterated,Douar Hicher,,7090952,grand-tunis,district-2,9.05,10.08086,36.83204,245.38,93.21
+municipality-7091762,TN-14,Oued Ellil,Oued Ellil,وادي الليل,ⵡⴰⴷⵉ ⵍⵍⵉⵍ,transliterated,Oued Ellil,,7091762,grand-tunis,district-2,57.15,10.01392,36.82379,239.42,94.19
+municipality-7095634,TN-73,El Faouar,El Faouar,الفوار,ⵍⴼⵡⴰⵔ,transliterated,El Faouar,,7095634,sud-ouest,district-5,7348.48,8.53541,33.10632,105.65,506.83
+municipality-7095907,TN-14,Den - Den,Den - Den,الدندان,ⴷⴷⵏⴷⴰⵏ,transliterated,Den - Den,,7095907,grand-tunis,district-2,3.37,10.11193,36.80719,248.19,95.94
+municipality-7096463,TN-21,El Haouaira,El Haouaira,الهوارية,ⵍⵀⵡⴰⵔⵢⴰ,transliterated,El Haouaira,,7096463,nord-est,district-2,137.24,10.96590,37.00883,323.91,72.34
+municipality-7096630,TN-21,Dar Allouch,Dar Allouch,دار علوش,ⴷⴰⵔ ⵄⵍⵓⵛ,transliterated,Dar Allouch,,7096630,nord-est,district-2,61.10,11.06676,36.94873,333.03,78.82
+municipality-7097005,TN-21,Hammam El Ghezaz,Hammam El Ghezaz,حمام الغزاز,ⵃⵎⴰⵎ ⵍⵖⵣⴰⵣ,transliterated,Hammam El Ghezaz,,7097005,nord-est,district-2,33.46,11.10839,36.87393,336.92,87.04
+municipality-7097980,TN-21,Tazaghrane,Tazaghrane,تزغران,ⵜⵣⵖⵔⴰⵏ,transliterated,Tazaghrane,,7097980,nord-est,district-2,172.35,10.85780,36.90942,314.50,83.56
+municipality-7098176,TN-21,Kelibia,Kelibia,قليبية,ⵇⵍⵉⴱⵢⴰ,transliterated,Kelibia,,7098176,nord-est,district-2,34.37,11.08345,36.84634,334.76,90.15
+municipality-7098805,TN-21,Azmour,Azmour,أزمور,ⴰⵣⵎⵓⵔ,transliterated,Azmour,,7098805,nord-est,district-2,91.38,10.99703,36.91087,326.91,83.15
+municipality-7098867,TN-14,Tebourba,Tebourba,طبربة,ⵟⴱⵔⴱⴰ,transliterated,Tebourba,,7098867,grand-tunis,district-2,286.65,9.80983,36.86979,221.18,89.27
+municipality-7099099,TN-14,Djedaïda,Djedaïda,الجديدة,ⵍⵊⴷⵉⴷⴰ,transliterated,Djedaida,,7099099,grand-tunis,district-2,182.14,9.92660,36.87496,231.58,88.60
+municipality-7099175,TN-14,El Battane,El Battane,البطان,ⵍⴱⵟⴰⵏ,transliterated,El Battane,,7099175,grand-tunis,district-2,156.42,9.76036,36.77640,216.85,99.66
+municipality-7099966,TN-21,Menzel Temime,Menzel Temime,منزل تميم,ⵎⵏⵣⵍ ⵜⵎⵉⵎ,transliterated,Menzel Temime,,7099966,nord-est,district-2,128.88,10.96425,36.80402,324.23,95.07
+municipality-7100362,TN-21,Takelsa,Takelsa,تاكلسة,ⵜⴰⴽⵍⵙⴰ,transliterated,Takelsa,,7100362,nord-est,district-2,278.40,10.67400,36.81253,298.32,94.62
+municipality-7100416,TN-21,Menzel Hor,Menzel Hor,منزل حر,ⵎⵏⵣⵍ ⵃⵔ,transliterated,Menzel Hor,,7100416,nord-est,district-2,134.23,10.81030,36.80811,310.49,94.89
+municipality-7100601,TN-21,El Mida,El Mida,الميدة,ⵍⵎⵉⴷⴰ,transliterated,El Mida,,7100601,nord-est,district-2,152.56,10.83687,36.72724,313.03,103.81
+municipality-7100602,TN-21,Korbous,Korbous,قربص,ⵇⵔⴱⵚ,transliterated,Korbous,,7100602,nord-est,district-2,49.08,10.57744,36.77351,289.78,99.09
+municipality-7100695,TN-21,Soliman,Soliman,سليمان,ⵙⵍⵉⵎⴰⵏ,transliterated,Soliman,,7100695,nord-est,district-2,49.30,10.47339,36.70817,280.60,106.49
+municipality-7101604,TN-21,Menzel Bouzelfa,Menzel Bouzelfa,منزل بوزلفة,ⵎⵏⵣⵍ ⴱⵓⵣⵍⴼⴰ,transliterated,Menzel Bouzelfa,Q2724043,7101604,nord-est,district-2,133.77,10.73039,36.71037,303.55,105.86
+municipality-7102051,TN-14,Borj El Amri,Borj El Amri,برج العامري,ⴱⵔⵊ ⵍⵄⴰⵎⵔⵉ,transliterated,Borj El Amri,,7102051,grand-tunis,district-2,173.89,9.86117,36.65659,225.97,112.88
+municipality-7102143,TN-14,El Bassatine,El Bassatine,البساتين,ⵍⴱⵙⴰⵜⵉⵏ,transliterated,El Bassatine,,7102143,grand-tunis,district-2,172.86,9.96471,36.66143,235.22,112.25
+municipality-7102148,TN-14,Mornaguia,Mornaguia,المرناقية,ⵍⵎⵔⵏⴰⵇⵢⴰ,transliterated,Mornaguia,,7102148,grand-tunis,district-2,88.56,10.03029,36.70461,241.03,107.40
+municipality-7102518,TN-21,Korba,Korba,قربة,ⵇⵔⴱⴰ,transliterated,Korba,,7102518,nord-est,district-2,186.56,10.80186,36.63730,310.09,113.85
+municipality-7102536,TN-21,Ech Cherifet,Ech Cherifet,الشريفات,ⵛⵛⵔⵉⴼⴰⵜ,transliterated,Ech Cherifet,,7102536,nord-est,district-2,44.04,10.51981,36.66897,284.82,110.77
+municipality-7102676,TN-21,Ben Khalled,Ben Khalled,بني خلاد,ⴱⵏⵉ ⵅⵍⴰⴷ,transliterated,Ben Khalled,,7102676,nord-est,district-2,74.40,10.61384,36.64357,293.27,113.45
+municipality-7102856,TN-21,El Maamoura,El Maamoura,المعمورة,ⵍⵎⵄⵎⵓⵔⴰ,transliterated,El Maamoura,,7102856,nord-est,district-2,23.30,10.81134,36.49856,311.23,129.23
+municipality-7102858,TN-21,Tazarka,Tazarka,تازركة,ⵜⴰⵣⵔⴽⴰ,transliterated,Tazarka,,7102858,nord-est,district-2,19.79,10.82947,36.54621,312.75,123.91
+municipality-7103010,TN-21,Ben Khiar,Ben Khiar,بني خيار,ⴱⵏⵉ ⵅⵢⴰⵔ,transliterated,Ben Khiar,,7103010,nord-est,district-2,33.14,10.77506,36.48204,308.01,131.12
+municipality-7103013,TN-21,Somaa,Somaa,صمعة,ⵚⵎⵄⴰ,transliterated,Somaa,,7103013,nord-est,district-2,49.82,10.77421,36.55647,307.78,122.86
+municipality-7103333,TN-21,Nabeul,Nabeul,نابل,ⵏⴰⴱⵍ,transliterated,Nabeul,,7103333,nord-est,district-2,73.89,10.68614,36.47251,300.06,132.32
+municipality-7103338,TN-21,Dar Chaabane El Fehri,Dar Chaabane El Fehri,دار شعبان الفهري,ⴷⴰⵔ ⵛⵄⴱⴰⵏ ⵍⴼⵀⵔⵉ,transliterated,Dar Chaabane El Fehri,,7103338,nord-est,district-2,68.77,10.71655,36.51095,302.71,128.01
+municipality-7103678,TN-21,Zaouiet Jdidi,Zaouiet Jdidi,زاوية الجديدي,ⵣⴰⵡⵢⴰ ⵍⵊⴷⵉⴷⵉ,transliterated,Zaouiet Jdidi,,7103678,nord-est,district-2,40.04,10.60000,36.60702,292.10,117.53
+municipality-7103686,TN-21,Bou Argoub,Bou Argoub,بو عرقوب,ⴱⵓ ⵄⵔⵇⵓⴱ,transliterated,Bou Argoub,,7103686,nord-est,district-2,129.61,10.57623,36.53103,290.11,125.99
+municipality-7104936,TN-21,Fondouk Jedidi,Fondouk Jedidi,فندق الجديدي,ⴼⵏⴷⵇ ⵍⵊⴷⵉⴷⵉ,transliterated,Fondouk Jedidi,,7104936,nord-est,district-2,129.33,10.44220,36.64735,277.92,113.28
+municipality-7104937,TN-21,Grombalia,Grombalia,قرمبالية,ⵇⵔⵎⴱⴰⵍⵢⴰ,transliterated,Grombalia,,7104937,nord-est,district-2,173.41,10.50825,36.58302,283.93,120.32
+municipality-7107483,TN-73,Douz,Douz,دوز,ⴷⵓⵣ,transliterated,Douz,,7107483,sud-ouest,district-5,7743.75,9.35858,33.07426,182.47,510.42
+municipality-7107713,TN-73,El Golaa,El Golaa,القلعة,ⵍⵇⵍⵄⴰ,transliterated,El Golaa,,7107713,sud-ouest,district-5,52.57,8.98973,33.48901,148.05,464.50
+municipality-7108057,TN-73,Qibili,Kebilli,قبلي,ⵇⴱⵍⵉ,transliterated,Kebilli,,7108057,sud-ouest,district-5,1218.79,9.16903,33.81028,164.64,428.87
+municipality-7110567,TN-61,Agareb,Agareb,عقارب,ⵄⵇⴰⵔⴱ,transliterated,Agareb,,7110567,centre-est,district-4,737.84,10.42633,34.75905,279.54,322.75
+municipality-7111390,TN-61,Skhira,Skhira,الصخيرة,ⵚⵚⵅⵉⵔⴰ,transliterated,Skhira,,7111390,centre-est,district-4,911.62,9.96899,34.31565,238.15,372.42
+municipality-7119543,TN-61,Bir Ali Ben Khalifa,Bir Ali Ben Khalifa,بئر علي بن خليفة,ⴱⵉⵔ ⵄⵍⵉ ⴱⵏ ⵅⵍⵉⴼⴰ,transliterated,Bir Ali Ben Khalifa,,7119543,centre-est,district-4,545.82,10.04741,34.63984,245.00,336.40
+municipality-7124825,TN-61,Ennadhour Sidi Ali Belabed,Ennadhour Sidi Ali Belabed,الناظور سيدي علي بالعابد,ⵏⵏⴰⴹⵓⵔ ⵙⵉⴷⵉ ⵄⵍⵉ ⴱⴰⵍⵄⴰⴱⴷ,transliterated,Ennadhour Sidi Ali Belabed,,7124825,centre-est,district-4,660.01,10.05167,34.81637,245.18,316.82
+municipality-7125808,TN-61,Menzel Chaker,Menzel Chaker,منزل شاكر,ⵎⵏⵣⵍ ⵛⴰⴽⵔ,transliterated,Menzel Chaker,,7125808,centre-est,district-4,1287.37,10.25292,35.01157,263.32,294.96
+municipality-7126242,TN-61,El Achech,El Achech,الأعشاش,ⵍⴰⵄⵛⴰⵛ,transliterated,El Achech,,7126242,centre-est,district-4,327.53,10.56098,35.09230,291.29,285.61
+municipality-7126939,TN-61,El Hencha,El Hencha,الحنشة,ⵍⵃⵏⵛⴰ,transliterated,El Hencha,,7126939,centre-est,district-4,346.42,10.74958,35.16204,308.35,277.59
+municipality-7127885,TN-61,Djebeniana,Djebeniana,جبنيانة,ⵊⴱⵏⵢⴰⵏⴰ,transliterated,Djebeniana,,7127885,centre-est,district-4,193.72,10.86494,35.08345,319.02,286.11
+municipality-7127921,TN-61,Hazeg El Louza,Hazeg El Louza,حزق اللوزة,ⵃⵣⵇ ⵍⵍⵓⵣⴰ,transliterated,Hazeg El Louza,,7127921,centre-est,district-4,63.95,10.99351,35.05171,330.81,289.41
+municipality-7164067,TN-22,Zriba,Zriba,الزريبة,ⵣⵣⵔⵉⴱⴰ,transliterated,Zriba,,7164067,nord-est,district-2,348.99,10.28448,36.30316,264.33,151.66
+municipality-7164068,TN-22,Zaghouan,Zaghouan,زغوان,ⵣⵖⵡⴰⵏ,transliterated,Zaghouan,,7164068,nord-est,district-2,409.49,10.18777,36.44249,255.45,136.32
+municipality-7164069,TN-22,Bir Mcherga,Bir Mcherga,بئر مشارقة,ⴱⵉⵔ ⵎⵛⴰⵔⵇⴰ,transliterated,Bir Mcherga,,7164069,nord-est,district-2,305.87,10.01254,36.47657,239.71,132.71
+municipality-7164070,TN-22,Jebel Oust,Jebel Oust,جبل الوسط,ⵊⴱⵍ ⵍⵡⵙⵟ,transliterated,Jebel Oust,,7164070,nord-est,district-2,229.61,10.01376,36.58111,239.69,121.12
+municipality-7164286,TN-22,Saouaf,Saouaf,صواف,ⵚⵡⴰⴼ,transliterated,Saouaf,,7164286,nord-est,district-2,253.10,10.17702,36.21477,254.80,161.59
+municipality-7164287,TN-22,El Fahs,El Fahs,الفحص,ⵍⴼⵃⵚ,transliterated,El Fahs,,7164287,nord-est,district-2,398.89,9.82079,36.41805,222.58,139.37
+municipality-7164400,TN-22,Ennadhour,Ennadhour,الناظور,ⵏⵏⴰⴹⵓⵔ,transliterated,Ennadhour,,7164400,nord-est,district-2,357.40,9.94882,36.11165,234.40,173.25
+municipality-7164401,TN-22,El Amaiem,El Amaiem,العمايم,ⵍⵄⵎⴰⵢⵎ,transliterated,El Amaiem,,7164401,nord-est,district-2,536.64,9.79920,36.25459,220.80,157.52
+municipality-7167437,TN-83,Remada,Remada,رمادة,ⵔⵎⴰⴷⴰ,transliterated,Remada,Q3424458,7167437,sud-est,district-5,27575.98,9.63848,32.18303,209.19,609.10
+municipality-7167457,TN-83,Dhehiba,Dhehiba,الذهيبة,ⴷⴷⵀⵉⴱⴰ,transliterated,Dhehiba,Q1015418,7167457,sud-est,district-5,3221.85,10.42781,31.86914,284.06,643.18
+municipality-7167848,TN-83,Tataouine,Tataouine,تطاوين,ⵜⵟⴰⵡⵉⵏ,transliterated,Tataouine,,7167848,sud-est,district-5,2873.67,10.64647,32.63743,303.44,557.71
+municipality-7167849,TN-83,Chenini Douiret,Chenini Douiret,شنني الدويرات,ⵛⵏⵏⵉ ⴷⴷⵡⵉⵔⴰⵜ,transliterated,Chenini Douiret,,7167849,sud-est,district-5,1863.34,10.16865,32.79003,258.43,541.39
+municipality-7167867,TN-83,Bir Lahmar,Bir Lahmar,بئر الأحمر,ⴱⵉⵔ ⵍⴰⵃⵎⵔ,transliterated,Bir Lahmar,,7167867,sud-est,district-5,244.83,10.45882,33.15250,285.05,500.86
+municipality-7167879,TN-83,Ghomrassen,Ghomrassen,غمراسن,ⵖⵎⵔⴰⵙⵏ,transliterated,Ghomrassen,,7167879,sud-est,district-5,689.23,10.25277,33.04578,265.97,512.94
+municipality-7167885,TN-83,Smar,Smar,الصمار,ⵚⵚⵎⴰⵔ,transliterated,Smar,,7167885,sud-est,district-5,1993.65,10.94806,32.81113,331.38,537.97
+municipality-7167899,TN-72,Nefta,Nefta,نفطة,ⵏⴼⵟⴰ,transliterated,Nefta,,7167899,sud-ouest,district-4,1641.38,7.88845,33.76455,46.07,433.40
+municipality-7167900,TN-72,Hazoua,Hazoua,حزوة,ⵃⵣⵡⴰ,transliterated,Hazoua,,7167900,sud-ouest,district-4,1283.32,7.63796,33.89914,23.07,418.19
+municipality-7167902,TN-72,Tameghza,Tameghza,تمغزة,ⵜⵎⵖⵣⴰ,transliterated,Tameghza,,7167902,sud-ouest,district-4,910.72,7.89966,34.20846,47.63,384.18
+municipality-7167903,TN-72,Tozeur,Tozeur,توزر,ⵜⵓⵣⵔ,transliterated,Tozeur,,7167903,sud-ouest,district-4,819.60,8.17247,33.79237,72.39,430.56
+municipality-7167904,TN-72,Hamet Ejrid,Hamet Ejrid,حامة الجريد,ⵃⴰⵎⴰ ⵍⵊⵔⵉⴷ,transliterated,Hamet Ejrid,,7167904,sud-ouest,district-4,583.00,8.17249,34.11225,72.68,395.09
+municipality-7167905,TN-72,Degach,Degach,دقاش,ⴷⵇⴰⵛ,transliterated,Degach,,7167905,sud-ouest,district-4,835.80,8.34839,33.93602,88.78,414.75
+municipality-7167913,TN-42,Thélepte,Thélepte,تلابت,ⵜⵍⴰⴱⵜ,transliterated,Thelepte,,7167913,centre-ouest,district-3,591.86,8.46142,35.06202,99.89,289.95
+municipality-7167918,TN-42,Feriana,Feriana,فريانة,ⴼⵔⵢⴰⵏⴰ,transliterated,Feriana,,7167918,centre-ouest,district-3,414.37,8.37374,34.91669,91.79,306.02
+municipality-7167919,TN-42,Majel Bel Abbes,Majel Bel Abbes,ماجل بالعباس,ⵎⴰⵊⵍ ⴱⴰⵍⵄⴱⴰⵙ,transliterated,Majel Bel Abbes,,7167919,centre-ouest,district-3,886.58,8.55800,34.74714,108.54,324.91
+municipality-7167924,TN-42,Hassi El Ferid,Hassi El Ferid,حاسي الفريد,ⵃⴰⵙⵉ ⵍⴼⵔⵉⴷ,transliterated,Hassi El Ferid,,7167924,centre-ouest,district-3,968.92,8.88991,34.92919,138.95,304.80
+municipality-7167925,TN-42,Hidra,Hidra,حيدرة,ⵃⵉⴷⵔⴰ,transliterated,Hidra,,7167925,centre-ouest,district-3,496.61,8.46272,35.56473,100.31,234.20
+municipality-7167927,TN-42,Thala,Thala,تالة,ⵜⴰⵍⴰ,transliterated,Thala,Q1975233,7167927,centre-ouest,district-3,716.66,8.66984,35.55223,119.08,235.66
+municipality-7167928,TN-42,El Ayoun,El Ayoun,العيون,ⵍⵄⵢⵓⵏ,transliterated,El Ayoun,,7167928,centre-ouest,district-3,411.58,8.89955,35.50353,139.89,241.11
+municipality-7167930,TN-42,Djedeliane,Djedeliane,جدليانࢫ,ⵊⴷⵍⵢⴰⵏⵓ,transliterated,Djedeliane,,7167930,centre-ouest,district-3,274.96,8.89715,35.66843,139.69,222.82
+municipality-7167931,TN-42,Echrayaa Machrek Chams,Echrayaa Machrek Chams,الشرايع مشرق الشمس,ⵛⵛⵔⴰⵢⵄ ⵎⵛⵔⵇ ⵛⵛⵎⵙ,transliterated,Echrayaa Machrek Chams,,7167931,centre-ouest,district-3,641.09,8.97004,35.34011,146.28,259.24
+municipality-7167932,TN-42,Ain El Khemaissia,Ain El Khemaissia,عين الخمايسية,ⵄⵉⵏ ⵍⵅⵎⴰⵢⵙⵢⴰ,transliterated,Ain El Khemaissia,,7167932,centre-ouest,district-3,278.70,9.19998,35.47553,167.14,244.20
+municipality-7167935,TN-42,Errakhmet,Errakhmet,الرخمات,ⵔⵔⵅⵎⴰⵜ,transliterated,Errakhmet,,7167935,centre-ouest,district-3,236.37,9.21501,35.07661,168.60,288.44
+municipality-7167936,TN-42,Sbiba,Sbiba,سبيبة,ⵙⴱⵉⴱⴰ,transliterated,Sbiba,,7167936,centre-ouest,district-3,168.97,9.06066,35.52847,154.50,238.35
+municipality-7167940,TN-42,Sbeitla,Sbeitla,سبيطلة,ⵙⴱⵉⵟⵍⴰ,transliterated,Sbeitla,,7167940,centre-ouest,district-3,238.23,9.15200,35.21644,162.83,272.94
+municipality-7167944,TN-42,Khmouda,Khmouda,خمودة,ⵅⵎⵓⴷⴰ,transliterated,Khmouda,,7167944,centre-ouest,district-3,409.67,8.64955,35.24910,117.12,269.28
+municipality-7167945,TN-42,Foussana,Foussana,فوسانة,ⴼⵓⵙⴰⵏⴰ,transliterated,Foussana,,7167945,centre-ouest,district-3,505.20,8.40877,35.39351,95.31,253.16
+municipality-7167977,TN-42,Kasserine,Kasserine,القصرين,ⵍⵇⵚⵔⵉⵏ,transliterated,Kasserine,,7167977,centre-ouest,district-3,585.64,8.67818,35.03754,119.65,292.75
+municipality-7167978,TN-42,Bouzguam,Bouzguam,بوزقام,ⴱⵓⵣⵇⴰⵎ,transliterated,Bouzguam,,7167978,centre-ouest,district-3,376.21,8.92169,35.14720,141.87,280.63
+municipality-7167979,TN-42,Ennour,Ennour,النور,ⵏⵏⵓⵔ,transliterated,Ennour,,7167979,centre-ouest,district-3,4.58,8.84836,35.16526,135.19,278.62
+municipality-7168897,TN-71,Belkhir,Belkhir,بلخير,ⴱⵍⵅⵉⵔ,transliterated,Belkhir,,7168897,sud-ouest,district-4,842.44,9.42106,34.31818,187.74,372.48
+municipality-7168909,TN-71,El Guetar,El Guetar,القطار,ⵍⵇⵟⴰⵔ,transliterated,El Guetar,Q2705113,7168909,sud-ouest,district-4,933.43,8.99946,34.26159,148.95,378.84
+municipality-7168910,TN-71,Mdhila,Mdhila,المظيلة,ⵍⵎⴹⵉⵍⴰ,transliterated,Mdhila,,7168910,sud-ouest,district-4,644.40,8.69732,34.22335,121.12,383.04
+municipality-7168913,TN-71,Metlaoui,Metlaoui,المتلوي,ⵍⵎⵜⵍⵓⵢ,transliterated,Metlaoui,,7168913,sud-ouest,district-4,973.30,8.35738,34.25109,89.83,379.82
+municipality-7168914,TN-71,Redeyef,Redeyef,الرديف,ⵔⵔⴷⵉⴼ,transliterated,Redeyef,,7168914,sud-ouest,district-4,403.77,8.13558,34.33559,69.49,370.29
+municipality-7168918,TN-71,Sidi Boubaker,Sidi Boubaker,سيدي بوبكر,ⵙⵉⴷⵉ ⴱⵓⴱⴽⵔ,transliterated,Sidi Boubaker,,7168918,sud-ouest,district-4,176.44,8.32089,34.69053,86.80,331.07
+municipality-7168919,TN-71,Moularès,Moularès,أم الأعراس,ⴰⵎ ⵍⴰⵄⵔⴰⵙ,transliterated,Moulares,,7168919,sud-ouest,district-4,798.71,8.34631,34.53280,89.01,348.57
+municipality-7168942,TN-71,Gafsa,Gafsa,قفصة,ⵇⴼⵚⴰ,transliterated,Gafsa,,7168942,sud-ouest,district-4,1285.32,8.74547,34.51153,125.64,351.09
+municipality-7168944,TN-71,Sidi Aich,Sidi Aich,سيدي عيش,ⵙⵉⴷⵉ ⵄⵉⵛ,transliterated,Sidi Aich,,7168944,sud-ouest,district-4,442.86,8.85518,34.69536,135.74,330.73
+municipality-7168946,TN-71,El Ksar,El Ksar,القصر,ⵍⵇⵚⵔ,transliterated,El Ksar,,7168946,sud-ouest,district-4,218.82,8.94516,34.43945,143.96,359.12
+municipality-7168947,TN-71,Lala,Lala,لالة,ⵍⴰⵍⴰ,transliterated,Lala,,7168947,sud-ouest,district-4,63.01,8.86128,34.37667,136.25,366.07
+municipality-7168950,TN-71,Sanouche,Sanouche,زانوش,ⵣⴰⵏⵓⵛ,transliterated,Sanouche,,7168950,sud-ouest,district-4,319.19,9.05564,34.49083,154.11,353.42
+municipality-7168963,TN-71,Sned,Sned,السند,ⵙⵙⵏⴷ,transliterated,Sned,,7168963,sud-ouest,district-4,449.19,9.19818,34.63203,167.16,337.74
+municipality-7168989,TN-34,Bou Arada,Bou Arada,بوعرادة,ⴱⵓⵄⵔⴰⴷⴰ,transliterated,Bou Arada,,7168989,nord-ouest,district-3,380.61,9.65779,36.35770,208.02,146.18
+municipality-7169001,TN-34,Gaafour,Gaafour,قعفور,ⵇⵄⴼⵓⵔ,transliterated,Gaafour,,7169001,nord-ouest,district-3,462.24,9.32978,36.24148,178.63,159.22
+municipality-7169002,TN-34,El Aroussa,El Aroussa,العروسة,ⵍⵄⵔⵓⵙⴰ,transliterated,El Aroussa,,7169002,nord-ouest,district-3,360.60,9.44576,36.38054,188.98,143.75
+municipality-7169007,TN-34,Bourouis,Bourouis,بورويس,ⴱⵓⵔⵡⵉⵙ,transliterated,Bourouis,,7169007,nord-ouest,district-3,275.86,9.13474,36.18335,161.12,165.71
+municipality-7169008,TN-34,El Krib,El Krib,الكريب,ⵍⴽⵔⵉⴱ,transliterated,El Krib,,7169008,nord-ouest,district-3,425.87,9.05616,36.32907,154.04,149.55
+municipality-7169033,TN-34,Sidi Morched,Sidi Morched,سيدي مرشد,ⵙⵉⴷⵉ ⵎⵔⵛⴷ,transliterated,Sidi Morched,,7169033,nord-ouest,district-3,336.33,9.41657,35.96836,186.56,189.48
+municipality-7169041,TN-34,Makthar,Makthar,مكثر,ⵎⴽⵜⵔ,transliterated,Makthar,,7169041,nord-ouest,district-3,343.77,9.19349,35.86415,166.47,201.10
+municipality-7169042,TN-34,Kesra,Kesra,كسرى,ⴽⵙⵔⴰ,transliterated,Kesra,,7169042,nord-ouest,district-3,435.02,9.38638,35.77963,183.92,210.42
+municipality-7169044,TN-34,Errouhia,Errouhia,الروحية,ⵔⵔⵓⵃⵢⴰ,transliterated,Errouhia,,7169044,nord-ouest,district-3,281.18,9.09978,35.73379,158.02,215.57
+municipality-7169047,TN-34,El Hbabsa,El Hbabsa,الحبابسة,ⵍⵃⴱⴰⴱⵙⴰ,transliterated,El Hbabsa,,7169047,nord-ouest,district-3,374.27,9.26015,35.61075,172.56,229.19
+municipality-7169440,TN-34,Siliana,Siliana,سليانة,ⵙⵍⵢⴰⵏⴰ,transliterated,Siliana,,7169440,nord-ouest,district-3,545.29,9.26410,36.04397,172.79,181.14
+municipality-7169441,TN-34,Bargou,Bargou,برقو,ⴱⵔⵇⵓ,transliterated,Bargou,,7169441,nord-ouest,district-3,448.25,9.61108,36.09958,204.01,174.83
+municipality-7169465,TN-41,Hajeb El Ayoun,Hajeb El Ayoun,حاجب العيون,ⵃⴰⵊⴱ ⵍⵄⵢⵓⵏ,transliterated,Hajeb El Ayoun,,7169465,centre-ouest,district-3,353.03,9.60197,35.36525,203.69,256.28
+municipality-7169471,TN-41,Echrarda,Echrarda,الشراردة,ⵛⵛⵔⴰⵔⴷⴰ,transliterated,Echrarda,,7169471,centre-ouest,district-3,138.36,10.05280,35.11395,244.94,283.81
+municipality-7169472,TN-41,Nasrallah,Nasrallah,نصر الله,ⵏⵚⵔ ⵍⵍⵀ,transliterated,Nasrallah,,7169472,centre-ouest,district-3,422.42,9.83383,35.25614,224.85,268.23
+municipality-7169488,TN-41,Cheraitia Ksour,Cheraitia Ksour,الشرايطية القصور,ⵛⵛⵔⴰⵢⵟⵢⴰ ⵍⵇⵚⵓⵔ,transliterated,Cheraitia Ksour,,7169488,centre-ouest,district-3,191.97,10.17166,35.17540,255.69,276.88
+municipality-7169501,TN-41,Jehina,Jehina,جهينة,ⵊⵀⵉⵏⴰ,transliterated,Jehina,,7169501,centre-ouest,district-3,251.59,10.06979,35.29596,246.27,263.61
+municipality-7169502,TN-41,Menzel Mhiri,Menzel Mhiri,منزل المهيري,ⵎⵏⵣⵍ ⵍⵎⵀⵉⵔⵉ,transliterated,Menzel Mhiri,,7169502,centre-ouest,district-3,262.68,9.83111,35.43631,224.44,248.25
+municipality-7169511,TN-41,Bouhajla,Bouhajla,بوحجلة,ⴱⵓⵃⵊⵍⴰ,transliterated,Bouhajla,,7169511,centre-ouest,district-3,437.88,10.11241,35.44262,249.96,247.30
+municipality-7169523,TN-41,Kairouan,Kairouan,القيروان,ⵍⵇⵉⵔⵡⴰⵏ,transliterated,Kairouan,,7169523,centre-ouest,district-3,461.63,10.12810,35.71054,251.05,217.57
+municipality-7169681,TN-41,Rakada,Rakada,رقادة,ⵔⵇⴰⴷⴰ,transliterated,Rakada,,7169681,centre-ouest,district-3,309.06,10.10349,35.57232,248.99,232.93
+municipality-7169726,TN-41,Sisseb Edheriaat,Sisseb Edheriaat,سيسب الدريعات,ⵙⵉⵙⴱ ⴷⴷⵔⵉⵄⴰⵜ,transliterated,Sisseb Edheriaat,,7169726,centre-ouest,district-3,322.98,10.17023,35.99394,254.48,186.09
+municipality-7169737,TN-41,Sbikha,Sbikha,السبيخة,ⵙⵙⴱⵉⵅⴰ,transliterated,Sbikha,,7169737,centre-ouest,district-3,746.31,9.94263,35.91913,234.05,194.61
+municipality-7169743,TN-41,Oueslatia,Oueslatia,الوسلاتية,ⵍⵡⵙⵍⴰⵜⵢⴰ,transliterated,Oueslatia,,7169743,centre-ouest,district-3,718.96,9.61905,35.87496,204.88,199.74
+municipality-7169772,TN-41,El Alaa,El Alaa,العلا,ⵍⵄⵍⴰ,transliterated,El Alaa,,7169772,centre-ouest,district-3,361.26,9.47426,35.65828,191.93,223.85
+municipality-7169773,TN-41,Haffouz,Haffouz,حفوز,ⵃⴼⵓⵣ,transliterated,Haffouz,,7169773,centre-ouest,district-3,403.51,9.73864,35.65191,215.86,224.41
+municipality-7171852,TN-41,Ain Jelloula,Ain Jelloula,عين جلولة,ⵄⵉⵏ ⵊⵍⵓⵍⴰ,transliterated,Ain Jelloula,,7171852,centre-ouest,district-3,195.73,9.77663,35.80089,219.17,207.86
+municipality-7171864,TN-41,Abida,Abida,عبيدة,ⵄⴱⵉⴷⴰ,transliterated,Abida,,7171864,centre-ouest,district-3,217.12,9.85199,35.54653,226.23,236.01
+municipality-7171865,TN-41,Chebika,Chebika,الشبيكة,ⵛⵛⴱⵉⴽⴰ,transliterated,Chebika,,7171865,centre-ouest,district-3,295.51,9.91296,35.75404,231.54,212.95
+municipality-7171868,TN-41,El Ain El Beidha,El Ain El Beidha,عين البيضاء,ⵄⵉⵏ ⵍⴱⵉⴹⴰ,transliterated,El Ain El Beidha,,7171868,centre-ouest,district-3,207.80,9.72999,35.52212,215.19,238.81
+municipality-7171870,TN-41,Chaouachi,Chaouachi,شواشي,ⵛⵡⴰⵛⵉ,transliterated,Chaouachi,,7171870,centre-ouest,district-3,235.90,9.49258,35.53841,193.65,237.13
+municipality-7172845,TN-43,Jilma,Jilma,جلمة,ⵊⵍⵎⴰ,transliterated,Jilma,,7172845,centre-ouest,district-4,325.94,9.43405,35.27300,188.48,266.59
+municipality-7172846,TN-43,Baten El Ghezel,Baten El Ghezel,باطن الغزال,ⴱⴰⵟⵏ ⵍⵖⵣⴰⵍ,transliterated,Baten El Ghezel,,7172846,centre-ouest,district-4,343.44,9.37918,35.40891,183.43,251.54
+municipality-7172849,TN-43,Cebalet Ouled Asker,Cebalet Ouled Asker,سبالة أولاد عسكر,ⵙⴱⴰⵍⴰ ⴰⵡⵍⴰⴷ ⵄⵙⴽⵔ,transliterated,Cebalet Ouled Asker,,7172849,centre-ouest,district-4,295.28,9.31133,35.17680,177.35,277.31
+municipality-7172858,TN-43,Sidi Ali Ben Aoun,Sidi Ali Ben Aoun,سيدي علي بن عون,ⵙⵉⴷⵉ ⵄⵍⵉ ⴱⵏ ⵄⵓⵏ,transliterated,Sidi Ali Ben Aoun,,7172858,centre-ouest,district-4,387.69,9.13108,34.84428,160.98,314.22
+municipality-7172859,TN-43,Bir El Hafey,Bir El Hafey,بئر الحفي,ⴱⵉⵔ ⵍⵃⴼⵉ,transliterated,Bir El Hafey,,7172859,centre-ouest,district-4,310.50,9.26518,34.95555,173.21,301.85
+municipality-7172880,TN-43,Meknassy,Meknassy,المكناسي,ⵍⵎⴽⵏⴰⵙⵉ,transliterated,Meknassy,,7172880,centre-ouest,district-4,623.76,9.60880,34.60814,204.82,340.24
+municipality-7172881,TN-43,Menzel Bouzaiane,Menzel Bouzaiane,منزل بوزيان,ⵎⵏⵣⵍ ⴱⵓⵣⵢⴰⵏ,transliterated,Menzel Bouzaiane,,7172881,centre-ouest,district-4,555.00,9.38682,34.64716,184.45,336.02
+municipality-7172882,TN-43,El Mansoura,El Mansoura,المنصورة,ⵍⵎⵏⵚⵓⵔⴰ,transliterated,El Mansoura,,7172882,centre-ouest,district-4,226.84,9.05874,34.74561,154.38,325.17
+municipality-7172931,TN-43,Souk Jedid,Souk Jedid,سوق الجديد,ⵙⵓⵇ ⵍⵊⴷⵉⴷ,transliterated,Souk Jedid,,7172931,centre-ouest,district-4,346.35,9.55002,34.84216,199.29,314.32
+municipality-7172934,TN-43,Mezzouna,Mezzouna,المزونة,ⵍⵎⵣⵓⵏⴰ,transliterated,Mezzouna,,7172934,centre-ouest,district-4,1135.62,9.78530,34.47957,221.11,354.39
+municipality-7172947,TN-43,Bennour,Bennour,بنور,ⴱⵏⵓⵔ,transliterated,Bennour,,7172947,centre-ouest,district-4,445.52,9.60862,35.18085,204.42,276.73
+municipality-7172948,TN-43,Ouled Haffouz,Ouled Haffouz,أولاد حفوز,ⴰⵡⵍⴰⴷ ⵃⴼⵓⵣ,transliterated,Ouled Haffouz,,7172948,centre-ouest,district-4,422.37,9.83496,35.09770,225.10,285.80
+municipality-7172960,TN-43,Rahal,Rahal,رحال,ⵔⵃⴰⵍ,transliterated,Rahal,,7172960,centre-ouest,district-4,204.66,9.33984,34.80416,180.08,318.62
+municipality-7172963,TN-43,El Ahouaz Lassouda,El Ahouaz Lassouda,الأحواز لسودة,ⵍⴰⵃⵡⴰⵣ ⵍⵙⵓⴷⴰ,transliterated,El Ahouaz Lassouda,,7172963,centre-ouest,district-4,349.65,9.55849,35.01968,199.95,294.63
+municipality-7173064,TN-81,Habib Thameur,Habib Thameur,الحبيب ثامر,ⵍⵃⴱⵉⴱ ⵜⴰⵎⵔ,transliterated,Habib Thameur,,7173064,sud-est,district-5,1696.63,9.47101,33.92008,192.54,416.61
+municipality-7173065,TN-81,Menzel El Habib,Menzel El Habib,منزل الحبيب,ⵎⵏⵣⵍ ⵍⵃⴱⵉⴱ,transliterated,Menzel El Habib,,7173065,sud-est,district-5,952.88,9.76813,34.12845,219.83,393.33
+municipality-7173075,TN-81,Oudref,Oudref,وذرف,ⵡⴷⵔⴼ,transliterated,Oudref,,7173075,sud-est,district-5,264.18,9.96685,34.15390,238.13,390.36
+municipality-7173082,TN-81,El Hamma,El Hamma,الحامة,ⵍⵃⴰⵎⴰ,transliterated,El Hamma,,7173082,sud-est,district-5,945.60,9.83128,33.78250,225.96,431.65
+municipality-7173087,TN-81,Nouvelle Matmata,Nouvelle Matmata,مطماطة الجديدة,ⵎⵟⵎⴰⵟⴰ ⵍⵊⴷⵉⴷⴰ,transliterated,Nouvelle Matmata,Q12244000,7173087,sud-est,district-5,752.09,10.06502,33.60712,247.81,450.90
+municipality-7173102,TN-81,Matmata,Matmata,مطماطة,ⵎⵟⵎⴰⵟⴰ,transliterated,Matmata,,7173102,sud-est,district-5,1246.10,9.79269,33.41039,222.71,472.93
+municipality-7173103,TN-81,Ketana,Ketana,كتانة,ⴽⵜⴰⵏⴰ,transliterated,Ketana,,7173103,sud-est,district-5,221.46,10.21043,33.71002,261.16,439.34
+municipality-7173107,TN-81,Dkhilet Toujane,Dkhilet Toujane,دخيلة توجان,ⴷⵅⵉⵍⴰ ⵜⵓⵊⴰⵏ,transliterated,Dkhilet Toujane,,7173107,sud-est,district-5,318.53,10.13937,33.45557,254.89,467.63
+municipality-7173126,TN-81,Mareth,Mareth,مارث,ⵎⴰⵔⵜ,transliterated,Mareth,,7173126,sud-est,district-5,346.28,10.26981,33.56090,266.87,455.81
+municipality-7173765,TN-32,Ain Draham,Ain Draham,عين دراهم,ⵄⵉⵏ ⴷⵔⴰⵀⵎ,transliterated,Ain Draham,,7173765,nord-ouest,district-1,320.02,8.80595,36.77985,131.68,99.53
+municipality-7173766,TN-32,Tabarka,Tabarka,طبرقة,ⵟⴱⵔⵇⴰ,transliterated,Tabarka,,7173766,nord-ouest,district-1,141.13,8.75337,36.90966,127.03,85.12
+municipality-7173767,TN-32,Ain Essobh Nadhour,Ain Essobh Nadhour,عين الصبح الناظور,ⵄⵉⵏ ⵚⵚⴱⵃ ⵏⵏⴰⴹⵓⵔ,transliterated,Ain Essobh Nadhour,,7173767,nord-ouest,district-1,232.94,8.87590,36.90663,137.94,85.48
+municipality-7173835,TN-32,Balta Bouawene,Balta Bouawene,بلطة بوعوان,ⴱⵍⵟⴰ ⴱⵓⵄⵡⴰⵏ,transliterated,Balta Bouawene,,7173835,nord-ouest,district-1,276.27,8.93759,36.70610,143.43,107.73
+municipality-7173838,TN-32,Khmeyria,Khmeyria,الخمايرية,ⵍⵅⵎⴰⵢⵔⵢⴰ,transliterated,Khmeyria,,7173838,nord-ouest,district-1,169.43,8.52595,36.73533,106.68,104.38
+municipality-7173839,TN-32,Beni M'tir,Beni M'tir,بني مطير,ⴱⵏⵉ ⵎⵟⵉⵔ,transliterated,Beni M'tir,,7173839,nord-ouest,district-1,71.66,8.73271,36.69977,125.12,108.40
+municipality-7173847,TN-32,El Kalaa El Maaden Forgassen,El Kalaa El Maaden Forgassen,القلعة المعدن فرقصان,ⵍⵇⵍⵄⴰ ⵍⵎⵄⴷⵏ ⴼⵔⵇⵚⴰⵏ,transliterated,El Kalaa El Maaden Forgassen,,7173847,nord-ouest,district-1,137.90,8.44198,36.57201,99.07,122.46
+municipality-7173848,TN-32,Jouaouda,Jouaouda,الجواودة,ⵍⵊⵡⴰⵡⴷⴰ,transliterated,Jouaouda,,7173848,nord-ouest,district-1,125.35,8.50931,36.64856,105.14,114.00
+municipality-7173849,TN-32,Fernana,Fernana,فرنانة,ⴼⵔⵏⴰⵏⴰ,transliterated,Fernana,,7173849,nord-ouest,district-1,193.70,8.69857,36.63696,122.05,115.36
+municipality-7173850,TN-32,Ghardimaou,Ghardimaou,غار الدماء,ⵖⴰⵔ ⴷⴷⵎⴰ,transliterated,Ghardimaou,,7173850,nord-ouest,district-1,369.39,8.32321,36.49320,88.38,131.13
+municipality-7173955,TN-32,Oued Meliz,Oued Meliz,وادي مليز,ⵡⴰⴷⵉ ⵎⵍⵉⵣ,transliterated,Oued Meliz,,7173955,nord-ouest,district-1,199.85,8.55734,36.44412,109.33,136.70
+municipality-7202458,TN-33,Dahmani,Dahmani,الدهماني,ⴷⴷⵀⵎⴰⵏⵉ,transliterated,Dahmani,,7202458,nord-ouest,district-1,544.36,8.79340,35.97680,130.37,188.61
+municipality-7202459,TN-33,El Ksour,El Ksour,القصور,ⵍⵇⵚⵓⵔ,transliterated,El Ksour,,7202459,nord-ouest,district-1,458.93,8.93892,35.79836,143.48,208.41
+municipality-7202460,TN-33,Djerissa,Djerissa,الجريصة,ⵍⵊⵔⵉⵚⴰ,transliterated,Djerissa,,7202460,nord-ouest,district-1,173.17,8.66654,35.83568,118.88,204.22
+municipality-7202461,TN-33,Kalaat Senan,Kalaat Senan,قلعة سنان,ⵇⵍⵄⴰ ⵙⵏⴰⵏ,transliterated,Kalaat Senan,,7202461,nord-ouest,district-1,513.73,8.35269,35.79508,90.51,208.59
+municipality-7202462,TN-33,Kalaat Khasba,Kalaat Khasba,القلعة الخصبة,ⵍⵇⵍⵄⴰ ⵍⵅⵚⴱⴰ,transliterated,Kalaat Khasba,Q3105864,7202462,nord-ouest,district-1,205.52,8.56372,35.71252,109.54,217.85
+municipality-7202482,TN-33,Menzel Salem,Menzel Salem,منزل سالم,ⵎⵏⵣⵍ ⵙⴰⵍⵎ,transliterated,Menzel Salem,,7202482,nord-ouest,district-1,148.32,8.45244,35.87226,99.57,200.08
+municipality-7202483,TN-33,Tajerouine,Tajerouine,تاجروين,ⵜⴰⵊⵔⵡⵉⵏ,transliterated,Tajerouine,,7202483,nord-ouest,district-1,572.26,8.57277,35.98713,110.49,187.39
+municipality-7202486,TN-33,Zaafrane,Zaafrane,الزعفران,ⵣⵣⵄⴼⵔⴰⵏ,transliterated,Zaafrane,,7202486,nord-ouest,district-1,387.75,8.94511,36.19400,144.06,164.53
+municipality-7202487,TN-33,El Marja,El Marja,المرجى,ⵍⵎⵔⵊⴰ,transliterated,El Marja,,7202487,nord-ouest,district-1,148.00,9.08242,36.01277,156.43,184.63
+municipality-7202488,TN-33,Sers,Sers,السرس,ⵙⵙⵔⵙ,transliterated,Sers,,7202488,nord-ouest,district-1,285.12,9.02271,36.09960,151.04,175.00
+municipality-7202498,TN-33,Sakiet Sidi Youssef,Sakiet Sidi Youssef,ساقية سيدي يوسف,ⵙⴰⵇⵢⴰ ⵙⵉⴷⵉ ⵢⵓⵙⴼ,transliterated,Sakiet Sidi Youssef,,7202498,nord-ouest,district-1,728.07,8.46487,36.24038,100.92,159.26
+municipality-7202502,TN-33,Kef,Kef,الكاف,ⵍⴽⴰⴼ,transliterated,Kef,Q27155,7202502,nord-ouest,district-1,220.25,8.63520,36.15181,116.18,169.15
+municipality-7202544,TN-33,Nebeur,Nebeur,نبر,ⵏⴱⵔ,transliterated,Nebeur,,7202544,nord-ouest,district-1,230.08,8.80625,36.35504,131.62,146.65
+municipality-7202545,TN-33,Touiref,Touiref,الطويرف,ⵟⵟⵡⵉⵔⴼ,transliterated,Touiref,,7202545,nord-ouest,district-1,321.99,8.62393,36.33380,115.25,148.96
+municipality-7202548,TN-33,Bahra,Bahra,بهرة,ⴱⵀⵔⴰ,transliterated,Bahra,,7202548,nord-ouest,district-1,167.09,8.89507,36.29066,139.58,153.81
+municipality-7209059,TN-31,Nefza,Nefza,نفزة,ⵏⴼⵣⴰ,transliterated,Nefza,,7209059,nord-ouest,district-1,323.48,9.02485,37.03158,151.21,71.62
+municipality-7209111,TN-31,Medjez El Bab,Medjez El Bab,مجاز الباب,ⵎⵊⴰⵣ ⵍⴱⴰⴱ,transliterated,Medjez El Bab,,7209111,nord-ouest,district-1,462.54,9.60962,36.69155,203.46,109.17
+municipality-7209112,TN-31,Esslouguia,Esslouguia,السلوقية,ⵙⵙⵍⵓⵇⵢⴰ,transliterated,Esslouguia,,7209112,nord-ouest,district-1,83.94,9.53743,36.56323,197.09,123.44
+municipality-7209113,TN-31,Teboursouk,Teboursouk,تبرسق,ⵜⴱⵔⵙⵇ,transliterated,Teboursouk,,7209113,nord-ouest,district-1,395.96,9.24357,36.45254,170.83,135.83
+municipality-7209114,TN-31,Tibar,Tibar,تيبار,ⵜⵉⴱⴰⵔ,transliterated,Tibar,,7209114,nord-ouest,district-1,114.21,9.09978,36.49417,157.94,131.23
+municipality-7209116,TN-31,Sidi Smail,Sidi Smail,سيدي إسماعيل,ⵙⵉⴷⵉ ⵉⵙⵎⴰⵄⵉⵍ,transliterated,Sidi Smail,,7209116,nord-ouest,district-1,148.28,9.16281,36.58630,163.56,121.01
+municipality-7209117,TN-31,Testour,Testour,تستور,ⵜⵙⵜⵓⵔ,transliterated,Testour,,7209117,nord-ouest,district-1,559.32,9.41812,36.63697,186.38,115.32
+municipality-7209118,TN-31,El Maagoula,El Maagoula,المعقولة,ⵍⵎⵄⵇⵓⵍⴰ,transliterated,El Maagoula,,7209118,nord-ouest,district-1,213.96,9.23867,36.68330,170.32,110.23
+municipality-7209119,TN-31,Zahret Medien,Zahret Medien,زهرة مدين,ⵣⵀⵔⴰ ⵎⴷⵉⵏ,transliterated,Zahret Medien,,7209119,nord-ouest,district-1,241.38,9.01861,36.80913,150.66,96.30
+municipality-7209120,TN-31,Béja,Béja,باجة,ⴱⴰⵊⴰ,transliterated,Beja,,7209120,nord-ouest,district-1,427.58,9.24976,36.81206,171.28,95.95
+municipality-7209121,TN-31,Ouechtata,Ouechtata,وشتاتة,ⵡⵛⵜⴰⵜⴰ,transliterated,Ouechtata,,7209121,nord-ouest,district-1,276.08,9.09428,36.91747,157.40,84.28
+municipality-7209129,TN-31,Goubellat,Goubellat,قبلاط,ⵇⴱⵍⴰⵟ,transliterated,Goubellat,,7209129,nord-ouest,district-1,413.80,9.70327,36.53938,211.95,125.99
+municipality-7209220,TN-23,El Hchachna,El Hchachna,الحشاشنة,ⵍⵃⵛⴰⵛⵏⴰ,transliterated,El Hchachna,,7209220,nord-est,district-1,366.24,9.32166,37.16690,177.56,56.56
+municipality-7209221,TN-23,Sejnane,Sejnane,سجنان,ⵙⵊⵏⴰⵏ,transliterated,Sejnane,,7209221,nord-est,district-1,255.91,9.17594,37.11317,164.63,62.56
+municipality-7209222,TN-23,Ghezala,Ghezala,غزالة,ⵖⵣⴰⵍⴰ,transliterated,Ghezala,,7209222,nord-est,district-1,406.99,9.50048,37.09584,193.48,64.38
+municipality-7209223,TN-23,Joumine,Joumine,جومين,ⵊⵓⵎⵉⵏ,transliterated,Joumine,,7209223,nord-est,district-1,553.38,9.46669,36.86097,190.60,90.45
+municipality-7209224,TN-23,Mateur,Mateur,ماطر,ⵎⴰⵟⵔ,transliterated,Mateur,,7209224,nord-est,district-1,565.91,9.67541,36.98761,209.11,76.29
+municipality-7209225,TN-23,Utique,Utique,أوتيك,ⴰⵡⵜⵉⴽ,transliterated,Utique,,7209225,nord-est,district-1,374.87,9.94669,37.02114,233.21,72.36
+municipality-7209237,TN-23,Bizerte,Bizerte,بنزرت,ⴱⵏⵣⵔⵜ,transliterated,Bizerte,,7209237,nord-est,district-1,450.74,9.69858,37.26418,210.94,45.59
+municipality-7209241,TN-23,Menzel Bourguiba,Menzel Bourguiba,منزل بورقيبة,ⵎⵏⵣⵍ ⴱⵓⵔⵇⵉⴱⴰ,transliterated,Menzel Bourguiba,,7209241,nord-est,district-1,127.74,9.83152,37.09600,222.89,64.15
+municipality-7209255,TN-23,Menzel Abderrahmane,Menzel Abderrahmane,منزل عبد الرحمان,ⵎⵏⵣⵍ ⵄⴱⴷ ⵔⵔⵃⵎⴰⵏ,transliterated,Menzel Abderrahmane,,7209255,nord-est,district-1,9.07,9.86717,37.24103,225.91,48.04
+municipality-7209256,TN-23,Manzil Jamil,Menzel Jemil,منزل جميل,ⵎⵏⵣⵍ ⵊⵎⵉⵍ,transliterated,Menzel Jemil,,7209256,nord-est,district-1,77.01,9.96891,37.22209,234.96,50.05
+municipality-7209275,TN-23,Rafraf,Rafraf,رفراف,ⵔⴼⵔⴰⴼ,transliterated,Rafraf,,7209275,nord-est,district-1,22.10,10.16722,37.19952,252.58,52.36
+municipality-7209276,TN-23,Ghar El Melh,Ghar El Melh,غار الملح,ⵖⴰⵔ ⵍⵎⵍⵃ,transliterated,Ghar El Melh,,7209276,nord-est,district-1,31.69,10.12939,37.16667,249.27,56.04
+municipality-7209277,TN-23,Ras Jebel,Ras Jebel,رأس الجبل,ⵔⴰⵙ ⵍⵊⴱⵍ,transliterated,Ras Jebel,,7209277,nord-est,district-1,29.50,10.11654,37.21580,248.07,50.60
+municipality-7209278,TN-23,Ousja,Ousja,عوسجة,ⵄⵓⵙⵊⴰ,transliterated,Ousja,,7209278,nord-est,district-1,61.35,10.07809,37.15730,244.73,57.13
+municipality-7209279,TN-23,El Alia,El Alia,العالية,ⵍⵄⴰⵍⵢⴰ,transliterated,El Alia,,7209279,nord-est,district-1,85.14,9.99811,37.15774,237.62,57.16
+municipality-7209280,TN-23,Tinja,Tinja,تينجة,ⵜⵉⵏⵊⴰ,transliterated,Tinja,,7209280,nord-est,district-1,58.25,9.74881,37.10420,215.54,63.31
+municipality-7209285,TN-23,Metline,Metline,ماتلين,ⵎⴰⵜⵍⵉⵏ,transliterated,Metline,,7209285,nord-est,district-1,32.41,10.04347,37.23738,241.56,48.28
+municipality-7209676,TN-12,Sidi Thabet,Sidi Thabet,سيدي ثابت,ⵙⵉⴷⵉ ⵜⴰⴱⵜ,transliterated,Sidi Thabet,,7209676,grand-tunis,district-2,98.07,10.06502,36.90645,243.88,84.98
+municipality-7209677,TN-12,Kallat El Andalous,Kallat El Andalous,قلعة الأندلس,ⵇⵍⵄⴰ ⵍⴰⵏⴷⵍⵙ,transliterated,Kallat El Andalous,,7209677,grand-tunis,district-2,189.23,10.13035,37.01266,249.56,73.13
+municipality-7209678,TN-12,Cité Ettadhamen,Cité Ettadhamen,حي التضامن,ⵃⵉ ⵜⵜⴹⴰⵎⵏ,transliterated,Cite Ettadhamen,,7209678,grand-tunis,district-2,3.40,10.10332,36.83681,247.38,92.66
+municipality-7209679,TN-12,Mnihla,Mnihla,منيهلة,ⵎⵏⵉⵀⵍⴰ,transliterated,Mnihla,,7209679,grand-tunis,district-2,23.08,10.11417,36.86407,248.31,89.63
+municipality-7209680,TN-12,Ariana Ville,Ariana Ville,أريانة المدينة,ⴰⵔⵢⴰⵏⴰ ⵍⵎⴷⵉⵏⴰ,transliterated,Ariana Ville,,7209680,grand-tunis,district-2,18.56,10.16552,36.86549,252.89,89.41
+municipality-7209681,TN-12,Soukra,Soukra,سكرة,ⵙⴽⵔⴰ,transliterated,Soukra,,7209681,grand-tunis,district-2,28.00,10.21146,36.87450,256.97,88.36
+municipality-7209682,TN-12,Raoued,Raoued,رواد,ⵔⵡⴰⴷ,transliterated,Raoued,,7209682,grand-tunis,district-2,55.71,10.15444,36.92494,251.82,82.83
+municipality-7209744,TN-11,Le Bardo,Le Bardo,باردو,ⴱⴰⵔⴷⵓ,transliterated,Le Bardo,,7209744,grand-tunis,district-2,6.77,10.13128,36.80946,249.91,95.67
+municipality-7209745,TN-11,La Goulette,La Goulette,حلق الوادي,ⵃⵍⵇ ⵍⵡⴰⴷⵉ,transliterated,La Goulette,,7209745,grand-tunis,district-2,20.55,10.28287,36.82793,263.40,93.45
+municipality-7209746,TN-11,Le Kram,Le Kram,الكرم,ⵍⴽⵔⵎ,transliterated,Le Kram,,7209746,grand-tunis,district-2,9.66,10.29444,36.85363,264.40,90.58
+municipality-7209747,TN-11,Carthage,Carthage,قرطاج,ⵇⵔⵟⴰⵊ,transliterated,Carthage,,7209747,grand-tunis,district-2,6.01,10.32696,36.85940,267.29,89.90
+municipality-7209748,TN-11,Sidi Bou Said,Sidi Bou Said,سيدي بو سعيد,ⵙⵉⴷⵉ ⴱⵓ ⵙⵄⵉⴷ,transliterated,Sidi Bou Said,,7209748,grand-tunis,district-2,2.21,10.34322,36.87164,268.72,88.52
+municipality-7209749,TN-11,Al Marsa,La Marsa,المرسى,ⵍⵎⵔⵙⴰ,transliterated,La Marsa,,7209749,grand-tunis,district-2,30.61,10.30339,36.88208,265.15,87.42
+municipality-7209931,TN-11,Sidi Hassine,Sidi Hassine,سيدي حسين,ⵙⵉⴷⵉ ⵃⵙⵉⵏ,transliterated,Sidi Hassine,,7209931,grand-tunis,district-2,64.36,10.08646,36.74860,245.99,102.47
+municipality-7209932,TN-11,Tunis,Tunis,تونس,ⵜⵓⵏⵙ,transliterated,Tunis,,7209932,grand-tunis,district-2,122.22,10.18894,36.81503,255.04,94.99
+municipality-7209934,TN-13,Khelidia,Khelidia,الخليدية,ⵍⵅⵍⵉⴷⵢⴰ,transliterated,Khelidia,,7209934,grand-tunis,district-2,184.44,10.21328,36.59939,257.52,118.88
+municipality-7209935,TN-13,Mohamedia,Mohamedia,المحمدية,ⵍⵎⵃⵎⴷⵢⴰ,transliterated,Mohamedia,,7209935,grand-tunis,district-2,97.36,10.09055,36.63039,246.50,115.57
+municipality-7209941,TN-13,Ben Arous,Ben Arous,بن عروس,ⴱⵏ ⵄⵔⵓⵙ,transliterated,Ben Arous,,7209941,grand-tunis,district-2,6.47,10.22869,36.75293,258.68,101.83
+municipality-7209942,TN-13,Ezzahra,Ezzahra,الزهراء,ⵣⵣⵀⵔⴰ,transliterated,Ezzahra,,7209942,grand-tunis,district-2,7.09,10.29986,36.74681,265.04,102.43
+municipality-7209943,TN-13,Bou Mhel El Bassatine,Bou Mhel El Bassatine,بومهل البساتين,ⴱⵓⵎⵀⵍ ⵍⴱⵙⴰⵜⵉⵏ,transliterated,Bou Mhel El Bassatine,,7209943,grand-tunis,district-2,20.17,10.29859,36.72088,264.97,105.31
+municipality-7209944,TN-13,Hammam Lif,Hammam Lif,حمام الأنف,ⵃⵎⴰⵎ ⵍⴰⵏⴼ,transliterated,Hammam Lif,,7209944,grand-tunis,district-2,11.43,10.33516,36.71955,268.24,105.41
+municipality-7209945,TN-13,Hammam Chott,Hammam Chott,حمام الشط,ⵃⵎⴰⵎ ⵛⵛⵟ,transliterated,Hammam Chott,,7209945,grand-tunis,district-2,26.33,10.38013,36.70230,272.28,107.26
+municipality-7209946,TN-13,Mornag,Mornag,مرناق,ⵎⵔⵏⴰⵇ,transliterated,Mornag,,7209946,grand-tunis,district-2,215.95,10.32320,36.66530,267.25,111.44
+municipality-7209947,TN-13,Fouchana,Fouchana,فوشانة,ⴼⵓⵛⴰⵏⴰ,transliterated,Fouchana,,7209947,grand-tunis,district-2,15.11,10.21323,36.66339,257.42,111.78
+municipality-7209948,TN-13,Fouchana,Fouchana,فوشانة,ⴼⵓⵛⴰⵏⴰ,transliterated,Fouchana,,7209948,grand-tunis,district-2,23.63,10.17738,36.70154,254.17,107.59
+municipality-7209949,TN-13,Radès,Radès,رادس,ⵔⴰⴷⵙ,transliterated,Rades,,7209949,grand-tunis,district-2,19.63,10.27768,36.76489,263.03,100.45
+municipality-7209950,TN-13,Megrine,Megrine,مقرين,ⵎⵇⵔⵉⵏ,transliterated,Megrine,,7209950,grand-tunis,district-2,10.13,10.23981,36.77379,259.64,99.50
+municipality-7209951,TN-13,El Mourouj,El Mourouj,المروج,ⵍⵎⵔⵓⵊ,transliterated,El Mourouj,Q2536406,7209951,grand-tunis,district-2,16.04,10.21866,36.71651,257.83,105.88
+municipality-7210409,TN-51,Enfidha,Enfidha,النفيضة,ⵏⵏⴼⵉⴹⴰ,transliterated,Enfidha,,7210409,centre-est,district-3,234.34,10.35377,36.10841,270.85,173.18
+municipality-7210410,TN-51,Grimet Hicher,Grimet Hicher,القريمات هيشر,ⵍⵇⵔⵉⵎⴰⵜ ⵀⵉⵛⵔ,transliterated,Grimet Hicher,,7210410,centre-est,district-3,135.86,10.24442,36.11925,260.99,172.11
+municipality-7210411,TN-51,Bouficha,Bouficha,بوفيشة,ⴱⵓⴼⵉⵛⴰ,transliterated,Bouficha,,7210411,centre-est,district-3,260.55,10.44458,36.30001,278.71,151.81
+municipality-7210414,TN-51,Hammam Sousse,Hammam Sousse,حمام سوسة,ⵃⵎⴰⵎ ⵙⵓⵙⴰ,transliterated,Hammam Sousse,,7210414,centre-est,district-3,18.33,10.58186,35.85207,291.84,201.30
+municipality-7210415,TN-51,Hergla,Hergla,هرقلة,ⵀⵔⵇⵍⴰ,transliterated,Hergla,,7210415,centre-est,district-3,95.94,10.45595,36.03744,280.16,180.92
+municipality-7210419,TN-51,Msaken,Msaken,مساكن,ⵎⵙⴰⴽⵏ,transliterated,Msaken,,7210419,centre-est,district-3,326.63,10.52217,35.70915,286.70,217.24
+municipality-7210420,TN-51,Sidi El Heni,Sidi El Heni,سيدي الهاني,ⵙⵉⴷⵉ ⵍⵀⴰⵏⵉ,transliterated,Sidi El Heni,,7210420,centre-est,district-3,323.79,10.30037,35.73905,266.59,214.21
+municipality-7210421,TN-51,Kondar,Kondar,كندار,ⴽⵏⴷⴰⵔ,transliterated,Kondar,,7210421,centre-est,district-3,160.50,10.29734,35.95463,266.00,190.31
+municipality-7210428,TN-51,Sidi Bouali,Sidi Bouali,سيدي بو علي,ⵙⵉⴷⵉ ⴱⵓ ⵄⵍⵉ,transliterated,Sidi Bouali,,7210428,centre-est,district-3,128.00,10.44035,35.95619,278.89,189.95
+municipality-7210429,TN-51,Kalaa Kebira,Kalaa Kebira,القلعة الكبرى,ⵍⵇⵍⵄⴰ ⵍⴽⴱⵔⴰ,transliterated,Kalaa Kebira,,7210429,centre-est,district-3,233.77,10.40918,35.87052,276.22,199.50
+municipality-7210432,TN-51,Chott Mariem,Chott Mariem,شط مريم,ⵛⵟ ⵎⵔⵉⵎ,transliterated,Chott Mariem,,7210432,centre-est,district-3,21.44,10.53234,35.93954,287.22,191.67
+municipality-7210438,TN-51,Akouda,Akouda,أكودة,ⴰⴽⵓⴷⴰ,transliterated,Akouda,,7210438,centre-est,district-3,23.19,10.56593,35.87626,290.36,198.64
+municipality-7210441,TN-51,Kalaa Sghira,Kalaa Sghira,القلعة الصغرى,ⵍⵇⵍⵄⴰ ⵚⵚⵖⵔⴰ,transliterated,Kalaa Sghira,,7210441,centre-est,district-3,102.97,10.54292,35.81639,288.39,205.32
+municipality-7210444,TN-51,Sousse,Sousse,سوسة,ⵙⵓⵙⴰ,transliterated,Sousse,,7210444,centre-est,district-3,32.73,10.61228,35.83195,294.62,203.49
+municipality-7210445,TN-51,Zaouiet Sousse,Zaouiet Sousse,زاوية سوسة,ⵣⴰⵡⵢⴰ ⵙⵓⵙⴰ,transliterated,Zaouiet Sousse,,7210445,centre-est,district-3,15.70,10.62044,35.78817,295.44,208.34
+municipality-7210451,TN-51,Ksibet Thrayet,Ksibet Thrayet,قصيبة الثريات,ⵇⵚⵉⴱⴰ ⵜⵜⵔⵢⴰⵜ,transliterated,Ksibet Thrayet,,7210451,centre-est,district-3,20.84,10.63916,35.75794,297.19,211.66
+municipality-7210453,TN-51,El Messaadine,El Messaadine,المسعدين,ⵍⵎⵙⵄⴷⵉⵏ,transliterated,El Messaadine,,7210453,centre-est,district-3,6.10,10.59451,35.76467,293.14,210.98
+municipality-7210472,TN-51,Ezzouhour,Ezzouhour,الزهور,ⵣⵣⵀⵓⵔ,transliterated,Ezzouhour,,7210472,centre-est,district-3,10.06,10.59527,35.80558,293.14,206.44
+municipality-7286071,TN-82,Djerba Houmet Souk,Djerba Houmet Souk,جربة حومة السوق,ⵊⵔⴱⴰ ⵃⵓⵎⴰ ⵙⵙⵓⵇ,transliterated,Djerba Houmet Souk,,7286071,sud-est,district-5,162.99,10.82068,33.85875,317.42,422.01
+municipality-7286079,TN-82,Djerba Ajim,Djerba Ajim,جربة اجيم,ⵊⵔⴱⴰ ⴰⵊⵉⵎ,transliterated,Djerba Ajim,,7286079,sud-est,district-5,159.39,10.79479,33.77639,315.19,431.19
+municipality-7286080,TN-82,Djerba Midoun,Djerba Midoun,جربة ميدون,ⵊⵔⴱⴰ ⵎⵉⴷⵓⵏ,transliterated,Djerba Midoun,,7286080,sud-est,district-5,189.08,10.92967,33.76368,327.71,432.37
+municipality-7286085,TN-82,Ben Gardane,Ben Gardane,بنقردان,ⴱⵏⵇⵔⴷⴰⵏ,transliterated,Ben Gardane,Q1143002,7286085,sud-est,district-5,4806.50,11.29114,33.00117,363.05,516.25
+municipality-7286094,TN-82,Zarzis,Zarzis,جرجيس,ⵊⵔⵊⵉⵙ,transliterated,Zarzis,,7286094,sud-est,district-5,670.12,10.98637,33.41117,333.71,471.37
+municipality-7286110,TN-82,Zarzis Nord,Zarzis Nord,جرجيس الشمالية,ⵊⵔⵊⵉⵙ ⵛⵛⵎⴰⵍⵢⴰ,transliterated,Zarzis Nord,,7286110,sud-est,district-5,217.24,11.01795,33.56050,336.32,454.75
+municipality-7286127,TN-82,Beni Khedech,Beni Khedech,بني خداش,ⴱⵏⵉ ⵅⴷⴰⵛ,transliterated,Beni Khedech,,7286127,sud-est,district-5,1359.72,10.12219,33.20966,253.58,494.91
+municipality-7286159,TN-82,Medenine,Medenine,مدنين,ⵎⴷⵏⵉⵏ,transliterated,Medenine,,7286159,sud-est,district-5,676.28,10.57033,33.28367,295.23,486.17
+municipality-7286168,TN-82,Sidi Makhlouf,Sidi Makhlouf,سيدي مخلوف,ⵙⵉⴷⵉ ⵎⵅⵍⵓⴼ,transliterated,Sidi Makhlouf,,7286168,sud-est,district-5,658.86,10.47422,33.51711,285.91,460.41
+municipality-7286177,TN-82,Boughrara,Boughrara,بوغرارة,ⴱⵓⵖⵔⴰⵔⴰ,transliterated,Boughrara,,7286177,sud-est,district-5,391.79,10.67562,33.42628,304.78,470.20
+municipality-7286425,TN-81,Ezzarat,Ezzarat,الزارات,ⵣⵣⴰⵔⴰⵜ,transliterated,Ezzarat,,7286425,sud-est,district-5,115.22,10.35372,33.65936,274.51,444.79
+municipality-7286613,TN-81,Teboulbou,Teboulbou,تبلبو,ⵜⴱⵍⴱⵓ,transliterated,Teboulbou,,7286613,sud-est,district-5,279.25,10.02712,33.78695,244.09,430.99
+municipality-7286640,TN-81,Gabès,Gabès,قابس,ⵇⴰⴱⵙ,transliterated,Gabes,,7286640,sud-est,district-5,31.17,10.10500,33.87643,251.19,421.00
+municipality-7286649,TN-81,Bouchemma,Bouchemma,بوشمة,ⴱⵓⵛⵎⴰ,transliterated,Bouchemma,,7286649,sud-est,district-5,50.07,10.01871,33.90372,243.18,418.05
+municipality-7286661,TN-81,Ghannouch,Ghannouch,غنوش,ⵖⵏⵓⵛ,transliterated,Ghannouch,,7286661,sud-est,district-5,20.08,10.05411,33.93988,246.42,414.01
+municipality-7286673,TN-81,El Metouia,El Metouia,المطوية,ⵍⵎⵟⵡⵢⴰ,transliterated,El Metouia,,7286673,sud-est,district-5,144.37,9.98133,34.07853,239.54,398.70
+municipality-7286791,TN-81,Chenini Nahal,Chenini Nahal,شنني نحال,ⵛⵏⵏⵉ ⵏⵃⴰⵍ,transliterated,Chenini Nahal,,7286791,sud-est,district-5,104.29,9.95254,33.85088,237.12,423.97
+municipality-7286824,TN-61,Kerkennah,Kerkennah,قرقنة,ⵇⵔⵇⵏⴰ,transliterated,Kerkennah,,7286824,centre-est,district-4,152.65,11.25789,34.74741,355.69,322.65
+municipality-7286825,TN-61,El Amra,El Amra,العامرة,ⵍⵄⴰⵎⵔⴰ,transliterated,El Amra,,7286825,centre-est,district-4,183.91,10.85948,34.95123,318.79,300.79
+municipality-7286902,TN-61,Ghraiba,Ghraiba,الغريبة,ⵍⵖⵔⵉⴱⴰ,transliterated,Ghraiba,,7286902,centre-est,district-4,430.97,10.19610,34.50731,258.80,350.94
+municipality-7287088,TN-61,Sakiet Eddaier,Sakiet Eddaier,ساقية الدائر,ⵙⴰⵇⵢⴰ ⴷⴷⴰⵉⵔ,transliterated,Sakiet Eddaier,,7287088,centre-est,district-4,96.00,10.82432,34.84430,315.80,312.71
+municipality-7287158,TN-61,El Hajeb,El Hajeb,الحاجب,ⵍⵃⴰⵊⴱ,transliterated,El Hajeb,,7287158,centre-est,district-4,46.47,10.64953,34.70341,300.07,328.61
+municipality-7287170,TN-61,Gremda,Gremda,قرمدة,ⵇⵔⵎⴷⴰ,transliterated,Gremda,,7287170,centre-est,district-4,14.13,10.71647,34.79332,306.03,318.53
+municipality-7287248,TN-61,El Ain,El Ain,العين,ⵍⵄⵉⵏ,transliterated,El Ain,,7287248,centre-est,district-4,14.90,10.69759,34.76747,304.35,321.43
+municipality-7287981,TN-52,Sahline Môotmar,Sahline Môotmar,الساحلين معتمر,ⵙⵙⴰⵃⵍⵉⵏ ⵎⵄⵜⵎⵔ,transliterated,Sahline Mootmar,,7287981,centre-est,district-3,29.42,10.74731,35.73102,307.02,214.48
+municipality-7287982,TN-52,Khenis,Khenis,خنيس,ⵅⵏⵉⵙ,transliterated,Khenis,,7287982,centre-est,district-3,18.79,10.78672,35.72597,310.60,214.97
+municipality-7287983,TN-52,Monastir,Monastir,المنستير,ⵍⵎⵏⵙⵜⵉⵔ,transliterated,Monastir,,7287983,centre-est,district-3,43.99,10.80808,35.76161,312.46,210.98
+municipality-7288035,TN-52,El Ouerdanine,El Ouerdanine,الوردانين,ⵍⵡⵔⴷⴰⵏⵉⵏ,transliterated,El Ouerdanine,,7288035,centre-est,district-3,51.37,10.67226,35.69221,300.31,218.90
+municipality-7288127,TN-52,Zaouiet Kontoch,Zaouiet Kontoch,زاوية قنطش,ⵣⴰⵡⵢⴰ ⵇⵏⵟⵛ,transliterated,Zaouiet Kontoch,,7288127,centre-est,district-3,12.17,10.75923,35.64134,308.28,224.41
+municipality-7288128,TN-52,Menzel Ennour,Menzel Ennour,منزل النور,ⵎⵏⵣⵍ ⵏⵏⵓⵔ,transliterated,Menzel Ennour,,7288128,centre-est,district-3,9.23,10.77541,35.66218,309.70,222.07
+municipality-7288129,TN-52,Bembla,Bembla,بنبلة,ⴱⵏⴱⵍⴰ,transliterated,Bembla,,7288129,centre-est,district-3,21.17,10.78495,35.69199,310.50,218.75
+municipality-7288130,TN-52,El Masdour Menzel Harb,El Masdour Menzel Harb,المصدور منزل حرب,ⵍⵎⵚⴷⵓⵔ ⵎⵏⵣⵍ ⵃⵔⴱ,transliterated,El Masdour Menzel Harb,,7288130,centre-est,district-3,18.52,10.72838,35.68034,305.41,220.13
+municipality-7288268,TN-52,Menzel Hayet,Menzel Hayet,منزل حياة,ⵎⵏⵣⵍ ⵃⵢⴰⴰ,transliterated,Menzel Hayet,,7288268,centre-est,district-3,158.18,10.57179,35.54180,291.48,235.73
+municipality-7288269,TN-52,Zeramdine,Zeramdine,زرمدين,ⵣⵔⵎⴷⵉⵏ,transliterated,Zeramdine,,7288269,centre-est,district-3,93.86,10.69684,35.55652,302.79,233.91
+municipality-7288270,TN-52,Menzel Kamel,Menzel Kamel,منزل كامل,ⵎⵏⵣⵍ ⴽⴰⵎⵍ,transliterated,Menzel Kamel,,7288270,centre-est,district-3,80.41,10.66206,35.63645,299.49,225.10
+municipality-7288273,TN-52,Sidi Ameur,Sidi Ameur,سيدي عامر,ⵙⵉⴷⵉ ⵄⴰⵎⵔ,transliterated,Sidi Ameur,,7288273,centre-est,district-3,13.11,10.70872,35.72203,303.55,215.54
+municipality-7288375,TN-52,Bou Hjar,Bou Hjar,بوحجر,ⴱⵓⵃⵊⵔ,transliterated,Bou Hjar,,7288375,centre-est,district-3,4.35,10.86225,35.66706,317.55,221.38
+municipality-7288376,TN-52,Benen Bodher,Benen Bodher,بنان بوضر,ⴱⵏⴰⵏ ⴱⵓⴹⵔ,transliterated,Benen Bodher,,7288376,centre-est,district-3,18.26,10.82024,35.65943,313.77,222.30
+municipality-7288377,TN-52,Ksibet El Mediouni,Ksibet El Mediouni,قصيبة المديوني,ⵇⵚⵉⴱⴰ ⵍⵎⴷⵢⵓⵏⵉ,transliterated,Ksibet El Mediouni,,7288377,centre-est,district-3,5.94,10.82982,35.68828,314.57,219.08
+municipality-7288382,TN-52,Cherahil,Cherahil,الشراحيل,ⵛⵛⵔⴰⵃⵉⵍ,transliterated,Cherahil,,7288382,centre-est,district-3,15.44,10.85830,35.50824,317.53,239.00
+municipality-7288383,TN-52,Menzel Farsi,Menzel Farsi,منزل فارسي,ⵎⵏⵣⵍ ⴼⴰⵔⵙⵉ,transliterated,Menzel Farsi,,7288383,centre-est,district-3,26.34,10.86940,35.55869,318.43,233.39
+municipality-7288384,TN-52,Beni Hassen,Beni Hassen,بني حسان,ⴱⵏⵉ ⵃⵙⴰⵏ,transliterated,Beni Hassen,,7288384,centre-est,district-3,30.17,10.81980,35.55688,313.94,233.67
+municipality-7288386,TN-52,Amiret Touazra,Amiret Touazra,عميرة التوازرة,ⵄⵎⵉⵔⴰ ⵜⵜⵡⴰⵣⵔⴰ,transliterated,Amiret Touazra,,7288386,centre-est,district-3,23.41,10.75972,35.47956,308.64,242.35
+municipality-7288387,TN-52,Amiret El Fehoul,Amiret El Fehoul,عميرة الفحول,ⵄⵎⵉⵔⴰ ⵍⴼⵃⵓⵍ,transliterated,Amiret El Fehoul,,7288387,centre-est,district-3,30.66,10.80453,35.44940,312.77,245.62
+municipality-7288388,TN-52,Amiret El Hojjaj,Amiret El Hojjaj,عميرة الحجاج,ⵄⵎⵉⵔⴰ ⵍⵃⵊⴰⵊ,transliterated,Amiret El Hojjaj,,7288388,centre-est,district-3,25.51,10.81905,35.51751,313.95,238.04
+municipality-7288389,TN-52,Sidi Bennour,Sidi Bennour,سيدي بنور,ⵙⵉⴷⵉ ⴱⵏⵓⵔ,transliterated,Sidi Bennour,,7288389,centre-est,district-3,19.41,10.89633,35.52257,320.95,237.35
+municipality-7288390,TN-52,Moknine,Moknine,المكنين,ⵍⵎⴽⵏⵉⵏ,transliterated,Moknine,,7288390,centre-est,district-3,56.53,10.90952,35.62409,321.92,226.07
+municipality-7288394,TN-52,Teboulba,Teboulba,طبلبة,ⵟⴱⵍⴱⴰ,transliterated,Teboulba,,7288394,centre-est,district-3,18.08,10.95216,35.63874,325.75,224.36
+municipality-7288395,TN-52,Lamta,Lamta,لمطة,ⵍⵎⵟⴰ,transliterated,Lamta,,7288395,centre-est,district-3,1.92,10.88037,35.67229,319.18,220.77
+municipality-7288396,TN-52,Sayada,Sayada,صيادة,ⵚⵢⴰⴷⴰ,transliterated,Sayada,,7288396,centre-est,district-3,6.59,10.90549,35.66200,321.48,221.87
+municipality-7288407,TN-52,Jammel,Jammel,جمال,ⵊⵎⴰⵍ,transliterated,Jammel,,7288407,centre-est,district-3,63.58,10.77203,35.60772,309.50,228.11
+municipality-7288408,TN-52,Touza,Touza,طوزة,ⵟⵓⵣⴰ,transliterated,Touza,,7288408,centre-est,district-3,12.77,10.82958,35.63038,314.67,225.51
+municipality-7288551,TN-52,Ghnada,Ghnada,الغنادة,ⵍⵖⵏⴰⴷⴰ,transliterated,Ghnada,,7288551,centre-est,district-3,56.66,10.75763,35.52164,308.37,237.69
+municipality-7288553,TN-52,Ksar Hellal,Ksar Hellal,قصر هلال,ⵇⵚⵔ ⵀⵍⴰⵍ,transliterated,Ksar Hellal,,7288553,centre-est,district-3,21.92,10.88022,35.64738,319.22,223.53
+municipality-7292801,TN-53,Mahdia,Mahdia,المهدية,ⵍⵎⵀⴷⵢⴰ,transliterated,Mahdia,,7292801,centre-est,district-3,68.33,11.01627,35.50353,331.87,239.25
+municipality-7303783,TN-53,El Hekaima,El Hekaima,الحكايمة,ⵍⵃⴽⴰⵢⵎⴰ,transliterated,El Hekaima,,7303783,centre-est,district-3,81.86,10.89730,35.47932,321.13,242.15
+municipality-7303785,TN-53,Rejiche,Rejiche,رجيش,ⵔⵊⵉⵛ,transliterated,Rejiche,,7303785,centre-est,district-3,15.50,11.03281,35.46193,333.46,243.83
+municipality-7303791,TN-53,Ksour Essaf,Ksour Essaf,قصور الساف,ⵇⵚⵓⵔ ⵙⵙⴰⴼ,transliterated,Ksour Essaf,,7303791,centre-est,district-3,111.55,10.99555,35.41479,330.19,249.13
+municipality-7303802,TN-53,El Bradaa,El Bradaa,البرادعة,ⵍⴱⵔⴰⴷⵄⴰ,transliterated,El Bradaa,,7303802,centre-est,district-3,109.22,10.99470,35.31956,330.32,259.69
+municipality-7303803,TN-53,Sidi Alouane,Sidi Alouane,سيدي علوان,ⵙⵉⴷⵉ ⵄⵍⵡⴰⵏ,transliterated,Sidi Alouane,,7303803,centre-est,district-3,105.07,10.85460,35.37119,317.48,254.21
+municipality-7303805,TN-53,Zalba,Zalba,زالبة,ⵣⴰⵍⴱⴰ,transliterated,Zalba,,7303805,centre-est,district-3,183.69,10.86244,35.21344,318.52,271.70
+municipality-7303808,TN-53,Melloulech,Melloulech,ملولش,ⵎⵍⵓⵍⵛ,transliterated,Melloulech,,7303808,centre-est,district-3,160.18,10.99316,35.15782,330.54,277.64
+municipality-7303845,TN-53,El Djem,El Djem,الجم,ⵍⵊⵎ,transliterated,El Djem,,7303845,centre-est,district-3,167.24,10.67294,35.31383,301.08,260.87
+municipality-7303846,TN-53,Talalsa,Talalsa,التلالسة,ⵜⵜⵍⴰⵍⵙⴰ,transliterated,Talalsa,,7303846,centre-est,district-3,120.30,10.77953,35.30544,310.79,261.63
+municipality-7303856,TN-53,Essouassi,Essouassi,السواسي,ⵙⵙⵡⴰⵙⵉ,transliterated,Essouassi,,7303856,centre-est,district-3,195.62,10.53395,35.29355,288.48,263.32
+municipality-7303860,TN-53,Sidi Zid,Sidi Zid,سيدي زيد,ⵙⵉⴷⵉ ⵣⵉⴷ,transliterated,Sidi Zid,,7303860,centre-est,district-3,152.14,10.46067,35.37802,281.68,254.06
+municipality-7303866,TN-53,Kerker,Kerker,كركر,ⴽⵔⴽⵔ,transliterated,Kerker,,7303866,centre-est,district-3,103.53,10.64296,35.44314,298.12,246.57
+municipality-7303867,TN-53,Bou Merdès,Bou Merdès,بومرداس,ⴱⵓⵎⵔⴷⴰⵙ,transliterated,Bou Merdes,,7303867,centre-est,district-3,87.74,10.73759,35.43400,306.72,247.44
+municipality-7304000,TN-53,Ouled Chamekh,Ouled Chamekh,أولاد الشامخ,ⴰⵡⵍⴰⴷ ⵛⵛⴰⵎⵅ,transliterated,Ouled Chamekh,,7304000,centre-est,district-3,324.77,10.30043,35.44573,267.02,246.75
+municipality-7304001,TN-53,Hebira,Hebira,هبيرة,ⵀⴱⵉⵔⴰ,transliterated,Hebira,,7304001,centre-est,district-3,315.75,10.27817,35.18619,265.37,275.56
+municipality-7304003,TN-53,Chorbane,Chorbane,شربان,ⵛⵔⴱⴰⵏ,transliterated,Chorbane,,7304003,centre-est,district-3,448.40,10.44914,35.19360,280.93,274.53
+municipality-7304260,TN-21,Sidi Jadidi,Sidi Jadidi,سيدي الجديدي,ⵙⵉⴷⵉ ⵍⵊⴷⵉⴷⵉ,transliterated,Sidi Jadidi,,7304260,nord-est,district-2,194.24,10.42985,36.43151,277.17,137.24
+municipality-7304261,TN-21,Hammamet,Hammamet,الحمامات,ⵍⵃⵎⴰⵎⴰⵜ,transliterated,Hammamet,Q339535,7304261,nord-est,district-2,131.21,10.56516,36.42870,289.30,137.36
+municipality-7304405,TN-32,Ettataouer,Ettataouer,التطور,ⵜⵜⵟⵓⵔ,transliterated,Ettataouer,,7304405,nord-ouest,district-1,253.12,8.83815,36.47399,134.50,133.46
+municipality-7304406,TN-32,Jendouba,Jendouba,جندوبة,ⵊⵏⴷⵓⴱⴰ,transliterated,Jendouba,,7304406,nord-ouest,district-1,299.66,8.70568,36.51843,122.65,128.51
+municipality-7304410,TN-32,Bousalem,Bousalem,بوسالم,ⴱⵓⵙⴰⵍⵎ,transliterated,Bousalem,,7304410,nord-ouest,district-1,306.90,8.98401,36.56218,147.57,123.69
+municipality-7304421,TN-13,Ben Arous,Ben Arous,بن عروس,ⴱⵏ ⵄⵔⵓⵙ,transliterated,Ben Arous,,7304421,grand-tunis,district-2,8.08,10.24312,36.73731,259.99,103.55

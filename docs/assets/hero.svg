@@ -10,9 +10,9 @@
 <text x="66" y="282" font-size="25" fill="#cbd5e1">The most accurate open-source</text>
 <text x="66" y="316" font-size="25" fill="#cbd5e1">SVG maps of Tunisia.</text>
 <g font-size="19" fill="#94a3b8">
-<text x="66" y="380">6 nested partitions · 5 levels of detail · 8 modes</text>
+<text x="66" y="380">6 nested partitions · 5 levels of detail · 10 modes</text>
 <text x="66" y="410">279 delegations · 2,083 imadas · zero gaps</text>
-<text x="66" y="440">SVG · GeoJSON · TopoJSON · Arabic · French · English</text>
+<text x="66" y="440">SVG · GeoJSON · TopoJSON · Arabic · French · English · Tifinagh</text>
 </g>
 <text x="66" y="548" font-size="16" fill="#64748b">Map data © OpenStreetMap contributors (ODbL)</text>
 <text x="66" y="574" font-size="16" fill="#64748b">Created by Alaa Taieb</text>

@@ -55,6 +55,11 @@ for (const { p, lod, mode } of expected) {
       else assert.equal(labels, units.length, 'one label per unit');
     }
     if (mode === 'labeled-ar') assert.match(svg, /<text class="label[^"]*"[^>]*>\p{Script=Arabic}/u);
+    if (mode === 'labeled-tfng') {
+      assert.match(svg, /<text class="label[^"]*"[^>]*>\p{Script=Tifinagh}/u);
+      assert.ok(svg.includes('xml:lang="und-Tfng"') && svg.includes("'Noto Sans Tifinagh'"), 'Tifinagh language tag and font');
+    }
+    if (mode === 'labeled-en') assert.ok(svg.includes('xml:lang="en"'), 'English language tag');
     assert.ok(fs.statSync(file).size < BUDGET[lod], `size budget for ${lod}`);
   });
 }

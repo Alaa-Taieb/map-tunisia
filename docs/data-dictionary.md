@@ -80,6 +80,9 @@ One row per unit, sorted by `id`. Common columns:
 | --- | --- |
 | `id` | identifier (see above) |
 | `name_en`, `name_fr`, `name_ar` | names in English, French (official Latin spelling) and Arabic |
+| `name_tfng` | name in Tifinagh script: the Tamazight name from OSM where there is one, else the Arabic name transliterated into Neo-Tifinagh (empty when there is no Arabic name) |
+| `name_tfng_source` | `osm` or `transliterated` (empty with `name_tfng`) |
+| `name_translit` | English transliteration in plain ASCII, with English generic terms (`Gabes`, `Greater Tunis`, `Lake Bizerte`); empty when the unit has no Latin name |
 | `area_km2` | ellipsoidal area in km², from the full-precision geometry; children always sum to their parent |
 | `label_lon`, `label_lat` | the label point (pole of inaccessibility), WGS84 |
 | `label_x`, `label_y` | the same point in SVG units |

@@ -14,9 +14,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import mapshaper from 'mapshaper';
 import polylabel from 'polylabel';
-import { LODS, PARTITIONS, MODES, PROJ4, CRS, PROJECT, FRAME_PADDING_KM, modesFor, fileName, PALETTES, WATER_TYPES, CITY_TYPES, CITY_STYLE } from './config.js';
+import { LODS, PARTITIONS, MODES, PROJ4, CRS, PROJECT, FRAME_PADDING_KM, modesFor, fileName, PALETTES, WATER_TYPES, CITY_TYPES, CITY_STYLE, LABEL_MODES, CHAR_W } from './config.js';
 import { ROOT, readCSV, toCSV, writeFile, polygonsOf, polygonArea, ringArea, formatBytes } from './lib.js';
 import { renderSVG, renderPointSVG } from './svg.js';
+import { withNames } from './names.js';
 import { fromUTM, toUTM } from '../../src/utm.js';
 
 const args = process.argv.slice(2);
@@ -33,10 +34,15 @@ const report = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/extract-r
 const SOURCE = { osm_date: report.source.osm_date, version: pkg.version };
 
 // ------------------------------------------------------------------ attributes
-const A = (f) => readCSV(path.join(ROOT, 'data/attributes', f));
-const govRows = A('governorates.csv');
-const regionRows = A('regions.csv');
-const districtRows = A('districts.csv');
+// Every record gets its Tifinagh and English names (scripts/build/names.js): the Tamazight name from OSM where there
+// is one (data/source/tifinagh-names.json), and an English transliteration of the English name for the country,
+// regions, districts and governorates, of the name the `labeled` mode shows for the other layers.
+const TIFINAGH_OSM = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/tifinagh-names.json'), 'utf8')).names;
+const A = (f, latin = (r) => r.label_latin || r.name_fr) => readCSV(path.join(ROOT, 'data/attributes', f)).map((r) => withNames(r, latin(r), TIFINAGH_OSM));
+const english = (r) => r.name_en;
+const govRows = A('governorates.csv', english);
+const regionRows = A('regions.csv', english);
+const districtRows = A('districts.csv', english);
 const delRows = A('delegations.csv');
 const secRows = A('sectors.csv');
 const munRows = A('municipalities.csv');
@@ -48,10 +54,10 @@ const WAT = byId(waterRows), CIT = byId(cityRows);
 
 const sumPop = (ids, year) => ids.reduce((s, g) => s + Number(GOV[g][`population_${year}`]), 0);
 const ALL_GOVS = govRows.map((g) => g.id);
-const COUNTRY = {
+const COUNTRY = withNames({
   id: 'TN', iso_3166_1: 'TN', name_en: 'Tunisia', name_fr: 'Tunisie', name_ar: 'تونس', label_latin: 'Tunisie',
   population_2014: sumPop(ALL_GOVS, 2014), population_2024: sumPop(ALL_GOVS, 2024),
-};
+}, 'Tunisia', TIFINAGH_OSM);
 for (const r of [...regionRows, ...districtRows]) {
   const ids = r.governorates.split(' ');
   r.population_2014 = sumPop(ids, 2014);
@@ -221,7 +227,6 @@ function colourUnits(features, k) {
 }
 
 // ------------------------------------------------------------------ labels
-const CHAR_W = { latin: 0.58, arabic: 0.5 }; // average glyph advance, in em
 
 /** Pole of inaccessibility of the largest part and a font size that fits the unit. */
 function labelAnchor(partition, geometry, text, script) {
@@ -330,7 +335,8 @@ const PLACE_RANK = ['city', 'town', 'village', 'suburb', 'quarter', 'neighbourho
  * A capital then tries the same positions twice and three times as far, with a leader line, and as a last resort
  * keeps the right-hand one; another city goes unlabelled.
  */
-function layoutPointLabels(points, script, lodId) {
+function layoutPointLabels(points, mode, lodId) {
+  const { script, text: name } = LABEL_MODES[mode];
   const placed = points.map((u) => {
     const r = CITY_STYLE[u.attrs.type].r;
     return [u.x - r, u.y - r, u.x + r, u.y + r];
@@ -339,7 +345,7 @@ function layoutPointLabels(points, script, lodId) {
   for (const u of points) {
     const style = CITY_STYLE[u.attrs.type];
     if (!style.lods.includes(lodId)) continue;
-    const text = script === 'arabic' ? u.attrs.name_ar || u.attrs.name_fr : u.attrs.name_fr || u.attrs.name_en;
+    const text = name(u.attrs);
     if (!text) continue;
     const size = style.label;
     const w = size * CHAR_W[script] * [...text].length, h = size * 1.15;
@@ -391,7 +397,7 @@ async function buildPoints(partition) {
   // ---- attribute table
   const rows = points.map((u) => ({ ...u.attrs, x: u.x.toFixed(3), y: u.y.toFixed(3) })).sort((a, b) => (a.id < b.id ? -1 : 1));
   const columns = ['id', 'type', 'capital_of', 'governorate', 'region', 'district', 'delegation', 'sector', 'municipality', 'name_en', 'name_fr', 'name_ar',
-    'lon', 'lat', 'x', 'y', 'place', 'seat_source', 'wikidata', 'osm'];
+    'name_tfng', 'name_tfng_source', 'name_translit', 'lon', 'lat', 'x', 'y', 'place', 'seat_source', 'wikidata', 'osm'];
   writeFile(path.join(DIST, 'data', `${partition.id}.csv`), toCSV(rows, columns));
   writeFile(path.join(DIST, 'data', `${partition.id}.json`), JSON.stringify(rows.map((r) => Object.fromEntries(columns.map((c) => [c, r[c]]))), null, 1) + '\n');
   const pinfo = { id: partition.id, title: partition.title, count: rows.length, lods: [] };
@@ -407,9 +413,8 @@ async function buildPoints(partition) {
     const out = await ms(cmd, { 'base.json': base });
     const land = toFrame(dropIslands(JSON.parse(out['land.json']).features[0].geometry, lod.minIsland));
     const borders = JSON.parse(out['borders.json']).features.map((f) => toFrame(f.geometry));
-    const latin = layoutPointLabels(priority, 'latin', lod.id);
-    const arabic = layoutPointLabels(priority, 'arabic', lod.id);
-    const drawn = points.map((u) => ({ ...u, label: latin[u.id], labelAr: arabic[u.id] }));
+    const labels = Object.fromEntries(Object.keys(LABEL_MODES).map((m) => [m, layoutPointLabels(priority, m, lod.id)]));
+    const drawn = points.map((u) => ({ ...u, labels: Object.fromEntries(Object.keys(LABEL_MODES).map((m) => [m, labels[m][u.id]])) }));
     const lodInfo = { id: lod.id, files: [] };
 
     for (const mode of modesFor(partition, lod.id)) {
@@ -445,7 +450,7 @@ async function buildPoints(partition) {
     pinfo.lods.push(lodInfo);
   }
   manifest.partitions.push(pinfo);
-  const labelled = Object.keys(layoutPointLabels(priority, 'latin', 'medium')).length;
+  const labelled = Object.keys(layoutPointLabels(priority, 'labeled', 'medium')).length;
   console.log(`${partition.id}: ${rows.length} points, ${labelled} labelled at medium`);
   console.log(`  done in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 }
@@ -515,25 +520,23 @@ for (const partition of PARTITIONS) {
   colours = partition.colourBy === 'type'
     ? Object.fromEntries(ref.units.map((f) => [f.properties[key], WATER_TYPES.indexOf(attributes(partition.id, f.properties[key]).type)]))
     : Object.fromEntries(ref.units.map((f, i) => [f.properties[key], col.colour[i]]));
-  labels = { latin: {}, arabic: {} };
+  labels = Object.fromEntries(Object.keys(LABEL_MODES).map((m) => [m, {}]));
   const frameGeoms = {};
   for (const f of ref.units) {
     const id = f.properties[key];
     const at = attributes(partition.id, id);
     const fg = toFrame(f.geometry);
     frameGeoms[id] = fg;
-    labels.latin[id] = labelAnchor(partition, fg, at.label_latin || at.name_fr, 'latin');
-    labels.arabic[id] = labelAnchor(partition, fg, at.name_ar, 'arabic');
+    for (const [m, { text, script }] of Object.entries(LABEL_MODES)) labels[m][id] = labelAnchor(partition, fg, text(at), script);
   }
-  layoutLabels(partition, labels.latin, frameGeoms);
-  layoutLabels(partition, labels.arabic, frameGeoms);
+  for (const m of Object.keys(LABEL_MODES)) layoutLabels(partition, labels[m], frameGeoms);
   console.log(`${partition.id}: ${ref.units.length} units, colour conflicts ${col.conflicts}`);
 
   // ---- attribute table (once per partition)
   const rows = ref.units.map((f) => {
     const id = f.properties[key];
     const at = attributes(partition.id, id);
-    const l = labels.latin[id];
+    const l = labels.labeled[id];
     const [lon, lat] = fromUTM([(l.ax + FRAME.x0) * 1000, (FRAME.y0 - l.ay) * 1000]);
     return { id: partition.id === 'country' ? 'TN' : id, ...at, area_km2: areas ? areas[id].toFixed(2) : '', label_lon: lon.toFixed(5), label_lat: lat.toFixed(5), label_x: l.ax.toFixed(2), label_y: l.ay.toFixed(2) };
   });
@@ -551,7 +554,7 @@ for (const partition of PARTITIONS) {
     const unitsOut = units.map((f) => {
       const id = f.properties[key];
       const geometry = dropIslands(f.geometry, lod.minIsland);
-      return { id: partition.id === 'country' ? 'TN' : id, rawId: id, attrs: attributes(partition.id, id), utm: geometry, geometry: toFrame(geometry), color: colours[id], label: labels.latin[id], labelAr: labels.arabic[id] };
+      return { id: partition.id === 'country' ? 'TN' : id, rawId: id, attrs: attributes(partition.id, id), utm: geometry, geometry: toFrame(geometry), color: colours[id], labels: Object.fromEntries(Object.keys(LABEL_MODES).map((m) => [m, labels[m][id]])) };
     });
     const outlineGeom = toFrame(dropIslands(outline, lod.minIsland));
     const borderGeoms = borders.map((b) => ({ level: b.level, geometry: toFrame(b.geometry) }));

@@ -1,0 +1,14 @@
+{
+  "id": "EV-0MVMS8IWB-edd24d",
+  "type": "task.implemented",
+  "at": "2026-10-24T19:19:05.387Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-018",
+    "MS-005"
+  ],
+  "summary": "claude-code reported NS-018 implemented (NOT verified): Two label modes, labeled-tfng (Tifinagh) and labeled-en (English, plain ASCII), at every level where labels exist: 44 new SVGs, 235 in total, 10 modes. Every attribute table/GeoJSON/TopoJSON gains name_tfng, name_tfng_source and name_translit. Tifinagh = OSM name:zgh/name:ber/... (11 units: country + 10 cities, scripts/extract/tifinagh.py -> data/source/tifinagh-names.json) else the Arabic name transliterated into IRCAM Neo-Tifinagh (scripts/build/names.js); English = curated English names for country/regions/districts/governorates, else the Latin name with English water generics, accents removed (DEC-007). LABEL_MODES table in config.js drives layout (per-script widths) and SVG rendering; Tifinagh font stack and xml:lang und-Tfng/en. Explorer, TS types, README (modes table, roadmap ticked), methodology s.12, modes doc, data dictionary, CHANGELOG 1.4.0, CITATION fixed; package 1.4.0; test/labels.test.js. npm test: 300 pass. Existing SVGs unchanged except the version stamp and 2 water labeled-ar files (fallback label sizing).",
+  "data": {
+    "revision": "bb6dd0312fabb396d9b0cc78511d6d3676dc416e+dirty"
+  }
+}

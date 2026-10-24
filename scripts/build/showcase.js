@@ -3,7 +3,7 @@
  * Compose the README visuals in docs/assets/ from the generated maps in dist/:
  *   hero.svg            banner: country → governorates → delegations → sectors
  *   lod-comparison.svg  the same coastline (Djerba) at every level of detail
- *   modes.svg           the eight modes side by side
+ *   modes.svg           every mode side by side
  *
  *   node scripts/build/showcase.js
  */
@@ -72,9 +72,9 @@ function scoped(svg, scope) {
 <text x="66" y="282" font-size="25" fill="#cbd5e1">The most accurate open-source</text>
 <text x="66" y="316" font-size="25" fill="#cbd5e1">SVG maps of Tunisia.</text>
 <g font-size="19" fill="#94a3b8">
-<text x="66" y="380">6 nested partitions · 5 levels of detail · 8 modes</text>
+<text x="66" y="380">6 nested partitions · 5 levels of detail · ${catalog.modes.length} modes</text>
 <text x="66" y="410">${count('delegations')} delegations · ${fmt(count('sectors'))} imadas · zero gaps</text>
-<text x="66" y="440">SVG · GeoJSON · TopoJSON · Arabic · French · English</text>
+<text x="66" y="440">SVG · GeoJSON · TopoJSON · Arabic · French · English · Tifinagh</text>
 </g>
 <text x="66" y="548" font-size="16" fill="#64748b">Map data © OpenStreetMap contributors (ODbL)</text>
 <text x="66" y="574" font-size="16" fill="#64748b">Created by Alaa Taieb</text>
@@ -136,8 +136,8 @@ ${panels}
 
 // ------------------------------------------------------------------ modes
 {
-  const modes = ['plain', 'outline', 'light', 'dark', 'labeled', 'labeled-ar', 'nested', 'interactive'];
-  const mapH = 420, mapW = (mapH * FRAME.width) / FRAME.height, gap = 22, cols = 8;
+  const modes = catalog.modes.map((m) => m.id);
+  const mapH = 420, mapW = (mapH * FRAME.width) / FRAME.height, gap = 22, cols = modes.length;
   const W = cols * mapW + (cols - 1) * gap, H = mapH + 50;
   let css = '', body = '';
   modes.forEach((mode, i) => {
@@ -148,7 +148,7 @@ ${panels}
     body += `<svg id="${id}" x="${x.toFixed(1)}" y="0" width="${mapW.toFixed(1)}" height="${mapH}" viewBox="0 0 ${FRAME.width} ${FRAME.height}">${s.body}</svg>`;
     body += `<text x="${(x + mapW / 2).toFixed(1)}" y="${mapH + 34}" class="h">${mode}</text>`;
   });
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W.toFixed(0)} ${H}" width="${W.toFixed(0)}" height="${H}" role="img" aria-labelledby="t"><title id="t">The eight modes of Map Tunisia</title>
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W.toFixed(0)} ${H}" width="${W.toFixed(0)}" height="${H}" role="img" aria-labelledby="t"><title id="t">The ${modes.length} modes of Map Tunisia</title>
 <style>.h{font:700 19px 'Inter','Segoe UI',Arial,sans-serif;fill:#475569;text-anchor:middle}${css}</style>${body}</svg>\n`;
   writeFile(path.join(OUT, 'modes.svg'), svg);
   console.log(`modes.svg ${(svg.length / 1024).toFixed(0)} KB`);

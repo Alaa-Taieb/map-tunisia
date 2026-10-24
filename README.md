@@ -6,7 +6,7 @@
 
 <p>
 Country · 7 economic regions · 5 districts · 24 governorates · 279 delegations · 2,083 imadas · 338 municipalities · 67 lakes, sebkhas &amp; lagoons · 284 cities<br>
-5 levels of detail · 8 visual modes · SVG · GeoJSON · TopoJSON · العربية · Français · English
+5 levels of detail · 10 visual modes · SVG · GeoJSON · TopoJSON · العربية · Français · English · ⵜⵉⴼⵉⵏⴰⵖ
 </p>
 
 [![CI](https://github.com/Alaa-Taieb/map-tunisia/actions/workflows/ci.yml/badge.svg)](https://github.com/Alaa-Taieb/map-tunisia/actions/workflows/ci.yml)
@@ -55,7 +55,7 @@ lists. The result is a complete, exactly nested set of maps that you can drop in
 <td width="33%" valign="top">
 
 ### 🛠️ Ready to use
-- **8 modes**: plain, outline, light, dark, Latin labels, Arabic labels, nested borders, interactive
+- **10 modes**: plain, outline, light, dark, labels in Latin, Arabic, Tifinagh and English, nested borders, interactive
 - **5 levels of detail**, from 1 m precision to 17 KB icons
 - Semantic ids (**ISO 3166-2**, **INS codes**) and `data-*` attributes in 3 languages
 - GeoJSON + TopoJSON + CSV, a **lon/lat → SVG** helper, and an explorer
@@ -70,21 +70,22 @@ lists. The result is a complete, exactly nested set of maps that you can drop in
 
 <img src="docs/assets/partitions.svg" alt="The six partitions: country, regions, districts, governorates, delegations and sectors" width="100%">
 
-**Eight modes**
+**Ten modes**
 
-<img src="docs/assets/modes.svg" alt="The eight modes: plain, outline, light, dark, labeled, labeled-ar, nested, interactive" width="100%">
+<img src="docs/assets/modes.svg" alt="The ten modes: plain, outline, light, dark, labeled, labeled-ar, labeled-tfng, labeled-en, nested, interactive" width="100%">
 
 **Five levels of detail** (Djerba, at the same zoom)
 
 <img src="docs/assets/lod-comparison.svg" alt="Djerba at the full, high, medium, low and tiny levels of detail" width="100%">
 
 <details>
-<summary><b>More examples</b>: labelled maps in both scripts, dark delegations, nested sectors</summary>
+<summary><b>More examples</b>: labelled maps in Latin, Arabic and Tifinagh, dark delegations, nested sectors</summary>
 <br>
 <table>
 <tr>
 <td align="center"><img src="dist/svg/governorates/tunisia-governorates-medium-labeled.svg" alt="Governorates labelled in Latin script" height="520"><br><sub><code>governorates · medium · labeled</code></sub></td>
 <td align="center"><img src="dist/svg/governorates/tunisia-governorates-medium-labeled-ar.svg" alt="Governorates labelled in Arabic" height="520"><br><sub><code>governorates · medium · labeled-ar</code></sub></td>
+<td align="center"><img src="dist/svg/governorates/tunisia-governorates-medium-labeled-tfng.svg" alt="Governorates labelled in Tifinagh" height="520"><br><sub><code>governorates · medium · labeled-tfng</code></sub></td>
 <td align="center"><img src="dist/svg/delegations/tunisia-delegations-low-dark.svg" alt="Delegations, dark mode" height="520"><br><sub><code>delegations · low · dark</code></sub></td>
 <td align="center"><img src="dist/svg/delegations/tunisia-delegations-medium-nested.svg" alt="Delegations with governorate borders" height="520"><br><sub><code>delegations · medium · nested</code></sub></td>
 </tr>
@@ -131,15 +132,15 @@ svg.insertAdjacentHTML('beforeend', `<circle cx="${x}" cy="${y}" r="3" fill="cri
 Every file lives in [`dist/`](dist/) and follows one naming scheme:
 
 ```text
-dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     191 SVG maps
+dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     235 SVG maps
 dist/geojson/tunisia-<partition>-<lod>.geojson                WGS84, with all attributes
 dist/topojson/tunisia-<partition>-<lod>.topojson              WGS84, shared borders
-dist/data/<partition>.csv | .json                             names, codes, populations, areas, label points
+dist/data/<partition>.csv | .json                             names (4 scripts), codes, populations, areas, label points
 ```
 
 | Popular file | Size |
 | --- | ---: |
-| [Governorates, labelled](dist/svg/governorates/tunisia-governorates-medium-labeled.svg) · [Arabic](dist/svg/governorates/tunisia-governorates-medium-labeled-ar.svg) | 135 KB |
+| [Governorates, labelled](dist/svg/governorates/tunisia-governorates-medium-labeled.svg) · [Arabic](dist/svg/governorates/tunisia-governorates-medium-labeled-ar.svg) · [Tifinagh](dist/svg/governorates/tunisia-governorates-medium-labeled-tfng.svg) · [English](dist/svg/governorates/tunisia-governorates-medium-labeled-en.svg) | 135 KB |
 | [Governorates, interactive](dist/svg/governorates/tunisia-governorates-medium-interactive.svg) | 135 KB |
 | [Delegations, light](dist/svg/delegations/tunisia-delegations-medium-light.svg) | 446 KB |
 | [Sectors (imadas), nested](dist/svg/sectors/tunisia-sectors-medium-nested.svg) | 1.8 MB |
@@ -169,7 +170,7 @@ svgPath('governorates', 'medium', 'light');  // 'dist/svg/governorates/tunisia-g
 
 The maps are plain files, so bundlers and servers can reach them through subpath exports:
 `map-tunisia/svg/…`, `map-tunisia/geojson/…`, `map-tunisia/topojson/…` and `map-tunisia/data/…`
-(for example `map-tunisia/geojson/tunisia-governorates-medium.geojson`). The package is large (about 46 MB packed, every
+(for example `map-tunisia/geojson/tunisia-governorates-medium.geojson`). The package is large (about 49 MB packed, every
 level of detail included); if you only need one file, use the CDN links above or a release ZIP below.
 Full API: [docs/usage.md](docs/usage.md#13-the-npm-helper).
 
@@ -182,7 +183,7 @@ Each release ships one ZIP per format plus a checksum file, named after the pack
 | `map-tunisia-vX.Y.Z-geojson.zip` | GeoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-topojson.zip` | TopoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-json.zip` / `-csv.zip` | attribute tables (names, codes, populations, areas, label points) |
-| `map-tunisia-vX.Y.Z-svg.zip` | all 191 SVG maps |
+| `map-tunisia-vX.Y.Z-svg.zip` | all 235 SVG maps |
 | `map-tunisia-vX.Y.Z-SHA256SUMS.txt` | checksums: `sha256sum -c map-tunisia-vX.Y.Z-SHA256SUMS.txt` |
 
 Download them from the project's *Releases* page, or build them yourself from a clone: `npm install && npm run release:zip`
@@ -311,8 +312,23 @@ in the [accuracy report](docs/accuracy.md#cities). There is no population thresh
 | --- | --- | --- | --- |
 | `plain` | neutral, ready for your CSS | `labeled` | names in Latin script, callouts where crowded |
 | `outline` | strokes only: print, laser, overlays | `labeled-ar` | names in Arabic, right-to-left |
-| `light` | colourful, neighbours never share a colour | `nested` | higher-level borders drawn heavier |
-| `dark` | for dark UIs | `interactive` | hover + tooltips, no JavaScript |
+| `light` | colourful, neighbours never share a colour | `labeled-tfng` | names in Tifinagh (ⵜⵉⴼⵉⵏⴰⵖ) |
+| `dark` | for dark UIs | `labeled-en` | English names in plain ASCII |
+| `nested` | higher-level borders drawn heavier | `interactive` | hover + tooltips, no JavaScript |
+
+The labelled modes exist wherever labels do: the `medium`, `low` and `tiny` levels of every layer that has them
+(`medium` and `low` for delegations, sectors, municipalities, water and cities; the cities also at `full` and `high`).
+
+**Tifinagh and English names.** Every attribute table carries `name_tfng`, `name_tfng_source` and `name_translit`.
+`name_tfng` is the Tamazight name OpenStreetMap holds in Tifinagh (`name:zgh`, then `name:ber`, …) where there is one, for
+example ⵜⵉⵟⵟⴰⵡⵉⵏ (Tataouine) or ⵜⴰⴽⴻⵔⵡⴰⵏⵜ (Kairouan); OSM has 11 for the units published here. Every other unit gets its
+**Arabic name transliterated letter by letter** into Neo-Tifinagh (IRCAM letters: تونس → ⵜⵓⵏⵙ, القيروان → ⵍⵇⵉⵔⵡⴰⵏ), and
+`name_tfng_source` says which (`osm` or `transliterated`). A transliteration is not a Tamazight name: no name is invented or
+translated. `name_translit` is the English transliteration: the Latin name in plain ASCII with English generic terms
+(Gabès → Gabes, Grand Tunis → Greater Tunis, Lac de Bizerte → Lake Bizerte, Barrage de Sidi Salem → Sidi Salem Dam).
+Tifinagh needs a font that has it: Windows ships Ebrima; elsewhere install the free
+[Noto Sans Tifinagh](https://fonts.google.com/noto/specimen/Noto+Sans+Tifinagh). Rules and edge cases:
+[partitions, levels & modes](docs/partitions-levels-modes.md#tifinagh-and-english-names).
 
 Details and guidance: **[partitions, levels & modes](docs/partitions-levels-modes.md)** · every id and attribute: **[data dictionary](docs/data-dictionary.md)**.
 
@@ -346,12 +362,12 @@ See **[projection & coordinates](docs/projection.md)**.
 ```bash
 npm install
 npm run build        # dist/ from data/ in ~30 s
-npm test             # 249 checks: counts, ids, nesting, areas, populations, water, cities, XML validity, sizes, projection, package + ZIPs
+npm test             # 300 checks: counts, ids, nesting, areas, populations, water, cities, labels, XML validity, sizes, projection, package + ZIPs
 npm run release:zip  # versioned ZIPs + SHA256SUMS into release/
 
 # refresh from the latest OpenStreetMap data (Python 3.10+)
 pip install -r scripts/extract/requirements.txt
-npm run fetch && npm run extract && npm run extract:municipalities && npm run extract:water && npm run extract:cities && npm run build
+npm run fetch && npm run extract && npm run extract:municipalities && npm run extract:water && npm run extract:cities && npm run extract:tifinagh && npm run build
 ```
 
 The pipeline: **pyosmium + Shapely** (extraction and topology) → **mapshaper** (dissolve, projection, simplification) →
@@ -359,13 +375,13 @@ a custom SVG writer (labels with polylabel, map colouring, accessible markup). S
 
 ## 🗺️ Roadmap
 
-- [x] 6 nested partitions, 5 levels of detail, 8 modes
+- [x] 6 nested partitions, 5 levels of detail, 10 modes
 - [x] All 279 delegations of the 2024 nomenclature
 - [x] GeoJSON / TopoJSON / CSV, projection helper, live explorer
 - [x] Municipalities (*baladiyat*) as a separate, non-nested partition
 - [x] Optional water layer: lagoons, sebkhas, chotts and dams
 - [x] Cities and capitals as point layers
-- [ ] Tamazight (Tifinagh) and English-transliteration label modes
+- [x] Tamazight (Tifinagh) and English-transliteration label modes
 - [x] npm package (types, JSON data exports) and versioned release ZIPs with checksums
 
 Ideas and votes are welcome in the [issues](https://github.com/Alaa-Taieb/map-tunisia/issues).

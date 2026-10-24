@@ -174,6 +174,16 @@ export default {
       "description": "Plain map with Arabic names, right-to-left."
     },
     {
+      "id": "labeled-tfng",
+      "title": "Labelled (Tifinagh)",
+      "description": "Plain map with names in Tifinagh script: the Tamazight name where OpenStreetMap has one, else the Arabic name transliterated letter by letter."
+    },
+    {
+      "id": "labeled-en",
+      "title": "Labelled (English)",
+      "description": "Plain map with English names in plain ASCII: English generic terms (Lake, Dam, Greater Tunis) and no French accents."
+    },
+    {
       "id": "nested",
       "title": "Nested borders",
       "description": "All higher-level borders drawn with increasing weight, e.g. delegations inside governorates."
@@ -200,6 +210,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "low": [
@@ -209,6 +221,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "tiny": [
@@ -218,6 +232,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ]
     },
@@ -236,6 +252,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "low": [
@@ -245,6 +263,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "tiny": [
@@ -254,6 +274,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ]
     },
@@ -272,6 +294,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "low": [
@@ -281,6 +305,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "tiny": [
@@ -290,6 +316,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ]
     },
@@ -309,6 +337,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "nested",
         "interactive"
       ],
@@ -319,6 +349,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "nested",
         "interactive"
       ],
@@ -329,6 +361,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "nested",
         "interactive"
       ]
@@ -349,6 +383,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "nested",
         "interactive"
       ],
@@ -359,6 +395,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "nested",
         "interactive"
       ]
@@ -379,6 +417,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "nested",
         "interactive"
       ],
@@ -389,6 +429,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "nested",
         "interactive"
       ]
@@ -408,6 +450,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "low": [
@@ -417,6 +461,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ]
     },
@@ -435,6 +481,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "low": [
@@ -444,6 +492,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ]
     },
@@ -462,6 +512,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ],
       "low": [
@@ -471,6 +523,8 @@ export default {
         "dark",
         "labeled",
         "labeled-ar",
+        "labeled-tfng",
+        "labeled-en",
         "interactive"
       ]
     }

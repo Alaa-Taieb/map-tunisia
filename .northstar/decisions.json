@@ -79,6 +79,21 @@
       "alternatives": [],
       "decidedAt": "2026-10-24T16:22:14.163Z",
       "decidedBy": "claude-code"
+    },
+    {
+      "id": "DEC-007",
+      "title": "Tifinagh names: OSM first, else letter-by-letter transliteration of the Arabic name; English: ASCII Latin name with English generic terms",
+      "decision": "labeled-tfng writes name_tfng: the first Tifinagh-only value of name:zgh, name:zgh-Tfng, name:ber, name:ber-Tfng, name:tzm(-Tfng), name:shi-Tfng, name:kab-Tfng on the unit's OSM object (scripts/extract/tifinagh.py -> data/source/tifinagh-names.json, ODbL), else the Arabic name transliterated into Neo-Tifinagh with IRCAM letters (scripts/build/names.js: consonants 1:1, alef/ta marbuta -> ⴰ, glides by position, article assimilating to sun letters, no schwa); name_tfng_source records osm or transliterated. labeled-en writes name_translit: curated English name for country/regions/districts/governorates, else the labeled-mode Latin name, water generics in English (Lake X, X Dam, X Lagoon), accents removed to plain ASCII. Mode ids labeled-tfng and labeled-en, same levels as labeled; xml:lang und-Tfng / en.",
+      "rationale": "Only 11 published units have a Tifinagh name in OSM (country + 10 cities) and Tunisia has no official Tifinagh nomenclature, so a transliteration is the only way to label every unit without inventing or translating names; marking the source keeps it honest. Transliterating from Arabic gives exact consonants and matches the OSM name:zgh/ber values where they follow IRCAM spelling (Tunis, Sousse, Tozeur). For English, Arabic-to-Latin needs vowels Arabic does not write, and respelling French digraphs (ou->u, ch->sh) yields forms no English source uses (Susse, Buzid), so the established Latin spelling in ASCII with English generic terms is what English-language maps use.",
+      "status": "active",
+      "requirementIds": [],
+      "alternatives": [
+        "Wikidata zgh/ber labels (needs network, equally sparse)",
+        "English respelling of French digraphs (dj->j, ch->sh, ou->u/w)",
+        "Leave units without an OSM Tifinagh name unlabelled"
+      ],
+      "decidedAt": "2026-10-24T19:18:47.691Z",
+      "decidedBy": "claude-code"
     }
   ]
 }

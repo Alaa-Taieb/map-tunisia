@@ -4,7 +4,7 @@ Each map is one combination of three choices:
 
 ```text
 dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg
-          │                     │      └── how it looks (8 modes)
+          │                     │      └── how it looks (10 modes)
           │                     └───────── how detailed it is (5 levels)
           └─────────────────────────────── how Tunisia is divided (6 nested partitions + municipalities + water + cities)
 ```
@@ -78,7 +78,7 @@ vertex counts change, and the [catalog](catalog.md) lists every file size.
 
 ## Modes
 
-![The eight modes](assets/modes.svg)
+![The ten modes](assets/modes.svg)
 
 | Mode | Looks like | Notes |
 | --- | --- | --- |
@@ -88,6 +88,8 @@ vertex counts change, and the [catalog](catalog.md) lists every file size.
 | `dark` | deep colours on a dark background | made for dark UIs |
 | `labeled` | plain map + Latin-script names (French spelling) | labels sit at each unit's visual centre; crowded areas such as Grand Tunis get callouts with leader lines |
 | `labeled-ar` | plain map + Arabic names | right-to-left; laid out separately from the Latin labels (Arabic text has different widths) |
+| `labeled-tfng` | plain map + names in Tifinagh | the Tamazight name where OSM has one, else the Arabic name transliterated letter by letter; see below |
+| `labeled-en` | plain map + English names in plain ASCII | English generic terms (*Greater Tunis*, *Lake Bizerte*, *Sidi Salem Dam*), no French accents |
 | `nested` | light fills, the partition's borders thin, higher-level borders heavier | e.g. sectors with their delegation and governorate borders; not for partitions without a parent |
 | `interactive` | `light` + hover highlight + native tooltips | pure SVG + CSS, no JavaScript; works when inlined or opened directly |
 
@@ -103,8 +105,29 @@ with CSS to get any look at full detail).
   callout in the sea with a leader line.
 - City labels sit next to their dot, at one of eight positions around it. Capitals are placed first and may move further
   out with a leader line; a city whose label would overlap another goes unlabelled.
-- Fonts: the SVGs ask for Inter / Segoe UI / Helvetica / Arial (Latin) and Noto Naskh Arabic / Segoe UI / Tahoma (Arabic),
-  falling back to the system's sans-serif font.
+- Each labelled mode is laid out on its own, with the widths of its script, so a long Latin name and a short Tifinagh one
+  each get the best size. The `xml:lang` of the SVG says which language the labels are in: `ar`, `en`, or `und-Tfng`
+  (Tifinagh script; the language is not stated, as most labels are transliterated Arabic names).
+- Fonts: the SVGs ask for Inter / Segoe UI / Helvetica / Arial (Latin), Noto Naskh Arabic / Segoe UI / Tahoma (Arabic) and
+  Noto Sans Tifinagh / Ebrima / Segoe UI Historic (Tifinagh), falling back to the system's sans-serif font. Windows ships
+  Ebrima; on macOS, Linux and Android install [Noto Sans Tifinagh](https://fonts.google.com/noto/specimen/Noto+Sans+Tifinagh)
+  or embed it in your page, otherwise Tifinagh labels show as empty boxes.
+
+### Tifinagh and English names
+
+Every attribute table, GeoJSON and TopoJSON carries three name columns next to `name_ar`:
+
+| Column | Content | Example |
+| --- | --- | --- |
+| `name_tfng` | name in Tifinagh script | ⵍⵇⵉⵔⵡⴰⵏ (Kairouan governorate), ⵜⴰⴽⴻⵔⵡⴰⵏⵜ (Kairouan city) |
+| `name_tfng_source` | `osm` (a Tamazight name from OSM `name:zgh`, `name:ber`, …) or `transliterated` (the Arabic name in Tifinagh letters) | `transliterated`, `osm` |
+| `name_translit` | English transliteration: plain ASCII, English generic terms | *Gabes*, *Greater Tunis*, *Lake Bizerte* |
+
+OSM holds Tifinagh names for 11 of the published units (the country and 10 cities); the other names are transliterations
+of the Arabic name, letter by letter, with the IRCAM Neo-Tifinagh letters (تونس → ⵜⵓⵏⵙ). A transliteration shows how the
+Arabic name is written in Tifinagh, not a Tamazight name. The full rules are in the
+[methodology](methodology.md#12-tifinagh-and-english-names). A unit without an Arabic name (5 water bodies) has no
+`name_tfng` and keeps its Latin name in `labeled-tfng`, like `labeled-ar` does.
 
 ## Choosing quickly
 

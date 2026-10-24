@@ -1,2 +1,2 @@
-id,iso_3166_1,name_en,name_fr,name_ar,population_2014,population_2024,area_km2,label_lon,label_lat,label_x,label_y
-TN,TN,Tunisia,Tunisie,تونس,10982754,11972169,155240.37,9.45930,33.04802,191.88,513.30
+id,iso_3166_1,name_en,name_fr,name_ar,name_tfng,name_tfng_source,name_translit,population_2014,population_2024,area_km2,label_lon,label_lat,label_x,label_y
+TN,TN,Tunisia,Tunisie,تونس,ⵜⵓⵏⵙ,osm,Tunisia,10982754,11972169,155240.37,9.45930,33.04802,191.88,513.30

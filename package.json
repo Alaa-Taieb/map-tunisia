@@ -1,7 +1,7 @@
 {
   "name": "map-tunisia",
-  "version": "1.3.0",
-  "description": "The most accurate open-source SVG maps of Tunisia: 6 nested partitions (country, regions, districts, governorates, delegations, sectors) plus municipalities (baladiyat), a water layer (lakes, sebkhas, chotts, lagoons) and a cities point layer (capital, governorate capitals, municipal seats) × 5 levels of detail × 8 visual modes, plus GeoJSON & TopoJSON.",
+  "version": "1.4.0",
+  "description": "The most accurate open-source SVG maps of Tunisia: 6 nested partitions (country, regions, districts, governorates, delegations, sectors) plus municipalities (baladiyat), a water layer (lakes, sebkhas, chotts, lagoons) and a cities point layer (capital, governorate capitals, municipal seats) × 5 levels of detail × 10 visual modes (labels in Latin, Arabic, Tifinagh and English), plus GeoJSON & TopoJSON.",
   "keywords": [
     "tunisia",
     "tunisie",
@@ -23,6 +23,9 @@
     "cities",
     "capitals",
     "مدن",
+    "tifinagh",
+    "tamazight",
+    "ⵜⵉⴼⵉⵏⴰⵖ",
     "choropleth",
     "openstreetmap"
   ],
@@ -76,6 +79,7 @@
     "extract:municipalities": "python scripts/extract/municipalities.py",
     "extract:water": "python scripts/extract/water.py",
     "extract:cities": "python scripts/extract/cities.py",
+    "extract:tifinagh": "python scripts/extract/tifinagh.py",
     "build": "node scripts/build/build.js",
     "build:site": "node scripts/build/site.js",
     "test": "node --test \"test/**/*.test.js\"",

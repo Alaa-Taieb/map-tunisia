@@ -170,11 +170,26 @@ export const MODES = [
   { id: 'dark', title: 'Dark', description: 'Deep, map-coloured fills on a dark background. Made for dark UIs.' },
   { id: 'labeled', title: 'Labelled (Latin)', description: 'Plain map with names in Latin script (French spelling) placed at each unit’s visual centre.' },
   { id: 'labeled-ar', title: 'Labelled (Arabic)', description: 'Plain map with Arabic names, right-to-left.' },
+  { id: 'labeled-tfng', title: 'Labelled (Tifinagh)', description: 'Plain map with names in Tifinagh script: the Tamazight name where OpenStreetMap has one, else the Arabic name transliterated letter by letter.' },
+  { id: 'labeled-en', title: 'Labelled (English)', description: 'Plain map with English names in plain ASCII: English generic terms (Lake, Dam, Greater Tunis) and no French accents.' },
   { id: 'nested', title: 'Nested borders', description: 'All higher-level borders drawn with increasing weight, e.g. delegations inside governorates.', lods: ['high', 'medium', 'low', 'tiny'] },
   { id: 'interactive', title: 'Interactive', description: 'Hover highlight and native bilingual tooltips. Pure SVG + CSS, no JavaScript.' },
 ];
 
 export const DEFAULT_MODE_LODS = ['medium', 'low', 'tiny'];
+
+/**
+ * Labelled modes: the script each one is laid out for, the name it writes (falling back like `labeled-ar` does
+ * when a unit has no name in that script) and the language of that text. `charWidth` is the average glyph advance
+ * in em, used to size and place labels.
+ */
+export const LABEL_MODES = {
+  labeled: { script: 'latin', text: (a) => a.label_latin || a.name_fr || a.name_en },
+  'labeled-ar': { script: 'arabic', lang: 'ar', text: (a) => a.name_ar || a.name_fr },
+  'labeled-tfng': { script: 'tifinagh', lang: 'und-Tfng', text: (a) => a.name_tfng || a.label_latin || a.name_fr },
+  'labeled-en': { script: 'latin', lang: 'en', text: (a) => a.name_translit || a.label_latin || a.name_fr || a.name_en },
+};
+export const CHAR_W = { latin: 0.58, arabic: 0.5, tifinagh: 0.66 };
 
 export function modesFor(partition, lod) {
   return MODES.filter((m) => {

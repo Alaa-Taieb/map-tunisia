@@ -1134,7 +1134,7 @@
       "requirementIds": [],
       "dependsOn": [],
       "priority": "low",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -1152,14 +1152,48 @@
         }
       ],
       "requiresHumanApproval": false,
+      "activeHarness": "claude-code",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T19:06:59.157Z",
       "commits": [],
-      "files": [],
-      "evidence": [],
-      "decisionIds": [],
+      "files": [
+        "scripts/build/names.js",
+        "scripts/extract/tifinagh.py",
+        "scripts/build/config.js",
+        "scripts/build/build.js",
+        "scripts/build/svg.js",
+        "test/labels.test.js",
+        "data/source/tifinagh-names.json"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T19:19:05.387Z",
+        "by": "claude-code",
+        "summary": "Two label modes, labeled-tfng (Tifinagh) and labeled-en (English, plain ASCII), at every level where labels exist: 44 new SVGs, 235 in total, 10 modes. Every attribute table/GeoJSON/TopoJSON gains name_tfng, name_tfng_source and name_translit. Tifinagh = OSM name:zgh/name:ber/... (11 units: country + 10 cities, scripts/extract/tifinagh.py -> data/source/tifinagh-names.json) else the Arabic name transliterated into IRCAM Neo-Tifinagh (scripts/build/names.js); English = curated English names for country/regions/districts/governorates, else the Latin name with English water generics, accents removed (DEC-007). LABEL_MODES table in config.js drives layout (per-script widths) and SVG rendering; Tifinagh font stack and xml:lang und-Tfng/en. Explorer, TS types, README (modes table, roadmap ticked), methodology s.12, modes doc, data dictionary, CHANGELOG 1.4.0, CITATION fixed; package 1.4.0; test/labels.test.js. npm test: 300 pass. Existing SVGs unchanged except the version stamp and 2 water labeled-ar files (fallback label sizing).",
+        "revision": "bb6dd0312fabb396d9b0cc78511d6d3676dc416e+dirty",
+        "tree": "bc3b15f6740a999f149cf399be6845a1a4689600"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "unit-tests",
+          "result": "pass",
+          "revision": "bb6dd0312fabb396d9b0cc78511d6d3676dc416e+dirty",
+          "tree": "bc3b15f6740a999f149cf399be6845a1a4689600",
+          "at": "2026-10-24T19:19:10.274Z",
+          "by": "claude-code",
+          "detail": "$ npm test\nshell: bash\nexit 0\nline (5.8383ms)\n✔ svg cities/medium/light (6.1631ms)\n✔ svg cities/medium/dark (5.9464ms)\n✔ svg cities/medium/labeled (6.5834ms)\n✔ svg cities/medium/labeled-ar (5.8316ms)\n✔ svg cities/medium/labeled-tfng (5.775ms)\n✔ svg cities/medium/labeled-en (5.7636ms)\n✔ svg cities/medium/interactive (5.8827ms)\n✔ svg cities/low/plain (4.8231ms)\n✔ svg cities/low/outline (4.779ms)\n✔ svg cities/low/light (4.7378ms)\n✔ svg cities/low/dark (4.9092ms)\n✔ svg cities/low/labeled (6.2091ms)\n✔ svg cities/low/labeled-ar (5.7674ms)\n✔ svg cities/low/labeled-tfng (5.4703ms)\n✔ svg cities/low/labeled-en (6.6565ms)\n✔ svg cities/low/interactive (5.414ms)\n✔ water count matches the extraction, and every type is present (2.5909ms)\n✔ water ids are unique, well-formed and point to their OSM source (0.2901ms)\n✔ every water body has a name, a governorate, a region and a district (2.1612ms)\n✔ the landmark water bodies are there, with the right type and governorate (0.2724ms)\n✔ water bodies never overlap, stay in Tunisia, and lagoons stay on the sea side (0.1874ms)\n✔ the water layer is an overlay: it does not alter the nested partitions (2.1967ms)\n✔ water GeoJSON and TopoJSON (full) (41.9716ms)\n✔ water GeoJSON and TopoJSON (high) (10.6871ms)\n✔ water GeoJSON and TopoJSON (medium) (4.5753ms)\n✔ water GeoJSON and TopoJSON (low) (3.0313ms)\n✔ water SVGs draw the land under the water bodies and colour them by type (35.3037ms)\nℹ tests 300\nℹ suites 0\nℹ pass 300\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 2013.3181",
+          "criteria": []
+        }
+      ],
+      "decisionIds": [
+        "DEC-007"
+      ],
       "provenance": "stated",
       "createdAt": "2026-10-24T14:01:55.219Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-24T14:01:55.219Z"
+      "updatedAt": "2026-10-24T19:19:10.274Z"
     }
   ]
 }

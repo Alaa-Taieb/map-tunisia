@@ -1,6 +1,6 @@
-id,number,name_en,name_fr,name_ar,governorates,population_2014,population_2024,area_km2,label_lon,label_lat,label_x,label_y
-district-1,1,District 1,Premier district,الإقليم الأول,TN-23 TN-31 TN-32 TN-33,1515884,1560843,15462.57,9.16656,36.76948,163.86,100.69
-district-2,2,District 2,Deuxième district,الإقليم الثاني,TN-11 TN-12 TN-13 TN-14 TN-21 TN-22,3608560,3949277,8226.89,10.15553,36.54649,252.42,124.81
-district-3,3,District 3,Troisième district,الإقليم الثالث,TN-34 TN-41 TN-42 TN-51 TN-52 TN-53,2867500,3121821,25979.76,10.19839,35.58901,257.57,230.97
-district-4,4,District 4,Quatrième district,الإقليم الرابع,TN-43 TN-61 TN-71 TN-72,1830576,2046271,28072.21,9.65391,34.71768,208.88,328.07
-district-5,5,District 5,Cinquième district,الإقليم الخامس,TN-73 TN-81 TN-82 TN-83,1160234,1293957,77498.95,9.45940,33.04800,191.89,513.30
+id,number,name_en,name_fr,name_ar,name_tfng,name_tfng_source,name_translit,governorates,population_2014,population_2024,area_km2,label_lon,label_lat,label_x,label_y
+district-1,1,District 1,Premier district,الإقليم الأول,ⵍⵉⵇⵍⵉⵎ ⵍⴰⵡⵍ,transliterated,District 1,TN-23 TN-31 TN-32 TN-33,1515884,1560843,15462.57,9.16656,36.76948,163.86,100.69
+district-2,2,District 2,Deuxième district,الإقليم الثاني,ⵍⵉⵇⵍⵉⵎ ⵜⵜⴰⵏⵉ,transliterated,District 2,TN-11 TN-12 TN-13 TN-14 TN-21 TN-22,3608560,3949277,8226.89,10.15553,36.54649,252.42,124.81
+district-3,3,District 3,Troisième district,الإقليم الثالث,ⵍⵉⵇⵍⵉⵎ ⵜⵜⴰⵍⵜ,transliterated,District 3,TN-34 TN-41 TN-42 TN-51 TN-52 TN-53,2867500,3121821,25979.76,10.19839,35.58901,257.57,230.97
+district-4,4,District 4,Quatrième district,الإقليم الرابع,ⵍⵉⵇⵍⵉⵎ ⵔⵔⴰⴱⵄ,transliterated,District 4,TN-43 TN-61 TN-71 TN-72,1830576,2046271,28072.21,9.65391,34.71768,208.88,328.07
+district-5,5,District 5,Cinquième district,الإقليم الخامس,ⵍⵉⵇⵍⵉⵎ ⵍⵅⴰⵎⵙ,transliterated,District 5,TN-73 TN-81 TN-82 TN-83,1160234,1293957,77498.95,9.45940,33.04800,191.89,513.30

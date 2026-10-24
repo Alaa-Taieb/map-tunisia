@@ -1,6 +1,6 @@
 export type Partition = 'country' | 'regions' | 'districts' | 'governorates' | 'delegations' | 'sectors' | 'municipalities' | 'water' | 'cities';
 export type Lod = 'full' | 'high' | 'medium' | 'low' | 'tiny';
-export type Mode = 'plain' | 'outline' | 'light' | 'dark' | 'labeled' | 'labeled-ar' | 'nested' | 'interactive';
+export type Mode = 'plain' | 'outline' | 'light' | 'dark' | 'labeled' | 'labeled-ar' | 'labeled-tfng' | 'labeled-en' | 'nested' | 'interactive';
 export type DataFormat = 'geojson' | 'topojson';
 export type AttributeFormat = 'json' | 'csv';
 
@@ -10,6 +10,12 @@ export interface UnitAttributes {
   name_en?: string;
   name_fr?: string;
   name_ar?: string;
+  /** Name in Tifinagh script: the Tamazight name from OSM, else the Arabic name transliterated letter by letter. */
+  name_tfng?: string;
+  /** Where `name_tfng` comes from; empty when the unit has no Arabic name to transliterate. */
+  name_tfng_source?: 'osm' | 'transliterated' | '';
+  /** English transliteration: the Latin name in plain ASCII with English generic terms (Lake, Dam, Greater Tunis). */
+  name_translit?: string;
   population_2014?: string;
   population_2024?: string;
   area_km2?: string;
@@ -77,6 +83,9 @@ export interface CityAttributes {
   name_en: string;
   name_fr: string;
   name_ar: string;
+  name_tfng: string;
+  name_tfng_source: 'osm' | 'transliterated' | '';
+  name_translit: string;
   lon: string;
   lat: string;
   /** Position in the shared SVG frame (km). */

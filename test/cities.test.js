@@ -162,7 +162,7 @@ test('city SVGs draw the land first, one dot per city, the capital on top, colou
     assert.equal(dots.at(-1)[2], 'national_capital', 'the national capital is drawn last');
     for (const [, id, cls, colour, type] of dots) {
       assert.equal(cls, type, id);
-      if (['light', 'dark', 'interactive', 'labeled', 'labeled-ar'].includes(mode.id)) assert.equal(CITY_TYPES[Number(colour)], type, `${id} coloured as ${type}`);
+      if (['light', 'dark', 'interactive'].includes(mode.id) || mode.id.startsWith('labeled')) assert.equal(CITY_TYPES[Number(colour)], type, `${id} coloured as ${type}`);
     }
     if (mode.id.startsWith('labeled')) {
       const labelled = new Set([...svg.matchAll(/<text class="label l\d"[^>]*data-for="([^"]+)"/g)].map((m) => m[1]));

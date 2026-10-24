@@ -25,7 +25,7 @@ function check(partition, lod, mode) {
  * Repository-relative path of an SVG, e.g. `dist/svg/governorates/tunisia-governorates-medium-light.svg`.
  * @param {string} partition  country | regions | districts | governorates | delegations | sectors | municipalities | water | cities
  * @param {string} [lod]      full | high | medium | low | tiny
- * @param {string} [mode]     plain | outline | light | dark | labeled | labeled-ar | nested | interactive
+ * @param {string} [mode]     plain | outline | light | dark | labeled | labeled-ar | labeled-tfng | labeled-en | nested | interactive
  */
 export function svgPath(partition, lod = 'medium', mode = 'plain') {
   check(partition, lod, mode);

@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMS8MO2-b17f9d",
+  "type": "task.verified",
+  "at": "2026-10-24T19:19:10.274Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-018",
+    "MS-005"
+  ],
+  "summary": "Task NS-018 verified: Tamazight (Tifinagh) and English-transliteration label modes"
+}

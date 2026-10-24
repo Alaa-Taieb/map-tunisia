@@ -6,6 +6,36 @@ Data releases also state the date of the OpenStreetMap extract they were built f
 
 ## [Unreleased]
 
+## [1.4.0] — 2026-10-24
+
+Built from the same OpenStreetMap extract of **2026-10-16**. Geometry, ids and the existing attributes of every layer are
+unchanged; the existing SVGs only move to the 1.4.0 version stamp.
+
+### Added
+- **Two label modes**, `labeled-tfng` (names in Tifinagh) and `labeled-en` (English names in plain ASCII), wherever the
+  `labeled` and `labeled-ar` modes exist: `medium`, `low` and `tiny` for the country, regions, districts and governorates,
+  `medium` and `low` for delegations, sectors, municipalities, water and cities. 44 new SVG files, 235 in total; 10 modes.
+- Three name columns in every attribute table, GeoJSON and TopoJSON, next to `name_ar`:
+  - `name_tfng`: the Tamazight name OpenStreetMap holds in Tifinagh (`name:zgh`, then `name:ber`, …) where there is one —
+    11 units: the country (ⵜⵓⵏⵙ) and 10 cities, e.g. Kairouan ⵜⴰⴽⴻⵔⵡⴰⵏⵜ and Tataouine ⵜⵉⵟⵟⴰⵡⵉⵏ — else the Arabic name
+    transliterated letter by letter into Neo-Tifinagh (IRCAM letters; تونس → ⵜⵓⵏⵙ, القيروان → ⵍⵇⵉⵔⵡⴰⵏ). Tunisia has no
+    official Tifinagh names, so no Tamazight name is invented or translated;
+  - `name_tfng_source`: `osm` or `transliterated`;
+  - `name_translit`: the English transliteration — the curated English name for the country, regions, districts and
+    governorates (*Greater Tunis*, *Kef*), else the Latin name with English generic terms for water bodies (*Lake Bizerte*,
+    *Sidi Salem Dam*, *Ghar El Melh Lagoon*), in plain ASCII (*Gabès* → *Gabes*).
+- `scripts/extract/tifinagh.py` (`npm run extract:tifinagh`) and `data/source/tifinagh-names.json`, the transliteration
+  rules in `scripts/build/names.js`, the label modes in one table (`LABEL_MODES` in `scripts/build/config.js`), a Tifinagh
+  font stack (Noto Sans Tifinagh, Ebrima, Segoe UI Historic) and `xml:lang` (`und-Tfng`, `en`) on the new maps, the new
+  modes and names in the explorer and the TypeScript types, docs (methodology section 12, modes, data dictionary) and
+  tests (`test/labels.test.js`).
+
+### Fixed
+- In `labeled-ar`, a unit without an Arabic name (5 water bodies) now has its label sized for the Latin name it actually
+  shows (the two `water-*-labeled-ar` files move by a hundredth of a kilometre).
+- `CITATION.cff` gave 1.3.0 as its `cff-version` (the format version, 1.2.0) and kept 1.2.0 as the dataset version; it now
+  reads `cff-version: 1.2.0` and `version: 1.4.0`.
+
 ## [1.3.0] — 2026-10-24
 
 Built from the same OpenStreetMap extract of **2026-10-16**. The geometry and attributes of the six nested partitions, the

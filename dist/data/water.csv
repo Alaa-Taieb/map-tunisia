@@ -1,68 +1,68 @@
-id,type,governorate,governorates,name_en,name_fr,name_ar,salt,intermittent,wikidata,osm,geometry_source,region,district,area_km2,label_lon,label_lat,label_x,label_y
-water-bizerte,lagoon,TN-23,TN-23,Lake Bizerte,Lac de Bizerte,بحيرة بنزرت,,,,,osm_coastline,nord-est,district-1,124.40,9.85622,37.18465,225.00,54.30
-water-el-bibane,lagoon,TN-82,TN-82,Bahiret el Bibane,Bahiret el Bibane,بحيرة البيبان,,,,,osm_coastline,sud-est,district-5,230.27,11.21988,33.25327,355.80,488.44
-water-r10224416,lake,TN-23,TN-23,Ichkeul,Ichkeul,بحيرة إشكل,,no,Q45894,relation/10224416,osm_polygon,nord-est,district-1,86.98,9.64668,37.16030,206.42,57.15
-water-r10734894,sebkha,TN-82,TN-82,Sabkhat ash-Shaqa'iq,Sabkhat ash-Shaqa'iq,سبخة الشقائق,yes,,,relation/10734894,osm_polygon,sud-est,district-5,5.06,11.39441,32.98971,372.73,517.31
-water-r1399268,sebkha,TN-53,TN-53,Salt Lake Cherita,Sebkhet Cherita,سبخة الشريطة,yes,,,relation/1399268,osm_polygon,centre-est,district-3,71.06,10.33978,35.36102,270.72,256.10
-water-r1431499,sebkha,TN-11,TN-11,Sabkhat Sejoumi,Sebkha Séjoumi,سبخة السيجومي,yes,,Q3476955,relation/1431499,osm_polygon,grand-tunis,district-2,22.85,10.14897,36.75928,251.55,101.22
-water-r18438466,lagoon,TN-23,TN-12 TN-23,Ghar El Melh Lagoon,Lagune de Ghar El Melh,بحيرة غار الملح,,,,relation/18438466,osm_polygon,nord-est,district-1,33.61,10.16884,37.14604,252.80,58.29
-water-r2307563,reservoir,TN-31,TN-31,Sayyidi Salim Dam,Barrage de Sidi Salem,سد سيدي سالم,,,,relation/2307563,osm_polygon,nord-ouest,district-1,44.30,9.38598,36.65025,183.50,113.86
-water-r2645437,reservoir,TN-23,TN-23,Lac de Sejnane,Lac de Sejnane,بحيرة سجنان,,,,relation/2645437,osm_polygon,nord-est,district-1,6.37,9.44183,37.17087,188.22,56.08
-water-r2895174,sebkha,TN-51,TN-41 TN-51 TN-53,Salt Lake Sidi El Hani,Sebkhat Sidi El Hani,سبخة سيدي الهاني,yes,yes,Q11946560,relation/2895174,osm_polygon,centre-est,district-3,408.41,10.38250,35.56846,274.28,233.04
-water-r3127248,reservoir,TN-22,TN-22,Lac de Bir Mcherga,Lac de Bir Mcherga,بحيرة بئر مشارقة,,,Q2885063,relation/3127248,osm_polygon,nord-est,district-2,5.05,9.99108,36.49187,237.77,131.04
-water-r3969167,chott,TN-73,TN-72 TN-73,Chott el Djerid,Chott el-Jérid,شط الجريد,yes,yes,Q849143,relation/3969167,osm_polygon,sud-ouest,district-5,3599.97,8.32976,33.72315,86.90,438.34
-water-r4499848,sebkha,TN-82,TN-82,Sebkhet Ain Maider,Sebkhet Ain Maider,سبخة عين ميدر,yes,,,relation/4499848,osm_polygon,sud-est,district-5,13.50,10.79316,33.47083,315.62,465.08
-water-r5912351,sebkha,TN-82,TN-82,Sebkha Bin El Ouedian,Sebkha Bin El Ouedian,,yes,,Q2410936,relation/5912351,osm_polygon,sud-est,district-5,7.82,10.97510,33.73153,331.98,435.86
-water-r7642725,reservoir,TN-41,TN-41,Barrage Sidi Saad,Barrage Sidi Saad,سد سيدي سعد,,,,relation/7642725,osm_polygon,centre-ouest,district-3,10.85,9.67637,35.36949,210.44,255.77
-water-r8031768,lagoon,TN-11,TN-11,Lake of Tunis,Lac de Tunis,بحيرة تونس,,,Q576856,relation/8031768,osm_polygon,grand-tunis,district-2,23.99,10.26889,36.82539,262.16,93.75
-water-r8067346,sebkha,TN-83,TN-83,Sabkhat Mujazzam,Sabkhat Mujazzam,سبخة مززم,yes,yes,Q12215361,relation/8067346,osm_polygon,sud-est,district-5,14.72,9.76676,30.32334,222.71,815.14
-water-r8828598,sebkha,TN-82,TN-82,Sabkhat Tadir,Sabkhat Tadir,سبخة ملاحة البريقة,yes,,,relation/8828598,osm_polygon,sud-est,district-5,109.96,11.42351,33.09133,375.19,505.98
-water-w101519016,sebkha,TN-82,TN-82,Sabkhat al Hamra,Sabkhat al Hamra,السبخة الحمراء,yes,,,way/101519016,osm_polygon,sud-est,district-5,5.56,11.48469,32.71190,381.89,547.92
-water-w101519019,sebkha,TN-82,TN-82,Sabkhat al Maqta,Sabkhat El-Magta,سبخة المقطع,yes,,,way/101519019,osm_polygon,sud-est,district-5,41.45,11.47765,32.81155,380.97,536.89
-water-w103534038,sebkha,TN-82,TN-82,Sebkhet el Mèlah,Sebkhet el Mèlah,سبخة الملح,yes,yes,Q12215338,way/103534038,osm_polygon,sud-est,district-5,127.70,10.95761,33.37590,331.11,475.33
-water-w105618195,reservoir,TN-22,TN-22,Barrage de ar-Raml,Barrage de ar-Raml,سد الرمل,,,,way/105618195,osm_polygon,nord-est,district-2,5.69,10.34694,36.35076,269.86,146.30
-water-w1073653456,lake,TN-23,TN-23,Lac El Melah,Lac El Melah,بحيرة المالح,,,,way/1073653456,osm_polygon,nord-est,district-1,2.80,9.41739,37.06533,186.11,67.80
-water-w1117620876,sebkha,TN-61,TN-61,Sabkhat al Djelidja,Sabkhat al Djelidja,,yes,,,way/1117620876,osm_polygon,centre-est,district-4,1.65,11.07006,34.65152,338.71,333.65
-water-w1117620878,sebkha,TN-61,TN-61,Sabkhat al Aougued,Sabkhat al Aougued,,yes,,,way/1117620878,osm_polygon,centre-est,district-4,1.47,11.05331,34.64624,337.18,334.27
-water-w1164099560,reservoir,TN-23,TN-23,Barrage El Harka,Barrage El Harka,,,,,way/1164099560,osm_polygon,nord-est,district-1,2.23,9.37515,37.19635,182.29,53.28
-water-w121771324,sebkha,TN-51,TN-51,Salt Lake Assa Juriba,Sebkhat Assa Juriba,سبخة عسة جوريبة,yes,,,way/121771324,osm_polygon,centre-est,district-3,8.41,10.45419,36.10969,279.89,172.91
-water-w121771325,sebkha,TN-51,TN-51,Sebkhat Sidi Khaled,Sebkhat Sidi Khaled,سبخة سيدي خالد,yes,,,way/121771325,osm_polygon,centre-est,district-3,13.66,10.45779,36.23161,280.01,159.38
-water-w128202897,reservoir,TN-23,TN-23,Lac de Joumine,Lac de Joumine,بحيرة جومين,,,,way/128202897,osm_polygon,nord-est,district-1,5.16,9.61085,36.98634,203.36,76.47
-water-w128504309,reservoir,TN-22,TN-22,Barrage el Kebir,Barrage el Kebir,سد الكبير,,,,way/128504309,osm_polygon,nord-est,district-2,2.46,9.77129,36.23818,218.31,159.36
-water-w129812159,reservoir,TN-31,TN-31,Lac Sidi El Barrak,Lac Sidi El Barrak,بحيرة سيدي البراق,,,,way/129812159,osm_polygon,nord-ouest,district-1,28.76,9.02643,37.01399,151.35,73.58
-water-w150215543,reservoir,TN-32,TN-32,Beni-Mtir Lake,Lac Beni-Mtir,بحيرة بني مطير,,,Q816563,way/150215543,osm_polygon,nord-ouest,district-1,2.88,8.74127,36.75304,125.90,102.49
-water-w177805975,reservoir,TN-32,TN-32,Barrage de Barbara,Barrage de Barbara,سد بربرة,,,Q2884925,way/177805975,osm_polygon,nord-ouest,district-1,4.18,8.53896,36.73500,107.84,104.43
-water-w178135177,reservoir,TN-33,TN-33,Barrage Mellegue,Barrage Mellegue,سد ملاق,,,,way/178135177,osm_polygon,nord-ouest,district-1,4.18,8.67688,36.30515,119.99,152.16
-water-w185163033,lake,TN-41,TN-41,Al-Hawarib Lake,Lac El Houareb,بحيرة الهوارب,,,,way/185163033,osm_polygon,centre-ouest,district-3,4.05,9.73912,35.56618,215.98,233.91
-water-w194070205,lake,TN-23,TN-23,Lac Zayatine,Lac Zayatine,بحيرة زياتين,,,,way/194070205,osm_polygon,nord-est,district-1,3.04,9.18710,37.16926,165.61,56.33
-water-w208433074,sebkha,TN-21,TN-21,Essabkha Esharqiya,Essabkha Esharqiya,السبخة الشرقية,yes,,,way/208433074,osm_polygon,nord-est,district-2,2.86,10.89847,36.62753,318.75,114.77
-water-w210897207,reservoir,TN-41,TN-41,Lac de Nebhana,Lac de Nebhana,بحيرة نبهانة,,,,way/210897207,osm_polygon,centre-ouest,district-3,3.17,9.85420,36.05113,225.94,180.04
-water-w22741868,lake,TN-11,TN-11,,,بحيرة غدير القلة,,,,way/22741868,osm_polygon,grand-tunis,district-2,1.45,10.02991,36.77814,240.90,99.24
-water-w263233683,sebkha,TN-82,TN-82,Sebkha Jallabia,Sebkha Jallabia,,yes,,,way/263233683,osm_polygon,sud-est,district-5,1.27,10.59628,33.64510,297.03,446.05
-water-w284143307,sebkha,TN-81,TN-81,Sebkhet El Hamma,Sebkhet El Hamma,سبخة الحامة,yes,,,way/284143307,osm_polygon,sud-est,district-5,282.93,9.74463,33.97769,217.78,410.07
-water-w284826905,chott,TN-73,TN-73 TN-81,Chott el Fejej,Chott el-Fejaj,شط الفجاج,yes,yes,Q5105409,way/284826905,osm_polygon,sud-ouest,district-5,572.05,9.06051,33.88828,154.60,420.23
-water-w31014304,reservoir,TN-32,TN-32,Lac Bouhertma,Lac Bouhertma,بحيرة بوهرتمة,,,,way/31014304,osm_polygon,nord-ouest,district-1,6.89,8.78240,36.66318,129.55,112.47
-water-w31014375,reservoir,TN-31,TN-31 TN-32,Lac de Kasseb,Lac de Kasseb,بحيرة كساب,,,,way/31014375,osm_polygon,nord-ouest,district-1,4.09,8.99029,36.76810,148.13,100.85
-water-w31821996,reservoir,TN-34,TN-34,Barrage Siliana,Barrage Siliana,سد سليانة,,,,way/31821996,osm_polygon,nord-ouest,district-3,4.51,9.36132,36.14041,181.51,170.42
-water-w31831809,sebkha,TN-43,TN-43 TN-61,Sabkhet Mecheguia,Sabkhet Mecheguia,سبخة مشاقية,yes,yes,,way/31831809,osm_polygon,centre-ouest,district-4,28.33,10.02243,34.93275,242.38,303.94
-water-w31831820,sebkha,TN-53,TN-53 TN-61,Sebkhet El Gharra,Sebkhet El Gharra,سبخة الغرة,yes,yes,,way/31831820,osm_polygon,centre-est,district-3,70.33,10.49196,35.12910,284.93,281.62
-water-w31831861,sebkha,TN-61,TN-61,Sebkhet Boujmel,Sebkhet Boujmel,سبخة بو جمل,yes,yes,,way/31831861,osm_polygon,centre-est,district-4,13.00,10.42284,34.96547,278.90,299.86
-water-w31831896,sebkha,TN-43,TN-43 TN-61,Salt lake,Sebkhet En Noual,سبخة النوال,yes,yes,,way/31831896,osm_polygon,centre-ouest,district-4,151.70,9.73243,34.38009,216.34,365.46
-water-w31832215,sebkha,TN-52,TN-52,Salt Lake et Moknine,Sebkhet et Moknine,سبخة المكنين,yes,,,way/31832215,osm_polygon,centre-est,district-3,49.54,10.96053,35.56747,326.67,232.25
-water-w32201801,sebkha,TN-61,TN-61,Sabkhet El Jem,Sabkhet El Jem,سبخة الجم,yes,yes,,way/32201801,osm_polygon,centre-est,district-4,23.61,10.79045,35.15825,312.08,277.94
-water-w323053761,sebkha,TN-82,TN-82,Sebkhet Mhabeul,Sebkhet Mhabeul,سبخة مهابول,yes,,,way/323053761,osm_polygon,sud-est,district-5,2.73,10.84564,33.41990,320.60,470.64
-water-w37293505,sebkha,TN-61,TN-61,Salt Lake Bou Jemel,Sebkhet Boujmel,سبخة بو جمل,yes,yes,,way/37293505,osm_polygon,centre-est,district-4,4.17,10.21847,35.03611,260.14,292.27
-water-w378469750,sebkha,TN-82,TN-82,Sebkhet Bou Jemel,Sebkhet Bou Jemel,سبخة بو جمل,yes,,,way/378469750,osm_polygon,sud-est,district-5,27.19,11.08862,33.27012,343.53,486.82
-water-w49730150,sebkha,TN-12,TN-12,Sebkhet Ariana,Sebkhet Ariana,سبخة أريانة,yes,,Q2742730,way/49730150,osm_polygon,grand-tunis,district-2,21.51,10.23061,36.92039,258.61,83.25
-water-w499550887,reservoir,TN-23,TN-23,Lac de Gamgoum,Lac de Gamgoum,بحيرة قمقوم,,,,way/499550887,osm_polygon,nord-est,district-1,1.37,9.28003,37.19929,173.85,52.98
-water-w53309022,sebkha,TN-71,TN-71,Sebkha el Guettar,Sebkha el Guettar,سبخة القطار,yes,yes,,way/53309022,osm_polygon,sud-ouest,district-4,48.06,8.91235,34.30288,140.93,374.26
-water-w53382990,sebkha,TN-22,TN-22,Sebkhet El Kourzia,Sebkhet El Kourzia,سبخة الكورزية,yes,yes,,way/53382990,osm_polygon,nord-est,district-2,13.40,9.77196,36.42960,218.20,138.12
-water-w53383003,lake,TN-21,TN-21,Lac Lebna,Lac Lebna,بحيرة لبنة,,,,way/53383003,osm_polygon,nord-est,district-2,5.70,10.90046,36.76128,318.63,99.92
-water-w551247241,chott,TN-72,TN-72,Chott El Rharsa,Chott el-Gharsa,شط الغرسة,yes,yes,Q590855,way/551247241,osm_polygon,sud-ouest,district-4,371.32,7.88914,34.11602,46.55,394.42
-water-w569425627,reservoir,TN-23,TN-23,Lac Oued El Harka,Lac Oued El Harka,بحيرة واد الحركة,,no,,way/569425627,osm_polygon,nord-est,district-1,1.86,9.38419,37.20997,183.09,51.77
-water-w774947682,sebkha,TN-83,TN-83,Sebkhet Chemila,Sebkhet Chemila,سبخة شميلة,yes,,,way/774947682,osm_polygon,sud-est,district-5,12.67,10.87554,33.03504,324.15,513.27
-water-w775225282,sebkha,TN-83,TN-83,Sabkhat Umm al-Khayalat,Sabkhat Umm al-Khayalat,سبخة أم الخيالات,yes,,Q12215328,way/775225282,osm_polygon,sud-est,district-5,60.63,10.91390,32.80415,328.20,538.80
-water-w777017574,sebkha,TN-83,TN-83,Sebkhet Areg El Makhzene,Sebkhet Areg El Makhzene,سبخة عرق المخزن,yes,,,way/777017574,osm_polygon,sud-est,district-5,2.89,10.94942,32.94782,331.23,522.81
-water-w878142907,sebkha,TN-51,TN-51,Sabkhet Halk El Menjel,Sabkhet Halk El Menjel,سبخة حلق المنجل,yes,,,way/878142907,osm_polygon,centre-est,district-3,19.43,10.50615,35.98558,284.78,186.60
-water-w93265507,lagoon,TN-13,TN-11 TN-13,South Tunis Lake,Lac Sud de Tunis,بحيرة تونس الجنوبية,,,,way/93265507,osm_polygon,grand-tunis,district-2,6.98,10.24310,36.79445,259.91,97.21
-water-w99327451,sebkha,TN-51,TN-51,Sebkha El Kalbia,Sebkhet Khedma el Kebira,سبخة الكلبية,yes,yes,Q3476954,way/99327451,osm_polygon,centre-est,district-3,120.09,10.26583,35.83817,263.32,203.26
+id,type,governorate,governorates,name_en,name_fr,name_ar,name_tfng,name_tfng_source,name_translit,salt,intermittent,wikidata,osm,geometry_source,region,district,area_km2,label_lon,label_lat,label_x,label_y
+water-bizerte,lagoon,TN-23,TN-23,Lake Bizerte,Lac de Bizerte,بحيرة بنزرت,ⴱⵃⵉⵔⴰ ⴱⵏⵣⵔⵜ,transliterated,Lake Bizerte,,,,,osm_coastline,nord-est,district-1,124.40,9.85622,37.18465,225.00,54.30
+water-el-bibane,lagoon,TN-82,TN-82,Bahiret el Bibane,Bahiret el Bibane,بحيرة البيبان,ⴱⵃⵉⵔⴰ ⵍⴱⵉⴱⴰⵏ,transliterated,Bahiret el Bibane,,,,,osm_coastline,sud-est,district-5,230.27,11.21988,33.25327,355.80,488.44
+water-r10224416,lake,TN-23,TN-23,Ichkeul,Ichkeul,بحيرة إشكل,ⴱⵃⵉⵔⴰ ⵉⵛⴽⵍ,transliterated,Ichkeul,,no,Q45894,relation/10224416,osm_polygon,nord-est,district-1,86.98,9.64668,37.16030,206.42,57.15
+water-r10734894,sebkha,TN-82,TN-82,Sabkhat ash-Shaqa'iq,Sabkhat ash-Shaqa'iq,سبخة الشقائق,ⵙⴱⵅⴰ ⵛⵛⵇⴰⵉⵇ,transliterated,Sabkhat ash-Shaqa'iq,yes,,,relation/10734894,osm_polygon,sud-est,district-5,5.06,11.39441,32.98971,372.73,517.31
+water-r1399268,sebkha,TN-53,TN-53,Salt Lake Cherita,Sebkhet Cherita,سبخة الشريطة,ⵙⴱⵅⴰ ⵛⵛⵔⵉⵟⴰ,transliterated,Sebkhet Cherita,yes,,,relation/1399268,osm_polygon,centre-est,district-3,71.06,10.33978,35.36102,270.72,256.10
+water-r1431499,sebkha,TN-11,TN-11,Sabkhat Sejoumi,Sebkha Séjoumi,سبخة السيجومي,ⵙⴱⵅⴰ ⵙⵙⵉⵊⵓⵎⵉ,transliterated,Sebkha Sejoumi,yes,,Q3476955,relation/1431499,osm_polygon,grand-tunis,district-2,22.85,10.14897,36.75928,251.55,101.22
+water-r18438466,lagoon,TN-23,TN-12 TN-23,Ghar El Melh Lagoon,Lagune de Ghar El Melh,بحيرة غار الملح,ⴱⵃⵉⵔⴰ ⵖⴰⵔ ⵍⵎⵍⵃ,transliterated,Ghar El Melh Lagoon,,,,relation/18438466,osm_polygon,nord-est,district-1,33.61,10.16884,37.14604,252.80,58.29
+water-r2307563,reservoir,TN-31,TN-31,Sayyidi Salim Dam,Barrage de Sidi Salem,سد سيدي سالم,ⵙⴷ ⵙⵉⴷⵉ ⵙⴰⵍⵎ,transliterated,Sidi Salem Dam,,,,relation/2307563,osm_polygon,nord-ouest,district-1,44.30,9.38598,36.65025,183.50,113.86
+water-r2645437,reservoir,TN-23,TN-23,Lac de Sejnane,Lac de Sejnane,بحيرة سجنان,ⴱⵃⵉⵔⴰ ⵙⵊⵏⴰⵏ,transliterated,Lake Sejnane,,,,relation/2645437,osm_polygon,nord-est,district-1,6.37,9.44183,37.17087,188.22,56.08
+water-r2895174,sebkha,TN-51,TN-41 TN-51 TN-53,Salt Lake Sidi El Hani,Sebkhat Sidi El Hani,سبخة سيدي الهاني,ⵙⴱⵅⴰ ⵙⵉⴷⵉ ⵍⵀⴰⵏⵉ,transliterated,Sebkhat Sidi El Hani,yes,yes,Q11946560,relation/2895174,osm_polygon,centre-est,district-3,408.41,10.38250,35.56846,274.28,233.04
+water-r3127248,reservoir,TN-22,TN-22,Lac de Bir Mcherga,Lac de Bir Mcherga,بحيرة بئر مشارقة,ⴱⵃⵉⵔⴰ ⴱⵉⵔ ⵎⵛⴰⵔⵇⴰ,transliterated,Lake Bir Mcherga,,,Q2885063,relation/3127248,osm_polygon,nord-est,district-2,5.05,9.99108,36.49187,237.77,131.04
+water-r3969167,chott,TN-73,TN-72 TN-73,Chott el Djerid,Chott el-Jérid,شط الجريد,ⵛⵟ ⵍⵊⵔⵉⴷ,transliterated,Chott el-Jerid,yes,yes,Q849143,relation/3969167,osm_polygon,sud-ouest,district-5,3599.97,8.32976,33.72315,86.90,438.34
+water-r4499848,sebkha,TN-82,TN-82,Sebkhet Ain Maider,Sebkhet Ain Maider,سبخة عين ميدر,ⵙⴱⵅⴰ ⵄⵉⵏ ⵎⵉⴷⵔ,transliterated,Sebkhet Ain Maider,yes,,,relation/4499848,osm_polygon,sud-est,district-5,13.50,10.79316,33.47083,315.62,465.08
+water-r5912351,sebkha,TN-82,TN-82,Sebkha Bin El Ouedian,Sebkha Bin El Ouedian,,,,Sebkha Bin El Ouedian,yes,,Q2410936,relation/5912351,osm_polygon,sud-est,district-5,7.82,10.97510,33.73153,331.98,435.86
+water-r7642725,reservoir,TN-41,TN-41,Barrage Sidi Saad,Barrage Sidi Saad,سد سيدي سعد,ⵙⴷ ⵙⵉⴷⵉ ⵙⵄⴷ,transliterated,Sidi Saad Dam,,,,relation/7642725,osm_polygon,centre-ouest,district-3,10.85,9.67637,35.36949,210.44,255.77
+water-r8031768,lagoon,TN-11,TN-11,Lake of Tunis,Lac de Tunis,بحيرة تونس,ⴱⵃⵉⵔⴰ ⵜⵓⵏⵙ,transliterated,Lake Tunis,,,Q576856,relation/8031768,osm_polygon,grand-tunis,district-2,23.99,10.26889,36.82539,262.16,93.75
+water-r8067346,sebkha,TN-83,TN-83,Sabkhat Mujazzam,Sabkhat Mujazzam,سبخة مززم,ⵙⴱⵅⴰ ⵎⵣⵣⵎ,transliterated,Sabkhat Mujazzam,yes,yes,Q12215361,relation/8067346,osm_polygon,sud-est,district-5,14.72,9.76676,30.32334,222.71,815.14
+water-r8828598,sebkha,TN-82,TN-82,Sabkhat Tadir,Sabkhat Tadir,سبخة ملاحة البريقة,ⵙⴱⵅⴰ ⵎⵍⴰⵃⴰ ⵍⴱⵔⵉⵇⴰ,transliterated,Sabkhat Tadir,yes,,,relation/8828598,osm_polygon,sud-est,district-5,109.96,11.42351,33.09133,375.19,505.98
+water-w101519016,sebkha,TN-82,TN-82,Sabkhat al Hamra,Sabkhat al Hamra,السبخة الحمراء,ⵙⵙⴱⵅⴰ ⵍⵃⵎⵔⴰ,transliterated,Sabkhat al Hamra,yes,,,way/101519016,osm_polygon,sud-est,district-5,5.56,11.48469,32.71190,381.89,547.92
+water-w101519019,sebkha,TN-82,TN-82,Sabkhat al Maqta,Sabkhat El-Magta,سبخة المقطع,ⵙⴱⵅⴰ ⵍⵎⵇⵟⵄ,transliterated,Sabkhat El-Magta,yes,,,way/101519019,osm_polygon,sud-est,district-5,41.45,11.47765,32.81155,380.97,536.89
+water-w103534038,sebkha,TN-82,TN-82,Sebkhet el Mèlah,Sebkhet el Mèlah,سبخة الملح,ⵙⴱⵅⴰ ⵍⵎⵍⵃ,transliterated,Sebkhet el Melah,yes,yes,Q12215338,way/103534038,osm_polygon,sud-est,district-5,127.70,10.95761,33.37590,331.11,475.33
+water-w105618195,reservoir,TN-22,TN-22,Barrage de ar-Raml,Barrage de ar-Raml,سد الرمل,ⵙⴷ ⵔⵔⵎⵍ,transliterated,Ar-Raml Dam,,,,way/105618195,osm_polygon,nord-est,district-2,5.69,10.34694,36.35076,269.86,146.30
+water-w1073653456,lake,TN-23,TN-23,Lac El Melah,Lac El Melah,بحيرة المالح,ⴱⵃⵉⵔⴰ ⵍⵎⴰⵍⵃ,transliterated,Lake El Melah,,,,way/1073653456,osm_polygon,nord-est,district-1,2.80,9.41739,37.06533,186.11,67.80
+water-w1117620876,sebkha,TN-61,TN-61,Sabkhat al Djelidja,Sabkhat al Djelidja,,,,Sabkhat al Djelidja,yes,,,way/1117620876,osm_polygon,centre-est,district-4,1.65,11.07006,34.65152,338.71,333.65
+water-w1117620878,sebkha,TN-61,TN-61,Sabkhat al Aougued,Sabkhat al Aougued,,,,Sabkhat al Aougued,yes,,,way/1117620878,osm_polygon,centre-est,district-4,1.47,11.05331,34.64624,337.18,334.27
+water-w1164099560,reservoir,TN-23,TN-23,Barrage El Harka,Barrage El Harka,,,,El Harka Dam,,,,way/1164099560,osm_polygon,nord-est,district-1,2.23,9.37515,37.19635,182.29,53.28
+water-w121771324,sebkha,TN-51,TN-51,Salt Lake Assa Juriba,Sebkhat Assa Juriba,سبخة عسة جوريبة,ⵙⴱⵅⴰ ⵄⵙⴰ ⵊⵓⵔⵉⴱⴰ,transliterated,Sebkhat Assa Juriba,yes,,,way/121771324,osm_polygon,centre-est,district-3,8.41,10.45419,36.10969,279.89,172.91
+water-w121771325,sebkha,TN-51,TN-51,Sebkhat Sidi Khaled,Sebkhat Sidi Khaled,سبخة سيدي خالد,ⵙⴱⵅⴰ ⵙⵉⴷⵉ ⵅⴰⵍⴷ,transliterated,Sebkhat Sidi Khaled,yes,,,way/121771325,osm_polygon,centre-est,district-3,13.66,10.45779,36.23161,280.01,159.38
+water-w128202897,reservoir,TN-23,TN-23,Lac de Joumine,Lac de Joumine,بحيرة جومين,ⴱⵃⵉⵔⴰ ⵊⵓⵎⵉⵏ,transliterated,Lake Joumine,,,,way/128202897,osm_polygon,nord-est,district-1,5.16,9.61085,36.98634,203.36,76.47
+water-w128504309,reservoir,TN-22,TN-22,Barrage el Kebir,Barrage el Kebir,سد الكبير,ⵙⴷ ⵍⴽⴱⵉⵔ,transliterated,El Kebir Dam,,,,way/128504309,osm_polygon,nord-est,district-2,2.46,9.77129,36.23818,218.31,159.36
+water-w129812159,reservoir,TN-31,TN-31,Lac Sidi El Barrak,Lac Sidi El Barrak,بحيرة سيدي البراق,ⴱⵃⵉⵔⴰ ⵙⵉⴷⵉ ⵍⴱⵔⴰⵇ,transliterated,Lake Sidi El Barrak,,,,way/129812159,osm_polygon,nord-ouest,district-1,28.76,9.02643,37.01399,151.35,73.58
+water-w150215543,reservoir,TN-32,TN-32,Beni-Mtir Lake,Lac Beni-Mtir,بحيرة بني مطير,ⴱⵃⵉⵔⴰ ⴱⵏⵉ ⵎⵟⵉⵔ,transliterated,Lake Beni-Mtir,,,Q816563,way/150215543,osm_polygon,nord-ouest,district-1,2.88,8.74127,36.75304,125.90,102.49
+water-w177805975,reservoir,TN-32,TN-32,Barrage de Barbara,Barrage de Barbara,سد بربرة,ⵙⴷ ⴱⵔⴱⵔⴰ,transliterated,Barbara Dam,,,Q2884925,way/177805975,osm_polygon,nord-ouest,district-1,4.18,8.53896,36.73500,107.84,104.43
+water-w178135177,reservoir,TN-33,TN-33,Barrage Mellegue,Barrage Mellegue,سد ملاق,ⵙⴷ ⵎⵍⴰⵇ,transliterated,Mellegue Dam,,,,way/178135177,osm_polygon,nord-ouest,district-1,4.18,8.67688,36.30515,119.99,152.16
+water-w185163033,lake,TN-41,TN-41,Al-Hawarib Lake,Lac El Houareb,بحيرة الهوارب,ⴱⵃⵉⵔⴰ ⵍⵀⵡⴰⵔⴱ,transliterated,Lake El Houareb,,,,way/185163033,osm_polygon,centre-ouest,district-3,4.05,9.73912,35.56618,215.98,233.91
+water-w194070205,lake,TN-23,TN-23,Lac Zayatine,Lac Zayatine,بحيرة زياتين,ⴱⵃⵉⵔⴰ ⵣⵢⴰⵜⵉⵏ,transliterated,Lake Zayatine,,,,way/194070205,osm_polygon,nord-est,district-1,3.04,9.18710,37.16926,165.61,56.33
+water-w208433074,sebkha,TN-21,TN-21,Essabkha Esharqiya,Essabkha Esharqiya,السبخة الشرقية,ⵙⵙⴱⵅⴰ ⵛⵛⵔⵇⵢⴰ,transliterated,Essabkha Esharqiya,yes,,,way/208433074,osm_polygon,nord-est,district-2,2.86,10.89847,36.62753,318.75,114.77
+water-w210897207,reservoir,TN-41,TN-41,Lac de Nebhana,Lac de Nebhana,بحيرة نبهانة,ⴱⵃⵉⵔⴰ ⵏⴱⵀⴰⵏⴰ,transliterated,Lake Nebhana,,,,way/210897207,osm_polygon,centre-ouest,district-3,3.17,9.85420,36.05113,225.94,180.04
+water-w22741868,lake,TN-11,TN-11,,,بحيرة غدير القلة,ⴱⵃⵉⵔⴰ ⵖⴷⵉⵔ ⵍⵇⵍⴰ,transliterated,,,,,way/22741868,osm_polygon,grand-tunis,district-2,1.45,10.02991,36.77814,240.90,99.24
+water-w263233683,sebkha,TN-82,TN-82,Sebkha Jallabia,Sebkha Jallabia,,,,Sebkha Jallabia,yes,,,way/263233683,osm_polygon,sud-est,district-5,1.27,10.59628,33.64510,297.03,446.05
+water-w284143307,sebkha,TN-81,TN-81,Sebkhet El Hamma,Sebkhet El Hamma,سبخة الحامة,ⵙⴱⵅⴰ ⵍⵃⴰⵎⴰ,transliterated,Sebkhet El Hamma,yes,,,way/284143307,osm_polygon,sud-est,district-5,282.93,9.74463,33.97769,217.78,410.07
+water-w284826905,chott,TN-73,TN-73 TN-81,Chott el Fejej,Chott el-Fejaj,شط الفجاج,ⵛⵟ ⵍⴼⵊⴰⵊ,transliterated,Chott el-Fejaj,yes,yes,Q5105409,way/284826905,osm_polygon,sud-ouest,district-5,572.05,9.06051,33.88828,154.60,420.23
+water-w31014304,reservoir,TN-32,TN-32,Lac Bouhertma,Lac Bouhertma,بحيرة بوهرتمة,ⴱⵃⵉⵔⴰ ⴱⵓⵀⵔⵜⵎⴰ,transliterated,Lake Bouhertma,,,,way/31014304,osm_polygon,nord-ouest,district-1,6.89,8.78240,36.66318,129.55,112.47
+water-w31014375,reservoir,TN-31,TN-31 TN-32,Lac de Kasseb,Lac de Kasseb,بحيرة كساب,ⴱⵃⵉⵔⴰ ⴽⵙⴰⴱ,transliterated,Lake Kasseb,,,,way/31014375,osm_polygon,nord-ouest,district-1,4.09,8.99029,36.76810,148.13,100.85
+water-w31821996,reservoir,TN-34,TN-34,Barrage Siliana,Barrage Siliana,سد سليانة,ⵙⴷ ⵙⵍⵢⴰⵏⴰ,transliterated,Siliana Dam,,,,way/31821996,osm_polygon,nord-ouest,district-3,4.51,9.36132,36.14041,181.51,170.42
+water-w31831809,sebkha,TN-43,TN-43 TN-61,Sabkhet Mecheguia,Sabkhet Mecheguia,سبخة مشاقية,ⵙⴱⵅⴰ ⵎⵛⴰⵇⵢⴰ,transliterated,Sabkhet Mecheguia,yes,yes,,way/31831809,osm_polygon,centre-ouest,district-4,28.33,10.02243,34.93275,242.38,303.94
+water-w31831820,sebkha,TN-53,TN-53 TN-61,Sebkhet El Gharra,Sebkhet El Gharra,سبخة الغرة,ⵙⴱⵅⴰ ⵍⵖⵔⴰ,transliterated,Sebkhet El Gharra,yes,yes,,way/31831820,osm_polygon,centre-est,district-3,70.33,10.49196,35.12910,284.93,281.62
+water-w31831861,sebkha,TN-61,TN-61,Sebkhet Boujmel,Sebkhet Boujmel,سبخة بو جمل,ⵙⴱⵅⴰ ⴱⵓ ⵊⵎⵍ,transliterated,Sebkhet Boujmel,yes,yes,,way/31831861,osm_polygon,centre-est,district-4,13.00,10.42284,34.96547,278.90,299.86
+water-w31831896,sebkha,TN-43,TN-43 TN-61,Salt lake,Sebkhet En Noual,سبخة النوال,ⵙⴱⵅⴰ ⵏⵏⵡⴰⵍ,transliterated,Sebkhet En Noual,yes,yes,,way/31831896,osm_polygon,centre-ouest,district-4,151.70,9.73243,34.38009,216.34,365.46
+water-w31832215,sebkha,TN-52,TN-52,Salt Lake et Moknine,Sebkhet et Moknine,سبخة المكنين,ⵙⴱⵅⴰ ⵍⵎⴽⵏⵉⵏ,transliterated,Sebkhet et Moknine,yes,,,way/31832215,osm_polygon,centre-est,district-3,49.54,10.96053,35.56747,326.67,232.25
+water-w32201801,sebkha,TN-61,TN-61,Sabkhet El Jem,Sabkhet El Jem,سبخة الجم,ⵙⴱⵅⴰ ⵍⵊⵎ,transliterated,Sabkhet El Jem,yes,yes,,way/32201801,osm_polygon,centre-est,district-4,23.61,10.79045,35.15825,312.08,277.94
+water-w323053761,sebkha,TN-82,TN-82,Sebkhet Mhabeul,Sebkhet Mhabeul,سبخة مهابول,ⵙⴱⵅⴰ ⵎⵀⴰⴱⵓⵍ,transliterated,Sebkhet Mhabeul,yes,,,way/323053761,osm_polygon,sud-est,district-5,2.73,10.84564,33.41990,320.60,470.64
+water-w37293505,sebkha,TN-61,TN-61,Salt Lake Bou Jemel,Sebkhet Boujmel,سبخة بو جمل,ⵙⴱⵅⴰ ⴱⵓ ⵊⵎⵍ,transliterated,Sebkhet Boujmel,yes,yes,,way/37293505,osm_polygon,centre-est,district-4,4.17,10.21847,35.03611,260.14,292.27
+water-w378469750,sebkha,TN-82,TN-82,Sebkhet Bou Jemel,Sebkhet Bou Jemel,سبخة بو جمل,ⵙⴱⵅⴰ ⴱⵓ ⵊⵎⵍ,transliterated,Sebkhet Bou Jemel,yes,,,way/378469750,osm_polygon,sud-est,district-5,27.19,11.08862,33.27012,343.53,486.82
+water-w49730150,sebkha,TN-12,TN-12,Sebkhet Ariana,Sebkhet Ariana,سبخة أريانة,ⵙⴱⵅⴰ ⴰⵔⵢⴰⵏⴰ,transliterated,Sebkhet Ariana,yes,,Q2742730,way/49730150,osm_polygon,grand-tunis,district-2,21.51,10.23061,36.92039,258.61,83.25
+water-w499550887,reservoir,TN-23,TN-23,Lac de Gamgoum,Lac de Gamgoum,بحيرة قمقوم,ⴱⵃⵉⵔⴰ ⵇⵎⵇⵓⵎ,transliterated,Lake Gamgoum,,,,way/499550887,osm_polygon,nord-est,district-1,1.37,9.28003,37.19929,173.85,52.98
+water-w53309022,sebkha,TN-71,TN-71,Sebkha el Guettar,Sebkha el Guettar,سبخة القطار,ⵙⴱⵅⴰ ⵍⵇⵟⴰⵔ,transliterated,Sebkha el Guettar,yes,yes,,way/53309022,osm_polygon,sud-ouest,district-4,48.06,8.91235,34.30288,140.93,374.26
+water-w53382990,sebkha,TN-22,TN-22,Sebkhet El Kourzia,Sebkhet El Kourzia,سبخة الكورزية,ⵙⴱⵅⴰ ⵍⴽⵓⵔⵣⵢⴰ,transliterated,Sebkhet El Kourzia,yes,yes,,way/53382990,osm_polygon,nord-est,district-2,13.40,9.77196,36.42960,218.20,138.12
+water-w53383003,lake,TN-21,TN-21,Lac Lebna,Lac Lebna,بحيرة لبنة,ⴱⵃⵉⵔⴰ ⵍⴱⵏⴰ,transliterated,Lake Lebna,,,,way/53383003,osm_polygon,nord-est,district-2,5.70,10.90046,36.76128,318.63,99.92
+water-w551247241,chott,TN-72,TN-72,Chott El Rharsa,Chott el-Gharsa,شط الغرسة,ⵛⵟ ⵍⵖⵔⵙⴰ,transliterated,Chott el-Gharsa,yes,yes,Q590855,way/551247241,osm_polygon,sud-ouest,district-4,371.32,7.88914,34.11602,46.55,394.42
+water-w569425627,reservoir,TN-23,TN-23,Lac Oued El Harka,Lac Oued El Harka,بحيرة واد الحركة,ⴱⵃⵉⵔⴰ ⵡⴰⴷ ⵍⵃⵔⴽⴰ,transliterated,Lake Oued El Harka,,no,,way/569425627,osm_polygon,nord-est,district-1,1.86,9.38419,37.20997,183.09,51.77
+water-w774947682,sebkha,TN-83,TN-83,Sebkhet Chemila,Sebkhet Chemila,سبخة شميلة,ⵙⴱⵅⴰ ⵛⵎⵉⵍⴰ,transliterated,Sebkhet Chemila,yes,,,way/774947682,osm_polygon,sud-est,district-5,12.67,10.87554,33.03504,324.15,513.27
+water-w775225282,sebkha,TN-83,TN-83,Sabkhat Umm al-Khayalat,Sabkhat Umm al-Khayalat,سبخة أم الخيالات,ⵙⴱⵅⴰ ⴰⵎ ⵍⵅⵢⴰⵍⴰⵜ,transliterated,Sabkhat Umm al-Khayalat,yes,,Q12215328,way/775225282,osm_polygon,sud-est,district-5,60.63,10.91390,32.80415,328.20,538.80
+water-w777017574,sebkha,TN-83,TN-83,Sebkhet Areg El Makhzene,Sebkhet Areg El Makhzene,سبخة عرق المخزن,ⵙⴱⵅⴰ ⵄⵔⵇ ⵍⵎⵅⵣⵏ,transliterated,Sebkhet Areg El Makhzene,yes,,,way/777017574,osm_polygon,sud-est,district-5,2.89,10.94942,32.94782,331.23,522.81
+water-w878142907,sebkha,TN-51,TN-51,Sabkhet Halk El Menjel,Sabkhet Halk El Menjel,سبخة حلق المنجل,ⵙⴱⵅⴰ ⵃⵍⵇ ⵍⵎⵏⵊⵍ,transliterated,Sabkhet Halk El Menjel,yes,,,way/878142907,osm_polygon,centre-est,district-3,19.43,10.50615,35.98558,284.78,186.60
+water-w93265507,lagoon,TN-13,TN-11 TN-13,South Tunis Lake,Lac Sud de Tunis,بحيرة تونس الجنوبية,ⴱⵃⵉⵔⴰ ⵜⵓⵏⵙ ⵍⵊⵏⵓⴱⵢⴰ,transliterated,South Lake of Tunis,,,,way/93265507,osm_polygon,grand-tunis,district-2,6.98,10.24310,36.79445,259.91,97.21
+water-w99327451,sebkha,TN-51,TN-51,Sebkha El Kalbia,Sebkhet Khedma el Kebira,سبخة الكلبية,ⵙⴱⵅⴰ ⵍⴽⵍⴱⵢⴰ,transliterated,Sebkhet Khedma el Kebira,yes,yes,Q3476954,way/99327451,osm_polygon,centre-est,district-3,120.09,10.26583,35.83817,263.32,203.26

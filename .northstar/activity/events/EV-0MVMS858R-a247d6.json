@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVMS858R-a247d6",
+  "type": "decision.recorded",
+  "at": "2026-10-24T19:18:47.691Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "DEC-007"
+  ],
+  "summary": "Decision DEC-007: Tifinagh names: OSM first, else letter-by-letter transliteration of the Arabic name; English: ASCII Latin name with English generic terms"
+}

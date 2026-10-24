@@ -103,7 +103,8 @@ add up to governorate totals.
 
 ## 7. Attributes
 
-- **Names.** Arabic and French from OSM (`name:ar`, `name:fr`) with prefixes removed (`معتمدية`, `Délégation`…), invisible
+- **Names.** Tifinagh and English transliterations are added at build time; see [section 12](#12-tifinagh-and-english-names).
+  Arabic and French from OSM (`name:ar`, `name:fr`) with prefixes removed (`معتمدية`, `Délégation`…), invisible
   direction marks stripped, and Persian look-alike letters (`ی`, `ک`) normalised to Arabic. English uses `name:en` when it
   exists, otherwise the French spelling, as is customary for Tunisian place names. Governorate, region and district names
   are curated by hand.
@@ -200,7 +201,42 @@ The capital, the governorate capitals and the municipal seats ship as a point la
 There is no population threshold: OSM `population` tags exist for few nodes and come from different years. The build draws
 the points over the land and the governorate borders of each level of detail, and places labels around the dots.
 
-## 12. Validation
+## 12. Tifinagh and English names
+
+The `labeled-tfng` and `labeled-en` modes, and the `name_tfng`, `name_tfng_source` and `name_translit` columns of every
+attribute table, add two more ways to write each name. Neither invents a name.
+
+**Tifinagh.** `scripts/extract/tifinagh.py` reads the OSM object of every published unit (the country and governorate
+relations by their ISO codes, the other units by the OSM id in their attribute table) and keeps the first of `name:zgh`,
+`name:zgh-Tfng`, `name:ber`, `name:ber-Tfng`, `name:tzm`, `name:tzm-Tfng`, `name:shi-Tfng`, `name:kab-Tfng` written in
+Tifinagh only. They go to `data/source/tifinagh-names.json` (ODbL, like the rest of the OSM data). In the 2026-10-16 extract
+that is 11 names: the country (ⵜⵓⵏⵙ) and 10 cities, among them Tunis (ⵜⵓⵏⴻⵙ), Kairouan (ⵜⴰⴽⴻⵔⵡⴰⵏⵜ) and Tataouine
+(ⵜⵉⵟⵟⴰⵡⵉⵏ). Tunisia has no official Tifinagh nomenclature, so every other unit gets its Arabic name transliterated letter by
+letter into Neo-Tifinagh by `scripts/build/names.js`, with the IRCAM letters (U+2D30–U+2D7F):
+
+- consonants one to one (ب ⴱ, ت ⵜ, ج ⵊ, ح ⵃ, خ ⵅ, د ⴷ, ر ⵔ, ز ⵣ, س ⵙ, ش ⵛ, ص ⵚ, ض ⴹ, ط ⵟ, ع ⵄ, غ ⵖ, ف ⴼ, ق ⵇ, ك ⴽ, ل ⵍ,
+  م ⵎ, ن ⵏ, ه ⵀ; the Tunisian ڨ/ڤ is ⴳ), with ث ⵜ, ذ ⴷ and ظ ⴹ as in Maghrebi pronunciation;
+- the vowel letters ا آ أ ى and the ending ة are ⴰ, إ and ئ are ⵉ, ؤ is ⵓ; hamza alone is dropped;
+- و and ي are consonants (ⵡ, ⵢ) at the start of a word, after a vowel, before a vowel or before another glide, and long
+  vowels (ⵓ, ⵉ) otherwise: تونس → ⵜⵓⵏⵙ, تطاوين → ⵜⵟⴰⵡⵉⵏ, سليانة → ⵙⵍⵢⴰⵏⴰ;
+- the article ال is ⵍ, and assimilates to a following sun letter as it is pronounced: القيروان → ⵍⵇⵉⵔⵡⴰⵏ, الطارف → ⵟⵟⴰⵔⴼ;
+- a shadda doubles its letter; short vowels are written only where the Arabic name carries them, as IRCAM spelling leaves
+  out the schwa. Digits and punctuation are kept.
+
+The rule reproduces the OSM names where both exist and the OSM name follows IRCAM spelling (تونس → ⵜⵓⵏⵙ, سوسة → ⵙⵓⵙⴰ,
+توزر → ⵜⵓⵣⵔ). It writes Arabic names in Tifinagh letters; it does not give their Tamazight form (Tataouine is ⵜⵉⵟⵟⴰⵡⵉⵏ in
+OSM, ⵜⵟⴰⵡⵉⵏ by the rule). `name_tfng_source` tells the two apart. The 5 water bodies with no Arabic name get no
+`name_tfng`; their `labeled-tfng` label falls back to the Latin name, as `labeled-ar` does.
+
+**English.** `name_translit` is the English transliteration: the English name for the country, regions, districts and
+governorates (curated, e.g. *Greater Tunis*, *District 1*, *Kef*), else the Latin name the `labeled` mode shows, with the
+French generic terms of water bodies in English word order (*Lac de X* → *Lake X*, *Lagune de X* → *X Lagoon*,
+*Barrage de X* → *X Dam*) and every accent, ligature and typographic quote resolved to plain ASCII (*Gabès* → *Gabes*,
+*Djedaïda* → *Djedaida*). Place names keep the Latin spelling used in Tunisia and in English-language sources (*Sousse*,
+*Djerba*), rather than a respelling that no map or road sign uses. The two units with no Latin name at all
+(`water-w22741868`, `city-n12635329133`) get no `name_translit`; their labels fall back like those of `labeled`.
+
+## 13. Validation
 
 `npm test` checks, among other things:
 
@@ -218,6 +254,9 @@ the points over the land and the governorate borders of each level of detail, an
 - cities: counts per type, Tunis as the national capital, one capital per governorate lying inside it (point in polygon on
   the full-precision borders) and named as in `governorates.csv`, ids tied to their OSM node, one seat per municipality,
   `x`/`y` equal to `project()`, GeoJSON and TopoJSON points at every level, and every capital labelled in the labelled SVGs;
+- Tifinagh and English names: the transliteration rule on reference names, OSM Tifinagh names in Tifinagh only and tied to
+  published units, `name_tfng` in Tifinagh script and equal to the rule wherever OSM has none, `name_translit` in plain
+  ASCII, and the `labeled-tfng` and `labeled-en` labels equal to the attribute tables;
 - every SVG of the matrix exists, is valid XML, shares the frame, credits OSM and the author, has one path (or dot) per unit and
   one label per polygon unit, contains no scripts or external references, and fits its size budget;
 - the projection helper matches PROJ to 1 mm.

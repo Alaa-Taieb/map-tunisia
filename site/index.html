@@ -133,7 +133,7 @@ const PARTS = [
   ['cities', 'Cities', 'Tunis, the 24 governorate capitals and 260 municipal seats — points from OSM.'],
 ];
 const LODS = { full: 'Original OSM precision', high: '≈ 20 m tolerance', medium: '≈ 100 m — web default', low: '≈ 500 m — small embeds', tiny: '≈ 2.5 km — icons' };
-const MODES = { plain: 'Neutral, ready for your CSS', outline: 'Strokes only', light: 'Colourful fills', dark: 'For dark UIs', labeled: 'Latin names', 'labeled-ar': 'Arabic names', nested: 'Parent borders', interactive: 'Hover + tooltips, no JS' };
+const MODES = { plain: 'Neutral, ready for your CSS', outline: 'Strokes only', light: 'Colourful fills', dark: 'For dark UIs', labeled: 'Latin names', 'labeled-ar': 'Arabic names', 'labeled-tfng': 'Tifinagh names', 'labeled-en': 'English names', nested: 'Parent borders', interactive: 'Hover + tooltips, no JS' };
 
 const state = { partition: 'governorates', lod: 'medium', mode: 'light' };
 const dataCache = {};
@@ -196,7 +196,7 @@ async function render() {
   const show = (el) => {
     const d = byId[el.id] || {};
     const rows = [
-      ['ID', el.id], ['Type', d.type], ['English', d.name_en], ['French', d.name_fr], ['ISO 3166-2', d.iso_3166_2], ['INS code', d.ins_code], ['HASC', d.hasc],
+      ['ID', el.id], ['Type', d.type], ['English', d.name_en], ['French', d.name_fr], ['Tifinagh', d.name_tfng], ['English (ASCII)', d.name_translit], ['ISO 3166-2', d.iso_3166_2], ['INS code', d.ins_code], ['HASC', d.hasc],
       ['Delegation', d.delegation], ['Governorate', d.governorate], ['Region', d.region], ['District', d.district],
       ['Population 2024', d.population_2024 ? fmt(d.population_2024) : ''], ['Population 2014', d.population_2014 ? fmt(d.population_2014) : ''],
       ['Area', d.area_km2 ? `${fmt(Math.round(d.area_km2))} km²` : ''],
