@@ -5,7 +5,8 @@
  *   node scripts/build/build.js [--only governorates,delegations] [--lods medium,low]
  *
  * For each partition: dissolve the nested sector layer at full precision (municipalities,
- * which do not nest, and the water overlay come from their own source layers drawn over the land),
+ * which do not nest, and the water overlay come from their own source layers drawn over the land;
+ * the cities are points, drawn over the land and the governorate borders),
  * project to UTM 32N, simplify per level of detail (topology-aware, mapshaper),
  * then write SVG (all modes), GeoJSON + TopoJSON (WGS84) and attribute tables.
  */
@@ -13,10 +14,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import mapshaper from 'mapshaper';
 import polylabel from 'polylabel';
-import { LODS, PARTITIONS, MODES, PROJ4, CRS, PROJECT, FRAME_PADDING_KM, modesFor, fileName, PALETTES, WATER_TYPES } from './config.js';
+import { LODS, PARTITIONS, MODES, PROJ4, CRS, PROJECT, FRAME_PADDING_KM, modesFor, fileName, PALETTES, WATER_TYPES, CITY_TYPES, CITY_STYLE } from './config.js';
 import { ROOT, readCSV, toCSV, writeFile, polygonsOf, polygonArea, ringArea, formatBytes } from './lib.js';
-import { renderSVG } from './svg.js';
-import { fromUTM } from '../../src/utm.js';
+import { renderSVG, renderPointSVG } from './svg.js';
+import { fromUTM, toUTM } from '../../src/utm.js';
 
 const args = process.argv.slice(2);
 const opt = (name) => {
@@ -40,9 +41,10 @@ const delRows = A('delegations.csv');
 const secRows = A('sectors.csv');
 const munRows = A('municipalities.csv');
 const waterRows = A('water.csv');
+const cityRows = A('cities.csv');
 const byId = (rows) => Object.fromEntries(rows.map((r) => [r.id, r]));
 const GOV = byId(govRows), REG = byId(regionRows), DIS = byId(districtRows), DEL = byId(delRows), SEC = byId(secRows), MUN = byId(munRows);
-const WAT = byId(waterRows);
+const WAT = byId(waterRows), CIT = byId(cityRows);
 
 const sumPop = (ids, year) => ids.reduce((s, g) => s + Number(GOV[g][`population_${year}`]), 0);
 const ALL_GOVS = govRows.map((g) => g.id);
@@ -82,6 +84,11 @@ function attributes(partition, id) {
       const w = WAT[id];
       const g = GOV[w.governorate];
       return { ...w, region: g.region, district: g.district };
+    }
+    case 'cities': {
+      const c = CIT[id];
+      const g = GOV[c.governorate];
+      return { ...c, region: g.region, district: g.district };
     }
   }
   throw new Error(partition);
@@ -314,6 +321,135 @@ function layoutLabels(partition, labels, geoms) {
   return labels;
 }
 
+// ------------------------------------------------------------------ point layers (cities)
+const PLACE_RANK = ['city', 'town', 'village', 'suburb', 'quarter', 'neighbourhood'];
+
+/**
+ * Greedy point-label layout, capitals first, then cities by OSM place rank. Each label tries eight positions around
+ * its dot (right, left, above, below, then the diagonals) and takes the first that overlaps no dot and no label.
+ * A capital then tries the same positions twice and three times as far, with a leader line, and as a last resort
+ * keeps the right-hand one; another city goes unlabelled.
+ */
+function layoutPointLabels(points, script, lodId) {
+  const placed = points.map((u) => {
+    const r = CITY_STYLE[u.attrs.type].r;
+    return [u.x - r, u.y - r, u.x + r, u.y + r];
+  });
+  const labels = {};
+  for (const u of points) {
+    const style = CITY_STYLE[u.attrs.type];
+    if (!style.lods.includes(lodId)) continue;
+    const text = script === 'arabic' ? u.attrs.name_ar || u.attrs.name_fr : u.attrs.name_fr || u.attrs.name_en;
+    if (!text) continue;
+    const size = style.label;
+    const w = size * CHAR_W[script] * [...text].length, h = size * 1.15;
+    const spots = [];
+    // Capitals may move out to three times the distance, with a leader line back to the dot; other cities stay next to theirs.
+    for (const k of u.attrs.type === 'city' ? [1] : [1, 2, 3]) {
+      const g = (style.r + size * 0.25) * k;
+      const d = g * Math.SQRT1_2;
+      spots.push(
+        [u.x + g + w / 2, u.y], [u.x - g - w / 2, u.y], [u.x, u.y - g - h / 2], [u.x, u.y + g + h / 2],
+        [u.x + d + w / 2, u.y - d - h / 2], [u.x - d - w / 2, u.y - d - h / 2], [u.x + d + w / 2, u.y + d + h / 2], [u.x - d - w / 2, u.y + d + h / 2],
+      );
+    }
+    const box = ([x, y]) => [x - w / 2, y - h / 2, x + w / 2, y + h / 2];
+    const inFrame = (b) => b[0] >= 0 && b[1] >= 0 && b[2] <= FRAME.width && b[3] <= FRAME.height;
+    let i = spots.findIndex((s) => inFrame(box(s)) && !placed.some((p) => hit(box(s), p, 0)));
+    if (i < 0 && u.attrs.type === 'city') continue;
+    if (i < 0) i = 0;
+    const at = spots[i];
+    placed.push(box(at));
+    labels[u.id] = { x: at[0], y: at[1], size, text, w, h, leader: i >= 8 };
+  }
+  return labels;
+}
+
+/** Build a point layer: attribute table, SVG (land and governorate borders underneath), GeoJSON and TopoJSON per level of detail. */
+async function buildPoints(partition) {
+  const t0 = Date.now();
+  const key = partition.key;
+  const fc = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/tunisia-cities.geojson'), 'utf8'));
+  const ids = new Set(fc.features.map((f) => f.properties[key]));
+  for (const f of fc.features) {
+    const c = CIT[f.properties[key]];
+    if (!c) throw new Error(`unknown ${key} ${f.properties[key]}`);
+    if (!GOV[c.governorate] || f.properties.governorate !== c.governorate) throw new Error(`${c.id}: governorate ${f.properties.governorate}`);
+    if (!CITY_TYPES.includes(c.type)) throw new Error(`${c.id}: type ${c.type}`);
+  }
+  for (const r of cityRows) if (!ids.has(r.id)) throw new Error(`${r.id} is in cities.csv but not in tunisia-cities.geojson`);
+
+  // Drawing order: other cities, then governorate capitals, the national capital last (on top).
+  const order = (a, b) => CITY_TYPES.indexOf(b.type) - CITY_TYPES.indexOf(a.type) || (a.id < b.id ? -1 : 1);
+  const points = cityRows.map((r) => attributes(partition.id, r.id)).sort(order).map((at) => {
+    const [E, N] = toUTM([Number(at.lon), Number(at.lat)]);
+    return { id: at.id, attrs: at, x: E / 1000 - FRAME.x0, y: FRAME.y0 - N / 1000 };
+  });
+  const priority = [...points].sort((a, b) => CITY_TYPES.indexOf(a.attrs.type) - CITY_TYPES.indexOf(b.attrs.type) ||
+    PLACE_RANK.indexOf(a.attrs.place) - PLACE_RANK.indexOf(b.attrs.place) || (a.id < b.id ? -1 : 1));
+
+  // ---- attribute table
+  const rows = points.map((u) => ({ ...u.attrs, x: u.x.toFixed(3), y: u.y.toFixed(3) })).sort((a, b) => (a.id < b.id ? -1 : 1));
+  const columns = ['id', 'type', 'capital_of', 'governorate', 'region', 'district', 'delegation', 'sector', 'municipality', 'name_en', 'name_fr', 'name_ar',
+    'lon', 'lat', 'x', 'y', 'place', 'seat_source', 'wikidata', 'osm'];
+  writeFile(path.join(DIST, 'data', `${partition.id}.csv`), toCSV(rows, columns));
+  writeFile(path.join(DIST, 'data', `${partition.id}.json`), JSON.stringify(rows.map((r) => Object.fromEntries(columns.map((c) => [c, r[c]]))), null, 1) + '\n');
+  const pinfo = { id: partition.id, title: partition.title, count: rows.length, lods: [] };
+
+  // ---- the land and the governorate borders underneath, simplified like the other layers
+  const base = (await ms(`-i src.json name=units -dissolve governorate copy-fields=country -proj ${PROJ4} -o base.json format=geojson geojson-type=FeatureCollection precision=0.001`, { 'src.json': SRC }))['base.json'];
+  for (const lod of LODS.filter((l) => partition.lods.includes(l.id))) {
+    if (ONLY_LODS && !ONLY_LODS.includes(lod.id)) continue;
+    const o = 'format=geojson geojson-type=FeatureCollection precision=0.001';
+    let cmd = `-i base.json name=units -innerlines target=units + name=borders -dissolve country target=units + name=land `;
+    if (lod.interval) cmd += `-simplify target=units interval=${lod.interval} keep-shapes planar `;
+    cmd += `-o target=borders borders.json ${o} -o target=land land.json ${o}`;
+    const out = await ms(cmd, { 'base.json': base });
+    const land = toFrame(dropIslands(JSON.parse(out['land.json']).features[0].geometry, lod.minIsland));
+    const borders = JSON.parse(out['borders.json']).features.map((f) => toFrame(f.geometry));
+    const latin = layoutPointLabels(priority, 'latin', lod.id);
+    const arabic = layoutPointLabels(priority, 'arabic', lod.id);
+    const drawn = points.map((u) => ({ ...u, label: latin[u.id], labelAr: arabic[u.id] }));
+    const lodInfo = { id: lod.id, files: [] };
+
+    for (const mode of modesFor(partition, lod.id)) {
+      const svg = renderPointSVG({ partition, lod, mode: mode.id, frame: FRAME, points: drawn, land, borders, source: SOURCE });
+      const rel = `svg/${partition.id}/${fileName(partition.id, lod.id, mode.id)}`;
+      writeFile(path.join(DIST, rel), svg);
+      const bytes = Buffer.byteLength(svg);
+      totals.svg += bytes;
+      manifest.files.push({ path: `dist/${rel}`, type: 'svg', partition: partition.id, lod: lod.id, mode: mode.id, bytes });
+      lodInfo.files.push(rel);
+    }
+
+    // GeoJSON / TopoJSON points in WGS84, rounded like the polygons of the same level of detail.
+    const decimals = lod.id === 'full' ? 7 : lod.id === 'high' ? 6 : 5;
+    const r = (v) => Math.round(Number(v) * 10 ** decimals) / 10 ** decimals;
+    const features = rows.map((row) => {
+      const props = Object.fromEntries(columns.filter((c) => !['lon', 'lat', 'x', 'y'].includes(c)).map((c) => [c, row[c]]));
+      return { type: 'Feature', id: row.id, properties: props, geometry: { type: 'Point', coordinates: [r(row.lon), r(row.lat)] } };
+    });
+    const gj = { type: 'FeatureCollection', name: `tunisia-${partition.id}-${lod.id}`, crs_note: 'WGS84 (EPSG:4326)', attribution: `${PROJECT.attribution} (ODbL). ${PROJECT.repo}`, features };
+    const gjText = JSON.stringify(gj);
+    const gjRel = `geojson/tunisia-${partition.id}-${lod.id}.geojson`;
+    writeFile(path.join(DIST, gjRel), gjText);
+    totals.geojson += gjText.length;
+    manifest.files.push({ path: `dist/${gjRel}`, type: 'geojson', partition: partition.id, lod: lod.id, bytes: Buffer.byteLength(gjText) });
+
+    const q = lod.id === 'full' ? 1e6 : 1e5;
+    const tjText = (await ms(`-i in.json name=${partition.id} -o out.topojson format=topojson quantization=${q} id-field=id`, { 'in.json': gjText }))['out.topojson'];
+    const tjRel = `topojson/tunisia-${partition.id}-${lod.id}.topojson`;
+    writeFile(path.join(DIST, tjRel), tjText);
+    totals.topojson += tjText.length;
+    manifest.files.push({ path: `dist/${tjRel}`, type: 'topojson', partition: partition.id, lod: lod.id, bytes: Buffer.byteLength(tjText) });
+    pinfo.lods.push(lodInfo);
+  }
+  manifest.partitions.push(pinfo);
+  const labelled = Object.keys(layoutPointLabels(priority, 'latin', 'medium')).length;
+  console.log(`${partition.id}: ${rows.length} points, ${labelled} labelled at medium`);
+  console.log(`  done in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
+}
+
 // ------------------------------------------------------------------ main loop
 const manifest = { name: PROJECT.name, version: pkg.version, osm_date: SOURCE.osm_date, crs: CRS, frame: FRAME, partitions: [], files: [] };
 const totals = { svg: 0, geojson: 0, topojson: 0 };
@@ -324,6 +460,10 @@ fs.rmSync(path.join(DIST, 'topojson'), { recursive: true, force: true });
 
 for (const partition of PARTITIONS) {
   if (ONLY && !ONLY.includes(partition.id)) continue;
+  if (partition.points) {
+    await buildPoints(partition);
+    continue;
+  }
   const t0 = Date.now();
   const key = partition.key;
   const copy = ['delegation', 'governorate', 'region', 'district', 'country'].filter((f) => f !== key && levelBelow(f, key));

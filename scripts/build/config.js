@@ -130,10 +130,37 @@ export const PARTITIONS = [
     lods: ['full', 'high', 'medium', 'low'],
     labelSize: [1.1, 6],
   },
+  {
+    // Points, not polygons: the national capital, the governorate capitals and the seats of the municipalities
+    // (scripts/extract/cities.py), drawn over the land with the governorate borders for context. An overlay like water.
+    id: 'cities',
+    key: 'city',
+    singular: 'city',
+    title: 'Cities',
+    titleAr: 'المدن',
+    parents: [],
+    source: 'cities',
+    points: true,
+    base: true,
+    baseTitle: 'Land',
+    colourBy: 'type',
+    lods: ['full', 'high', 'medium', 'low'],
+  },
 ];
 
 /** Water body types, in palette order (`colourBy: 'type'`). */
 export const WATER_TYPES = ['lake', 'reservoir', 'lagoon', 'sebkha', 'chott'];
+
+/**
+ * City types, in palette and drawing order. `r` is the dot radius and `label` the font size (km = SVG units);
+ * `lods` lists the levels of detail whose labelled maps name this type (the low level names the capitals only).
+ */
+export const CITY_TYPES = ['national_capital', 'governorate_capital', 'city'];
+export const CITY_STYLE = {
+  national_capital: { r: 2.8, label: 9, lods: ['full', 'high', 'medium', 'low'] },
+  governorate_capital: { r: 1.8, label: 6, lods: ['full', 'high', 'medium', 'low'] },
+  city: { r: 0.9, label: 3.2, lods: ['full', 'high', 'medium'] },
+};
 
 /** Visual modes. `lods` restricts a mode to some levels of detail (default: all except full). */
 export const MODES = [
@@ -162,6 +189,12 @@ export function modesFor(partition, lod) {
 export const PALETTES = {
   light: ['#8ecae6', '#a8d5a2', '#f2cc8f', '#e9a28b', '#b8b3e9', '#f6e7a1', '#9fd8cb', '#f4b6c2'],
   dark: ['#2a5a8c', '#1f6e6e', '#46539a', '#64478a', '#2f6e4b', '#8a4466', '#7a6430', '#3c6585'],
+};
+
+/** City palettes, indexed like CITY_TYPES: red for the capital, deep blue for governorate capitals, slate for other cities. */
+export const CITY_PALETTES = {
+  light: ['#c0392b', '#1f4e79', '#52606d'],
+  dark: ['#ff6b6b', '#8ecae6', '#cbd2d9'],
 };
 
 /** Water palettes, indexed like WATER_TYPES: blues for open water, salt-flat sand for sebkhas and chotts. */

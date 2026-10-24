@@ -419,6 +419,50 @@
      ]
     }
    ]
+  },
+  {
+   "id": "cities",
+   "title": "Cities",
+   "count": 284,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/cities/tunisia-cities-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/cities/tunisia-cities-high-plain.svg",
+      "svg/cities/tunisia-cities-high-outline.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/cities/tunisia-cities-medium-plain.svg",
+      "svg/cities/tunisia-cities-medium-outline.svg",
+      "svg/cities/tunisia-cities-medium-light.svg",
+      "svg/cities/tunisia-cities-medium-dark.svg",
+      "svg/cities/tunisia-cities-medium-labeled.svg",
+      "svg/cities/tunisia-cities-medium-labeled-ar.svg",
+      "svg/cities/tunisia-cities-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/cities/tunisia-cities-low-plain.svg",
+      "svg/cities/tunisia-cities-low-outline.svg",
+      "svg/cities/tunisia-cities-low-light.svg",
+      "svg/cities/tunisia-cities-low-dark.svg",
+      "svg/cities/tunisia-cities-low-labeled.svg",
+      "svg/cities/tunisia-cities-low-labeled-ar.svg",
+      "svg/cities/tunisia-cities-low-interactive.svg"
+     ]
+    }
+   ]
   }
  ],
  "files": [
@@ -2317,6 +2361,198 @@
    "partition": "water",
    "lod": "low",
    "bytes": 41911
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-full-plain.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 1254702
+  },
+  {
+   "path": "dist/geojson/tunisia-cities-full.geojson",
+   "type": "geojson",
+   "partition": "cities",
+   "lod": "full",
+   "bytes": 140340
+  },
+  {
+   "path": "dist/topojson/tunisia-cities-full.topojson",
+   "type": "topojson",
+   "partition": "cities",
+   "lod": "full",
+   "bytes": 136763
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-high-plain.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 424827
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-high-outline.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 586816
+  },
+  {
+   "path": "dist/geojson/tunisia-cities-high.geojson",
+   "type": "geojson",
+   "partition": "cities",
+   "lod": "high",
+   "bytes": 139790
+  },
+  {
+   "path": "dist/topojson/tunisia-cities-high.topojson",
+   "type": "topojson",
+   "partition": "cities",
+   "lod": "high",
+   "bytes": 136186
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-medium-plain.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 232411
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-medium-outline.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 269108
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-medium-light.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 233304
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-medium-dark.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 233376
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-medium-labeled.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 258623
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 261319
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-medium-interactive.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 233460
+  },
+  {
+   "path": "dist/geojson/tunisia-cities-medium.geojson",
+   "type": "geojson",
+   "partition": "cities",
+   "lod": "medium",
+   "bytes": 139238
+  },
+  {
+   "path": "dist/topojson/tunisia-cities-medium.topojson",
+   "type": "topojson",
+   "partition": "cities",
+   "lod": "medium",
+   "bytes": 136183
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-low-plain.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 168485
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-low-outline.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 175472
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-low-light.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 169378
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-low-dark.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 169450
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-low-labeled.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 172385
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 172570
+  },
+  {
+   "path": "dist/svg/cities/tunisia-cities-low-interactive.svg",
+   "type": "svg",
+   "partition": "cities",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 169534
+  },
+  {
+   "path": "dist/geojson/tunisia-cities-low.geojson",
+   "type": "geojson",
+   "partition": "cities",
+   "lod": "low",
+   "bytes": 139235
+  },
+  {
+   "path": "dist/topojson/tunisia-cities-low.topojson",
+   "type": "topojson",
+   "partition": "cities",
+   "lod": "low",
+   "bytes": 136183
   }
  ]
 }

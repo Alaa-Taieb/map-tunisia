@@ -43,16 +43,18 @@ for (const { p, lod, mode } of expected) {
     assert.ok(svg.includes('<title id="map-title">') && svg.includes('<desc id="map-desc">'), 'accessible title/desc');
     assert.ok(svg.includes('OpenStreetMap contributors'), 'attribution');
     assert.ok(svg.includes('Alaa Taieb'), 'author credit');
-    const units = [...svg.matchAll(/<path id="([^"]+)" class="unit /g)].map((m) => m[1]);
+    const units = [...svg.matchAll(/<(?:path|circle) id="([^"]+)" class="unit /g)].map((m) => m[1]);
     assert.equal(units.length, count(p.id), 'one path per unit');
     assert.equal(new Set(units).size, units.length, 'unique ids');
     assert.ok(!/ d=""/.test(svg), 'no empty paths');
     assert.ok(!/<script|\son[a-z]+=|href=|<foreignObject/i.test(svg), 'no script, event handlers or external references');
     if (mode.startsWith('labeled')) {
-      const labels = (svg.match(/<text class="label"/g) || []).length;
-      assert.equal(labels, units.length, 'one label per unit');
+      const labels = (svg.match(/<text class="label[ "]/g) || []).length;
+      // Point layers label what fits (every capital always); polygon layers label every unit.
+      if (p.points) assert.ok(labels >= 24 && labels <= units.length, `${labels} labels`);
+      else assert.equal(labels, units.length, 'one label per unit');
     }
-    if (mode === 'labeled-ar') assert.match(svg, /<text class="label"[^>]*>\p{Script=Arabic}/u);
+    if (mode === 'labeled-ar') assert.match(svg, /<text class="label[^"]*"[^>]*>\p{Script=Arabic}/u);
     assert.ok(fs.statSync(file).size < BUDGET[lod], `size budget for ${lod}`);
   });
 }

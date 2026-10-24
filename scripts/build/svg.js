@@ -1,8 +1,8 @@
 /** SVG writer: semantic, accessible, compact markup for every mode. */
 import { escapeXML, polygonsOf } from './lib.js';
-import { PALETTES, WATER_PALETTES, PROJECT, CRS, PROJ4 } from './config.js';
+import { PALETTES, WATER_PALETTES, CITY_PALETTES, CITY_TYPES, CITY_STYLE, PROJECT, CRS, PROJ4 } from './config.js';
 
-const STROKE = { country: 1.2, regions: 1, districts: 1, governorates: 0.8, delegations: 0.5, sectors: 0.3, municipalities: 0.5, water: 0.5 };
+const STROKE = { country: 1.2, regions: 1, districts: 1, governorates: 0.8, delegations: 0.5, sectors: 0.3, municipalities: 0.5, water: 0.5, cities: 0.6 };
 
 /** Format an integer number of 10^-p units as the shortest decimal string. */
 function fmt(k, p) {
@@ -131,25 +131,13 @@ const DATA_FIELDS = {
   municipalities: [['governorate', 'governorate'], ['region', 'region'], ['district', 'district'], ['osm', 'osm_relation'], ['wikidata', 'wikidata']],
   water: [['type', 'type'], ['governorate', 'governorate'], ['governorates', 'governorates'], ['region', 'region'], ['district', 'district'],
     ['salt', 'salt'], ['intermittent', 'intermittent'], ['osm', 'osm'], ['wikidata', 'wikidata']],
+  cities: [['type', 'type'], ['governorate', 'governorate'], ['region', 'region'], ['district', 'district'], ['delegation', 'delegation'],
+    ['municipality', 'municipality'], ['capital-of', 'capital_of'], ['lon', 'lon'], ['lat', 'lat'], ['place', 'place'], ['osm', 'osm'], ['wikidata', 'wikidata']],
 };
 
-/**
- * Render one SVG document.
- * @param {object} o
- * @param {object} o.partition   partition config
- * @param {object} o.lod         LOD config
- * @param {string} o.mode        mode id
- * @param {object} o.frame       {x0,y0,width,height}
- * @param {Array}  o.units       [{id, attrs, geometry(frame km), color, label:{x,y,size}}]
- * @param {Array}  o.borders     [{level, geometry}] (nested mode)
- * @param {object} o.outline     country geometry (frame km) for outline/nested
- * @param {object} [o.base]      land geometry (frame km) drawn under the units (municipalities, water)
- * @param {object} o.source      {osm_date}
- */
-export function renderSVG({ partition, lod, mode, frame, units, borders = [], outline, base, source }) {
-  const p = lod.precision;
+/** XML prolog, root element, title, description, metadata, style and (dark mode) background shared by every SVG. */
+function head({ partition, lod, mode, frame, count, source, style }) {
   const W = frame.width, H = frame.height;
-  const count = units.length;
   const title = `Map of Tunisia — ${partition.title}${count > 1 ? ` (${count})` : ''}`;
   const desc =
     `${partition.title} of Tunisia, ${lod.id} level of detail, ${mode} mode. ` +
@@ -184,8 +172,28 @@ export function renderSVG({ partition, lod, mode, frame, units, borders = [], ou
   out.push(`<title id="map-title">${escapeXML(title)}</title>`);
   out.push(`<desc id="map-desc">${escapeXML(desc)}</desc>`);
   out.push(`<metadata id="map-tunisia-metadata">${escapeXML(JSON.stringify(meta))}</metadata>`);
-  out.push(`<style>${css(mode, partition)}</style>`);
+  out.push(`<style>${style}</style>`);
   if (mode === 'dark') out.push(`<rect class="bg" x="0" y="0" width="${W}" height="${H}"/>`);
+
+  return out;
+}
+
+/**
+ * Render one SVG document.
+ * @param {object} o
+ * @param {object} o.partition   partition config
+ * @param {object} o.lod         LOD config
+ * @param {string} o.mode        mode id
+ * @param {object} o.frame       {x0,y0,width,height}
+ * @param {Array}  o.units       [{id, attrs, geometry(frame km), color, label:{x,y,size}}]
+ * @param {Array}  o.borders     [{level, geometry}] (nested mode)
+ * @param {object} o.outline     country geometry (frame km) for outline/nested
+ * @param {object} [o.base]      land geometry (frame km) drawn under the units (municipalities, water)
+ * @param {object} o.source      {osm_date}
+ */
+export function renderSVG({ partition, lod, mode, frame, units, borders = [], outline, base, source }) {
+  const p = lod.precision;
+  const out = head({ partition, lod, mode, frame, count: units.length, source, style: css(mode, partition) });
 
   if (base) {
     const title = partition.baseTitle || `Not part of any ${partition.singular} in OpenStreetMap`;
@@ -239,6 +247,101 @@ export function renderSVG({ partition, lod, mode, frame, units, borders = [], ou
       );
     }
     out.push(...leaders, ...texts);
+    out.push('</g>');
+  }
+  out.push('</svg>');
+  return out.join('\n') + '\n';
+}
+
+/** Styles of the cities layer: land and governorate borders underneath, one dot per city coloured by type. */
+function pointCSS(mode) {
+  const w = STROKE.cities;
+  const types = (p) => p.map((c, i) => `.c${i}{fill:${c}}`).join('');
+  const label = (fill, halo, family) =>
+    `.label{font-family:${family};font-weight:600;fill:${fill};stroke:${halo};stroke-width:.24em;stroke-linejoin:round;paint-order:stroke fill;text-anchor:middle}` +
+    `.l0{font-weight:700}.leader{fill:none;stroke:#52606d;stroke-width:.6px;vector-effect:non-scaling-stroke}`;
+  const base =
+    `svg{shape-rendering:geometricPrecision}.unit{vector-effect:non-scaling-stroke;stroke-width:${w}px}` +
+    `.border{fill:none;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;stroke-width:.5px}`;
+  switch (mode) {
+    case 'plain':
+      return `${base}.base{fill:#e3e7ec;stroke:none}.border{stroke:#fff}.unit{fill:#3e4c59;stroke:#fff}`;
+    case 'outline':
+      return `${base}.base{fill:none;stroke:none}.border{stroke:#7b8794}.unit{fill:none;stroke:#1f2933}` +
+        `.outline{fill:none;stroke:#1f2933;stroke-width:1px;vector-effect:non-scaling-stroke;stroke-linejoin:round}`;
+    case 'light':
+      return `${base}.base{fill:#eef1f5;stroke:none}.border{stroke:#c3cad3}.unit{stroke:#fff}${types(CITY_PALETTES.light)}`;
+    case 'dark':
+      return `${base}.bg{fill:#0b1220}.base{fill:#1a2433;stroke:none}.border{stroke:#3e4c59}.unit{stroke:#0b1220}${types(CITY_PALETTES.dark)}`;
+    case 'labeled':
+      return `${base}.base{fill:#eef1f5;stroke:none}.border{stroke:#c3cad3}.unit{stroke:#fff}${types(CITY_PALETTES.light)}${label('#1f2933', '#fff', FONT_LATIN)}`;
+    case 'labeled-ar':
+      return `${base}.base{fill:#eef1f5;stroke:none}.border{stroke:#c3cad3}.unit{stroke:#fff}${types(CITY_PALETTES.light)}` +
+        `${label('#1f2933', '#fff', FONT_ARABIC)}.label{direction:rtl;unicode-bidi:embed}`;
+    case 'interactive':
+      return (
+        `${base}.base{fill:#eef1f5;stroke:none}.border{stroke:#c3cad3}.unit{stroke:#fff;cursor:pointer;transition:fill .15s ease,opacity .15s ease}` +
+        `${types(CITY_PALETTES.light)}.units:hover .unit{opacity:.45}.units .unit:hover{fill:#e63946;opacity:1}`
+      );
+    default:
+      throw new Error(`unknown mode ${mode}`);
+  }
+}
+
+/**
+ * Render one SVG of a point layer (cities).
+ * @param {object} o
+ * @param {Array}  o.points   [{id, attrs, x, y (frame km), label, labelAr}] — drawn in this order (capital last, on top)
+ * @param {object} o.land     land geometry (frame km)
+ * @param {Array}  o.borders  governorate borders (frame km line geometries)
+ */
+export function renderPointSVG({ partition, lod, mode, frame, points, land, borders, source }) {
+  const p = lod.precision;
+  const out = head({ partition, lod, mode, frame, count: points.length, source, style: pointCSS(mode) });
+  out.push(`<path id="${partition.id}-base" class="base" fill-rule="evenodd" d="${pathData(land, p)}"><title>${escapeXML(partition.baseTitle)}</title></path>`);
+  out.push('<g id="borders" aria-hidden="true">');
+  for (const b of borders) {
+    const d = linePathData(b, p);
+    if (d) out.push(`<path class="border b-governorate" d="${d}"/>`);
+  }
+  out.push('</g>');
+  if (mode === 'outline') out.push(`<path class="outline" aria-hidden="true" fill-rule="evenodd" d="${pathData(land, p)}"/>`);
+
+  const colored = mode !== 'plain' && mode !== 'outline';
+  const q = Math.max(p, 2);
+  out.push(`<g id="${partition.id}" class="units">`);
+  for (const u of points) {
+    const t = CITY_TYPES.indexOf(u.attrs.type);
+    const attrs = [`id="${escapeXML(u.id)}"`, `class="unit ${partition.singular} ${u.attrs.type}${colored ? ` c${t}` : ''}"`];
+    attrs.push(`cx="${u.x.toFixed(q)}"`, `cy="${u.y.toFixed(q)}"`, `r="${CITY_STYLE[u.attrs.type].r}"`);
+    attrs.push(`data-name="${escapeXML(u.attrs.name_fr)}"`, `data-name-ar="${escapeXML(u.attrs.name_ar)}"`);
+    attrs.push(`data-name-fr="${escapeXML(u.attrs.name_fr)}"`, `data-name-en="${escapeXML(u.attrs.name_en)}"`);
+    for (const [k, f] of DATA_FIELDS[partition.id]) if (u.attrs[f] !== undefined && u.attrs[f] !== '') attrs.push(`data-${k}="${escapeXML(u.attrs[f])}"`);
+    const tip = u.attrs.name_ar && u.attrs.name_fr && u.attrs.name_ar !== u.attrs.name_fr ? `${u.attrs.name_fr} · ${u.attrs.name_ar}` : u.attrs.name_fr || u.attrs.name_ar;
+    out.push(`<circle ${attrs.join(' ')}><title>${escapeXML(tip)}</title></circle>`);
+  }
+  out.push('</g>');
+
+  if (mode === 'labeled' || mode === 'labeled-ar') {
+    const ar = mode === 'labeled-ar';
+    out.push(`<g id="labels" class="labels" aria-hidden="true">`);
+    for (const u of points) {
+      const l = ar ? u.labelAr : u.label;
+      if (!l?.leader) continue;
+      // Leader from the edge of the dot to the nearest edge of the label box.
+      const ex = Math.max(l.x - l.w / 2, Math.min(u.x, l.x + l.w / 2));
+      const ey = Math.max(l.y - l.h / 2, Math.min(u.y, l.y + l.h / 2));
+      const len = Math.hypot(ex - u.x, ey - u.y), r = CITY_STYLE[u.attrs.type].r;
+      out.push(`<path class="leader" d="M${(u.x + ((ex - u.x) * r) / len).toFixed(2)} ${(u.y + ((ey - u.y) * r) / len).toFixed(2)}L${ex.toFixed(2)} ${ey.toFixed(2)}"/>`);
+    }
+    for (const u of points) {
+      const l = ar ? u.labelAr : u.label;
+      if (!l) continue;
+      const t = CITY_TYPES.indexOf(u.attrs.type);
+      out.push(
+        `<text class="label l${t}" x="${l.x.toFixed(2)}" y="${(l.y + l.size * 0.35).toFixed(2)}" font-size="${l.size}" data-for="${escapeXML(u.id)}">${escapeXML(l.text)}</text>`,
+      );
+    }
     out.push('</g>');
   }
   out.push('</svg>');

@@ -101,6 +101,18 @@ export default {
         "medium",
         "low"
       ]
+    },
+    {
+      "id": "cities",
+      "title": "Cities",
+      "titleAr": "المدن",
+      "count": 284,
+      "lods": [
+        "full",
+        "high",
+        "medium",
+        "low"
+      ]
     }
   ],
   "lods": [
@@ -409,6 +421,33 @@ export default {
       ]
     },
     "water": {
+      "full": [
+        "plain"
+      ],
+      "high": [
+        "plain",
+        "outline"
+      ],
+      "medium": [
+        "plain",
+        "outline",
+        "light",
+        "dark",
+        "labeled",
+        "labeled-ar",
+        "interactive"
+      ],
+      "low": [
+        "plain",
+        "outline",
+        "light",
+        "dark",
+        "labeled",
+        "labeled-ar",
+        "interactive"
+      ]
+    },
+    "cities": {
       "full": [
         "plain"
       ],

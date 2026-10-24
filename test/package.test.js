@@ -19,7 +19,7 @@ test('smoke: the package imports itself by name and the data has the expected co
   assert.equal(typeof api.project, 'function');
   assert.equal(typeof api.svgPath, 'function');
   const counts = Object.fromEntries(api.catalog.partitions.map((p) => [p.id, p.count]));
-  assert.deepEqual(counts, { country: 1, regions: 7, districts: 5, governorates: 24, delegations: 279, sectors: 2083, municipalities: 338, water: 67 });
+  assert.deepEqual(counts, { country: 1, regions: 7, districts: 5, governorates: 24, delegations: 279, sectors: 2083, municipalities: 338, water: 67, cities: 284 });
 
   const require = createRequire(import.meta.url);
   for (const [id, n] of Object.entries(counts)) {

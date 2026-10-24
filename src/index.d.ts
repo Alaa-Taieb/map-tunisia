@@ -1,4 +1,4 @@
-export type Partition = 'country' | 'regions' | 'districts' | 'governorates' | 'delegations' | 'sectors' | 'municipalities' | 'water';
+export type Partition = 'country' | 'regions' | 'districts' | 'governorates' | 'delegations' | 'sectors' | 'municipalities' | 'water' | 'cities';
 export type Lod = 'full' | 'high' | 'medium' | 'low' | 'tiny';
 export type Mode = 'plain' | 'outline' | 'light' | 'dark' | 'labeled' | 'labeled-ar' | 'nested' | 'interactive';
 export type DataFormat = 'geojson' | 'topojson';
@@ -53,6 +53,42 @@ export interface WaterAttributes extends UnitAttributes {
   /** `way/<id>` or `relation/<id>`; empty for the lagoons cut from the coastline. */
   osm: string;
   geometry_source: 'osm_polygon' | 'osm_coastline';
+}
+
+export type CityType = 'national_capital' | 'governorate_capital' | 'city';
+
+/**
+ * One row of `dist/data/cities.json`: a point, not a polygon. The national capital (Tunis), the 24 governorate capitals
+ * and the seats of the OSM municipalities. `id` is `city-n<OSM node>`. Place it on any SVG with `project([lon, lat])`,
+ * or read `x` / `y`, already in the shared SVG frame.
+ */
+export interface CityAttributes {
+  id: string;
+  type: CityType;
+  /** `TN` for the national capital, the ISO 3166-2 code for a governorate capital (`TN TN-11` for Tunis), else empty. */
+  capital_of: string;
+  governorate: string;
+  region: string;
+  district: string;
+  delegation: string;
+  sector: string;
+  /** The municipality this city is the seat of (`municipality-<OSM relation>`); empty when OSM maps none for it. */
+  municipality: string;
+  name_en: string;
+  name_fr: string;
+  name_ar: string;
+  lon: string;
+  lat: string;
+  /** Position in the shared SVG frame (km). */
+  x: string;
+  y: string;
+  /** The OSM `place` tag of the node: city, town, village, suburb, quarter or neighbourhood. */
+  place: string;
+  /** How the point was chosen: the admin_centre of the country, governorate or municipality, or a name match in the municipality. */
+  seat_source: 'country_admin_centre' | 'governorate_admin_centre' | 'municipality_admin_centre' | 'name' | 'partial_name';
+  wikidata: string;
+  /** `node/<id>` */
+  osm: string;
 }
 
 export interface CatalogPartition {
