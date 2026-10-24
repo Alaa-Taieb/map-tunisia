@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMGWMKC-88cc5f",
+  "type": "task.created",
+  "at": "2026-10-24T14:01:54.492Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-016"
+  ],
+  "summary": "Task NS-016 created: Optional water layer: lagoons, sebkhas, chotts and dams"
+}

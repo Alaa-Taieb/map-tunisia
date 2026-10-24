@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMGWLXG-4cfd89",
+  "type": "task.created",
+  "at": "2026-10-24T14:01:53.668Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-014"
+  ],
+  "summary": "Task NS-014 created: Fix the 404 on the live explorer link (https://alaa-taieb.github.io/map-tunisia/)"
+}

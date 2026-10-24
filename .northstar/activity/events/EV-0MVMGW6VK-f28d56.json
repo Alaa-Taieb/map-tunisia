@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMGW6VK-f28d56",
+  "type": "milestone.criterion",
+  "at": "2026-10-24T14:01:34.160Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "MS-002"
+  ],
+  "summary": "MS-002 exit criterion X1 met: npm run build produces dist/ and its manifest"
+}

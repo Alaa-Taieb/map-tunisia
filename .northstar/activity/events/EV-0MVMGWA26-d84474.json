@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMGWA26-d84474",
+  "type": "milestone.criterion",
+  "at": "2026-10-24T14:01:38.286Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "MS-004"
+  ],
+  "summary": "MS-004 exit criterion X1 met: npm test is green"
+}

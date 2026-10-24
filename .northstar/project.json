@@ -7,9 +7,23 @@
   "createdAt": "2026-10-17T01:13:52.134Z",
   "createdBy": "claude-code",
   "vision": {
-    "status": "proposed",
-    "version": 0,
-    "history": []
+    "status": "approved",
+    "version": 1,
+    "approvedAt": "2026-10-24T14:00:15.918Z",
+    "approvedBy": "human",
+    "sha256": "b1c6148204a94f9dc390a0f2603de8765012d3709aadfd5080c67c3706f8af54",
+    "history": [
+      {
+        "version": 1,
+        "file": "vision-history/v1.md",
+        "sha256": "b1c6148204a94f9dc390a0f2603de8765012d3709aadfd5080c67c3706f8af54",
+        "approvedAt": "2026-10-24T14:00:15.918Z",
+        "approvedBy": "human"
+      }
+    ]
   },
-  "specification": {}
+  "specification": {
+    "sha256": "0b1b3c8ba5cc8dcbc9ca230b2e977163ec98a1f8bd9fe68f12a62896946bc7b9",
+    "baselinedAt": "2026-10-24T14:00:19.395Z"
+  }
 }

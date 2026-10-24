@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMGVJ0B-4e67dc",
+  "type": "task.started",
+  "at": "2026-10-24T14:01:03.227Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-007",
+    "MS-002"
+  ],
+  "summary": "claude-code started NS-007: GeoJSON/TopoJSON outputs, manifest and projection helper",
+  "data": {
+    "branch": "main"
+  }
+}

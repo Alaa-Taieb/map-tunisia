@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMGVPZY-378f74",
+  "type": "task.implemented",
+  "at": "2026-10-24T14:01:12.286Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-012",
+    "MS-004"
+  ],
+  "summary": "claude-code reported NS-012 implemented (NOT verified): CI workflow exists since v1.0.0 (commit 4f59a15). It runs npm test on push and pull requests; GitHub-side runs are not confirmed.",
+  "data": {
+    "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff"
+  }
+}

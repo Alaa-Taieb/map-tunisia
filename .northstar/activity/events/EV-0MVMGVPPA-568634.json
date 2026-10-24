@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMGVPPA-568634",
+  "type": "task.started",
+  "at": "2026-10-24T14:01:11.902Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-012",
+    "MS-004"
+  ],
+  "summary": "claude-code started NS-012: GitHub Actions CI",
+  "data": {
+    "branch": "main"
+  }
+}

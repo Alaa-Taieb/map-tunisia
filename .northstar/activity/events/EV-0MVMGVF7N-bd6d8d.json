@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMGVF7N-bd6d8d",
+  "type": "task.started",
+  "at": "2026-10-24T14:00:58.307Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-005",
+    "MS-002"
+  ],
+  "summary": "claude-code started NS-005: Node build: dissolve, project, simplify per LOD, SVG writer with modes",
+  "data": {
+    "branch": "main"
+  }
+}

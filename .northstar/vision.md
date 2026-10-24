@@ -1,5 +1,8 @@
 # Map Tunisia — Vision
 
+## Where the project stands (24 October 2026)
+Version 1.0.0 is shipped. The maps have been public on GitHub since 17 October 2026 (OpenStreetMap extract of 2026-10-16), the package is published on npm as `map-tunisia`, and the v1.0.0 GitHub release carries versioned per-format ZIPs with SHA-256 checksums. Work now is maintenance (the explorer link is broken) and the optional layers listed in the README roadmap.
+
 ## Purpose
 Map Tunisia is a free, open-source and highly accurate set of SVG maps of Tunisia. It offers every official administrative level, from the national outline down to the 2,000+ sectors (imadas), at several levels of detail and in several ready-to-use visual modes. Anyone who needs a map of Tunisia should be able to drop in a correct, well-labelled and well-documented file in seconds, and trust its borders, names and codes.
 
@@ -22,6 +25,7 @@ Map Tunisia is a free, open-source and highly accurate set of SVG maps of Tunisi
 - **Modes:** plain (styling-ready), outline, light, dark, labelled in Latin script, labelled in Arabic, nested borders and interactive (hover and tooltips with no JavaScript).
 - **Rich identifiers:** ISO 3166-2, INS geocodes, HASC, and Arabic, French and English names on every shape. Exposed as `id`/`data-*` attributes, plus CSV/JSON tables.
 - **Companion data:** GeoJSON and TopoJSON for every partition and level of detail, plus a documented projection and helper so users can place their own longitude/latitude points on the SVG.
+- **Distribution:** files in `dist/` (CDN-ready), an npm package with TypeScript types and subpath exports for the data and map files, and versioned release ZIPs per format with a checksum file.
 - **Reproducible build:** one command rebuilds everything from the latest OpenStreetMap data, with automated validation.
 
 ## Differentiators
@@ -39,7 +43,7 @@ Accuracy over convenience, with every correction documented. Each file must be s
 - The repository stays a reasonable size: generated files have size budgets.
 
 ## Explicitly excluded
-- Roads, cities, terrain, and other topographic layers (version 1 is about administrative partitions).
+- Roads, terrain and other topographic layers. Version 1 is about administrative partitions; the only extra layers considered are the optional ones on the roadmap (municipalities as a separate non-nested partition, a water layer, city and capital points, extra label modes), each added only without weakening accuracy or the nested partitions.
 - A tile server or a general-purpose web-mapping library.
 - Political claims beyond the internationally recognised borders.
 

@@ -1,0 +1,12 @@
+{
+  "id": "EV-0MVMGVIRJ-59b05f",
+  "type": "task.verified",
+  "at": "2026-10-24T14:01:02.911Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-006",
+    "MS-002"
+  ],
+  "summary": "Task NS-006 verified: Label placement for the labelled modes (Latin and Arabic)"
+}

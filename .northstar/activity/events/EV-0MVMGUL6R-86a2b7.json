@@ -1,0 +1,9 @@
+{
+  "id": "EV-0MVMGUL6R-86a2b7",
+  "type": "spec.rebaselined",
+  "at": "2026-10-24T14:00:19.395Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [],
+  "summary": "Specification baseline updated: Spec now describes shipped v1 distribution and known limitations"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMGW8F5-0fd5a0",
+  "type": "milestone.criterion",
+  "at": "2026-10-24T14:01:36.161Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "MS-003"
+  ],
+  "summary": "MS-003 exit criterion X2 met: The docs cover usage and methodology"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMGVKCV-43684f",
+  "type": "task.implemented",
+  "at": "2026-10-24T14:01:04.975Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-008",
+    "MS-003"
+  ],
+  "summary": "claude-code reported NS-008 implemented (NOT verified): README and docs/ pages exist since v1.0.0 (commit 4f59a15), with credit to Alaa Taieb.",
+  "data": {
+    "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff"
+  }
+}

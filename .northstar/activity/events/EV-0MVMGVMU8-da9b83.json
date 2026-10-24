@@ -1,0 +1,12 @@
+{
+  "id": "EV-0MVMGVMU8-da9b83",
+  "type": "task.verified",
+  "at": "2026-10-24T14:01:08.192Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-010",
+    "MS-003"
+  ],
+  "summary": "Task NS-010 verified: LICENSE (MIT), LICENSE-DATA (ODbL), CONTRIBUTING, CoC, CHANGELOG, CITATION, issue/PR templates"
+}

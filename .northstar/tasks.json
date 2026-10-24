@@ -9,7 +9,7 @@
       "requirementIds": [],
       "dependsOn": [],
       "priority": "critical",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -23,14 +23,46 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:00:40.277Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "package.json",
+        "scripts/extract/requirements.txt",
+        ".gitignore",
+        "CONTRIBUTING.md"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:00:40.652Z",
+        "by": "claude-code",
+        "summary": "Already in the repo since v1.0.0 (commit 4f59a15): package.json, scripts/extract/requirements.txt, .gitignore, layout documented in CONTRIBUTING.md.",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:00:41.149Z",
+          "by": "claude-code",
+          "detail": "$ test -f package.json && test -f scripts/extract/requirements.txt && test -f .gitignore && grep -qi \"project layout\" CONTRIBUTING.md && node -e \"JSON.parse(require(\\\"fs\\\").readFileSync(\\\"package.json\\\"))\"\nshell: bash\nexit 0\n",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:00:41.149Z"
     },
     {
       "id": "NS-002",
@@ -43,7 +75,7 @@
         "NS-001"
       ],
       "priority": "critical",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -61,14 +93,45 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:00:41.495Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "scripts/extract/extract.py",
+        "data/source/tunisia-sectors.geojson",
+        "data/source/extract-report.json"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:00:41.853Z",
+        "by": "claude-code",
+        "summary": "Extraction pipeline exists since v1.0.0 (commit 4f59a15): extract.py builds the planar face overlay; data/source/tunisia-sectors.geojson and extract-report.json committed.",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:00:42.529Z",
+          "by": "claude-code",
+          "detail": "$ test -s data/source/tunisia-sectors.geojson && test -f scripts/extract/extract.py && node --test test/data.test.js\nshell: bash\nexit 0\n✔ partition counts (12.8034ms)\n✔ governorates use ISO 3166-2 codes (1.1828ms)\n✔ identifiers are unique and well-formed (11.788ms)\n✔ every unit has names in Arabic and Latin script (7.8854ms)\n✔ hierarchy is consistent (sector ⊂ delegation ⊂ governorate ⊂ region/district) (6.4759ms)\n✔ regions follow the INS grouping and districts follow Decree 2023-589 (0.4764ms)\n✔ areas add up exactly across levels (12.6125ms)\n✔ extracted topology has no overlaps or gaps (0.1222ms)\n✔ census populations add up to the national totals (1.8662ms)\n✔ every INS 2024 delegation is mapped exactly once (1.6657ms)\n✔ governorate areas agree with published figures (0.6832ms)\n✔ label points lie inside Tunisia (6.2464ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 121.4852",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:00:42.529Z"
     },
     {
       "id": "NS-003",
@@ -81,7 +144,7 @@
         "NS-002"
       ],
       "priority": "high",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -95,14 +158,47 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:00:55.497Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "data/attributes/governorates.csv",
+        "data/attributes/delegations.csv",
+        "data/attributes/sectors.csv",
+        "data/attributes/regions.csv",
+        "data/attributes/districts.csv"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:00:55.895Z",
+        "by": "claude-code",
+        "summary": "Attribute tables exist since v1.0.0 (commit 4f59a15) with names ar/fr/en, ISO/INS/HASC codes, regions, districts and 2014/2024 populations.",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:00:56.628Z",
+          "by": "claude-code",
+          "detail": "$ test -s data/attributes/governorates.csv && test -s data/attributes/delegations.csv && test -s data/attributes/sectors.csv && node --test test/data.test.js\nshell: bash\nexit 0\n✔ partition counts (11.7171ms)\n✔ governorates use ISO 3166-2 codes (0.9354ms)\n✔ identifiers are unique and well-formed (11.2769ms)\n✔ every unit has names in Arabic and Latin script (7.5913ms)\n✔ hierarchy is consistent (sector ⊂ delegation ⊂ governorate ⊂ region/district) (6.4611ms)\n✔ regions follow the INS grouping and districts follow Decree 2023-589 (0.4946ms)\n✔ areas add up exactly across levels (12.1921ms)\n✔ extracted topology has no overlaps or gaps (0.0955ms)\n✔ census populations add up to the national totals (1.7621ms)\n✔ every INS 2024 delegation is mapped exactly once (1.5716ms)\n✔ governorate areas agree with published figures (0.663ms)\n✔ label points lie inside Tunisia (5.7806ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 115.7842",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:00:56.628Z"
     },
     {
       "id": "NS-004",
@@ -115,7 +211,7 @@
         "NS-002"
       ],
       "priority": "medium",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -125,14 +221,46 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:00:56.928Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "scripts/extract/extract.py",
+        "scripts/extract/corrections.json",
+        "docs/methodology.md",
+        "data/reference/ins-delegations-2024.csv"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:00:57.256Z",
+        "by": "claude-code",
+        "summary": "14 post-2014 delegations rebuilt from imadas using ISIE lists, documented in CHANGELOG 1.0.0 and docs/methodology.md (commit 4f59a15).",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:00:57.965Z",
+          "by": "claude-code",
+          "detail": "$ grep -qi \"ISIE\" docs/methodology.md && grep -q \"14 post-2014\" CHANGELOG.md && node --test test/data.test.js\nshell: bash\nexit 0\n✔ partition counts (12.1703ms)\n✔ governorates use ISO 3166-2 codes (1.2487ms)\n✔ identifiers are unique and well-formed (12.8625ms)\n✔ every unit has names in Arabic and Latin script (10.0686ms)\n✔ hierarchy is consistent (sector ⊂ delegation ⊂ governorate ⊂ region/district) (7.3585ms)\n✔ regions follow the INS grouping and districts follow Decree 2023-589 (0.5068ms)\n✔ areas add up exactly across levels (14.3132ms)\n✔ extracted topology has no overlaps or gaps (0.1318ms)\n✔ census populations add up to the national totals (2.4588ms)\n✔ every INS 2024 delegation is mapped exactly once (2.764ms)\n✔ governorate areas agree with published figures (0.8204ms)\n✔ label points lie inside Tunisia (6.5237ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 128.0431",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:00:57.965Z"
     },
     {
       "id": "NS-005",
@@ -145,7 +273,7 @@
         "NS-003"
       ],
       "priority": "high",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -159,14 +287,46 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:00:58.307Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "scripts/build/build.js",
+        "scripts/build/svg.js",
+        "scripts/build/config.js",
+        "dist/manifest.json"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:00:58.649Z",
+        "by": "claude-code",
+        "summary": "Build pipeline and SVG writer exist since v1.0.0 (commit 4f59a15); dist/ holds 140 SVGs (6 partitions x LODs x 8 modes).",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:00.441Z",
+          "by": "claude-code",
+          "detail": "$ test -s dist/manifest.json && node --test test/svg.test.js\nshell: bash\nexit 0\nns/medium/outline (7.6932ms)\n✔ svg delegations/medium/light (7.5268ms)\n✔ svg delegations/medium/dark (7.2744ms)\n✔ svg delegations/medium/labeled (8.5888ms)\n✔ svg delegations/medium/labeled-ar (8.2022ms)\n✔ svg delegations/medium/nested (8.2849ms)\n✔ svg delegations/medium/interactive (7.4012ms)\n✔ svg delegations/low/plain (5.1478ms)\n✔ svg delegations/low/outline (4.5174ms)\n✔ svg delegations/low/light (4.5093ms)\n✔ svg delegations/low/dark (4.5031ms)\n✔ svg delegations/low/labeled (5.2248ms)\n✔ svg delegations/low/labeled-ar (5.1293ms)\n✔ svg delegations/low/nested (4.6624ms)\n✔ svg delegations/low/interactive (4.9322ms)\n✔ svg sectors/full/plain (81.344ms)\n✔ svg sectors/high/plain (43.6169ms)\n✔ svg sectors/high/outline (46.4356ms)\n✔ svg sectors/high/nested (52.3377ms)\n✔ svg sectors/medium/plain (29.7246ms)\n✔ svg sectors/medium/outline (29.7807ms)\n✔ svg sectors/medium/light (30.843ms)\n✔ svg sectors/medium/dark (30.1029ms)\n✔ svg sectors/medium/labeled (35.2237ms)\n✔ svg sectors/medium/labeled-ar (34.5065ms)\n✔ svg sectors/medium/nested (34.5989ms)\n✔ svg sectors/medium/interactive (29.5598ms)\n✔ svg sectors/low/plain (23.053ms)\n✔ svg sectors/low/outline (23.0596ms)\n✔ svg sectors/low/light (23.2022ms)\n✔ svg sectors/low/dark (24.3215ms)\n✔ svg sectors/low/labeled (28.7094ms)\n✔ svg sectors/low/labeled-ar (36.8654ms)\n✔ svg sectors/low/nested (23.9963ms)\n✔ svg sectors/low/interactive (22.7685ms)\nℹ tests 142\nℹ suites 0\nℹ pass 142\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1259.4036",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:00.441Z"
     },
     {
       "id": "NS-006",
@@ -179,7 +339,7 @@
         "NS-005"
       ],
       "priority": "medium",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -189,14 +349,44 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:01:00.760Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "scripts/build/svg.js",
+        "scripts/build/lib.js"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:01:01.115Z",
+        "by": "claude-code",
+        "summary": "Label placement with polylabel for labeled and labeled-ar modes, in the v1.0.0 build (commit 4f59a15).",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:02.911Z",
+          "by": "claude-code",
+          "detail": "$ grep -rq polylabel scripts/build && ls dist/svg/governorates/tunisia-governorates-medium-labeled.svg dist/svg/governorates/tunisia-governorates-medium-labeled-ar.svg && node --test test/svg.test.js\nshell: bash\nexit 0\nedium/outline (7.5282ms)\n✔ svg delegations/medium/light (7.6048ms)\n✔ svg delegations/medium/dark (7.3437ms)\n✔ svg delegations/medium/labeled (9.5533ms)\n✔ svg delegations/medium/labeled-ar (7.9946ms)\n✔ svg delegations/medium/nested (10.5248ms)\n✔ svg delegations/medium/interactive (10.2182ms)\n✔ svg delegations/low/plain (4.7705ms)\n✔ svg delegations/low/outline (4.4853ms)\n✔ svg delegations/low/light (4.4013ms)\n✔ svg delegations/low/dark (4.7694ms)\n✔ svg delegations/low/labeled (6.8429ms)\n✔ svg delegations/low/labeled-ar (6.725ms)\n✔ svg delegations/low/nested (5.9244ms)\n✔ svg delegations/low/interactive (6.1768ms)\n✔ svg sectors/full/plain (80.0431ms)\n✔ svg sectors/high/plain (44.3962ms)\n✔ svg sectors/high/outline (45.3311ms)\n✔ svg sectors/high/nested (50.0532ms)\n✔ svg sectors/medium/plain (28.9402ms)\n✔ svg sectors/medium/outline (28.8923ms)\n✔ svg sectors/medium/light (28.7832ms)\n✔ svg sectors/medium/dark (28.6523ms)\n✔ svg sectors/medium/labeled (33.3926ms)\n✔ svg sectors/medium/labeled-ar (33.5645ms)\n✔ svg sectors/medium/nested (30.9193ms)\n✔ svg sectors/medium/interactive (35.7845ms)\n✔ svg sectors/low/plain (21.4876ms)\n✔ svg sectors/low/outline (22.0993ms)\n✔ svg sectors/low/light (22.1258ms)\n✔ svg sectors/low/dark (21.2839ms)\n✔ svg sectors/low/labeled (26.7093ms)\n✔ svg sectors/low/labeled-ar (27.1152ms)\n✔ svg sectors/low/nested (22.8972ms)\n✔ svg sectors/low/interactive (21.9641ms)\nℹ tests 142\nℹ suites 0\nℹ pass 142\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1222.7656",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:02.911Z"
     },
     {
       "id": "NS-007",
@@ -209,7 +399,7 @@
         "NS-005"
       ],
       "priority": "high",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -223,14 +413,47 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:01:03.227Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "dist/geojson",
+        "dist/topojson",
+        "dist/manifest.json",
+        "src/projection.js",
+        "test/projection.test.js"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:01:03.576Z",
+        "by": "claude-code",
+        "summary": "GeoJSON/TopoJSON per partition and LOD, manifest and project() helper exist since v1.0.0 (commit 4f59a15).",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:04.257Z",
+          "by": "claude-code",
+          "detail": "$ test -d dist/geojson && test -d dist/topojson && node --test test/data.test.js test/projection.test.js\nshell: bash\nexit 0\n✔ partition counts (12.3741ms)\n✔ governorates use ISO 3166-2 codes (1.0721ms)\n✔ identifiers are unique and well-formed (11.0879ms)\n✔ every unit has names in Arabic and Latin script (7.3535ms)\n✔ hierarchy is consistent (sector ⊂ delegation ⊂ governorate ⊂ region/district) (6.3712ms)\n✔ regions follow the INS grouping and districts follow Decree 2023-589 (0.4637ms)\n✔ areas add up exactly across levels (12.8142ms)\n✔ extracted topology has no overlaps or gaps (0.1011ms)\n✔ census populations add up to the national totals (1.9816ms)\n✔ every INS 2024 delegation is mapped exactly once (1.7306ms)\n✔ governorate areas agree with published figures (0.7194ms)\n✔ label points lie inside Tunisia (6.2719ms)\n✔ toUTM matches PROJ to the millimetre (10.336ms)\n✔ central meridian / equator reference values (0.0981ms)\n✔ inverse round-trips to 1e-9 degrees (0.2889ms)\n✔ every place in Tunisia projects inside the SVG frame (0.1218ms)\nℹ tests 16\nℹ suites 0\nℹ pass 16\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 133.3595",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:04.257Z"
     },
     {
       "id": "NS-008",
@@ -243,7 +466,7 @@
         "NS-007"
       ],
       "priority": "high",
-      "status": "planned",
+      "status": "verification_pending",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -257,14 +480,47 @@
         }
       ],
       "requiresHumanApproval": true,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:01:04.602Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "README.md",
+        "docs/methodology.md",
+        "docs/accuracy.md",
+        "docs/usage.md",
+        "docs/projection.md"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:01:04.975Z",
+        "by": "claude-code",
+        "summary": "README and docs/ pages exist since v1.0.0 (commit 4f59a15), with credit to Alaa Taieb.",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:05.489Z",
+          "by": "claude-code",
+          "detail": "$ for f in README.md docs/methodology.md docs/accuracy.md docs/usage.md docs/projection.md docs/data-dictionary.md; do test -s $f || exit 1; done; grep -q \"Alaa Taieb\" README.md\nshell: bash\nexit 0\n",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:05.489Z"
     },
     {
       "id": "NS-009",
@@ -277,7 +533,7 @@
         "NS-007"
       ],
       "priority": "medium",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -287,14 +543,44 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:01:05.833Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:01:06.188Z",
+        "by": "claude-code",
+        "summary": "Explorer page site/index.html and Pages workflow exist since v1.0.0 (commit 4f59a15). Note: the published URL returns 404 on 24 Oct 2026; see the backlog task.",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:06.667Z",
+          "by": "claude-code",
+          "detail": "$ test -s site/index.html && test -f .github/workflows/pages.yml\nshell: bash\nexit 0\n",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:06.667Z"
     },
     {
       "id": "NS-010",
@@ -307,7 +593,7 @@
         "NS-001"
       ],
       "priority": "medium",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -317,14 +603,50 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:01:07.053Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "LICENSE",
+        "LICENSE-DATA.md",
+        "CONTRIBUTING.md",
+        "CODE_OF_CONDUCT.md",
+        "CHANGELOG.md",
+        "CITATION.cff",
+        ".github/ISSUE_TEMPLATE",
+        ".github/PULL_REQUEST_TEMPLATE.md"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:01:07.508Z",
+        "by": "claude-code",
+        "summary": "All community and licence files exist since v1.0.0 (commit 4f59a15).",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:08.192Z",
+          "by": "claude-code",
+          "detail": "$ for f in LICENSE LICENSE-DATA.md CONTRIBUTING.md CODE_OF_CONDUCT.md CHANGELOG.md CITATION.cff .github/PULL_REQUEST_TEMPLATE.md .github/ISSUE_TEMPLATE/data-error.yml; do test -s $f || exit 1; done\nshell: bash\nexit 0\n",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:08.192Z"
     },
     {
       "id": "NS-011",
@@ -337,7 +659,7 @@
         "NS-005"
       ],
       "priority": "high",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -351,14 +673,45 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:01:08.594Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        "test",
+        "docs/accuracy.md",
+        "scripts/build/report.js"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:01:09.005Z",
+        "by": "claude-code",
+        "summary": "Test suite (now 165 checks) and generated accuracy report exist since v1.0.0 (commit 4f59a15).",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:11.512Z",
+          "by": "claude-code",
+          "detail": "$ npm test && test -s docs/accuracy.md\nshell: bash\nexit 0\nions/medium/outline (8.4202ms)\n✔ svg delegations/medium/light (8.0744ms)\n✔ svg delegations/medium/dark (8.0364ms)\n✔ svg delegations/medium/labeled (9.0696ms)\n✔ svg delegations/medium/labeled-ar (8.744ms)\n✔ svg delegations/medium/nested (8.5009ms)\n✔ svg delegations/medium/interactive (8.2378ms)\n✔ svg delegations/low/plain (5.7803ms)\n✔ svg delegations/low/outline (4.6408ms)\n✔ svg delegations/low/light (4.6013ms)\n✔ svg delegations/low/dark (5.3642ms)\n✔ svg delegations/low/labeled (6.0636ms)\n✔ svg delegations/low/labeled-ar (5.9214ms)\n✔ svg delegations/low/nested (4.9937ms)\n✔ svg delegations/low/interactive (4.9613ms)\n✔ svg sectors/full/plain (82.8559ms)\n✔ svg sectors/high/plain (46.9802ms)\n✔ svg sectors/high/outline (50.5912ms)\n✔ svg sectors/high/nested (53.252ms)\n✔ svg sectors/medium/plain (33.2362ms)\n✔ svg sectors/medium/outline (29.2287ms)\n✔ svg sectors/medium/light (28.5851ms)\n✔ svg sectors/medium/dark (28.3929ms)\n✔ svg sectors/medium/labeled (34.3096ms)\n✔ svg sectors/medium/labeled-ar (34.2266ms)\n✔ svg sectors/medium/nested (31.8144ms)\n✔ svg sectors/medium/interactive (28.4785ms)\n✔ svg sectors/low/plain (27.6092ms)\n✔ svg sectors/low/outline (28.6892ms)\n✔ svg sectors/low/light (24.033ms)\n✔ svg sectors/low/dark (23.2875ms)\n✔ svg sectors/low/labeled (29.0831ms)\n✔ svg sectors/low/labeled-ar (34.6105ms)\n✔ svg sectors/low/nested (24.035ms)\n✔ svg sectors/low/interactive (22.798ms)\nℹ tests 165\nℹ suites 0\nℹ pass 165\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1414.8886",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-17T01:16:40.016Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:11.512Z"
     },
     {
       "id": "NS-012",
@@ -371,7 +724,7 @@
         "NS-011"
       ],
       "priority": "medium",
-      "status": "planned",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -381,14 +734,329 @@
         }
       ],
       "requiresHumanApproval": false,
+      "activeHarness": "claude-code",
+      "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T14:01:11.902Z",
+      "commits": [
+        "4f59a15"
+      ],
+      "files": [
+        ".github/workflows/ci.yml"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T14:01:12.286Z",
+        "by": "claude-code",
+        "summary": "CI workflow exists since v1.0.0 (commit 4f59a15). It runs npm test on push and pull requests; GitHub-side runs are not confirmed.",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "automated-checks",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:13.006Z",
+          "by": "claude-code",
+          "detail": "$ grep -q \"npm test\" .github/workflows/ci.yml && grep -q pull_request .github/workflows/ci.yml\nshell: bash\nexit 0\n",
+          "criteria": []
+        }
+      ],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-24T14:01:13.006Z"
+    },
+    {
+      "id": "NS-013",
+      "title": "Prepare npm package and versioned release ZIPs",
+      "description": "",
+      "milestoneId": "MS-004",
+      "requirementIds": [],
+      "dependsOn": [],
+      "priority": "medium",
+      "status": "verified",
+      "blockers": [],
+      "planned": false,
+      "classification": "minor",
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "package.json is publish-ready (name, version, files, exports for SVG/GeoJSON/TopoJSON/CSV, license, repository)"
+        },
+        {
+          "id": "AC2",
+          "text": "npm pack produces a tarball containing all map assets and nothing else (no dev files)"
+        },
+        {
+          "id": "AC3",
+          "text": "A script builds versioned release ZIPs of the assets per format"
+        },
+        {
+          "id": "AC4",
+          "text": "README install and CDN (jsDelivr/unpkg) sections match the real package paths"
+        },
+        {
+          "id": "AC5",
+          "text": "Nothing is published to npm and nothing is pushed; changes committed locally only"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "activeHarness": "claude-code",
+      "session": "19888d2c-d7e9-4e1f-b4cd-447881e587bb",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-23T13:28:33.011Z",
+      "provisional": {
+        "startedAt": "2026-10-23T13:28:33.011Z",
+        "by": "claude-code",
+        "visionSha": "204e3e3803ffece8072f17c049de9a0de17ed251af66680d8ba33c02fead3798",
+        "requirementsSha": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "resolvedAt": "2026-10-24T14:00:15.918Z",
+        "outcome": "review",
+        "reviewReason": "an earlier vision draft"
+      },
+      "commits": [
+        "cd56d2f"
+      ],
+      "files": [
+        "package.json",
+        "src/index.d.ts",
+        "scripts/release/release.js",
+        "scripts/release/zip.js",
+        "test/package.test.js",
+        "README.md"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-23T13:31:50.799Z",
+        "by": "claude-code",
+        "summary": "Added TypeScript types, attributesPath(), subpath exports (data/geojson/topojson/svg), npm run release:zip (per-format ZIPs + SHA256SUMS into git-ignored release/), package/release tests, README+docs+CHANGELOG. Nothing published or pushed.",
+        "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+        "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "unit-tests",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-23T13:31:53.052Z",
+          "by": "claude-code",
+          "detail": "$ npm test\nshell: bash\nexit 0\nations/medium/outline (6.8034ms)\n✔ svg delegations/medium/light (6.6077ms)\n✔ svg delegations/medium/dark (6.964ms)\n✔ svg delegations/medium/labeled (7.8747ms)\n✔ svg delegations/medium/labeled-ar (7.9471ms)\n✔ svg delegations/medium/nested (7.4512ms)\n✔ svg delegations/medium/interactive (6.7574ms)\n✔ svg delegations/low/plain (4.2964ms)\n✔ svg delegations/low/outline (3.9633ms)\n✔ svg delegations/low/light (4.0044ms)\n✔ svg delegations/low/dark (3.8629ms)\n✔ svg delegations/low/labeled (4.469ms)\n✔ svg delegations/low/labeled-ar (4.615ms)\n✔ svg delegations/low/nested (4.0628ms)\n✔ svg delegations/low/interactive (3.852ms)\n✔ svg sectors/full/plain (78.5621ms)\n✔ svg sectors/high/plain (41.9772ms)\n✔ svg sectors/high/outline (43.7304ms)\n✔ svg sectors/high/nested (49.3515ms)\n✔ svg sectors/medium/plain (30.0186ms)\n✔ svg sectors/medium/outline (28.3291ms)\n✔ svg sectors/medium/light (28.9483ms)\n✔ svg sectors/medium/dark (27.7015ms)\n✔ svg sectors/medium/labeled (33.689ms)\n✔ svg sectors/medium/labeled-ar (33.4471ms)\n✔ svg sectors/medium/nested (30.6366ms)\n✔ svg sectors/medium/interactive (27.9791ms)\n✔ svg sectors/low/plain (21.3355ms)\n✔ svg sectors/low/outline (22.3368ms)\n✔ svg sectors/low/light (24.442ms)\n✔ svg sectors/low/dark (21.1274ms)\n✔ svg sectors/low/labeled (26.7018ms)\n✔ svg sectors/low/labeled-ar (31.296ms)\n✔ svg sectors/low/nested (22.9963ms)\n✔ svg sectors/low/interactive (21.9163ms)\nℹ tests 165\nℹ suites 0\nℹ pass 165\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1180.0477",
+          "criteria": []
+        },
+        {
+          "id": "E2",
+          "kind": "automated",
+          "method": "unit-tests",
+          "result": "pass",
+          "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff",
+          "tree": "4b74b6841f4a538f594a70f2d364c677c76711b7",
+          "at": "2026-10-24T14:01:15.403Z",
+          "by": "claude-code",
+          "detail": "$ npm test\nshell: bash\nexit 0\ntions/medium/outline (7.9367ms)\n✔ svg delegations/medium/light (7.7541ms)\n✔ svg delegations/medium/dark (7.8076ms)\n✔ svg delegations/medium/labeled (9.1705ms)\n✔ svg delegations/medium/labeled-ar (8.7578ms)\n✔ svg delegations/medium/nested (8.3191ms)\n✔ svg delegations/medium/interactive (7.651ms)\n✔ svg delegations/low/plain (5.5169ms)\n✔ svg delegations/low/outline (4.8504ms)\n✔ svg delegations/low/light (4.7865ms)\n✔ svg delegations/low/dark (4.712ms)\n✔ svg delegations/low/labeled (5.3235ms)\n✔ svg delegations/low/labeled-ar (5.7596ms)\n✔ svg delegations/low/nested (4.9974ms)\n✔ svg delegations/low/interactive (4.731ms)\n✔ svg sectors/full/plain (82.887ms)\n✔ svg sectors/high/plain (45.2055ms)\n✔ svg sectors/high/outline (45.8399ms)\n✔ svg sectors/high/nested (52.5978ms)\n✔ svg sectors/medium/plain (30.3485ms)\n✔ svg sectors/medium/outline (30.5503ms)\n✔ svg sectors/medium/light (30.0591ms)\n✔ svg sectors/medium/dark (29.8885ms)\n✔ svg sectors/medium/labeled (36.717ms)\n✔ svg sectors/medium/labeled-ar (35.6056ms)\n✔ svg sectors/medium/nested (33.6488ms)\n✔ svg sectors/medium/interactive (30.5856ms)\n✔ svg sectors/low/plain (23.6552ms)\n✔ svg sectors/low/outline (25.3249ms)\n✔ svg sectors/low/light (24.3477ms)\n✔ svg sectors/low/dark (23.5413ms)\n✔ svg sectors/low/labeled (30.004ms)\n✔ svg sectors/low/labeled-ar (36.4107ms)\n✔ svg sectors/low/nested (25.2065ms)\n✔ svg sectors/low/interactive (23.9136ms)\nℹ tests 165\nℹ suites 0\nℹ pass 165\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1333.1497",
+          "criteria": []
+        }
+      ],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-22T19:41:39.194Z",
+      "createdBy": "alabrain",
+      "updatedAt": "2026-10-24T14:01:15.403Z"
+    },
+    {
+      "id": "NS-014",
+      "title": "Fix the 404 on the live explorer link (https://alaa-taieb.github.io/map-tunisia/)",
+      "description": "Candidate. The README, CITATION.cff, CONTRIBUTING and the data-error issue template link to the explorer; it returned 404 on 24 Oct 2026 (also /index.html). site/ and .github/workflows/pages.yml exist in the repo. Cause not yet diagnosed: Pages may be disabled, or the Pages workflow may not be running (GitHub Actions reportedly disabled on the owner's account).",
+      "milestoneId": "MS-005",
+      "requirementIds": [],
+      "dependsOn": [],
+      "priority": "high",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "The cause of the 404 is identified and written down (Pages setting, workflow run or build output)"
+        },
+        {
+          "id": "AC2",
+          "text": "https://alaa-taieb.github.io/map-tunisia/ returns HTTP 200 and the explorer loads a map and downloads a file"
+        },
+        {
+          "id": "AC3",
+          "text": "Every link to the explorer in README, CITATION.cff, CONTRIBUTING.md and the issue templates resolves, or is changed to a working URL"
+        },
+        {
+          "id": "AC4",
+          "text": "The owner confirms the explorer works (human acceptance)"
+        }
+      ],
+      "requiresHumanApproval": true,
       "commits": [],
       "files": [],
       "evidence": [],
       "decisionIds": [],
       "provenance": "stated",
-      "createdAt": "2026-10-17T01:16:40.016Z",
+      "createdAt": "2026-10-24T14:01:53.668Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-17T01:16:40.016Z"
+      "updatedAt": "2026-10-24T14:01:53.668Z"
+    },
+    {
+      "id": "NS-015",
+      "title": "Municipalities (baladiyat, 2016 division) as a separate, non-nested partition",
+      "description": "Candidate; unchecked README roadmap item, requested by Emmanuel on 17 Oct 2026 (municipal map of Tunisia). Municipalities do not nest in delegations, so they ship as a separate partition. Open questions: a reliable open boundary source for the 2016 division (OSM admin_level 8? Emmanuel's earlier data, if he still has it and its licence allows), and whether to cover the 350 communes or only urban ones. Needs the owner's approval of the scope before work (new feature).",
+      "milestoneId": "MS-005",
+      "requirementIds": [],
+      "dependsOn": [],
+      "priority": "medium",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "A source for 2016 baladiya boundaries is chosen with its licence (ODbL-compatible) and recorded as a decision"
+        },
+        {
+          "id": "AC2",
+          "text": "The partition ships SVG, GeoJSON, TopoJSON and CSV in the existing naming scheme, with ids, ar/fr/en names and the governorate each municipality belongs to"
+        },
+        {
+          "id": "AC3",
+          "text": "docs/accuracy.md reports coverage, gaps and overlaps for the layer, and the data dictionary describes it"
+        },
+        {
+          "id": "AC4",
+          "text": "npm test covers the counts and id uniqueness of the new partition and stays green"
+        },
+        {
+          "id": "AC5",
+          "text": "The owner approves the scope and the result (human acceptance)"
+        }
+      ],
+      "requiresHumanApproval": true,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-24T14:01:54.136Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-24T14:01:54.136Z"
+    },
+    {
+      "id": "NS-016",
+      "title": "Optional water layer: lagoons, sebkhas, chotts and dams",
+      "description": "Unchecked README roadmap item. Not started: sebkhas and lakes are only used internally to fill gaps between delegations (docs/methodology.md section 5); no water layer is published.",
+      "milestoneId": "MS-005",
+      "requirementIds": [],
+      "dependsOn": [],
+      "priority": "low",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "Water bodies are extracted from OSM and published as an optional layer that does not alter the nested administrative partitions"
+        },
+        {
+          "id": "AC2",
+          "text": "The layer ships GeoJSON and SVG with ids and names, and is documented in the data dictionary and README"
+        },
+        {
+          "id": "AC3",
+          "text": "npm test covers the layer and the existing zero gaps/zero overlaps checks stay green"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-24T14:01:54.492Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-24T14:01:54.492Z"
+    },
+    {
+      "id": "NS-017",
+      "title": "Cities and capitals as point layers",
+      "description": "Unchecked README roadmap item. Not started: governorates.csv already holds capital names but no coordinates are published as a point layer. The original vision excluded cities; the updated vision allows this optional layer.",
+      "milestoneId": "MS-005",
+      "requirementIds": [],
+      "dependsOn": [],
+      "priority": "low",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "A point layer of governorate capitals (and the chosen set of cities, with a stated source and population threshold) is published as GeoJSON/CSV with ids, ar/fr/en names and lon/lat"
+        },
+        {
+          "id": "AC2",
+          "text": "Points are drawable on the shared SVG frame through project() and an example is added to docs/usage.md"
+        },
+        {
+          "id": "AC3",
+          "text": "npm test checks the point counts, that every point falls inside its governorate, and stays green"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-24T14:01:54.856Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-24T14:01:54.856Z"
+    },
+    {
+      "id": "NS-018",
+      "title": "Tamazight (Tifinagh) and English-transliteration label modes",
+      "description": "Unchecked README roadmap item. Not started: only labeled (Latin/French) and labeled-ar exist. Needs a source for Tifinagh names and a decision on the transliteration standard, plus owner approval of the new modes.",
+      "milestoneId": "MS-005",
+      "requirementIds": [],
+      "dependsOn": [],
+      "priority": "low",
+      "status": "planned",
+      "blockers": [],
+      "planned": true,
+      "acceptance": [
+        {
+          "id": "AC1",
+          "text": "A source and licence for Tifinagh names and a transliteration rule are chosen and recorded as a decision"
+        },
+        {
+          "id": "AC2",
+          "text": "New modes are generated for the levels where labelling already exists, valid SVG, with right-to-left/script handling checked"
+        },
+        {
+          "id": "AC3",
+          "text": "The mode matrix in README, docs/partitions-levels-modes.md and dist/manifest.json is updated and npm test stays green"
+        }
+      ],
+      "requiresHumanApproval": false,
+      "commits": [],
+      "files": [],
+      "evidence": [],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-24T14:01:55.219Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-24T14:01:55.219Z"
     }
   ]
 }

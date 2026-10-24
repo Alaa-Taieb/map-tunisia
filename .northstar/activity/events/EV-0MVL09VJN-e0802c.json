@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVL09VJN-e0802c",
+  "type": "task.started",
+  "at": "2026-10-23T13:28:33.011Z",
+  "actor": "claude-code",
+  "session": "19888d2c-d7e9-4e1f-b4cd-447881e587bb",
+  "entityIds": [
+    "NS-013",
+    "MS-004"
+  ],
+  "summary": "claude-code started NS-013 provisionally (vision not yet approved): Prepare npm package and versioned release ZIPs",
+  "data": {
+    "branch": "main"
+  }
+}

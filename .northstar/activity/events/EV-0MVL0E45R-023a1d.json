@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVL0E45R-023a1d",
+  "type": "task.implemented",
+  "at": "2026-10-23T13:31:50.799Z",
+  "actor": "claude-code",
+  "session": "19888d2c-d7e9-4e1f-b4cd-447881e587bb",
+  "entityIds": [
+    "NS-013",
+    "MS-004"
+  ],
+  "summary": "claude-code reported NS-013 implemented (NOT verified): Added TypeScript types, attributesPath(), subpath exports (data/geojson/topojson/svg), npm run release:zip (per-format ZIPs + SHA256SUMS into git-ignored release/), package/release tests, README+docs+CHANGELOG. Nothing published or pushed.",
+  "data": {
+    "revision": "cd56d2f60fd060cd576cc70997c65307cf3389ff"
+  }
+}

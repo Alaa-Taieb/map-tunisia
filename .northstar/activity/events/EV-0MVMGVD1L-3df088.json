@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMGVD1L-3df088",
+  "type": "task.started",
+  "at": "2026-10-24T14:00:55.497Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-003",
+    "MS-001"
+  ],
+  "summary": "claude-code started NS-003: Attribute tables: names ar/fr/en, ISO/INS/HASC codes, regions, districts, 2024 population",
+  "data": {
+    "branch": "main"
+  }
+}

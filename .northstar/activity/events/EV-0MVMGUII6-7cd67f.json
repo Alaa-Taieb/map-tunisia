@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMGUII6-7cd67f",
+  "type": "task.provisional_review",
+  "at": "2026-10-24T14:00:15.918Z",
+  "actor": "human",
+  "entityIds": [
+    "NS-013",
+    "MS-004"
+  ],
+  "summary": "Provisional work on NS-013 needs review: it started against an earlier vision draft"
+}

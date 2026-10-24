@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVJY5U62-ac63cc",
+  "type": "task.created_unplanned",
+  "at": "2026-10-22T19:41:39.194Z",
+  "actor": "alabrain",
+  "entityIds": [
+    "NS-013"
+  ],
+  "summary": "Task NS-013 created (unplanned, minor): Prepare npm package and versioned release ZIPs"
+}

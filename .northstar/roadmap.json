@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "milestones": [
     {
       "id": "MS-001",
@@ -10,12 +10,18 @@
         {
           "id": "X1",
           "text": "data/source has nested sectors/delegations/governorates with zero gaps or overlaps",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ node --test test/data.test.js\nshell: bash\nexit 0\n✔ partition counts (12.7435ms)\n✔ governorates use ISO 3166-2 codes (1.032ms)\n✔ identifiers are unique and well-formed (11.6903ms)\n✔ every unit has names in Arabic and Latin script (7.9949ms)\n✔ hierarchy is consistent (sector ⊂ delegation ⊂ governorate ⊂ region/district) (6.2916ms)\n✔ regions follow the INS grouping and districts follow Decree 2023-589 (0.4645ms)\n✔ areas add up exactly across levels (11.7649ms)\n✔ extracted topology has no overlaps or gaps (0.1111ms)\n✔ census populations add up to the national totals (1.8181ms)\n✔ every INS 2024 delegation is mapped exactly once (1.6488ms)\n✔ governorate areas agree with published figures (0.7262ms)\n✔ label points lie inside Tunisia (6.2492ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 122.6992",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:33.267Z"
         },
         {
           "id": "X2",
           "text": "The extraction report documents every correction",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ test -s data/source/extract-report.json\nshell: bash\nexit 0\n",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:33.706Z"
         }
       ],
       "dependsOn": [],
@@ -30,12 +36,18 @@
         {
           "id": "X1",
           "text": "npm run build produces dist/ and its manifest",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ test -s dist/manifest.json\nshell: bash\nexit 0\n",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:34.160Z"
         },
         {
           "id": "X2",
           "text": "Every SVG is valid",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ node --test test/svg.test.js\nshell: bash\nexit 0\ns/medium/outline (7.5338ms)\n✔ svg delegations/medium/light (7.4055ms)\n✔ svg delegations/medium/dark (6.9952ms)\n✔ svg delegations/medium/labeled (9.44ms)\n✔ svg delegations/medium/labeled-ar (8.7793ms)\n✔ svg delegations/medium/nested (10.4496ms)\n✔ svg delegations/medium/interactive (10.4922ms)\n✔ svg delegations/low/plain (4.9284ms)\n✔ svg delegations/low/outline (4.9336ms)\n✔ svg delegations/low/light (5.0489ms)\n✔ svg delegations/low/dark (4.5085ms)\n✔ svg delegations/low/labeled (6.2958ms)\n✔ svg delegations/low/labeled-ar (6.3153ms)\n✔ svg delegations/low/nested (6.2455ms)\n✔ svg delegations/low/interactive (6.054ms)\n✔ svg sectors/full/plain (77.8302ms)\n✔ svg sectors/high/plain (41.8025ms)\n✔ svg sectors/high/outline (43.1334ms)\n✔ svg sectors/high/nested (48.6564ms)\n✔ svg sectors/medium/plain (28.0639ms)\n✔ svg sectors/medium/outline (28.0445ms)\n✔ svg sectors/medium/light (28.2429ms)\n✔ svg sectors/medium/dark (27.9262ms)\n✔ svg sectors/medium/labeled (32.6008ms)\n✔ svg sectors/medium/labeled-ar (33.093ms)\n✔ svg sectors/medium/nested (30.5193ms)\n✔ svg sectors/medium/interactive (31.7236ms)\n✔ svg sectors/low/plain (20.9611ms)\n✔ svg sectors/low/outline (21.5737ms)\n✔ svg sectors/low/light (21.5039ms)\n✔ svg sectors/low/dark (21.4267ms)\n✔ svg sectors/low/labeled (27.8113ms)\n✔ svg sectors/low/labeled-ar (27.9595ms)\n✔ svg sectors/low/nested (23.6442ms)\n✔ svg sectors/low/interactive (22.7818ms)\nℹ tests 142\nℹ suites 0\nℹ pass 142\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1209.4837",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:35.804Z"
         }
       ],
       "dependsOn": [
@@ -57,7 +69,10 @@
         {
           "id": "X2",
           "text": "The docs cover usage and methodology",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ test -s docs/methodology.md && test -s docs/usage.md\nshell: bash\nexit 0\n",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:36.161Z"
         }
       ],
       "dependsOn": [
@@ -74,21 +89,52 @@
         {
           "id": "X1",
           "text": "npm test is green",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ npm test\nshell: bash\nexit 0\nns/medium/outline (7.7035ms)\n✔ svg delegations/medium/light (7.2207ms)\n✔ svg delegations/medium/dark (7.5014ms)\n✔ svg delegations/medium/labeled (8.4944ms)\n✔ svg delegations/medium/labeled-ar (7.831ms)\n✔ svg delegations/medium/nested (7.7981ms)\n✔ svg delegations/medium/interactive (7.3099ms)\n✔ svg delegations/low/plain (5.0569ms)\n✔ svg delegations/low/outline (4.5072ms)\n✔ svg delegations/low/light (4.5311ms)\n✔ svg delegations/low/dark (4.4157ms)\n✔ svg delegations/low/labeled (5.1241ms)\n✔ svg delegations/low/labeled-ar (5.4931ms)\n✔ svg delegations/low/nested (4.6795ms)\n✔ svg delegations/low/interactive (4.4357ms)\n✔ svg sectors/full/plain (78.7284ms)\n✔ svg sectors/high/plain (42.9473ms)\n✔ svg sectors/high/outline (44.3286ms)\n✔ svg sectors/high/nested (49.8721ms)\n✔ svg sectors/medium/plain (28.8602ms)\n✔ svg sectors/medium/outline (29.0264ms)\n✔ svg sectors/medium/light (28.8646ms)\n✔ svg sectors/medium/dark (27.753ms)\n✔ svg sectors/medium/labeled (34.2713ms)\n✔ svg sectors/medium/labeled-ar (36.0661ms)\n✔ svg sectors/medium/nested (34.4694ms)\n✔ svg sectors/medium/interactive (29.0292ms)\n✔ svg sectors/low/plain (21.9734ms)\n✔ svg sectors/low/outline (22.9195ms)\n✔ svg sectors/low/light (22.0534ms)\n✔ svg sectors/low/dark (21.514ms)\n✔ svg sectors/low/labeled (26.7109ms)\n✔ svg sectors/low/labeled-ar (27.3432ms)\n✔ svg sectors/low/nested (30.9368ms)\n✔ svg sectors/low/interactive (22.0573ms)\nℹ tests 165\nℹ suites 0\nℹ pass 165\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1266.1613",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:38.286Z"
         },
         {
           "id": "X2",
           "text": "CI workflow present",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ test -f .github/workflows/ci.yml\nshell: bash\nexit 0\n",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:38.660Z"
         },
         {
           "id": "X3",
           "text": "CHANGELOG has v1.0.0",
-          "status": "unmet"
+          "status": "met",
+          "evidence": "$ grep -q \"1.0.0\" CHANGELOG.md\nshell: bash\nexit 0\n",
+          "by": "claude-code",
+          "at": "2026-10-24T14:01:39.029Z"
         }
       ],
       "dependsOn": [
         "MS-003"
+      ],
+      "provenance": "stated"
+    },
+    {
+      "id": "MS-005",
+      "title": "Optional layers and maintenance (post-v1)",
+      "goal": "Close the README roadmap: fix the broken explorer link, then add the optional layers (municipalities, water, point layers, extra label modes) without weakening accuracy",
+      "order": 4,
+      "exitCriteria": [
+        {
+          "id": "X1",
+          "text": "The live explorer URL returns 200",
+          "status": "unmet"
+        },
+        {
+          "id": "X2",
+          "text": "Every unchecked item of the README roadmap is either shipped (ticked by the owner) or explicitly dropped",
+          "status": "unmet"
+        }
+      ],
+      "dependsOn": [
+        "MS-004"
       ],
       "provenance": "stated"
     }
@@ -203,6 +249,12 @@
       "at": "2026-10-17T01:13:52.134Z",
       "actor": "claude-code",
       "reason": "Project initialized"
+    },
+    {
+      "version": 2,
+      "at": "2026-10-24T14:01:39.343Z",
+      "actor": "claude-code",
+      "reason": "Ala ordered Northstar reset to the real state on 24 Oct 2026; v1 is shipped, the README roadmap is the active backlog"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMGWMAG-e40e3f",
+  "type": "task.created",
+  "at": "2026-10-24T14:01:54.136Z",
+  "actor": "claude-code",
+  "session": "11fb8237-f6c7-40c2-9d4d-0c8e6175197f",
+  "entityIds": [
+    "NS-015"
+  ],
+  "summary": "Task NS-015 created: Municipalities (baladiyat, 2016 division) as a separate, non-nested partition"
+}
