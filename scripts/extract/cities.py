@@ -156,7 +156,7 @@ def main() -> int:
     rd.apply_file(args.pbf)
     print(f"  {len(rd.places)} place nodes, {len(rd.gov_centre)} governorates, {len(rd.mun_centre)} municipalities")
 
-    def locate(lon: float, lat: float) -> dict | None:
+    def locate(lon: float, lat: float, warn: bool = False) -> dict | None:
         """Governorate, delegation and sector of a point; a node just off the coast goes to the nearest sector."""
         p = Point(lon, lat)
         hit = [i for i in sec_tree.query(p, predicate="intersects")]
@@ -166,7 +166,8 @@ def main() -> int:
             if gap > COAST_M:
                 return None
             hit = [i]
-            report["warnings"].append(f"node at {lon:.5f},{lat:.5f} lies {gap:.0f} m off the land; given to sector {sec_props[i]['sector']}")
+            if warn:
+                report["warnings"].append(f"node at {lon:.5f},{lat:.5f} lies {gap:.0f} m off the land; given to sector {sec_props[i]['sector']}")
         s = sec_props[min(hit)]
         return dict(governorate=s["governorate"], delegation=s["delegation"], sector=s["sector"])
 
@@ -245,7 +246,7 @@ def main() -> int:
     rows, features = [], []
     for nid, pt in points.items():
         n = rd.places[nid]
-        loc = locate(n["lon"], n["lat"])
+        loc = locate(n["lon"], n["lat"], warn=True)
         if loc is None:
             report["warnings"].append(f"node {nid} ({n['tags'].get('name')}) lies outside Tunisia; left out")
             continue

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T18:16:46Z",
+  "generated": "2026-10-24T18:30:43Z",
   "source": {
     "name": "OpenStreetMap",
     "license": "ODbL-1.0",
@@ -84,7 +84,6 @@
     "municipality-7164067 (Zriba): 3 candidate seats by name, kept node 312490313 (حمام الزريبة) over 1306244942, 2028879938",
     "municipality-7169042 (Kesra): 2 candidate seats by name, kept node 1941836055 (كسرى العليا) over 2050179149",
     "municipality-7210419 (Msaken): 2 candidate seats by name, kept node 287612727 (مساكن) over 6681328578",
-    "node at 8.33775,36.23070 lies 941 m off the land; given to sector sector-235456",
     "city-n12635329133 (رحال) has no Latin name in OSM"
   ],
   "no_seat": [
