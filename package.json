@@ -72,6 +72,7 @@
     "extract": "python scripts/extract/extract.py",
     "extract:municipalities": "python scripts/extract/municipalities.py",
     "extract:water": "python scripts/extract/water.py",
+    "extract:cities": "python scripts/extract/cities.py",
     "build": "node scripts/build/build.js",
     "build:site": "node scripts/build/site.js",
     "test": "node --test \"test/**/*.test.js\"",

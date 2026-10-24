@@ -1,0 +1,285 @@
+id,type,governorate,delegation,sector,municipality,capital_of,name_en,name_fr,name_ar,lon,lat,place,seat_source,wikidata,osm
+city-n10018736452,city,TN-61,delegation-3461,sector-346160,municipality-7126242,,Laachech,Laachech,الأعشاش,10.5751832,35.1209091,village,name,,node/10018736452
+city-n10029607938,city,TN-52,delegation-3258,sector-325862,municipality-7288386,,Amira Touazra,Amira Touazra,عميرة التوازرة,10.7628386,35.4862726,village,name,,node/10029607938
+city-n1088455110,city,TN-34,delegation-2457,sector-245752,municipality-7169041,,Maktar,Makthar,مكثر,9.2057475,35.8558974,town,name,Q1204373,node/1088455110
+city-n1104122473,city,TN-71,delegation-6156,sector-615654,municipality-7168914,,Redeyef,Redeyef,الرديف,8.1538874,34.3843201,town,name,Q2734177,node/1104122473
+city-n1109177626,city,TN-21,delegation-1566,sector-156651,municipality-7304260,,Sidi Jadidi,Sidi Jadidi,سيدي الجديدي,10.4557485,36.4171391,village,name,,node/1109177626
+city-n1109384824,city,TN-23,delegation-1759,sector-175952,municipality-7209280,,Tinja,Tinja,تينجة,9.7705573,37.1639232,village,name,,node/1109384824
+city-n1116804955,city,TN-31,delegation-2155,sector-215551,municipality-7209113,,Téboursouk,Téboursouk,تبرسق,9.2426211,36.4615073,town,name,Q1890362,node/1116804955
+city-n1124133881,city,TN-21,delegation-1563,sector-156356,municipality-7102676,,Beni khalled,Beni Khalled,بني خلاد,10.5917633,36.6494614,village,name,,node/1124133881
+city-n1124134746,city,TN-21,delegation-1564,sector-156456,municipality-7104937,,Grombalia,Grombalia,قرمبالية,10.4990402,36.5984231,town,name,Q1344058,node/1124134746
+city-n1124136154,city,TN-21,delegation-1562,sector-156254,municipality-7101604,,Menzel Bou Zelfa,Menzel Bou Zelfa,منزل بوزلفة,10.5846752,36.6821495,village,name,,node/1124136154
+city-n1124155543,city,TN-21,delegation-1561,sector-156155,municipality-7100695,,Soliman,Soliman,سليمان,10.4865924,36.6944327,village,name,Q726858,node/1124155543
+city-n1127119919,city,TN-53,delegation-3353,sector-335351,municipality-7304000,,Ouled Chamekh,Ouled Chamekh,أولاد الشامخ,10.3148410,35.4915017,village,name,,node/1127119919
+city-n1127120485,city,TN-53,delegation-3356,sector-335651,municipality-7303856,,Souassi,Souassi,السواسي,10.5490302,35.3444693,village,name,,node/1127120485
+city-n1128016495,city,TN-21,delegation-1553,sector-155354,municipality-7103013,,Somâa,Somâa,الصمعة,10.7841027,36.5428113,town,name,,node/1128016495
+city-n1128018620,city,TN-21,delegation-1553,sector-155351,municipality-7103010,,Béni Khiar,Béni Khiar,بني خيار,10.7809776,36.4693627,town,name,Q2737310,node/1128018620
+city-n1128664030,city,TN-21,delegation-1559,sector-155951,municipality-7096463,,El Haouaria,El Haouaria,الهوارية,11.0116492,37.0498089,village,name,Q1324235,node/1128664030
+city-n1128665422,city,TN-21,delegation-1561,sector-156151,municipality-7100602,,Korbous,Korbous,قربص,10.5689263,36.8162845,village,name,Q3175885,node/1128665422
+city-n1132950382,city,TN-23,delegation-1764,sector-176454,municipality-7209285,,Al Matlin,Metline,ماتلين,10.0475110,37.2441137,village,name,,node/1132950382
+city-n1136725873,city,TN-11,delegation-1170,sector-117051,municipality-7209746,,Le Kram,Le Kram,الكرم,10.3181518,36.8348312,town,name,Q2536593,node/1136725873
+city-n1136727225,city,TN-11,delegation-1151,sector-115154,municipality-7209747,,Carthage,Carthage,قرطاج,10.3309924,36.8548083,city,name,Q28151514,node/1136727225
+city-n1156944210,city,TN-12,delegation-1253,sector-125355,municipality-7209682,,Raoued,Raoued,رواد,10.1891941,36.9535973,village,name,Q3175906,node/1156944210
+city-n1157744669,city,TN-13,delegation-1362,sector-136251,municipality-7209946,,Mornag,Mornag,مرناق,10.2901728,36.6807415,town,name,,node/1157744669
+city-n1165828355,city,TN-52,delegation-3255,sector-325552,municipality-7288384,,Beni Hassen,Beni Hassen,بني حسان,10.8080266,35.5670718,village,name,Q1124789,node/1165828355
+city-n1165828361,city,TN-52,delegation-3256,sector-325651,municipality-7288407,,Jemmal,Jemmel,جمال,10.7592359,35.6239297,village,name,Q2545445,node/1165828361
+city-n1165832678,city,TN-52,delegation-3254,sector-325455,municipality-7288269,,Zéramdine,Zéramdine,زرمدين,10.7379156,35.5791762,village,name,Q2600574,node/1165832678
+city-n1184918055,city,TN-51,delegation-3156,sector-315651,municipality-7210438,,Akouda,Akouda,أكودة,10.5678382,35.8657303,village,name,,node/1184918055
+city-n1186068159,city,TN-51,delegation-3159,sector-315951,municipality-7210415,,Hergla,Hergla,هرقلة,10.5064796,36.0317203,village,name,Q1203456,node/1186068159
+city-n1187470251,city,TN-42,delegation-4259,sector-425952,municipality-7167927,,Thala,Thala,تالة,8.6708968,35.5717763,town,municipality_admin_centre,Q1975233,node/1187470251
+city-n1187470257,city,TN-42,delegation-4252,sector-425254,municipality-7167978,,Bouzguam,Bouzgam,بوزقام,8.8958179,35.2129743,suburb,name,,node/1187470257
+city-n1187489028,city,TN-43,delegation-4353,sector-435352,municipality-7172845,,Jilma,Jelma,جلمة,9.4186079,35.2697921,village,name,,node/1187489028
+city-n1187489040,city,TN-41,delegation-4158,sector-415851,municipality-7169465,,Hajeb El Ayoun,Hajeb El Ayoun,حاجب العيون,9.5424162,35.3954340,village,name,Q3108263,node/1187489040
+city-n1187534946,city,TN-41,delegation-4156,sector-415651,municipality-7169773,,Haffouz,Haffouz,حفوز,9.6717546,35.6354138,town,name,,node/1187534946
+city-n1187534975,city,TN-41,delegation-4153,sector-415351,municipality-7171865,,Chebika,Chebika,الشبيكة,9.9285529,35.6164148,village,name,,node/1187534975
+city-n1190878345,city,TN-21,delegation-1565,sector-156554,municipality-7103686,,Bou Argoub,Bou Argoub,بوعرقوب,10.5498743,36.5342202,village,name,Q655294,node/1190878345
+city-n1204588103,city,TN-13,delegation-1357,sector-135752,municipality-7209942,,Ezzahra,Ezzahra,الزهراء,10.3029461,36.7404497,town,name,Q3062876,node/1204588103
+city-n1206447367,city,TN-52,delegation-3253,sector-325353,municipality-7288273,,Sidi Ameur,Sidi Ameur,سيدي عامر,10.7031596,35.7411725,village,name,,node/1206447367
+city-n1206558973,city,TN-52,delegation-3252,sector-325252,municipality-7288035,,Ouardanine,Ouardanine,الوردانين,10.6764900,35.7097268,village,name,,node/1206558973
+city-n1206559008,city,TN-52,delegation-3253,sector-325352,municipality-7287981,,Sahline,Sahline,الساحلين,10.7116486,35.7512612,town,partial_name,Q1020989,node/1206559008
+city-n1212253275,city,TN-52,delegation-3261,sector-326153,municipality-7288553,,Ksar Hellal,Ksar Hellal,قصر هلال,10.8891403,35.6443898,town,name,Q3174782,node/1212253275
+city-n1212253279,city,TN-52,delegation-3257,sector-325752,municipality-7288129,,Bembla,Bembla,بنبلة,10.7921125,35.6919328,village,name,Q816364,node/1212253279
+city-n1212253285,city,TN-52,delegation-3263,sector-326354,municipality-7288375,,Bouhjar,Bouhjar,بوحجر,10.8637900,35.6691211,village,name,Q967840,node/1212253285
+city-n1212270304,city,TN-52,delegation-3257,sector-325754,municipality-7288128,,Menzel Ennour,Menzel Nour,منزل النور,10.7781438,35.6687000,village,name,Q3028389,node/1212270304
+city-n1216174459,governorate_capital,TN-22,delegation-1651,sector-165151,municipality-7164068,TN-22,Zaghouan,Zaghouan,زغوان,10.1446349,36.3994751,town,governorate_admin_centre,Q12912434,node/1216174459
+city-n1216186607,city,TN-51,delegation-3161,sector-316151,municipality-7210411,,Bouficha,Bouficha,بوفيشة,10.4540907,36.3014563,village,name,,node/1216186607
+city-n1225165285,city,TN-51,delegation-3162,sector-316251,municipality-7210421,,Kondar,Kondar,كندار,10.3001192,35.9325718,village,name,,node/1225165285
+city-n1232459067,city,TN-41,delegation-4154,sector-415451,municipality-7169737,,Sbikha,Sbikha,السبيخة,10.0175680,35.9327162,village,name,,node/1232459067
+city-n12635329133,city,TN-43,delegation-4355,sector-435558,municipality-7172960,,,,رحال,9.3443768,34.7771794,village,name,,node/12635329133
+city-n1277766900,city,TN-22,delegation-1653,sector-165351,municipality-7164069,,Bir Mcherga,Bir Mcherga,بئر مشارڤة,9.9544161,36.5180792,village,name,Q1627457,node/1277766900
+city-n1277956973,city,TN-22,delegation-1654,sector-165456,municipality-7164287,,El Fahs,El Fahs,الفحص,9.9019369,36.3717136,town,name,,node/1277956973
+city-n1278361178,city,TN-83,delegation-5356,sector-535652,municipality-7167457,,Dhehiba,Dhehiba,الذهيبة,10.6999924,32.0103463,town,name,Q1015418,node/1278361178
+city-n1278361348,city,TN-83,delegation-5357,sector-535751,municipality-7167437,,Remada,Remada,رمادة,10.3987008,32.3146481,town,name,Q1015427,node/1278361348
+city-n1278517274,city,TN-34,delegation-2460,sector-246051,municipality-7169441,,Bargou,Bargou,برقو,9.5667337,36.0914446,village,name,Q2884486,node/1278517274
+city-n1310557105,city,TN-23,delegation-1757,sector-175751,municipality-7209222,,Ghezala,Ghezala,غزالة,9.5346429,37.0835462,village,name,Q3104850,node/1310557105
+city-n1384169997,city,TN-41,delegation-4162,sector-415559,municipality-7171852,,Ain Jelloula,Ain Jelloula,عين جلولة,9.8035617,35.7989226,village,name,,node/1384169997
+city-n1419131100,city,TN-22,delegation-1656,sector-165652,municipality-7164286,,Sawwaf,Saouaf,صواف,10.1712341,36.2275534,village,name,,node/1419131100
+city-n1419136771,city,TN-22,delegation-1655,sector-165551,municipality-7164400,,Ennadhour,Ennadhour,الناظور,10.0930543,36.1238442,village,name,,node/1419136771
+city-n1431973885,city,TN-23,delegation-1754,sector-175451,municipality-7209221,,Sajanan,Sejnane,سجنان,9.2398493,37.0576522,village,name,,node/1431973885
+city-n1432078789,city,TN-31,delegation-2154,sector-215452,municipality-7209059,,Nefza,Nefza,نفزة,9.0748388,36.9748659,village,name,Q3177403,node/1432078789
+city-n1432078792,city,TN-31,delegation-2154,sector-215453,municipality-7209121,,Ouechtata,Ouechtata,وشتاتة,8.9977886,36.9609348,village,name,,node/1432078792
+city-n1433130924,city,TN-23,delegation-1755,sector-175552,municipality-7209223,,Joumine,Joumine,جومين,9.3889921,36.9253535,village,name,,node/1433130924
+city-n1435708256,city,TN-14,delegation-1457,sector-145756,municipality-7098867,,Tebourba,Tebourba,طبربة,9.8413482,36.8302496,town,name,Q3099155,node/1435708256
+city-n1439531928,city,TN-51,delegation-3160,sector-316051,municipality-7210409,,Enfidha,Enfidha,النفيضة,10.3779916,36.1341194,town,name,Q1025361,node/1439531928
+city-n1444704293,city,TN-51,delegation-3158,sector-315851,municipality-7210428,,Sidi Bou Ali,Sidi Bou Ali,سيدي بو علي,10.4703970,35.9563486,village,name,,node/1444704293
+city-n1452253010,city,TN-34,delegation-2454,sector-245451,municipality-7169001,,Gaâfour,Gaâfour,قعفور,9.3217604,36.3242558,village,name,,node/1452253010
+city-n1452253016,city,TN-34,delegation-2461,sector-246151,municipality-7169002,,El Aroussa,El Aroussa,العروسة,9.4523341,36.3792060,village,name,,node/1452253016
+city-n1452253022,city,TN-34,delegation-2455,sector-245551,municipality-7169008,,Al Krib,El Krib,الكريب,9.1352778,36.3270919,village,name,Q3050025,node/1452253022
+city-n1452253031,city,TN-31,delegation-2157,sector-215757,municipality-7209112,,Slouguia,Slouguia,السلوقية,9.5113875,36.5797659,village,name,,node/1452253031
+city-n1452253103,city,TN-31,delegation-2157,sector-215751,municipality-7209117,,Testour,Testour,تستور,9.4418606,36.5520138,town,name,Q1250999,node/1452253103
+city-n1495587105,city,TN-51,delegation-3165,sector-316551,municipality-7210441,,Kalaa Sghira,Kalaa Sghira,القلعة الصغرى,10.5610794,35.8241499,village,name,,node/1495587105
+city-n1533192004,city,TN-52,delegation-3256,sector-325655,municipality-7288127,,Zaouit Kontech,Zaouit Kontech,زاوية قنطش,10.7665793,35.6370614,suburb,name,Q3574794,node/1533192004
+city-n1544651763,city,TN-51,delegation-3166,sector-316651,municipality-7210445,,Zawia Sousse,Zawia Sousse,زاوية سوسة,10.6203700,35.7908570,suburb,name,,node/1544651763
+city-n1544821258,city,TN-34,delegation-2453,sector-245352,municipality-7168989,,Bou Arada,Bou Arada,بوعرادة,9.6241481,36.3510552,village,name,Q2737321,node/1544821258
+city-n1547749332,city,TN-51,delegation-3164,sector-316467,municipality-7210453,,Messadine,Messadine,المسعدين,10.5966672,35.7613215,village,name,,node/1547749332
+city-n1561079549,city,TN-81,delegation-5162,sector-515554,municipality-7173075,,Oudhref,Oudhref,وذرف,9.9677051,33.9840486,town,name,Q3357995,node/1561079549
+city-n1564481999,city,TN-14,delegation-1454,sector-145451,municipality-7102148,,Mornaguia,Mornaguia,المرناقية,10.0149270,36.7571648,village,name,Q3105883,node/1564481999
+city-n1566167629,city,TN-72,delegation-6255,sector-625551,municipality-7167900,,Hazwa,Hazoua,حزوة,7.6038545,33.7404313,village,name,Q4119790,node/1566167629
+city-n1655884872,city,TN-83,delegation-5355,sector-535552,municipality-7167879,,Ghomrassen,Ghomrassen,غمراسن,10.3390575,33.0598991,town,name,,node/1655884872
+city-n1657474545,city,TN-82,delegation-5253,sector-525351,municipality-7286127,,Beni Khedache,Beni Khedache,بني خداش,10.2001033,33.2513927,town,name,Q73798648,node/1657474545
+city-n1800480748,city,TN-52,delegation-3258,sector-325858,municipality-7288383,,Menzel Fersi,Menzel Fersi,منزل فارسي,10.8684711,35.5489142,village,name,,node/1800480748
+city-n1837034352,city,TN-32,delegation-2253,sector-225351,municipality-7304410,,Bou Salem,Bou Salem,بوسالم,8.9696535,36.6074080,town,name,Q2911912,node/1837034352
+city-n1839362661,city,TN-23,delegation-1763,sector-176352,municipality-7209279,,El Alia,El Alia,العالية,10.0338705,37.1689041,town,name,Q3049704,node/1839362661
+city-n1844560411,city,TN-61,delegation-3460,sector-346051,municipality-7126939,,El Hencha,El Hencha,الحنشة,10.7415421,35.1228878,village,name,Q2737307,node/1844560411
+city-n1851671410,city,TN-21,delegation-1552,sector-155251,municipality-7103338,,Dar Chaabane,Dar Chaâbane,دار شعبان الفهري,10.7478479,36.4666209,town,name,Q2478232,node/1851671410
+city-n1863372804,city,TN-22,delegation-1653,sector-165355,municipality-7164070,,Djebel Oust,Djebel Oust,جبل الوسط,10.0613122,36.5551149,village,name,Q3032848,node/1863372804
+city-n1865629269,city,TN-21,delegation-1553,sector-155353,municipality-7102856,,Maâmoura,Maâmoura,المعمورة,10.8048480,36.4653438,village,name,Q2744905,node/1865629269
+city-n1896442620,city,TN-42,delegation-4262,sector-426261,municipality-7167913,,Thelepte,Thélepte,تلابت,8.5933962,34.9774987,village,name,Q2063167,node/1896442620
+city-n1896502664,city,TN-42,delegation-4262,sector-426251,municipality-7167918,,Feriana,Fériana,فريانة,8.5663107,34.9466476,town,name,Q606165,node/1896502664
+city-n1899219943,city,TN-33,delegation-2358,sector-235851,municipality-7202460,,Jérissa,Jérissa,الجريصة,8.6310155,35.8450091,town,name,Q2717622,node/1899219943
+city-n1899226322,city,TN-33,delegation-2355,sector-235551,municipality-7202483,,Tajerouine,Tajerouine,تاجروين,8.5530477,35.8913691,town,name,Q3175916,node/1899226322
+city-n1941836055,city,TN-34,delegation-2459,sector-245951,municipality-7169042,,Kesra,Kesra Supérieure,كسرى العليا,9.3648314,35.8131579,village,name,Q3111959,node/1941836055
+city-n1980279372,city,TN-83,delegation-5353,sector-535352,municipality-7167885,,Smar,Smar,الصمار,10.8222443,32.9946554,town,name,,node/1980279372
+city-n1996259768,city,TN-81,delegation-5161,sector-516065,municipality-7173107,,Dkhilet Toujane,Dkhilet Toujane,دخيلة توجان,10.2025764,33.4352272,town,name,,node/1996259768
+city-n2017271470,city,TN-33,delegation-2361,sector-236152,municipality-7202488,,Sers,Le Sers,السرس,9.0192905,36.0734659,village,name,Q3102750,node/2017271470
+city-n2020536002,city,TN-33,delegation-2360,sector-236051,municipality-7202458,,Dahmani,Dahmani,الدهماني,8.8284346,35.9424417,town,name,Q3011977,node/2020536002
+city-n2022259572,city,TN-42,delegation-4261,sector-426151,municipality-7167945,,Foussana,Foussana,فوسانة,8.6255718,35.3496860,village,name,Q3050560,node/2022259572
+city-n2042447480,city,TN-43,delegation-4360,sector-436051,municipality-7172934,,El Mezzouna,El Mezzouna,المزونة,9.8423948,34.5806646,village,name,Q3178365,node/2042447480
+city-n2043739836,city,TN-32,delegation-2254,sector-225451,municipality-7173766,,Tabarka,Tabarka,طبرقة,8.7573829,36.9545614,town,name,Q986213,node/2043739836
+city-n2063816292,city,TN-13,delegation-1355,sector-135553,municipality-7209945,,Hammam Chott,Hammam Chott,حمام الشط,10.3642733,36.7189536,town,name,Q946799,node/2063816292
+city-n2078807462,city,TN-21,delegation-1558,sector-155851,municipality-7097005,,Hammam Al Ghezaz,Hammam El Ghezaz,حمام الغزاز,11.1082328,36.8739860,village,name,,node/2078807462
+city-n2080476679,city,TN-21,delegation-1556,sector-155652,municipality-7100601,,Al Mida,El Mida,الميدة,10.8533998,36.7254544,village,name,,node/2080476679
+city-n2131332953,city,TN-41,delegation-4155,sector-415552,municipality-7169743,,Weslatia,Oueslatia,الوسلاتية,9.5932661,35.8476563,town,name,Q3107235,node/2131332953
+city-n2165194615,city,TN-71,delegation-6155,sector-615554,municipality-7168919,,Moularès,Moularès,أم العرائس,8.2733836,34.4857370,town,name,Q642846,node/2165194615
+city-n2175125786,city,TN-42,delegation-4263,sector-426351,municipality-7167919,,Magel Bel Abbes,Majel Bel Abbès,ماجل بلعباس,8.5231276,34.7504280,town,name,Q3178341,node/2175125786
+city-n2177279829,city,TN-71,delegation-6158,sector-615851,municipality-7168910,,Mdhila,Mdhilla,المظيلة,8.7480284,34.2868790,town,name,Q303935,node/2177279829
+city-n2177334841,city,TN-71,delegation-6159,sector-615953,municipality-7168909,,El Guettar,El Guettar,القطار,8.9503640,34.3394652,town,name,,node/2177334841
+city-n2178146164,city,TN-71,delegation-6161,sector-616152,municipality-7168963,,Sened,Sened,السند,9.2513281,34.5402780,town,name,Q2736042,node/2178146164
+city-n2187459836,city,TN-21,delegation-1554,sector-155455,municipality-7102518,,Korba,Korba,قربة,10.8576240,36.5728862,town,name,Q1343921,node/2187459836
+city-n2191295542,city,TN-21,delegation-1563,sector-156353,municipality-7103678,,Zaouiet Djedidi,Zaouiet Jedidi,زاوية الجديدي,10.5746395,36.6434290,village,name,Q653791,node/2191295542
+city-n2202008629,city,TN-81,delegation-5152,sector-515252,municipality-7286649,,Bouchamma,Bouchemma,بوشمة,10.0624148,33.9047245,town,name,,node/2202008629
+city-n2203045897,city,TN-81,delegation-5154,sector-515452,municipality-7286661,,Ghannouch,Ghannouch,غنوش,10.0650345,33.9398160,town,name,Q3100723,node/2203045897
+city-n2210337832,city,TN-81,delegation-5160,sector-516060,municipality-7173103,,Kettena,Kettena,كتانة,10.2041218,33.7595888,village,name,Q22082382,node/2210337832
+city-n2402352381,city,TN-53,delegation-3362,sector-335155,municipality-7303785,,Rejiche,Rejiche,رجيش,11.0416985,35.4655214,village,name,Q2742387,node/2402352381
+city-n2589797448,city,TN-61,delegation-3462,sector-346251,municipality-7286902,,Ghraiba,Ghraiba,الغريبة,10.2119225,34.4951066,village,name,,node/2589797448
+city-n2610858564,city,TN-33,delegation-2353,sector-235359,municipality-7202548,,Bahra,Bahra,بهرة,8.9125461,36.2488386,village,name,,node/2610858564
+city-n264881676,city,TN-73,delegation-6354,sector-635455,municipality-7107483,,Douz,Douz,دوز,9.0249829,33.4571102,town,name,Q1009268,node/264881676
+city-n264885332,governorate_capital,TN-83,delegation-5352,sector-535251,municipality-7167848,TN-83,Tataouine,Tataouine,تطاوين,10.4503959,32.9315242,town,governorate_admin_centre,Q817149,node/264885332
+city-n2657639395,city,TN-81,delegation-5160,sector-516057,municipality-7286425,,Zarat,Zarat,الزارات,10.3484979,33.6654603,village,name,,node/2657639395
+city-n2735157275,city,TN-22,delegation-1654,sector-165460,municipality-7164401,,El Amaiem,El Amaiem,العمايم,9.8453853,36.3317683,village,name,,node/2735157275
+city-n27564968,national_capital,TN-11,delegation-1153,sector-115355,municipality-7209932,TN TN-11,Tunis,Tunis,تونس,10.1857757,36.8002068,city,country_admin_centre,Q3572,node/27564968
+city-n2828090546,city,TN-14,delegation-1455,sector-145551,municipality-7102051,,Borj El Amri,Borj El Amri,برج العامري,9.8830314,36.7129680,village,name,Q2737316,node/2828090546
+city-n2832036076,city,TN-31,delegation-2156,sector-215651,municipality-7209114,,Thibar,Thibar,تيبار,9.1049848,36.5218222,village,name,Q3523994,node/2832036076
+city-n283645091,city,TN-11,delegation-1169,sector-116951,municipality-7209745,,La Goulette,La Goulette,حلق الوادي,10.3042378,36.8159278,town,name,Q798445,node/283645091
+city-n2840204369,city,TN-32,delegation-2258,sector-225851,municipality-7173955,,Oued Melliz,Oued Meliz,وادي مليز,8.5500007,36.4678121,village,name,Q3136209,node/2840204369
+city-n2841662850,city,TN-33,delegation-2359,sector-235951,municipality-7202459,,El Ksour,El Ksour,القصور,8.8807360,35.8985897,village,name,Q2743148,node/2841662850
+city-n2843047485,city,TN-34,delegation-2458,sector-245858,municipality-7169044,,Rouhia,Rouhia,الروحية,9.0563411,35.6514310,village,name,Q3123763,node/2843047485
+city-n2844579781,city,TN-82,delegation-5252,sector-525260,municipality-7286177,,Boughrara,Boughrara,بوغرارة,10.6741918,33.5393404,town,name,Q50213083,node/2844579781
+city-n286091511,city,TN-13,delegation-1358,sector-135851,municipality-7209949,,Radès,Radès,رادس,10.2724617,36.7678910,town,name,Q27062,node/286091511
+city-n286354073,city,TN-13,delegation-1361,sector-136153,municipality-7209948,,Fouchana,Fouchana,فوشانة,10.1693582,36.6987224,town,name,Q3079830,node/286354073
+city-n287001619,governorate_capital,TN-61,delegation-3451,sector-345151,,TN-61,Sfax,Sfax,صفاقس,10.7604024,34.7394361,city,governorate_admin_centre,Q46325,node/287001619
+city-n2873759991,city,TN-42,delegation-4256,sector-425651,municipality-7167936,,Sbiba,Sbiba,سبيبة,9.0732696,35.5405583,village,name,Q971090,node/2873759991
+city-n2874828908,city,TN-42,delegation-4256,sector-425657,municipality-7167932,,Ain el Khmaisia,Ain el Khmaisia,عين الخمايسية,9.1131734,35.4909663,village,municipality_admin_centre,,node/2874828908
+city-n287534172,governorate_capital,TN-21,delegation-1551,sector-155155,municipality-7103333,TN-21,Nabeul,Nabeul,نابل,10.7355915,36.4512897,city,governorate_admin_centre,Q867615,node/287534172
+city-n287543373,governorate_capital,TN-51,delegation-3151,sector-315152,municipality-7210444,TN-51,Sousse,Sousse,سوسة,10.6405254,35.8288284,city,governorate_admin_centre,Q180717,node/287543373
+city-n287543904,governorate_capital,TN-41,delegation-4152,sector-415253,municipality-7169523,TN-41,Kairouan,Kairouan,القيروان,10.1006200,35.6710101,city,governorate_admin_centre,Q179570,node/287543904
+city-n287544603,governorate_capital,TN-81,delegation-5151,sector-515154,municipality-7286640,TN-81,Gabes,Gabès,قابس,10.1004400,33.8878082,city,governorate_admin_centre,Q215661,node/287544603
+city-n287544816,governorate_capital,TN-23,delegation-1751,sector-175157,municipality-7209237,TN-23,Bizerte,Bizerte,بنزرت,9.8708565,37.2720905,city,governorate_admin_centre,Q189546,node/287544816
+city-n287545859,governorate_capital,TN-71,delegation-6154,sector-615456,municipality-7168942,TN-71,Gafsa,Gafsa,قفصة,8.7843862,34.4224374,city,governorate_admin_centre,Q466006,node/287545859
+city-n287547219,city,TN-11,delegation-1171,sector-117152,municipality-7209749,,La Marsa,La Marsa,المرسى,10.3276780,36.8790882,town,name,Q27230,node/287547219
+city-n287547703,governorate_capital,TN-42,delegation-4251,sector-425153,municipality-7167977,TN-42,Kasserine,Kasserine,القصرين,8.8365654,35.1687646,city,governorate_admin_centre,Q852735,node/287547703
+city-n287550909,governorate_capital,TN-13,delegation-1351,sector-135151,municipality-7209941,TN-13,Ben Arous,Ben Arous,بن عروس,10.2245005,36.7516915,city,governorate_admin_centre,Q816443,node/287550909
+city-n287553320,governorate_capital,TN-52,delegation-3251,sector-325151,municipality-7287983,TN-52,Monastir,Monastir,المنستير,10.8280511,35.7707582,city,governorate_admin_centre,Q208715,node/287553320
+city-n287554239,governorate_capital,TN-12,delegation-1251,sector-125151,municipality-7209680,TN-12,Ariana,Ariana,أريانة,10.1882320,36.8587351,city,governorate_admin_centre,Q627487,node/287554239
+city-n287558790,city,TN-82,delegation-5255,sector-525551,municipality-7286094,,Zarzis,Zarzis,جرجيس,11.1097173,33.5036797,town,name,Q148142,node/287558790
+city-n287558953,city,TN-11,delegation-1160,sector-116051,municipality-7209744,,Le Bardo,Le Bardo,باردو,10.1363018,36.8139969,town,name,,node/287558953
+city-n287559510,city,TN-82,delegation-5256,sector-525653,municipality-7286071,,Houmt Souk,Houmet Souk,حومة السوق,10.8571532,33.8759878,town,partial_name,Q995360,node/287559510
+city-n287583296,city,TN-21,delegation-1566,sector-156656,municipality-7304261,,Hammamet,Hammamet,الحمامات,10.6190626,36.4006557,city,name,Q339535,node/287583296
+city-n287585326,governorate_capital,TN-82,delegation-5252,sector-525251,municipality-7286159,TN-82,Medenine,Médenine,مدنين,10.4910559,33.3434135,city,governorate_admin_centre,Q846653,node/287585326
+city-n287588734,city,TN-82,delegation-5254,sector-525451,municipality-7286085,,Ben Gardane,Ben Gardane,بن قردان,11.2170109,33.1403223,town,municipality_admin_centre,Q1143002,node/287588734
+city-n287590041,governorate_capital,TN-31,delegation-2151,sector-215151,municipality-7209120,TN-31,Béja,Béja,باجة,9.1853820,36.7236755,city,governorate_admin_centre,Q814982,node/287590041
+city-n287612727,city,TN-51,delegation-3164,sector-316454,municipality-7210419,,M'Saken,M'saken,مساكن,10.5751923,35.7330411,town,name,,node/287612727
+city-n287613682,city,TN-82,delegation-5257,sector-525752,municipality-7286080,,Midoun,Midoun,ميدون,10.9910666,33.8074152,town,partial_name,Q687088,node/287613682
+city-n287615073,city,TN-52,delegation-3258,sector-325853,municipality-7288390,,Moknine,Moknine,المكنين,10.9001327,35.6282570,town,name,Q2718752,node/287615073
+city-n287618126,city,TN-23,delegation-1758,sector-175856,municipality-7209241,,Manzil Bourguiba,Menzel Bourguiba,منزل بورقيبة,9.7925900,37.1549869,town,name,Q27435,node/287618126
+city-n287619187,city,TN-14,delegation-1453,sector-145351,municipality-7091762,,Oued Ellil,Oued Ellil,وادي الليل,10.0422381,36.8376735,town,name,,node/287619187
+city-n287620228,city,TN-51,delegation-3157,sector-315753,municipality-7210429,,Kalaa Kebira,Kalaa Kebira,القلعة الكبرى,10.5365372,35.8704108,town,name,,node/287620228
+city-n287621836,governorate_capital,TN-53,delegation-3351,sector-335151,municipality-7292801,TN-53,Mahdia,Mahdia,المهدية,11.0682429,35.5036420,city,governorate_admin_centre,Q466054,node/287621836
+city-n287622372,governorate_capital,TN-33,delegation-2352,sector-235253,municipality-7202502,TN-33,Al-Kaf,Le Kef,الكاف,8.7073470,36.1784491,city,governorate_admin_centre,Q27155,node/287622372
+city-n287625095,governorate_capital,TN-32,delegation-2251,sector-225152,municipality-7304406,TN-32,Jendouba,Jendouba,جندوبة,8.7756990,36.4967177,town,governorate_admin_centre,Q27064,node/287625095
+city-n287625642,city,TN-21,delegation-1557,sector-155755,municipality-7098176,,Kelibia,Kélibia,قليبية,11.0935701,36.8456561,city,name,Q27241,node/287625642
+city-n2876921759,city,TN-43,delegation-4358,sector-435855,municipality-7172880,,Meknassy,Meknassy,المكناسي,9.6022455,34.6047708,village,name,Q117943,node/2876921759
+city-n2877642957,city,TN-71,delegation-6160,sector-616052,municipality-7168897,,Belkhir,Belkhir,بلخير,9.3914392,34.2742071,village,name,,node/2877642957
+city-n2878572712,city,TN-81,delegation-5156,sector-515657,municipality-7173065,,Menzel El Habib,Menzel El Habib,منزل الحبيب,9.5984897,34.2299234,village,name,,node/2878572712
+city-n288137819,city,TN-11,delegation-1151,sector-115151,municipality-7209748,,Sidi Boussaid,Sidi Bou Saïd,سيدي بوسعيد,10.3490516,36.8710935,village,name,Q877391,node/288137819
+city-n2893493100,city,TN-41,delegation-4160,sector-416051,municipality-7169471,,Echrarda,Echrarda,الشراردة,10.0336505,35.1181690,village,name,Q3047028,node/2893493100
+city-n2902763628,city,TN-41,delegation-4152,sector-415255,municipality-7169681,,Rakkada,Rakkada,رقادة,10.0716437,35.6199651,village,name,,node/2902763628
+city-n2930586474,governorate_capital,TN-34,delegation-2451,sector-245152,municipality-7169440,TN-34,Siliana,Siliana,سليانة,9.3743733,36.0846651,city,governorate_admin_centre,Q27216,node/2930586474
+city-n2960139532,city,TN-52,delegation-3254,sector-325452,municipality-7288268,,Menzel Hayet,Menzel Hayet,منزل حياة,10.6304988,35.5335516,village,name,,node/2960139532
+city-n297764755,city,TN-82,delegation-5258,sector-525851,municipality-7286079,,Ajim,Adjim,أجيم,10.7485015,33.7248466,town,partial_name,Q979167,node/297764755
+city-n298018764,city,TN-72,delegation-6254,sector-625454,municipality-7167899,,Nefta,Nefta,نفطة,7.8806840,33.8720687,town,name,,node/298018764
+city-n298018887,governorate_capital,TN-72,delegation-6251,sector-625155,municipality-7167903,TN-72,Tozeur,Tozeur,توزر,8.1370639,33.9239001,town,governorate_admin_centre,Q504661,node/298018887
+city-n298019989,governorate_capital,TN-73,delegation-6351,sector-635159,municipality-7108057,TN-73,Kebili,Kebili,قبلي,8.9698376,33.7061148,town,governorate_admin_centre,Q27157,node/298019989
+city-n298020344,city,TN-81,delegation-5157,sector-515752,municipality-7173082,,El Hamma,El Hamma,الحامة,9.7997111,33.8894378,town,municipality_admin_centre,Q1324239,node/298020344
+city-n2988370656,city,TN-13,delegation-1360,sector-136054,municipality-7209935,,Mohamedia,Mohamedia,المحمدية,10.1570438,36.6796879,town,name,Q3099965,node/2988370656
+city-n2988385577,governorate_capital,TN-14,delegation-1451,sector-145151,municipality-7090535,TN-14,Manouba,La Manouba,منوبة,10.0947037,36.8113307,town,governorate_admin_centre,Q27159,node/2988385577
+city-n299240195,city,TN-53,delegation-3357,sector-335751,municipality-7303845,,El Jem,El Jem,الجم,10.7128400,35.2966435,town,name,Q291012,node/299240195
+city-n299265771,city,TN-31,delegation-2159,sector-215964,municipality-7209111,,Medjez El-Bab,Medjez El-Bab,مجاز الباب,9.6165160,36.6471499,town,name,Q1153895,node/299265771
+city-n299272084,city,TN-32,delegation-2257,sector-225751,municipality-7173850,,Ghardimaou,Ghardimaou,غار الدماء,8.4425342,36.4505903,town,name,Q1521438,node/299272084
+city-n299277153,city,TN-23,delegation-1756,sector-175651,municipality-7209224,,Matir,Mateur,ماطر,9.6676974,37.0385985,town,name,Q1207738,node/299277153
+city-n3013469458,city,TN-12,delegation-1254,sector-125451,municipality-7209677,,Kalâat el-Andalous,Kalâat el-Andalous,قلعة الأندلس,10.1181450,37.0624508,town,name,Q3051293,node/3013469458
+city-n312490313,city,TN-22,delegation-1652,sector-165253,municipality-7164067,,Zriba,Hammam Zriba,حمام الزريبة,10.2079210,36.3512115,town,name,Q3142622,node/312490313
+city-n3143761492,city,TN-82,delegation-5259,sector-525951,municipality-7286168,,Sidi Makhlouf,Sidi Makhlouf,سيدي مخلوف,10.4797060,33.5063363,town,name,Q11949717,node/3143761492
+city-n3145829326,city,TN-11,delegation-1164,sector-116459,municipality-7209931,,Sidi Hassine,Sidi Hassine,سيدي حسين,10.1102505,36.7708432,town,name,Q3129751,node/3145829326
+city-n3151789161,city,TN-31,delegation-2158,sector-215851,municipality-7209129,,Goubellat,Goubellat,قبلاط,9.6632166,36.5400128,village,name,Q2370331,node/3151789161
+city-n316078222,city,TN-61,delegation-3456,sector-345653,municipality-7287158,,El Hajeb,El Hajeb,الحاجب,10.6473860,34.7190417,village,name,,node/316078222
+city-n3203082588,city,TN-71,delegation-6152,sector-615251,municipality-7168944,,Sidi Aich,Sidi Aïch,سيدي عيش,8.7827624,34.7328584,village,name,Q11949712,node/3203082588
+city-n3430536430,city,TN-33,delegation-2353,sector-235351,municipality-7202544,,Nibbar,Nebeur,نبر,8.7713168,36.3050927,town,name,Q3117290,node/3430536430
+city-n351575544,city,TN-73,delegation-6353,sector-635351,municipality-7082278,,Souk Lahad,Souk Lahad,سوق الأحد,8.8525855,33.7783142,town,name,Q3051223,node/351575544
+city-n351582010,city,TN-72,delegation-6252,sector-625252,municipality-7167905,,Degache,Degache,دقاش,8.2154584,33.9841058,town,name,Q2499386,node/351582010
+city-n352749778,city,TN-73,delegation-6351,sector-635154,municipality-7082169,,Djemna,Jemna,جمنة,9.0159998,33.5695675,village,name,Q3176970,node/352749778
+city-n352749779,city,TN-73,delegation-6354,sector-635452,municipality-7107713,,El Golaa,El Golaa,القلعة,9.0062742,33.4849158,village,name,,node/352749779
+city-n352752197,city,TN-81,delegation-5159,sector-515951,municipality-7173087,,New Matmata,Nouvelle Matmata,مطماطة الجديدة,10.0144336,33.6688822,town,name,,node/352752197
+city-n352839775,city,TN-81,delegation-5160,sector-516051,municipality-7173126,,Mareth,Mareth,مارث,10.2882317,33.6171590,town,name,Q3105874,node/352839775
+city-n3668370508,city,TN-14,delegation-1458,sector-145851,municipality-7099175,,El Battan,El Battan,البطان,9.8444420,36.8043530,town,name,Q3049744,node/3668370508
+city-n3680029605,city,TN-43,delegation-4356,sector-435651,municipality-7172858,,Sidi Ali Ben Aoun,Sidi Ali Ben Aoun,سيدي علي بن عون,9.1444757,34.8526105,village,name,,node/3680029605
+city-n3771494614,city,TN-23,delegation-1761,sector-176153,municipality-7209278,,Aousja,Aousja,عوسجة,10.1020579,37.1398513,village,name,Q2737483,node/3771494614
+city-n3823151839,city,TN-61,delegation-3458,sector-345857,municipality-7127921,,Al Luza,Ellouza,اللوزة,11.0006840,35.0289322,town,partial_name,Q12192101,node/3823151839
+city-n4099579144,city,TN-31,delegation-2153,sector-215352,municipality-7209119,,Zahret Medien,Amdoun,عمدون,9.0894667,36.7686376,town,name,Q2842514,node/4099579144
+city-n434547646,city,TN-61,delegation-3461,sector-346151,municipality-7125808,,Menzel Chaker,Menzel Chaker,منزل شاكر,10.3715504,34.9700590,village,name,,node/434547646
+city-n434547727,city,TN-53,delegation-3354,sector-335451,municipality-7304003,,Chorbane,Chorbane,شُربان,10.3865810,35.2855799,village,name,,node/434547727
+city-n437592157,city,TN-42,delegation-4255,sector-425551,municipality-7167940,,Sbeitla,Sbeïtla,سبيطلة,9.1313411,35.2303636,town,name,,node/437592157
+city-n4394953973,city,TN-13,delegation-1354,sector-135451,municipality-7209944,,Hammam-Lif,Hammam-Lif,حمام الأتف,10.3363985,36.7313788,town,name,Q1573684,node/4394953973
+city-n443160013,city,TN-61,delegation-3463,sector-346351,municipality-7119543,,Bir Ali Ben Khalifa,Bir Ali Ben Khalifa,بئر علي بن خليفة,10.0958949,34.7406664,town,name,Q1153877,node/443160013
+city-n4541839834,city,TN-53,delegation-3355,sector-335551,municipality-7304001,,Hebira,Hebira,هبيرة,10.2321940,35.1660029,village,name,Q3119719,node/4541839834
+city-n462003374,city,TN-33,delegation-2354,sector-235451,municipality-7202498,,Sakiet Sidi Youcef,Sakiet Sidi Youssef,ساقية سيدي يوسف,8.3547342,36.2220401,town,name,Q958423,node/462003374
+city-n4633446424,city,TN-21,delegation-1554,sector-155456,municipality-7102858,,Tazerka,Tazarka,تازركة,10.8366689,36.5459523,town,name,,node/4633446424
+city-n469845572,city,TN-23,delegation-1764,sector-176451,municipality-7209277,,Ras Jebel,Ras Jebel,رأس الجبل,10.1245603,37.2146189,town,name,Q3174932,node/469845572
+city-n470285468,city,TN-23,delegation-1761,sector-176151,municipality-7209276,,Ghar El Melh,Ghar El Melh,غار الملح,10.1916612,37.1696840,village,name,,node/470285468
+city-n471061641,city,TN-23,delegation-1762,sector-176253,municipality-7209255,,Menzel Abderrahmane,Menzel Abderrahmane,منزل عبد الرحمان,9.8631083,37.2361332,village,name,Q3042186,node/471061641
+city-n4790853022,city,TN-32,delegation-2256,sector-225651,municipality-7173849,,Firnana,Fernana,فرنانة,8.6957875,36.6556629,town,municipality_admin_centre,Q3069035,node/4790853022
+city-n4790875980,city,TN-32,delegation-2256,sector-225656,municipality-7173839,,Bani Matir,Beni M'tir,بني مطير,8.7346790,36.7399266,village,name,Q1626632,node/4790875980
+city-n479938481,city,TN-61,delegation-3454,sector-345451,municipality-7287088,,Sakiet Eddaïer,Sakiet Eddaïer,ساقية الدائر,10.7800417,34.7896235,town,name,Q3107356,node/479938481
+city-n501803032,city,TN-33,delegation-2356,sector-235651,municipality-7202461,,Kalaat es Senam,Kalaat Senan,قلعة سنان,8.3438119,35.7672773,town,name,Q3100254,node/501803032
+city-n5067512322,city,TN-43,delegation-4355,sector-435551,municipality-7172859,,Bir El Hafey,Bir El Hafey,بئر الحفي,9.1960034,34.9320870,town,name,Q2737160,node/5067512322
+city-n5233525276,city,TN-42,delegation-4255,sector-425554,municipality-7167935,,Errakhmet,Errakhmet,الرخمات,9.2203432,35.0691546,village,name,,node/5233525276
+city-n5314227521,city,TN-42,delegation-4254,sector-425451,municipality-7167924,,Hassi El Ferid,Hassi El Ferid,حاسي الفريد,8.9496952,34.9766440,village,name,,node/5314227521
+city-n5316229408,city,TN-42,delegation-4258,sector-425851,municipality-7167928,,El Ayoun,El Ayoun,العيون,8.8836602,35.5402671,village,name,Q3049722,node/5316229408
+city-n548180838,city,TN-32,delegation-2255,sector-225551,municipality-7173765,,Aïn Draham,Aïn Draham,عين دراهم,8.6879509,36.7774877,town,name,Q527727,node/548180838
+city-n558814817,city,TN-52,delegation-3260,sector-326053,municipality-7288394,,Téboulba,Teboulba,طبلبة,10.9658372,35.6417897,village,name,Q2400416,node/558814817
+city-n558816730,city,TN-52,delegation-3262,sector-326251,municipality-7288377,,Ksibet El Mediouni,Ksibet El Medouini,قصيبة المديوني,10.8420125,35.6884928,village,name,Q3141427,node/558816730
+city-n558816737,city,TN-52,delegation-3263,sector-326353,municipality-7288395,,Lamta,Lamta,لمطة,10.8809373,35.6753306,village,name,Q1972560,node/558816737
+city-n558816747,city,TN-52,delegation-3251,sector-325159,municipality-7287982,,Khniss,Khniss,خنيس,10.8182735,35.7145700,village,name,Q1076553,node/558816747
+city-n558816759,city,TN-52,delegation-3263,sector-326351,municipality-7288396,,Sayada,Sayada,صيادة,10.8913213,35.6682749,village,name,Q2539054,node/558816759
+city-n558824767,city,TN-52,delegation-3262,sector-326252,municipality-7288408,,Touza,Touza,طوزة,10.8278317,35.6319941,village,name,Q3535906,node/558824767
+city-n558826611,city,TN-52,delegation-3256,sector-325657,municipality-7288270,,Menzel Kamel,Menzel Kamel,منزل كامل,10.6661453,35.6232026,village,name,,node/558826611
+city-n558841086,city,TN-53,delegation-3352,sector-335253,municipality-7303866,,Kerker,Kerker,كركر,10.6403283,35.4820704,village,name,,node/558841086
+city-n558841112,city,TN-53,delegation-3352,sector-335251,municipality-7303867,,Bou Merdès,Bou Merdès,بو مرداس,10.7281355,35.4549211,village,name,,node/558841112
+city-n558841228,city,TN-52,delegation-3258,sector-325857,municipality-7288389,,Sidi Bennour,Sidi Bennour,سيدي بنور,10.9141489,35.5251019,village,name,Q3483194,node/558841228
+city-n558855437,city,TN-51,delegation-3163,sector-316351,municipality-7210420,,Sidi El Heni,Sidi El Heni,سيدي الهاني,10.3118167,35.6809917,village,name,,node/558855437
+city-n558962249,city,TN-53,delegation-3360,sector-336052,municipality-7303803,,Sidi Alouane,Sidi Alouane,سيدي علوان,10.9378385,35.3750157,village,name,Q3178416,node/558962249
+city-n558962262,city,TN-53,delegation-3361,sector-336152,municipality-7303791,,Ksour Essef,Ksour Essef,قصور الساف,10.9987172,35.4162835,town,name,Q3141573,node/558962262
+city-n559394563,city,TN-61,delegation-3464,sector-346454,municipality-7111390,,Shkira,Shkira,الصخيرة,10.0690355,34.2988183,village,name,,node/559394563
+city-n559400503,city,TN-81,delegation-5155,sector-515552,municipality-7286673,,Métouia,Métouia,المطوية,10.0014342,33.9589064,village,name,Q3127824,node/559400503
+city-n560792911,city,TN-73,delegation-6356,sector-635653,municipality-7095634,,El Faouar,El Faouar,الفوار,8.6732515,33.3559630,village,name,,node/560792911
+city-n561134924,governorate_capital,TN-43,delegation-4351,sector-435152,,TN-43,Sidi Bouzid,Sidi Bouzid,سيدي بوزيد,9.4865301,35.0382386,city,governorate_admin_centre,Q692716,node/561134924
+city-n5942342265,city,TN-83,delegation-5354,sector-535453,municipality-7167867,,Bir Lahmar,Bir Lahmar,بئر الأحمر,10.4420751,33.1785612,town,name,Q2573446,node/5942342265
+city-n5974000209,city,TN-53,delegation-3359,sector-335951,municipality-7303808,,Melloulèche,Melloulèche,ملولش,11.0355373,35.1654610,town,name,Q950322,node/5974000209
+city-n5981914543,city,TN-61,delegation-3458,sector-345851,municipality-7127885,,Jebiniana,Jebeniana,جبنيانة,10.9090537,35.0351327,town,name,Q3176336,node/5981914543
+city-n6039044550,city,TN-21,delegation-1555,sector-155555,municipality-7099966,,Menzel Temime,Menzel Temime,منزل تميم,10.9939105,36.7807127,town,name,Q764435,node/6039044550
+city-n6215539235,city,TN-41,delegation-4159,sector-415951,municipality-7169472,,Nasr Allah,Nasrallah,نصر الله,9.8275155,35.3528502,town,name,,node/6215539235
+city-n6454492258,city,TN-73,delegation-6351,sector-635155,municipality-7082678,,Bchelli,Bchelli,بشلي,8.9168643,33.6175354,village,name,,node/6454492258
+city-n6522309697,city,TN-61,delegation-3459,sector-345951,municipality-7286825,,Al Amra,El Amra,العامرة,10.8955111,34.9837164,village,name,Q11918167,node/6522309697
+city-n660826515,city,TN-12,delegation-1255,sector-125551,municipality-7209676,,Sidi Thabet,Sidi Thabet,سيدي ثابت,10.0425496,36.9085108,town,name,Q3176067,node/660826515
+city-n6617808421,city,TN-53,delegation-3363,sector-336161,municipality-7303802,,El Bredaa,El Bredaa,البرادعة,10.9911420,35.3485947,village,name,,node/6617808421
+city-n6637553224,city,TN-61,delegation-3457,sector-345751,municipality-7110567,,Agareb,Agareb,عقارب,10.5274044,34.7421056,town,name,Q1184588,node/6637553224
+city-n6672532618,city,TN-53,delegation-3360,sector-336059,municipality-7303805,,Zelba,Zelba,زالبة,10.8493494,35.2022707,village,name,,node/6672532618
+city-n6677934271,city,TN-52,delegation-3258,sector-325860,municipality-7288387,,Amirat Fehoul,Amirat Fehoul,عميرة الفحول,10.8271170,35.4436079,village,name,,node/6677934271
+city-n6677938931,city,TN-52,delegation-3258,sector-325861,municipality-7288388,,Amirat Hojjaj,Amirat Hojjaj,عميرة الحجاج,10.8206078,35.5014070,village,name,,node/6677938931
+city-n6677938933,city,TN-52,delegation-3258,sector-325859,municipality-7288382,,Cherahil,Cherahil,شراحيل,10.8527681,35.5076315,village,name,,node/6677938933
+city-n674390308,city,TN-73,delegation-6357,sector-635655,municipality-7082337,,Rjim Maatoug,Rjim Maâtoug,رجيم معتوق,8.0329992,33.3200444,village,name,Q2912518,node/674390308
+city-n674434158,city,TN-42,delegation-4260,sector-426051,municipality-7167925,,Haïdra,Haïdra,حيدرة,8.4457377,35.5646147,village,name,Q2358652,node/674434158
+city-n674434208,city,TN-33,delegation-2357,sector-235751,municipality-7202462,,Kalâat Khasba,Kalâat Khasba,القلعة الخصبة,8.5877785,35.6654639,town,municipality_admin_centre,Q3105864,node/674434208
+city-n674918398,city,TN-23,delegation-1764,sector-176456,municipality-7209275,,Rafraf,Rafraf,رفراف,10.1816494,37.1907937,village,name,,node/674918398
+city-n675058710,city,TN-33,delegation-2362,sector-235357,municipality-7202545,,Touiref,Touiref,الطويرف,8.5798302,36.3398873,town,name,Q338163,node/675058710
+city-n6916167254,city,TN-41,delegation-4163,sector-415954,municipality-7169502,,Menzel El Mhiri,Menzel El Mhiri,منزل المهيري,9.8518721,35.4259060,village,name,Q3306155,node/6916167254
+city-n6916227161,city,TN-43,delegation-4362,sector-436251,municipality-7172948,,Ouled Haffouz,Ouled Haffouz,أولاد حفوز,9.8719635,35.0820361,village,name,,node/6916227161
+city-n694068983,city,TN-71,delegation-6157,sector-615751,municipality-7168913,,Metlaoui,Métlaoui,المتلوي,8.4018294,34.3157230,town,name,,node/694068983
+city-n7023542479,city,TN-21,delegation-1559,sector-155956,municipality-7097980,,Tazoghrane,Tazoghrane,تزغران,10.8691256,36.8941115,village,name,,node/7023542479
+city-n7024204920,city,TN-21,delegation-1558,sector-155852,municipality-7096630,,Dar Allouch,Dar Allouch,دار علوش,11.0499304,36.9694344,village,name,,node/7024204920
+city-n7026035143,city,TN-21,delegation-1555,sector-155557,municipality-7100416,,Menzel Horr,Menzel Horr,منزل حر,10.9532443,36.7268687,village,name,,node/7026035143
+city-n7069861238,city,TN-33,delegation-2361,sector-236156,municipality-7202487,,El Marja,El Marja,المرجى,9.0784368,36.0272490,village,name,,node/7069861238
+city-n7312461187,city,TN-41,delegation-4157,sector-415751,municipality-7169772,,El Alaa,El Alaa,العلاء,9.5623240,35.6166087,village,name,,node/7312461187
+city-n7318443314,city,TN-72,delegation-6256,sector-625256,municipality-7167904,,El Hamma du Jérid,El Hamma du Jérid,حامة الجريد,8.1706226,33.9974018,village,name,,node/7318443314
+city-n7359785747,city,TN-14,delegation-1456,sector-145652,municipality-7099099,,Djedeida,Djedeida,الجديدة,9.9353189,36.8492607,town,name,Q3032873,node/7359785747
+city-n7364294250,city,TN-23,delegation-1762,sector-176251,municipality-7209256,,Menzel Jemil,Menzel Jemil,منزل جميل,9.9129702,37.2393230,town,name,Q3098585,node/7364294250
+city-n7371710998,city,TN-43,delegation-4357,sector-435751,municipality-7172881,,Menzel Bouzaiane,Menzel Bouzaiane,منزل بوزيان,9.4269175,34.5731138,village,name,,node/7371710998
+city-n7372876041,city,TN-71,delegation-6153,sector-615353,municipality-7168947,,Lala,Lala,لالة,8.8188906,34.3936526,neighbourhood,name,,node/7372876041
+city-n7372876054,city,TN-71,delegation-6153,sector-615352,municipality-7168946,,El Ksar,El Ksar,القصر,8.8045119,34.3978553,village,name,,node/7372876054
+city-n7380306576,city,TN-33,delegation-2355,sector-235560,municipality-7202482,,Menzel Salem,Menzel Salem,منزل سالم,8.4772938,35.8559669,village,name,,node/7380306576
+city-n7390818324,city,TN-12,delegation-1252,sector-125253,municipality-7209681,,La Soukra,La Soukra,سكرة,10.2454267,36.8749751,village,name,Q678697,node/7390818324
+city-n7392217691,city,TN-12,delegation-1257,sector-125751,municipality-7209679,,Mnihla,Mnihla,المنيهلة,10.1169734,36.8533475,village,name,Q11937128,node/7392217691
+city-n7685117577,city,TN-31,delegation-2152,sector-215255,municipality-7209116,,Sidi Smail,Sidi Smail,سيدي إسماعيل,9.1125318,36.5969616,village,name,,node/7685117577
+city-n7685164452,city,TN-71,delegation-6163,sector-616153,municipality-7168950,,Zannouch,Zannouch,زانوش,9.0515131,34.4702009,village,name,,node/7685164452
+city-n7716925563,city,TN-13,delegation-1356,sector-135651,municipality-7209943,,Bou Mhel el-Bassatine,Bou Mhel el-Bassatine,بومهل البساتين,10.3010512,36.7244212,town,name,Q2911901,node/7716925563
+city-n7716925564,city,TN-13,delegation-1359,sector-135951,municipality-7209950,,Mégrine,Mégrine,مقرين,10.2315885,36.7703354,town,name,Q3142546,node/7716925564
+city-n7720714782,city,TN-14,delegation-1452,sector-145251,municipality-7090952,,Douar Hicher,Douar Hicher,دوار هيشر,10.0960637,36.8237415,town,name,Q3037419,node/7720714782
+city-n7726174900,city,TN-43,delegation-4359,sector-435951,municipality-7172931,,Souk Jedid,Souk Jedid,السوق الجديد,9.5646782,34.9439878,village,name,,node/7726174900
+city-n7764587576,city,TN-53,delegation-3357,sector-335759,municipality-7303846,,Telelsa,Telelsa,التلالسة,10.7896498,35.3520168,village,name,,node/7764587576
+city-n8039274824,city,TN-23,delegation-1754,sector-175454,municipality-7209220,,El Hachechna,El Hachechna,الحشاشنة,9.2757082,37.1519291,village,name,,node/8039274824
+city-n8225361669,city,TN-53,delegation-3356,sector-335654,municipality-7303860,,Sidi Zid,Sidi Zid,سيدي زيد,10.5014439,35.3689410,village,name,,node/8225361669
+city-n8679346371,city,TN-71,delegation-6162,sector-615552,municipality-7168918,,Sidi Boubaker,Sidi Boubaker,سيدي بوبكر,8.4607754,34.6660619,village,name,,node/8679346371
+city-n8719488025,city,TN-41,delegation-4161,sector-416154,municipality-7169501,,Jehina,Jehina,جهينة,9.9583537,35.3079814,village,name,,node/8719488025
+city-n928627591,city,TN-72,delegation-6253,sector-625351,municipality-7167902,,Tamerza,Tameghza,تمغزة,7.9334946,34.3863938,village,name,Q2746043,node/928627591
+city-n9827524488,city,TN-31,delegation-2152,sector-215253,municipality-7209118,,El Maagoula,El Maagoula,المعقولة,9.2104699,36.7077746,suburb,name,,node/9827524488
+city-n9891463598,city,TN-52,delegation-3255,sector-325555,municipality-7288551,,Ghenada,Ghenada,الغنادة,10.6961851,35.4970822,village,name,,node/9891463598

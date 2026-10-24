@@ -1,0 +1,562 @@
+{
+  "generated": "2026-10-24T18:16:46Z",
+  "source": {
+    "name": "OpenStreetMap",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "selector": "place=* nodes; admin_centre members of the country, governorate (admin_level=4) and boundary=municipality relations",
+    "url": "https://download.geofabrik.de/africa/tunisia-latest.osm.pbf",
+    "osm_timestamp": "2026-10-16T20:21:21Z",
+    "osm_date": "2026-10-16",
+    "sha256": "444dd6e1e64e1ab4626cde5e54d911876c7761b63f4624a98872421007f50429",
+    "bytes": 84231484
+  },
+  "rules": {
+    "settlements": [
+      "city",
+      "town",
+      "village",
+      "suburb",
+      "quarter",
+      "neighbourhood"
+    ],
+    "partial_name_places": [
+      "city",
+      "town"
+    ],
+    "near_m": 555,
+    "coast_m": 1000
+  },
+  "counts": {
+    "cities": 284,
+    "municipalities": 338,
+    "municipalities_with_seat": 282,
+    "municipalities_without_seat": 56,
+    "place_nodes_read": 1969
+  },
+  "per_type": {
+    "national_capital": 1,
+    "governorate_capital": 23,
+    "city": 260
+  },
+  "per_seat_source": {
+    "country_admin_centre": 1,
+    "governorate_admin_centre": 23,
+    "municipality_admin_centre": 6,
+    "name": 249,
+    "partial_name": 5
+  },
+  "per_place": {
+    "city": 21,
+    "neighbourhood": 1,
+    "suburb": 4,
+    "town": 111,
+    "village": 147
+  },
+  "per_governorate": {
+    "TN-11": 8,
+    "TN-12": 6,
+    "TN-13": 10,
+    "TN-14": 8,
+    "TN-21": 24,
+    "TN-22": 8,
+    "TN-23": 16,
+    "TN-31": 12,
+    "TN-32": 8,
+    "TN-33": 14,
+    "TN-34": 9,
+    "TN-41": 13,
+    "TN-42": 14,
+    "TN-43": 10,
+    "TN-51": 13,
+    "TN-52": 28,
+    "TN-53": 16,
+    "TN-61": 13,
+    "TN-71": 13,
+    "TN-72": 6,
+    "TN-73": 8,
+    "TN-81": 12,
+    "TN-82": 9,
+    "TN-83": 6
+  },
+  "warnings": [
+    "municipality-7127921 (Hazeg El Louza): 2 candidate seats by partial_name, kept node 3823151839 (اللوزة) over 5982965571",
+    "municipality-7164067 (Zriba): 3 candidate seats by name, kept node 312490313 (حمام الزريبة) over 1306244942, 2028879938",
+    "municipality-7169042 (Kesra): 2 candidate seats by name, kept node 1941836055 (كسرى العليا) over 2050179149",
+    "municipality-7210419 (Msaken): 2 candidate seats by name, kept node 287612727 (مساكن) over 6681328578",
+    "node at 8.33775,36.23070 lies 941 m off the land; given to sector sector-235456",
+    "city-n12635329133 (رحال) has no Latin name in OSM"
+  ],
+  "no_seat": [
+    {
+      "municipality": "municipality-7083656",
+      "governorate": "TN-73",
+      "name_fr": "Béchri Fatnassa",
+      "name_ar": "بشري فطناسة"
+    },
+    {
+      "municipality": "municipality-7095907",
+      "governorate": "TN-14",
+      "name_fr": "Den - Den",
+      "name_ar": "الدندان"
+    },
+    {
+      "municipality": "municipality-7098805",
+      "governorate": "TN-21",
+      "name_fr": "Azmour",
+      "name_ar": "أزمور"
+    },
+    {
+      "municipality": "municipality-7100362",
+      "governorate": "TN-21",
+      "name_fr": "Takelsa",
+      "name_ar": "تاكلسة"
+    },
+    {
+      "municipality": "municipality-7102143",
+      "governorate": "TN-14",
+      "name_fr": "El Bassatine",
+      "name_ar": "البساتين"
+    },
+    {
+      "municipality": "municipality-7102536",
+      "governorate": "TN-21",
+      "name_fr": "Ech Cherifet",
+      "name_ar": "الشريفات"
+    },
+    {
+      "municipality": "municipality-7104936",
+      "governorate": "TN-21",
+      "name_fr": "Fondouk Jedidi",
+      "name_ar": "فندق الجديدي"
+    },
+    {
+      "municipality": "municipality-7124825",
+      "governorate": "TN-61",
+      "name_fr": "Ennadhour Sidi Ali Belabed",
+      "name_ar": "الناظور سيدي علي بالعابد"
+    },
+    {
+      "municipality": "municipality-7167849",
+      "governorate": "TN-83",
+      "name_fr": "Chenini Douiret",
+      "name_ar": "شنني الدويرات"
+    },
+    {
+      "municipality": "municipality-7167930",
+      "governorate": "TN-42",
+      "name_fr": "Djedeliane",
+      "name_ar": "جدليانࢫ"
+    },
+    {
+      "municipality": "municipality-7167931",
+      "governorate": "TN-42",
+      "name_fr": "Echrayaa Machrek Chams",
+      "name_ar": "الشرايع مشرق الشمس"
+    },
+    {
+      "municipality": "municipality-7167944",
+      "governorate": "TN-42",
+      "name_fr": "Khmouda",
+      "name_ar": "خمودة"
+    },
+    {
+      "municipality": "municipality-7167979",
+      "governorate": "TN-42",
+      "name_fr": "Ennour",
+      "name_ar": "النور"
+    },
+    {
+      "municipality": "municipality-7169007",
+      "governorate": "TN-34",
+      "name_fr": "Bourouis",
+      "name_ar": "بورويس"
+    },
+    {
+      "municipality": "municipality-7169033",
+      "governorate": "TN-34",
+      "name_fr": "Sidi Morched",
+      "name_ar": "سيدي مرشد"
+    },
+    {
+      "municipality": "municipality-7169047",
+      "governorate": "TN-34",
+      "name_fr": "El Hbabsa",
+      "name_ar": "الحبابسة"
+    },
+    {
+      "municipality": "municipality-7169488",
+      "governorate": "TN-41",
+      "name_fr": "Cheraitia Ksour",
+      "name_ar": "الشرايطية القصور"
+    },
+    {
+      "municipality": "municipality-7169511",
+      "governorate": "TN-41",
+      "name_fr": "Bouhajla",
+      "name_ar": "بوحجلة"
+    },
+    {
+      "municipality": "municipality-7169726",
+      "governorate": "TN-41",
+      "name_fr": "Sisseb Edheriaat",
+      "name_ar": "سيسب الدريعات"
+    },
+    {
+      "municipality": "municipality-7171864",
+      "governorate": "TN-41",
+      "name_fr": "Abida",
+      "name_ar": "عبيدة"
+    },
+    {
+      "municipality": "municipality-7171868",
+      "governorate": "TN-41",
+      "name_fr": "El Ain El Beidha",
+      "name_ar": "عين البيضاء"
+    },
+    {
+      "municipality": "municipality-7171870",
+      "governorate": "TN-41",
+      "name_fr": "Chaouachi",
+      "name_ar": "شواشي"
+    },
+    {
+      "municipality": "municipality-7172846",
+      "governorate": "TN-43",
+      "name_fr": "Baten El Ghezel",
+      "name_ar": "باطن الغزال"
+    },
+    {
+      "municipality": "municipality-7172849",
+      "governorate": "TN-43",
+      "name_fr": "Cebalet Ouled Asker",
+      "name_ar": "سبالة أولاد عسكر"
+    },
+    {
+      "municipality": "municipality-7172882",
+      "governorate": "TN-43",
+      "name_fr": "El Mansoura",
+      "name_ar": "المنصورة"
+    },
+    {
+      "municipality": "municipality-7172947",
+      "governorate": "TN-43",
+      "name_fr": "Bennour",
+      "name_ar": "بنور"
+    },
+    {
+      "municipality": "municipality-7172963",
+      "governorate": "TN-43",
+      "name_fr": "El Ahouaz Lassouda",
+      "name_ar": "الأحواز لسودة"
+    },
+    {
+      "municipality": "municipality-7173064",
+      "governorate": "TN-81",
+      "name_fr": "Habib Thameur",
+      "name_ar": "الحبيب ثامر"
+    },
+    {
+      "municipality": "municipality-7173102",
+      "governorate": "TN-81",
+      "name_fr": "Matmata",
+      "name_ar": "مطماطة"
+    },
+    {
+      "municipality": "municipality-7173767",
+      "governorate": "TN-32",
+      "name_fr": "Ain Essobh Nadhour",
+      "name_ar": "عين الصبح الناظور"
+    },
+    {
+      "municipality": "municipality-7173835",
+      "governorate": "TN-32",
+      "name_fr": "Balta Bouawene",
+      "name_ar": "بلطة بوعوان"
+    },
+    {
+      "municipality": "municipality-7173838",
+      "governorate": "TN-32",
+      "name_fr": "Khmeyria",
+      "name_ar": "الخمايرية"
+    },
+    {
+      "municipality": "municipality-7173847",
+      "governorate": "TN-32",
+      "name_fr": "El Kalaa El Maaden Forgassen",
+      "name_ar": "القلعة المعدن فرقصان"
+    },
+    {
+      "municipality": "municipality-7173848",
+      "governorate": "TN-32",
+      "name_fr": "Jouaouda",
+      "name_ar": "الجواودة"
+    },
+    {
+      "municipality": "municipality-7202486",
+      "governorate": "TN-33",
+      "name_fr": "Zaafrane",
+      "name_ar": "الزعفران"
+    },
+    {
+      "municipality": "municipality-7209225",
+      "governorate": "TN-23",
+      "name_fr": "Utique",
+      "name_ar": "أوتيك"
+    },
+    {
+      "municipality": "municipality-7209678",
+      "governorate": "TN-12",
+      "name_fr": "Cité Ettadhamen",
+      "name_ar": "حي التضامن"
+    },
+    {
+      "municipality": "municipality-7209934",
+      "governorate": "TN-13",
+      "name_fr": "Khelidia",
+      "name_ar": "الخليدية"
+    },
+    {
+      "municipality": "municipality-7209947",
+      "governorate": "TN-13",
+      "name_fr": "Fouchana",
+      "name_ar": "فوشانة"
+    },
+    {
+      "municipality": "municipality-7209951",
+      "governorate": "TN-13",
+      "name_fr": "El Mourouj",
+      "name_ar": "المروج"
+    },
+    {
+      "municipality": "municipality-7210410",
+      "governorate": "TN-51",
+      "name_fr": "Grimet Hicher",
+      "name_ar": "القريمات هيشر"
+    },
+    {
+      "municipality": "municipality-7210414",
+      "governorate": "TN-51",
+      "name_fr": "Hammam Sousse",
+      "name_ar": "حمام سوسة"
+    },
+    {
+      "municipality": "municipality-7210432",
+      "governorate": "TN-51",
+      "name_fr": "Chott Mariem",
+      "name_ar": "شط مريم"
+    },
+    {
+      "municipality": "municipality-7210451",
+      "governorate": "TN-51",
+      "name_fr": "Ksibet Thrayet",
+      "name_ar": "قصيبة الثريات"
+    },
+    {
+      "municipality": "municipality-7210472",
+      "governorate": "TN-51",
+      "name_fr": "Ezzouhour",
+      "name_ar": "الزهور"
+    },
+    {
+      "municipality": "municipality-7286110",
+      "governorate": "TN-82",
+      "name_fr": "Zarzis Nord",
+      "name_ar": "جرجيس الشمالية"
+    },
+    {
+      "municipality": "municipality-7286613",
+      "governorate": "TN-81",
+      "name_fr": "Teboulbou",
+      "name_ar": "تبلبو"
+    },
+    {
+      "municipality": "municipality-7286791",
+      "governorate": "TN-81",
+      "name_fr": "Chenini Nahal",
+      "name_ar": "شنني نحال"
+    },
+    {
+      "municipality": "municipality-7286824",
+      "governorate": "TN-61",
+      "name_fr": "Kerkennah",
+      "name_ar": "قرقنة"
+    },
+    {
+      "municipality": "municipality-7287170",
+      "governorate": "TN-61",
+      "name_fr": "Gremda",
+      "name_ar": "قرمدة"
+    },
+    {
+      "municipality": "municipality-7287248",
+      "governorate": "TN-61",
+      "name_fr": "El Ain",
+      "name_ar": "العين"
+    },
+    {
+      "municipality": "municipality-7288130",
+      "governorate": "TN-52",
+      "name_fr": "El Masdour Menzel Harb",
+      "name_ar": "المصدور منزل حرب"
+    },
+    {
+      "municipality": "municipality-7288376",
+      "governorate": "TN-52",
+      "name_fr": "Benen Bodher",
+      "name_ar": "بنان بوضر"
+    },
+    {
+      "municipality": "municipality-7303783",
+      "governorate": "TN-53",
+      "name_fr": "El Hekaima",
+      "name_ar": "الحكايمة"
+    },
+    {
+      "municipality": "municipality-7304405",
+      "governorate": "TN-32",
+      "name_fr": "Ettataouer",
+      "name_ar": "التطور"
+    },
+    {
+      "municipality": "municipality-7304421",
+      "governorate": "TN-13",
+      "name_fr": "Ben Arous",
+      "name_ar": "بن عروس"
+    }
+  ],
+  "other_cities": [
+    {
+      "osm": "node/1831965889",
+      "place": "town",
+      "name": "Bab Laassal",
+      "governorate": "TN-11"
+    },
+    {
+      "osm": "node/1136727177",
+      "place": "town",
+      "name": "El Aouina",
+      "governorate": "TN-11"
+    },
+    {
+      "osm": "node/5826137835",
+      "place": "town",
+      "name": "Sidi Dhrif",
+      "governorate": "TN-11"
+    },
+    {
+      "osm": "node/411893392",
+      "place": "town",
+      "name": "Bir El Bey",
+      "governorate": "TN-13"
+    },
+    {
+      "osm": "node/7186137196",
+      "place": "town",
+      "name": "Naassene",
+      "governorate": "TN-13"
+    },
+    {
+      "osm": "node/2573224812",
+      "place": "city",
+      "name": "Nouvelle Medina",
+      "governorate": "TN-13"
+    },
+    {
+      "osm": "node/462003373",
+      "place": "town",
+      "name": "Heddada",
+      "governorate": "TN-33"
+    },
+    {
+      "osm": "node/8805590373",
+      "place": "town",
+      "name": "Ouled Jlassi",
+      "governorate": "TN-41"
+    },
+    {
+      "osm": "node/1187534930",
+      "place": "town",
+      "name": "Sidi Amor Bou Hajla",
+      "governorate": "TN-41"
+    },
+    {
+      "osm": "node/1187534934",
+      "place": "town",
+      "name": "Sidi Saad",
+      "governorate": "TN-41"
+    },
+    {
+      "osm": "node/6582739511",
+      "place": "town",
+      "name": "Masjed Aissa",
+      "governorate": "TN-52"
+    },
+    {
+      "osm": "node/443160117",
+      "place": "town",
+      "name": "Chebba",
+      "governorate": "TN-53"
+    },
+    {
+      "osm": "node/5982965571",
+      "place": "town",
+      "name": "Hazeg",
+      "governorate": "TN-61"
+    },
+    {
+      "osm": "node/443149064",
+      "place": "town",
+      "name": "Mahrès",
+      "governorate": "TN-61"
+    },
+    {
+      "osm": "node/2248618409",
+      "place": "town",
+      "name": "Remla",
+      "governorate": "TN-61"
+    },
+    {
+      "osm": "node/479938480",
+      "place": "town",
+      "name": "Sakiet Ezzit",
+      "governorate": "TN-61"
+    },
+    {
+      "osm": "node/262722264",
+      "place": "town",
+      "name": "Matmata el Qadima",
+      "governorate": "TN-81"
+    },
+    {
+      "osm": "node/1926362521",
+      "place": "town",
+      "name": "El Mey",
+      "governorate": "TN-82"
+    },
+    {
+      "osm": "node/297765267",
+      "place": "town",
+      "name": "Erriadh",
+      "governorate": "TN-82"
+    },
+    {
+      "osm": "node/1259516109",
+      "place": "town",
+      "name": "Guellala",
+      "governorate": "TN-82"
+    },
+    {
+      "osm": "node/1259515669",
+      "place": "town",
+      "name": "Sedouikech",
+      "governorate": "TN-82"
+    },
+    {
+      "osm": "node/6178330200",
+      "place": "town",
+      "name": "El Rogba",
+      "governorate": "TN-83"
+    }
+  ]
+}
