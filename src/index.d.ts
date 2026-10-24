@@ -1,4 +1,4 @@
-export type Partition = 'country' | 'regions' | 'districts' | 'governorates' | 'delegations' | 'sectors' | 'municipalities';
+export type Partition = 'country' | 'regions' | 'districts' | 'governorates' | 'delegations' | 'sectors' | 'municipalities' | 'water';
 export type Lod = 'full' | 'high' | 'medium' | 'low' | 'tiny';
 export type Mode = 'plain' | 'outline' | 'light' | 'dark' | 'labeled' | 'labeled-ar' | 'nested' | 'interactive';
 export type DataFormat = 'geojson' | 'topojson';
@@ -30,6 +30,29 @@ export interface MunicipalityAttributes extends UnitAttributes {
   district: string;
   osm_relation: string;
   wikidata?: string;
+}
+
+export type WaterType = 'lake' | 'reservoir' | 'lagoon' | 'sebkha' | 'chott';
+
+/**
+ * One row of `dist/data/water.json`. The water layer is an overlay: inland water also belongs to the units of the
+ * other partitions. `id` is `water-w<OSM way>`, `water-r<OSM relation>`, or `water-bizerte` / `water-el-bibane` for
+ * the two lagoons cut from the coastline.
+ */
+export interface WaterAttributes extends UnitAttributes {
+  type: WaterType;
+  /** The governorate holding most of the body (the nearest shore for lagoons). */
+  governorate: string;
+  /** Every governorate the body touches, space-separated ISO 3166-2 codes. */
+  governorates: string;
+  region: string;
+  district: string;
+  salt: '' | 'yes';
+  intermittent: '' | 'yes' | 'no';
+  wikidata?: string;
+  /** `way/<id>` or `relation/<id>`; empty for the lagoons cut from the coastline. */
+  osm: string;
+  geometry_source: 'osm_polygon' | 'osm_coastline';
 }
 
 export interface CatalogPartition {

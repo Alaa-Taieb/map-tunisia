@@ -1,7 +1,7 @@
 {
   "name": "map-tunisia",
-  "version": "1.1.0",
-  "description": "The most accurate open-source SVG maps of Tunisia: 6 nested partitions (country, regions, districts, governorates, delegations, sectors) plus municipalities (baladiyat) × 5 levels of detail × 8 visual modes, plus GeoJSON & TopoJSON.",
+  "version": "1.2.0",
+  "description": "The most accurate open-source SVG maps of Tunisia: 6 nested partitions (country, regions, districts, governorates, delegations, sectors) plus municipalities (baladiyat) and a water layer (lakes, sebkhas, chotts, lagoons) × 5 levels of detail × 8 visual modes, plus GeoJSON & TopoJSON.",
   "keywords": [
     "tunisia",
     "tunisie",
@@ -16,6 +16,10 @@
     "municipalities",
     "baladiyat",
     "بلديات",
+    "lakes",
+    "sebkha",
+    "chott",
+    "lagoons",
     "choropleth",
     "openstreetmap"
   ],
@@ -67,6 +71,7 @@
     "fetch": "python scripts/extract/fetch.py",
     "extract": "python scripts/extract/extract.py",
     "extract:municipalities": "python scripts/extract/municipalities.py",
+    "extract:water": "python scripts/extract/water.py",
     "build": "node scripts/build/build.js",
     "build:site": "node scripts/build/site.js",
     "test": "node --test \"test/**/*.test.js\"",

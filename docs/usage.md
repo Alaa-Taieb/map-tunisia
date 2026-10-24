@@ -24,6 +24,7 @@ https://cdn.jsdelivr.net/gh/Alaa-Taieb/map-tunisia@v1.1.0/dist/data/<partition>.
 - [12. Figma, Illustrator, Inkscape, print and laser cutting](#12-figma-illustrator-inkscape-print-and-laser-cutting)
 - [13. The npm helper](#13-the-npm-helper)
 - [14. Municipalities](#14-municipalities)
+- [15. Water: lakes, sebkhas and lagoons](#15-water-lakes-sebkhas-and-lagoons)
 
 ---
 
@@ -170,7 +171,7 @@ svg.selectAll('path').data(delegations.features).join('path')
 svg.append('path').datum(borders).attr('d', path).attr('fill', 'none').attr('stroke', '#fff').attr('stroke-width', 0.5);
 ```
 
-Object names inside each TopoJSON equal the partition id (`country`, `regions`, `districts`, `governorates`, `delegations`, `sectors`, `municipalities`).
+Object names inside each TopoJSON equal the partition id (`country`, `regions`, `districts`, `governorates`, `delegations`, `sectors`, `municipalities`, `water`).
 
 ## 8. Leaflet / MapLibre + GeoJSON
 
@@ -287,3 +288,46 @@ m.groupby("governorate").size()   # municipalities per governorate
 
 About 2 % of the land is not inside any mapped municipality (some sebkhas and areas OSM has not mapped yet), so municipal
 areas do not add up to the country. See the [accuracy report](accuracy.md#municipalities-baladiyat).
+
+## 15. Water: lakes, sebkhas and lagoons
+
+The `water` layer is an overlay of 67 named water bodies: lakes, dam reservoirs, sebkhas, chotts and sea-side lagoons. All
+SVGs share one frame, so you can stack it over any partition:
+
+```html
+<div class="stack">
+  <img src="dist/svg/governorates/tunisia-governorates-medium-plain.svg" alt="Governorates of Tunisia">
+  <img src="dist/svg/water/tunisia-water-medium-outline.svg" alt="">
+</div>
+<style>
+  .stack { position: relative; }
+  .stack img { width: 100%; display: block; }
+  .stack img + img { position: absolute; inset: 0; }
+</style>
+```
+
+The `outline` mode has no land fill, so it overlays cleanly as an `<img>`. For filled water on another map, inline the
+water SVG and hide its land with `#water-base { display: none; }`, or use the GeoJSON with your map library. Select bodies
+by type:
+
+```js
+import water from 'map-tunisia/data/water.json' with { type: 'json' };
+
+const salt = water.filter((w) => w.salt === 'yes');                       // sebkhas and chotts
+const dams = water.filter((w) => w.type === 'reservoir').map((w) => w.name_fr);
+const kairouan = water.filter((w) => w.governorates.split(' ').includes('TN-41'));
+```
+
+```css
+.water-body[data-type="reservoir"] { fill: #1d4ed8; }
+.water-body[data-type="sebkha"], .water-body[data-type="chott"] { fill: #e7dcc0; }
+```
+
+```python
+import geopandas as gpd
+w = gpd.read_file("https://cdn.jsdelivr.net/gh/Alaa-Taieb/map-tunisia@v1.2.0/dist/geojson/tunisia-water-medium.geojson")
+w.groupby("type").area_km2.sum()   # km² of lakes, reservoirs, lagoons, sebkhas and chotts
+```
+
+Water areas are not subtracted from the governorates, delegations or sectors: inland water is part of them. See the
+[accuracy report](accuracy.md#water-bodies) for what is in and out.

@@ -997,7 +997,7 @@
       "requirementIds": [],
       "dependsOn": [],
       "priority": "low",
-      "status": "planned",
+      "status": "in_progress",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -1022,7 +1022,12 @@
       "provenance": "stated",
       "createdAt": "2026-10-24T14:01:54.492Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-24T14:01:54.492Z"
+      "updatedAt": "2026-10-24T16:55:20.283Z",
+      "activeHarness": "claude-code",
+      "session": "880a0a06-6b38-4502-b5ff-81b60ed48c03",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T16:55:20.283Z"
     },
     {
       "id": "NS-017",

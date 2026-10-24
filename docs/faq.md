@@ -29,8 +29,10 @@ The five *aqalim* (أقاليم) created by Decree 2023-589. They group governor
 Districts (the upper chamber). Don't confuse them with the seven *economic regions* used for statistics and planning.
 
 ### Where are the lakes?
-Lagoons connected to the sea (Bizerte, Ghar El Melh, Lake of Tunis, El Bibane) are water, as in OSM's coastline. Inland lakes and
-salt flats (Ichkeul, Sidi El Hani, the chotts) belong to the governorates that contain them, so they are part of the units.
+In the administrative maps, lagoons open to the sea (Bizerte, Ghar El Melh, El Bibane) are water, as in OSM's coastline.
+Inland lakes and salt flats (Ichkeul, Sidi El Hani, the chotts), and the two Lakes of Tunis, which OSM keeps inside the
+coastline, belong to the governorates that contain them, so they are part of the units. To show them, use the
+[water layer](partitions-levels-modes.md#water-is-an-overlay): 67 lakes, dams, sebkhas, chotts and lagoons, drawn on top.
 
 ### Why UTM and not Web Mercator?
 UTM zone 32N shows Tunisia without distortion and in real kilometres. See [projection](projection.md). For web maps

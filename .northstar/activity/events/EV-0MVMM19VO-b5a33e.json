@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMM19VO-b5a33e",
+  "type": "handoff.created",
+  "at": "2026-10-24T16:25:29.412Z",
+  "actor": "claude-code",
+  "session": "3d943b00-fdde-49df-a353-818a154fff8d",
+  "entityIds": [
+    "HO-0MVMM19VO-1fae39"
+  ],
+  "summary": "claude-code recorded a handoff: NS-015 municipalities shipped as v1.1.0: commit 8ac5c1d pushed to origin/main, npm publish of 1.1.0 accepted, GitHub release v1.1.0 with 5 ZIPs + SHA256SUMS. AC1-AC4 verified (npm test, 192 pass); AC5 (owner accepts scope and result) still needs Ala. Known gaps: OSM maps 338/350 municipalities, 2.1% of land uncovered (listed in docs/accuracy.md); OSM names suspect for municipality-7209947 (Fouchana, likely Naassen) and municipality-7304421 (Ben Arous). README still says the npm package is 'about 35 MB packed'; 1.1.0 is 42.5 MB. Next: remaining roadmap items (water layer NS-016, point layers, Tifinagh/transliteration labels). Python extract deps are in a git-ignored .venv."
+}

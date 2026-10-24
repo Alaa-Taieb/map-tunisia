@@ -112,7 +112,28 @@ export const PARTITIONS = [
     lods: ['full', 'high', 'medium', 'low'],
     labelSize: [1.1, 6],
   },
+  {
+    // An overlay, not a partition of the land: lakes, dams, sebkhas and chotts lie inside the governorates (which
+    // keep them), the sea-side lagoons lie in the sea. Built from its own source (scripts/extract/water.py) and drawn
+    // over the land; `landOutline` keeps the coastline to the land, so lagoons stay water in every mode.
+    id: 'water',
+    key: 'water',
+    singular: 'water-body',
+    title: 'Water bodies',
+    titleAr: 'المسطحات المائية',
+    parents: [],
+    source: 'water',
+    base: true,
+    baseTitle: 'Land',
+    landOutline: true,
+    colourBy: 'type',
+    lods: ['full', 'high', 'medium', 'low'],
+    labelSize: [1.1, 6],
+  },
 ];
+
+/** Water body types, in palette order (`colourBy: 'type'`). */
+export const WATER_TYPES = ['lake', 'reservoir', 'lagoon', 'sebkha', 'chott'];
 
 /** Visual modes. `lods` restricts a mode to some levels of detail (default: all except full). */
 export const MODES = [
@@ -141,6 +162,12 @@ export function modesFor(partition, lod) {
 export const PALETTES = {
   light: ['#8ecae6', '#a8d5a2', '#f2cc8f', '#e9a28b', '#b8b3e9', '#f6e7a1', '#9fd8cb', '#f4b6c2'],
   dark: ['#2a5a8c', '#1f6e6e', '#46539a', '#64478a', '#2f6e4b', '#8a4466', '#7a6430', '#3c6585'],
+};
+
+/** Water palettes, indexed like WATER_TYPES: blues for open water, salt-flat sand for sebkhas and chotts. */
+export const WATER_PALETTES = {
+  light: ['#6fa8dc', '#3d85c6', '#9fc5e8', '#e6d7b3', '#d9c393'],
+  dark: ['#2f6fb0', '#1f4f8a', '#3f86c6', '#6b5d40', '#5c4d31'],
 };
 
 export const fileName = (partition, lod, mode) => `tunisia-${partition}-${lod}-${mode}.svg`;

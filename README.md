@@ -5,7 +5,7 @@
 <h3>The most accurate open-source SVG maps of Tunisia</h3>
 
 <p>
-Country · 7 economic regions · 5 districts · 24 governorates · 279 delegations · 2,083 imadas · 338 municipalities<br>
+Country · 7 economic regions · 5 districts · 24 governorates · 279 delegations · 2,083 imadas · 338 municipalities · 67 lakes, sebkhas &amp; lagoons<br>
 5 levels of detail · 8 visual modes · SVG · GeoJSON · TopoJSON · العربية · Français · English
 </p>
 
@@ -131,7 +131,7 @@ svg.insertAdjacentHTML('beforeend', `<circle cx="${x}" cy="${y}" r="3" fill="cri
 Every file lives in [`dist/`](dist/) and follows one naming scheme:
 
 ```text
-dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     157 SVG maps
+dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     174 SVG maps
 dist/geojson/tunisia-<partition>-<lod>.geojson                WGS84, with all attributes
 dist/topojson/tunisia-<partition>-<lod>.topojson              WGS84, shared borders
 dist/data/<partition>.csv | .json                             names, codes, populations, areas, label points
@@ -144,6 +144,7 @@ dist/data/<partition>.csv | .json                             names, codes, popu
 | [Delegations, light](dist/svg/delegations/tunisia-delegations-medium-light.svg) | 446 KB |
 | [Sectors (imadas), nested](dist/svg/sectors/tunisia-sectors-medium-nested.svg) | 1.8 MB |
 | [Municipalities, light](dist/svg/municipalities/tunisia-municipalities-medium-light.svg) · [interactive](dist/svg/municipalities/tunisia-municipalities-medium-interactive.svg) | 506 KB |
+| [Water bodies, light](dist/svg/water/tunisia-water-medium-light.svg) · [labelled](dist/svg/water/tunisia-water-medium-labeled.svg) | 103 KB |
 | [Country outline, for icons](dist/svg/country/tunisia-country-tiny-plain.svg) | 4 KB |
 | [Governorates TopoJSON](dist/topojson/tunisia-governorates-medium.topojson) · [GeoJSON](dist/geojson/tunisia-governorates-medium.geojson) | 105 KB · 306 KB |
 
@@ -161,13 +162,13 @@ import { svgPath, attributesPath, project, catalog } from 'map-tunisia';   // he
 import delegations from 'map-tunisia/data/delegations.json' with { type: 'json' };   // 279 rows, no fetch needed
 
 delegations.length;                          // 279
-catalog.partitions.map((p) => p.count);      // [1, 7, 5, 24, 279, 2083, 338]
+catalog.partitions.map((p) => p.count);      // [1, 7, 5, 24, 279, 2083, 338, 67]
 svgPath('governorates', 'medium', 'light');  // 'dist/svg/governorates/tunisia-governorates-medium-light.svg'
 ```
 
 The maps are plain files, so bundlers and servers can reach them through subpath exports:
 `map-tunisia/svg/…`, `map-tunisia/geojson/…`, `map-tunisia/topojson/…` and `map-tunisia/data/…`
-(for example `map-tunisia/geojson/tunisia-governorates-medium.geojson`). The package is large (about 35 MB packed, every
+(for example `map-tunisia/geojson/tunisia-governorates-medium.geojson`). The package is large (about 44 MB packed, every
 level of detail included); if you only need one file, use the CDN links above or a release ZIP below.
 Full API: [docs/usage.md](docs/usage.md#13-the-npm-helper).
 
@@ -180,7 +181,7 @@ Each release ships one ZIP per format plus a checksum file, named after the pack
 | `map-tunisia-vX.Y.Z-geojson.zip` | GeoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-topojson.zip` | TopoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-json.zip` / `-csv.zip` | attribute tables (names, codes, populations, areas, label points) |
-| `map-tunisia-vX.Y.Z-svg.zip` | all 157 SVG maps |
+| `map-tunisia-vX.Y.Z-svg.zip` | all 174 SVG maps |
 | `map-tunisia-vX.Y.Z-SHA256SUMS.txt` | checksums: `sha256sum -c map-tunisia-vX.Y.Z-SHA256SUMS.txt` |
 
 Download them from the project's *Releases* page, or build them yourself from a clone: `npm install && npm run release:zip`
@@ -199,6 +200,7 @@ writes everything into `release/` (git-ignored). The archives are reproducible: 
 | `delegations` | 279 | المعتمديات | The *mutamadiyat*, INS 2024 nomenclature |
 | `sectors` | 2,083 | العمادات | The *imadas*, the finest administrative level |
 | `municipalities` | 338 | البلديات | The *baladiyat*, a **separate layer that does not nest** in delegations ([below](#municipalities-baladiyat)) |
+| `water` | 67 | المسطحات المائية | Lakes, dams, sebkhas, chotts and sea-side lagoons, an **overlay** that leaves the partitions above unchanged ([below](#water-lakes-sebkhas-and-lagoons)) |
 
 ### Municipalities (*baladiyat*)
 
@@ -226,6 +228,42 @@ same extract as the other layers, clipped to the land. No geometry is invented: 
 the 2016 division, so 2.1 % of the land (some sebkhas, and areas not yet mapped) stays outside every municipality and is drawn
 as a light base under the units. Coverage, the gaps and the OSM relations whose names look wrong are in the
 [accuracy report](docs/accuracy.md#municipalities-baladiyat).
+
+### Water: lakes, sebkhas and lagoons
+
+<img src="dist/svg/water/tunisia-water-low-light.svg" alt="The water layer: chotts and sebkhas in sand, lakes, dams and lagoons in blue" height="360" align="right">
+
+The `water` layer draws the **67 named water bodies of at least 1 km²** over the land: 6 lakes (Ichkeul…), 18 dam reservoirs
+(Sidi Salem, Sidi El Barrak…), 35 sebkhas (Sidi El Hani, Kelbia, Sejoumi…), the 3 chotts (el-Jérid, el-Fejej, el-Gharsa) and
+5 sea-side lagoons (Bizerte, Ghar El Melh, the two Lakes of Tunis, El Bibane). It is an **overlay**: the governorates,
+delegations and sectors keep the inland water inside them, so their areas and the zero-gap guarantee do not change, and the
+lagoons lie on the sea side of the coastline. Same naming scheme as every layer: SVG (`full` to `low`, every mode except
+`nested`), GeoJSON, TopoJSON, CSV and JSON. In the `light`, `dark` and `interactive` modes open water is blue and salt flats
+are sand-coloured.
+
+Each body carries its `type` (`lake`, `reservoir`, `sebkha`, `chott` or `lagoon`), its names in Arabic, French and English,
+its main `governorate` and every governorate it touches (`governorates`), its area, `salt` and `intermittent` flags, and its
+OSM way or relation. Ids follow the OSM element: `water-r3969167` (Chott el-Jérid, relation 3969167), `water-w49730150`
+(Sebkhet Ariana, way 49730150); the two lagoons cut from the coastline are `water-bizerte` and `water-el-bibane`.
+
+```js
+import water from 'map-tunisia/data/water.json' with { type: 'json' };
+
+water.filter((w) => w.type === 'lagoon').map((w) => w.name_fr);
+// ['Lac de Bizerte', 'Bahiret el Bibane', 'Lagune de Ghar El Melh', 'Lac de Tunis', 'Lac Sud de Tunis']
+```
+
+```css
+.water-body[data-type="sebkha"], .water-body[data-type="chott"] { fill: #eadfc4; }
+.water-body[data-salt="yes"][data-intermittent="yes"] { fill-opacity: .7; }   /* seasonal salt lakes */
+#water-base { fill: none; }                                                  /* drop the land, overlay on your own map */
+```
+
+**Source:** OpenStreetMap water areas (`natural=water` lakes, reservoirs and salt lakes, and salt wetlands; rivers, ponds and
+salt pans are left out), clipped to the land. OSM has no polygon for the Bizerte and El Bibane lagoons, so they are cut from
+the OSM coastline: the parts of the sea that open to it through a channel narrower than 600 m. Unnamed areas and areas under
+1 km² are left out. Every merge, clip and gap is in the [accuracy report](docs/accuracy.md#water-bodies).
+<br clear="right">
 
 ### Levels of detail
 
@@ -278,12 +316,12 @@ See **[projection & coordinates](docs/projection.md)**.
 ```bash
 npm install
 npm run build        # dist/ from data/ in ~30 s
-npm test             # 190+ checks: counts, ids, nesting, areas, populations, XML validity, sizes, projection, package + ZIPs
+npm test             # 220 checks: counts, ids, nesting, areas, populations, water, XML validity, sizes, projection, package + ZIPs
 npm run release:zip  # versioned ZIPs + SHA256SUMS into release/
 
 # refresh from the latest OpenStreetMap data (Python 3.10+)
 pip install -r scripts/extract/requirements.txt
-npm run fetch && npm run extract && npm run extract:municipalities && npm run build
+npm run fetch && npm run extract && npm run extract:municipalities && npm run extract:water && npm run build
 ```
 
 The pipeline: **pyosmium + Shapely** (extraction and topology) → **mapshaper** (dissolve, projection, simplification) →
@@ -295,7 +333,7 @@ a custom SVG writer (labels with polylabel, map colouring, accessible markup). S
 - [x] All 279 delegations of the 2024 nomenclature
 - [x] GeoJSON / TopoJSON / CSV, projection helper, live explorer
 - [x] Municipalities (*baladiyat*) as a separate, non-nested partition
-- [ ] Optional water layer: lagoons, sebkhas, chotts and dams
+- [x] Optional water layer: lagoons, sebkhas, chotts and dams
 - [ ] Cities and capitals as point layers
 - [ ] Tamazight (Tifinagh) and English-transliteration label modes
 - [x] npm package (types, JSON data exports) and versioned release ZIPs with checksums
@@ -340,7 +378,7 @@ It helps others find it.
 
 ### Acknowledgements
 
-- The thousands of **[OpenStreetMap](https://www.openstreetmap.org) contributors** who mapped Tunisia's boundaries, municipalities and coastline
+- The thousands of **[OpenStreetMap](https://www.openstreetmap.org) contributors** who mapped Tunisia's boundaries, municipalities, lakes, sebkhas and coastline
 - **Institut National de la Statistique** (INS) for the geocodes and census figures, and the **ISIE** for its public circonscription maps
 - [Geofabrik](https://download.geofabrik.de) for the daily extracts
 - [mapshaper](https://github.com/mbloch/mapshaper), [pyosmium](https://osmcode.org/pyosmium/), [Shapely](https://shapely.readthedocs.io),

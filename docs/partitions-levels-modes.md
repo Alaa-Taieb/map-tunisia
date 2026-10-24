@@ -6,7 +6,7 @@ Each map is one combination of three choices:
 dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg
           │                     │      └── how it looks (8 modes)
           │                     └───────── how detailed it is (5 levels)
-          └─────────────────────────────── how Tunisia is divided (6 nested partitions + municipalities)
+          └─────────────────────────────── how Tunisia is divided (6 nested partitions + municipalities + water)
 ```
 
 ## Partitions
@@ -32,6 +32,16 @@ governorate that holds most of its area. OSM maps 338 of the 350 municipalities;
 mapped municipality and is drawn as a light grey base (`#municipalities-base`) under the units, so it is never mistaken for
 sea. The [accuracy report](accuracy.md#municipalities-baladiyat) lists those areas.
 
+### Water is an overlay
+
+`water` (المسطحات المائية) holds the 67 named lakes, dam reservoirs, sebkhas, chotts and sea-side lagoons of at least 1 km².
+It is not a division of the land: lakes, sebkhas and chotts stay inside the governorates, delegations and sectors that
+contain them (their areas include them), and the lagoons of Bizerte, Ghar El Melh and El Bibane lie on the sea side of the
+coastline. Stack a `water` SVG over any other partition (they share one frame), or use it alone: every file draws the land
+as a light base (`#water-base`) under the water. In `light`, `dark` and `interactive`, colours follow the body's `type`
+(blue for lakes, reservoirs and lagoons, sand for sebkhas and chotts). Like the municipalities it has no `nested` mode and
+stops at `low`. The [accuracy report](accuracy.md#water-bodies) lists what was merged, clipped and left out.
+
 See the [reference tables](reference.md) for every region, district, governorate and delegation.
 
 ## Levels of detail (LOD)
@@ -54,7 +64,7 @@ unit's main part is always kept. The [accuracy report](accuracy.md#levels-of-det
 vertex counts change, and the [catalog](catalog.md) lists every file size.
 
 **Which partitions exist at which level?** `country`, `regions`, `districts` and `governorates` exist at all five levels.
-`delegations`, `sectors` and `municipalities` stop at `low`: at `tiny`, a city delegation would shrink to a few pixels anyway.
+`delegations`, `sectors`, `municipalities` and `water` stop at `low`: at `tiny`, a city delegation would shrink to a few pixels anyway.
 
 ## Modes
 

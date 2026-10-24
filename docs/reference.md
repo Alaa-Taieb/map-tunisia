@@ -10,6 +10,7 @@ Every unit of the coarser partitions and the municipalities, with identifiers, n
 - [Governorates](#governorates)
 - [Delegations](#delegations)
 - [Municipalities](#municipalities)
+- [Water bodies](#water-bodies)
 
 ## Economic regions
 
@@ -814,3 +815,79 @@ The `id` carries the OSM relation number. Coverage and known issues: [accuracy r
 | `municipality-7167437` | Remada | رمادة | Tataouine | 27,576.0 |
 | `municipality-7167885` | Smar | الصمار | Tataouine | 1,993.7 |
 | `municipality-7167848` | Tataouine | تطاوين | Tataouine | 2,873.7 |
+
+## Water bodies
+
+67 named lakes, dam reservoirs, chotts, sebkhas and sea-side lagoons: an overlay that does not change the
+units above. The `id` carries the OSM way (`w`) or relation (`r`) number; the two lagoons cut from the coastline have a name id.
+Method and checks: [accuracy report](accuracy.md#water-bodies).
+
+| id | Type | Nom (FR) | الاسم | Governorates | Area (km²) |
+| --- | --- | --- | --- | --- | ---: |
+| `water-el-bibane` | lagoon | Bahiret el Bibane | بحيرة البيبان | Médenine | 230.3 |
+| `water-bizerte` | lagoon | Lac de Bizerte | بحيرة بنزرت | Bizerte | 124.4 |
+| `water-r18438466` | lagoon | Lagune de Ghar El Melh | بحيرة غار الملح | Ariana, Bizerte | 33.6 |
+| `water-r8031768` | lagoon | Lac de Tunis | بحيرة تونس | Tunis | 24.0 |
+| `water-w93265507` | lagoon | Lac Sud de Tunis | بحيرة تونس الجنوبية | Tunis, Ben Arous | 7.0 |
+| `water-r10224416` | lake | Ichkeul | بحيرة إشكل | Bizerte | 87.0 |
+| `water-w53383003` | lake | Lac Lebna | بحيرة لبنة | Nabeul | 5.7 |
+| `water-w185163033` | lake | Lac El Houareb | بحيرة الهوارب | Kairouan | 4.1 |
+| `water-w194070205` | lake | Lac Zayatine | بحيرة زياتين | Bizerte | 3.0 |
+| `water-w1073653456` | lake | Lac El Melah | بحيرة المالح | Bizerte | 2.8 |
+| `water-w22741868` | lake | — | بحيرة غدير القلة | Tunis | 1.5 |
+| `water-r2307563` | reservoir | Barrage de Sidi Salem | سد سيدي سالم | Béja | 44.3 |
+| `water-w129812159` | reservoir | Lac Sidi El Barrak | بحيرة سيدي البراق | Béja | 28.8 |
+| `water-r7642725` | reservoir | Barrage Sidi Saad | سد سيدي سعد | Kairouan | 10.9 |
+| `water-w31014304` | reservoir | Lac Bouhertma | بحيرة بوهرتمة | Jendouba | 6.9 |
+| `water-r2645437` | reservoir | Lac de Sejnane | بحيرة سجنان | Bizerte | 6.4 |
+| `water-w105618195` | reservoir | Barrage de ar-Raml | سد الرمل | Zaghouan | 5.7 |
+| `water-w128202897` | reservoir | Lac de Joumine | بحيرة جومين | Bizerte | 5.2 |
+| `water-r3127248` | reservoir | Lac de Bir Mcherga | بحيرة بئر مشارقة | Zaghouan | 5.1 |
+| `water-w31821996` | reservoir | Barrage Siliana | سد سليانة | Siliana | 4.5 |
+| `water-w177805975` | reservoir | Barrage de Barbara | سد بربرة | Jendouba | 4.2 |
+| `water-w178135177` | reservoir | Barrage Mellegue | سد ملاق | Le Kef | 4.2 |
+| `water-w31014375` | reservoir | Lac de Kasseb | بحيرة كساب | Béja, Jendouba | 4.1 |
+| `water-w210897207` | reservoir | Lac de Nebhana | بحيرة نبهانة | Kairouan | 3.2 |
+| `water-w150215543` | reservoir | Lac Beni-Mtir | بحيرة بني مطير | Jendouba | 2.9 |
+| `water-w128504309` | reservoir | Barrage el Kebir | سد الكبير | Zaghouan | 2.5 |
+| `water-w1164099560` | reservoir | Barrage El Harka | — | Bizerte | 2.2 |
+| `water-w569425627` | reservoir | Lac Oued El Harka | بحيرة واد الحركة | Bizerte | 1.9 |
+| `water-w499550887` | reservoir | Lac de Gamgoum | بحيرة قمقوم | Bizerte | 1.4 |
+| `water-r3969167` | chott | Chott el-Jérid | شط الجريد | Tozeur, Kébili | 3,600.0 |
+| `water-w284826905` | chott | Chott el-Fejaj | شط الفجاج | Kébili, Gabès | 572.1 |
+| `water-w551247241` | chott | Chott el-Gharsa | شط الغرسة | Tozeur | 371.3 |
+| `water-r2895174` | sebkha | Sebkhat Sidi El Hani | سبخة سيدي الهاني | Kairouan, Sousse, Mahdia | 408.4 |
+| `water-w284143307` | sebkha | Sebkhet El Hamma | سبخة الحامة | Gabès | 282.9 |
+| `water-w31831896` | sebkha | Sebkhet En Noual | سبخة النوال | Sidi Bouzid, Sfax | 151.7 |
+| `water-w103534038` | sebkha | Sebkhet el Mèlah | سبخة الملح | Médenine | 127.7 |
+| `water-w99327451` | sebkha | Sebkhet Khedma el Kebira | سبخة الكلبية | Sousse | 120.1 |
+| `water-r8828598` | sebkha | Sabkhat Tadir | سبخة ملاحة البريقة | Médenine | 110.0 |
+| `water-r1399268` | sebkha | Sebkhet Cherita | سبخة الشريطة | Mahdia | 71.1 |
+| `water-w31831820` | sebkha | Sebkhet El Gharra | سبخة الغرة | Mahdia, Sfax | 70.3 |
+| `water-w775225282` | sebkha | Sabkhat Umm al-Khayalat | سبخة أم الخيالات | Tataouine | 60.6 |
+| `water-w31832215` | sebkha | Sebkhet et Moknine | سبخة المكنين | Monastir | 49.5 |
+| `water-w53309022` | sebkha | Sebkha el Guettar | سبخة القطار | Gafsa | 48.1 |
+| `water-w101519019` | sebkha | Sabkhat El-Magta | سبخة المقطع | Médenine | 41.5 |
+| `water-w31831809` | sebkha | Sabkhet Mecheguia | سبخة مشاقية | Sidi Bouzid, Sfax | 28.3 |
+| `water-w378469750` | sebkha | Sebkhet Bou Jemel | سبخة بو جمل | Médenine | 27.2 |
+| `water-w32201801` | sebkha | Sabkhet El Jem | سبخة الجم | Sfax | 23.6 |
+| `water-r1431499` | sebkha | Sebkha Séjoumi | سبخة السيجومي | Tunis | 22.9 |
+| `water-w49730150` | sebkha | Sebkhet Ariana | سبخة أريانة | Ariana | 21.5 |
+| `water-w878142907` | sebkha | Sabkhet Halk El Menjel | سبخة حلق المنجل | Sousse | 19.4 |
+| `water-r8067346` | sebkha | Sabkhat Mujazzam | سبخة مززم | Tataouine | 14.7 |
+| `water-w121771325` | sebkha | Sebkhat Sidi Khaled | سبخة سيدي خالد | Sousse | 13.7 |
+| `water-r4499848` | sebkha | Sebkhet Ain Maider | سبخة عين ميدر | Médenine | 13.5 |
+| `water-w53382990` | sebkha | Sebkhet El Kourzia | سبخة الكورزية | Zaghouan | 13.4 |
+| `water-w31831861` | sebkha | Sebkhet Boujmel | سبخة بو جمل | Sfax | 13.0 |
+| `water-w774947682` | sebkha | Sebkhet Chemila | سبخة شميلة | Tataouine | 12.7 |
+| `water-w121771324` | sebkha | Sebkhat Assa Juriba | سبخة عسة جوريبة | Sousse | 8.4 |
+| `water-r5912351` | sebkha | Sebkha Bin El Ouedian | — | Médenine | 7.8 |
+| `water-w101519016` | sebkha | Sabkhat al Hamra | السبخة الحمراء | Médenine | 5.6 |
+| `water-r10734894` | sebkha | Sabkhat ash-Shaqa'iq | سبخة الشقائق | Médenine | 5.1 |
+| `water-w37293505` | sebkha | Sebkhet Boujmel | سبخة بو جمل | Sfax | 4.2 |
+| `water-w777017574` | sebkha | Sebkhet Areg El Makhzene | سبخة عرق المخزن | Tataouine | 2.9 |
+| `water-w208433074` | sebkha | Essabkha Esharqiya | السبخة الشرقية | Nabeul | 2.9 |
+| `water-w323053761` | sebkha | Sebkhet Mhabeul | سبخة مهابول | Médenine | 2.7 |
+| `water-w1117620876` | sebkha | Sabkhat al Djelidja | — | Sfax | 1.7 |
+| `water-w1117620878` | sebkha | Sabkhat al Aougued | — | Sfax | 1.5 |
+| `water-w263233683` | sebkha | Sebkha Jallabia | — | Médenine | 1.3 |

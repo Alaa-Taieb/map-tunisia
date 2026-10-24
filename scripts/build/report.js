@@ -13,6 +13,7 @@ import catalog from '../../src/catalog.js';
 
 const report = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/extract-report.json'), 'utf8'));
 const munReport = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/municipalities-report.json'), 'utf8'));
+const waterReport = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/water-report.json'), 'utf8'));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'dist/manifest.json'), 'utf8'));
 const D = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, 'dist/data', `${p}.json`), 'utf8'));
 const n = (x, d = 0) => Number(x).toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -63,6 +64,7 @@ function measure(geometry) {
     `| Delegations | **${D('delegations').length}** / 279 (INS 2024 nomenclature) |`,
     `| Sectors (imadas) | **${n(D('sectors').length)}** (OSM, INS 2014 geocodes) |`,
     `| Municipalities (baladiyat) | **${D('municipalities').length}** of 350, covering ${(munReport.topology.coverage * 100).toFixed(1)} % of the land ([details](#municipalities-baladiyat)) |`,
+    `| Water bodies (overlay) | **${D('water').length}** lakes, dams, sebkhas, chotts and lagoons, ${n(waterReport.topology.total_km2)} km² ([details](#water-bodies)) |`,
     `| Overlap between units | **${t.overlap_km2.toFixed(6)} km²** |`,
     `| Land not covered by any unit | **${(t.uncovered_km2 * 1e6).toFixed(0)} m²** (floating-point noise) |`,
     `| Sum of children = parent area | exact at every level (additive area formula) |`,
@@ -80,7 +82,8 @@ function measure(geometry) {
     '## Governorate areas vs published figures',
     '',
     'Published areas (Ministry of Industry, compiled by Wikipedia) include inland water and come from older surveys; OSM-derived areas',
-    'follow the precise coastline. Lagoons open to the sea (Bizerte, Ghar El Melh, Tunis, El Bibane) are water and are excluded.',
+    'follow the precise coastline. Lagoons open to the sea (Bizerte, Ghar El Melh, El Bibane) are water and are excluded; the two Lakes of Tunis lie',
+    'inside the OSM coastline and are counted, like the inland lakes, sebkhas and chotts. The [water layer](#water-bodies) maps all of them.',
     '',
     '| Governorate | Map Tunisia (km²) | Published (km²) | Difference |',
     '| --- | ---: | ---: | ---: |',
@@ -210,6 +213,44 @@ function measure(geometry) {
       '',
     );
   }
+  {
+    const wt = waterReport.topology;
+    const water = D('water');
+    const TYPE = { lake: 'Lakes', reservoir: 'Dam reservoirs', lagoon: 'Sea-side lagoons', sebkha: 'Sebkhas (salt flats)', chott: 'Chotts' };
+    const lo = waterReport.left_out;
+    lines.push(
+      '', '## Water bodies', '',
+      'The water layer is an overlay: lakes, dams, sebkhas and chotts stay part of the governorates, delegations and sectors above,',
+      'and the sea-side lagoons lie on the sea side of the OSM coastline (except the two Lakes of Tunis, which OSM keeps inside it).',
+      `Named OSM water areas of at least ${waterReport.rules.min_area_km2} km² are kept, clipped to the land of Tunisia. The lagoons of Bizerte and`,
+      `El Bibane have no polygon in OSM: they are the parts of the territorial sea that open to it through a channel narrower than`,
+      `${waterReport.rules.lagoon_channel_m} m, cut where the channel meets the open sea. See [methodology.md](methodology.md#10-water-layer).`, '',
+      '| Check | Result |', '| --- | --- |',
+      ...Object.entries(TYPE).map(([t, title]) => `| ${title} | **${waterReport.per_type[t].count}**, ${n(waterReport.per_type[t].area_km2)} km² |`),
+      `| Water on land / in the sea | ${n(wt.on_land_km2)} km² / ${n(wt.in_sea_km2)} km² |`,
+      `| Overlap between water bodies | **${wt.overlap_km2.toFixed(6)} km²** |`,
+      `| Outside Tunisia | ${wt.outside_tunisia_km2.toFixed(6)} km² |`,
+      `| Invalid geometries | ${wt.invalid_geometries} |`,
+      `| Left out: unnamed | ${n(lo.unnamed)} OSM areas, ${n(lo.unnamed_km2)} km² (mostly small hill lakes, salt marsh and wadi pools) |`,
+      `| Left out: under ${waterReport.rules.min_area_km2} km² | ${lo.smaller_than_min} named areas, ${n(lo.smaller_than_min_km2, 1)} km² |`,
+      '',
+    );
+    for (const c of waterReport.corrections.filter((c) => c.type === 'merge_duplicate')) {
+      lines.push(`- \`${c.osm}\` (${c.name}) is the same body as \`${c.into}\`; merged into it.`);
+    }
+    for (const c of waterReport.corrections.filter((c) => c.type === 'overlap_to_smaller')) {
+      lines.push(`- \`${c.osm}\` (${c.name}) overlapped \`${c.given_to}\` by ${c.area_km2} km²; the overlap went to the smaller one.`);
+    }
+    for (const c of waterReport.corrections.filter((c) => c.type === 'clip_to_land' && c.area_km2 >= 1)) {
+      lines.push(`- \`${c.osm}\` (${c.name}): ${c.area_km2} km² outside the land of Tunisia clipped off.`);
+    }
+    for (const w of waterReport.warnings) lines.push(`- ${w}.`);
+    if (waterReport.excluded.length) {
+      lines.push('', 'Coastline pockets that open to the sea through a narrow channel but are not a known lagoon, so they are not published:', '',
+        '| Area (km²) | Location (lon, lat) |', '| ---: | --- |', ...waterReport.excluded.map((e) => `| ${e.area_km2.toFixed(1)} | ${e.at[0]}, ${e.at[1]} |`));
+    }
+    lines.push('');
+  }
   lines.push('', 'Found an error? Please [open a data issue](https://github.com/Alaa-Taieb/map-tunisia/issues/new?template=data-error.yml).', '');
   writeFile(path.join(ROOT, 'docs/accuracy.md'), lines.join('\n'));
   console.log('docs/accuracy.md');
@@ -224,7 +265,7 @@ function measure(geometry) {
   const lines = [GENERATED, '', '# Reference tables', '',
     'Every unit of the coarser partitions and the municipalities, with identifiers, names and figures. Sectors (imadas) are too many for a page — use',
     '[`dist/data/sectors.csv`](../dist/data/sectors.csv). Areas are ellipsoidal; populations are INS census counts (RGPH 2014 and 2024).', '',
-    '- [Economic regions](#economic-regions)', '- [Districts (2023)](#districts-2023)', '- [Governorates](#governorates)', '- [Delegations](#delegations)', '- [Municipalities](#municipalities)', '',
+    '- [Economic regions](#economic-regions)', '- [Districts (2023)](#districts-2023)', '- [Governorates](#governorates)', '- [Delegations](#delegations)', '- [Municipalities](#municipalities)', '- [Water bodies](#water-bodies)', '',
     '## Economic regions', '', '| id | Name (EN) | Nom (FR) | الاسم | Governorates | Population 2024 | Area (km²) |', '| --- | --- | --- | --- | --- | ---: | ---: |'];
   for (const r of reg) lines.push(`| \`${r.id}\` | ${r.name_en} | ${r.name_fr} | ${r.name_ar} | ${r.governorates.split(' ').join(', ')} | ${n(r.population_2024)} | ${n(r.area_km2)} |`);
   lines.push('', '## Districts (2023)', '', 'Created by Decree 2023-589 of 21 September 2023 for the National Council of Regions and Districts.', '',
@@ -252,6 +293,13 @@ function measure(geometry) {
     'The `id` carries the OSM relation number. Coverage and known issues: [accuracy report](accuracy.md#municipalities-baladiyat).', '',
     '| id | Nom (FR) | الاسم | Governorate | Area (km²) |', '| --- | --- | --- | --- | ---: |');
   for (const m of mun) lines.push(`| \`${m.id}\` | ${m.name_fr} | ${m.name_ar} | ${govOf[m.governorate]} | ${n(m.area_km2, 1)} |`);
+  const ORDER = ['lagoon', 'lake', 'reservoir', 'chott', 'sebkha'];
+  const water = D('water').sort((a, b) => ORDER.indexOf(a.type) - ORDER.indexOf(b.type) || Number(b.area_km2) - Number(a.area_km2));
+  lines.push('', '## Water bodies', '', `${water.length} named lakes, dam reservoirs, chotts, sebkhas and sea-side lagoons: an overlay that does not change the`,
+    'units above. The `id` carries the OSM way (`w`) or relation (`r`) number; the two lagoons cut from the coastline have a name id.',
+    'Method and checks: [accuracy report](accuracy.md#water-bodies).', '',
+    '| id | Type | Nom (FR) | الاسم | Governorates | Area (km²) |', '| --- | --- | --- | --- | --- | ---: |');
+  for (const w of water) lines.push(`| \`${w.id}\` | ${w.type} | ${w.name_fr || '—'} | ${w.name_ar || '—'} | ${w.governorates.split(' ').map((g) => govOf[g]).join(', ')} | ${n(w.area_km2, 1)} |`);
   lines.push('');
   writeFile(path.join(ROOT, 'docs/reference.md'), lines.join('\n'));
   console.log('docs/reference.md');

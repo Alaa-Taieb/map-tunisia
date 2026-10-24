@@ -148,7 +148,34 @@ sectors, so they cannot be faces of the planar overlay. `scripts/extract/municip
 The build simplifies the municipalities together with one land polygon, so the light base drawn under them shares their
 topology at every level of detail.
 
-## 10. Validation
+## 10. Water layer
+
+Lakes, dam reservoirs, sebkhas, chotts and sea-side lagoons ship as an optional overlay, `water`, built by
+`scripts/extract/water.py`. It changes nothing in the partitions above: the inland water bodies already belong to the
+governorates, delegations and sectors that contain them (section 5), and the lagoons lie outside the land.
+
+1. reads the OSM water areas: `natural=water` with `water=lake`, `reservoir`, `salt_lake`, `lagoon` or no `water` tag,
+   `water=salt_lake`, and salt wetlands (`wetland=saltmarsh`, `sabkha` or `tidalflat`, or `salt=yes`). Rivers, canals, ponds,
+   basins, wastewater and salt pans (`saltern`, `landuse=salt_pond`) are left out, and so are polygons named *Oued*/*وادي*;
+2. keeps the **named** areas only (948 unnamed ones, mostly hill lakes and salt marsh, are counted in the report) and clips
+   them to the land, which also cuts off the parts of Chott el-Gharsa and the southern sebkhas that lie in Algeria or Libya;
+3. keeps the sea-side lagoons that OSM draws as polygons (Ghar El Melh, and the two Lakes of Tunis, which OSM places
+   inside the coastline) on their own side of the coastline;
+4. builds the lagoons that OSM only draws with `natural=coastline` (Bizerte, El Bibane): the territorial sea (the country
+   relation minus the land) is eroded by 300 m, the part still joined to the open sea is grown back, and what is left over
+   are the pockets that reach the sea through a channel narrower than 600 m. The pocket that holds each lagoon's seed point
+   becomes the lagoon, cut where its channel meets the open sea; the names come from a short table in the script (El
+   Bibane's from an OSM `natural=bay` node). Other pockets are listed in the report and not published;
+5. merges the same body mapped twice (one polygon at least half inside another, or touching polygons with the same name or
+   Wikidata item, such as the two relations of Sebkhet Sidi El Hani) and gives any other overlap to the smaller body;
+6. drops bodies under 1 km², then classifies the rest by name and tags: *Chott*/*شط* → `chott`; *Sebkha*/*سبخة* → `sebkha`;
+   `water=reservoir` or *Barrage*/*سد* → `reservoir`; the lagoons above → `lagoon`; other salt water → `sebkha`; else `lake`;
+7. records the governorate holding most of each body (the nearest shore for lagoons) and every governorate it touches.
+
+The build draws the water bodies over one land polygon simplified in the same topology, takes the coastline from that land
+polygon alone so lagoons are never mistaken for land, and colours the bodies by type rather than by graph colouring.
+
+## 11. Validation
 
 `npm test` checks, among other things:
 
@@ -160,6 +187,9 @@ topology at every level of detail.
 - populations adding up to the national census totals;
 - municipalities: count, unique ids tied to their OSM relation, valid closed geometry in every GeoJSON and TopoJSON, no
   overlaps, nothing outside the land, coverage above 97 %, and no nesting assumed (no delegation or sector columns);
+- water: counts per type, ids tied to their OSM way or relation, names, governorates, the landmark lakes, chotts and
+  lagoons with plausible areas, no overlaps, nothing outside Tunisia, lagoons on the sea side, valid GeoJSON and TopoJSON at
+  every level, and the land drawn under the bodies in every SVG, coloured by type;
 - every SVG of the matrix exists, is valid XML, shares the frame, credits OSM and the author, has one path and one label per
   unit, contains no scripts or external references, and fits its size budget;
 - the projection helper matches PROJ to 1 mm.

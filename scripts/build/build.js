@@ -5,7 +5,7 @@
  *   node scripts/build/build.js [--only governorates,delegations] [--lods medium,low]
  *
  * For each partition: dissolve the nested sector layer at full precision (municipalities,
- * which do not nest, come from their own source layer drawn over the land),
+ * which do not nest, and the water overlay come from their own source layers drawn over the land),
  * project to UTM 32N, simplify per level of detail (topology-aware, mapshaper),
  * then write SVG (all modes), GeoJSON + TopoJSON (WGS84) and attribute tables.
  */
@@ -13,7 +13,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import mapshaper from 'mapshaper';
 import polylabel from 'polylabel';
-import { LODS, PARTITIONS, MODES, PROJ4, CRS, PROJECT, FRAME_PADDING_KM, modesFor, fileName, PALETTES } from './config.js';
+import { LODS, PARTITIONS, MODES, PROJ4, CRS, PROJECT, FRAME_PADDING_KM, modesFor, fileName, PALETTES, WATER_TYPES } from './config.js';
 import { ROOT, readCSV, toCSV, writeFile, polygonsOf, polygonArea, ringArea, formatBytes } from './lib.js';
 import { renderSVG } from './svg.js';
 import { fromUTM } from '../../src/utm.js';
@@ -39,8 +39,10 @@ const districtRows = A('districts.csv');
 const delRows = A('delegations.csv');
 const secRows = A('sectors.csv');
 const munRows = A('municipalities.csv');
+const waterRows = A('water.csv');
 const byId = (rows) => Object.fromEntries(rows.map((r) => [r.id, r]));
 const GOV = byId(govRows), REG = byId(regionRows), DIS = byId(districtRows), DEL = byId(delRows), SEC = byId(secRows), MUN = byId(munRows);
+const WAT = byId(waterRows);
 
 const sumPop = (ids, year) => ids.reduce((s, g) => s + Number(GOV[g][`population_${year}`]), 0);
 const ALL_GOVS = govRows.map((g) => g.id);
@@ -76,6 +78,11 @@ function attributes(partition, id) {
       const g = GOV[m.governorate];
       return { ...m, region: g.region, district: g.district };
     }
+    case 'water': {
+      const w = WAT[id];
+      const g = GOV[w.governorate];
+      return { ...w, region: g.region, district: g.district };
+    }
   }
   throw new Error(partition);
 }
@@ -96,19 +103,26 @@ async function ms(cmd, inputs) {
   return mapshaper.applyCommands(cmd, inputs);
 }
 
-// Municipalities: their own layer plus one `LAND` feature (the exact union of the sectors).
-// Both are simplified together, so the municipalities and the land under them share one topology.
+// Municipalities and water: their own layers plus one `LAND` feature (the exact union of the sectors).
+// Both are simplified together, so the units and the land under them share one topology.
 const LAND = '__land';
-const municipalities = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/tunisia-municipalities.geojson'), 'utf8'));
-for (const f of municipalities.features) {
-  const g = GOV[f.properties.governorate];
-  if (!g) throw new Error(`unknown governorate ${f.properties.governorate}`);
-  if (!MUN[f.properties.municipality]) throw new Error(`unknown municipality ${f.properties.municipality}`);
-  Object.assign(f.properties, { country: 'TN', region: g.region, district: g.district });
-}
 const land = JSON.parse((await ms('-i src.json -dissolve country -o land.json format=geojson geojson-type=FeatureCollection precision=0.0000001', { 'src.json': SRC }))['land.json']);
-municipalities.features.push({ type: 'Feature', properties: { municipality: LAND, country: 'TN' }, geometry: land.features[0].geometry });
-const SOURCES = { sectors: SRC, municipalities: JSON.stringify(municipalities) };
+function overlay(file, key, rows) {
+  const fc = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source', file), 'utf8'));
+  for (const f of fc.features) {
+    const g = GOV[f.properties.governorate];
+    if (!g) throw new Error(`unknown governorate ${f.properties.governorate}`);
+    if (!rows[f.properties[key]]) throw new Error(`unknown ${key} ${f.properties[key]}`);
+    Object.assign(f.properties, { country: 'TN', region: g.region, district: g.district });
+  }
+  fc.features.push({ type: 'Feature', properties: { [key]: LAND, country: 'TN' }, geometry: land.features[0].geometry });
+  return JSON.stringify(fc);
+}
+const SOURCES = {
+  sectors: SRC,
+  municipalities: overlay('tunisia-municipalities.geojson', 'municipality', MUN),
+  water: overlay('tunisia-water.geojson', 'water', WAT),
+};
 
 // ------------------------------------------------------------------ frame
 console.log('Computing the shared frame …');
@@ -335,7 +349,10 @@ for (const partition of PARTITIONS) {
     // one simplified topology (borders line up exactly with the unit fills).
     let cmd = `-i base.json name=units `;
     for (const h of parents) cmd += `-dissolve ${h} target=units + name=p_${h} -innerlines target=p_${h} + name=l_${h} `;
-    cmd += `-dissolve country target=units + name=outline `;
+    // The coastline: the land feature alone where units reach into the sea (lagoons), else the union of the units.
+    cmd += partition.landOutline
+      ? `-filter "${key} === '${LAND}'" target=units + name=outline -dissolve country target=outline `
+      : `-dissolve country target=units + name=outline `;
     if (lod.interval) cmd += `-simplify target=units interval=${lod.interval} keep-shapes planar `;
     const o = 'format=geojson geojson-type=FeatureCollection precision=0.001';
     cmd += `-o target=units units.json ${o} `;
@@ -355,7 +372,9 @@ for (const partition of PARTITIONS) {
     areas = Object.fromEntries(results.full.units.map((f) => [f.properties[key], trueAreaKm2(f.geometry)]));
   }
   const col = colourUnits(ref.units, PALETTES.light.length);
-  colours = Object.fromEntries(ref.units.map((f, i) => [f.properties[key], col.colour[i]]));
+  colours = partition.colourBy === 'type'
+    ? Object.fromEntries(ref.units.map((f) => [f.properties[key], WATER_TYPES.indexOf(attributes(partition.id, f.properties[key]).type)]))
+    : Object.fromEntries(ref.units.map((f, i) => [f.properties[key], col.colour[i]]));
   labels = { latin: {}, arabic: {} };
   const frameGeoms = {};
   for (const f of ref.units) {

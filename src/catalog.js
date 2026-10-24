@@ -89,6 +89,18 @@ export default {
         "medium",
         "low"
       ]
+    },
+    {
+      "id": "water",
+      "title": "Water bodies",
+      "titleAr": "المسطحات المائية",
+      "count": 67,
+      "lods": [
+        "full",
+        "high",
+        "medium",
+        "low"
+      ]
     }
   ],
   "lods": [
@@ -370,6 +382,33 @@ export default {
       ]
     },
     "municipalities": {
+      "full": [
+        "plain"
+      ],
+      "high": [
+        "plain",
+        "outline"
+      ],
+      "medium": [
+        "plain",
+        "outline",
+        "light",
+        "dark",
+        "labeled",
+        "labeled-ar",
+        "interactive"
+      ],
+      "low": [
+        "plain",
+        "outline",
+        "light",
+        "dark",
+        "labeled",
+        "labeled-ar",
+        "interactive"
+      ]
+    },
+    "water": {
       "full": [
         "plain"
       ],

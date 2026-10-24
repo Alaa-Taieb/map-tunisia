@@ -4,7 +4,7 @@
 
 Every file in `dist/`, generated from the OpenStreetMap extract of **2026-10-16**.
 
-**157 SVG files** (70.56 MB) · **32 GeoJSON** (59.76 MB) · **32 TopoJSON** (19.54 MB) · attribute tables in `dist/data/`.
+**174 SVG files** (73.76 MB) · **36 GeoJSON** (61.38 MB) · **36 TopoJSON** (20.25 MB) · attribute tables in `dist/data/`.
 
 ## Tunisia — 1 unit
 
@@ -86,5 +86,16 @@ Attributes: [`dist/data/sectors.csv`](../dist/data/sectors.csv) · [`dist/data/s
 | **low** | [196.6 KB](../dist/svg/municipalities/tunisia-municipalities-low-plain.svg) | [203.5 KB](../dist/svg/municipalities/tunisia-municipalities-low-outline.svg) | [197.8 KB](../dist/svg/municipalities/tunisia-municipalities-low-light.svg) | [197.8 KB](../dist/svg/municipalities/tunisia-municipalities-low-dark.svg) | [232.8 KB](../dist/svg/municipalities/tunisia-municipalities-low-labeled.svg) | [234.6 KB](../dist/svg/municipalities/tunisia-municipalities-low-labeled-ar.svg) | · | [197.9 KB](../dist/svg/municipalities/tunisia-municipalities-low-interactive.svg) | [344.5 KB](../dist/geojson/tunisia-municipalities-low.geojson) | [201.7 KB](../dist/topojson/tunisia-municipalities-low.topojson) |
 
 Attributes: [`dist/data/municipalities.csv`](../dist/data/municipalities.csv) · [`dist/data/municipalities.json`](../dist/data/municipalities.json)
+
+## Water bodies — 67 units
+
+| Level | plain | outline | light | dark | labeled | labeled-ar | nested | interactive | GeoJSON | TopoJSON |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| **full** | [1.34 MB](../dist/svg/water/tunisia-water-full-plain.svg) | · | · | · | · | · | · | · | [1.08 MB](../dist/geojson/tunisia-water-full.geojson) | [441.7 KB](../dist/topojson/tunisia-water-full.topojson) |
+| **high** | [320.4 KB](../dist/svg/water/tunisia-water-high-plain.svg) | [478.7 KB](../dist/svg/water/tunisia-water-high-outline.svg) | · | · | · | · | · | · | [393.8 KB](../dist/geojson/tunisia-water-high.geojson) | [170.2 KB](../dist/topojson/tunisia-water-high.topojson) |
+| **medium** | [102.8 KB](../dist/svg/water/tunisia-water-medium-plain.svg) | [138.9 KB](../dist/svg/water/tunisia-water-medium-outline.svg) | [103.1 KB](../dist/svg/water/tunisia-water-medium-light.svg) | [103.2 KB](../dist/svg/water/tunisia-water-medium-dark.svg) | [110.4 KB](../dist/svg/water/tunisia-water-medium-labeled.svg) | [110.9 KB](../dist/svg/water/tunisia-water-medium-labeled-ar.svg) | · | [103.2 KB](../dist/svg/water/tunisia-water-medium-interactive.svg) | [121.7 KB](../dist/geojson/tunisia-water-medium.geojson) | [73.4 KB](../dist/topojson/tunisia-water-medium.topojson) |
+| **low** | [43.8 KB](../dist/svg/water/tunisia-water-low-plain.svg) | [50.8 KB](../dist/svg/water/tunisia-water-low-outline.svg) | [44.0 KB](../dist/svg/water/tunisia-water-low-light.svg) | [44.1 KB](../dist/svg/water/tunisia-water-low-dark.svg) | [51.4 KB](../dist/svg/water/tunisia-water-low-labeled.svg) | [51.8 KB](../dist/svg/water/tunisia-water-low-labeled-ar.svg) | · | [44.2 KB](../dist/svg/water/tunisia-water-low-interactive.svg) | [51.3 KB](../dist/geojson/tunisia-water-low.geojson) | [40.9 KB](../dist/topojson/tunisia-water-low.topojson) |
+
+Attributes: [`dist/data/water.csv`](../dist/data/water.csv) · [`dist/data/water.json`](../dist/data/water.json)
 
 `·` = not generated for this combination (e.g. labels on the full level of detail, or nested borders for partitions without a parent).

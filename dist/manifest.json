@@ -1,6 +1,6 @@
 {
  "name": "Map Tunisia",
- "version": "1.1.0",
+ "version": "1.2.0",
  "osm_date": "2026-10-16",
  "crs": "EPSG:32632",
  "frame": {
@@ -372,6 +372,50 @@
       "svg/municipalities/tunisia-municipalities-low-labeled.svg",
       "svg/municipalities/tunisia-municipalities-low-labeled-ar.svg",
       "svg/municipalities/tunisia-municipalities-low-interactive.svg"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "title": "Water bodies",
+   "count": 67,
+   "lods": [
+    {
+     "id": "full",
+     "files": [
+      "svg/water/tunisia-water-full-plain.svg"
+     ]
+    },
+    {
+     "id": "high",
+     "files": [
+      "svg/water/tunisia-water-high-plain.svg",
+      "svg/water/tunisia-water-high-outline.svg"
+     ]
+    },
+    {
+     "id": "medium",
+     "files": [
+      "svg/water/tunisia-water-medium-plain.svg",
+      "svg/water/tunisia-water-medium-outline.svg",
+      "svg/water/tunisia-water-medium-light.svg",
+      "svg/water/tunisia-water-medium-dark.svg",
+      "svg/water/tunisia-water-medium-labeled.svg",
+      "svg/water/tunisia-water-medium-labeled-ar.svg",
+      "svg/water/tunisia-water-medium-interactive.svg"
+     ]
+    },
+    {
+     "id": "low",
+     "files": [
+      "svg/water/tunisia-water-low-plain.svg",
+      "svg/water/tunisia-water-low-outline.svg",
+      "svg/water/tunisia-water-low-light.svg",
+      "svg/water/tunisia-water-low-dark.svg",
+      "svg/water/tunisia-water-low-labeled.svg",
+      "svg/water/tunisia-water-low-labeled-ar.svg",
+      "svg/water/tunisia-water-low-interactive.svg"
      ]
     }
    ]
@@ -2081,6 +2125,198 @@
    "partition": "municipalities",
    "lod": "low",
    "bytes": 206528
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-full-plain.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "full",
+   "mode": "plain",
+   "bytes": 1403913
+  },
+  {
+   "path": "dist/geojson/tunisia-water-full.geojson",
+   "type": "geojson",
+   "partition": "water",
+   "lod": "full",
+   "bytes": 1127805
+  },
+  {
+   "path": "dist/topojson/tunisia-water-full.topojson",
+   "type": "topojson",
+   "partition": "water",
+   "lod": "full",
+   "bytes": 452287
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-high-plain.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "high",
+   "mode": "plain",
+   "bytes": 328080
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-high-outline.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "high",
+   "mode": "outline",
+   "bytes": 490215
+  },
+  {
+   "path": "dist/geojson/tunisia-water-high.geojson",
+   "type": "geojson",
+   "partition": "water",
+   "lod": "high",
+   "bytes": 403232
+  },
+  {
+   "path": "dist/topojson/tunisia-water-high.topojson",
+   "type": "topojson",
+   "partition": "water",
+   "lod": "high",
+   "bytes": 174281
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-medium-plain.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "medium",
+   "mode": "plain",
+   "bytes": 105298
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-medium-outline.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "medium",
+   "mode": "outline",
+   "bytes": 142196
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-medium-light.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "medium",
+   "mode": "light",
+   "bytes": 105571
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-medium-dark.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "medium",
+   "mode": "dark",
+   "bytes": 105643
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-medium-labeled.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "medium",
+   "mode": "labeled",
+   "bytes": 113076
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-medium-labeled-ar.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "medium",
+   "mode": "labeled-ar",
+   "bytes": 113553
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-medium-interactive.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "medium",
+   "mode": "interactive",
+   "bytes": 105727
+  },
+  {
+   "path": "dist/geojson/tunisia-water-medium.geojson",
+   "type": "geojson",
+   "partition": "water",
+   "lod": "medium",
+   "bytes": 124651
+  },
+  {
+   "path": "dist/topojson/tunisia-water-medium.topojson",
+   "type": "topojson",
+   "partition": "water",
+   "lod": "medium",
+   "bytes": 75203
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-low-plain.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "low",
+   "mode": "plain",
+   "bytes": 44827
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-low-outline.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "low",
+   "mode": "outline",
+   "bytes": 52001
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-low-light.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "low",
+   "mode": "light",
+   "bytes": 45100
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-low-dark.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "low",
+   "mode": "dark",
+   "bytes": 45172
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-low-labeled.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "low",
+   "mode": "labeled",
+   "bytes": 52605
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-low-labeled-ar.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "low",
+   "mode": "labeled-ar",
+   "bytes": 53082
+  },
+  {
+   "path": "dist/svg/water/tunisia-water-low-interactive.svg",
+   "type": "svg",
+   "partition": "water",
+   "lod": "low",
+   "mode": "interactive",
+   "bytes": 45256
+  },
+  {
+   "path": "dist/geojson/tunisia-water-low.geojson",
+   "type": "geojson",
+   "partition": "water",
+   "lod": "low",
+   "bytes": 52573
+  },
+  {
+   "path": "dist/topojson/tunisia-water-low.topojson",
+   "type": "topojson",
+   "partition": "water",
+   "lod": "low",
+   "bytes": 41911
   }
  ]
 }

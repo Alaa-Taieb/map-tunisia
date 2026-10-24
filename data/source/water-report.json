@@ -1,0 +1,204 @@
+{
+  "corrections": [
+    {
+      "type": "clip_to_land",
+      "osm": "way/101519016",
+      "name": "Sabkhat al Hamra",
+      "area_km2": 0.151
+    },
+    {
+      "type": "clip_to_land",
+      "osm": "way/101519019",
+      "name": "Sabkhat El-Magta",
+      "area_km2": 19.105
+    },
+    {
+      "type": "clip_to_land",
+      "osm": "way/551247241",
+      "name": "Chott el-Gharsa",
+      "area_km2": 43.275
+    },
+    {
+      "type": "clip_to_land",
+      "osm": "relation/8067346",
+      "name": "Sabkhat Mujazzam",
+      "area_km2": 63.613
+    },
+    {
+      "type": "clip_to_land",
+      "osm": "relation/8828598",
+      "name": "Sabkhat Tadir",
+      "area_km2": 90.935
+    },
+    {
+      "type": "merge_duplicate",
+      "osm": "way/551346335",
+      "name": "Sebkhet El Hamma",
+      "into": "way/284143307",
+      "area_km2": 254.393
+    },
+    {
+      "type": "merge_duplicate",
+      "osm": "relation/14034571",
+      "name": "Sebkhat Sidi El Hani",
+      "into": "relation/2895174",
+      "area_km2": 60.625
+    },
+    {
+      "type": "merge_duplicate",
+      "osm": "way/177959779",
+      "name": "Barrage Mellègue",
+      "into": "way/178135177",
+      "area_km2": 2.029
+    }
+  ],
+  "warnings": [
+    "water-r5912351 (Sebkha Bin El Ouedian) has no Arabic name in OSM",
+    "water-w1164099560 (Barrage El Harka) has no Arabic name in OSM",
+    "water-w1117620876 (Sabkhat al Djelidja) has no Arabic name in OSM",
+    "water-w1117620878 (Sabkhat al Aougued) has no Arabic name in OSM",
+    "water-w22741868 (بحيرة غدير القلة) has no Latin name in OSM",
+    "water-w263233683 (Sebkha Jallabia) has no Arabic name in OSM",
+    "2 water bodies are named Sebkhet Boujmel in TN-61: water-w31831861, water-w37293505"
+  ],
+  "excluded": [
+    {
+      "reason": "coastline pocket that is not a known lagoon",
+      "area_km2": 3.5,
+      "at": [
+        10.186,
+        37.091
+      ]
+    },
+    {
+      "reason": "coastline pocket that is not a known lagoon",
+      "area_km2": 2.6,
+      "at": [
+        10.343,
+        34.414
+      ]
+    },
+    {
+      "reason": "coastline pocket that is not a known lagoon",
+      "area_km2": 2.4,
+      "at": [
+        10.565,
+        33.642
+      ]
+    },
+    {
+      "reason": "coastline pocket that is not a known lagoon",
+      "area_km2": 1.8,
+      "at": [
+        10.544,
+        34.524
+      ]
+    },
+    {
+      "reason": "coastline pocket that is not a known lagoon",
+      "area_km2": 1.9,
+      "at": [
+        10.824,
+        35.731
+      ]
+    },
+    {
+      "reason": "coastline pocket that is not a known lagoon",
+      "area_km2": 47.8,
+      "at": [
+        10.952,
+        33.675
+      ]
+    },
+    {
+      "reason": "coastline pocket that is not a known lagoon",
+      "area_km2": 5.6,
+      "at": [
+        11.293,
+        34.762
+      ]
+    }
+  ],
+  "generated": "2026-10-24T17:04:50Z",
+  "source": {
+    "name": "OpenStreetMap",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "selector": "natural=water (lake, reservoir, salt_lake, lagoon), water=salt_lake, salt wetlands; lagoons without a polygon from natural=coastline",
+    "url": "https://download.geofabrik.de/africa/tunisia-latest.osm.pbf",
+    "osm_timestamp": "2026-10-16T20:21:21Z",
+    "osm_date": "2026-10-16",
+    "sha256": "444dd6e1e64e1ab4626cde5e54d911876c7761b63f4624a98872421007f50429",
+    "bytes": 84231484
+  },
+  "rules": {
+    "min_area_km2": 1.0,
+    "duplicate_share": 0.5,
+    "lagoon_channel_m": 600
+  },
+  "counts": {
+    "water": 67,
+    "areas_read": 1128,
+    "governorates": 22
+  },
+  "per_type": {
+    "lake": {
+      "count": 6,
+      "area_km2": 103.9
+    },
+    "reservoir": {
+      "count": 18,
+      "area_km2": 143.9
+    },
+    "lagoon": {
+      "count": 5,
+      "area_km2": 419.2
+    },
+    "sebkha": {
+      "count": 35,
+      "area_km2": 1809.0
+    },
+    "chott": {
+      "count": 3,
+      "area_km2": 4540.1
+    }
+  },
+  "per_governorate": {
+    "TN-11": 3,
+    "TN-12": 1,
+    "TN-13": 1,
+    "TN-21": 2,
+    "TN-22": 4,
+    "TN-23": 10,
+    "TN-31": 3,
+    "TN-32": 3,
+    "TN-33": 1,
+    "TN-34": 1,
+    "TN-41": 3,
+    "TN-43": 2,
+    "TN-51": 5,
+    "TN-52": 1,
+    "TN-53": 2,
+    "TN-61": 5,
+    "TN-71": 1,
+    "TN-72": 1,
+    "TN-73": 2,
+    "TN-81": 1,
+    "TN-82": 11,
+    "TN-83": 4
+  },
+  "topology": {
+    "overlap_km2": 0.0,
+    "invalid_geometries": 0,
+    "total_km2": 7016.185,
+    "on_land_km2": 6627.935,
+    "in_sea_km2": 388.25,
+    "outside_tunisia_km2": 0.0
+  },
+  "left_out": {
+    "unnamed": 948,
+    "unnamed_km2": 451.7,
+    "smaller_than_min": 44,
+    "smaller_than_min_km2": 9.7
+  }
+}

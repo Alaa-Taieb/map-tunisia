@@ -14,6 +14,7 @@ and the checks that the published maps pass. Source: OpenStreetMap extract of **
 | Delegations | **279** / 279 (INS 2024 nomenclature) |
 | Sectors (imadas) | **2,083** (OSM, INS 2014 geocodes) |
 | Municipalities (baladiyat) | **338** of 350, covering 97.9 % of the land ([details](#municipalities-baladiyat)) |
+| Water bodies (overlay) | **67** lakes, dams, sebkhas, chotts and lagoons, 7,016 km² ([details](#water-bodies)) |
 | Overlap between units | **0.000000 km²** |
 | Land not covered by any unit | **3 m²** (floating-point noise) |
 | Sum of children = parent area | exact at every level (additive area formula) |
@@ -31,7 +32,8 @@ zero gaps and zero overlaps, and identical shared borders at every level. See [m
 ## Governorate areas vs published figures
 
 Published areas (Ministry of Industry, compiled by Wikipedia) include inland water and come from older surveys; OSM-derived areas
-follow the precise coastline. Lagoons open to the sea (Bizerte, Ghar El Melh, Tunis, El Bibane) are water and are excluded.
+follow the precise coastline. Lagoons open to the sea (Bizerte, Ghar El Melh, El Bibane) are water and are excluded; the two Lakes of Tunis lie
+inside the OSM coastline and are counted, like the inland lakes, sebkhas and chotts. The [water layer](#water-bodies) maps all of them.
 
 | Governorate | Map Tunisia (km²) | Published (km²) | Difference |
 | --- | ---: | ---: | ---: |
@@ -193,6 +195,56 @@ that OpenStreetMap does not yet assign to any municipality:
 | 24.9 | 10.147, 36.759 | Tunis | Sidi Hassine, El Kabaria |
 | 11.7 | 10.242, 36.79 | Ben Arous | Radès, Megrine |
 | 7.5 | 8.934, 37.528 | Bizerte | Bizerte Nord |
+
+
+## Water bodies
+
+The water layer is an overlay: lakes, dams, sebkhas and chotts stay part of the governorates, delegations and sectors above,
+and the sea-side lagoons lie on the sea side of the OSM coastline (except the two Lakes of Tunis, which OSM keeps inside it).
+Named OSM water areas of at least 1 km² are kept, clipped to the land of Tunisia. The lagoons of Bizerte and
+El Bibane have no polygon in OSM: they are the parts of the territorial sea that open to it through a channel narrower than
+600 m, cut where the channel meets the open sea. See [methodology.md](methodology.md#10-water-layer).
+
+| Check | Result |
+| --- | --- |
+| Lakes | **6**, 104 km² |
+| Dam reservoirs | **18**, 144 km² |
+| Sea-side lagoons | **5**, 419 km² |
+| Sebkhas (salt flats) | **35**, 1,809 km² |
+| Chotts | **3**, 4,540 km² |
+| Water on land / in the sea | 6,628 km² / 388 km² |
+| Overlap between water bodies | **0.000000 km²** |
+| Outside Tunisia | 0.000000 km² |
+| Invalid geometries | 0 |
+| Left out: unnamed | 948 OSM areas, 452 km² (mostly small hill lakes, salt marsh and wadi pools) |
+| Left out: under 1 km² | 44 named areas, 9.7 km² |
+
+- `way/551346335` (Sebkhet El Hamma) is the same body as `way/284143307`; merged into it.
+- `relation/14034571` (Sebkhat Sidi El Hani) is the same body as `relation/2895174`; merged into it.
+- `way/177959779` (Barrage Mellègue) is the same body as `way/178135177`; merged into it.
+- `way/101519019` (Sabkhat El-Magta): 19.105 km² outside the land of Tunisia clipped off.
+- `way/551247241` (Chott el-Gharsa): 43.275 km² outside the land of Tunisia clipped off.
+- `relation/8067346` (Sabkhat Mujazzam): 63.613 km² outside the land of Tunisia clipped off.
+- `relation/8828598` (Sabkhat Tadir): 90.935 km² outside the land of Tunisia clipped off.
+- water-r5912351 (Sebkha Bin El Ouedian) has no Arabic name in OSM.
+- water-w1164099560 (Barrage El Harka) has no Arabic name in OSM.
+- water-w1117620876 (Sabkhat al Djelidja) has no Arabic name in OSM.
+- water-w1117620878 (Sabkhat al Aougued) has no Arabic name in OSM.
+- water-w22741868 (بحيرة غدير القلة) has no Latin name in OSM.
+- water-w263233683 (Sebkha Jallabia) has no Arabic name in OSM.
+- 2 water bodies are named Sebkhet Boujmel in TN-61: water-w31831861, water-w37293505.
+
+Coastline pockets that open to the sea through a narrow channel but are not a known lagoon, so they are not published:
+
+| Area (km²) | Location (lon, lat) |
+| ---: | --- |
+| 3.5 | 10.186, 37.091 |
+| 2.6 | 10.343, 34.414 |
+| 2.4 | 10.565, 33.642 |
+| 1.8 | 10.544, 34.524 |
+| 1.9 | 10.824, 35.731 |
+| 47.8 | 10.952, 33.675 |
+| 5.6 | 11.293, 34.762 |
 
 
 Found an error? Please [open a data issue](https://github.com/Alaa-Taieb/map-tunisia/issues/new?template=data-error.yml).

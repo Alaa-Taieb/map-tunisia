@@ -11,6 +11,7 @@
 | delegations | `delegation-<INS code>` | `delegation-3458` | 4-digit INS code: 2-digit INS governorate + 2-digit delegation |
 | sectors | `sector-<INS code>` | `sector-345851` | 6-digit INS geocode from OSM (`ref:tn:codegeo`); `sector-x<osm id>` when OSM has no code |
 | municipalities | `municipality-<OSM relation>` | `municipality-7286094` | the OSM relation of the `boundary=municipality` (Zarzis); INS has no public municipality code in OSM |
+| water | `water-w<OSM way>`, `water-r<OSM relation>` or `water-<name>` | `water-r3969167` | the OSM element of the water body (Chott el-Jérid); `water-bizerte` and `water-el-bibane` for the two lagoons cut from the coastline |
 
 IDs are stable across levels of detail and modes, and across data refreshes unless the administrative unit itself changes.
 
@@ -36,7 +37,7 @@ IDs are stable across levels of detail and modes, and across data refreshes unle
     …
   </g>
   <g id="borders">…</g>   <!-- nested mode -->
-  <!-- municipalities only: <path id="municipalities-base" class="base"/> before the units, the land outside every municipality -->
+  <!-- municipalities and water: <path id="<partition>-base" class="base"/> before the units, the land under them -->
   <path class="outline"/>  <!-- outline and nested modes -->
   <g id="labels">…</g>     <!-- labeled modes: <text class="label" data-for="TN-61"> -->
 </svg>
@@ -44,24 +45,26 @@ IDs are stable across levels of detail and modes, and across data refreshes unle
 
 ### `data-*` attributes by partition
 
-| Attribute | country | regions | districts | governorates | delegations | sectors | municipalities |
-| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| `data-name`, `data-name-fr`, `data-name-en`, `data-name-ar` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| `data-iso` (ISO 3166) | ✓ | | | ✓ | | | |
-| `data-ins` (INS code) | | | | ✓ | ✓ | ✓ | |
-| `data-hasc` (HASC code) | | | | | ✓ | | |
-| `data-code` (region abbreviation) | | ✓ | | | | | |
-| `data-number` (district number) | | | ✓ | | | | |
-| `data-governorates` (space-separated ISO codes) | | ✓ | ✓ | | | | |
-| `data-capital` | | | | ✓ | | | |
-| `data-delegation` | | | | | | ✓ | |
-| `data-governorate` | | | | | ✓ | ✓ | ✓ |
-| `data-region`, `data-district` | | | | ✓ | ✓ | ✓ | ✓ |
-| `data-population-2014`, `data-population-2024` | ✓ | ✓ | ✓ | ✓ | ✓ | | |
-| `data-osm` (OSM relation), `data-wikidata` | | | | | | | ✓ |
+| Attribute | country | regions | districts | governorates | delegations | sectors | municipalities | water |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| `data-name`, `data-name-fr`, `data-name-en`, `data-name-ar` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| `data-iso` (ISO 3166) | ✓ | | | ✓ | | | | |
+| `data-ins` (INS code) | | | | ✓ | ✓ | ✓ | | |
+| `data-hasc` (HASC code) | | | | | ✓ | | | |
+| `data-code` (region abbreviation) | | ✓ | | | | | | |
+| `data-number` (district number) | | | ✓ | | | | | |
+| `data-governorates` (space-separated ISO codes) | | ✓ | ✓ | | | | | ✓ |
+| `data-capital` | | | | ✓ | | | | |
+| `data-delegation` | | | | | | ✓ | | |
+| `data-governorate` | | | | | ✓ | ✓ | ✓ | ✓ |
+| `data-region`, `data-district` | | | | ✓ | ✓ | ✓ | ✓ | ✓ |
+| `data-population-2014`, `data-population-2024` | ✓ | ✓ | ✓ | ✓ | ✓ | | | |
+| `data-osm` (OSM relation), `data-wikidata` | | | | | | | ✓ | |
+| `data-type`, `data-salt`, `data-intermittent`, `data-osm` (`way/…` or `relation/…`), `data-wikidata` | | | | | | | | ✓ |
 
-`class` always contains `unit` and the singular partition name (`governorate`, `delegation`…). Coloured modes add a
-colour class `c0`…`c7` from a graph colouring, so neighbours never share a colour.
+`class` always contains `unit` and the singular partition name (`governorate`, `delegation`…, `water-body` for water).
+Coloured modes add a colour class `c0`…`c7` from a graph colouring, so neighbours never share a colour. Water bodies are
+coloured by type instead: `c0` lake, `c1` reservoir, `c2` lagoon (blues), `c3` sebkha, `c4` chott (sand).
 
 ## Attribute tables — `dist/data/<partition>.csv|json`
 
@@ -86,6 +89,7 @@ Partition-specific columns:
 | delegations | `ins_code`, `governorate`, `region`, `district`, `name_fr_ins` (INS spelling), `hasc`, `wikidata`, `osm_relation`, `source` (`osm` or `rebuilt from imadas (ISIE)`) |
 | sectors | `ins_code`, `delegation`, `governorate`, `region`, `district`, `wikidata`, `osm_relation` |
 | municipalities | `governorate` (the one holding most of its area), `region`, `district`, `wikidata`, `osm_relation`. No `delegation` or `sector`: municipalities do not nest, and their areas do not add up to the country (2.1 % of the land is outside any municipality in OSM) |
+| water | `type` (`lake`, `reservoir`, `lagoon`, `sebkha`, `chott`), `governorate` (the one holding most of it; the nearest shore for lagoons), `governorates` (every governorate it touches, space-separated), `region`, `district`, `salt` (`yes` or empty), `intermittent` (`yes`, `no` or empty, from OSM), `wikidata`, `osm` (`way/<id>` or `relation/<id>`, empty for the two lagoons cut from the coastline), `geometry_source` (`osm_polygon` or `osm_coastline`). No population. An overlay: inland water is also inside the governorates, so water areas are not subtracted from them. `name_fr` is the Latin-script name, French where OSM has one, otherwise English; one body (`water-w22741868`) has only an Arabic name |
 
 ## GeoJSON — `dist/geojson/tunisia-<partition>-<lod>.geojson`
 
@@ -107,9 +111,12 @@ Partition-specific columns:
 | `data/source/extract-report.json` | Extraction statistics, topology checks, every correction and warning, source extract date and hash. |
 | `data/source/tunisia-municipalities.geojson` | Municipalities layer: one feature per municipality with `municipality`, `governorate`; WGS84, 7 decimals. Not nested in the sectors. |
 | `data/source/municipalities-report.json` | Municipality coverage, overlap and validity checks, the uncovered areas, corrections and warnings. |
+| `data/source/tunisia-water.geojson` | Water layer: one feature per water body with `water`, `type`, `governorate`; WGS84, 7 decimals. An overlay, not part of the nesting. |
+| `data/source/water-report.json` | Water counts and areas per type, overlap and validity checks, merges, clips, left-out areas and coastline pockets, warnings. |
 | `data/attributes/governorates.csv` | Hand-curated: names, ISO and INS codes, capitals, region, district, census populations. |
 | `data/attributes/regions.csv`, `districts.csv` | Hand-curated groupings. |
 | `data/attributes/delegations.csv`, `sectors.csv` | Generated by the extractor from OSM and `corrections.json`. |
 | `data/attributes/municipalities.csv` | Generated by `scripts/extract/municipalities.py` from OSM. |
+| `data/attributes/water.csv` | Generated by `scripts/extract/water.py` from OSM. |
 | `data/reference/ins-delegations-2024.csv` | INS 2024 delegation nomenclature with census populations (2004, 2014, 2024). |
 | `data/reference/governorate-areas.csv` | Published governorate areas, used only for checks. |

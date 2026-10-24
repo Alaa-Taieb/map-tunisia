@@ -1,8 +1,8 @@
 /** SVG writer: semantic, accessible, compact markup for every mode. */
 import { escapeXML, polygonsOf } from './lib.js';
-import { PALETTES, PROJECT, CRS, PROJ4 } from './config.js';
+import { PALETTES, WATER_PALETTES, PROJECT, CRS, PROJ4 } from './config.js';
 
-const STROKE = { country: 1.2, regions: 1, districts: 1, governorates: 0.8, delegations: 0.5, sectors: 0.3, municipalities: 0.5 };
+const STROKE = { country: 1.2, regions: 1, districts: 1, governorates: 0.8, delegations: 0.5, sectors: 0.3, municipalities: 0.5, water: 0.5 };
 
 /** Format an integer number of 10^-p units as the shortest decimal string. */
 function fmt(k, p) {
@@ -84,6 +84,7 @@ function css(mode, partition) {
   const base =
     `svg{shape-rendering:geometricPrecision}.unit{stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-width:${w}px}` +
     (partition.base ? `.base{fill:${BASE_FILL[mode]};stroke:none}` : '');
+  const palettes = partition.colourBy === 'type' ? WATER_PALETTES : PALETTES;
   const palette = (p) => p.map((c, i) => `.c${i}{fill:${c}}`).join('');
   const label = (fill, halo, family) =>
     `.label{font-family:${family};font-weight:600;fill:${fill};stroke:${halo};stroke-width:.24em;stroke-linejoin:round;paint-order:stroke fill;text-anchor:middle}`;
@@ -93,9 +94,9 @@ function css(mode, partition) {
     case 'outline':
       return `${base}.unit{fill:none;stroke:#1f2933}.outline{fill:none;stroke:#1f2933;stroke-width:${(w * 1.6).toFixed(2)}px;vector-effect:non-scaling-stroke;stroke-linejoin:round}`;
     case 'light':
-      return `${base}.unit{stroke:#fff}${palette(PALETTES.light)}`;
+      return `${base}.unit{stroke:#fff}${palette(palettes.light)}`;
     case 'dark':
-      return `${base}.bg{fill:#0b1220}.unit{stroke:#0b1220}${palette(PALETTES.dark)}`;
+      return `${base}.bg{fill:#0b1220}.unit{stroke:#0b1220}${palette(palettes.dark)}`;
     case 'labeled':
       return `${base}.unit{fill:#e3e7ec;stroke:#fff}${label('#1f2933', '#fff', FONT_LATIN)}${LEADER}`;
     case 'labeled-ar':
@@ -111,7 +112,7 @@ function css(mode, partition) {
       );
     case 'interactive':
       return (
-        `${base}.unit{stroke:#fff;cursor:pointer;transition:fill .15s ease,opacity .15s ease}${palette(PALETTES.light)}` +
+        `${base}.unit{stroke:#fff;cursor:pointer;transition:fill .15s ease,opacity .15s ease}${palette(palettes.light)}` +
         `.units:hover .unit{opacity:.55}.units .unit:hover{fill:#e63946;opacity:1}`
       );
     default:
@@ -128,6 +129,8 @@ const DATA_FIELDS = {
   delegations: [['ins', 'ins_code'], ['hasc', 'hasc'], ['governorate', 'governorate'], ['region', 'region'], ['district', 'district'], ...POP],
   sectors: [['ins', 'ins_code'], ['delegation', 'delegation'], ['governorate', 'governorate'], ['region', 'region'], ['district', 'district']],
   municipalities: [['governorate', 'governorate'], ['region', 'region'], ['district', 'district'], ['osm', 'osm_relation'], ['wikidata', 'wikidata']],
+  water: [['type', 'type'], ['governorate', 'governorate'], ['governorates', 'governorates'], ['region', 'region'], ['district', 'district'],
+    ['salt', 'salt'], ['intermittent', 'intermittent'], ['osm', 'osm'], ['wikidata', 'wikidata']],
 };
 
 /**
@@ -140,7 +143,7 @@ const DATA_FIELDS = {
  * @param {Array}  o.units       [{id, attrs, geometry(frame km), color, label:{x,y,size}}]
  * @param {Array}  o.borders     [{level, geometry}] (nested mode)
  * @param {object} o.outline     country geometry (frame km) for outline/nested
- * @param {object} [o.base]      land geometry (frame km) drawn under the units (non-nested partitions)
+ * @param {object} [o.base]      land geometry (frame km) drawn under the units (municipalities, water)
  * @param {object} o.source      {osm_date}
  */
 export function renderSVG({ partition, lod, mode, frame, units, borders = [], outline, base, source }) {
@@ -185,7 +188,7 @@ export function renderSVG({ partition, lod, mode, frame, units, borders = [], ou
   if (mode === 'dark') out.push(`<rect class="bg" x="0" y="0" width="${W}" height="${H}"/>`);
 
   if (base) {
-    const title = `Not part of any ${partition.singular} in OpenStreetMap`;
+    const title = partition.baseTitle || `Not part of any ${partition.singular} in OpenStreetMap`;
     out.push(`<path id="${partition.id}-base" class="base" fill-rule="evenodd" d="${pathData(base, p)}"><title>${escapeXML(title)}</title></path>`);
   }
 
