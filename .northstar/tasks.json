@@ -997,7 +997,7 @@
       "requirementIds": [],
       "dependsOn": [],
       "priority": "low",
-      "status": "in_progress",
+      "status": "verified",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -1015,19 +1015,46 @@
         }
       ],
       "requiresHumanApproval": false,
-      "commits": [],
-      "files": [],
-      "evidence": [],
-      "decisionIds": [],
-      "provenance": "stated",
-      "createdAt": "2026-10-24T14:01:54.492Z",
-      "createdBy": "claude-code",
-      "updatedAt": "2026-10-24T16:55:20.283Z",
       "activeHarness": "claude-code",
       "session": "880a0a06-6b38-4502-b5ff-81b60ed48c03",
       "branch": "main",
       "workspace": "map-tunisia",
-      "startedAt": "2026-10-24T16:55:20.283Z"
+      "startedAt": "2026-10-24T16:55:20.283Z",
+      "commits": [
+        "3a5db337ea0a87dd448b97411529c6da36b27295"
+      ],
+      "files": [
+        "scripts/extract/water.py",
+        "test/water.test.js",
+        "dist/data/water.csv",
+        "README.md"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T17:09:45.348Z",
+        "by": "claude-code",
+        "summary": "Water layer shipped in v1.2.0: 67 named water bodies >= 1 km2 (6 lakes, 18 reservoirs, 35 sebkhas, 3 chotts, 5 sea-side lagoons) from OSM 2026-10-16 as an overlay that leaves the nested partitions unchanged. scripts/extract/water.py; Bizerte and El Bibane lagoons cut from the OSM coastline (sea pockets behind channels < 600 m). SVG full-low x 7 modes, GeoJSON, TopoJSON, CSV, JSON; docs, README, types, explorer, tests.",
+        "revision": "3a5db337ea0a87dd448b97411529c6da36b27295",
+        "tree": "b247eba9465ad4038adf55c8d95b7f1d99360ca3"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "unit-tests",
+          "result": "pass",
+          "revision": "3a5db337ea0a87dd448b97411529c6da36b27295",
+          "tree": "b247eba9465ad4038adf55c8d95b7f1d99360ca3",
+          "at": "2026-10-24T17:09:47.860Z",
+          "by": "claude-code",
+          "detail": "$ npm test\nshell: bash\nexit 0\nve (4.4574ms)\n✔ svg water/full/plain (16.0369ms)\n✔ svg water/high/plain (4.3877ms)\n✔ svg water/high/outline (6.0867ms)\n✔ svg water/medium/plain (5.6222ms)\n✔ svg water/medium/outline (6.2133ms)\n✔ svg water/medium/light (4.2383ms)\n✔ svg water/medium/dark (2.3303ms)\n✔ svg water/medium/labeled (2.4828ms)\n✔ svg water/medium/labeled-ar (2.4053ms)\n✔ svg water/medium/interactive (2.2344ms)\n✔ svg water/low/plain (1.6321ms)\n✔ svg water/low/outline (1.8493ms)\n✔ svg water/low/light (1.8233ms)\n✔ svg water/low/dark (1.7922ms)\n✔ svg water/low/labeled (1.831ms)\n✔ svg water/low/labeled-ar (1.8173ms)\n✔ svg water/low/interactive (1.6033ms)\n✔ water count matches the extraction, and every type is present (2.3423ms)\n✔ water ids are unique, well-formed and point to their OSM source (0.2563ms)\n✔ every water body has a name, a governorate, a region and a district (1.0183ms)\n✔ the landmark water bodies are there, with the right type and governorate (0.1448ms)\n✔ water bodies never overlap, stay in Tunisia, and lagoons stay on the sea side (0.1154ms)\n✔ the water layer is an overlay: it does not alter the nested partitions (1.6769ms)\n✔ water GeoJSON and TopoJSON (full) (35.7281ms)\n✔ water GeoJSON and TopoJSON (high) (10.871ms)\n✔ water GeoJSON and TopoJSON (medium) (6.0937ms)\n✔ water GeoJSON and TopoJSON (low) (2.3337ms)\n✔ water SVGs draw the land under the water bodies and colour them by type (28.8908ms)\nℹ tests 220\nℹ suites 0\nℹ pass 220\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1536.7311",
+          "criteria": []
+        }
+      ],
+      "decisionIds": [],
+      "provenance": "stated",
+      "createdAt": "2026-10-24T14:01:54.492Z",
+      "createdBy": "claude-code",
+      "updatedAt": "2026-10-24T17:09:47.860Z"
     },
     {
       "id": "NS-017",

@@ -1,0 +1,14 @@
+{
+  "id": "EV-0MVMNM77O-06413f",
+  "type": "task.implemented",
+  "at": "2026-10-24T17:09:45.348Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "NS-016",
+    "MS-005"
+  ],
+  "summary": "claude-code reported NS-016 implemented (NOT verified): Water layer shipped in v1.2.0: 67 named water bodies >= 1 km2 (6 lakes, 18 reservoirs, 35 sebkhas, 3 chotts, 5 sea-side lagoons) from OSM 2026-10-16 as an overlay that leaves the nested partitions unchanged. scripts/extract/water.py; Bizerte and El Bibane lagoons cut from the OSM coastline (sea pockets behind channels < 600 m). SVG full-low x 7 modes, GeoJSON, TopoJSON, CSV, JSON; docs, README, types, explorer, tests.",
+  "data": {
+    "revision": "3a5db337ea0a87dd448b97411529c6da36b27295"
+  }
+}
