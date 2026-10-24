@@ -1,0 +1,10 @@
+{
+  "id": "EV-0MVMNOG3G-181d66",
+  "type": "handoff.created",
+  "at": "2026-10-24T17:11:30.172Z",
+  "actor": "claude-code",
+  "entityIds": [
+    "HO-0MVMNOG3G-7ff3bd"
+  ],
+  "summary": "claude-code recorded a handoff: NS-016 water layer shipped as v1.2.0: commit 3a5db33 (plus Northstar record c3b0d8b) pushed to origin/main; map-tunisia@1.2.0 published to npm (prepublishOnly npm test, 220 pass). 67 named water bodies >= 1 km2 (6 lakes, 18 reservoirs, 35 sebkhas, 3 chotts, 5 lagoons) as an overlay; Bizerte and El Bibane lagoons cut from the OSM coastline. Not done: GitHub release v1.2.0 with ZIPs (npm run release:zip) was not created; NS-008 and NS-015 still await owner acceptance. Choices to confirm: Gulf of Boughrara left out (OSM maps it as a bay), unnamed water areas and bodies under 1 km2 left out. Next: NS-014 explorer 404, NS-017 point layers."
+}
