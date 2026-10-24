@@ -2,7 +2,7 @@
 import { escapeXML, polygonsOf } from './lib.js';
 import { PALETTES, PROJECT, CRS, PROJ4 } from './config.js';
 
-const STROKE = { country: 1.2, regions: 1, districts: 1, governorates: 0.8, delegations: 0.5, sectors: 0.3 };
+const STROKE = { country: 1.2, regions: 1, districts: 1, governorates: 0.8, delegations: 0.5, sectors: 0.3, municipalities: 0.5 };
 
 /** Format an integer number of 10^-p units as the shortest decimal string. */
 function fmt(k, p) {
@@ -74,11 +74,16 @@ export function linePathData(geometry, precision) {
 const FONT_LATIN = "'Inter','Segoe UI','Helvetica Neue',Arial,sans-serif";
 const FONT_ARABIC = "'Noto Naskh Arabic','Noto Sans Arabic','Segoe UI','Tahoma','Arial',sans-serif";
 
+/** Land outside every unit (partitions with `base`, e.g. municipalities): lighter than the units, never mistaken for sea. */
+const BASE_FILL = { plain: '#f1f3f6', outline: 'none', light: '#f1f3f6', dark: '#1a2433', labeled: '#f6f7f9', 'labeled-ar': '#f6f7f9', nested: '#f8f9fb', interactive: '#f1f3f6' };
+
 const LEADER = '.leader{fill:none;stroke:#52606d;stroke-width:.6px;vector-effect:non-scaling-stroke}.anchor{fill:#52606d}';
 
 function css(mode, partition) {
   const w = STROKE[partition.id];
-  const base = `svg{shape-rendering:geometricPrecision}.unit{stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-width:${w}px}`;
+  const base =
+    `svg{shape-rendering:geometricPrecision}.unit{stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-width:${w}px}` +
+    (partition.base ? `.base{fill:${BASE_FILL[mode]};stroke:none}` : '');
   const palette = (p) => p.map((c, i) => `.c${i}{fill:${c}}`).join('');
   const label = (fill, halo, family) =>
     `.label{font-family:${family};font-weight:600;fill:${fill};stroke:${halo};stroke-width:.24em;stroke-linejoin:round;paint-order:stroke fill;text-anchor:middle}`;
@@ -122,6 +127,7 @@ const DATA_FIELDS = {
   governorates: [['iso', 'iso_3166_2'], ['ins', 'ins_code'], ['region', 'region'], ['district', 'district'], ['capital', 'capital_fr'], ...POP],
   delegations: [['ins', 'ins_code'], ['hasc', 'hasc'], ['governorate', 'governorate'], ['region', 'region'], ['district', 'district'], ...POP],
   sectors: [['ins', 'ins_code'], ['delegation', 'delegation'], ['governorate', 'governorate'], ['region', 'region'], ['district', 'district']],
+  municipalities: [['governorate', 'governorate'], ['region', 'region'], ['district', 'district'], ['osm', 'osm_relation'], ['wikidata', 'wikidata']],
 };
 
 /**
@@ -134,9 +140,10 @@ const DATA_FIELDS = {
  * @param {Array}  o.units       [{id, attrs, geometry(frame km), color, label:{x,y,size}}]
  * @param {Array}  o.borders     [{level, geometry}] (nested mode)
  * @param {object} o.outline     country geometry (frame km) for outline/nested
+ * @param {object} [o.base]      land geometry (frame km) drawn under the units (non-nested partitions)
  * @param {object} o.source      {osm_date}
  */
-export function renderSVG({ partition, lod, mode, frame, units, borders = [], outline, source }) {
+export function renderSVG({ partition, lod, mode, frame, units, borders = [], outline, base, source }) {
   const p = lod.precision;
   const W = frame.width, H = frame.height;
   const count = units.length;
@@ -176,6 +183,11 @@ export function renderSVG({ partition, lod, mode, frame, units, borders = [], ou
   out.push(`<metadata id="map-tunisia-metadata">${escapeXML(JSON.stringify(meta))}</metadata>`);
   out.push(`<style>${css(mode, partition)}</style>`);
   if (mode === 'dark') out.push(`<rect class="bg" x="0" y="0" width="${W}" height="${H}"/>`);
+
+  if (base) {
+    const title = `Not part of any ${partition.singular} in OpenStreetMap`;
+    out.push(`<path id="${partition.id}-base" class="base" fill-rule="evenodd" d="${pathData(base, p)}"><title>${escapeXML(title)}</title></path>`);
+  }
 
   const colored = mode === 'light' || mode === 'dark' || mode === 'interactive';
   out.push(`<g id="${partition.id}" class="units" fill-rule="evenodd">`);

@@ -6,12 +6,12 @@ Each map is one combination of three choices:
 dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg
           │                     │      └── how it looks (8 modes)
           │                     └───────── how detailed it is (5 levels)
-          └─────────────────────────────── how Tunisia is divided (6 partitions)
+          └─────────────────────────────── how Tunisia is divided (6 nested partitions + municipalities)
 ```
 
 ## Partitions
 
-All partitions are **exactly nested**: every sector lies in one delegation, every delegation in one governorate, and every
+The six administrative partitions are **exactly nested**: every sector lies in one delegation, every delegation in one governorate, and every
 governorate in one region and one district. Shared borders are identical at every level, with zero gaps and zero overlaps.
 
 | Partition | Units | Arabic | What it is | Typical use |
@@ -22,6 +22,15 @@ governorate in one region and one district. Shared borders are identical at ever
 | `governorates` | 24 | الولايات | The 24 *wilayas*, identified by their ISO 3166-2 code (`TN-11` … `TN-83`). | The classic map of Tunisia |
 | `delegations` | 279 | المعتمديات | The *mutamadiyat* of the INS 2024 nomenclature, including the 14 created since 2014. | Census and election results, local data |
 | `sectors` | 2,083 | العمادات | The *imadas*: the finest administrative level, coded by the INS. | Fine-grained analysis, field operations |
+| `municipalities` | 338 | البلديات | The *baladiyat* of the 2016 division as mapped in OpenStreetMap (`boundary=municipality`). **Not nested**: see below. | Municipal services, local elections, urban data |
+
+### Municipalities are a separate layer
+
+Municipal borders do not follow delegation or sector borders (20 municipalities spread over several delegations), so
+`municipalities` is built from its own source layer and has no `nested` mode. Each municipality is attached to the
+governorate that holds most of its area. OSM maps 338 of the 350 municipalities; 2.1 % of the land lies outside every
+mapped municipality and is drawn as a light grey base (`#municipalities-base`) under the units, so it is never mistaken for
+sea. The [accuracy report](accuracy.md#municipalities-baladiyat) lists those areas.
 
 See the [reference tables](reference.md) for every region, district, governorate and delegation.
 
@@ -45,7 +54,7 @@ unit's main part is always kept. The [accuracy report](accuracy.md#levels-of-det
 vertex counts change, and the [catalog](catalog.md) lists every file size.
 
 **Which partitions exist at which level?** `country`, `regions`, `districts` and `governorates` exist at all five levels.
-`delegations` and `sectors` stop at `low`: at `tiny`, a city delegation would shrink to a few pixels anyway.
+`delegations`, `sectors` and `municipalities` stop at `low`: at `tiny`, a city delegation would shrink to a few pixels anyway.
 
 ## Modes
 

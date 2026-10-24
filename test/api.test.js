@@ -19,10 +19,13 @@ test('helpful errors for unknown combinations', () => {
   assert.throws(() => svgPath('provinces'), /Unknown partition/);
   assert.throws(() => svgPath('sectors', 'tiny'), /no "tiny"/);
   assert.throws(() => svgPath('country', 'medium', 'nested'), /no "nested"/);
+  assert.throws(() => svgPath('municipalities', 'medium', 'nested'), /no "nested"/);
+  assert.throws(() => svgPath('municipalities', 'tiny'), /no "tiny"/);
 });
 
 test('defaults and CDN URLs', () => {
   assert.equal(svgPath('governorates'), 'dist/svg/governorates/tunisia-governorates-medium-plain.svg');
   assert.equal(cdnURL(svgPath('governorates'), 'v1.0.0'), 'https://cdn.jsdelivr.net/gh/Alaa-Taieb/map-tunisia@v1.0.0/dist/svg/governorates/tunisia-governorates-medium-plain.svg');
+  assert.equal(svgPath('municipalities', 'medium', 'light'), 'dist/svg/municipalities/tunisia-municipalities-medium-light.svg');
   assert.equal(typeof project([10.18, 36.8])[0], 'number');
 });

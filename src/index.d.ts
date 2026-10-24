@@ -1,4 +1,4 @@
-export type Partition = 'country' | 'regions' | 'districts' | 'governorates' | 'delegations' | 'sectors';
+export type Partition = 'country' | 'regions' | 'districts' | 'governorates' | 'delegations' | 'sectors' | 'municipalities';
 export type Lod = 'full' | 'high' | 'medium' | 'low' | 'tiny';
 export type Mode = 'plain' | 'outline' | 'light' | 'dark' | 'labeled' | 'labeled-ar' | 'nested' | 'interactive';
 export type DataFormat = 'geojson' | 'topojson';
@@ -18,6 +18,18 @@ export interface UnitAttributes {
   label_x?: string;
   label_y?: string;
   [column: string]: string | undefined;
+}
+
+/**
+ * One row of `dist/data/municipalities.json`. Municipalities do not nest in delegations or sectors,
+ * so a row has no `delegation` or `sector`; `id` is `municipality-<osm_relation>`.
+ */
+export interface MunicipalityAttributes extends UnitAttributes {
+  governorate: string;
+  region: string;
+  district: string;
+  osm_relation: string;
+  wikidata?: string;
 }
 
 export interface CatalogPartition {

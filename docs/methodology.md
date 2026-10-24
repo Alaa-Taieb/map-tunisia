@@ -7,7 +7,7 @@ every conflict, and topology-aware simplification.
  Geofabrik OSM extract (.pbf)
         │  scripts/extract/fetch.py
         ▼
- pyosmium: governorates (admin_level 4), delegations (5), sectors / imadas (6), coastline islets
+ pyosmium: governorates (admin_level 4), delegations (5), sectors / imadas (6), coastline islets; boundary=municipality
         │  scripts/extract/extract.py
         ▼
  planar overlay → labelled faces → conflict rules → gap allocation → post-2014 delegations
@@ -134,7 +134,21 @@ Then the Node build:
   accessible `role`/`aria` metadata;
 - writes GeoJSON and TopoJSON by inverting the projection, so they match the SVGs exactly.
 
-## 9. Validation
+## 9. Municipalities
+
+Municipalities (*baladiyat*) cover the country since the 2016 division, but their borders do not follow delegations or
+sectors, so they cannot be faces of the planar overlay. `scripts/extract/municipalities.py` builds them as a separate layer:
+
+1. reads every OSM relation tagged `boundary=municipality` (OSM maps Tunisian municipalities with this tag, not an `admin_level`);
+2. clips each one to the land, the union of the sectors, so the layer shares the national coastline and borders;
+3. gives any overlap between two relations to the smaller one, so every point belongs to at most one municipality;
+4. attaches each municipality to the governorate that holds most of its area (all of them lie at least 95 % in one);
+5. never invents geometry: land that no relation covers stays uncovered and is listed in `municipalities-report.json`.
+
+The build simplifies the municipalities together with one land polygon, so the light base drawn under them shares their
+topology at every level of detail.
+
+## 10. Validation
 
 `npm test` checks, among other things:
 
@@ -144,6 +158,8 @@ Then the Node build:
 - hierarchy consistency, the regions grouping and the 2023 districts decree;
 - areas adding up exactly across levels, and land area within 0.5 % of the CIA World Factbook figure;
 - populations adding up to the national census totals;
+- municipalities: count, unique ids tied to their OSM relation, valid closed geometry in every GeoJSON and TopoJSON, no
+  overlaps, nothing outside the land, coverage above 97 %, and no nesting assumed (no delegation or sector columns);
 - every SVG of the matrix exists, is valid XML, shares the frame, credits OSM and the author, has one path and one label per
   unit, contains no scripts or external references, and fits its size budget;
 - the projection helper matches PROJ to 1 mm.

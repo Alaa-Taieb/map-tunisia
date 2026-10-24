@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Map Tunisia — Explorer · خريطة تونس</title>
-<meta name="description" content="Explore and download accurate open-source SVG maps of Tunisia: country, regions, districts, 24 governorates, 279 delegations and 2,083 sectors (imadas), in 5 levels of detail and 8 modes.">
+<meta name="description" content="Explore and download accurate open-source SVG maps of Tunisia: country, regions, districts, 24 governorates, 279 delegations, 2,083 sectors (imadas) and 338 municipalities, in 5 levels of detail and 8 modes.">
 <meta name="author" content="Alaa Taieb">
 <meta property="og:title" content="Map Tunisia — accurate open-source SVG maps of Tunisia">
 <meta property="og:description" content="Country, regions, districts, governorates, delegations and imadas · 5 levels of detail · 8 modes · SVG, GeoJSON, TopoJSON.">
@@ -128,6 +128,7 @@ const PARTS = [
   ['governorates', 'Governorates', 'The 24 wilayas, ISO 3166-2 coded.'],
   ['delegations', 'Delegations', 'The 279 mutamadiyat (INS 2024).'],
   ['sectors', 'Sectors', 'The 2,000+ imadas — the finest level.'],
+  ['municipalities', 'Municipalities', 'The 338 baladiyat mapped in OSM — a separate layer that does not nest in delegations.'],
 ];
 const LODS = { full: 'Original OSM precision', high: '≈ 20 m tolerance', medium: '≈ 100 m — web default', low: '≈ 500 m — small embeds', tiny: '≈ 2.5 km — icons' };
 const MODES = { plain: 'Neutral, ready for your CSS', outline: 'Strokes only', light: 'Colourful fills', dark: 'For dark UIs', labeled: 'Latin names', 'labeled-ar': 'Arabic names', nested: 'Parent borders', interactive: 'Hover + tooltips, no JS' };

@@ -1,0 +1,230 @@
+{
+  "corrections": [
+    {
+      "type": "overlap_to_smaller",
+      "osm_id": 7304421,
+      "name": "Ben Arous",
+      "area_km2": 6.468,
+      "given_to": [
+        {
+          "osm_id": 7209941,
+          "name": "Ben Arous"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "2 OSM relations are named Ben Arous in TN-13: municipality-7209941, municipality-7304421",
+    "2 OSM relations are named Fouchana in TN-13: municipality-7209947, municipality-7209948"
+  ],
+  "generated": "2026-10-24T16:16:20Z",
+  "source": {
+    "name": "OpenStreetMap",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "selector": "relations tagged boundary=municipality",
+    "url": "https://download.geofabrik.de/africa/tunisia-latest.osm.pbf",
+    "osm_timestamp": "2026-10-16T20:21:21Z",
+    "osm_date": "2026-10-16",
+    "sha256": "444dd6e1e64e1ab4626cde5e54d911876c7761b63f4624a98872421007f50429",
+    "bytes": 84231484
+  },
+  "counts": {
+    "municipalities": 338,
+    "relations_read": 338,
+    "governorates": 24
+  },
+  "per_governorate": {
+    "TN-11": 8,
+    "TN-12": 7,
+    "TN-13": 14,
+    "TN-14": 10,
+    "TN-21": 28,
+    "TN-22": 8,
+    "TN-23": 17,
+    "TN-31": 12,
+    "TN-32": 14,
+    "TN-33": 15,
+    "TN-34": 12,
+    "TN-41": 19,
+    "TN-42": 18,
+    "TN-43": 14,
+    "TN-51": 18,
+    "TN-52": 30,
+    "TN-53": 17,
+    "TN-61": 16,
+    "TN-71": 13,
+    "TN-72": 6,
+    "TN-73": 9,
+    "TN-81": 16,
+    "TN-82": 10,
+    "TN-83": 7
+  },
+  "topology": {
+    "land_area_km2": 155149.588,
+    "covered_km2": 151829.839,
+    "uncovered_km2": 3319.749,
+    "coverage": 0.9786,
+    "overlap_km2": 0.0,
+    "outside_land_km2": 0.0,
+    "uncovered_pieces": 171,
+    "invalid_geometries": 0,
+    "across_delegations": 20
+  },
+  "uncovered": [
+    {
+      "area_km2": 1036.8,
+      "at": [
+        9.802,
+        34.854
+      ],
+      "governorate": "TN-43",
+      "delegations": [
+        "delegation-4361",
+        "delegation-4363"
+      ]
+    },
+    {
+      "area_km2": 565.0,
+      "at": [
+        10.681,
+        34.87
+      ],
+      "governorate": "TN-61",
+      "delegations": [
+        "delegation-3455",
+        "delegation-3460"
+      ]
+    },
+    {
+      "area_km2": 433.1,
+      "at": [
+        10.455,
+        34.53
+      ],
+      "governorate": "TN-61",
+      "delegations": [
+        "delegation-3465"
+      ]
+    },
+    {
+      "area_km2": 423.0,
+      "at": [
+        9.413,
+        34.986
+      ],
+      "governorate": "TN-43",
+      "delegations": [
+        "delegation-4351",
+        "delegation-4364"
+      ]
+    },
+    {
+      "area_km2": 351.4,
+      "at": [
+        10.409,
+        35.518
+      ],
+      "governorate": "TN-51",
+      "delegations": [
+        "delegation-3163",
+        "delegation-3164"
+      ]
+    },
+    {
+      "area_km2": 117.5,
+      "at": [
+        11.061,
+        35.225
+      ],
+      "governorate": "TN-53",
+      "delegations": [
+        "delegation-3358"
+      ]
+    },
+    {
+      "area_km2": 115.1,
+      "at": [
+        10.287,
+        35.861
+      ],
+      "governorate": "TN-51",
+      "delegations": [
+        "delegation-3157",
+        "delegation-3162",
+        "delegation-3163"
+      ]
+    },
+    {
+      "area_km2": 93.2,
+      "at": [
+        10.972,
+        35.592
+      ],
+      "governorate": "TN-52",
+      "delegations": [
+        "delegation-3258",
+        "delegation-3259"
+      ]
+    },
+    {
+      "area_km2": 80.8,
+      "at": [
+        9.672,
+        37.161
+      ],
+      "governorate": "TN-23",
+      "delegations": [
+        "delegation-1753",
+        "delegation-1759"
+      ]
+    },
+    {
+      "area_km2": 39.1,
+      "at": [
+        10.225,
+        36.92
+      ],
+      "governorate": "TN-12",
+      "delegations": [
+        "delegation-1252",
+        "delegation-1253"
+      ]
+    },
+    {
+      "area_km2": 24.9,
+      "at": [
+        10.147,
+        36.759
+      ],
+      "governorate": "TN-11",
+      "delegations": [
+        "delegation-1164",
+        "delegation-1166"
+      ]
+    },
+    {
+      "area_km2": 11.7,
+      "at": [
+        10.242,
+        36.79
+      ],
+      "governorate": "TN-13",
+      "delegations": [
+        "delegation-1358",
+        "delegation-1359"
+      ]
+    },
+    {
+      "area_km2": 7.5,
+      "at": [
+        8.934,
+        37.528
+      ],
+      "governorate": "TN-23",
+      "delegations": [
+        "delegation-1751"
+      ]
+    }
+  ]
+}

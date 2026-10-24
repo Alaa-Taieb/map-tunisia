@@ -6,6 +6,7 @@ import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
 import { ROOT } from '../scripts/build/lib.js';
 import { buildRelease } from '../scripts/release/release.js';
 import { readZip, writeZip } from '../scripts/release/zip.js';
@@ -18,7 +19,7 @@ test('smoke: the package imports itself by name and the data has the expected co
   assert.equal(typeof api.project, 'function');
   assert.equal(typeof api.svgPath, 'function');
   const counts = Object.fromEntries(api.catalog.partitions.map((p) => [p.id, p.count]));
-  assert.deepEqual(counts, { country: 1, regions: 7, districts: 5, governorates: 24, delegations: 279, sectors: 2083 });
+  assert.deepEqual(counts, { country: 1, regions: 7, districts: 5, governorates: 24, delegations: 279, sectors: 2083, municipalities: 338 });
 
   const require = createRequire(import.meta.url);
   for (const [id, n] of Object.entries(counts)) {
@@ -28,6 +29,12 @@ test('smoke: the package imports itself by name and the data has the expected co
   assert.equal(api.attributesPath('delegations', 'csv'), 'dist/data/delegations.csv');
   assert.throws(() => api.attributesPath('provinces'), /Unknown partition/);
   assert.throws(() => api.attributesPath('sectors', 'xml'), /json" or "csv/);
+
+  // Every layer's files resolve through the subpath exports, the municipalities included.
+  for (const sub of ['geojson/tunisia-municipalities-medium.geojson', 'topojson/tunisia-municipalities-low.topojson',
+    'svg/municipalities/tunisia-municipalities-medium-light.svg', 'data/municipalities.csv']) {
+    assert.ok(fs.existsSync(fileURLToPath(import.meta.resolve(`map-tunisia/${sub}`))), sub);
+  }
 
   const proj = await import('map-tunisia/projection');
   assert.equal(proj.project, api.project);
@@ -81,6 +88,7 @@ test('release script builds versioned ZIPs and a matching checksum file', () => 
     const json = readZip(results[0].file);
     assert.equal(JSON.parse(json.get('json/delegations.json')).length, 279);
     assert.equal(JSON.parse(json.get('json/sectors.json')).length, 2083);
+    assert.equal(JSON.parse(json.get('json/municipalities.json')).length, 338);
     for (const extra of ['LICENSE', 'LICENSE-DATA.md', 'README.txt']) assert.ok(json.has(extra), extra);
     const csv = readZip(results[1].file);
     assert.equal(csv.get('csv/delegations.csv').toString().trim().split('\n').length, 280, 'header + 279 rows');

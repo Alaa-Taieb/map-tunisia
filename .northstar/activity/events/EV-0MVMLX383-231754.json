@@ -1,0 +1,11 @@
+{
+  "id": "EV-0MVMLX383-231754",
+  "type": "decision.recorded",
+  "at": "2026-10-24T16:22:14.163Z",
+  "actor": "claude-code",
+  "session": "3d943b00-fdde-49df-a353-818a154fff8d",
+  "entityIds": [
+    "DEC-006"
+  ],
+  "summary": "Decision DEC-006: Municipality boundaries come from OSM boundary=municipality relations"
+}

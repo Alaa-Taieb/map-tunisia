@@ -4,7 +4,7 @@
 
 Every file in `dist/`, generated from the OpenStreetMap extract of **2026-10-16**.
 
-**140 SVG files** (59.15 MB) · **28 GeoJSON** (49.20 MB) · **28 TopoJSON** (16.43 MB) · attribute tables in `dist/data/`.
+**157 SVG files** (70.56 MB) · **32 GeoJSON** (59.76 MB) · **32 TopoJSON** (19.54 MB) · attribute tables in `dist/data/`.
 
 ## Tunisia — 1 unit
 
@@ -75,5 +75,16 @@ Attributes: [`dist/data/delegations.csv`](../dist/data/delegations.csv) · [`dis
 | **low** | [911.8 KB](../dist/svg/sectors/tunisia-sectors-low-plain.svg) | [919.2 KB](../dist/svg/sectors/tunisia-sectors-low-outline.svg) | [918.0 KB](../dist/svg/sectors/tunisia-sectors-low-light.svg) | [918.1 KB](../dist/svg/sectors/tunisia-sectors-low-dark.svg) | [1.09 MB](../dist/svg/sectors/tunisia-sectors-low-labeled.svg) | [1.11 MB](../dist/svg/sectors/tunisia-sectors-low-labeled-ar.svg) | [1008.4 KB](../dist/svg/sectors/tunisia-sectors-low-nested.svg) | [918.1 KB](../dist/svg/sectors/tunisia-sectors-low-interactive.svg) | [1.33 MB](../dist/geojson/tunisia-sectors-low.geojson) | [1.02 MB](../dist/topojson/tunisia-sectors-low.topojson) |
 
 Attributes: [`dist/data/sectors.csv`](../dist/data/sectors.csv) · [`dist/data/sectors.json`](../dist/data/sectors.json)
+
+## Municipalities — 338 units
+
+| Level | plain | outline | light | dark | labeled | labeled-ar | nested | interactive | GeoJSON | TopoJSON |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| **full** | [3.75 MB](../dist/svg/municipalities/tunisia-municipalities-full-plain.svg) | · | · | · | · | · | · | · | [6.45 MB](../dist/geojson/tunisia-municipalities-full.geojson) | [1.79 MB](../dist/topojson/tunisia-municipalities-full.topojson) |
+| **high** | [1.26 MB](../dist/svg/municipalities/tunisia-municipalities-high-plain.svg) | [1.41 MB](../dist/svg/municipalities/tunisia-municipalities-high-outline.svg) | · | · | · | · | · | · | [2.80 MB](../dist/geojson/tunisia-municipalities-high.geojson) | [772.7 KB](../dist/topojson/tunisia-municipalities-high.topojson) |
+| **medium** | [505.2 KB](../dist/svg/municipalities/tunisia-municipalities-medium-plain.svg) | [541.2 KB](../dist/svg/municipalities/tunisia-municipalities-medium-outline.svg) | [506.3 KB](../dist/svg/municipalities/tunisia-municipalities-medium-light.svg) | [506.4 KB](../dist/svg/municipalities/tunisia-municipalities-medium-dark.svg) | [541.4 KB](../dist/svg/municipalities/tunisia-municipalities-medium-labeled.svg) | [543.2 KB](../dist/svg/municipalities/tunisia-municipalities-medium-labeled-ar.svg) | · | [506.5 KB](../dist/svg/municipalities/tunisia-municipalities-medium-interactive.svg) | [993.5 KB](../dist/geojson/tunisia-municipalities-medium.geojson) | [371.6 KB](../dist/topojson/tunisia-municipalities-medium.topojson) |
+| **low** | [196.6 KB](../dist/svg/municipalities/tunisia-municipalities-low-plain.svg) | [203.5 KB](../dist/svg/municipalities/tunisia-municipalities-low-outline.svg) | [197.8 KB](../dist/svg/municipalities/tunisia-municipalities-low-light.svg) | [197.8 KB](../dist/svg/municipalities/tunisia-municipalities-low-dark.svg) | [232.8 KB](../dist/svg/municipalities/tunisia-municipalities-low-labeled.svg) | [234.6 KB](../dist/svg/municipalities/tunisia-municipalities-low-labeled-ar.svg) | · | [197.9 KB](../dist/svg/municipalities/tunisia-municipalities-low-interactive.svg) | [344.5 KB](../dist/geojson/tunisia-municipalities-low.geojson) | [201.7 KB](../dist/topojson/tunisia-municipalities-low.topojson) |
+
+Attributes: [`dist/data/municipalities.csv`](../dist/data/municipalities.csv) · [`dist/data/municipalities.json`](../dist/data/municipalities.json)
 
 `·` = not generated for this combination (e.g. labels on the full level of detail, or nested borders for partitions without a parent).

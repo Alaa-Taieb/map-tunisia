@@ -97,6 +97,21 @@ export const PARTITIONS = [
     lods: ['full', 'high', 'medium', 'low'],
     labelSize: [0.35, 2.6],
   },
+  {
+    // Not nested: municipalities do not follow delegation or sector borders. Built from their own
+    // source (boundary=municipality in OSM); `base` draws the land underneath, so the few areas
+    // outside any municipality stay visible instead of looking like sea.
+    id: 'municipalities',
+    key: 'municipality',
+    singular: 'municipality',
+    title: 'Municipalities',
+    titleAr: 'البلديات',
+    parents: [],
+    source: 'municipalities',
+    base: true,
+    lods: ['full', 'high', 'medium', 'low'],
+    labelSize: [1.1, 6],
+  },
 ];
 
 /** Visual modes. `lods` restricts a mode to some levels of detail (default: all except full). */

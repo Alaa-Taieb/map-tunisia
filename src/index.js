@@ -23,7 +23,7 @@ function check(partition, lod, mode) {
 
 /**
  * Repository-relative path of an SVG, e.g. `dist/svg/governorates/tunisia-governorates-medium-light.svg`.
- * @param {string} partition  country | regions | districts | governorates | delegations | sectors
+ * @param {string} partition  country | regions | districts | governorates | delegations | sectors | municipalities
  * @param {string} [lod]      full | high | medium | low | tiny
  * @param {string} [mode]     plain | outline | light | dark | labeled | labeled-ar | nested | interactive
  */
@@ -41,7 +41,7 @@ export function dataPath(partition, lod = 'medium', format = 'topojson') {
 
 /**
  * Repository-relative path of an attribute table (names, codes, populations, areas, label points).
- * @param {string} partition  country | regions | districts | governorates | delegations | sectors
+ * @param {string} partition  country | regions | districts | governorates | delegations | sectors | municipalities
  * @param {string} [format]   json | csv
  */
 export function attributesPath(partition, format = 'json') {

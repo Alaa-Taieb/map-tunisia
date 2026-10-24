@@ -68,6 +68,17 @@
       ],
       "decidedAt": "2026-10-17T01:16:40.016Z",
       "decidedBy": "claude-code"
+    },
+    {
+      "id": "DEC-006",
+      "title": "Municipality boundaries come from OSM boundary=municipality relations",
+      "decision": "Build the municipalities partition from the OpenStreetMap relations tagged boundary=municipality in the same Geofabrik extract (2026-10-16), clipped to the land, overlaps given to the smaller relation, no geometry invented; ids are municipality-<OSM relation>.",
+      "rationale": "Same source and licence as every other layer (ODbL 1.0, © OpenStreetMap contributors), so no new licence terms. The extract holds 338 valid relations (of 350 municipalities in the 2016 division) covering 97.9% of the land in all 24 governorates; admin_level 8 in the extract only holds Algerian communes. No INS municipality code is present in OSM (5 of 338 carry ref:tn:codegeo), so the OSM relation id is the stable identifier.",
+      "status": "active",
+      "requirementIds": [],
+      "alternatives": [],
+      "decidedAt": "2026-10-24T16:22:14.163Z",
+      "decidedBy": "claude-code"
     }
   ]
 }

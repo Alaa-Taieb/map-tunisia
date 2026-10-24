@@ -1,0 +1,15 @@
+{
+  "id": "EV-0MVMLX8ME-1908f7",
+  "type": "task.implemented",
+  "at": "2026-10-24T16:22:21.158Z",
+  "actor": "claude-code",
+  "session": "3d943b00-fdde-49df-a353-818a154fff8d",
+  "entityIds": [
+    "NS-015",
+    "MS-005"
+  ],
+  "summary": "claude-code reported NS-015 implemented (NOT verified): Municipalities (baladiyat) shipped as a 7th, non-nested partition: 338 OSM boundary=municipality relations (2026-10-16 extract, ODbL) clipped to the land, one overlap resolved (smaller wins), 97.86% land coverage, 0 overlap, 0 invalid geometries. New scripts/extract/municipalities.py; build renders SVG (full/high/medium/low x 7 modes, no nested) over a light land base, plus GeoJSON, TopoJSON, CSV/JSON with ids municipality-<osm relation>, ar/fr/en names and governorate/region/district. Types, explorer, README (ticked, usage example, source credit), accuracy/reference/catalog/data-dictionary/methodology/usage docs, release ZIPs and tests updated. Version 1.1.0.",
+  "data": {
+    "revision": "53216dde4c87efa0df8e0ea4c0c17cc44eece2a5+dirty"
+  }
+}

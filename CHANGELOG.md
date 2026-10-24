@@ -6,13 +6,29 @@ Data releases also state the date of the OpenStreetMap extract they were built f
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-10-24
+
+Built from the same OpenStreetMap extract of **2026-10-16**. The geometry and attributes of the six nested partitions are
+unchanged; only the version stamp in their SVG metadata moves to 1.1.0.
+
 ### Added
-- npm packaging: TypeScript declarations, `attributesPath()`, subpath exports for the JSON/GeoJSON/TopoJSON/SVG files.
-- `npm run release:zip`: reproducible per-format release ZIPs and a SHA-256 checksum file in `release/`.
+- **Municipalities (baladiyat)** as a seventh partition, `municipalities`, that does not nest in delegations or sectors:
+  338 municipalities from the OpenStreetMap relations tagged `boundary=municipality`, in all 24 governorates, covering
+  97.9 % of the land. Ids are `municipality-<OSM relation>`; each row carries its names (ar/fr/en), governorate, region,
+  district, area and label point.
+- SVG (`full`, `high`, `medium`, `low` × 7 modes; no `nested`), GeoJSON, TopoJSON, CSV and JSON, in the existing naming
+  scheme and subpath exports, and in the release ZIPs. 157 SVG files in total.
+- The land outside every municipality is drawn as a light base under the units, so it never looks like sea.
+- `scripts/extract/municipalities.py` (`npm run extract:municipalities`) and an accuracy section with coverage, gaps,
+  the resolved overlap and the OSM relations whose names look wrong.
 
 ## [1.0.0] — 2026-10-17
 
 First public release, built from the OpenStreetMap extract of **2026-10-16**.
+
+### Packaging (published to npm on 2026-10-23)
+- npm packaging: TypeScript declarations, `attributesPath()`, subpath exports for the JSON/GeoJSON/TopoJSON/SVG files.
+- `npm run release:zip`: reproducible per-format release ZIPs and a SHA-256 checksum file in `release/`.
 
 ### Added
 - **Six nested partitions:** country, 7 economic regions, 5 districts (Decree 2023-589), 24 governorates,

@@ -918,7 +918,7 @@
       "requirementIds": [],
       "dependsOn": [],
       "priority": "medium",
-      "status": "planned",
+      "status": "verification_pending",
       "blockers": [],
       "planned": true,
       "acceptance": [
@@ -944,14 +944,50 @@
         }
       ],
       "requiresHumanApproval": true,
+      "activeHarness": "claude-code",
+      "session": "3d943b00-fdde-49df-a353-818a154fff8d",
+      "branch": "main",
+      "workspace": "map-tunisia",
+      "startedAt": "2026-10-24T16:12:30.340Z",
       "commits": [],
-      "files": [],
-      "evidence": [],
+      "files": [
+        "scripts/extract/municipalities.py",
+        "scripts/build/build.js",
+        "scripts/build/svg.js",
+        "scripts/build/config.js",
+        "scripts/build/report.js",
+        "test/municipalities.test.js",
+        "data/source/tunisia-municipalities.geojson",
+        "data/attributes/municipalities.csv",
+        "README.md",
+        "docs/accuracy.md"
+      ],
+      "implementation": {
+        "reportedAt": "2026-10-24T16:22:21.158Z",
+        "by": "claude-code",
+        "summary": "Municipalities (baladiyat) shipped as a 7th, non-nested partition: 338 OSM boundary=municipality relations (2026-10-16 extract, ODbL) clipped to the land, one overlap resolved (smaller wins), 97.86% land coverage, 0 overlap, 0 invalid geometries. New scripts/extract/municipalities.py; build renders SVG (full/high/medium/low x 7 modes, no nested) over a light land base, plus GeoJSON, TopoJSON, CSV/JSON with ids municipality-<osm relation>, ar/fr/en names and governorate/region/district. Types, explorer, README (ticked, usage example, source credit), accuracy/reference/catalog/data-dictionary/methodology/usage docs, release ZIPs and tests updated. Version 1.1.0.",
+        "revision": "53216dde4c87efa0df8e0ea4c0c17cc44eece2a5+dirty",
+        "tree": "d7378dbfe8bbf72ef8085cac4e5774b60489b907"
+      },
+      "evidence": [
+        {
+          "id": "E1",
+          "kind": "automated",
+          "method": "unit-tests",
+          "result": "pass",
+          "revision": "53216dde4c87efa0df8e0ea4c0c17cc44eece2a5+dirty",
+          "tree": "d7378dbfe8bbf72ef8085cac4e5774b60489b907",
+          "at": "2026-10-24T16:22:24.752Z",
+          "by": "claude-code",
+          "detail": "$ npm test\nshell: bash\nexit 0\ns)\n✔ svg sectors/medium/plain (29.071ms)\n✔ svg sectors/medium/outline (29.3976ms)\n✔ svg sectors/medium/light (28.4418ms)\n✔ svg sectors/medium/dark (28.0746ms)\n✔ svg sectors/medium/labeled (33.5162ms)\n✔ svg sectors/medium/labeled-ar (34.0647ms)\n✔ svg sectors/medium/nested (32.2409ms)\n✔ svg sectors/medium/interactive (28.3189ms)\n✔ svg sectors/low/plain (21.6195ms)\n✔ svg sectors/low/outline (22.1114ms)\n✔ svg sectors/low/light (22.135ms)\n✔ svg sectors/low/dark (22.136ms)\n✔ svg sectors/low/labeled (27.0478ms)\n✔ svg sectors/low/labeled-ar (32.3956ms)\n✔ svg sectors/low/nested (23.2883ms)\n✔ svg sectors/low/interactive (22.4826ms)\n✔ svg municipalities/full/plain (38.4157ms)\n✔ svg municipalities/high/plain (15.5228ms)\n✔ svg municipalities/high/outline (16.0154ms)\n✔ svg municipalities/medium/plain (7.4574ms)\n✔ svg municipalities/medium/outline (7.5619ms)\n✔ svg municipalities/medium/light (6.9243ms)\n✔ svg municipalities/medium/dark (7.4618ms)\n✔ svg municipalities/medium/labeled (8.0446ms)\n✔ svg municipalities/medium/labeled-ar (8.6432ms)\n✔ svg municipalities/medium/interactive (7.1642ms)\n✔ svg municipalities/low/plain (4.4213ms)\n✔ svg municipalities/low/outline (3.8201ms)\n✔ svg municipalities/low/light (3.8231ms)\n✔ svg municipalities/low/dark (3.923ms)\n✔ svg municipalities/low/labeled (5.506ms)\n✔ svg municipalities/low/labeled-ar (4.7334ms)\n✔ svg municipalities/low/interactive (3.9345ms)\nℹ tests 192\nℹ suites 0\nℹ pass 192\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1433.0703",
+          "criteria": []
+        }
+      ],
       "decisionIds": [],
       "provenance": "stated",
       "createdAt": "2026-10-24T14:01:54.136Z",
       "createdBy": "claude-code",
-      "updatedAt": "2026-10-24T14:01:54.136Z"
+      "updatedAt": "2026-10-24T16:22:24.752Z"
     },
     {
       "id": "NS-016",

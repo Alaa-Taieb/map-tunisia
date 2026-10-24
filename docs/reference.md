@@ -2,13 +2,14 @@
 
 # Reference tables
 
-Every unit of the coarser partitions, with identifiers, names and figures. Sectors (imadas) are too many for a page — use
+Every unit of the coarser partitions and the municipalities, with identifiers, names and figures. Sectors (imadas) are too many for a page — use
 [`dist/data/sectors.csv`](../dist/data/sectors.csv). Areas are ellipsoidal; populations are INS census counts (RGPH 2014 and 2024).
 
 - [Economic regions](#economic-regions)
 - [Districts (2023)](#districts-2023)
 - [Governorates](#governorates)
 - [Delegations](#delegations)
+- [Municipalities](#municipalities)
 
 ## Economic regions
 
@@ -467,3 +468,349 @@ Created by Decree 2023-589 of 21 September 2023 for the National Council of Regi
 | `delegation-5356` | Dhehiba | الذهيبة | 2 | 5,920 | 3,221.9 |
 | `delegation-5357` | Remada | رمادة | 7 | 9,964 | 27,576.0 |
 | `delegation-5358` | Beni Mehira ✦ | بني مهيرة | 5 | 8,190 | 1,517.0 |
+
+## Municipalities
+
+338 municipalities (baladiyat) mapped in OpenStreetMap, a partition of its own that does not nest in delegations.
+The `id` carries the OSM relation number. Coverage and known issues: [accuracy report](accuracy.md#municipalities-baladiyat).
+
+| id | Nom (FR) | الاسم | Governorate | Area (km²) |
+| --- | --- | --- | --- | ---: |
+| `municipality-7209747` | Carthage | قرطاج | Tunis | 6.0 |
+| `municipality-7209745` | La Goulette | حلق الوادي | Tunis | 20.6 |
+| `municipality-7209749` | La Marsa | المرسى | Tunis | 30.6 |
+| `municipality-7209744` | Le Bardo | باردو | Tunis | 6.8 |
+| `municipality-7209746` | Le Kram | الكرم | Tunis | 9.7 |
+| `municipality-7209748` | Sidi Bou Said | سيدي بو سعيد | Tunis | 2.2 |
+| `municipality-7209931` | Sidi Hassine | سيدي حسين | Tunis | 64.4 |
+| `municipality-7209932` | Tunis | تونس | Tunis | 122.2 |
+| `municipality-7209680` | Ariana Ville | أريانة المدينة | Ariana | 18.6 |
+| `municipality-7209678` | Cité Ettadhamen | حي التضامن | Ariana | 3.4 |
+| `municipality-7209677` | Kallat El Andalous | قلعة الأندلس | Ariana | 189.2 |
+| `municipality-7209679` | Mnihla | منيهلة | Ariana | 23.1 |
+| `municipality-7209682` | Raoued | رواد | Ariana | 55.7 |
+| `municipality-7209676` | Sidi Thabet | سيدي ثابت | Ariana | 98.1 |
+| `municipality-7209681` | Soukra | سكرة | Ariana | 28.0 |
+| `municipality-7209941` | Ben Arous | بن عروس | Ben Arous | 6.5 |
+| `municipality-7304421` | Ben Arous | بن عروس | Ben Arous | 8.1 |
+| `municipality-7209943` | Bou Mhel El Bassatine | بومهل البساتين | Ben Arous | 20.2 |
+| `municipality-7209951` | El Mourouj | المروج | Ben Arous | 16.0 |
+| `municipality-7209942` | Ezzahra | الزهراء | Ben Arous | 7.1 |
+| `municipality-7209947` | Fouchana | فوشانة | Ben Arous | 15.1 |
+| `municipality-7209948` | Fouchana | فوشانة | Ben Arous | 23.6 |
+| `municipality-7209945` | Hammam Chott | حمام الشط | Ben Arous | 26.3 |
+| `municipality-7209944` | Hammam Lif | حمام الأنف | Ben Arous | 11.4 |
+| `municipality-7209934` | Khelidia | الخليدية | Ben Arous | 184.4 |
+| `municipality-7209950` | Megrine | مقرين | Ben Arous | 10.1 |
+| `municipality-7209935` | Mohamedia | المحمدية | Ben Arous | 97.4 |
+| `municipality-7209946` | Mornag | مرناق | Ben Arous | 216.0 |
+| `municipality-7209949` | Radès | رادس | Ben Arous | 19.6 |
+| `municipality-7102051` | Borj El Amri | برج العامري | La Manouba | 173.9 |
+| `municipality-7095907` | Den - Den | الدندان | La Manouba | 3.4 |
+| `municipality-7099099` | Djedaïda | الجديدة | La Manouba | 182.1 |
+| `municipality-7090952` | Douar Hicher | دوار هيشر | La Manouba | 9.1 |
+| `municipality-7102143` | El Bassatine | البساتين | La Manouba | 172.9 |
+| `municipality-7099175` | El Battane | البطان | La Manouba | 156.4 |
+| `municipality-7090535` | Manouba | منوبة | La Manouba | 8.7 |
+| `municipality-7102148` | Mornaguia | المرناقية | La Manouba | 88.6 |
+| `municipality-7091762` | Oued Ellil | وادي الليل | La Manouba | 57.2 |
+| `municipality-7098867` | Tebourba | طبربة | La Manouba | 286.7 |
+| `municipality-7098805` | Azmour | أزمور | Nabeul | 91.4 |
+| `municipality-7102676` | Ben Khalled | بني خلاد | Nabeul | 74.4 |
+| `municipality-7103010` | Ben Khiar | بني خيار | Nabeul | 33.1 |
+| `municipality-7103686` | Bou Argoub | بو عرقوب | Nabeul | 129.6 |
+| `municipality-7096630` | Dar Allouch | دار علوش | Nabeul | 61.1 |
+| `municipality-7103338` | Dar Chaabane El Fehri | دار شعبان الفهري | Nabeul | 68.8 |
+| `municipality-7102536` | Ech Cherifet | الشريفات | Nabeul | 44.0 |
+| `municipality-7096463` | El Haouaira | الهوارية | Nabeul | 137.2 |
+| `municipality-7102856` | El Maamoura | المعمورة | Nabeul | 23.3 |
+| `municipality-7100601` | El Mida | الميدة | Nabeul | 152.6 |
+| `municipality-7104936` | Fondouk Jedidi | فندق الجديدي | Nabeul | 129.3 |
+| `municipality-7104937` | Grombalia | قرمبالية | Nabeul | 173.4 |
+| `municipality-7097005` | Hammam El Ghezaz | حمام الغزاز | Nabeul | 33.5 |
+| `municipality-7304261` | Hammamet | الحمامات | Nabeul | 131.2 |
+| `municipality-7098176` | Kelibia | قليبية | Nabeul | 34.4 |
+| `municipality-7102518` | Korba | قربة | Nabeul | 186.6 |
+| `municipality-7100602` | Korbous | قربص | Nabeul | 49.1 |
+| `municipality-7101604` | Menzel Bouzelfa | منزل بوزلفة | Nabeul | 133.8 |
+| `municipality-7100416` | Menzel Hor | منزل حر | Nabeul | 134.2 |
+| `municipality-7099966` | Menzel Temime | منزل تميم | Nabeul | 128.9 |
+| `municipality-7103333` | Nabeul | نابل | Nabeul | 73.9 |
+| `municipality-7304260` | Sidi Jadidi | سيدي الجديدي | Nabeul | 194.2 |
+| `municipality-7100695` | Soliman | سليمان | Nabeul | 49.3 |
+| `municipality-7103013` | Somaa | صمعة | Nabeul | 49.8 |
+| `municipality-7100362` | Takelsa | تاكلسة | Nabeul | 278.4 |
+| `municipality-7097980` | Tazaghrane | تزغران | Nabeul | 172.4 |
+| `municipality-7102858` | Tazarka | تازركة | Nabeul | 19.8 |
+| `municipality-7103678` | Zaouiet Jdidi | زاوية الجديدي | Nabeul | 40.0 |
+| `municipality-7164069` | Bir Mcherga | بئر مشارقة | Zaghouan | 305.9 |
+| `municipality-7164401` | El Amaiem | العمايم | Zaghouan | 536.6 |
+| `municipality-7164287` | El Fahs | الفحص | Zaghouan | 398.9 |
+| `municipality-7164400` | Ennadhour | الناظور | Zaghouan | 357.4 |
+| `municipality-7164070` | Jebel Oust | جبل الوسط | Zaghouan | 229.6 |
+| `municipality-7164286` | Saouaf | صواف | Zaghouan | 253.1 |
+| `municipality-7164068` | Zaghouan | زغوان | Zaghouan | 409.5 |
+| `municipality-7164067` | Zriba | الزريبة | Zaghouan | 349.0 |
+| `municipality-7209237` | Bizerte | بنزرت | Bizerte | 450.7 |
+| `municipality-7209279` | El Alia | العالية | Bizerte | 85.1 |
+| `municipality-7209220` | El Hchachna | الحشاشنة | Bizerte | 366.2 |
+| `municipality-7209276` | Ghar El Melh | غار الملح | Bizerte | 31.7 |
+| `municipality-7209222` | Ghezala | غزالة | Bizerte | 407.0 |
+| `municipality-7209223` | Joumine | جومين | Bizerte | 553.4 |
+| `municipality-7209224` | Mateur | ماطر | Bizerte | 565.9 |
+| `municipality-7209255` | Menzel Abderrahmane | منزل عبد الرحمان | Bizerte | 9.1 |
+| `municipality-7209241` | Menzel Bourguiba | منزل بورقيبة | Bizerte | 127.7 |
+| `municipality-7209256` | Menzel Jemil | منزل جميل | Bizerte | 77.0 |
+| `municipality-7209285` | Metline | ماتلين | Bizerte | 32.4 |
+| `municipality-7209278` | Ousja | عوسجة | Bizerte | 61.4 |
+| `municipality-7209275` | Rafraf | رفراف | Bizerte | 22.1 |
+| `municipality-7209277` | Ras Jebel | رأس الجبل | Bizerte | 29.5 |
+| `municipality-7209221` | Sejnane | سجنان | Bizerte | 255.9 |
+| `municipality-7209280` | Tinja | تينجة | Bizerte | 58.3 |
+| `municipality-7209225` | Utique | أوتيك | Bizerte | 374.9 |
+| `municipality-7209120` | Béja | باجة | Béja | 427.6 |
+| `municipality-7209118` | El Maagoula | المعقولة | Béja | 214.0 |
+| `municipality-7209112` | Esslouguia | السلوقية | Béja | 83.9 |
+| `municipality-7209129` | Goubellat | قبلاط | Béja | 413.8 |
+| `municipality-7209111` | Medjez El Bab | مجاز الباب | Béja | 462.5 |
+| `municipality-7209059` | Nefza | نفزة | Béja | 323.5 |
+| `municipality-7209121` | Ouechtata | وشتاتة | Béja | 276.1 |
+| `municipality-7209116` | Sidi Smail | سيدي إسماعيل | Béja | 148.3 |
+| `municipality-7209113` | Teboursouk | تبرسق | Béja | 396.0 |
+| `municipality-7209117` | Testour | تستور | Béja | 559.3 |
+| `municipality-7209114` | Tibar | تيبار | Béja | 114.2 |
+| `municipality-7209119` | Zahret Medien | زهرة مدين | Béja | 241.4 |
+| `municipality-7173765` | Ain Draham | عين دراهم | Jendouba | 320.0 |
+| `municipality-7173767` | Ain Essobh Nadhour | عين الصبح الناظور | Jendouba | 232.9 |
+| `municipality-7173835` | Balta Bouawene | بلطة بوعوان | Jendouba | 276.3 |
+| `municipality-7173839` | Beni M'tir | بني مطير | Jendouba | 71.7 |
+| `municipality-7304410` | Bousalem | بوسالم | Jendouba | 306.9 |
+| `municipality-7173847` | El Kalaa El Maaden Forgassen | القلعة المعدن فرقصان | Jendouba | 137.9 |
+| `municipality-7304405` | Ettataouer | التطور | Jendouba | 253.1 |
+| `municipality-7173849` | Fernana | فرنانة | Jendouba | 193.7 |
+| `municipality-7173850` | Ghardimaou | غار الدماء | Jendouba | 369.4 |
+| `municipality-7304406` | Jendouba | جندوبة | Jendouba | 299.7 |
+| `municipality-7173848` | Jouaouda | الجواودة | Jendouba | 125.4 |
+| `municipality-7173838` | Khmeyria | الخمايرية | Jendouba | 169.4 |
+| `municipality-7173955` | Oued Meliz | وادي مليز | Jendouba | 199.9 |
+| `municipality-7173766` | Tabarka | طبرقة | Jendouba | 141.1 |
+| `municipality-7202548` | Bahra | بهرة | Le Kef | 167.1 |
+| `municipality-7202458` | Dahmani | الدهماني | Le Kef | 544.4 |
+| `municipality-7202460` | Djerissa | الجريصة | Le Kef | 173.2 |
+| `municipality-7202459` | El Ksour | القصور | Le Kef | 458.9 |
+| `municipality-7202487` | El Marja | المرجى | Le Kef | 148.0 |
+| `municipality-7202462` | Kalaat Khasba | القلعة الخصبة | Le Kef | 205.5 |
+| `municipality-7202461` | Kalaat Senan | قلعة سنان | Le Kef | 513.7 |
+| `municipality-7202502` | Kef | الكاف | Le Kef | 220.3 |
+| `municipality-7202482` | Menzel Salem | منزل سالم | Le Kef | 148.3 |
+| `municipality-7202544` | Nebeur | نبر | Le Kef | 230.1 |
+| `municipality-7202498` | Sakiet Sidi Youssef | ساقية سيدي يوسف | Le Kef | 728.1 |
+| `municipality-7202488` | Sers | السرس | Le Kef | 285.1 |
+| `municipality-7202483` | Tajerouine | تاجروين | Le Kef | 572.3 |
+| `municipality-7202545` | Touiref | الطويرف | Le Kef | 322.0 |
+| `municipality-7202486` | Zaafrane | الزعفران | Le Kef | 387.8 |
+| `municipality-7169441` | Bargou | برقو | Siliana | 448.3 |
+| `municipality-7168989` | Bou Arada | بوعرادة | Siliana | 380.6 |
+| `municipality-7169007` | Bourouis | بورويس | Siliana | 275.9 |
+| `municipality-7169002` | El Aroussa | العروسة | Siliana | 360.6 |
+| `municipality-7169047` | El Hbabsa | الحبابسة | Siliana | 374.3 |
+| `municipality-7169008` | El Krib | الكريب | Siliana | 425.9 |
+| `municipality-7169044` | Errouhia | الروحية | Siliana | 281.2 |
+| `municipality-7169001` | Gaafour | قعفور | Siliana | 462.2 |
+| `municipality-7169042` | Kesra | كسرى | Siliana | 435.0 |
+| `municipality-7169041` | Makthar | مكثر | Siliana | 343.8 |
+| `municipality-7169033` | Sidi Morched | سيدي مرشد | Siliana | 336.3 |
+| `municipality-7169440` | Siliana | سليانة | Siliana | 545.3 |
+| `municipality-7171864` | Abida | عبيدة | Kairouan | 217.1 |
+| `municipality-7171852` | Ain Jelloula | عين جلولة | Kairouan | 195.7 |
+| `municipality-7169511` | Bouhajla | بوحجلة | Kairouan | 437.9 |
+| `municipality-7171870` | Chaouachi | شواشي | Kairouan | 235.9 |
+| `municipality-7171865` | Chebika | الشبيكة | Kairouan | 295.5 |
+| `municipality-7169488` | Cheraitia Ksour | الشرايطية القصور | Kairouan | 192.0 |
+| `municipality-7169471` | Echrarda | الشراردة | Kairouan | 138.4 |
+| `municipality-7171868` | El Ain El Beidha | عين البيضاء | Kairouan | 207.8 |
+| `municipality-7169772` | El Alaa | العلا | Kairouan | 361.3 |
+| `municipality-7169773` | Haffouz | حفوز | Kairouan | 403.5 |
+| `municipality-7169465` | Hajeb El Ayoun | حاجب العيون | Kairouan | 353.0 |
+| `municipality-7169501` | Jehina | جهينة | Kairouan | 251.6 |
+| `municipality-7169523` | Kairouan | القيروان | Kairouan | 461.6 |
+| `municipality-7169502` | Menzel Mhiri | منزل المهيري | Kairouan | 262.7 |
+| `municipality-7169472` | Nasrallah | نصر الله | Kairouan | 422.4 |
+| `municipality-7169743` | Oueslatia | الوسلاتية | Kairouan | 719.0 |
+| `municipality-7169681` | Rakada | رقادة | Kairouan | 309.1 |
+| `municipality-7169737` | Sbikha | السبيخة | Kairouan | 746.3 |
+| `municipality-7169726` | Sisseb Edheriaat | سيسب الدريعات | Kairouan | 323.0 |
+| `municipality-7167932` | Ain El Khemaissia | عين الخمايسية | Kasserine | 278.7 |
+| `municipality-7167978` | Bouzguam | بوزقام | Kasserine | 376.2 |
+| `municipality-7167930` | Djedeliane | جدليانࢫ | Kasserine | 275.0 |
+| `municipality-7167931` | Echrayaa Machrek Chams | الشرايع مشرق الشمس | Kasserine | 641.1 |
+| `municipality-7167928` | El Ayoun | العيون | Kasserine | 411.6 |
+| `municipality-7167979` | Ennour | النور | Kasserine | 4.6 |
+| `municipality-7167935` | Errakhmet | الرخمات | Kasserine | 236.4 |
+| `municipality-7167918` | Feriana | فريانة | Kasserine | 414.4 |
+| `municipality-7167945` | Foussana | فوسانة | Kasserine | 505.2 |
+| `municipality-7167924` | Hassi El Ferid | حاسي الفريد | Kasserine | 968.9 |
+| `municipality-7167925` | Hidra | حيدرة | Kasserine | 496.6 |
+| `municipality-7167977` | Kasserine | القصرين | Kasserine | 585.6 |
+| `municipality-7167944` | Khmouda | خمودة | Kasserine | 409.7 |
+| `municipality-7167919` | Majel Bel Abbes | ماجل بالعباس | Kasserine | 886.6 |
+| `municipality-7167940` | Sbeitla | سبيطلة | Kasserine | 238.2 |
+| `municipality-7167936` | Sbiba | سبيبة | Kasserine | 169.0 |
+| `municipality-7167927` | Thala | تالة | Kasserine | 716.7 |
+| `municipality-7167913` | Thélepte | تلابت | Kasserine | 591.9 |
+| `municipality-7172846` | Baten El Ghezel | باطن الغزال | Sidi Bouzid | 343.4 |
+| `municipality-7172947` | Bennour | بنور | Sidi Bouzid | 445.5 |
+| `municipality-7172859` | Bir El Hafey | بئر الحفي | Sidi Bouzid | 310.5 |
+| `municipality-7172849` | Cebalet Ouled Asker | سبالة أولاد عسكر | Sidi Bouzid | 295.3 |
+| `municipality-7172963` | El Ahouaz Lassouda | الأحواز لسودة | Sidi Bouzid | 349.7 |
+| `municipality-7172882` | El Mansoura | المنصورة | Sidi Bouzid | 226.8 |
+| `municipality-7172845` | Jilma | جلمة | Sidi Bouzid | 325.9 |
+| `municipality-7172880` | Meknassy | المكناسي | Sidi Bouzid | 623.8 |
+| `municipality-7172881` | Menzel Bouzaiane | منزل بوزيان | Sidi Bouzid | 555.0 |
+| `municipality-7172934` | Mezzouna | المزونة | Sidi Bouzid | 1,135.6 |
+| `municipality-7172948` | Ouled Haffouz | أولاد حفوز | Sidi Bouzid | 422.4 |
+| `municipality-7172960` | Rahal | رحال | Sidi Bouzid | 204.7 |
+| `municipality-7172858` | Sidi Ali Ben Aoun | سيدي علي بن عون | Sidi Bouzid | 387.7 |
+| `municipality-7172931` | Souk Jedid | سوق الجديد | Sidi Bouzid | 346.4 |
+| `municipality-7210438` | Akouda | أكودة | Sousse | 23.2 |
+| `municipality-7210411` | Bouficha | بوفيشة | Sousse | 260.6 |
+| `municipality-7210432` | Chott Mariem | شط مريم | Sousse | 21.4 |
+| `municipality-7210453` | El Messaadine | المسعدين | Sousse | 6.1 |
+| `municipality-7210409` | Enfidha | النفيضة | Sousse | 234.3 |
+| `municipality-7210472` | Ezzouhour | الزهور | Sousse | 10.1 |
+| `municipality-7210410` | Grimet Hicher | القريمات هيشر | Sousse | 135.9 |
+| `municipality-7210414` | Hammam Sousse | حمام سوسة | Sousse | 18.3 |
+| `municipality-7210415` | Hergla | هرقلة | Sousse | 95.9 |
+| `municipality-7210429` | Kalaa Kebira | القلعة الكبرى | Sousse | 233.8 |
+| `municipality-7210441` | Kalaa Sghira | القلعة الصغرى | Sousse | 103.0 |
+| `municipality-7210421` | Kondar | كندار | Sousse | 160.5 |
+| `municipality-7210451` | Ksibet Thrayet | قصيبة الثريات | Sousse | 20.8 |
+| `municipality-7210419` | Msaken | مساكن | Sousse | 326.6 |
+| `municipality-7210428` | Sidi Bouali | سيدي بو علي | Sousse | 128.0 |
+| `municipality-7210420` | Sidi El Heni | سيدي الهاني | Sousse | 323.8 |
+| `municipality-7210444` | Sousse | سوسة | Sousse | 32.7 |
+| `municipality-7210445` | Zaouiet Sousse | زاوية سوسة | Sousse | 15.7 |
+| `municipality-7288387` | Amiret El Fehoul | عميرة الفحول | Monastir | 30.7 |
+| `municipality-7288388` | Amiret El Hojjaj | عميرة الحجاج | Monastir | 25.5 |
+| `municipality-7288386` | Amiret Touazra | عميرة التوازرة | Monastir | 23.4 |
+| `municipality-7288129` | Bembla | بنبلة | Monastir | 21.2 |
+| `municipality-7288376` | Benen Bodher | بنان بوضر | Monastir | 18.3 |
+| `municipality-7288384` | Beni Hassen | بني حسان | Monastir | 30.2 |
+| `municipality-7288375` | Bou Hjar | بوحجر | Monastir | 4.4 |
+| `municipality-7288382` | Cherahil | الشراحيل | Monastir | 15.4 |
+| `municipality-7288130` | El Masdour Menzel Harb | المصدور منزل حرب | Monastir | 18.5 |
+| `municipality-7288035` | El Ouerdanine | الوردانين | Monastir | 51.4 |
+| `municipality-7288551` | Ghnada | الغنادة | Monastir | 56.7 |
+| `municipality-7288407` | Jammel | جمال | Monastir | 63.6 |
+| `municipality-7287982` | Khenis | خنيس | Monastir | 18.8 |
+| `municipality-7288553` | Ksar Hellal | قصر هلال | Monastir | 21.9 |
+| `municipality-7288377` | Ksibet El Mediouni | قصيبة المديوني | Monastir | 5.9 |
+| `municipality-7288395` | Lamta | لمطة | Monastir | 1.9 |
+| `municipality-7288128` | Menzel Ennour | منزل النور | Monastir | 9.2 |
+| `municipality-7288383` | Menzel Farsi | منزل فارسي | Monastir | 26.3 |
+| `municipality-7288268` | Menzel Hayet | منزل حياة | Monastir | 158.2 |
+| `municipality-7288270` | Menzel Kamel | منزل كامل | Monastir | 80.4 |
+| `municipality-7288390` | Moknine | المكنين | Monastir | 56.5 |
+| `municipality-7287983` | Monastir | المنستير | Monastir | 44.0 |
+| `municipality-7287981` | Sahline Môotmar | الساحلين معتمر | Monastir | 29.4 |
+| `municipality-7288396` | Sayada | صيادة | Monastir | 6.6 |
+| `municipality-7288273` | Sidi Ameur | سيدي عامر | Monastir | 13.1 |
+| `municipality-7288389` | Sidi Bennour | سيدي بنور | Monastir | 19.4 |
+| `municipality-7288394` | Teboulba | طبلبة | Monastir | 18.1 |
+| `municipality-7288408` | Touza | طوزة | Monastir | 12.8 |
+| `municipality-7288127` | Zaouiet Kontoch | زاوية قنطش | Monastir | 12.2 |
+| `municipality-7288269` | Zeramdine | زرمدين | Monastir | 93.9 |
+| `municipality-7303867` | Bou Merdès | بومرداس | Mahdia | 87.7 |
+| `municipality-7304003` | Chorbane | شربان | Mahdia | 448.4 |
+| `municipality-7303802` | El Bradaa | البرادعة | Mahdia | 109.2 |
+| `municipality-7303845` | El Djem | الجم | Mahdia | 167.2 |
+| `municipality-7303783` | El Hekaima | الحكايمة | Mahdia | 81.9 |
+| `municipality-7303856` | Essouassi | السواسي | Mahdia | 195.6 |
+| `municipality-7304001` | Hebira | هبيرة | Mahdia | 315.8 |
+| `municipality-7303866` | Kerker | كركر | Mahdia | 103.5 |
+| `municipality-7303791` | Ksour Essaf | قصور الساف | Mahdia | 111.6 |
+| `municipality-7292801` | Mahdia | المهدية | Mahdia | 68.3 |
+| `municipality-7303808` | Melloulech | ملولش | Mahdia | 160.2 |
+| `municipality-7304000` | Ouled Chamekh | أولاد الشامخ | Mahdia | 324.8 |
+| `municipality-7303785` | Rejiche | رجيش | Mahdia | 15.5 |
+| `municipality-7303803` | Sidi Alouane | سيدي علوان | Mahdia | 105.1 |
+| `municipality-7303860` | Sidi Zid | سيدي زيد | Mahdia | 152.1 |
+| `municipality-7303846` | Talalsa | التلالسة | Mahdia | 120.3 |
+| `municipality-7303805` | Zalba | زالبة | Mahdia | 183.7 |
+| `municipality-7110567` | Agareb | عقارب | Sfax | 737.8 |
+| `municipality-7119543` | Bir Ali Ben Khalifa | بئر علي بن خليفة | Sfax | 545.8 |
+| `municipality-7127885` | Djebeniana | جبنيانة | Sfax | 193.7 |
+| `municipality-7126242` | El Achech | الأعشاش | Sfax | 327.5 |
+| `municipality-7287248` | El Ain | العين | Sfax | 14.9 |
+| `municipality-7286825` | El Amra | العامرة | Sfax | 183.9 |
+| `municipality-7287158` | El Hajeb | الحاجب | Sfax | 46.5 |
+| `municipality-7126939` | El Hencha | الحنشة | Sfax | 346.4 |
+| `municipality-7124825` | Ennadhour Sidi Ali Belabed | الناظور سيدي علي بالعابد | Sfax | 660.0 |
+| `municipality-7286902` | Ghraiba | الغريبة | Sfax | 431.0 |
+| `municipality-7287170` | Gremda | قرمدة | Sfax | 14.1 |
+| `municipality-7127921` | Hazeg El Louza | حزق اللوزة | Sfax | 64.0 |
+| `municipality-7286824` | Kerkennah | قرقنة | Sfax | 152.7 |
+| `municipality-7125808` | Menzel Chaker | منزل شاكر | Sfax | 1,287.4 |
+| `municipality-7287088` | Sakiet Eddaier | ساقية الدائر | Sfax | 96.0 |
+| `municipality-7111390` | Skhira | الصخيرة | Sfax | 911.6 |
+| `municipality-7168897` | Belkhir | بلخير | Gafsa | 842.4 |
+| `municipality-7168909` | El Guetar | القطار | Gafsa | 933.4 |
+| `municipality-7168946` | El Ksar | القصر | Gafsa | 218.8 |
+| `municipality-7168942` | Gafsa | قفصة | Gafsa | 1,285.3 |
+| `municipality-7168947` | Lala | لالة | Gafsa | 63.0 |
+| `municipality-7168910` | Mdhila | المظيلة | Gafsa | 644.4 |
+| `municipality-7168913` | Metlaoui | المتلوي | Gafsa | 973.3 |
+| `municipality-7168919` | Moularès | أم الأعراس | Gafsa | 798.7 |
+| `municipality-7168914` | Redeyef | الرديف | Gafsa | 403.8 |
+| `municipality-7168950` | Sanouche | زانوش | Gafsa | 319.2 |
+| `municipality-7168944` | Sidi Aich | سيدي عيش | Gafsa | 442.9 |
+| `municipality-7168918` | Sidi Boubaker | سيدي بوبكر | Gafsa | 176.4 |
+| `municipality-7168963` | Sned | السند | Gafsa | 449.2 |
+| `municipality-7167905` | Degach | دقاش | Tozeur | 835.8 |
+| `municipality-7167904` | Hamet Ejrid | حامة الجريد | Tozeur | 583.0 |
+| `municipality-7167900` | Hazoua | حزوة | Tozeur | 1,283.3 |
+| `municipality-7167899` | Nefta | نفطة | Tozeur | 1,641.4 |
+| `municipality-7167902` | Tameghza | تمغزة | Tozeur | 910.7 |
+| `municipality-7167903` | Tozeur | توزر | Tozeur | 819.6 |
+| `municipality-7082678` | Bchelli | بشلي جرسن البليدات | Kébili | 435.1 |
+| `municipality-7083656` | Béchri Fatnassa | بشري فطناسة | Kébili | 906.0 |
+| `municipality-7107483` | Douz | دوز | Kébili | 7,743.8 |
+| `municipality-7095634` | El Faouar | الفوار | Kébili | 7,348.5 |
+| `municipality-7107713` | El Golaa | القلعة | Kébili | 52.6 |
+| `municipality-7082169` | Jemna | جمنة | Kébili | 679.8 |
+| `municipality-7108057` | Kebilli | قبلي | Kébili | 1,218.8 |
+| `municipality-7082337` | Rejim Mâatoug | رجيم معتوق | Kébili | 2,493.9 |
+| `municipality-7082278` | Souk El Ahed | سوق الأحد | Kébili | 1,371.4 |
+| `municipality-7286649` | Bouchemma | بوشمة | Gabès | 50.1 |
+| `municipality-7286791` | Chenini Nahal | شنني نحال | Gabès | 104.3 |
+| `municipality-7173107` | Dkhilet Toujane | دخيلة توجان | Gabès | 318.5 |
+| `municipality-7173082` | El Hamma | الحامة | Gabès | 945.6 |
+| `municipality-7286673` | El Metouia | المطوية | Gabès | 144.4 |
+| `municipality-7286425` | Ezzarat | الزارات | Gabès | 115.2 |
+| `municipality-7286640` | Gabès | قابس | Gabès | 31.2 |
+| `municipality-7286661` | Ghannouch | غنوش | Gabès | 20.1 |
+| `municipality-7173064` | Habib Thameur | الحبيب ثامر | Gabès | 1,696.6 |
+| `municipality-7173103` | Ketana | كتانة | Gabès | 221.5 |
+| `municipality-7173126` | Mareth | مارث | Gabès | 346.3 |
+| `municipality-7173102` | Matmata | مطماطة | Gabès | 1,246.1 |
+| `municipality-7173065` | Menzel El Habib | منزل الحبيب | Gabès | 952.9 |
+| `municipality-7173087` | Nouvelle Matmata | مطماطة الجديدة | Gabès | 752.1 |
+| `municipality-7173075` | Oudref | وذرف | Gabès | 264.2 |
+| `municipality-7286613` | Teboulbou | تبلبو | Gabès | 279.3 |
+| `municipality-7286085` | Ben Gardane | بنقردان | Médenine | 4,806.5 |
+| `municipality-7286127` | Beni Khedech | بني خداش | Médenine | 1,359.7 |
+| `municipality-7286177` | Boughrara | بوغرارة | Médenine | 391.8 |
+| `municipality-7286079` | Djerba Ajim | جربة اجيم | Médenine | 159.4 |
+| `municipality-7286071` | Djerba Houmet Souk | جربة حومة السوق | Médenine | 163.0 |
+| `municipality-7286080` | Djerba Midoun | جربة ميدون | Médenine | 189.1 |
+| `municipality-7286159` | Medenine | مدنين | Médenine | 676.3 |
+| `municipality-7286168` | Sidi Makhlouf | سيدي مخلوف | Médenine | 658.9 |
+| `municipality-7286094` | Zarzis | جرجيس | Médenine | 670.1 |
+| `municipality-7286110` | Zarzis Nord | جرجيس الشمالية | Médenine | 217.2 |
+| `municipality-7167867` | Bir Lahmar | بئر الأحمر | Tataouine | 244.8 |
+| `municipality-7167849` | Chenini Douiret | شنني الدويرات | Tataouine | 1,863.3 |
+| `municipality-7167457` | Dhehiba | الذهيبة | Tataouine | 3,221.9 |
+| `municipality-7167879` | Ghomrassen | غمراسن | Tataouine | 689.2 |
+| `municipality-7167437` | Remada | رمادة | Tataouine | 27,576.0 |
+| `municipality-7167885` | Smar | الصمار | Tataouine | 1,993.7 |
+| `municipality-7167848` | Tataouine | تطاوين | Tataouine | 2,873.7 |

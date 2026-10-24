@@ -5,7 +5,7 @@
 <h3>The most accurate open-source SVG maps of Tunisia</h3>
 
 <p>
-Country · 7 economic regions · 5 districts · 24 governorates · 279 delegations · 2,083 imadas<br>
+Country · 7 economic regions · 5 districts · 24 governorates · 279 delegations · 2,083 imadas · 338 municipalities<br>
 5 levels of detail · 8 visual modes · SVG · GeoJSON · TopoJSON · العربية · Français · English
 </p>
 
@@ -131,7 +131,7 @@ svg.insertAdjacentHTML('beforeend', `<circle cx="${x}" cy="${y}" r="3" fill="cri
 Every file lives in [`dist/`](dist/) and follows one naming scheme:
 
 ```text
-dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     140 SVG maps
+dist/svg/<partition>/tunisia-<partition>-<lod>-<mode>.svg     157 SVG maps
 dist/geojson/tunisia-<partition>-<lod>.geojson                WGS84, with all attributes
 dist/topojson/tunisia-<partition>-<lod>.topojson              WGS84, shared borders
 dist/data/<partition>.csv | .json                             names, codes, populations, areas, label points
@@ -143,6 +143,7 @@ dist/data/<partition>.csv | .json                             names, codes, popu
 | [Governorates, interactive](dist/svg/governorates/tunisia-governorates-medium-interactive.svg) | 135 KB |
 | [Delegations, light](dist/svg/delegations/tunisia-delegations-medium-light.svg) | 446 KB |
 | [Sectors (imadas), nested](dist/svg/sectors/tunisia-sectors-medium-nested.svg) | 1.8 MB |
+| [Municipalities, light](dist/svg/municipalities/tunisia-municipalities-medium-light.svg) · [interactive](dist/svg/municipalities/tunisia-municipalities-medium-interactive.svg) | 506 KB |
 | [Country outline, for icons](dist/svg/country/tunisia-country-tiny-plain.svg) | 4 KB |
 | [Governorates TopoJSON](dist/topojson/tunisia-governorates-medium.topojson) · [GeoJSON](dist/geojson/tunisia-governorates-medium.geojson) | 105 KB · 306 KB |
 
@@ -160,7 +161,7 @@ import { svgPath, attributesPath, project, catalog } from 'map-tunisia';   // he
 import delegations from 'map-tunisia/data/delegations.json' with { type: 'json' };   // 279 rows, no fetch needed
 
 delegations.length;                          // 279
-catalog.partitions.map((p) => p.count);      // [1, 7, 5, 24, 279, 2083]
+catalog.partitions.map((p) => p.count);      // [1, 7, 5, 24, 279, 2083, 338]
 svgPath('governorates', 'medium', 'light');  // 'dist/svg/governorates/tunisia-governorates-medium-light.svg'
 ```
 
@@ -179,7 +180,7 @@ Each release ships one ZIP per format plus a checksum file, named after the pack
 | `map-tunisia-vX.Y.Z-geojson.zip` | GeoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-topojson.zip` | TopoJSON, every partition and level of detail |
 | `map-tunisia-vX.Y.Z-json.zip` / `-csv.zip` | attribute tables (names, codes, populations, areas, label points) |
-| `map-tunisia-vX.Y.Z-svg.zip` | all 140 SVG maps |
+| `map-tunisia-vX.Y.Z-svg.zip` | all 157 SVG maps |
 | `map-tunisia-vX.Y.Z-SHA256SUMS.txt` | checksums: `sha256sum -c map-tunisia-vX.Y.Z-SHA256SUMS.txt` |
 
 Download them from the project's *Releases* page, or build them yourself from a clone: `npm install && npm run release:zip`
@@ -197,6 +198,34 @@ writes everything into `release/` (git-ignored). The archives are reproducible: 
 | `governorates` | 24 | الولايات | The *wilayas*, with ids `TN-11` … `TN-83` (ISO 3166-2) |
 | `delegations` | 279 | المعتمديات | The *mutamadiyat*, INS 2024 nomenclature |
 | `sectors` | 2,083 | العمادات | The *imadas*, the finest administrative level |
+| `municipalities` | 338 | البلديات | The *baladiyat*, a **separate layer that does not nest** in delegations ([below](#municipalities-baladiyat)) |
+
+### Municipalities (*baladiyat*)
+
+Municipal borders don't follow delegations or imadas, so the municipalities ship as their own partition: same file names,
+`id`s and `data-*` attributes as the other layers, in SVG (`full` to `low`, every mode except `nested`), GeoJSON, TopoJSON,
+CSV and JSON. Each one carries its Arabic, French and English names, its governorate (plus region and district), its area,
+its OSM relation and a label point. Ids look like `municipality-7286094` (Zarzis), after the OSM relation.
+
+```js
+import municipalities from 'map-tunisia/data/municipalities.json' with { type: 'json' };
+import { svgPath } from 'map-tunisia';
+
+municipalities.length;                                   // 338
+municipalities.filter((m) => m.governorate === 'TN-82'); // the 10 municipalities of Médenine
+svgPath('municipalities', 'medium', 'interactive');      // 'dist/svg/municipalities/tunisia-municipalities-medium-interactive.svg'
+```
+
+```css
+.municipality[data-governorate="TN-82"] { fill: #219ebc; }   /* one governorate's municipalities */
+#municipalities-base { fill: #eceff3; }                      /* land outside every mapped municipality */
+```
+
+**Source:** the OpenStreetMap relations tagged `boundary=municipality` (© OpenStreetMap contributors, ODbL 1.0), from the
+same extract as the other layers, clipped to the land. No geometry is invented: OSM maps 338 of the 350 municipalities of
+the 2016 division, so 2.1 % of the land (some sebkhas, and areas not yet mapped) stays outside every municipality and is drawn
+as a light base under the units. Coverage, the gaps and the OSM relations whose names look wrong are in the
+[accuracy report](docs/accuracy.md#municipalities-baladiyat).
 
 ### Levels of detail
 
@@ -249,12 +278,12 @@ See **[projection & coordinates](docs/projection.md)**.
 ```bash
 npm install
 npm run build        # dist/ from data/ in ~30 s
-npm test             # 160+ checks: counts, ids, nesting, areas, populations, XML validity, sizes, projection, package + ZIPs
+npm test             # 190+ checks: counts, ids, nesting, areas, populations, XML validity, sizes, projection, package + ZIPs
 npm run release:zip  # versioned ZIPs + SHA256SUMS into release/
 
 # refresh from the latest OpenStreetMap data (Python 3.10+)
 pip install -r scripts/extract/requirements.txt
-npm run fetch && npm run extract && npm run build
+npm run fetch && npm run extract && npm run extract:municipalities && npm run build
 ```
 
 The pipeline: **pyosmium + Shapely** (extraction and topology) → **mapshaper** (dissolve, projection, simplification) →
@@ -265,7 +294,7 @@ a custom SVG writer (labels with polylabel, map colouring, accessible markup). S
 - [x] 6 nested partitions, 5 levels of detail, 8 modes
 - [x] All 279 delegations of the 2024 nomenclature
 - [x] GeoJSON / TopoJSON / CSV, projection helper, live explorer
-- [ ] Municipalities (*baladiyat*) as a separate, non-nested partition
+- [x] Municipalities (*baladiyat*) as a separate, non-nested partition
 - [ ] Optional water layer: lagoons, sebkhas, chotts and dams
 - [ ] Cities and capitals as point layers
 - [ ] Tamazight (Tifinagh) and English-transliteration label modes
@@ -311,7 +340,7 @@ It helps others find it.
 
 ### Acknowledgements
 
-- The thousands of **[OpenStreetMap](https://www.openstreetmap.org) contributors** who mapped Tunisia's boundaries and coastline
+- The thousands of **[OpenStreetMap](https://www.openstreetmap.org) contributors** who mapped Tunisia's boundaries, municipalities and coastline
 - **Institut National de la Statistique** (INS) for the geocodes and census figures, and the **ISIE** for its public circonscription maps
 - [Geofabrik](https://download.geofabrik.de) for the daily extracts
 - [mapshaper](https://github.com/mbloch/mapshaper), [pyosmium](https://osmcode.org/pyosmium/), [Shapely](https://shapely.readthedocs.io),

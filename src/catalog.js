@@ -77,6 +77,18 @@ export default {
         "medium",
         "low"
       ]
+    },
+    {
+      "id": "municipalities",
+      "title": "Municipalities",
+      "titleAr": "البلديات",
+      "count": 338,
+      "lods": [
+        "full",
+        "high",
+        "medium",
+        "low"
+      ]
     }
   ],
   "lods": [
@@ -354,6 +366,33 @@ export default {
         "labeled",
         "labeled-ar",
         "nested",
+        "interactive"
+      ]
+    },
+    "municipalities": {
+      "full": [
+        "plain"
+      ],
+      "high": [
+        "plain",
+        "outline"
+      ],
+      "medium": [
+        "plain",
+        "outline",
+        "light",
+        "dark",
+        "labeled",
+        "labeled-ar",
+        "interactive"
+      ],
+      "low": [
+        "plain",
+        "outline",
+        "light",
+        "dark",
+        "labeled",
+        "labeled-ar",
         "interactive"
       ]
     }

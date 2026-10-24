@@ -13,6 +13,7 @@ and the checks that the published maps pass. Source: OpenStreetMap extract of **
 | Governorates | **24** / 24 (ISO 3166-2:TN) |
 | Delegations | **279** / 279 (INS 2024 nomenclature) |
 | Sectors (imadas) | **2,083** (OSM, INS 2014 geocodes) |
+| Municipalities (baladiyat) | **338** of 350, covering 97.9 % of the land ([details](#municipalities-baladiyat)) |
 | Overlap between units | **0.000000 km²** |
 | Land not covered by any unit | **3 m²** (floating-point noise) |
 | Sum of children = parent area | exact at every level (additive area formula) |
@@ -150,5 +151,48 @@ Warnings raised by the extractor. They do not break the nesting, but you may wan
 - imada أولاد الفالح (delegation-4359) is not mapped as a separate sector in OSM; its area is part of sector الرميلية
 - 52 sectors of delegations created after 2014 still carry the INS geocode of their former delegation (sector ids keep these codes for stability): `sector-535357`, `sector-535358`, `sector-535356`, `sector-535355`, `sector-535354`, `sector-635656`, `sector-635655`, `sector-625257`, `sector-625256`, `sector-625259`, `sector-615552`, `sector-615551`, `sector-616153`, `sector-616154`, `sector-616155`, `sector-515758`, `sector-515761`, `sector-515759`, `sector-515760`, `sector-515762`, `sector-516062`, `sector-516065`, `sector-516061`, `sector-516064`, `sector-515556`, `sector-515557`, `sector-515554`, `sector-515553`, `sector-435155`, `sector-435154`, `sector-435262`, `sector-436163`, `sector-436165`, `sector-436153`, `sector-436164`, `sector-436152`, `sector-235356`, `sector-235355`, `sector-235363`, `sector-235357`, `sector-415953`, `sector-415955`, `sector-415954`, `sector-415559`, `sector-415557`, `sector-336156`, `sector-336161`, `sector-336159`, `sector-336162`, `sector-336160`, `sector-335155`, `sector-335154`.
 - 7 delegations consist of several parts because of islands: El Haouaria, Bizerte Nord, Teboulba, El Mahrès, Kerkennah, Zarzis, Djerba Ajim.
+
+## Municipalities (baladiyat)
+
+Municipalities do not nest in delegations or sectors, so they are a partition of their own: OpenStreetMap relations tagged
+`boundary=municipality`, clipped to the land above, with no geometry added. Where two relations overlap, the overlap goes to the
+smaller one. Land that no OSM municipality covers is left uncovered and drawn as a light base under the units in every SVG.
+
+| Check | Result |
+| --- | --- |
+| Municipalities | **338** in 24 governorates (350 in the 2016 division) |
+| Land covered | **151,830 km²** of 155,150 km² (97.86 %) |
+| Land not in any municipality | 3,320 km² in 171 pieces |
+| Overlap between municipalities | **0.000000 km²** after resolving 1 overlapping relation(s) |
+| Outside the land | 0.000000 km² |
+| Invalid geometries | 0 |
+| Spread over several delegations | 20 municipalities (why they cannot nest) |
+
+- Relation 7304421 (Ben Arous) overlapped relation 7209941 (Ben Arous) by 6.468 km²; the overlap went to the smaller one.
+- 2 OSM relations are named Ben Arous in TN-13: municipality-7209941, municipality-7304421.
+- 2 OSM relations are named Fouchana in TN-13: municipality-7209947, municipality-7209948.
+- `municipality-7209947` is named Fouchana in OSM but covers the Naassen, Chebeda and Douar Elhouch sectors, so it is probably the Naassen municipality. The OSM name is kept until it is corrected there.
+- `municipality-7304421` is named Ben Arous in OSM but covers La Nouvelle Médina and El Yasminet, next to the other Ben Arous relation. The OSM name is kept until it is corrected there.
+
+Largest land areas outside any OSM municipality. Some are inland water that the municipal boundaries leave out (for example
+Sebkhet Sidi El Hani, Garaet Ichkeul, Sebkhet Ariana and Sebkhet Sejoumi); the large pieces in Sidi Bouzid and Sfax are land
+that OpenStreetMap does not yet assign to any municipality:
+
+| Area (km²) | Location (lon, lat) | Governorate | Delegations |
+| ---: | --- | --- | --- |
+| 1036.8 | 9.802, 34.854 | Sidi Bouzid | Regueb, Essaida |
+| 565.0 | 10.681, 34.87 | Sfax | Sfax Sud, El Hencha |
+| 433.1 | 10.455, 34.53 | Sfax | El Mahrès |
+| 423.0 | 9.413, 34.986 | Sidi Bouzid | Sidi Bouzid Ouest, El Hichria |
+| 351.4 | 10.409, 35.518 | Sousse | Sidi El Heni, Msaken |
+| 117.5 | 11.061, 35.225 | Mahdia | Chebba |
+| 115.1 | 10.287, 35.861 | Sousse | Kalaa Kebira, Kondar, Sidi El Heni |
+| 93.2 | 10.972, 35.592 | Monastir | Moknine, Bekalta |
+| 80.8 | 9.672, 37.161 | Bizerte | Bizerte Sud, Tinja |
+| 39.1 | 10.225, 36.92 | Ariana | Soukra, Raoued |
+| 24.9 | 10.147, 36.759 | Tunis | Sidi Hassine, El Kabaria |
+| 11.7 | 10.242, 36.79 | Ben Arous | Radès, Megrine |
+| 7.5 | 8.934, 37.528 | Bizerte | Bizerte Nord |
+
 
 Found an error? Please [open a data issue](https://github.com/Alaa-Taieb/map-tunisia/issues/new?template=data-error.yml).

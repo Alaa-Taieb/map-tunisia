@@ -4,7 +4,8 @@
  *
  *   node scripts/build/build.js [--only governorates,delegations] [--lods medium,low]
  *
- * For each partition: dissolve the nested sector layer at full precision,
+ * For each partition: dissolve the nested sector layer at full precision (municipalities,
+ * which do not nest, come from their own source layer drawn over the land),
  * project to UTM 32N, simplify per level of detail (topology-aware, mapshaper),
  * then write SVG (all modes), GeoJSON + TopoJSON (WGS84) and attribute tables.
  */
@@ -37,8 +38,9 @@ const regionRows = A('regions.csv');
 const districtRows = A('districts.csv');
 const delRows = A('delegations.csv');
 const secRows = A('sectors.csv');
+const munRows = A('municipalities.csv');
 const byId = (rows) => Object.fromEntries(rows.map((r) => [r.id, r]));
-const GOV = byId(govRows), REG = byId(regionRows), DIS = byId(districtRows), DEL = byId(delRows), SEC = byId(secRows);
+const GOV = byId(govRows), REG = byId(regionRows), DIS = byId(districtRows), DEL = byId(delRows), SEC = byId(secRows), MUN = byId(munRows);
 
 const sumPop = (ids, year) => ids.reduce((s, g) => s + Number(GOV[g][`population_${year}`]), 0);
 const ALL_GOVS = govRows.map((g) => g.id);
@@ -69,6 +71,11 @@ function attributes(partition, id) {
       const g = GOV[s.governorate];
       return { ...s, region: g.region, district: g.district };
     }
+    case 'municipalities': {
+      const m = MUN[id];
+      const g = GOV[m.governorate];
+      return { ...m, region: g.region, district: g.district };
+    }
   }
   throw new Error(partition);
 }
@@ -88,6 +95,20 @@ const SRC = JSON.stringify(source);
 async function ms(cmd, inputs) {
   return mapshaper.applyCommands(cmd, inputs);
 }
+
+// Municipalities: their own layer plus one `LAND` feature (the exact union of the sectors).
+// Both are simplified together, so the municipalities and the land under them share one topology.
+const LAND = '__land';
+const municipalities = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/tunisia-municipalities.geojson'), 'utf8'));
+for (const f of municipalities.features) {
+  const g = GOV[f.properties.governorate];
+  if (!g) throw new Error(`unknown governorate ${f.properties.governorate}`);
+  if (!MUN[f.properties.municipality]) throw new Error(`unknown municipality ${f.properties.municipality}`);
+  Object.assign(f.properties, { country: 'TN', region: g.region, district: g.district });
+}
+const land = JSON.parse((await ms('-i src.json -dissolve country -o land.json format=geojson geojson-type=FeatureCollection precision=0.0000001', { 'src.json': SRC }))['land.json']);
+municipalities.features.push({ type: 'Feature', properties: { municipality: LAND, country: 'TN' }, geometry: land.features[0].geometry });
+const SOURCES = { sectors: SRC, municipalities: JSON.stringify(municipalities) };
 
 // ------------------------------------------------------------------ frame
 console.log('Computing the shared frame …');
@@ -292,7 +313,7 @@ for (const partition of PARTITIONS) {
   const t0 = Date.now();
   const key = partition.key;
   const copy = ['delegation', 'governorate', 'region', 'district', 'country'].filter((f) => f !== key && levelBelow(f, key));
-  const dissolve = partition.id === 'sectors' ? '' : `-dissolve ${key}${copy.length ? ` copy-fields=${copy.join(',')}` : ''}`;
+  const dissolve = partition.id === 'sectors' || partition.source ? '' : `-dissolve ${key}${copy.length ? ` copy-fields=${copy.join(',')}` : ''}`;
   const parents = partition.parents;
 
   let colours = null, labels = null, areas = null;
@@ -305,7 +326,8 @@ for (const partition of PARTITIONS) {
 
   // Stage 1: dissolve + project once at full precision. Re-importing the result rebuilds the
   // topology from scratch, so only nodes where units of *this* partition meet stay fixed.
-  const base = (await ms(`-i src.json name=units ${dissolve} -proj ${PROJ4} -o base.json format=geojson geojson-type=FeatureCollection precision=0.001`, { 'src.json': SRC }))['base.json'];
+  const src = SOURCES[partition.source || 'sectors'];
+  const base = (await ms(`-i src.json name=units ${dissolve} -proj ${PROJ4} -o base.json format=geojson geojson-type=FeatureCollection precision=0.001`, { 'src.json': src }))['base.json'];
 
   const results = {};
   for (const lod of runOrder) {
@@ -320,7 +342,7 @@ for (const partition of PARTITIONS) {
     for (const h of parents) cmd += `-o target=l_${h} l_${h}.json ${o} `;
     cmd += `-o target=outline outline.json ${o}`;
     const out = await ms(cmd, { 'base.json': base });
-    const units = JSON.parse(out['units.json']).features;
+    const units = JSON.parse(out['units.json']).features.filter((f) => f.properties[key] !== LAND);
     const borders = parents.flatMap((h) => JSON.parse(out[`l_${h}.json`]).features.map((f) => ({ level: h, geometry: f.geometry })));
     const outline = JSON.parse(out['outline.json']).features[0].geometry;
     results[lod.id] = { units, borders, outline };
@@ -377,7 +399,7 @@ for (const partition of PARTITIONS) {
     const lodInfo = { id: lod.id, files: [] };
 
     for (const mode of modesFor(partition, lod.id)) {
-      const svg = renderSVG({ partition, lod, mode: mode.id, frame: FRAME, units: unitsOut, borders: borderGeoms, outline: outlineGeom, source: SOURCE });
+      const svg = renderSVG({ partition, lod, mode: mode.id, frame: FRAME, units: unitsOut, borders: borderGeoms, outline: outlineGeom, base: partition.base ? outlineGeom : null, source: SOURCE });
       const rel = `svg/${partition.id}/${fileName(partition.id, lod.id, mode.id)}`;
       writeFile(path.join(DIST, rel), svg);
       const bytes = Buffer.byteLength(svg);

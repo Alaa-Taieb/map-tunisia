@@ -12,6 +12,7 @@ import { toUTM } from '../../src/utm.js';
 import catalog from '../../src/catalog.js';
 
 const report = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/extract-report.json'), 'utf8'));
+const munReport = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/source/municipalities-report.json'), 'utf8'));
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'dist/manifest.json'), 'utf8'));
 const D = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, 'dist/data', `${p}.json`), 'utf8'));
 const n = (x, d = 0) => Number(x).toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -61,6 +62,7 @@ function measure(geometry) {
     `| Governorates | **${gov.length}** / 24 (ISO 3166-2:TN) |`,
     `| Delegations | **${D('delegations').length}** / 279 (INS 2024 nomenclature) |`,
     `| Sectors (imadas) | **${n(D('sectors').length)}** (OSM, INS 2014 geocodes) |`,
+    `| Municipalities (baladiyat) | **${D('municipalities').length}** of 350, covering ${(munReport.topology.coverage * 100).toFixed(1)} % of the land ([details](#municipalities-baladiyat)) |`,
     `| Overlap between units | **${t.overlap_km2.toFixed(6)} km²** |`,
     `| Land not covered by any unit | **${(t.uncovered_km2 * 1e6).toFixed(0)} m²** (floating-point noise) |`,
     `| Sum of children = parent area | exact at every level (additive area formula) |`,
@@ -170,6 +172,44 @@ function measure(geometry) {
     lines.push(`- ${islands.length} delegations consist of several parts because of islands: ` +
       islands.map((w) => { const id = w.split(' ')[0]; return `${delName[id] || id}`; }).join(', ') + '.');
   }
+  {
+    const mt = munReport.topology;
+    const mun = D('municipalities');
+    const munName = Object.fromEntries(mun.map((m) => [m.id, m.name_fr]));
+    // Names that look wrong in OSM, listed while the relation still carries that name.
+    const suspect = [
+      ['municipality-7209947', 'Fouchana', 'covers the Naassen, Chebeda and Douar Elhouch sectors, so it is probably the Naassen municipality'],
+      ['municipality-7304421', 'Ben Arous', 'covers La Nouvelle Médina and El Yasminet, next to the other Ben Arous relation'],
+    ].filter(([id, name]) => munName[id] === name);
+    lines.push(
+      '', '## Municipalities (baladiyat)', '',
+      'Municipalities do not nest in delegations or sectors, so they are a partition of their own: OpenStreetMap relations tagged',
+      '`boundary=municipality`, clipped to the land above, with no geometry added. Where two relations overlap, the overlap goes to the',
+      'smaller one. Land that no OSM municipality covers is left uncovered and drawn as a light base under the units in every SVG.', '',
+      '| Check | Result |', '| --- | --- |',
+      `| Municipalities | **${mun.length}** in ${munReport.counts.governorates} governorates (350 in the 2016 division) |`,
+      `| Land covered | **${n(mt.covered_km2)} km²** of ${n(mt.land_area_km2)} km² (${(mt.coverage * 100).toFixed(2)} %) |`,
+      `| Land not in any municipality | ${n(mt.uncovered_km2)} km² in ${mt.uncovered_pieces} pieces |`,
+      `| Overlap between municipalities | **${mt.overlap_km2.toFixed(6)} km²** after resolving ${munReport.corrections.filter((c) => c.type === 'overlap_to_smaller').length} overlapping relation(s) |`,
+      `| Outside the land | ${mt.outside_land_km2.toFixed(6)} km² |`,
+      `| Invalid geometries | ${mt.invalid_geometries} |`,
+      `| Spread over several delegations | ${mt.across_delegations} municipalities (why they cannot nest) |`,
+      '',
+    );
+    for (const c of munReport.corrections.filter((c) => c.type === 'overlap_to_smaller')) {
+      lines.push(`- Relation ${c.osm_id} (${c.name}) overlapped ${c.given_to.map((w) => `relation ${w.osm_id} (${w.name})`).join(', ')} by ${c.area_km2} km²; the overlap went to the smaller one.`);
+    }
+    for (const w of munReport.warnings) lines.push(`- ${w}.`);
+    for (const [id, name, why] of suspect) lines.push(`- \`${id}\` is named ${name} in OSM but ${why}. The OSM name is kept until it is corrected there.`);
+    lines.push(
+      '', 'Largest land areas outside any OSM municipality. Some are inland water that the municipal boundaries leave out (for example',
+      'Sebkhet Sidi El Hani, Garaet Ichkeul, Sebkhet Ariana and Sebkhet Sejoumi); the large pieces in Sidi Bouzid and Sfax are land',
+      'that OpenStreetMap does not yet assign to any municipality:', '',
+      '| Area (km²) | Location (lon, lat) | Governorate | Delegations |', '| ---: | --- | --- | --- |',
+      ...munReport.uncovered.map((u) => `| ${u.area_km2.toFixed(1)} | ${u.at[0]}, ${u.at[1]} | ${govName[u.governorate]} | ${u.delegations.map((d) => delName[d] || d).join(', ')} |`),
+      '',
+    );
+  }
   lines.push('', 'Found an error? Please [open a data issue](https://github.com/Alaa-Taieb/map-tunisia/issues/new?template=data-error.yml).', '');
   writeFile(path.join(ROOT, 'docs/accuracy.md'), lines.join('\n'));
   console.log('docs/accuracy.md');
@@ -182,9 +222,9 @@ function measure(geometry) {
   const secCount = {};
   for (const s of sec) secCount[s.delegation] = (secCount[s.delegation] || 0) + 1;
   const lines = [GENERATED, '', '# Reference tables', '',
-    'Every unit of the coarser partitions, with identifiers, names and figures. Sectors (imadas) are too many for a page — use',
+    'Every unit of the coarser partitions and the municipalities, with identifiers, names and figures. Sectors (imadas) are too many for a page — use',
     '[`dist/data/sectors.csv`](../dist/data/sectors.csv). Areas are ellipsoidal; populations are INS census counts (RGPH 2014 and 2024).', '',
-    '- [Economic regions](#economic-regions)', '- [Districts (2023)](#districts-2023)', '- [Governorates](#governorates)', '- [Delegations](#delegations)', '',
+    '- [Economic regions](#economic-regions)', '- [Districts (2023)](#districts-2023)', '- [Governorates](#governorates)', '- [Delegations](#delegations)', '- [Municipalities](#municipalities)', '',
     '## Economic regions', '', '| id | Name (EN) | Nom (FR) | الاسم | Governorates | Population 2024 | Area (km²) |', '| --- | --- | --- | --- | --- | ---: | ---: |'];
   for (const r of reg) lines.push(`| \`${r.id}\` | ${r.name_en} | ${r.name_fr} | ${r.name_ar} | ${r.governorates.split(' ').join(', ')} | ${n(r.population_2024)} | ${n(r.area_km2)} |`);
   lines.push('', '## Districts (2023)', '', 'Created by Decree 2023-589 of 21 September 2023 for the National Council of Regions and Districts.', '',
@@ -206,6 +246,13 @@ function measure(geometry) {
     }
     lines.push('');
   }
+  const govOf = Object.fromEntries(gov.map((g) => [g.id, g.name_fr]));
+  const mun = D('municipalities').sort((a, b) => a.governorate.localeCompare(b.governorate) || a.name_fr.localeCompare(b.name_fr, 'fr'));
+  lines.push('## Municipalities', '', `${mun.length} municipalities (baladiyat) mapped in OpenStreetMap, a partition of its own that does not nest in delegations.`,
+    'The `id` carries the OSM relation number. Coverage and known issues: [accuracy report](accuracy.md#municipalities-baladiyat).', '',
+    '| id | Nom (FR) | الاسم | Governorate | Area (km²) |', '| --- | --- | --- | --- | ---: |');
+  for (const m of mun) lines.push(`| \`${m.id}\` | ${m.name_fr} | ${m.name_ar} | ${govOf[m.governorate]} | ${n(m.area_km2, 1)} |`);
+  lines.push('');
   writeFile(path.join(ROOT, 'docs/reference.md'), lines.join('\n'));
   console.log('docs/reference.md');
 }
